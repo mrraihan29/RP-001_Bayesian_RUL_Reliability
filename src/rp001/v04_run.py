@@ -1,5 +1,5 @@
 """Bounded v0.4 scientific fits; separate immutable per-run records."""
-import argparse,json,time,threading,traceback
+import argparse,json,time,threading,traceback,os,sys
 from dataclasses import replace,asdict
 import arviz as az
 import numpy as np
@@ -18,7 +18,11 @@ def run(run_id):
     write(record,meta);start=time.perf_counter();cpu=time.process_time();peak=[psutil.Process().memory_info().rss]
     done=threading.Event()
     def monitor():
-        while not done.wait(.5): peak[0]=max(peak[0],psutil.Process().memory_info().rss)
+        while not done.wait(.5):
+            peak[0]=max(peak[0],psutil.Process().memory_info().rss)
+            if time.perf_counter()-start>600:
+                meta.update(status='failed',exception='Prespecified per-fit wall budget exceeded',wall_seconds=time.perf_counter()-start,cpu_seconds=time.process_time()-cpu,peak_rss_bytes=peak[0])
+                write(record,meta);os._exit(124)
     threading.Thread(target=monitor,daemon=True).start()
     truth=None;extra=None;pre=None;pipeline=None
     try:
@@ -34,6 +38,7 @@ def run(run_id):
             meta['pipeline_metadata']=pipeline.metadata
             if pipeline.status!='ready': raise ValueError(';'.join(pipeline.failure_reasons))
             data=pipeline.refit_fit_tune;pre=pipeline.refit_preprocessor
+            np.savez(directory/f'{run_id}_calibration.npz',a=pipeline.calibration.a,z=pipeline.calibration.z,y=pipeline.calibration.y,ids=pipeline.calibration.ids,B=pipeline.calibration.B)
             cqr=reselect_refit_calibrate_cqr(pipeline)
             meta['cqr']=dict(status=cqr.status,candidate_summaries=cqr.candidate_summaries,tuning_scores=cqr.tuning_scores,calibration=cqr.calibration_metadata,failures=cqr.failure_reasons)
             if cqr.status=='completed':
@@ -74,9 +79,10 @@ def run(run_id):
         meta.update(status='failed',exception=repr(exc),traceback=traceback.format_exc())
     finally:
         done.set();meta.update(wall_seconds=time.perf_counter()-start,cpu_seconds=time.process_time()-cpu,peak_rss_bytes=peak[0])
-        if meta['wall_seconds']>600: meta['compute_failure']='Per-fit wall limit exceeded'
+        if meta['wall_seconds']>600: meta.update(status='failed',compute_failure='Per-fit wall limit exceeded')
+        meta['artifacts_sha256']={str(p.relative_to(ROOT)).replace('\\','/'):sha(p) for p in directory.glob(f'{run_id}*') if p.is_file()}
         write(record,meta)
     print(json.dumps(dict(run_id=run_id,status=meta['status'],wall=meta['wall_seconds'],diagnostics=meta.get('diagnostics'),exception=meta.get('exception'))),flush=True)
     return meta
 if __name__=='__main__':
-    parser=argparse.ArgumentParser();parser.add_argument('run_id');run(parser.parse_args().run_id)
+    parser=argparse.ArgumentParser();parser.add_argument('run_id');result=run(parser.parse_args().run_id);sys.exit(0 if result['status']=='completed' else 1)
