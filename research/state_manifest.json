@@ -1,16 +1,17 @@
 {
-  "schema_version": "0.4",
+  "schema_version": "0.5",
   "record_type": "current-draft-state-pointer",
-  "created_at": "2026-10-08T15:31:13.921469+00:00",
+  "created_at": "2026-10-08T16:31:26.535785+00:00",
   "protocol_status": "PROTOCOL_DRAFTED",
-  "recommendation": "B. REVISE AGAIN",
-  "scientific_execution_source_commit": "87a0083314daafb79f7ae3c67e23abd5979bc82a",
-  "final_artifact_manifest": "logs/v0.4/delivery_manifest.json",
-  "final_commit_receipt": "logs/v0.4/delivery_receipt.json",
-  "baseline_state_archive": "research/v0.4/baseline_current_aliases/research/state_manifest.json",
+  "recommendation": "READY FOR OWNER LOCK REVIEW",
+  "scientific_execution_source_commit": "304d8e76d03fe7d69dc7f8f9bb6de3c600a219dd",
+  "final_artifact_manifest": "logs/v0.5/delivery_manifest.json",
+  "final_commit_receipt": "logs/v0.5/delivery_receipt.json",
+  "baseline_state_archive": "research/v0.5/baseline_current_aliases/research/state_manifest.json",
   "environment_fingerprint": "f57b00a67e9d67b2920791bfddc8dc812dbdeb9306588a26557dfd6be15f826c",
   "official_test_access": false,
   "confirmatory": false,
   "protocol_lock_authorized": false,
-  "note": "Historical snapshot archive retained; full delivery byte manifest generated separately. This state does not assert scientificvalidation."
+  "note": "Bounded evidence return complete; owner lock/test/confirmatory authorization absent.",
+  "analysis_source_commit": "60e9208fdd216abf51677f80514ac77e7e4fe9e6"
 }

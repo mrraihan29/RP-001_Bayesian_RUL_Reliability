@@ -1,0 +1,461 @@
+{
+  "schema_version": "1.0.0",
+  "handoff_id": "RP001-V05-BOUNDED-PRELOCK-RETURN",
+  "parent_work_id": "RP-001",
+  "producer": "scientific-research-engine",
+  "consumer": "scientific-research-engine",
+  "producer_role": "Rei / SOL Extra High direct mathematical verifier",
+  "consumer_role": "Research Owners Raihan x Rei for final authorization",
+  "human_recipient": "Raihan x Rei",
+  "artifact_type": "bounded-prelock-resolution-memo-and-proposed-analysis-contract",
+  "artifact_version": "0.5",
+  "artifact_identity": {
+    "path_or_uri": "docs/v0.5/01_prelock_resolution_memo.md",
+    "sha256_or_version": "8bdcc7d967f342a81b819522279f768774e0b8eea6e25f39ebeea242836efa0b",
+    "created_at": "2026-10-08T16:31:26.535785+00:00",
+    "source_revision": "Plan/inquiry304d8e7;score60e9208;final snapshot in v05receipt."
+  },
+  "scope": "One bounded synthetic inquiry and saved-training scorenumerics; no officialaccess/confirmatory/lock/fallback.",
+  "applicability": "APPLICABLE_MANDATORY",
+  "claims_or_requirements": "Bounded return complete; restricted descriptive contract ready for ownerlockreview.",
+  "evidence": [
+    {
+      "evidence_id": "V05-MEMO",
+      "kind": "bounded-evidence",
+      "location": "docs/v0.5/01_prelock_resolution_memo.md",
+      "sha256": "8bdcc7d967f342a81b819522279f768774e0b8eea6e25f39ebeea242836efa0b",
+      "collected_at": "2026-10-08T16:31:26.535785+00:00",
+      "method": "DirectSOLbounded scientific disposition",
+      "supports": "Restrictedclaim only;notfinalauthorization",
+      "provenance_chain": "Owners -> preexecutionplan304d8e7 -> input/sourcehashes -> fixedrun -> independentSOLmath -> restrictedreturn"
+    },
+    {
+      "evidence_id": "V05-CONTRACT",
+      "kind": "bounded-evidence",
+      "location": "docs/v0.5/02_proposed_locked_analysis_contract.md",
+      "sha256": "a3b38dcf9bb02a29f617b95694cbab2cbbcd1fd28cbfc7c4be64af2823313b43",
+      "collected_at": "2026-10-08T16:31:26.535785+00:00",
+      "method": "Proposedfiniteanalysis/failure/phasecontract",
+      "supports": "Restrictedclaim only;notfinalauthorization",
+      "provenance_chain": "Owners -> preexecutionplan304d8e7 -> input/sourcehashes -> fixedrun -> independentSOLmath -> restrictedreturn"
+    },
+    {
+      "evidence_id": "V05-MATH",
+      "kind": "bounded-evidence",
+      "location": "experiments/v0.5/analysis/math_preflight.json",
+      "sha256": "1b1492dadc95d7036da868329070d745f274f51bff660bb28d577f839997cc4f",
+      "collected_at": "2026-10-08T16:31:26.535785+00:00",
+      "method": "Directdense/Jacobian/gradientverification",
+      "supports": "Restrictedclaim only;notfinalauthorization",
+      "provenance_chain": "Owners -> preexecutionplan304d8e7 -> input/sourcehashes -> fixedrun -> independentSOLmath -> restrictedreturn"
+    },
+    {
+      "evidence_id": "V05-FIT",
+      "kind": "bounded-evidence",
+      "location": "experiments/v0.5/registry/v05_highrho_innovation.json",
+      "sha256": "25b82c84def25a68419478af206e66bdb52b95cd4667e8ad55e995289bed2434",
+      "collected_at": "2026-10-08T16:31:26.535785+00:00",
+      "method": "Exactlyone fixedtruthinquiry",
+      "supports": "Restrictedclaim only;notfinalauthorization",
+      "provenance_chain": "Owners -> preexecutionplan304d8e7 -> input/sourcehashes -> fixedrun -> independentSOLmath -> restrictedreturn"
+    },
+    {
+      "evidence_id": "V05-SCORE",
+      "kind": "bounded-evidence",
+      "location": "experiments/v0.5/analysis/score_propagation.json",
+      "sha256": "52ed464901c469f7cf65c7dc23352a5733c1769a10de9024ffc1e6b00b8d54e5",
+      "collected_at": "2026-10-08T16:31:26.535785+00:00",
+      "method": "Dependencepreserving jointscoreMCSEandscalaroracle",
+      "supports": "Restrictedclaim only;notfinalauthorization",
+      "provenance_chain": "Owners -> preexecutionplan304d8e7 -> input/sourcehashes -> fixedrun -> independentSOLmath -> restrictedreturn"
+    },
+    {
+      "evidence_id": "V05-TESTS",
+      "kind": "bounded-evidence",
+      "location": "logs/v0.5/verification_tests.xml",
+      "sha256": "b8954c288d4ba5b3c40f7fc678151f44f17e7ebaf913c9f5f06235088df62208",
+      "collected_at": "2026-10-08T16:31:26.535785+00:00",
+      "method": "59testsPASS",
+      "supports": "Restrictedclaim only;notfinalauthorization",
+      "provenance_chain": "Owners -> preexecutionplan304d8e7 -> input/sourcehashes -> fixedrun -> independentSOLmath -> restrictedreturn"
+    }
+  ],
+  "gate_results": [
+    {
+      "gate": "BOUNDED_AUTHORIZATION",
+      "state": "PASS",
+      "owner": "Rei SOL lead / Raihan x Rei final authorization",
+      "artifact_version": "0.5",
+      "evidence_ids": [
+        "V05-MEMO"
+      ],
+      "rationale": "Scope honored; one invocation; no official access."
+    },
+    {
+      "gate": "IMPLEMENTATION_MATHEMATICS",
+      "state": "PASS",
+      "owner": "Rei SOL lead / Raihan x Rei final authorization",
+      "artifact_version": "0.5",
+      "evidence_ids": [
+        "V05-MEMO"
+      ],
+      "rationale": "Direct SOL Jacobian/dense/gradient/influence/covariance verification in tested scope."
+    },
+    {
+      "gate": "PRINCIPAL_DEVELOPMENT_PRECISION",
+      "state": "PASS",
+      "owner": "Rei SOL lead / Raihan x Rei final authorization",
+      "artifact_version": "0.5",
+      "evidence_ids": [
+        "V05-MEMO"
+      ],
+      "rationale": "v04all25/75retained; v05jointscore demoPASS; futurecases untested."
+    },
+    {
+      "gate": "ORIGINAL_HIGH_RHO_STRESS",
+      "state": "FAIL",
+      "owner": "Rei SOL lead / Raihan x Rei final authorization",
+      "artifact_version": "0.5",
+      "evidence_ids": [
+        "V05-MEMO"
+      ],
+      "rationale": "Original immutable failed case remainsFAIL; no retroactive acceptance."
+    },
+    {
+      "gate": "BOUNDED_HIGH_RHO_INQUIRY",
+      "state": "PASS",
+      "owner": "Rei SOL lead / Raihan x Rei final authorization",
+      "artifact_version": "0.5",
+      "evidence_ids": [
+        "V05-MEMO"
+      ],
+      "rationale": "Single equivalent-posterior fitpasses; no general robustness certification."
+    },
+    {
+      "gate": "FULL_PIPELINE_UNCERTAINTY",
+      "state": "DEFERRED",
+      "owner": "Rei SOL lead / Raihan x Rei final authorization",
+      "artifact_version": "0.5",
+      "evidence_ids": [
+        "V05-MEMO"
+      ],
+      "rationale": "Excluded from restricted claim; observed8perturbations sensitivity only."
+    },
+    {
+      "gate": "CUTOFF_TRANSPORT",
+      "state": "DEFERRED",
+      "owner": "Rei SOL lead / Raihan x Rei final authorization",
+      "artifact_version": "0.5",
+      "evidence_ids": [
+        "V05-MEMO"
+      ],
+      "rationale": "Official exchangeability/generalization unproved and excluded."
+    },
+    {
+      "gate": "POPULATION_INFERENCE",
+      "state": "DEFERRED",
+      "owner": "Rei SOL lead / Raihan x Rei final authorization",
+      "artifact_version": "0.5",
+      "evidence_ids": [
+        "V05-MEMO"
+      ],
+      "rationale": "Omitted from proposedlock; adverse historical study preserved."
+    },
+    {
+      "gate": "FUTURE_ENDPOINT_INTEGRITY_PRECISION",
+      "state": "DEFERRED",
+      "owner": "Rei SOL lead / Raihan x Rei final authorization",
+      "artifact_version": "0.5",
+      "evidence_ids": [
+        "V05-MEMO"
+      ],
+      "rationale": "Mandatory authorized sensor-phase guard; no endpointsaccessed."
+    },
+    {
+      "gate": "OWNER_PROTOCOL_LOCK",
+      "state": "BLOCKED",
+      "owner": "Rei SOL lead / Raihan x Rei final authorization",
+      "artifact_version": "0.5",
+      "evidence_ids": [
+        "V05-MEMO"
+      ],
+      "rationale": "Owner approval absent; scientific readiness is for review only."
+    },
+    {
+      "gate": "CONFIRMATORY_EVALUATION",
+      "state": "BLOCKED",
+      "owner": "Rei SOL lead / Raihan x Rei final authorization",
+      "artifact_version": "0.5",
+      "evidence_ids": [
+        "V05-MEMO"
+      ],
+      "rationale": "Not authorized, no official results."
+    }
+  ],
+  "assumptions": [
+    "Futurelabels/sensorsare separateowner-authorizedphases.",
+    "Finitecompleteenumerationdoesnotrequireiidsamplinginference.",
+    "ApproximateMCSErequiresstationaryadequatemixing/positiveCDFdensity;crossengineindicespreserved.",
+    "Noofficialconformal/generalrobustness/physicalidentification/wholepipelinevarianceclaim."
+  ],
+  "risks": [
+    {
+      "risk_id": "R01",
+      "severity": "critical",
+      "statement": "Pseudo-cutoff and official-test mechanisms may differ",
+      "disposition": "Unknowncutofftransport excludespopulation/conformalguarantees, notenumeration.",
+      "affected_claims_or_gates": "Calibration/protocol",
+      "owner": "Rei lead / Research Owners",
+      "likelihood": "not quantified",
+      "status": "RESTRICTED_CLAIM_DISPOSITION",
+      "trigger": "Calibration/protocol",
+      "evidence": "docs/v0.5/01_prelock_resolution_memo.md",
+      "remaining_uncertainty": "Historical severity/evidence retained; broader claims unproved; future execution guards and owner permissions remain.",
+      "impact_class": "OUTSIDE_BENCHMARK_GENERALIZATION"
+    },
+    {
+      "risk_id": "R02",
+      "severity": "critical",
+      "statement": "Latent/covariance effects may be weakly identified at56 engines",
+      "disposition": "Stressfailure notautomaticprimaryblocker; actualprincipalpasses; onediagnosis/fixedfutureguards; nophysical/robustnessclaim. One bounded equivalent-posterior inquiryPASS; physicalcoupling persists; no automaticprincipal replacement.",
+      "affected_claims_or_gates": "Model acceptance",
+      "owner": "Rei lead / Research Owners",
+      "likelihood": "not quantified",
+      "status": "RESTRICTED_CLAIM_DISPOSITION",
+      "trigger": "Model acceptance",
+      "evidence": "docs/v0.5/01_prelock_resolution_memo.md",
+      "remaining_uncertainty": "Historical severity/evidence retained; broader claims unproved; future execution guards and owner permissions remain.",
+      "impact_class": "ACCEPT_WITH_RESTRICTED_CLAIMS"
+    },
+    {
+      "risk_id": "R03",
+      "severity": "critical",
+      "statement": "Posterior/new-engine conditioning may be unreliable",
+      "disposition": "Futureendpointmustpass beforelabelaccess; accepteddevelopmentpassdoesnotcertifyfuturecase.",
+      "affected_claims_or_gates": "Inferential readiness",
+      "owner": "Rei lead / Research Owners",
+      "likelihood": "not quantified",
+      "status": "RESTRICTED_CLAIM_DISPOSITION",
+      "trigger": "Inferential readiness",
+      "evidence": "docs/v0.5/01_prelock_resolution_memo.md",
+      "remaining_uncertainty": "Historical severity/evidence retained; broader claims unproved; future execution guards and owner permissions remain.",
+      "resolution_scope": "Original25 development calibration sensor prefixes and75quantiles only; futureofficialendpointsunverified.",
+      "impact_class": "FIXED_NUMERICAL_FAILURE_POLICY"
+    },
+    {
+      "risk_id": "R04",
+      "severity": "high",
+      "statement": "100 assessment engines give broad coverage/effect precision",
+      "disposition": "Noiidpopulationpower/coverageprecisionclaim forcompletefiniteenumeration.",
+      "affected_claims_or_gates": "Sample precision",
+      "owner": "Rei lead / Research Owners",
+      "likelihood": "not quantified",
+      "status": "RESTRICTED_CLAIM_DISPOSITION",
+      "trigger": "Sample precision",
+      "evidence": "docs/v0.5/01_prelock_resolution_memo.md",
+      "remaining_uncertainty": "Historical severity/evidence retained; broader claims unproved; future execution guards and owner permissions remain.",
+      "impact_class": "OUTSIDE_BENCHMARK_GENERALIZATION"
+    },
+    {
+      "risk_id": "R05",
+      "severity": "high",
+      "statement": "25 calibration scores give unstable/coarse tail correction",
+      "disposition": "n25correctionvaries; scoreofspecifiedrealizedprocedurevaliddescriptive; nocoverageguarantee.",
+      "affected_claims_or_gates": "Calibration",
+      "owner": "Rei lead / Research Owners",
+      "likelihood": "not quantified",
+      "status": "RESTRICTED_CLAIM_DISPOSITION",
+      "trigger": "Calibration",
+      "evidence": "docs/v0.5/01_prelock_resolution_memo.md",
+      "remaining_uncertainty": "Historical severity/evidence retained; broader claims unproved; future execution guards and owner permissions remain.",
+      "impact_class": "ACCEPT_WITH_RESTRICTED_CLAIMS"
+    },
+    {
+      "risk_id": "R06",
+      "severity": "critical",
+      "statement": "Future features, ID leakage or adaptive test access",
+      "disposition": "Leakage/adaptivetestuse invalidatescomparison; mandatoryfutureaudit/predictionfreeze beforelabels.",
+      "affected_claims_or_gates": "Data access/integrity",
+      "owner": "Rei lead / Research Owners",
+      "likelihood": "not quantified",
+      "status": "RESTRICTED_CLAIM_DISPOSITION",
+      "trigger": "Data access/integrity",
+      "evidence": "docs/v0.5/01_prelock_resolution_memo.md",
+      "remaining_uncertainty": "Historical severity/evidence retained; broader claims unproved; future execution guards and owner permissions remain.",
+      "impact_class": "PRIMARY_VALIDITY_PRECONDITION"
+    },
+    {
+      "risk_id": "R07",
+      "severity": "high",
+      "statement": "One-PC/local-linear representation may miss nonlinear/early health signal",
+      "disposition": "Representationmisspecification canhurtperformance withoutinvalidatingcomparison; nophysicalstateclaim.",
+      "affected_claims_or_gates": "Representation",
+      "owner": "Rei lead / Research Owners",
+      "likelihood": "not quantified",
+      "status": "RESTRICTED_CLAIM_DISPOSITION",
+      "trigger": "Representation",
+      "evidence": "docs/v0.5/01_prelock_resolution_memo.md",
+      "remaining_uncertainty": "Historical severity/evidence retained; broader claims unproved; future execution guards and owner permissions remain.",
+      "impact_class": "ACCEPT_WITH_RESTRICTED_CLAIMS"
+    },
+    {
+      "risk_id": "R08",
+      "severity": "high",
+      "statement": "Comparison confounds representation/structure with inference",
+      "disposition": "Comparecompleteprocedures, notisolateBayesianphilosophy; fixed/disclosedfeaturesearchdifferences.",
+      "affected_claims_or_gates": "Fairness/attribution",
+      "owner": "Rei lead / Research Owners",
+      "likelihood": "not quantified",
+      "status": "RESTRICTED_CLAIM_DISPOSITION",
+      "trigger": "Fairness/attribution",
+      "evidence": "docs/v0.5/01_prelock_resolution_memo.md",
+      "remaining_uncertainty": "Historical severity/evidence retained; broader claims unproved; future execution guards and owner permissions remain.",
+      "impact_class": "ACCEPT_WITH_RESTRICTED_CLAIMS"
+    },
+    {
+      "risk_id": "R09",
+      "severity": "high",
+      "statement": "Novelty and current full methods unresolved",
+      "disposition": "No noveltyclaim; primarysourceevidencereview beforepublication.",
+      "affected_claims_or_gates": "Publication",
+      "owner": "Rei lead / Research Owners",
+      "likelihood": "not quantified",
+      "status": "RESTRICTED_CLAIM_DISPOSITION",
+      "trigger": "Publication",
+      "evidence": "docs/v0.5/01_prelock_resolution_memo.md",
+      "remaining_uncertainty": "Historical severity/evidence retained; broader claims unproved; future execution guards and owner permissions remain.",
+      "impact_class": "PUBLICATION_REQUIREMENT"
+    },
+    {
+      "risk_id": "R10",
+      "severity": "medium",
+      "statement": "Redistribution license unclear",
+      "disposition": "Privatereviewonly; license/redistributionreview beforepublicrelease.",
+      "affected_claims_or_gates": "Data redistribution",
+      "owner": "Rei lead / Research Owners",
+      "likelihood": "not quantified",
+      "status": "RESTRICTED_CLAIM_DISPOSITION",
+      "trigger": "Data redistribution",
+      "evidence": "docs/v0.5/01_prelock_resolution_memo.md",
+      "remaining_uncertainty": "Historical severity/evidence retained; broader claims unproved; future execution guards and owner permissions remain.",
+      "impact_class": "PUBLICATION_REQUIREMENT"
+    },
+    {
+      "risk_id": "R11",
+      "severity": "high",
+      "statement": "Skew/influential misses challenge bootstrap",
+      "disposition": "Adversebootstrapstudyretained; omitpopulationinferencefromlockedprimarycontract.",
+      "affected_claims_or_gates": "Inference",
+      "owner": "Rei lead / Research Owners",
+      "likelihood": "not quantified",
+      "status": "RESTRICTED_CLAIM_DISPOSITION",
+      "trigger": "Inference",
+      "evidence": "docs/v0.5/01_prelock_resolution_memo.md",
+      "remaining_uncertainty": "Historical severity/evidence retained; broader claims unproved; future execution guards and owner permissions remain.",
+      "impact_class": "ACCEPT_WITH_RESTRICTED_CLAIMS"
+    },
+    {
+      "risk_id": "R12",
+      "severity": "medium",
+      "statement": "Runtime/Colab resources may be unreliable or variable",
+      "disposition": "Pinnedruntime/timeouts/sourcecustody; recordandstopcomputationalfailure.",
+      "affected_claims_or_gates": "Reproduction/compute",
+      "owner": "Rei lead / Research Owners",
+      "likelihood": "not quantified",
+      "status": "RESTRICTED_CLAIM_DISPOSITION",
+      "trigger": "Reproduction/compute",
+      "evidence": "docs/v0.5/01_prelock_resolution_memo.md",
+      "remaining_uncertainty": "Historical severity/evidence retained; broader claims unproved; future execution guards and owner permissions remain.",
+      "impact_class": "FIXED_NUMERICAL_FAILURE_POLICY"
+    },
+    {
+      "risk_id": "R13",
+      "severity": "high",
+      "statement": "Synthetic-to-real gap",
+      "disposition": "No real-fleet/maintenance/safetygeneralization.",
+      "affected_claims_or_gates": "External validity",
+      "owner": "Rei lead / Research Owners",
+      "likelihood": "not quantified",
+      "status": "RESTRICTED_CLAIM_DISPOSITION",
+      "trigger": "External validity",
+      "evidence": "docs/v0.5/01_prelock_resolution_memo.md",
+      "remaining_uncertainty": "Historical severity/evidence retained; broader claims unproved; future execution guards and owner permissions remain.",
+      "impact_class": "OUTSIDE_BENCHMARK_GENERALIZATION"
+    },
+    {
+      "risk_id": "R14",
+      "severity": "medium",
+      "statement": "Exploration/prior search may cherry-pick wins",
+      "disposition": "Developmentcalexposureadaptationsdisclosed/fixed; neverselectusingofficialoutcomes.",
+      "affected_claims_or_gates": "Selection integrity",
+      "owner": "Rei lead / Research Owners",
+      "likelihood": "not quantified",
+      "status": "RESTRICTED_CLAIM_DISPOSITION",
+      "trigger": "Selection integrity",
+      "evidence": "docs/v0.5/01_prelock_resolution_memo.md",
+      "remaining_uncertainty": "Historical severity/evidence retained; broader claims unproved; future execution guards and owner permissions remain.",
+      "impact_class": "PRIMARY_VALIDITY_PRECONDITION"
+    },
+    {
+      "risk_id": "R15",
+      "severity": "medium",
+      "statement": "Conditional CI ignores training preprocessing/pipeline variability",
+      "disposition": "Eightperturbationssensitivityonly; no unconditionalvarianceclaim.",
+      "affected_claims_or_gates": "Uncertainty interpretation",
+      "owner": "Rei lead / Research Owners",
+      "likelihood": "not quantified",
+      "status": "RESTRICTED_CLAIM_DISPOSITION",
+      "trigger": "Uncertainty interpretation",
+      "evidence": "docs/v0.5/01_prelock_resolution_memo.md",
+      "remaining_uncertainty": "Historical severity/evidence retained; broader claims unproved; future execution guards and owner permissions remain.",
+      "impact_class": "ACCEPT_WITH_RESTRICTED_CLAIMS"
+    },
+    {
+      "risk_id": "R16",
+      "severity": "high",
+      "statement": "Prior predictive tails lack domain justification",
+      "disposition": "Properfixedworkingpriors benchmarkpredictiononly, notdomaincertification.",
+      "affected_claims_or_gates": "Prior plausibility",
+      "owner": "Rei lead / Research Owners",
+      "likelihood": "not quantified",
+      "status": "RESTRICTED_CLAIM_DISPOSITION",
+      "trigger": "Prior plausibility",
+      "evidence": "docs/v0.5/01_prelock_resolution_memo.md",
+      "remaining_uncertainty": "Historical severity/evidence retained; broader claims unproved; future execution guards and owner permissions remain.",
+      "impact_class": "ACCEPT_WITH_RESTRICTED_CLAIMS"
+    },
+    {
+      "risk_id": "R17",
+      "severity": "critical",
+      "statement": "Final owner approval absent",
+      "disposition": "Finalownerlockapprovalpending; notscientificreason towithholdqualifiedownerlockreview.",
+      "affected_claims_or_gates": "Governance",
+      "owner": "Rei lead / Research Owners",
+      "likelihood": "not quantified",
+      "status": "OWNER_APPROVAL_PENDING",
+      "trigger": "Governance",
+      "evidence": "docs/v0.5/01_prelock_resolution_memo.md",
+      "remaining_uncertainty": "Historical severity/evidence retained; broader claims unproved; future execution guards and owner permissions remain.",
+      "impact_class": "OWNER_AUTHORIZATION_GATE"
+    }
+  ],
+  "unresolved": [
+    "Owner final protocol/sensor/label authorization",
+    "Futureendpointintegrity/precision",
+    "Physicalnuisancecoupling/highrhorobustness",
+    "Officialcutoffexchangeability",
+    "Smallcalibration/tuning and exposure",
+    "Wholepipelinevariance",
+    "Publicationnovelty/data-rights/cleanreplay"
+  ],
+  "requested_decision": "READY FOR OWNER LOCK REVIEW: accept/reject/amend proposed restricted contract; no further pilot requested.",
+  "return_to_parent": "COMPLETE",
+  "return_interpretation": "Evidence handoffcomplete, PROTOCOL_DRAFTED; final authorization remains owners.",
+  "worker_contribution": "Existing GPT6LUNAMAX worker wrote pure-array scoreutility/tests; SOL directly derived and independently checked all materialmath.",
+  "deviations": [
+    "Exactposterior reparameterization and doubled retained/warmup budgets frozenbeforeonefit; cause notuniquely attributable.",
+    "Populationbootstrap omitted onlyin proposedcontract, historicaladverseresults retained.",
+    "No scientificretry orpostlabelrepair."
+  ],
+  "report_only_clarification": "None"
+}

@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.5",
+  "schema_version": "0.4",
   "title": "A Rigorous Evaluation of Bayesian Predictive Uncertainty for Turbofan Remaining Useful Life Estimation",
   "mode": "dataset-benchmark",
   "status": "PROTOCOL_DRAFTED",
@@ -11,18 +11,18 @@
   "confirmatory_or_exploratory": "Current work exploratory development only; one proposed primary comparison requires future final owner authorization",
   "hypotheses": [],
   "primary_claims": [
-    "Official comparison unresolved/unexecuted; restricted descriptive finite contract recommended for owner review.",
-    "One equivalent high-rho inquiry and direct numerical implementation checks PASS; old stressFAIL retained."
+    "Bayesian versus calibrated CQR finite-benchmark score contrast unresolved; no official prediction or score calculated.",
+    "Development numerical precision passes for all25 original sensor cases; one of33 synthetic/training MCMC fits fails high-rho convergence, retained."
   ],
   "primary_outcomes": [
     "Mean90% interval score in cycles, uncapped RUL, one endpoint per engine"
   ],
   "secondary_outcomes": [
-    "Exact finite empirical coverage fraction",
+    "PICP/Wilson95 interval",
     "width",
-    "median MAE/RMSE/bias",
+    "MAE/RMSE/bias for median forecasts",
     "lower/upper miss penalties",
-    "fixed Bayesian+posthoc calibration descriptive ablation"
+    "prior/dependence/stage diagnostics"
   ],
   "baselines": [
     "Gaussian log-RUL reference",
@@ -34,13 +34,13 @@
   "test_access_policy": "No official test sensors or labels in development. Final protocol and test/confirmatory access require explicit Research Owner authorization; prediction hashes before future label scoring.",
   "model_selection_policy": "Fixed Bayesian candidate; CQR12 fixed configurations selected by uncalibrated mean interval score on13 tuning engines; refit56; calibration25 reserved.",
   "hyperparameter_policy": "anchored_v04 frozen before new science after disclosed v0.3 calibration exposure; sensitivity scale1.5 retains correlation priors; no calibration-score prior selection. Twelve fixed CQR candidates selected only using eligible tuning engines.",
-  "analysis_plan": "Proposed owner-lock contract docs/v0.5/02_proposed_locked_analysis_contract.md: complete finite mean90%IS difference; no population inference; all failures retained.",
-  "uncertainty_plan": "Joint posterior quantile-to-score MC influence; guards before labels; score/kink qualification after labels; no engine-sampling CI or total-pipeline variance.",
+  "analysis_plan": "docs/v0.4/06_statistical_inference_pipeline_uncertainty_plan.md: exact complete finite-benchmark mean90%IS contrast, no primary population p-value; missing/nonfinite paired score makes scalar unavailable. Future secondary20000 paired bootstrap-t is conditional and suppressed by any invalid pivot/zero SE, with no replacement test.",
+  "uncertainty_plan": "Finite-benchmark effect for stored predictions has no engine-sampling SE; numerical prediction error is separate. Engine-pair inference conditional on fitted pipeline is secondary and stress-limited. Eight dependent full-stage perturbations are sensitivity, not total-pipeline variance.",
   "multiple_comparisons_plan": "One primary comparison; secondary findings exploratory; no post-hoc winner substitution",
   "ablation_plan": "rho0, Bayesian calibration, restricted representation sensitivity; exploratory",
-  "robustness_plan": "Disclose unchanged v0.4stressFAIL/OC/pipeline sensitivity and new one-inquiryPASS; no universal robustness/physical identification.",
-  "stopping_rule": "Bounded v0.5 mandate complete; one inquiry only. No further science without separately reviewed owner authorization.",
-  "compute_budget": "v0.5one MCMC cap600sec/1CPUhour/128MiB; observed fit90.125CPU seconds, demonstration9.453125; localCPU,noColab/spending.",
+  "robustness_plan": "Sixteen fixed-truth recoveries across regular/high-rho/weak/confounded regimes; three independent principal fits and three sensor oracles; broader-prior/rho0/response-contamination sensitivities; eight complete paired pipeline perturbations; eight-law bootstrap OC. Not SBC.",
+  "stopping_rule": "Completed prospective33-MCMC plan, two documented infrastructure campaigns, no scientific-failure reruns or more post-result draws. Any new science needs a separately reviewed prospective plan.",
+  "compute_budget": "v0.4:6aggregate process CPU hours/2GiB/10minutes perfit/max2concurrent processes; registered scientific+repair CPU2493.968750sec=.692769hours; measured payload~127.707MiB; noColab or extra spending.",
   "ethics_and_risk": "Synthetic research only, no real-engine safety/maintenance deployment; raw redistribution terms review before release; risks docs/08",
   "preregistration": {
     "required": true,
@@ -71,34 +71,18 @@
       "change": "Owner-directed finite-benchmark primary; anchored working-prior adaptation after v0.3 calibration exposure; two infrastructure-only campaigns and analysis-only corrections recorded in report09; no outcome-selected science rerun.",
       "held_out_labels_visible": false,
       "development_calibration_outcomes_visible_after_freeze": true
-    },
-    {
-      "date": "2026-10-08",
-      "phase": "owner-authorized bounded pre-lock resolution",
-      "disclosed": true,
-      "held_out_labels_visible": false,
-      "change": "Reassess risk relevance for finite claim; omit populationbootstrap from proposedlock; one exact-posterior innovation inquiry, oldFAIL preserved; fixed score numerical policy. RQ unchanged."
-    },
-    {
-      "date": "2026-10-08",
-      "phase": "owner-authorized bounded pre-lock resolution",
-      "disclosed": true,
-      "held_out_labels_visible": false,
-      "change": "Reassess risk relevance for finite claim; omit populationbootstrap from proposedlock; one exact-posterior innovation inquiry, oldFAIL preserved; fixed score numerical policy. RQ unchanged."
     }
   ],
-  "artifact_version": "0.5",
+  "artifact_version": "0.4",
   "owner": "Raihan \u00d7 Rei",
   "owner_stage_a_approved": true,
   "owner_stage_b_approved": false,
   "new_engine_conditioning": "Full separate sensor-only theta update and weighted predictive-mixture CDF; three joint sensor oracles and known-target validation; all25/75 development numerical guards PASS. Future endpoints require prospective numerical/integrity checks.",
-  "updated_at": "2026-10-08T16:31:26.535785+00:00",
+  "updated_at": "2026-10-08T15:22:48.793613+00:00",
   "practical_threshold_cycles": null,
-  "practical_decision_rule": "Descriptive comparison only; no binary competitive, practical superiority, equivalence or noninferiority threshold.",
-  "pilot_disposition": "READY FOR OWNER LOCK REVIEW",
+  "practical_decision_rule": "Report effect sizes/intervals/decomposition; no practical superiority/equivalence claim without owner-approved utility mapping",
+  "pilot_disposition": "B. REVISE AGAIN",
   "pilot_precision_acceptance": "PASS in tested development cohort: max approximate upperMCSE0.220513<0.5; original v0.3 .728972FAIL retained.",
-  "secondary_population_hypothesis": null,
-  "primary_estimand": "Exact mean paired Bayesian-minus-calibratedCQR90% interval score in cycles over all planned finite official FD001 endpoints and frozen stored predictions.",
-  "competitive_definition": "Descriptive score levels/difference/ratio/per-engine decomposition; no binary equivalence/noninferiority/practical margin, primary populationp-value or general superiority.",
-  "proposed_analysis_contract": "docs/v0.5/02_proposed_locked_analysis_contract.md"
+  "secondary_population_hypothesis": "H0 hypothetical engine-pair population mean>=0 versus<0, fixed-pipeline secondary diagnostic only; not primary finite-benchmark test or unconditional claim.",
+  "primary_estimand": "Exact mean paired Bayesian-minus-calibratedCQR90% interval score in cycles over all planned finite official FD001 endpoints and frozen stored predictions."
 }

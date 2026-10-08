@@ -16,8 +16,3 @@ Owner StageA approved; final StageB absent. Development completed; REVISE AGAIN 
 ## Targeted remediation return v0.4 — 2026-10-08
 
 Owner-directed finite-benchmark estimand and unchanged question/90%IS/Bayesian-versusCQR. Frozen33-fit plan complete; all25 predictive precision PASS, one high-rho convergence FAIL; B. REVISE AGAIN. Two infrastructure-only campaigns, all failures retained. No official sensors/labels/predictions/confirmatory work or protocol lock. Direct SOL mathematics and controlled LUNA workers documented in docs/v0.4; see report11 for next prospective owner decision.
-
-
-## v0.5 bounded pre-lock return
-
-READY FOR OWNER LOCK REVIEW for restricted descriptive finite-benchmark contract. One inquiry PASS, original FAIL retained; population inference omitted; numerical failure policy fixed. No final lock, test access, fallback or confirmation authorized. Full disposition docs/v0.5/01_prelock_resolution_memo.md.

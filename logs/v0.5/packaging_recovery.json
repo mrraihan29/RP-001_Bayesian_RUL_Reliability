@@ -1,0 +1,8 @@
+{
+  "kind": "deterministic-report-and-metadata-recovery",
+  "original_script_sha256": "e3747ef8fa153e3de85c8c0422074282261d9dda811c242f195fa90ed972b5d6",
+  "failure": "Eager fallback evaluated absent scope key while constructing append rows; zero registry append occurred",
+  "changes": "Use optional scope lookup; reuse byte-preserved original alias archives after partial current-pointer advance",
+  "new_sampling_or_data_access": false,
+  "scientific_inputs_or_results_changed": false
+}

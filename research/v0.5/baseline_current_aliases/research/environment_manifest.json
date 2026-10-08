@@ -1,6 +1,6 @@
 {
-  "schema_version": "0.5",
-  "git_commit": "60e9208fdd216abf51677f80514ac77e7e4fe9e6",
+  "schema_version": "0.4",
+  "git_commit": "87a0083314daafb79f7ae3c67e23abd5979bc82a",
   "git_dirty": false,
   "runtime": "IsolatedCPython3.12.14;float64;nutpieNUTS;Windows11",
   "dependency_lock": "configs/requirements-pilot.lock",
@@ -15,5 +15,5 @@
   "pilot_environment_validated": true,
   "final_research_authorized": false,
   "full_metadata": "logs/pilot_environment.json",
-  "notes": "Per-run exact source commits authoritative; final delivered snapshot in v05receipt. Local64package environment unchanged."
+  "notes": "Executed scientific source snapshot for analysis; per-run commits/dirty flags remain authoritative. Final evidence commit is in delivery receipt. Fingerprint certifies bytes/configuration, not research readiness."
 }

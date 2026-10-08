@@ -1,0 +1,42 @@
+{
+  "research/protocol.json": {
+    "archive": "research/v0.5/baseline_current_aliases/research/protocol.json",
+    "sha256": "faf988085f1b9e96b403a35c37b37dd61e333471a09393ba962622e8cbf3d1b4"
+  },
+  "research/state_manifest.json": {
+    "archive": "research/v0.5/baseline_current_aliases/research/state_manifest.json",
+    "sha256": "25b90bc52d9588094fe512ef052f16cfb4748375fd973a57fdfd2d068078be7c"
+  },
+  "research/gate_results.json": {
+    "archive": "research/v0.5/baseline_current_aliases/research/gate_results.json",
+    "sha256": "13608b9afc8ba3ec8999dfdc0bda9a0acad2be7b15c0eaaf96860a23ebde23c2"
+  },
+  "research/environment_manifest.json": {
+    "archive": "research/v0.5/baseline_current_aliases/research/environment_manifest.json",
+    "sha256": "523af5b908f9d8884158962a08f6c3c377f4655ef97607ff74f1132caec59d00"
+  },
+  "research/experiment_registry.jsonl": {
+    "archive": "research/v0.5/baseline_current_aliases/research/experiment_registry.jsonl",
+    "sha256": "4b434af8b1c22596213cb58c5cbbb626b14c1b1d6d7bc27a1944800e56cb212a"
+  },
+  "research/decision_log.md": {
+    "archive": "research/v0.5/baseline_current_aliases/research/decision_log.md",
+    "sha256": "9d4202482b158b2d59223bb476402505f3e9bbaed72334d03fb8c2d2a6721520"
+  },
+  "research/claim_ledger.csv": {
+    "archive": "research/v0.5/baseline_current_aliases/research/claim_ledger.csv",
+    "sha256": "4337dc3e2b2fa9a2e91cdd7bf94853b5838abe5a82c19e887f2031c632f57e48"
+  },
+  "research/artifact_map.csv": {
+    "archive": "research/v0.5/baseline_current_aliases/research/artifact_map.csv",
+    "sha256": "fd230ca5717d45ce1ac01467b151e2ef676eabfc9a3aae86d4072903113798c1"
+  },
+  "README.md": {
+    "archive": "research/v0.5/baseline_current_aliases/README.md",
+    "sha256": "343e6010a62e2219b3e9c6054b874fe679c233f6950919114b82ff2c23af9d35"
+  },
+  "GITHUB_REVIEW.md": {
+    "archive": "research/v0.5/baseline_current_aliases/GITHUB_REVIEW.md",
+    "sha256": "ccbee492d80fc3885d31a563c8b3cb8c081f99c69ce01d7eb39631980e1f9d89"
+  }
+}

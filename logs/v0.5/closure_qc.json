@@ -1,0 +1,2177 @@
+{
+  "status": "PASS",
+  "verified_old_manifest_files": 537,
+  "old_custody": [
+    {
+      "path": ".gitattributes",
+      "mode": "current"
+    },
+    {
+      "path": ".gitignore",
+      "mode": "current"
+    },
+    {
+      "path": "README.md",
+      "mode": "byte-preserved-v05archive"
+    },
+    {
+      "path": "configs/.gitkeep",
+      "mode": "current"
+    },
+    {
+      "path": "configs/development_authorization.json",
+      "mode": "current"
+    },
+    {
+      "path": "configs/pilot_plan_v0.3.json",
+      "mode": "current"
+    },
+    {
+      "path": "configs/pilot_plan_v0.3_initial.json",
+      "mode": "current"
+    },
+    {
+      "path": "configs/pilot_selection_freeze.json",
+      "mode": "current"
+    },
+    {
+      "path": "configs/proposed_protocol_v0.2.json",
+      "mode": "current"
+    },
+    {
+      "path": "configs/proposed_protocol_v0.3.json",
+      "mode": "current"
+    },
+    {
+      "path": "configs/proposed_protocol_v0.4.json",
+      "mode": "current"
+    },
+    {
+      "path": "configs/proposed_split_manifest.json",
+      "mode": "current"
+    },
+    {
+      "path": "configs/protocol_lock_record.json",
+      "mode": "current"
+    },
+    {
+      "path": "configs/protocol_lock_record_v0.2.json",
+      "mode": "current"
+    },
+    {
+      "path": "configs/requirements-pilot.lock",
+      "mode": "current"
+    },
+    {
+      "path": "configs/v0.4/remediation_plan.json",
+      "mode": "current"
+    },
+    {
+      "path": "data/interim/.gitkeep",
+      "mode": "current"
+    },
+    {
+      "path": "data/processed/.gitkeep",
+      "mode": "current"
+    },
+    {
+      "path": "data/raw/.gitkeep",
+      "mode": "current"
+    },
+    {
+      "path": "data/raw/CMAPSSData.zip",
+      "mode": "current"
+    },
+    {
+      "path": "data/raw/NASA_CMAPSS_original.zip",
+      "mode": "current"
+    },
+    {
+      "path": "data/raw/provenance.json",
+      "mode": "current"
+    },
+    {
+      "path": "data/raw/readme.txt",
+      "mode": "current"
+    },
+    {
+      "path": "data/raw/schema_contract.json",
+      "mode": "current"
+    },
+    {
+      "path": "data/raw/train_FD001.txt",
+      "mode": "current"
+    },
+    {
+      "path": "data/raw/training_audit.json",
+      "mode": "current"
+    },
+    {
+      "path": "docs/00_research_lead_review.md",
+      "mode": "current"
+    },
+    {
+      "path": "docs/01_literature_gap_novelty_review.md",
+      "mode": "current"
+    },
+    {
+      "path": "docs/02_dataset_feasibility_sample_precision.md",
+      "mode": "current"
+    },
+    {
+      "path": "docs/03_candidate_mathematical_model.md",
+      "mode": "current"
+    },
+    {
+      "path": "docs/04_statistical_analysis_plan.md",
+      "mode": "current"
+    },
+    {
+      "path": "docs/05_fair_comparator_design.md",
+      "mode": "current"
+    },
+    {
+      "path": "docs/06_proposed_protocol_lock.md",
+      "mode": "current"
+    },
+    {
+      "path": "docs/07_compute_feasibility_estimate.md",
+      "mode": "current"
+    },
+    {
+      "path": "docs/08_risks_assumptions_decisions.md",
+      "mode": "current"
+    },
+    {
+      "path": "docs/09_methodology_audit.md",
+      "mode": "current"
+    },
+    {
+      "path": "docs/g0_handoff.json",
+      "mode": "current"
+    },
+    {
+      "path": "docs/proposal_v0.1.md",
+      "mode": "current"
+    },
+    {
+      "path": "docs/research_lead_handoff.json",
+      "mode": "current"
+    },
+    {
+      "path": "docs/v0.3/01_updated_research_protocol.md",
+      "mode": "current"
+    },
+    {
+      "path": "docs/v0.3/02_mathematical_verification_report.md",
+      "mode": "current"
+    },
+    {
+      "path": "docs/v0.3/03_synthetic_recovery_diagnostic_pilot_report.md",
+      "mode": "current"
+    },
+    {
+      "path": "docs/v0.3/04_dataset_split_eligibility_cutoff_audit.md",
+      "mode": "current"
+    },
+    {
+      "path": "docs/v0.3/05_calibration_feasibility_precision_report.md",
+      "mode": "current"
+    },
+    {
+      "path": "docs/v0.3/06_comparative_evaluation_design.md",
+      "mode": "current"
+    },
+    {
+      "path": "docs/v0.3/07_compute_environment_report.md",
+      "mode": "current"
+    },
+    {
+      "path": "docs/v0.3/08_risks_assumptions_decisions.md",
+      "mode": "current"
+    },
+    {
+      "path": "docs/v0.3/09_owner_return_recommendation.md",
+      "mode": "current"
+    },
+    {
+      "path": "docs/v0.3/README.md",
+      "mode": "current"
+    },
+    {
+      "path": "docs/v0.3/comparator_implementation_contract.md",
+      "mode": "current"
+    },
+    {
+      "path": "docs/v0.3/delivery_provenance.json",
+      "mode": "current"
+    },
+    {
+      "path": "docs/v0.3/owner_decision.md",
+      "mode": "current"
+    },
+    {
+      "path": "docs/v0.3/research_lead_handoff.json",
+      "mode": "current"
+    },
+    {
+      "path": "docs/v0.4/01_updated_research_protocol.md",
+      "mode": "current"
+    },
+    {
+      "path": "docs/v0.4/02_numerical_precision_remediation.md",
+      "mode": "current"
+    },
+    {
+      "path": "docs/v0.4/03_bayesian_prior_plausibility.md",
+      "mode": "current"
+    },
+    {
+      "path": "docs/v0.4/04_identifiability_synthetic_validation.md",
+      "mode": "current"
+    },
+    {
+      "path": "docs/v0.4/05_estimand_cutoff_transport.md",
+      "mode": "current"
+    },
+    {
+      "path": "docs/v0.4/06_statistical_inference_pipeline_uncertainty_plan.md",
+      "mode": "current"
+    },
+    {
+      "path": "docs/v0.4/07_comparator_fairness_audit.md",
+      "mode": "current"
+    },
+    {
+      "path": "docs/v0.4/08_independent_mathematical_reverification.md",
+      "mode": "current"
+    },
+    {
+      "path": "docs/v0.4/09_reproducibility_environment_compute.md",
+      "mode": "current"
+    },
+    {
+      "path": "docs/v0.4/10_risks_assumptions_decisions.md",
+      "mode": "current"
+    },
+    {
+      "path": "docs/v0.4/11_prelock_recommendation.md",
+      "mode": "current"
+    },
+    {
+      "path": "docs/v0.4/README.md",
+      "mode": "current"
+    },
+    {
+      "path": "docs/v0.4/adversarial_final_review.md",
+      "mode": "current"
+    },
+    {
+      "path": "docs/v0.4/adversarial_interim_review.md",
+      "mode": "current"
+    },
+    {
+      "path": "docs/v0.4/owner_directive.md",
+      "mode": "current"
+    },
+    {
+      "path": "docs/v0.4/prospective_remediation_plan.md",
+      "mode": "current"
+    },
+    {
+      "path": "docs/v0.4/research_lead_handoff.json",
+      "mode": "current"
+    },
+    {
+      "path": "docs/v0.4/worker_inference_contract.md",
+      "mode": "current"
+    },
+    {
+      "path": "docs/v0.4/worker_pipeline_contract.md",
+      "mode": "current"
+    },
+    {
+      "path": "docs/v0.4/worker_precision_contract.md",
+      "mode": "current"
+    },
+    {
+      "path": "experiments/.gitkeep",
+      "mode": "current"
+    },
+    {
+      "path": "experiments/REPRODUCE_DEVELOPMENT.md",
+      "mode": "current"
+    },
+    {
+      "path": "experiments/development_data_audit.json",
+      "mode": "current"
+    },
+    {
+      "path": "experiments/development_data_audit_handoff.json",
+      "mode": "current"
+    },
+    {
+      "path": "experiments/v0.4/analysis/pipeline_variation.json",
+      "mode": "current"
+    },
+    {
+      "path": "experiments/v0.4/analysis/posterior_predictive.json",
+      "mode": "current"
+    },
+    {
+      "path": "experiments/v0.4/analysis/precision_summary.json",
+      "mode": "current"
+    },
+    {
+      "path": "experiments/v0.4/analysis/principal_calibration_inputs.npz",
+      "mode": "current"
+    },
+    {
+      "path": "experiments/v0.4/analysis/principal_posthoc_calibration.json",
+      "mode": "current"
+    },
+    {
+      "path": "experiments/v0.4/analysis/principal_precision_all25.json",
+      "mode": "current"
+    },
+    {
+      "path": "experiments/v0.4/analysis/principal_replication_precision.json",
+      "mode": "current"
+    },
+    {
+      "path": "experiments/v0.4/analysis/prior_predictive.json",
+      "mode": "current"
+    },
+    {
+      "path": "experiments/v0.4/analysis/sensitivity_prediction_maps.json",
+      "mode": "current"
+    },
+    {
+      "path": "experiments/v0.4/analysis/summary.json",
+      "mode": "current"
+    },
+    {
+      "path": "experiments/v0.4/analysis/v03_retrospective_precision.json",
+      "mode": "current"
+    },
+    {
+      "path": "experiments/v0.4/analysis/v04_broader_checks.json",
+      "mode": "current"
+    },
+    {
+      "path": "experiments/v0.4/analysis/v04_contamination_checks.json",
+      "mode": "current"
+    },
+    {
+      "path": "experiments/v0.4/analysis/v04_main_r1_checks.json",
+      "mode": "current"
+    },
+    {
+      "path": "experiments/v0.4/analysis/v04_main_r2_checks.json",
+      "mode": "current"
+    },
+    {
+      "path": "experiments/v0.4/analysis/v04_main_r3_checks.json",
+      "mode": "current"
+    },
+    {
+      "path": "experiments/v0.4/analysis/v04_oracle_e11_checks.json",
+      "mode": "current"
+    },
+    {
+      "path": "experiments/v0.4/analysis/v04_oracle_e61_checks.json",
+      "mode": "current"
+    },
+    {
+      "path": "experiments/v0.4/analysis/v04_oracle_e86_checks.json",
+      "mode": "current"
+    },
+    {
+      "path": "experiments/v0.4/analysis/v04_pipeline_1_alternate_checks.json",
+      "mode": "current"
+    },
+    {
+      "path": "experiments/v0.4/analysis/v04_pipeline_1_canonical_infra1_checks.json",
+      "mode": "current"
+    },
+    {
+      "path": "experiments/v0.4/analysis/v04_pipeline_2_alternate_checks.json",
+      "mode": "current"
+    },
+    {
+      "path": "experiments/v0.4/analysis/v04_pipeline_2_canonical_infra1_checks.json",
+      "mode": "current"
+    },
+    {
+      "path": "experiments/v0.4/analysis/v04_pipeline_3_alternate_checks.json",
+      "mode": "current"
+    },
+    {
+      "path": "experiments/v0.4/analysis/v04_pipeline_3_canonical_infra1_checks.json",
+      "mode": "current"
+    },
+    {
+      "path": "experiments/v0.4/analysis/v04_pipeline_4_alternate_checks.json",
+      "mode": "current"
+    },
+    {
+      "path": "experiments/v0.4/analysis/v04_pipeline_4_canonical_infra1_checks.json",
+      "mode": "current"
+    },
+    {
+      "path": "experiments/v0.4/analysis/v04_rho_zero_checks.json",
+      "mode": "current"
+    },
+    {
+      "path": "experiments/v0.4/analysis/v04_syn_confounded_1_checks.json",
+      "mode": "current"
+    },
+    {
+      "path": "experiments/v0.4/analysis/v04_syn_confounded_2_checks.json",
+      "mode": "current"
+    },
+    {
+      "path": "experiments/v0.4/analysis/v04_syn_confounded_3_checks.json",
+      "mode": "current"
+    },
+    {
+      "path": "experiments/v0.4/analysis/v04_syn_confounded_4_checks.json",
+      "mode": "current"
+    },
+    {
+      "path": "experiments/v0.4/analysis/v04_syn_high_rho_1_checks.json",
+      "mode": "current"
+    },
+    {
+      "path": "experiments/v0.4/analysis/v04_syn_high_rho_2_checks.json",
+      "mode": "current"
+    },
+    {
+      "path": "experiments/v0.4/analysis/v04_syn_high_rho_3_checks.json",
+      "mode": "current"
+    },
+    {
+      "path": "experiments/v0.4/analysis/v04_syn_high_rho_4_checks.json",
+      "mode": "current"
+    },
+    {
+      "path": "experiments/v0.4/analysis/v04_syn_regular_1_checks.json",
+      "mode": "current"
+    },
+    {
+      "path": "experiments/v0.4/analysis/v04_syn_regular_2_checks.json",
+      "mode": "current"
+    },
+    {
+      "path": "experiments/v0.4/analysis/v04_syn_regular_3_checks.json",
+      "mode": "current"
+    },
+    {
+      "path": "experiments/v0.4/analysis/v04_syn_regular_4_checks.json",
+      "mode": "current"
+    },
+    {
+      "path": "experiments/v0.4/analysis/v04_syn_weak_1_checks.json",
+      "mode": "current"
+    },
+    {
+      "path": "experiments/v0.4/analysis/v04_syn_weak_2_checks.json",
+      "mode": "current"
+    },
+    {
+      "path": "experiments/v0.4/analysis/v04_syn_weak_3_checks.json",
+      "mode": "current"
+    },
+    {
+      "path": "experiments/v0.4/analysis/v04_syn_weak_4_checks.json",
+      "mode": "current"
+    },
+    {
+      "path": "experiments/v0.4/fits/v04_broader.nc",
+      "mode": "current"
+    },
+    {
+      "path": "experiments/v0.4/fits/v04_broader_data.npz",
+      "mode": "current"
+    },
+    {
+      "path": "experiments/v0.4/fits/v04_broader_pre.npz",
+      "mode": "current"
+    },
+    {
+      "path": "experiments/v0.4/fits/v04_broader_summary.csv",
+      "mode": "current"
+    },
+    {
+      "path": "experiments/v0.4/fits/v04_contamination.nc",
+      "mode": "current"
+    },
+    {
+      "path": "experiments/v0.4/fits/v04_contamination_data.npz",
+      "mode": "current"
+    },
+    {
+      "path": "experiments/v0.4/fits/v04_contamination_pre.npz",
+      "mode": "current"
+    },
+    {
+      "path": "experiments/v0.4/fits/v04_contamination_summary.csv",
+      "mode": "current"
+    },
+    {
+      "path": "experiments/v0.4/fits/v04_main_r1.nc",
+      "mode": "current"
+    },
+    {
+      "path": "experiments/v0.4/fits/v04_main_r1_data.npz",
+      "mode": "current"
+    },
+    {
+      "path": "experiments/v0.4/fits/v04_main_r1_pre.npz",
+      "mode": "current"
+    },
+    {
+      "path": "experiments/v0.4/fits/v04_main_r1_summary.csv",
+      "mode": "current"
+    },
+    {
+      "path": "experiments/v0.4/fits/v04_main_r2.nc",
+      "mode": "current"
+    },
+    {
+      "path": "experiments/v0.4/fits/v04_main_r2_data.npz",
+      "mode": "current"
+    },
+    {
+      "path": "experiments/v0.4/fits/v04_main_r2_pre.npz",
+      "mode": "current"
+    },
+    {
+      "path": "experiments/v0.4/fits/v04_main_r2_summary.csv",
+      "mode": "current"
+    },
+    {
+      "path": "experiments/v0.4/fits/v04_main_r3.nc",
+      "mode": "current"
+    },
+    {
+      "path": "experiments/v0.4/fits/v04_main_r3_data.npz",
+      "mode": "current"
+    },
+    {
+      "path": "experiments/v0.4/fits/v04_main_r3_pre.npz",
+      "mode": "current"
+    },
+    {
+      "path": "experiments/v0.4/fits/v04_main_r3_summary.csv",
+      "mode": "current"
+    },
+    {
+      "path": "experiments/v0.4/fits/v04_oracle_e11.nc",
+      "mode": "current"
+    },
+    {
+      "path": "experiments/v0.4/fits/v04_oracle_e11_data.npz",
+      "mode": "current"
+    },
+    {
+      "path": "experiments/v0.4/fits/v04_oracle_e11_extra.npz",
+      "mode": "current"
+    },
+    {
+      "path": "experiments/v0.4/fits/v04_oracle_e11_pre.npz",
+      "mode": "current"
+    },
+    {
+      "path": "experiments/v0.4/fits/v04_oracle_e11_summary.csv",
+      "mode": "current"
+    },
+    {
+      "path": "experiments/v0.4/fits/v04_oracle_e61.nc",
+      "mode": "current"
+    },
+    {
+      "path": "experiments/v0.4/fits/v04_oracle_e61_data.npz",
+      "mode": "current"
+    },
+    {
+      "path": "experiments/v0.4/fits/v04_oracle_e61_extra.npz",
+      "mode": "current"
+    },
+    {
+      "path": "experiments/v0.4/fits/v04_oracle_e61_pre.npz",
+      "mode": "current"
+    },
+    {
+      "path": "experiments/v0.4/fits/v04_oracle_e61_summary.csv",
+      "mode": "current"
+    },
+    {
+      "path": "experiments/v0.4/fits/v04_oracle_e86.nc",
+      "mode": "current"
+    },
+    {
+      "path": "experiments/v0.4/fits/v04_oracle_e86_data.npz",
+      "mode": "current"
+    },
+    {
+      "path": "experiments/v0.4/fits/v04_oracle_e86_extra.npz",
+      "mode": "current"
+    },
+    {
+      "path": "experiments/v0.4/fits/v04_oracle_e86_pre.npz",
+      "mode": "current"
+    },
+    {
+      "path": "experiments/v0.4/fits/v04_oracle_e86_summary.csv",
+      "mode": "current"
+    },
+    {
+      "path": "experiments/v0.4/fits/v04_pipeline_1_alternate.nc",
+      "mode": "current"
+    },
+    {
+      "path": "experiments/v0.4/fits/v04_pipeline_1_alternate_anchors.npz",
+      "mode": "current"
+    },
+    {
+      "path": "experiments/v0.4/fits/v04_pipeline_1_alternate_calibration.npz",
+      "mode": "current"
+    },
+    {
+      "path": "experiments/v0.4/fits/v04_pipeline_1_alternate_cqr_anchors.npz",
+      "mode": "current"
+    },
+    {
+      "path": "experiments/v0.4/fits/v04_pipeline_1_alternate_data.npz",
+      "mode": "current"
+    },
+    {
+      "path": "experiments/v0.4/fits/v04_pipeline_1_alternate_pre.npz",
+      "mode": "current"
+    },
+    {
+      "path": "experiments/v0.4/fits/v04_pipeline_1_alternate_summary.csv",
+      "mode": "current"
+    },
+    {
+      "path": "experiments/v0.4/fits/v04_pipeline_1_canonical_infra1.nc",
+      "mode": "current"
+    },
+    {
+      "path": "experiments/v0.4/fits/v04_pipeline_1_canonical_infra1_anchors.npz",
+      "mode": "current"
+    },
+    {
+      "path": "experiments/v0.4/fits/v04_pipeline_1_canonical_infra1_calibration.npz",
+      "mode": "current"
+    },
+    {
+      "path": "experiments/v0.4/fits/v04_pipeline_1_canonical_infra1_cqr_anchors.npz",
+      "mode": "current"
+    },
+    {
+      "path": "experiments/v0.4/fits/v04_pipeline_1_canonical_infra1_data.npz",
+      "mode": "current"
+    },
+    {
+      "path": "experiments/v0.4/fits/v04_pipeline_1_canonical_infra1_pre.npz",
+      "mode": "current"
+    },
+    {
+      "path": "experiments/v0.4/fits/v04_pipeline_1_canonical_infra1_summary.csv",
+      "mode": "current"
+    },
+    {
+      "path": "experiments/v0.4/fits/v04_pipeline_2_alternate.nc",
+      "mode": "current"
+    },
+    {
+      "path": "experiments/v0.4/fits/v04_pipeline_2_alternate_anchors.npz",
+      "mode": "current"
+    },
+    {
+      "path": "experiments/v0.4/fits/v04_pipeline_2_alternate_calibration.npz",
+      "mode": "current"
+    },
+    {
+      "path": "experiments/v0.4/fits/v04_pipeline_2_alternate_cqr_anchors.npz",
+      "mode": "current"
+    },
+    {
+      "path": "experiments/v0.4/fits/v04_pipeline_2_alternate_data.npz",
+      "mode": "current"
+    },
+    {
+      "path": "experiments/v0.4/fits/v04_pipeline_2_alternate_pre.npz",
+      "mode": "current"
+    },
+    {
+      "path": "experiments/v0.4/fits/v04_pipeline_2_alternate_summary.csv",
+      "mode": "current"
+    },
+    {
+      "path": "experiments/v0.4/fits/v04_pipeline_2_canonical_infra1.nc",
+      "mode": "current"
+    },
+    {
+      "path": "experiments/v0.4/fits/v04_pipeline_2_canonical_infra1_anchors.npz",
+      "mode": "current"
+    },
+    {
+      "path": "experiments/v0.4/fits/v04_pipeline_2_canonical_infra1_calibration.npz",
+      "mode": "current"
+    },
+    {
+      "path": "experiments/v0.4/fits/v04_pipeline_2_canonical_infra1_cqr_anchors.npz",
+      "mode": "current"
+    },
+    {
+      "path": "experiments/v0.4/fits/v04_pipeline_2_canonical_infra1_data.npz",
+      "mode": "current"
+    },
+    {
+      "path": "experiments/v0.4/fits/v04_pipeline_2_canonical_infra1_pre.npz",
+      "mode": "current"
+    },
+    {
+      "path": "experiments/v0.4/fits/v04_pipeline_2_canonical_infra1_summary.csv",
+      "mode": "current"
+    },
+    {
+      "path": "experiments/v0.4/fits/v04_pipeline_3_alternate.nc",
+      "mode": "current"
+    },
+    {
+      "path": "experiments/v0.4/fits/v04_pipeline_3_alternate_anchors.npz",
+      "mode": "current"
+    },
+    {
+      "path": "experiments/v0.4/fits/v04_pipeline_3_alternate_calibration.npz",
+      "mode": "current"
+    },
+    {
+      "path": "experiments/v0.4/fits/v04_pipeline_3_alternate_cqr_anchors.npz",
+      "mode": "current"
+    },
+    {
+      "path": "experiments/v0.4/fits/v04_pipeline_3_alternate_data.npz",
+      "mode": "current"
+    },
+    {
+      "path": "experiments/v0.4/fits/v04_pipeline_3_alternate_pre.npz",
+      "mode": "current"
+    },
+    {
+      "path": "experiments/v0.4/fits/v04_pipeline_3_alternate_summary.csv",
+      "mode": "current"
+    },
+    {
+      "path": "experiments/v0.4/fits/v04_pipeline_3_canonical_infra1.nc",
+      "mode": "current"
+    },
+    {
+      "path": "experiments/v0.4/fits/v04_pipeline_3_canonical_infra1_anchors.npz",
+      "mode": "current"
+    },
+    {
+      "path": "experiments/v0.4/fits/v04_pipeline_3_canonical_infra1_calibration.npz",
+      "mode": "current"
+    },
+    {
+      "path": "experiments/v0.4/fits/v04_pipeline_3_canonical_infra1_cqr_anchors.npz",
+      "mode": "current"
+    },
+    {
+      "path": "experiments/v0.4/fits/v04_pipeline_3_canonical_infra1_data.npz",
+      "mode": "current"
+    },
+    {
+      "path": "experiments/v0.4/fits/v04_pipeline_3_canonical_infra1_pre.npz",
+      "mode": "current"
+    },
+    {
+      "path": "experiments/v0.4/fits/v04_pipeline_3_canonical_infra1_summary.csv",
+      "mode": "current"
+    },
+    {
+      "path": "experiments/v0.4/fits/v04_pipeline_4_alternate.nc",
+      "mode": "current"
+    },
+    {
+      "path": "experiments/v0.4/fits/v04_pipeline_4_alternate_anchors.npz",
+      "mode": "current"
+    },
+    {
+      "path": "experiments/v0.4/fits/v04_pipeline_4_alternate_calibration.npz",
+      "mode": "current"
+    },
+    {
+      "path": "experiments/v0.4/fits/v04_pipeline_4_alternate_cqr_anchors.npz",
+      "mode": "current"
+    },
+    {
+      "path": "experiments/v0.4/fits/v04_pipeline_4_alternate_data.npz",
+      "mode": "current"
+    },
+    {
+      "path": "experiments/v0.4/fits/v04_pipeline_4_alternate_pre.npz",
+      "mode": "current"
+    },
+    {
+      "path": "experiments/v0.4/fits/v04_pipeline_4_alternate_summary.csv",
+      "mode": "current"
+    },
+    {
+      "path": "experiments/v0.4/fits/v04_pipeline_4_canonical_infra1.nc",
+      "mode": "current"
+    },
+    {
+      "path": "experiments/v0.4/fits/v04_pipeline_4_canonical_infra1_anchors.npz",
+      "mode": "current"
+    },
+    {
+      "path": "experiments/v0.4/fits/v04_pipeline_4_canonical_infra1_calibration.npz",
+      "mode": "current"
+    },
+    {
+      "path": "experiments/v0.4/fits/v04_pipeline_4_canonical_infra1_cqr_anchors.npz",
+      "mode": "current"
+    },
+    {
+      "path": "experiments/v0.4/fits/v04_pipeline_4_canonical_infra1_data.npz",
+      "mode": "current"
+    },
+    {
+      "path": "experiments/v0.4/fits/v04_pipeline_4_canonical_infra1_pre.npz",
+      "mode": "current"
+    },
+    {
+      "path": "experiments/v0.4/fits/v04_pipeline_4_canonical_infra1_summary.csv",
+      "mode": "current"
+    },
+    {
+      "path": "experiments/v0.4/fits/v04_rho_zero.nc",
+      "mode": "current"
+    },
+    {
+      "path": "experiments/v0.4/fits/v04_rho_zero_data.npz",
+      "mode": "current"
+    },
+    {
+      "path": "experiments/v0.4/fits/v04_rho_zero_pre.npz",
+      "mode": "current"
+    },
+    {
+      "path": "experiments/v0.4/fits/v04_rho_zero_summary.csv",
+      "mode": "current"
+    },
+    {
+      "path": "experiments/v0.4/fits/v04_syn_confounded_1.nc",
+      "mode": "current"
+    },
+    {
+      "path": "experiments/v0.4/fits/v04_syn_confounded_1_assessment.npz",
+      "mode": "current"
+    },
+    {
+      "path": "experiments/v0.4/fits/v04_syn_confounded_1_data.npz",
+      "mode": "current"
+    },
+    {
+      "path": "experiments/v0.4/fits/v04_syn_confounded_1_summary.csv",
+      "mode": "current"
+    },
+    {
+      "path": "experiments/v0.4/fits/v04_syn_confounded_2.nc",
+      "mode": "current"
+    },
+    {
+      "path": "experiments/v0.4/fits/v04_syn_confounded_2_assessment.npz",
+      "mode": "current"
+    },
+    {
+      "path": "experiments/v0.4/fits/v04_syn_confounded_2_data.npz",
+      "mode": "current"
+    },
+    {
+      "path": "experiments/v0.4/fits/v04_syn_confounded_2_summary.csv",
+      "mode": "current"
+    },
+    {
+      "path": "experiments/v0.4/fits/v04_syn_confounded_3.nc",
+      "mode": "current"
+    },
+    {
+      "path": "experiments/v0.4/fits/v04_syn_confounded_3_assessment.npz",
+      "mode": "current"
+    },
+    {
+      "path": "experiments/v0.4/fits/v04_syn_confounded_3_data.npz",
+      "mode": "current"
+    },
+    {
+      "path": "experiments/v0.4/fits/v04_syn_confounded_3_summary.csv",
+      "mode": "current"
+    },
+    {
+      "path": "experiments/v0.4/fits/v04_syn_confounded_4.nc",
+      "mode": "current"
+    },
+    {
+      "path": "experiments/v0.4/fits/v04_syn_confounded_4_assessment.npz",
+      "mode": "current"
+    },
+    {
+      "path": "experiments/v0.4/fits/v04_syn_confounded_4_data.npz",
+      "mode": "current"
+    },
+    {
+      "path": "experiments/v0.4/fits/v04_syn_confounded_4_summary.csv",
+      "mode": "current"
+    },
+    {
+      "path": "experiments/v0.4/fits/v04_syn_high_rho_1.nc",
+      "mode": "current"
+    },
+    {
+      "path": "experiments/v0.4/fits/v04_syn_high_rho_1_assessment.npz",
+      "mode": "current"
+    },
+    {
+      "path": "experiments/v0.4/fits/v04_syn_high_rho_1_data.npz",
+      "mode": "current"
+    },
+    {
+      "path": "experiments/v0.4/fits/v04_syn_high_rho_1_summary.csv",
+      "mode": "current"
+    },
+    {
+      "path": "experiments/v0.4/fits/v04_syn_high_rho_2.nc",
+      "mode": "current"
+    },
+    {
+      "path": "experiments/v0.4/fits/v04_syn_high_rho_2_assessment.npz",
+      "mode": "current"
+    },
+    {
+      "path": "experiments/v0.4/fits/v04_syn_high_rho_2_data.npz",
+      "mode": "current"
+    },
+    {
+      "path": "experiments/v0.4/fits/v04_syn_high_rho_2_summary.csv",
+      "mode": "current"
+    },
+    {
+      "path": "experiments/v0.4/fits/v04_syn_high_rho_3.nc",
+      "mode": "current"
+    },
+    {
+      "path": "experiments/v0.4/fits/v04_syn_high_rho_3_assessment.npz",
+      "mode": "current"
+    },
+    {
+      "path": "experiments/v0.4/fits/v04_syn_high_rho_3_data.npz",
+      "mode": "current"
+    },
+    {
+      "path": "experiments/v0.4/fits/v04_syn_high_rho_3_summary.csv",
+      "mode": "current"
+    },
+    {
+      "path": "experiments/v0.4/fits/v04_syn_high_rho_4.nc",
+      "mode": "current"
+    },
+    {
+      "path": "experiments/v0.4/fits/v04_syn_high_rho_4_assessment.npz",
+      "mode": "current"
+    },
+    {
+      "path": "experiments/v0.4/fits/v04_syn_high_rho_4_data.npz",
+      "mode": "current"
+    },
+    {
+      "path": "experiments/v0.4/fits/v04_syn_high_rho_4_summary.csv",
+      "mode": "current"
+    },
+    {
+      "path": "experiments/v0.4/fits/v04_syn_regular_1.nc",
+      "mode": "current"
+    },
+    {
+      "path": "experiments/v0.4/fits/v04_syn_regular_1_assessment.npz",
+      "mode": "current"
+    },
+    {
+      "path": "experiments/v0.4/fits/v04_syn_regular_1_data.npz",
+      "mode": "current"
+    },
+    {
+      "path": "experiments/v0.4/fits/v04_syn_regular_1_summary.csv",
+      "mode": "current"
+    },
+    {
+      "path": "experiments/v0.4/fits/v04_syn_regular_2.nc",
+      "mode": "current"
+    },
+    {
+      "path": "experiments/v0.4/fits/v04_syn_regular_2_assessment.npz",
+      "mode": "current"
+    },
+    {
+      "path": "experiments/v0.4/fits/v04_syn_regular_2_data.npz",
+      "mode": "current"
+    },
+    {
+      "path": "experiments/v0.4/fits/v04_syn_regular_2_summary.csv",
+      "mode": "current"
+    },
+    {
+      "path": "experiments/v0.4/fits/v04_syn_regular_3.nc",
+      "mode": "current"
+    },
+    {
+      "path": "experiments/v0.4/fits/v04_syn_regular_3_assessment.npz",
+      "mode": "current"
+    },
+    {
+      "path": "experiments/v0.4/fits/v04_syn_regular_3_data.npz",
+      "mode": "current"
+    },
+    {
+      "path": "experiments/v0.4/fits/v04_syn_regular_3_summary.csv",
+      "mode": "current"
+    },
+    {
+      "path": "experiments/v0.4/fits/v04_syn_regular_4.nc",
+      "mode": "current"
+    },
+    {
+      "path": "experiments/v0.4/fits/v04_syn_regular_4_assessment.npz",
+      "mode": "current"
+    },
+    {
+      "path": "experiments/v0.4/fits/v04_syn_regular_4_data.npz",
+      "mode": "current"
+    },
+    {
+      "path": "experiments/v0.4/fits/v04_syn_regular_4_summary.csv",
+      "mode": "current"
+    },
+    {
+      "path": "experiments/v0.4/fits/v04_syn_weak_1.nc",
+      "mode": "current"
+    },
+    {
+      "path": "experiments/v0.4/fits/v04_syn_weak_1_assessment.npz",
+      "mode": "current"
+    },
+    {
+      "path": "experiments/v0.4/fits/v04_syn_weak_1_data.npz",
+      "mode": "current"
+    },
+    {
+      "path": "experiments/v0.4/fits/v04_syn_weak_1_summary.csv",
+      "mode": "current"
+    },
+    {
+      "path": "experiments/v0.4/fits/v04_syn_weak_2.nc",
+      "mode": "current"
+    },
+    {
+      "path": "experiments/v0.4/fits/v04_syn_weak_2_assessment.npz",
+      "mode": "current"
+    },
+    {
+      "path": "experiments/v0.4/fits/v04_syn_weak_2_data.npz",
+      "mode": "current"
+    },
+    {
+      "path": "experiments/v0.4/fits/v04_syn_weak_2_summary.csv",
+      "mode": "current"
+    },
+    {
+      "path": "experiments/v0.4/fits/v04_syn_weak_3.nc",
+      "mode": "current"
+    },
+    {
+      "path": "experiments/v0.4/fits/v04_syn_weak_3_assessment.npz",
+      "mode": "current"
+    },
+    {
+      "path": "experiments/v0.4/fits/v04_syn_weak_3_data.npz",
+      "mode": "current"
+    },
+    {
+      "path": "experiments/v0.4/fits/v04_syn_weak_3_summary.csv",
+      "mode": "current"
+    },
+    {
+      "path": "experiments/v0.4/fits/v04_syn_weak_4.nc",
+      "mode": "current"
+    },
+    {
+      "path": "experiments/v0.4/fits/v04_syn_weak_4_assessment.npz",
+      "mode": "current"
+    },
+    {
+      "path": "experiments/v0.4/fits/v04_syn_weak_4_data.npz",
+      "mode": "current"
+    },
+    {
+      "path": "experiments/v0.4/fits/v04_syn_weak_4_summary.csv",
+      "mode": "current"
+    },
+    {
+      "path": "experiments/v0.4/inference/v04_paired_bootstrap_t_oc.json",
+      "mode": "current"
+    },
+    {
+      "path": "experiments/v0.4/precision/v04_precision_mcse_validation.json",
+      "mode": "current"
+    },
+    {
+      "path": "experiments/v0.4/registry/v04_broader.json",
+      "mode": "current"
+    },
+    {
+      "path": "experiments/v0.4/registry/v04_contamination.json",
+      "mode": "current"
+    },
+    {
+      "path": "experiments/v0.4/registry/v04_inference_oc.json",
+      "mode": "current"
+    },
+    {
+      "path": "experiments/v0.4/registry/v04_lead_analysis.json",
+      "mode": "current"
+    },
+    {
+      "path": "experiments/v0.4/registry/v04_main_r1.json",
+      "mode": "current"
+    },
+    {
+      "path": "experiments/v0.4/registry/v04_main_r2.json",
+      "mode": "current"
+    },
+    {
+      "path": "experiments/v0.4/registry/v04_main_r3.json",
+      "mode": "current"
+    },
+    {
+      "path": "experiments/v0.4/registry/v04_oracle_e11.json",
+      "mode": "current"
+    },
+    {
+      "path": "experiments/v0.4/registry/v04_oracle_e61.json",
+      "mode": "current"
+    },
+    {
+      "path": "experiments/v0.4/registry/v04_oracle_e86.json",
+      "mode": "current"
+    },
+    {
+      "path": "experiments/v0.4/registry/v04_pipeline_1_alternate.json",
+      "mode": "current"
+    },
+    {
+      "path": "experiments/v0.4/registry/v04_pipeline_1_canonical.json",
+      "mode": "current"
+    },
+    {
+      "path": "experiments/v0.4/registry/v04_pipeline_1_canonical_infra1.json",
+      "mode": "current"
+    },
+    {
+      "path": "experiments/v0.4/registry/v04_pipeline_2_alternate.json",
+      "mode": "current"
+    },
+    {
+      "path": "experiments/v0.4/registry/v04_pipeline_2_canonical.json",
+      "mode": "current"
+    },
+    {
+      "path": "experiments/v0.4/registry/v04_pipeline_2_canonical_infra1.json",
+      "mode": "current"
+    },
+    {
+      "path": "experiments/v0.4/registry/v04_pipeline_3_alternate.json",
+      "mode": "current"
+    },
+    {
+      "path": "experiments/v0.4/registry/v04_pipeline_3_canonical.json",
+      "mode": "current"
+    },
+    {
+      "path": "experiments/v0.4/registry/v04_pipeline_3_canonical_infra1.json",
+      "mode": "current"
+    },
+    {
+      "path": "experiments/v0.4/registry/v04_pipeline_4_alternate.json",
+      "mode": "current"
+    },
+    {
+      "path": "experiments/v0.4/registry/v04_pipeline_4_canonical.json",
+      "mode": "current"
+    },
+    {
+      "path": "experiments/v0.4/registry/v04_pipeline_4_canonical_infra1.json",
+      "mode": "current"
+    },
+    {
+      "path": "experiments/v0.4/registry/v04_precision_validation.json",
+      "mode": "current"
+    },
+    {
+      "path": "experiments/v0.4/registry/v04_precision_validation_storage_recovery.json",
+      "mode": "current"
+    },
+    {
+      "path": "experiments/v0.4/registry/v04_rho_zero.json",
+      "mode": "current"
+    },
+    {
+      "path": "experiments/v0.4/registry/v04_syn_confounded_1.json",
+      "mode": "current"
+    },
+    {
+      "path": "experiments/v0.4/registry/v04_syn_confounded_2.json",
+      "mode": "current"
+    },
+    {
+      "path": "experiments/v0.4/registry/v04_syn_confounded_3.json",
+      "mode": "current"
+    },
+    {
+      "path": "experiments/v0.4/registry/v04_syn_confounded_4.json",
+      "mode": "current"
+    },
+    {
+      "path": "experiments/v0.4/registry/v04_syn_high_rho_1.json",
+      "mode": "current"
+    },
+    {
+      "path": "experiments/v0.4/registry/v04_syn_high_rho_2.json",
+      "mode": "current"
+    },
+    {
+      "path": "experiments/v0.4/registry/v04_syn_high_rho_3.json",
+      "mode": "current"
+    },
+    {
+      "path": "experiments/v0.4/registry/v04_syn_high_rho_4.json",
+      "mode": "current"
+    },
+    {
+      "path": "experiments/v0.4/registry/v04_syn_regular_1.json",
+      "mode": "current"
+    },
+    {
+      "path": "experiments/v0.4/registry/v04_syn_regular_2.json",
+      "mode": "current"
+    },
+    {
+      "path": "experiments/v0.4/registry/v04_syn_regular_3.json",
+      "mode": "current"
+    },
+    {
+      "path": "experiments/v0.4/registry/v04_syn_regular_4.json",
+      "mode": "current"
+    },
+    {
+      "path": "experiments/v0.4/registry/v04_syn_weak_1.json",
+      "mode": "current"
+    },
+    {
+      "path": "experiments/v0.4/registry/v04_syn_weak_2.json",
+      "mode": "current"
+    },
+    {
+      "path": "experiments/v0.4/registry/v04_syn_weak_3.json",
+      "mode": "current"
+    },
+    {
+      "path": "experiments/v0.4/registry/v04_syn_weak_4.json",
+      "mode": "current"
+    },
+    {
+      "path": "figures/.gitkeep",
+      "mode": "current"
+    },
+    {
+      "path": "figures/v0.4/predictive_precision_all25.pdf",
+      "mode": "current"
+    },
+    {
+      "path": "figures/v0.4/predictive_precision_all25.png",
+      "mode": "current"
+    },
+    {
+      "path": "literature/.gitkeep",
+      "mode": "current"
+    },
+    {
+      "path": "literature/citation_status_audit.py",
+      "mode": "current"
+    },
+    {
+      "path": "literature/claim_evidence_map.json",
+      "mode": "current"
+    },
+    {
+      "path": "literature/crossref_status_audit.json",
+      "mode": "current"
+    },
+    {
+      "path": "literature/evidence_records.json",
+      "mode": "current"
+    },
+    {
+      "path": "literature/search_log.json",
+      "mode": "current"
+    },
+    {
+      "path": "logs/.gitkeep",
+      "mode": "current"
+    },
+    {
+      "path": "logs/auxiliary_diagnostics.json",
+      "mode": "current"
+    },
+    {
+      "path": "logs/backend_serialization_tests.xml",
+      "mode": "current"
+    },
+    {
+      "path": "logs/backend_serialization_tests_v2.xml",
+      "mode": "current"
+    },
+    {
+      "path": "logs/build_pilot_handoff.py",
+      "mode": "current"
+    },
+    {
+      "path": "logs/build_pilot_return_package.py",
+      "mode": "current"
+    },
+    {
+      "path": "logs/delivery_verification.json",
+      "mode": "current"
+    },
+    {
+      "path": "logs/final_pilot_tests.xml",
+      "mode": "current"
+    },
+    {
+      "path": "logs/finalize_delivery_manifest.py",
+      "mode": "current"
+    },
+    {
+      "path": "logs/finalize_pilot_state.py",
+      "mode": "current"
+    },
+    {
+      "path": "logs/finalize_review_text.py",
+      "mode": "current"
+    },
+    {
+      "path": "logs/handoff_validation.json",
+      "mode": "current"
+    },
+    {
+      "path": "logs/handoff_validation_v0.3.json",
+      "mode": "current"
+    },
+    {
+      "path": "logs/lead_comparator_tests.xml",
+      "mode": "current"
+    },
+    {
+      "path": "logs/lead_cutoff_tests.xml",
+      "mode": "current"
+    },
+    {
+      "path": "logs/lead_cutoff_verification.json",
+      "mode": "current"
+    },
+    {
+      "path": "logs/lead_data_conditioning_tests.xml",
+      "mode": "current"
+    },
+    {
+      "path": "logs/mathematical_preflight.json",
+      "mode": "current"
+    },
+    {
+      "path": "logs/methodology_audit_inputs.json",
+      "mode": "current"
+    },
+    {
+      "path": "logs/methodology_audit_inputs/02_dataset_feasibility_sample_precision.md",
+      "mode": "current"
+    },
+    {
+      "path": "logs/methodology_audit_inputs/03_candidate_mathematical_model.md",
+      "mode": "current"
+    },
+    {
+      "path": "logs/methodology_audit_inputs/04_statistical_analysis_plan.md",
+      "mode": "current"
+    },
+    {
+      "path": "logs/methodology_audit_inputs/05_fair_comparator_design.md",
+      "mode": "current"
+    },
+    {
+      "path": "logs/methodology_audit_inputs/06_proposed_protocol_lock.md",
+      "mode": "current"
+    },
+    {
+      "path": "logs/pilot_delivery_validation.json",
+      "mode": "current"
+    },
+    {
+      "path": "logs/pilot_environment.json",
+      "mode": "current"
+    },
+    {
+      "path": "logs/pilot_install_report.json",
+      "mode": "current"
+    },
+    {
+      "path": "logs/pilot_math_tests.xml",
+      "mode": "current"
+    },
+    {
+      "path": "logs/prepare_review_package.py",
+      "mode": "current"
+    },
+    {
+      "path": "logs/python_capabilities.json",
+      "mode": "current"
+    },
+    {
+      "path": "logs/record_review_snapshot.py",
+      "mode": "current"
+    },
+    {
+      "path": "logs/research_validation.json",
+      "mode": "current"
+    },
+    {
+      "path": "logs/research_validation_v0.3.json",
+      "mode": "current"
+    },
+    {
+      "path": "logs/sample_precision.json",
+      "mode": "current"
+    },
+    {
+      "path": "logs/update_pilot_registers.py",
+      "mode": "current"
+    },
+    {
+      "path": "logs/v0.3_delivery_manifest.json",
+      "mode": "current"
+    },
+    {
+      "path": "logs/v0.4/archive/generated_risk_register_before_final_edit.json",
+      "mode": "current"
+    },
+    {
+      "path": "logs/v0.4/archive/preclarification_delivery_manifest.json",
+      "mode": "current"
+    },
+    {
+      "path": "logs/v0.4/archive/preclarification_delivery_receipt.json",
+      "mode": "current"
+    },
+    {
+      "path": "logs/v0.4/archive/preclarification_postcommit_validation.json",
+      "mode": "current"
+    },
+    {
+      "path": "logs/v0.4/archive/v04_precision_validation_original_failed_registry.json",
+      "mode": "current"
+    },
+    {
+      "path": "logs/v0.4/baseline_review.json",
+      "mode": "current"
+    },
+    {
+      "path": "logs/v0.4/build_delivery_manifest.py",
+      "mode": "current"
+    },
+    {
+      "path": "logs/v0.4/build_handoff.py",
+      "mode": "current"
+    },
+    {
+      "path": "logs/v0.4/build_reports.py",
+      "mode": "current"
+    },
+    {
+      "path": "logs/v0.4/final_precommit_qc.py",
+      "mode": "current"
+    },
+    {
+      "path": "logs/v0.4/final_prior_index_clarification.json",
+      "mode": "current"
+    },
+    {
+      "path": "logs/v0.4/final_tests.xml",
+      "mode": "current"
+    },
+    {
+      "path": "logs/v0.4/finalize_governance.py",
+      "mode": "current"
+    },
+    {
+      "path": "logs/v0.4/finalize_prior_wording.py",
+      "mode": "current"
+    },
+    {
+      "path": "logs/v0.4/finalize_reports.py",
+      "mode": "current"
+    },
+    {
+      "path": "logs/v0.4/lead_final_qc.json",
+      "mode": "current"
+    },
+    {
+      "path": "logs/v0.4/lead_final_qc.py",
+      "mode": "current"
+    },
+    {
+      "path": "logs/v0.4/lead_preflight.xml",
+      "mode": "current"
+    },
+    {
+      "path": "logs/v0.4/native_validation.json",
+      "mode": "current"
+    },
+    {
+      "path": "logs/v0.4/plot_saved_precision.py",
+      "mode": "current"
+    },
+    {
+      "path": "logs/v0.4/recover_precision_serialization.py",
+      "mode": "current"
+    },
+    {
+      "path": "logs/v0.4/report_integrity_qc.json",
+      "mode": "current"
+    },
+    {
+      "path": "logs/v0.4/supplemental_final_qc.json",
+      "mode": "current"
+    },
+    {
+      "path": "logs/v0.4/supplemental_final_qc.py",
+      "mode": "current"
+    },
+    {
+      "path": "logs/validate_pilot_delivery.py",
+      "mode": "current"
+    },
+    {
+      "path": "logs/verify_delivery.py",
+      "mode": "current"
+    },
+    {
+      "path": "manuscript/.gitkeep",
+      "mode": "current"
+    },
+    {
+      "path": "notebooks/.gitkeep",
+      "mode": "current"
+    },
+    {
+      "path": "pyproject.toml",
+      "mode": "current"
+    },
+    {
+      "path": "research/artifact_map.csv",
+      "mode": "byte-preserved-v05archive"
+    },
+    {
+      "path": "research/artifact_map_v0.2.csv",
+      "mode": "current"
+    },
+    {
+      "path": "research/claim_ledger.csv",
+      "mode": "byte-preserved-v05archive"
+    },
+    {
+      "path": "research/claim_ledger_v0.2.csv",
+      "mode": "current"
+    },
+    {
+      "path": "research/data_manifest.json",
+      "mode": "current"
+    },
+    {
+      "path": "research/decision_log.md",
+      "mode": "byte-preserved-v05archive"
+    },
+    {
+      "path": "research/environment_manifest.json",
+      "mode": "byte-preserved-v05archive"
+    },
+    {
+      "path": "research/environment_manifest_v0.2.json",
+      "mode": "current"
+    },
+    {
+      "path": "research/experiment_registry.jsonl",
+      "mode": "byte-preserved-v05archive"
+    },
+    {
+      "path": "research/experiment_registry_v0.3.jsonl",
+      "mode": "current"
+    },
+    {
+      "path": "research/gate_results.json",
+      "mode": "byte-preserved-v05archive"
+    },
+    {
+      "path": "research/gate_results_v0.2.json",
+      "mode": "current"
+    },
+    {
+      "path": "research/literature_ledger.csv",
+      "mode": "current"
+    },
+    {
+      "path": "research/pilot_risk_register_v0.3.json",
+      "mode": "current"
+    },
+    {
+      "path": "research/protocol.json",
+      "mode": "byte-preserved-v05archive"
+    },
+    {
+      "path": "research/protocol_v0.2.json",
+      "mode": "current"
+    },
+    {
+      "path": "research/state_manifest.json",
+      "mode": "byte-preserved-v05archive"
+    },
+    {
+      "path": "research/v0.4/baseline_current_aliases/.gitignore",
+      "mode": "current"
+    },
+    {
+      "path": "research/v0.4/baseline_current_aliases/README.md",
+      "mode": "current"
+    },
+    {
+      "path": "research/v0.4/baseline_current_aliases/provenance.json",
+      "mode": "current"
+    },
+    {
+      "path": "research/v0.4/baseline_current_aliases/research/artifact_map.csv",
+      "mode": "current"
+    },
+    {
+      "path": "research/v0.4/baseline_current_aliases/research/claim_ledger.csv",
+      "mode": "current"
+    },
+    {
+      "path": "research/v0.4/baseline_current_aliases/research/decision_log.md",
+      "mode": "current"
+    },
+    {
+      "path": "research/v0.4/baseline_current_aliases/research/environment_manifest.json",
+      "mode": "current"
+    },
+    {
+      "path": "research/v0.4/baseline_current_aliases/research/gate_results.json",
+      "mode": "current"
+    },
+    {
+      "path": "research/v0.4/baseline_current_aliases/research/protocol.json",
+      "mode": "current"
+    },
+    {
+      "path": "research/v0.4/baseline_current_aliases/research/state_manifest.json",
+      "mode": "current"
+    },
+    {
+      "path": "research/v0.4/current_alias_archive_map.json",
+      "mode": "current"
+    },
+    {
+      "path": "research/v0.4/gate_summary.json",
+      "mode": "current"
+    },
+    {
+      "path": "research/v0.4/protocol.json",
+      "mode": "current"
+    },
+    {
+      "path": "research/v0.4/registry_append_audit.json",
+      "mode": "current"
+    },
+    {
+      "path": "research/v0.4/risk_register.json",
+      "mode": "current"
+    },
+    {
+      "path": "research/workflow_route.json",
+      "mode": "current"
+    },
+    {
+      "path": "results/.gitkeep",
+      "mode": "current"
+    },
+    {
+      "path": "results/pilot/base.json",
+      "mode": "current"
+    },
+    {
+      "path": "results/pilot/base.nc",
+      "mode": "current"
+    },
+    {
+      "path": "results/pilot/base_config.json",
+      "mode": "current"
+    },
+    {
+      "path": "results/pilot/base_data.npz",
+      "mode": "current"
+    },
+    {
+      "path": "results/pilot/base_summary.csv",
+      "mode": "current"
+    },
+    {
+      "path": "results/pilot/comparator_calibration.json",
+      "mode": "current"
+    },
+    {
+      "path": "results/pilot/contamination.json",
+      "mode": "current"
+    },
+    {
+      "path": "results/pilot/contamination.nc",
+      "mode": "current"
+    },
+    {
+      "path": "results/pilot/contamination_config.json",
+      "mode": "current"
+    },
+    {
+      "path": "results/pilot/contamination_data.npz",
+      "mode": "current"
+    },
+    {
+      "path": "results/pilot/contamination_summary.csv",
+      "mode": "current"
+    },
+    {
+      "path": "results/pilot/cqr_search.json",
+      "mode": "current"
+    },
+    {
+      "path": "results/pilot/fit_preprocessor.npz",
+      "mode": "current"
+    },
+    {
+      "path": "results/pilot/predictive_integration.json",
+      "mode": "current"
+    },
+    {
+      "path": "results/pilot/prior_double.json",
+      "mode": "current"
+    },
+    {
+      "path": "results/pilot/prior_double.nc",
+      "mode": "current"
+    },
+    {
+      "path": "results/pilot/prior_double_config.json",
+      "mode": "current"
+    },
+    {
+      "path": "results/pilot/prior_double_data.npz",
+      "mode": "current"
+    },
+    {
+      "path": "results/pilot/prior_double_summary.csv",
+      "mode": "current"
+    },
+    {
+      "path": "results/pilot/prior_half.json",
+      "mode": "current"
+    },
+    {
+      "path": "results/pilot/prior_half.nc",
+      "mode": "current"
+    },
+    {
+      "path": "results/pilot/prior_half_config.json",
+      "mode": "current"
+    },
+    {
+      "path": "results/pilot/prior_half_data.npz",
+      "mode": "current"
+    },
+    {
+      "path": "results/pilot/prior_half_summary.csv",
+      "mode": "current"
+    },
+    {
+      "path": "results/pilot/prior_predictive.json",
+      "mode": "current"
+    },
+    {
+      "path": "results/pilot/refit.json",
+      "mode": "current"
+    },
+    {
+      "path": "results/pilot/refit.nc",
+      "mode": "current"
+    },
+    {
+      "path": "results/pilot/refit_config.json",
+      "mode": "current"
+    },
+    {
+      "path": "results/pilot/refit_data.npz",
+      "mode": "current"
+    },
+    {
+      "path": "results/pilot/refit_preprocessor.npz",
+      "mode": "current"
+    },
+    {
+      "path": "results/pilot/refit_preprocessor_bayes.npz",
+      "mode": "current"
+    },
+    {
+      "path": "results/pilot/refit_summary.csv",
+      "mode": "current"
+    },
+    {
+      "path": "results/pilot/rho_zero.json",
+      "mode": "current"
+    },
+    {
+      "path": "results/pilot/rho_zero.nc",
+      "mode": "current"
+    },
+    {
+      "path": "results/pilot/rho_zero_config.json",
+      "mode": "current"
+    },
+    {
+      "path": "results/pilot/rho_zero_data.npz",
+      "mode": "current"
+    },
+    {
+      "path": "results/pilot/rho_zero_summary.csv",
+      "mode": "current"
+    },
+    {
+      "path": "results/pilot/selected_comparator.joblib",
+      "mode": "current"
+    },
+    {
+      "path": "results/pilot/sensor_oracle.json",
+      "mode": "current"
+    },
+    {
+      "path": "results/pilot/sensor_oracle.nc",
+      "mode": "current"
+    },
+    {
+      "path": "results/pilot/sensor_oracle_config.json",
+      "mode": "current"
+    },
+    {
+      "path": "results/pilot/sensor_oracle_data.npz",
+      "mode": "current"
+    },
+    {
+      "path": "results/pilot/sensor_oracle_extra_sensors.npz",
+      "mode": "current"
+    },
+    {
+      "path": "results/pilot/sensor_oracle_summary.csv",
+      "mode": "current"
+    },
+    {
+      "path": "results/pilot/statistical_design.json",
+      "mode": "current"
+    },
+    {
+      "path": "results/pilot/syn_r0.json",
+      "mode": "current"
+    },
+    {
+      "path": "results/pilot/syn_r05.json",
+      "mode": "current"
+    },
+    {
+      "path": "results/pilot/syn_r05.nc",
+      "mode": "current"
+    },
+    {
+      "path": "results/pilot/syn_r05_config.json",
+      "mode": "current"
+    },
+    {
+      "path": "results/pilot/syn_r05_data.npz",
+      "mode": "current"
+    },
+    {
+      "path": "results/pilot/syn_r05_summary.csv",
+      "mode": "current"
+    },
+    {
+      "path": "results/pilot/syn_r09.json",
+      "mode": "current"
+    },
+    {
+      "path": "results/pilot/syn_r09.nc",
+      "mode": "current"
+    },
+    {
+      "path": "results/pilot/syn_r09_config.json",
+      "mode": "current"
+    },
+    {
+      "path": "results/pilot/syn_r09_data.npz",
+      "mode": "current"
+    },
+    {
+      "path": "results/pilot/syn_r09_summary.csv",
+      "mode": "current"
+    },
+    {
+      "path": "results/pilot/syn_r0_config.json",
+      "mode": "current"
+    },
+    {
+      "path": "results/pilot/syn_r0_data.npz",
+      "mode": "current"
+    },
+    {
+      "path": "results/pilot/syn_r0_repair1.json",
+      "mode": "current"
+    },
+    {
+      "path": "results/pilot/syn_r0_repair1_config.json",
+      "mode": "current"
+    },
+    {
+      "path": "results/pilot/syn_r0_repair1_data.npz",
+      "mode": "current"
+    },
+    {
+      "path": "results/pilot/syn_r0_repair2.json",
+      "mode": "current"
+    },
+    {
+      "path": "results/pilot/syn_r0_repair2.nc",
+      "mode": "current"
+    },
+    {
+      "path": "results/pilot/syn_r0_repair2_config.json",
+      "mode": "current"
+    },
+    {
+      "path": "results/pilot/syn_r0_repair2_data.npz",
+      "mode": "current"
+    },
+    {
+      "path": "results/pilot/syn_r0_repair2_summary.csv",
+      "mode": "current"
+    },
+    {
+      "path": "results/pilot/syn_weak.json",
+      "mode": "current"
+    },
+    {
+      "path": "results/pilot/syn_weak.nc",
+      "mode": "current"
+    },
+    {
+      "path": "results/pilot/syn_weak_config.json",
+      "mode": "current"
+    },
+    {
+      "path": "results/pilot/syn_weak_data.npz",
+      "mode": "current"
+    },
+    {
+      "path": "results/pilot/syn_weak_summary.csv",
+      "mode": "current"
+    },
+    {
+      "path": "src/.gitkeep",
+      "mode": "current"
+    },
+    {
+      "path": "src/rp001/__init__.py",
+      "mode": "current"
+    },
+    {
+      "path": "src/rp001/comparator_pilot.py",
+      "mode": "current"
+    },
+    {
+      "path": "src/rp001/comparators.py",
+      "mode": "current"
+    },
+    {
+      "path": "src/rp001/data.py",
+      "mode": "current"
+    },
+    {
+      "path": "src/rp001/development_data_audit.py",
+      "mode": "current"
+    },
+    {
+      "path": "src/rp001/environment.py",
+      "mode": "current"
+    },
+    {
+      "path": "src/rp001/metrics.py",
+      "mode": "current"
+    },
+    {
+      "path": "src/rp001/model.py",
+      "mode": "current"
+    },
+    {
+      "path": "src/rp001/pilot.py",
+      "mode": "current"
+    },
+    {
+      "path": "src/rp001/prediction.py",
+      "mode": "current"
+    },
+    {
+      "path": "src/rp001/predictive_analysis.py",
+      "mode": "current"
+    },
+    {
+      "path": "src/rp001/statistical_design.py",
+      "mode": "current"
+    },
+    {
+      "path": "src/rp001/v04_analysis.py",
+      "mode": "current"
+    },
+    {
+      "path": "src/rp001/v04_common.py",
+      "mode": "current"
+    },
+    {
+      "path": "src/rp001/v04_inference.py",
+      "mode": "current"
+    },
+    {
+      "path": "src/rp001/v04_inference_run.py",
+      "mode": "current"
+    },
+    {
+      "path": "src/rp001/v04_model.py",
+      "mode": "current"
+    },
+    {
+      "path": "src/rp001/v04_pipeline.py",
+      "mode": "current"
+    },
+    {
+      "path": "src/rp001/v04_precision.py",
+      "mode": "current"
+    },
+    {
+      "path": "src/rp001/v04_precision_validation.py",
+      "mode": "current"
+    },
+    {
+      "path": "src/rp001/v04_predict.py",
+      "mode": "current"
+    },
+    {
+      "path": "src/rp001/v04_run.py",
+      "mode": "current"
+    },
+    {
+      "path": "src/rp001_preflight.py",
+      "mode": "current"
+    },
+    {
+      "path": "tests/.gitkeep",
+      "mode": "current"
+    },
+    {
+      "path": "tests/test_backend_serialization.py",
+      "mode": "current"
+    },
+    {
+      "path": "tests/test_comparators_worker.py",
+      "mode": "current"
+    },
+    {
+      "path": "tests/test_lead_comparator_and_prediction.py",
+      "mode": "current"
+    },
+    {
+      "path": "tests/test_lead_data_and_conditioning.py",
+      "mode": "current"
+    },
+    {
+      "path": "tests/test_pilot_mathematics.py",
+      "mode": "current"
+    },
+    {
+      "path": "tests/test_v04_inference_worker.py",
+      "mode": "current"
+    },
+    {
+      "path": "tests/test_v04_lead_math.py",
+      "mode": "current"
+    },
+    {
+      "path": "tests/test_v04_pipeline_worker.py",
+      "mode": "current"
+    },
+    {
+      "path": "tests/test_v04_precision_worker.py",
+      "mode": "current"
+    },
+    {
+      "path": "tests/verify_protocol_mathematics.py",
+      "mode": "current"
+    }
+  ],
+  "advanced_aliases_preserved": 10,
+  "historical_registry_prefix_records": 71,
+  "total_registry_records": 73,
+  "actual_new_sampler_invocations": 1,
+  "new_fit_acceptance": "PASS",
+  "original_failed_case_retained": "FAIL",
+  "direct_math_grid_points": 12,
+  "direct_math_gradient_coordinates": 48,
+  "run_source_blob_counts": {
+    "fit": 24,
+    "preflight": 24,
+    "score": 25
+  },
+  "tests_passed": 59,
+  "score_propagation_status": "PASS",
+  "max_approximate_upper_score_mcse": 0.05878074634522647,
+  "protocol_status": "PROTOCOL_DRAFTED",
+  "owner_final_authorization": false,
+  "official_test_access": false,
+  "confirmatory": false,
+  "environment_fingerprint": "f57b00a67e9d67b2920791bfddc8dc812dbdeb9306588a26557dfd6be15f826c",
+  "dataset_fingerprint": "963b5e22825b34d8b21c69e1aeb4af3e647050eb672ee8834ba4b5d91d2de0f8",
+  "plan_fingerprint": "6046cd808d6a4b68ed42fd7d3458f0f142273aa323f64bb077cb8c0bc7dc0745"
+}

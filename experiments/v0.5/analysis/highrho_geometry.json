@@ -1,0 +1,264 @@
+{
+  "provenance": {
+    "created_at": "2026-10-08T16:17:37.967564+00:00",
+    "git_commit": "304d8e76d03fe7d69dc7f8f9bb6de3c600a219dd",
+    "source_dirty": false,
+    "executed_source_sha256": {
+      "src/rp001/__init__.py": "77b845af67e6f3d0b795acb93e4e651143b49fd33c7d437c774b5704a4d384f4",
+      "src/rp001/comparator_pilot.py": "ec2777d4ce2f498eac5b7a55f29ff5635364bd9aded09a1ba70ad4d1774a5b66",
+      "src/rp001/comparators.py": "37d8e96ab23f7e3525010ed6aa412a2ff89dd622a4e3d0cceb9d215a8c4e41aa",
+      "src/rp001/data.py": "3a0ef34d51468ad05279cbcaeb9e3ab8075134f75771c4375136f4167b512170",
+      "src/rp001/development_data_audit.py": "5697fc66c254637547499f9a88e2ced5472a6de176bb4a26972975710ea16f92",
+      "src/rp001/environment.py": "bf3d2e6a20f3a7673cf1499f7ea7adce3b7952eb3c5d48f2b6a44821f51ca2fd",
+      "src/rp001/metrics.py": "8eb710c14c35ab556ee52448a2a85e30203d40247f7627bdcd9df6add1a88531",
+      "src/rp001/model.py": "52627ae6f49311c3bb837ed3685a4d93b7e9a4d059fe08d6b892c4abab60d399",
+      "src/rp001/pilot.py": "40ab3eaef48aa82f59c5234715268f2f3f37764f484ab89456baef39bcd940c1",
+      "src/rp001/prediction.py": "f54fafe5875a8c7e009ee3c392cbf75c9e9d041646521e9a4123dd5e21b65d9b",
+      "src/rp001/predictive_analysis.py": "a4346a6c63101d8bef4f1f8f98298002e50ea5718e3098e058498953a31366fc",
+      "src/rp001/statistical_design.py": "093b66b5f2f990295a8579e23efa1ff0be4b48f1b00c7c3b3b473741d7451a9c",
+      "src/rp001/v04_analysis.py": "2fcf53103f3e9364396a7f575f3d319fa0afba4fa34115d788d6e9326087f25e",
+      "src/rp001/v04_common.py": "d3def7f05886eb6949a7999fd6be35022de31f7331c7f43649d80fff5e612b8a",
+      "src/rp001/v04_inference.py": "dc05f013b9c9bf05463269b4bd6c6ece74505467e5a4c2125a0ed0690ded1d64",
+      "src/rp001/v04_inference_run.py": "36be33a5637e9b0c0d7f0ea8164b3a7f70beb0c54a2cbb1c71ba0aa35def7af1",
+      "src/rp001/v04_model.py": "45dc8556475d4822e7fc2f17236fb1b2c04d7dafe0d9aa0548021d9abd1fa23e",
+      "src/rp001/v04_pipeline.py": "0b75f708359915f8a197c429a49f2e096c050a21879dbc6e703253155388e569",
+      "src/rp001/v04_precision.py": "396a5f55ca2e9c51fd21f02f50e59c57be7aedd38321a4a3123b0b955f1fde33",
+      "src/rp001/v04_precision_validation.py": "47c5f33e1deb98bf3872f18fbe23f669783819c6180a2fdaf3595c6a024c4a7f",
+      "src/rp001/v04_predict.py": "412f3f59fe823ffa7f1de048c7c7b68a2777bc83a400f40b6a717db22a1604e2",
+      "src/rp001/v04_run.py": "a8c9761fd19a3bce23ee11ed2a9772c16fc7f50ad7ea016bd672447e793cf110",
+      "src/rp001/v05_highrho.py": "3ed9b1c2299d5ab3fd97c3b301c243d6a6db96943e0928ef3d417edbd2031c01",
+      "src/rp001/v05_score_numerics.py": "60523e545bea9ba0984dfd6f14eee0d6f76460c850da6c2fe16f57d994abcf2f"
+    },
+    "plan_sha256": "6046cd808d6a4b68ed42fd7d3458f0f142273aa323f64bb077cb8c0bc7dc0745",
+    "environment_fingerprint": "f57b00a67e9d67b2920791bfddc8dc812dbdeb9306588a26557dfd6be15f826c",
+    "split_manifest_sha256": "6d6e0f10d979d41739c6c07b6bab8f0c32d2844ebd150e82d13caa3bd29e124b",
+    "dataset_sha256": "963b5e22825b34d8b21c69e1aeb4af3e647050eb672ee8834ba4b5d91d2de0f8",
+    "confirmatory": false,
+    "official_test_access": false,
+    "owner_reviewed_scientific_commit": "61b4c2c63cbad6c1b9bd99168e33d1367aa180bc",
+    "run_id": "v05_highrho_innovation",
+    "configuration": {
+      "run_id": "v05_highrho_innovation",
+      "input_path": "experiments/v0.4/fits/v04_syn_high_rho_3_data.npz",
+      "input_sha256": "3ed0b8984fa4feac1da2633f2db9609f59fe604321eb24e7e1c6067facc9d230",
+      "truth": {
+        "beta": [
+          4.605170185988092,
+          -0.4
+        ],
+        "gamma": [
+          -0.35,
+          0.15
+        ],
+        "Gamma": [
+          [
+            0.1,
+            0.5
+          ],
+          [
+            -0.1,
+            -0.25
+          ]
+        ],
+        "tau": [
+          0.45,
+          0.3
+        ],
+        "r_g": 0.2,
+        "sigma_z": 0.3,
+        "sigma_r": 0.25,
+        "rho": 0.95
+      },
+      "original_failed_run": "v04_syn_high_rho_3",
+      "parameterization": "nu=sigma_z*sqrt(1-rho^2);sigma_z=nu*cosh(eta_rho); referenceHNnu prior cancelled and originalHNsigmaz density/Jacobian restored. Exactsameposterior, no principal/fallback substitution.",
+      "seed": 54103,
+      "chains": 4,
+      "cores": 2,
+      "draws": 4000,
+      "warmup": 2000,
+      "target_accept": 0.95,
+      "maxdepth": 12,
+      "preflight_rho": [
+        0.5,
+        0.95,
+        0.99,
+        0.999
+      ],
+      "preflight_sigma_z": [
+        0.1,
+        0.3,
+        0.6
+      ],
+      "density_tolerance": {
+        "atol": 1e-07,
+        "rtol": 1e-08
+      },
+      "gradient_tolerance": {
+        "finite_difference_step": 1e-05,
+        "atol": 0.0001,
+        "rtol": 0.0001
+      },
+      "acceptance": {
+        "rhat_exclusive": 1.01,
+        "bulk_ess_min": 400,
+        "tail_ess_min": 400,
+        "divergences_max": 0,
+        "bfmi_exclusive": 0.3,
+        "depth_saturation_max": 0.01
+      },
+      "auxiliary": [
+        "eta_rho",
+        "gcor_u",
+        "nu"
+      ],
+      "stopping": "One MCMC invocation maximum, no newseeds/draws/scientific or infrastructurefit retry; wall600sec, registeredCPU<=1hour, payload<=128MiB, one scientific process. Deterministicstorage recovery only ifneeded, no samplingreinvocation.",
+      "decision": "Unresolved implementation/likelihood discrepancy -> STOP/RE-SCOPE beforeMCMC. Ifimplementationvalid and actualprincipal/conditioning remainvalid, acceptprincipal with restrictedrobustness and fixedendpointpolicy even ifstressfitfails; no universalrobustness/SBC/physicalclaim. Fallback onlyforseparateownerapproval."
+    },
+    "status": "running",
+    "scientific_sampler_started": true,
+    "scientific_sampler_invocation_count": 1,
+    "preflight_sha256": "1b1492dadc95d7036da868329070d745f274f51bff660bb28d577f839997cc4f",
+    "data_sha256": "3ed0b8984fa4feac1da2633f2db9609f59fe604321eb24e7e1c6067facc9d230"
+  },
+  "old_failed_diagnostic_only": {
+    "coordinates": [
+      "log_sigma_z",
+      "eta_rho",
+      "log_nu",
+      "tau0",
+      "tau1"
+    ],
+    "correlations": [
+      [
+        1.0,
+        0.9971484891141577,
+        0.42281616991972937,
+        -0.7191249990583635,
+        -0.5625083357760162
+      ],
+      [
+        0.9971484891141577,
+        1.0,
+        0.35435639203817937,
+        -0.7173349106686167,
+        -0.5579744143873708
+      ],
+      [
+        0.4228161699197294,
+        0.3543563920381793,
+        1.0,
+        -0.26833400637657356,
+        -0.29545576295279247
+      ],
+      [
+        -0.7191249990583635,
+        -0.7173349106686167,
+        -0.2683340063765735,
+        0.9999999999999999,
+        0.31013670405328275
+      ],
+      [
+        -0.5625083357760163,
+        -0.5579744143873709,
+        -0.29545576295279247,
+        0.31013670405328275,
+        1.0
+      ]
+    ],
+    "chain_mean_log_sigma_z": [
+      -1.1291519640020515,
+      -1.14136853671966,
+      -1.1755183337784358,
+      -1.1662751953882806
+    ],
+    "chain_mean_eta_rho": [
+      1.913635690849305,
+      1.900489202532573,
+      1.866441023783437,
+      1.876051885347284
+    ],
+    "chain_mean_log_nu": [
+      -2.373858740601251,
+      -2.3732176371920106,
+      -2.374865815305586,
+      -2.375017765353779
+    ],
+    "rho_mean": 0.9504578045120597,
+    "rho_sd": 0.023177632396751503,
+    "sigma_z_mean": 0.32426006229257426,
+    "sigma_z_sd": 0.0754291545783573,
+    "nu_mean": 0.09310175672362407,
+    "nu_sd": 0.0017552476423402553
+  },
+  "bounded_innovation": {
+    "coordinates": [
+      "log_sigma_z",
+      "eta_rho",
+      "log_nu",
+      "tau0",
+      "tau1"
+    ],
+    "correlations": [
+      [
+        0.9999999999999999,
+        0.9971016892242476,
+        0.4377898486699322,
+        -0.7277044461542466,
+        -0.5753509918613032
+      ],
+      [
+        0.9971016892242476,
+        1.0,
+        0.36918588252325607,
+        -0.7260527091891046,
+        -0.5711472678728751
+      ],
+      [
+        0.4377898486699322,
+        0.3691858825232561,
+        1.0,
+        -0.28147612688166745,
+        -0.3028389140220806
+      ],
+      [
+        -0.7277044461542466,
+        -0.7260527091891046,
+        -0.2814761268816675,
+        1.0,
+        0.319058228480491
+      ],
+      [
+        -0.5753509918613032,
+        -0.5711472678728751,
+        -0.3028389140220805,
+        0.3190582284804909,
+        1.0
+      ]
+    ],
+    "chain_mean_log_sigma_z": [
+      -1.13716299145737,
+      -1.1424721122353048,
+      -1.125415433738949,
+      -1.128021114402348
+    ],
+    "chain_mean_eta_rho": [
+      1.9050207892398574,
+      1.899926635137187,
+      1.9174789147760558,
+      1.914681121085087
+    ],
+    "chain_mean_log_nu": [
+      -2.3735455636218745,
+      -2.373732159181595,
+      -2.3736163077486436,
+      -2.373506353426013
+    ],
+    "rho_mean": 0.952309013622337,
+    "rho_sd": 0.022690682694100062,
+    "sigma_z_mean": 0.33073056481346896,
+    "sigma_z_sd": 0.07634988621588812,
+    "nu_mean": 0.09316191259418663,
+    "nu_sd": 0.0017855937533507254
+  },
+  "causal_limit": "Parameterization and retained/tuning budgets change together; one case cannot uniquely identify failure cause or establish universal robustness."
+}

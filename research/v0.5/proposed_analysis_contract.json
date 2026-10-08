@@ -1,0 +1,16 @@
+{
+  "version": "0.5",
+  "status": "PROPOSED_FOR_OWNER_LOCK_REVIEW",
+  "owner": "Raihan x Rei",
+  "final_authorization": false,
+  "contract_path": "docs/v0.5/02_proposed_locked_analysis_contract.md",
+  "contract_sha256": "a3b38dcf9bb02a29f617b95694cbab2cbbcd1fd28cbfc7c4be64af2823313b43",
+  "primary_question_unchanged": true,
+  "competitive_definition": "Descriptive complete finite-benchmark characterization; no binary margin/population superiority",
+  "population_inference_included": false,
+  "protocol_locked_at": null,
+  "official_test_sensors_authorized": false,
+  "official_test_labels_authorized": false,
+  "confirmatory_authorized": false,
+  "fallback_authorized": false
+}
