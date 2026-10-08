@@ -373,8 +373,8 @@
     },
     {
       "path": "docs/v0.4/03_bayesian_prior_plausibility.md",
-      "bytes": 6327,
-      "sha256": "5030f0c420cc1295987e4c3962dd6b986570f604b4edf7de06bac5f507dcbf85",
+      "bytes": 6334,
+      "sha256": "9f916464e1c5e766fff9c80a21a1de1deb70755d8b52d3c87cfcdbc6f9c5dd3a",
       "git_tracked_at_evidence_checkpoint": true
     },
     {
@@ -2426,7 +2426,7 @@
     {
       "path": "research/artifact_map.csv",
       "bytes": 85712,
-      "sha256": "2fbcd2b37922793d0cf6ca7a175b88d880de842808fb37b852021ebdc8e97b94",
+      "sha256": "fd230ca5717d45ce1ac01467b151e2ef676eabfc9a3aae86d4072903113798c1",
       "git_tracked_at_evidence_checkpoint": true
     },
     {
@@ -3265,7 +3265,7 @@
     }
   ],
   "file_count": 537,
-  "retained_bytes": 195576447,
+  "retained_bytes": 195576454,
   "preclarification_manifest_commit": "bade492ddba310b8a3443597ea525974a88ba659",
   "report_only_clarification": "logs/v0.4/final_prior_index_clarification.json"
 }

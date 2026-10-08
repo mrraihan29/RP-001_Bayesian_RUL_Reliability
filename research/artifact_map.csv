@@ -213,7 +213,7 @@ V03-A0211,.py,tests/verify_protocol_mathematics.py,,RP001-v0.3-retained-original
 V04-A0212,.json,configs/v0.4/remediation_plan.json,,RP001-v0.4-targeted-return,0c6a7e1e924636cec6196295eac19b29a6bd7faa85e18b081549f8287ab0b99b
 V04-A0213,.md,docs/v0.4/01_updated_research_protocol.md,,RP001-v0.4-targeted-return,191a6bb6b6b6cff6776b854aad5414102cf45fa82e9c6158373045c42d5374b6
 V04-A0214,.md,docs/v0.4/02_numerical_precision_remediation.md,,RP001-v0.4-targeted-return,c41e3a777741e07bd4edae584e9fa020c13ccc14e3999c65b37c94046881b063
-V04-A0215,.md,docs/v0.4/03_bayesian_prior_plausibility.md,,RP001-v0.4-targeted-return,5030f0c420cc1295987e4c3962dd6b986570f604b4edf7de06bac5f507dcbf85
+V04-A0215,.md,docs/v0.4/03_bayesian_prior_plausibility.md,,RP001-v0.4-targeted-return,9f916464e1c5e766fff9c80a21a1de1deb70755d8b52d3c87cfcdbc6f9c5dd3a
 V04-A0216,.md,docs/v0.4/04_identifiability_synthetic_validation.md,,RP001-v0.4-targeted-return,77b7f3810882f6e3b85e56c5b1e321e8bda1d236de60747f0fa957724a97ec91
 V04-A0217,.md,docs/v0.4/05_estimand_cutoff_transport.md,,RP001-v0.4-targeted-return,4821b473c7bd7555d930c5fb2efdc967d054b395efe75300ccb2ab15910abbe6
 V04-A0218,.md,docs/v0.4/06_statistical_inference_pipeline_uncertainty_plan.md,,RP001-v0.4-targeted-return,988357c2371043b40bbd8c527bcb7893b19ea194ee3096c08b9ef7de05da8afc
