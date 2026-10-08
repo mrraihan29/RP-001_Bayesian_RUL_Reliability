@@ -1,0 +1,16 @@
+{
+  "schema_version": "0.2",
+  "datasets": [
+    {
+      "id": "FD001_train",
+      "provenance": "data/raw/provenance.json",
+      "sha256": "963b5e22825b34d8b21c69e1aeb4af3e647050eb672ee8834ba4b5d91d2de0f8",
+      "engines": 100,
+      "rows": 20631,
+      "structure_status": "training audited",
+      "full_integrity_status": "DEFERRED",
+      "official_test_labels_read": false,
+      "split": "configs/proposed_split_manifest.json"
+    }
+  ]
+}

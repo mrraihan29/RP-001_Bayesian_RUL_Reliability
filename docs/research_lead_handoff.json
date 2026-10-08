@@ -1,0 +1,227 @@
+{
+  "schema_version": "1.0.0",
+  "handoff_id": "RP001-LEAD-REVIEW-20261008",
+  "parent_work_id": "RP-001",
+  "producer": "scientific-research-engine",
+  "consumer": "scientific-research-engine",
+  "artifact_type": "preimplementation-review-package",
+  "artifact_version": "0.2",
+  "artifact_identity": {
+    "path_or_uri": "docs/00_research_lead_review.md",
+    "sha256_or_version": "16bc6612c42131588563ce84dbbee87210dd261567f537119b09100c6c8e1f21",
+    "created_at": "2026-10-08T11:43:53.152515+00:00",
+    "source_revision": "source proposal v0.1 hash4ff06a6cf6f7a699dcbb9c66a76bfe6e21d60b64bc738c345e3b08c1f5118346"
+  },
+  "scope": "G0 and eight preimplementation deliverables; no confirmatory experiment",
+  "applicability": "APPLICABLE_MANDATORY",
+  "claims_or_requirements": "Proposal sections18/19 fulfilled at review-draft stage",
+  "evidence": [
+    {
+      "evidence_id": "E-PROPOSAL",
+      "kind": "user-instruction",
+      "location": "docs/proposal_v0.1.md",
+      "collected_at": "2026-10-08",
+      "method": "byte-identical source copy",
+      "supports": "scope and approval policy",
+      "provenance_chain": "attachment->source copy"
+    },
+    {
+      "evidence_id": "E-G0",
+      "kind": "filesystem",
+      "location": "docs/g0_handoff.json",
+      "collected_at": "2026-10-08",
+      "method": "lead directory/source check",
+      "supports": "initialization",
+      "provenance_chain": "delegation->lead verification"
+    },
+    {
+      "evidence_id": "E-TRAIN",
+      "kind": "computed-data-audit",
+      "location": "data/raw/training_audit.json",
+      "collected_at": "2026-10-08",
+      "method": "stdlib training-only executable audit",
+      "supports": "training structure",
+      "provenance_chain": "NASA->archive->training->profile"
+    },
+    {
+      "evidence_id": "E-PRECISION",
+      "kind": "computed-planning",
+      "location": "logs/sample_precision.json",
+      "collected_at": "2026-10-08",
+      "method": "analytic calculations retained in executable",
+      "supports": "sample precision",
+      "provenance_chain": "stated assumptions->code->numbers"
+    },
+    {
+      "evidence_id": "E-METHOD-AUDIT",
+      "kind": "independent-review",
+      "location": "docs/09_methodology_audit.md",
+      "collected_at": "2026-10-08",
+      "method": "independent algebra/specification audit",
+      "supports": "draft repairs",
+      "provenance_chain": "input snapshots->audit->lead dispositions"
+    },
+    {
+      "evidence_id": "E-MATH",
+      "kind": "numerical-equation-verification",
+      "location": "logs/mathematical_preflight.json",
+      "collected_at": "2026-10-08",
+      "method": "Independent precision-form conditional calculation and joint-density identity at fixed parameters",
+      "supports": "draft algebra and precision calculations only",
+      "provenance_chain": "tests/verify_protocol_mathematics.py -> logs/mathematical_preflight.json"
+    }
+  ],
+  "gate_results": [
+    {
+      "gate": "G0_WORKSPACE",
+      "state": "PASS",
+      "owner": "Rei research lead",
+      "artifact_version": "0.2",
+      "evidence_ids": [
+        "E-G0"
+      ],
+      "rationale": "Required structure and byte-identical source verified"
+    },
+    {
+      "gate": "G1_NARRATIVE_EVIDENCE_MAP",
+      "state": "PASS",
+      "owner": "literature-evidence-engine",
+      "artifact_version": "0.2",
+      "evidence_ids": [
+        "S03",
+        "S05",
+        "S06",
+        "S07",
+        "S09"
+      ],
+      "rationale": "Scoped design review, no systematic completeness or novelty certification"
+    },
+    {
+      "gate": "EVIDENCE_VALIDATED",
+      "state": "DEFERRED",
+      "owner": "literature-evidence-engine",
+      "artifact_version": "0.2",
+      "evidence_ids": [
+        "S12",
+        "S13"
+      ],
+      "rationale": "Current full-method/status/novelty review not complete; narrow methods claims supported"
+    },
+    {
+      "gate": "DATA_VALIDATED",
+      "state": "DEFERRED",
+      "owner": "data-quality-engine",
+      "artifact_version": "0.2",
+      "evidence_ids": [
+        "E-TRAIN"
+      ],
+      "rationale": "Training audit only; whole benchmark/rights release not validated"
+    },
+    {
+      "gate": "G2_ESTIMAND_DRAFT",
+      "state": "PASS",
+      "owner": "rei-quant-research",
+      "artifact_version": "0.2",
+      "evidence_ids": [
+        "E-PRECISION",
+        "E-METHOD-AUDIT"
+      ],
+      "rationale": "Independent units, population assumptions and endpoint explicit"
+    },
+    {
+      "gate": "PROTOCOL_LOCK",
+      "state": "BLOCKED",
+      "owner": "Raihan",
+      "artifact_version": "0.2",
+      "evidence_ids": [
+        "E-PROPOSAL"
+      ],
+      "rationale": "No owner approval; implementation/pilot numerical acceptance unresolved"
+    },
+    {
+      "gate": "EXPERIMENT_VALIDATED",
+      "state": "DEFERRED",
+      "owner": "scientific-research-engine",
+      "artifact_version": "0.2",
+      "evidence_ids": [],
+      "rationale": "No experiment run; specialists activated when scope enters experiment"
+    },
+    {
+      "gate": "SCIENTIFIC_VALIDATED",
+      "state": "DEFERRED",
+      "owner": "scientific-research-engine",
+      "artifact_version": "0.2",
+      "evidence_ids": [],
+      "rationale": "No empirical model comparison evidence"
+    }
+  ],
+  "assumptions": [
+    "Owner approval absent",
+    "No test labels read",
+    "Hash cutoff outcome-blind, not proved stochastic independence"
+  ],
+  "risks": [
+    {
+      "risk_id": "R01",
+      "statement": "Official cutoff transport/exchangeability not established",
+      "severity": "critical",
+      "likelihood": "not quantified from available evidence",
+      "affected_claims_or_gates": "C03; protocol scope",
+      "owner": "lead",
+      "disposition": "qualified empirical benchmark only",
+      "trigger": "formal guarantee proposed"
+    },
+    {
+      "risk_id": "R02",
+      "statement": "Candidate identifiability and posterior reliability untested",
+      "severity": "critical",
+      "likelihood": "not quantified from available evidence",
+      "affected_claims_or_gates": "model acceptance",
+      "owner": "lead",
+      "disposition": "pilot gate pending",
+      "trigger": "poor recovery or diagnostics"
+    },
+    {
+      "risk_id": "R09",
+      "statement": "Novelty and recent full-method status unresolved",
+      "severity": "high",
+      "likelihood": "not quantified from available evidence",
+      "affected_claims_or_gates": "C04; publication",
+      "owner": "literature lead",
+      "disposition": "further review before novelty claim",
+      "trigger": "publication"
+    },
+    {
+      "risk_id": "R12",
+      "statement": "Environment/Colab runtime unvalidated",
+      "severity": "medium",
+      "likelihood": "not quantified from available evidence",
+      "affected_claims_or_gates": "experiment readiness",
+      "owner": "lead",
+      "disposition": "StageA pilot pending",
+      "trigger": "implementation"
+    },
+    {
+      "risk_id": "R13",
+      "statement": "Synthetic evidence not real-engine safety evidence",
+      "severity": "high",
+      "likelihood": "not quantified from available evidence",
+      "affected_claims_or_gates": "C06",
+      "owner": "owner+lead",
+      "disposition": "permanent scope limitation",
+      "trigger": "deployment claim"
+    }
+  ],
+  "unresolved": [
+    "StageA approval",
+    "candidate recovery/diagnostics",
+    "exact predictive update algorithm",
+    "complete data integrity",
+    "novelty before publication"
+  ],
+  "requested_decision": "Review and approve development-only StageA with scope/compute/practical-scale choices; final StageB separately after readiness",
+  "return_to_parent": "COMPLETE",
+  "producer_role": "Rei research lead acting as scientific governor",
+  "consumer_role": "Scientific governor receives the review draft for owner decision; human recipient Raihan",
+  "human_recipient": "Raihan research owner"
+}

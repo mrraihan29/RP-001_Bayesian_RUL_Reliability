@@ -1,0 +1,44 @@
+{
+  "status": "PASS",
+  "scope": "Review delivery integrity; scientific and sampling validation deferred",
+  "mandatory_documents": [
+    "01_literature_gap_novelty_review.md",
+    "02_dataset_feasibility_sample_precision.md",
+    "03_candidate_mathematical_model.md",
+    "04_statistical_analysis_plan.md",
+    "05_fair_comparator_design.md",
+    "06_proposed_protocol_lock.md",
+    "07_compute_feasibility_estimate.md",
+    "08_risks_assumptions_decisions.md"
+  ],
+  "required_directories_verified": 14,
+  "source_proposal_byte_identity": true,
+  "prior_audit_inputs_verified": 5,
+  "training": {
+    "engines": 100,
+    "rows": 20631,
+    "fields": 26
+  },
+  "proposed_assigned": {
+    "tune": 15,
+    "fit": 55,
+    "calibration": 30
+  },
+  "eligible": {
+    "tune": 13,
+    "fit": 43,
+    "calibration": 25
+  },
+  "protected_test_files_extracted": [],
+  "access_policy_limitation": "Archive contains test label bytes; no cryptographic separation",
+  "cutoff_correction": "Historical training audit wording independent is superseded by docs/02 outcome-blind proxy qualification",
+  "protocol_status": "PROTOCOL_DRAFTED",
+  "owner_approvals": false,
+  "model_fitting_performed": false,
+  "confirmatory_experiment_count": 0,
+  "equation_checks": "PASS",
+  "static_draft_validation": "PASS",
+  "handoff_schema": "PASS",
+  "artifact_inventory_count": 69,
+  "broken_local_links": []
+}

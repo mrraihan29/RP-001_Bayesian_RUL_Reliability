@@ -1,0 +1,357 @@
+[
+  {
+    "doi": "10.36001/ijphm.2023.v14i2.3417",
+    "source": "https://api.crossref.org/works/10.36001/ijphm.2023.v14i2.3417",
+    "retrieved_at": "2026-10-08T11:13:10.905198+00:00",
+    "title": [
+      "Conformal Prediction Intervals for Remaining Useful Lifetime Estimation"
+    ],
+    "author": [
+      {
+        "given": "Alireza",
+        "family": "Javanmardi",
+        "sequence": "first",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "ORCID": "https://orcid.org/0000-0002-9944-4108",
+        "authenticated-orcid": false,
+        "given": "Eyke",
+        "family": "Hüllermeier",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      }
+    ],
+    "container-title": [
+      "International Journal of Prognostics and Health Management"
+    ],
+    "published": {
+      "date-parts": [
+        [
+          2023,
+          7,
+          24
+        ]
+      ]
+    },
+    "published-online": {
+      "date-parts": [
+        [
+          2023,
+          7,
+          24
+        ]
+      ]
+    },
+    "relation": {},
+    "update-to": null,
+    "updated-by": null,
+    "abstract": "<jats:p>The main objective of Prognostics and Health Management is to estimate the Remaining Useful Lifetime (RUL), namely, the time that a system or a piece of equipment is still in working order before starting to function incorrectly. In recent years, numerous machine learning algorithms have been proposed for RUL estimation, mainly focusing on providing more accurate RUL predictions. However, there are many sources of uncertainty in the problem, such as inherent randomness of systems failure, lack of knowledge regarding their future states, and inaccuracy of the underlying predictive models, making it infeasible to predict the RULs precisely. Hence, it is of utmost importance to quantify the uncertainty alongside the RUL predictions. In this work, we investigate the conformal prediction (CP) framework that represents uncertainty by predicting sets of possible values for the target variable (intervals in the case of RUL) instead of making point predictions. Under very mild technical assumptions, CP formally guarantees that the actual value (true RUL) is covered by the predicted set with a degree of certainty that can be prespecified. We study three CP algorithms to conformalize any single-point RUL predictor and turn it into a valid interval predictor. Finally, we conformalize two single-point RUL predictors, deep convolutional neural networks and gradient boosting, and illustrate their performance on the C-MAPSS datasets.</jats:p>",
+    "license": null,
+    "status": "metadata-verified; no assertion of exhaustive retraction-check coverage"
+  },
+  {
+    "doi": "10.1016/j.jmsy.2020.11.005",
+    "source": "https://api.crossref.org/works/10.1016/j.jmsy.2020.11.005",
+    "status": "unavailable",
+    "error": "HTTP Error 429: Too Many Requests"
+  },
+  {
+    "doi": "10.1198/016214506000001437",
+    "source": "https://api.crossref.org/works/10.1198/016214506000001437",
+    "status": "unavailable",
+    "error": "HTTP Error 429: Too Many Requests"
+  },
+  {
+    "doi": "10.1214/20-BA1221",
+    "source": "https://api.crossref.org/works/10.1214/20-BA1221",
+    "status": "unavailable",
+    "error": "HTTP Error 429: Too Many Requests"
+  },
+  {
+    "doi": "10.65420/sjphrt.v2i3.169",
+    "source": "https://api.crossref.org/works/10.65420/sjphrt.v2i3.169",
+    "status": "unavailable",
+    "error": "HTTP Error 404: Not Found"
+  },
+  {
+    "doi": "10.1016/j.ress.2026.112763",
+    "source": "https://api.crossref.org/works/10.1016/j.ress.2026.112763",
+    "retrieved_at": "2026-10-08T11:13:12.031960+00:00",
+    "title": [
+      "A novel uncertainty-aware framework for remaining useful life prediction integrating uncertainty quantification and calibration"
+    ],
+    "author": [
+      {
+        "ORCID": "https://orcid.org/0000-0001-6705-0713",
+        "authenticated-orcid": false,
+        "given": "Weijun",
+        "family": "Xu",
+        "sequence": "first",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "ORCID": "https://orcid.org/0000-0001-5988-9287",
+        "authenticated-orcid": false,
+        "given": "Shuang",
+        "family": "Gao",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "ORCID": "https://orcid.org/0000-0002-4153-627X",
+        "authenticated-orcid": false,
+        "given": "Zongyao",
+        "family": "Wang",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "ORCID": "https://orcid.org/0000-0002-7108-637X",
+        "authenticated-orcid": false,
+        "given": "Enrico",
+        "family": "Zio",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      }
+    ],
+    "container-title": [
+      "Reliability Engineering &amp; System Safety"
+    ],
+    "published": {
+      "date-parts": [
+        [
+          2026,
+          11
+        ]
+      ]
+    },
+    "published-online": null,
+    "relation": {},
+    "update-to": null,
+    "updated-by": null,
+    "abstract": null,
+    "license": [
+      {
+        "start": {
+          "date-parts": [
+            [
+              2026,
+              11,
+              1
+            ]
+          ],
+          "date-time": "2026-11-01T00:00:00Z",
+          "timestamp": 1793491200000
+        },
+        "content-version": "tdm",
+        "delay-in-days": 0,
+        "URL": "https://www.elsevier.com/tdm/userlicense/1.0/"
+      },
+      {
+        "start": {
+          "date-parts": [
+            [
+              2026,
+              11,
+              1
+            ]
+          ],
+          "date-time": "2026-11-01T00:00:00Z",
+          "timestamp": 1793491200000
+        },
+        "content-version": "tdm",
+        "delay-in-days": 0,
+        "URL": "https://www.elsevier.com/legal/tdmrep-license"
+      },
+      {
+        "start": {
+          "date-parts": [
+            [
+              2026,
+              4,
+              18
+            ]
+          ],
+          "date-time": "2026-04-18T00:00:00Z",
+          "timestamp": 1776470400000
+        },
+        "content-version": "vor",
+        "delay-in-days": 0,
+        "URL": "http://creativecommons.org/licenses/by/4.0/"
+      }
+    ],
+    "status": "metadata-verified; no assertion of exhaustive retraction-check coverage"
+  },
+  {
+    "doi": "10.1016/j.engappai.2024.109980",
+    "source": "https://api.crossref.org/works/10.1016/j.engappai.2024.109980",
+    "status": "unavailable",
+    "error": "HTTP Error 429: Too Many Requests"
+  },
+  {
+    "doi": "10.1016/j.asej.2026.103992",
+    "source": "https://api.crossref.org/works/10.1016/j.asej.2026.103992",
+    "retrieved_at": "2026-10-08T11:13:11.997318+00:00",
+    "title": [
+      "Uncertainty aware predictive maintenance using a hybrid Transformer with Monte Carlo Dropout and conformal prediction"
+    ],
+    "author": [
+      {
+        "ORCID": "https://orcid.org/0000-0001-5585-0094",
+        "authenticated-orcid": false,
+        "given": "Chao-Lung",
+        "family": "Yang",
+        "sequence": "first",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Tamrat Yifter",
+        "family": "Meles",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "ORCID": "https://orcid.org/0000-0003-0776-062X",
+        "authenticated-orcid": false,
+        "given": "Atinkut Atinafu",
+        "family": "Yilma",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Melkamu Mengstnew",
+        "family": "Teshome",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      }
+    ],
+    "container-title": [
+      "Ain Shams Engineering Journal"
+    ],
+    "published": {
+      "date-parts": [
+        [
+          2026,
+          2
+        ]
+      ]
+    },
+    "published-online": null,
+    "relation": {},
+    "update-to": null,
+    "updated-by": null,
+    "abstract": null,
+    "license": [
+      {
+        "start": {
+          "date-parts": [
+            [
+              2026,
+              2,
+              1
+            ]
+          ],
+          "date-time": "2026-02-01T00:00:00Z",
+          "timestamp": 1769904000000
+        },
+        "content-version": "tdm",
+        "delay-in-days": 0,
+        "URL": "https://www.elsevier.com/tdm/userlicense/1.0/"
+      },
+      {
+        "start": {
+          "date-parts": [
+            [
+              2026,
+              2,
+              1
+            ]
+          ],
+          "date-time": "2026-02-01T00:00:00Z",
+          "timestamp": 1769904000000
+        },
+        "content-version": "tdm",
+        "delay-in-days": 0,
+        "URL": "https://www.elsevier.com/legal/tdmrep-license"
+      },
+      {
+        "start": {
+          "date-parts": [
+            [
+              2026,
+              1,
+              13
+            ]
+          ],
+          "date-time": "2026-01-13T00:00:00Z",
+          "timestamp": 1768262400000
+        },
+        "content-version": "vor",
+        "delay-in-days": 0,
+        "URL": "http://creativecommons.org/licenses/by-nc-nd/4.0/"
+      }
+    ],
+    "status": "metadata-verified; no assertion of exhaustive retraction-check coverage"
+  }
+]

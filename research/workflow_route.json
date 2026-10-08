@@ -1,0 +1,47 @@
+{
+  "workflow": "scientific-research",
+  "risk_tier": "research-grade",
+  "governor": "rei-research-engineering-suite",
+  "parent": "scientific-research-engine",
+  "specialists": [
+    {
+      "name": "literature-evidence-engine",
+      "reason": "prior evidence and novelty review"
+    },
+    {
+      "name": "data-quality-engine",
+      "reason": "training-only audit of real dataset"
+    },
+    {
+      "name": "rei-quant-research",
+      "reason": "hierarchy, predictive estimand, precision and paired inference"
+    }
+  ],
+  "conditional_skills_deferred": [
+    {
+      "name": "ml-experiment-engine",
+      "reason": "no fitting/experiment in current scope"
+    },
+    {
+      "name": "ai-evaluation-engine",
+      "reason": "full evaluation implementation not yet authorized"
+    },
+    {
+      "name": "latex-academic-publishing",
+      "reason": "no empirical paper/submission artifact yet"
+    }
+  ],
+  "delegation": [
+    {
+      "task": "g0_workspace",
+      "model": "GPT-6 LUNA",
+      "reasoning": "Max",
+      "authorization": "user proposal section19"
+    },
+    {
+      "task": "methodology_audit",
+      "model": "inherited lead model",
+      "authorization": "suite topological delegation and independent quantitative review"
+    }
+  ]
+}

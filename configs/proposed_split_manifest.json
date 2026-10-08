@@ -1,0 +1,702 @@
+[
+  {
+    "dataset": "FD001_train",
+    "engine": 1,
+    "role": "tune",
+    "proposed_cutoff": 129,
+    "eligible_alive": true
+  },
+  {
+    "dataset": "FD001_train",
+    "engine": 2,
+    "role": "fit",
+    "proposed_cutoff": 69,
+    "eligible_alive": true
+  },
+  {
+    "dataset": "FD001_train",
+    "engine": 3,
+    "role": "fit",
+    "proposed_cutoff": 121,
+    "eligible_alive": true
+  },
+  {
+    "dataset": "FD001_train",
+    "engine": 4,
+    "role": "fit",
+    "proposed_cutoff": 112,
+    "eligible_alive": true
+  },
+  {
+    "dataset": "FD001_train",
+    "engine": 5,
+    "role": "fit",
+    "proposed_cutoff": 158,
+    "eligible_alive": true
+  },
+  {
+    "dataset": "FD001_train",
+    "engine": 6,
+    "role": "calibration",
+    "proposed_cutoff": 249,
+    "eligible_alive": false
+  },
+  {
+    "dataset": "FD001_train",
+    "engine": 7,
+    "role": "fit",
+    "proposed_cutoff": 135,
+    "eligible_alive": true
+  },
+  {
+    "dataset": "FD001_train",
+    "engine": 8,
+    "role": "fit",
+    "proposed_cutoff": 188,
+    "eligible_alive": false
+  },
+  {
+    "dataset": "FD001_train",
+    "engine": 9,
+    "role": "fit",
+    "proposed_cutoff": 37,
+    "eligible_alive": true
+  },
+  {
+    "dataset": "FD001_train",
+    "engine": 10,
+    "role": "fit",
+    "proposed_cutoff": 74,
+    "eligible_alive": true
+  },
+  {
+    "dataset": "FD001_train",
+    "engine": 11,
+    "role": "calibration",
+    "proposed_cutoff": 210,
+    "eligible_alive": true
+  },
+  {
+    "dataset": "FD001_train",
+    "engine": 12,
+    "role": "fit",
+    "proposed_cutoff": 126,
+    "eligible_alive": true
+  },
+  {
+    "dataset": "FD001_train",
+    "engine": 13,
+    "role": "fit",
+    "proposed_cutoff": 67,
+    "eligible_alive": true
+  },
+  {
+    "dataset": "FD001_train",
+    "engine": 14,
+    "role": "calibration",
+    "proposed_cutoff": 197,
+    "eligible_alive": false
+  },
+  {
+    "dataset": "FD001_train",
+    "engine": 15,
+    "role": "fit",
+    "proposed_cutoff": 211,
+    "eligible_alive": false
+  },
+  {
+    "dataset": "FD001_train",
+    "engine": 16,
+    "role": "calibration",
+    "proposed_cutoff": 160,
+    "eligible_alive": true
+  },
+  {
+    "dataset": "FD001_train",
+    "engine": 17,
+    "role": "fit",
+    "proposed_cutoff": 44,
+    "eligible_alive": true
+  },
+  {
+    "dataset": "FD001_train",
+    "engine": 18,
+    "role": "fit",
+    "proposed_cutoff": 191,
+    "eligible_alive": true
+  },
+  {
+    "dataset": "FD001_train",
+    "engine": 19,
+    "role": "fit",
+    "proposed_cutoff": 176,
+    "eligible_alive": false
+  },
+  {
+    "dataset": "FD001_train",
+    "engine": 20,
+    "role": "tune",
+    "proposed_cutoff": 193,
+    "eligible_alive": true
+  },
+  {
+    "dataset": "FD001_train",
+    "engine": 21,
+    "role": "tune",
+    "proposed_cutoff": 170,
+    "eligible_alive": true
+  },
+  {
+    "dataset": "FD001_train",
+    "engine": 22,
+    "role": "fit",
+    "proposed_cutoff": 141,
+    "eligible_alive": true
+  },
+  {
+    "dataset": "FD001_train",
+    "engine": 23,
+    "role": "fit",
+    "proposed_cutoff": 81,
+    "eligible_alive": true
+  },
+  {
+    "dataset": "FD001_train",
+    "engine": 24,
+    "role": "fit",
+    "proposed_cutoff": 193,
+    "eligible_alive": false
+  },
+  {
+    "dataset": "FD001_train",
+    "engine": 25,
+    "role": "calibration",
+    "proposed_cutoff": 189,
+    "eligible_alive": true
+  },
+  {
+    "dataset": "FD001_train",
+    "engine": 26,
+    "role": "calibration",
+    "proposed_cutoff": 98,
+    "eligible_alive": true
+  },
+  {
+    "dataset": "FD001_train",
+    "engine": 27,
+    "role": "tune",
+    "proposed_cutoff": 233,
+    "eligible_alive": false
+  },
+  {
+    "dataset": "FD001_train",
+    "engine": 28,
+    "role": "fit",
+    "proposed_cutoff": 216,
+    "eligible_alive": false
+  },
+  {
+    "dataset": "FD001_train",
+    "engine": 29,
+    "role": "calibration",
+    "proposed_cutoff": 186,
+    "eligible_alive": false
+  },
+  {
+    "dataset": "FD001_train",
+    "engine": 30,
+    "role": "fit",
+    "proposed_cutoff": 211,
+    "eligible_alive": false
+  },
+  {
+    "dataset": "FD001_train",
+    "engine": 31,
+    "role": "calibration",
+    "proposed_cutoff": 183,
+    "eligible_alive": true
+  },
+  {
+    "dataset": "FD001_train",
+    "engine": 32,
+    "role": "fit",
+    "proposed_cutoff": 44,
+    "eligible_alive": true
+  },
+  {
+    "dataset": "FD001_train",
+    "engine": 33,
+    "role": "calibration",
+    "proposed_cutoff": 156,
+    "eligible_alive": true
+  },
+  {
+    "dataset": "FD001_train",
+    "engine": 34,
+    "role": "calibration",
+    "proposed_cutoff": 164,
+    "eligible_alive": true
+  },
+  {
+    "dataset": "FD001_train",
+    "engine": 35,
+    "role": "tune",
+    "proposed_cutoff": 33,
+    "eligible_alive": true
+  },
+  {
+    "dataset": "FD001_train",
+    "engine": 36,
+    "role": "fit",
+    "proposed_cutoff": 105,
+    "eligible_alive": true
+  },
+  {
+    "dataset": "FD001_train",
+    "engine": 37,
+    "role": "calibration",
+    "proposed_cutoff": 214,
+    "eligible_alive": false
+  },
+  {
+    "dataset": "FD001_train",
+    "engine": 38,
+    "role": "fit",
+    "proposed_cutoff": 238,
+    "eligible_alive": false
+  },
+  {
+    "dataset": "FD001_train",
+    "engine": 39,
+    "role": "calibration",
+    "proposed_cutoff": 46,
+    "eligible_alive": true
+  },
+  {
+    "dataset": "FD001_train",
+    "engine": 40,
+    "role": "calibration",
+    "proposed_cutoff": 87,
+    "eligible_alive": true
+  },
+  {
+    "dataset": "FD001_train",
+    "engine": 41,
+    "role": "calibration",
+    "proposed_cutoff": 62,
+    "eligible_alive": true
+  },
+  {
+    "dataset": "FD001_train",
+    "engine": 42,
+    "role": "fit",
+    "proposed_cutoff": 102,
+    "eligible_alive": true
+  },
+  {
+    "dataset": "FD001_train",
+    "engine": 43,
+    "role": "fit",
+    "proposed_cutoff": 74,
+    "eligible_alive": true
+  },
+  {
+    "dataset": "FD001_train",
+    "engine": 44,
+    "role": "fit",
+    "proposed_cutoff": 71,
+    "eligible_alive": true
+  },
+  {
+    "dataset": "FD001_train",
+    "engine": 45,
+    "role": "calibration",
+    "proposed_cutoff": 51,
+    "eligible_alive": true
+  },
+  {
+    "dataset": "FD001_train",
+    "engine": 46,
+    "role": "fit",
+    "proposed_cutoff": 100,
+    "eligible_alive": true
+  },
+  {
+    "dataset": "FD001_train",
+    "engine": 47,
+    "role": "fit",
+    "proposed_cutoff": 117,
+    "eligible_alive": true
+  },
+  {
+    "dataset": "FD001_train",
+    "engine": 48,
+    "role": "tune",
+    "proposed_cutoff": 51,
+    "eligible_alive": true
+  },
+  {
+    "dataset": "FD001_train",
+    "engine": 49,
+    "role": "fit",
+    "proposed_cutoff": 93,
+    "eligible_alive": true
+  },
+  {
+    "dataset": "FD001_train",
+    "engine": 50,
+    "role": "calibration",
+    "proposed_cutoff": 107,
+    "eligible_alive": true
+  },
+  {
+    "dataset": "FD001_train",
+    "engine": 51,
+    "role": "calibration",
+    "proposed_cutoff": 149,
+    "eligible_alive": true
+  },
+  {
+    "dataset": "FD001_train",
+    "engine": 52,
+    "role": "fit",
+    "proposed_cutoff": 91,
+    "eligible_alive": true
+  },
+  {
+    "dataset": "FD001_train",
+    "engine": 53,
+    "role": "calibration",
+    "proposed_cutoff": 198,
+    "eligible_alive": false
+  },
+  {
+    "dataset": "FD001_train",
+    "engine": 54,
+    "role": "fit",
+    "proposed_cutoff": 213,
+    "eligible_alive": true
+  },
+  {
+    "dataset": "FD001_train",
+    "engine": 55,
+    "role": "calibration",
+    "proposed_cutoff": 152,
+    "eligible_alive": true
+  },
+  {
+    "dataset": "FD001_train",
+    "engine": 56,
+    "role": "calibration",
+    "proposed_cutoff": 112,
+    "eligible_alive": true
+  },
+  {
+    "dataset": "FD001_train",
+    "engine": 57,
+    "role": "fit",
+    "proposed_cutoff": 121,
+    "eligible_alive": true
+  },
+  {
+    "dataset": "FD001_train",
+    "engine": 58,
+    "role": "tune",
+    "proposed_cutoff": 123,
+    "eligible_alive": true
+  },
+  {
+    "dataset": "FD001_train",
+    "engine": 59,
+    "role": "calibration",
+    "proposed_cutoff": 154,
+    "eligible_alive": true
+  },
+  {
+    "dataset": "FD001_train",
+    "engine": 60,
+    "role": "tune",
+    "proposed_cutoff": 84,
+    "eligible_alive": true
+  },
+  {
+    "dataset": "FD001_train",
+    "engine": 61,
+    "role": "calibration",
+    "proposed_cutoff": 165,
+    "eligible_alive": true
+  },
+  {
+    "dataset": "FD001_train",
+    "engine": 62,
+    "role": "calibration",
+    "proposed_cutoff": 61,
+    "eligible_alive": true
+  },
+  {
+    "dataset": "FD001_train",
+    "engine": 63,
+    "role": "calibration",
+    "proposed_cutoff": 156,
+    "eligible_alive": true
+  },
+  {
+    "dataset": "FD001_train",
+    "engine": 64,
+    "role": "tune",
+    "proposed_cutoff": 118,
+    "eligible_alive": true
+  },
+  {
+    "dataset": "FD001_train",
+    "engine": 65,
+    "role": "tune",
+    "proposed_cutoff": 159,
+    "eligible_alive": false
+  },
+  {
+    "dataset": "FD001_train",
+    "engine": 66,
+    "role": "calibration",
+    "proposed_cutoff": 51,
+    "eligible_alive": true
+  },
+  {
+    "dataset": "FD001_train",
+    "engine": 67,
+    "role": "fit",
+    "proposed_cutoff": 171,
+    "eligible_alive": true
+  },
+  {
+    "dataset": "FD001_train",
+    "engine": 68,
+    "role": "fit",
+    "proposed_cutoff": 242,
+    "eligible_alive": false
+  },
+  {
+    "dataset": "FD001_train",
+    "engine": 69,
+    "role": "fit",
+    "proposed_cutoff": 208,
+    "eligible_alive": true
+  },
+  {
+    "dataset": "FD001_train",
+    "engine": 70,
+    "role": "fit",
+    "proposed_cutoff": 110,
+    "eligible_alive": true
+  },
+  {
+    "dataset": "FD001_train",
+    "engine": 71,
+    "role": "tune",
+    "proposed_cutoff": 180,
+    "eligible_alive": true
+  },
+  {
+    "dataset": "FD001_train",
+    "engine": 72,
+    "role": "calibration",
+    "proposed_cutoff": 63,
+    "eligible_alive": true
+  },
+  {
+    "dataset": "FD001_train",
+    "engine": 73,
+    "role": "fit",
+    "proposed_cutoff": 215,
+    "eligible_alive": false
+  },
+  {
+    "dataset": "FD001_train",
+    "engine": 74,
+    "role": "fit",
+    "proposed_cutoff": 45,
+    "eligible_alive": true
+  },
+  {
+    "dataset": "FD001_train",
+    "engine": 75,
+    "role": "calibration",
+    "proposed_cutoff": 79,
+    "eligible_alive": true
+  },
+  {
+    "dataset": "FD001_train",
+    "engine": 76,
+    "role": "tune",
+    "proposed_cutoff": 127,
+    "eligible_alive": true
+  },
+  {
+    "dataset": "FD001_train",
+    "engine": 77,
+    "role": "fit",
+    "proposed_cutoff": 175,
+    "eligible_alive": false
+  },
+  {
+    "dataset": "FD001_train",
+    "engine": 78,
+    "role": "tune",
+    "proposed_cutoff": 205,
+    "eligible_alive": true
+  },
+  {
+    "dataset": "FD001_train",
+    "engine": 79,
+    "role": "calibration",
+    "proposed_cutoff": 46,
+    "eligible_alive": true
+  },
+  {
+    "dataset": "FD001_train",
+    "engine": 80,
+    "role": "fit",
+    "proposed_cutoff": 144,
+    "eligible_alive": true
+  },
+  {
+    "dataset": "FD001_train",
+    "engine": 81,
+    "role": "fit",
+    "proposed_cutoff": 44,
+    "eligible_alive": true
+  },
+  {
+    "dataset": "FD001_train",
+    "engine": 82,
+    "role": "fit",
+    "proposed_cutoff": 57,
+    "eligible_alive": true
+  },
+  {
+    "dataset": "FD001_train",
+    "engine": 83,
+    "role": "fit",
+    "proposed_cutoff": 182,
+    "eligible_alive": true
+  },
+  {
+    "dataset": "FD001_train",
+    "engine": 84,
+    "role": "fit",
+    "proposed_cutoff": 181,
+    "eligible_alive": true
+  },
+  {
+    "dataset": "FD001_train",
+    "engine": 85,
+    "role": "calibration",
+    "proposed_cutoff": 52,
+    "eligible_alive": true
+  },
+  {
+    "dataset": "FD001_train",
+    "engine": 86,
+    "role": "calibration",
+    "proposed_cutoff": 30,
+    "eligible_alive": true
+  },
+  {
+    "dataset": "FD001_train",
+    "engine": 87,
+    "role": "fit",
+    "proposed_cutoff": 135,
+    "eligible_alive": true
+  },
+  {
+    "dataset": "FD001_train",
+    "engine": 88,
+    "role": "fit",
+    "proposed_cutoff": 150,
+    "eligible_alive": true
+  },
+  {
+    "dataset": "FD001_train",
+    "engine": 89,
+    "role": "fit",
+    "proposed_cutoff": 60,
+    "eligible_alive": true
+  },
+  {
+    "dataset": "FD001_train",
+    "engine": 90,
+    "role": "fit",
+    "proposed_cutoff": 221,
+    "eligible_alive": false
+  },
+  {
+    "dataset": "FD001_train",
+    "engine": 91,
+    "role": "fit",
+    "proposed_cutoff": 149,
+    "eligible_alive": false
+  },
+  {
+    "dataset": "FD001_train",
+    "engine": 92,
+    "role": "fit",
+    "proposed_cutoff": 230,
+    "eligible_alive": true
+  },
+  {
+    "dataset": "FD001_train",
+    "engine": 93,
+    "role": "fit",
+    "proposed_cutoff": 79,
+    "eligible_alive": true
+  },
+  {
+    "dataset": "FD001_train",
+    "engine": 94,
+    "role": "fit",
+    "proposed_cutoff": 82,
+    "eligible_alive": true
+  },
+  {
+    "dataset": "FD001_train",
+    "engine": 95,
+    "role": "tune",
+    "proposed_cutoff": 46,
+    "eligible_alive": true
+  },
+  {
+    "dataset": "FD001_train",
+    "engine": 96,
+    "role": "fit",
+    "proposed_cutoff": 34,
+    "eligible_alive": true
+  },
+  {
+    "dataset": "FD001_train",
+    "engine": 97,
+    "role": "fit",
+    "proposed_cutoff": 126,
+    "eligible_alive": true
+  },
+  {
+    "dataset": "FD001_train",
+    "engine": 98,
+    "role": "tune",
+    "proposed_cutoff": 103,
+    "eligible_alive": true
+  },
+  {
+    "dataset": "FD001_train",
+    "engine": 99,
+    "role": "fit",
+    "proposed_cutoff": 104,
+    "eligible_alive": true
+  },
+  {
+    "dataset": "FD001_train",
+    "engine": 100,
+    "role": "fit",
+    "proposed_cutoff": 118,
+    "eligible_alive": true
+  }
+]

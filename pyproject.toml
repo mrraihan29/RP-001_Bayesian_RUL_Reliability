@@ -1,0 +1,43 @@
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "rp001-bayesian-rul-reliability"
+version = "0.1.0"
+description = "Research workspace for Bayesian predictive uncertainty evaluation in turbofan RUL estimation."
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+  "numpy",
+  "pandas",
+  "scipy",
+]
+
+[project.optional-dependencies]
+bayesian = [
+  "pymc",
+  "arviz",
+]
+classical = [
+  "statsmodels",
+  "scikit-learn",
+]
+visualization = [
+  "matplotlib",
+]
+notebooks = [
+  "jupyter",
+]
+test = [
+  "pytest",
+]
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

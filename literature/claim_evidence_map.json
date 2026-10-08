@@ -1,0 +1,52 @@
+{
+  "claim_links": [
+    {
+      "claim": "Bayesian/conformal RUL already have prior art",
+      "evidence": [
+        "S03",
+        "S04",
+        "S10",
+        "S11"
+      ],
+      "relation": "supports",
+      "support_basis": "as source ledger"
+    },
+    {
+      "claim": "Novelty of engine-disjoint reliability audit unresolved",
+      "evidence": [
+        "S12",
+        "S13"
+      ],
+      "relation": "boundary-condition",
+      "support_basis": "publisher abstract with identity discrepancy; metadata-only candidate"
+    },
+    {
+      "claim": "Conformal guarantees require assumptions",
+      "evidence": [
+        "S05",
+        "S07",
+        "S08"
+      ],
+      "relation": "boundary-condition",
+      "support_basis": "author full text"
+    },
+    {
+      "claim": "Interval score is appropriate interval endpoint",
+      "evidence": [
+        "S06"
+      ],
+      "relation": "supports",
+      "support_basis": "section6.2"
+    },
+    {
+      "claim": "Diagnostics necessary but insufficient for scientific truth",
+      "evidence": [
+        "S09"
+      ],
+      "relation": "supports",
+      "support_basis": "author full text"
+    }
+  ],
+  "quality_appraisal": "Domains assessed in evidence records/docs01; unavailable methods explicitly not assessed, no numeric score",
+  "evidence_independence": "All C-MAPSS papers reuse same benchmark; preprint/journal S03 linked as one study"
+}

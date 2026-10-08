@@ -1,0 +1,145 @@
+{
+  "audit_date": "2026-10-08",
+  "scope": "FD001 official training only",
+  "raw_sha256": "963b5e22825b34d8b21c69e1aeb4af3e647050eb672ee8834ba4b5d91d2de0f8",
+  "rows": 20631,
+  "engines": 100,
+  "fields": 26,
+  "unique_engine_cycle": true,
+  "complete_monotone_cycles": true,
+  "nonfinite": 0,
+  "lifetimes": {
+    "min": 128,
+    "max": 362,
+    "median": 199.0
+  },
+  "sensor_ranges": {
+    "s1": {
+      "min": 518.67,
+      "max": 518.67,
+      "variance": 0.0
+    },
+    "s2": {
+      "min": 641.21,
+      "max": 644.53,
+      "variance": 0.2500411526291694
+    },
+    "s3": {
+      "min": 1571.04,
+      "max": 1616.91,
+      "variance": 37.589172369190365
+    },
+    "s4": {
+      "min": 1382.25,
+      "max": 1441.49,
+      "variance": 81.00695975729347
+    },
+    "s5": {
+      "min": 14.62,
+      "max": 14.62,
+      "variance": 0.0
+    },
+    "s6": {
+      "min": 21.6,
+      "max": 21.61,
+      "variance": 1.92918557412824e-06
+    },
+    "s7": {
+      "min": 549.85,
+      "max": 556.06,
+      "variance": 0.7833503331586856
+    },
+    "s8": {
+      "min": 2387.9,
+      "max": 2388.56,
+      "variance": 0.005038693972269998
+    },
+    "s9": {
+      "min": 9021.73,
+      "max": 9244.59,
+      "variance": 487.62993118542477
+    },
+    "s10": {
+      "min": 1.3,
+      "max": 1.3,
+      "variance": 0.0
+    },
+    "s11": {
+      "min": 46.85,
+      "max": 48.53,
+      "variance": 0.07133222081842422
+    },
+    "s12": {
+      "min": 518.69,
+      "max": 523.38,
+      "variance": 0.5439586389999457
+    },
+    "s13": {
+      "min": 2387.88,
+      "max": 2388.56,
+      "variance": 0.005172079728534587
+    },
+    "s14": {
+      "min": 8099.94,
+      "max": 8293.72,
+      "variance": 363.88285133662424
+    },
+    "s15": {
+      "min": 8.3249,
+      "max": 8.5848,
+      "variance": 0.0014065596914734817
+    },
+    "s16": {
+      "min": 0.03,
+      "max": 0.03,
+      "variance": 0.0
+    },
+    "s17": {
+      "min": 388.0,
+      "max": 400.0,
+      "variance": 2.3985506412335056
+    },
+    "s18": {
+      "min": 2388.0,
+      "max": 2388.0,
+      "variance": 0.0
+    },
+    "s19": {
+      "min": 100.0,
+      "max": 100.0,
+      "variance": 0.0
+    },
+    "s20": {
+      "min": 38.14,
+      "max": 39.43,
+      "variance": 0.03266768768508048
+    },
+    "s21": {
+      "min": 22.8942,
+      "max": 23.6184,
+      "variance": 0.011717683890605806
+    }
+  },
+  "proposed_design": {
+    "fit": {
+      "assigned": 55,
+      "eligible": 43
+    },
+    "tune": {
+      "assigned": 15,
+      "eligible": 13
+    },
+    "calibration": {
+      "assigned": 30,
+      "eligible": 25
+    }
+  },
+  "cutoff_generator": "single independent hash-based DiscreteUniform approximation over 30..250, reject C>=T; no redraw",
+  "official_test_files_read": false,
+  "calibration_residuals_computed": false,
+  "limits": [
+    "training IDs and test IDs are separate namespaces; equal numeric IDs are not shared engines",
+    "no cross train-test duplicate or test-schema audit yet",
+    "modulo reduction negligible hash-uniform approximation, deterministic not an experimental randomization guarantee"
+  ]
+}

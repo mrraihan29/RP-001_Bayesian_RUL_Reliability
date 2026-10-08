@@ -1,0 +1,59 @@
+{
+  "status": "PASS",
+  "scope": "Numerical preimplementation equation checks only",
+  "numpy_version": "2.3.5",
+  "checks": [
+    {
+      "name": "Gaussian conditional moments and joint density factorization",
+      "status": "PASS",
+      "details": {
+        "cases": 12,
+        "history_lengths": [
+          1,
+          2,
+          30
+        ],
+        "rho": [
+          -0.5,
+          0.0,
+          0.5,
+          0.95
+        ],
+        "maximum_absolute_error": 8.382183835919932e-15,
+        "scope": "Fixed positive-definite example parameters; no inference or identifiability claim."
+      }
+    },
+    {
+      "name": "Interval score, finite conformal rank, nonnegative support",
+      "status": "PASS",
+      "details": {
+        "score_cases": 5,
+        "rank_n25": 24,
+        "coverage_guarantee": "Not established for official test cutoff distribution."
+      }
+    },
+    {
+      "name": "Wilson and normal-approximation planning precision",
+      "status": "PASS",
+      "details": {
+        "hypothetical_wilson95": [
+          0.8256343384950865,
+          0.9447708629393249
+        ],
+        "scope": "Hypothetical 90 successes, not observed model coverage."
+      }
+    },
+    {
+      "name": "Bootstrap-t interval and directional upper-bound inversion",
+      "status": "PASS",
+      "details": {
+        "scope": "Algebraic inversion only; bootstrap adequacy/stability not evaluated."
+      }
+    }
+  ],
+  "script_sha256": "e74ae615c20dd8200ac4731d1639317ee6566fc8212b5c86656b1afd9090075f",
+  "model_fitting_performed": false,
+  "test_files_read": false,
+  "sampling_validated": false,
+  "scientific_validation": "DEFERRED"
+}

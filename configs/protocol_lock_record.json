@@ -1,0 +1,14 @@
+{
+  "artifact_version": "0.2",
+  "status": "PROPOSED_NOT_LOCKED",
+  "owner": "Raihan",
+  "stage_a_approved": false,
+  "stage_b_approved": false,
+  "locked_at": null,
+  "proposed_protocol_sha256": "4860d88f8d902fe74f30cf587dc77099a8a4f21ac3f4c323398d8fd2e0f7bcdb",
+  "proposed_split_sha256": "6d6e0f10d979d41739c6c07b6bab8f0c32d2844ebd150e82d13caa3bd29e124b",
+  "primary_model_and_prediction": "docs/03_candidate_mathematical_model.md",
+  "primary_analysis": "docs/04_statistical_analysis_plan.md",
+  "approval_source": "None; user proposal requires approval before confirmatory experiment",
+  "next": "Review package -> ownerStageA -> development validation -> final ownerStageB"
+}

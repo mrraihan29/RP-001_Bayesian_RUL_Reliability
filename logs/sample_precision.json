@@ -1,0 +1,84 @@
+{
+  "calculation_date": "2026-10-08",
+  "n_test_planned": 100,
+  "coverage_90_of_100_wilson95": [
+    0.8256343384950865,
+    0.9447708629393249
+  ],
+  "coverage_expected_se_if_p_0_9": 0.030000000000000002,
+  "coverage_n_normal_approx_halfwidth_0_02": 865,
+  "coverage_n_normal_approx_halfwidth_0_05": 139,
+  "standardized_paired_mde_80pct_one_sided_0_05_normal_approx": 0.24864748605243858,
+  "score_precision_scenarios": [
+    {
+      "sd_difference_cycles": 10,
+      "two_sided95_halfwidth_t99_approx": 1.9842169515,
+      "mde80_one_sided_cycles_normal_approx": 2.486474860524386
+    },
+    {
+      "sd_difference_cycles": 20,
+      "two_sided95_halfwidth_t99_approx": 3.968433903,
+      "mde80_one_sided_cycles_normal_approx": 4.972949721048772
+    },
+    {
+      "sd_difference_cycles": 40,
+      "two_sided95_halfwidth_t99_approx": 7.936867806,
+      "mde80_one_sided_cycles_normal_approx": 9.945899442097543
+    },
+    {
+      "sd_difference_cycles": 80,
+      "two_sided95_halfwidth_t99_approx": 15.873735612,
+      "mde80_one_sided_cycles_normal_approx": 19.891798884195087
+    }
+  ],
+  "conformal_rank_scenarios": [
+    {
+      "n": 8,
+      "rank": 9,
+      "rank_fraction": 1.0,
+      "granularity": 0.1111111111111111,
+      "finite": false
+    },
+    {
+      "n": 9,
+      "rank": 9,
+      "rank_fraction": 0.9,
+      "granularity": 0.1,
+      "finite": true
+    },
+    {
+      "n": 19,
+      "rank": 18,
+      "rank_fraction": 0.9,
+      "granularity": 0.05,
+      "finite": true
+    },
+    {
+      "n": 20,
+      "rank": 19,
+      "rank_fraction": 0.9047619047619048,
+      "granularity": 0.047619047619047616,
+      "finite": true
+    },
+    {
+      "n": 25,
+      "rank": 24,
+      "rank_fraction": 0.9230769230769231,
+      "granularity": 0.038461538461538464,
+      "finite": true
+    },
+    {
+      "n": 30,
+      "rank": 28,
+      "rank_fraction": 0.9032258064516129,
+      "granularity": 0.03225806451612903,
+      "finite": true
+    }
+  ],
+  "assumptions": [
+    "engine Bernoulli independence for Wilson interpretation",
+    "all power numbers are planning approximations, not observed power",
+    "paired MDE does not establish SESOI",
+    "score SD unknown; no model fit or actual scores used"
+  ]
+}

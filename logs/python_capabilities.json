@@ -1,0 +1,15 @@
+{
+  "python_version": "3.12.14 (main, Aug 25 2026, 14:01:42) [MSC v.1944 64 bit (AMD64)]",
+  "executable": "C:\\Users\\Raihan\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+  "available_without_install": {
+    "numpy": true,
+    "scipy": false,
+    "pandas": true,
+    "pymc": false,
+    "arviz": false,
+    "statsmodels": false,
+    "sklearn": false,
+    "matplotlib": false,
+    "pytest": false
+  }
+}

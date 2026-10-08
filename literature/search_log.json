@@ -1,0 +1,227 @@
+{
+  "review_mode": "narrative",
+  "queries": [
+    {
+      "query_id": "Q01",
+      "query": "site.nasa.gov C-MAPSS turbofan FD001 dataset 100 100 prognostics",
+      "platform": "web search tool",
+      "date": "2026-10-08",
+      "limits": "no explicit year/language filter; review as-of2026-10-08",
+      "total_hit_count": null,
+      "hit_count_note": "search tool returned selected records; complete database hit count unavailable",
+      "screening": "purposeful narrative primary-source screening; no systematic completeness claim"
+    },
+    {
+      "query_id": "Q02",
+      "query": "Bayesian remaining useful life uncertainty C-MAPSS calibration conformal prediction engine dependence",
+      "platform": "web search tool",
+      "date": "2026-10-08",
+      "limits": "no explicit year/language filter; review as-of2026-10-08",
+      "total_hit_count": null,
+      "hit_count_note": "search tool returned selected records; complete database hit count unavailable",
+      "screening": "purposeful narrative primary-source screening; no systematic completeness claim"
+    },
+    {
+      "query_id": "Q03",
+      "query": "conformal prediction remaining useful life C-MAPSS uncertainty calibration hierarchical",
+      "platform": "web search tool",
+      "date": "2026-10-08",
+      "limits": "no explicit year/language filter; review as-of2026-10-08",
+      "total_hit_count": null,
+      "hit_count_note": "search tool returned selected records; complete database hit count unavailable",
+      "screening": "purposeful narrative primary-source screening; no systematic completeness claim"
+    },
+    {
+      "query_id": "Q04",
+      "query": "\"Bayesian\" \"remaining useful life\" \"Hamiltonian Monte Carlo\" Benker Furtner",
+      "platform": "web search tool",
+      "date": "2026-10-08",
+      "limits": "no explicit year/language filter; review as-of2026-10-08",
+      "total_hit_count": null,
+      "hit_count_note": "search tool returned selected records; complete database hit count unavailable",
+      "screening": "purposeful narrative primary-source screening; no systematic completeness claim"
+    },
+    {
+      "query_id": "Q05",
+      "query": "\"Conformalized Quantile Regression\" Romano Patterson Candes 2019 neurips",
+      "platform": "web search tool",
+      "date": "2026-10-08",
+      "limits": "no explicit year/language filter; review as-of2026-10-08",
+      "total_hit_count": null,
+      "hit_count_note": "search tool returned selected records; complete database hit count unavailable",
+      "screening": "purposeful narrative primary-source screening; no systematic completeness claim"
+    },
+    {
+      "query_id": "Q06",
+      "query": "\"A hierarchical approach to conformal prediction\" repeated measurements",
+      "platform": "web search tool",
+      "date": "2026-10-08",
+      "limits": "no explicit year/language filter; review as-of2026-10-08",
+      "total_hit_count": null,
+      "hit_count_note": "search tool returned selected records; complete database hit count unavailable",
+      "screening": "purposeful narrative primary-source screening; no systematic completeness claim"
+    },
+    {
+      "query_id": "Q07",
+      "query": "\"Rank-normalization, folding, and localization\" Vehtari R-hat 2021",
+      "platform": "web search tool",
+      "date": "2026-10-08",
+      "limits": "no explicit year/language filter; review as-of2026-10-08",
+      "total_hit_count": null,
+      "hit_count_note": "search tool returned selected records; complete database hit count unavailable",
+      "screening": "purposeful narrative primary-source screening; no systematic completeness claim"
+    },
+    {
+      "query_id": "Q08",
+      "query": "\"Distribution-free inference with hierarchical data\" arxiv authors",
+      "platform": "web search tool",
+      "date": "2026-10-08",
+      "limits": "no explicit year/language filter; review as-of2026-10-08",
+      "total_hit_count": null,
+      "hit_count_note": "search tool returned selected records; complete database hit count unavailable",
+      "screening": "purposeful narrative primary-source screening; no systematic completeness claim"
+    },
+    {
+      "query_id": "Q09",
+      "query": "\"Strictly Proper Scoring Rules\" Gneiting Raftery interval score 2007 pdf",
+      "platform": "web search tool",
+      "date": "2026-10-08",
+      "limits": "no explicit year/language filter; review as-of2026-10-08",
+      "total_hit_count": null,
+      "hit_count_note": "search tool returned selected records; complete database hit count unavailable",
+      "screening": "purposeful narrative primary-source screening; no systematic completeness claim"
+    },
+    {
+      "query_id": "Q10",
+      "query": "site.pymc.io sample posterior predictive new groups random effects data",
+      "platform": "web search tool",
+      "date": "2026-10-08",
+      "limits": "no explicit year/language filter; review as-of2026-10-08",
+      "total_hit_count": null,
+      "hit_count_note": "search tool returned selected records; complete database hit count unavailable",
+      "screening": "purposeful narrative primary-source screening; no systematic completeness claim"
+    },
+    {
+      "query_id": "Q11",
+      "query": "site.nasa.gov \"CMaps\" \"CMAPSSData.zip\"",
+      "platform": "web search tool",
+      "date": "2026-10-08",
+      "limits": "no explicit year/language filter; review as-of2026-10-08",
+      "total_hit_count": null,
+      "hit_count_note": "search tool returned selected records; complete database hit count unavailable",
+      "screening": "purposeful narrative primary-source screening; no systematic completeness claim"
+    },
+    {
+      "query_id": "Q12",
+      "query": "site.nasa.gov prognostics repository turbofan CMAPSSData.zip download",
+      "platform": "web search tool",
+      "date": "2026-10-08",
+      "limits": "no explicit year/language filter; review as-of2026-10-08",
+      "total_hit_count": null,
+      "hit_count_note": "search tool returned selected records; complete database hit count unavailable",
+      "screening": "purposeful narrative primary-source screening; no systematic completeness claim"
+    },
+    {
+      "query_id": "Q13",
+      "query": "\"A novel uncertainty-aware framework\" \"calibration\" RUL 2026 275",
+      "platform": "web search tool",
+      "date": "2026-10-08",
+      "limits": "no explicit year/language filter; review as-of2026-10-08",
+      "total_hit_count": null,
+      "hit_count_note": "search tool returned selected records; complete database hit count unavailable",
+      "screening": "purposeful narrative primary-source screening; no systematic completeness claim"
+    },
+    {
+      "query_id": "Q14",
+      "query": "\"Bayesian RUL\" \"interval score\" calibration",
+      "platform": "web search tool",
+      "date": "2026-10-08",
+      "limits": "no explicit year/language filter; review as-of2026-10-08",
+      "total_hit_count": null,
+      "hit_count_note": "search tool returned selected records; complete database hit count unavailable",
+      "screening": "purposeful narrative primary-source screening; no systematic completeness claim"
+    },
+    {
+      "query_id": "Q15",
+      "query": "\"remaining useful life\" \"Bayesian\" \"calibration\" \"negative\"",
+      "platform": "web search tool",
+      "date": "2026-10-08",
+      "limits": "no explicit year/language filter; review as-of2026-10-08",
+      "total_hit_count": null,
+      "hit_count_note": "search tool returned selected records; complete database hit count unavailable",
+      "screening": "purposeful narrative primary-source screening; no systematic completeness claim"
+    },
+    {
+      "query_id": "Q16",
+      "query": "site.sciencedirect.com/science/article \"A novel uncertainty-aware framework for remaining useful life prediction integrating uncertainty quantification and calibration\"",
+      "platform": "web search tool",
+      "date": "2026-10-08",
+      "limits": "no explicit year/language filter; review as-of2026-10-08",
+      "total_hit_count": null,
+      "hit_count_note": "search tool returned selected records; complete database hit count unavailable",
+      "screening": "purposeful narrative primary-source screening; no systematic completeness claim"
+    },
+    {
+      "query_id": "Q17",
+      "query": "site.sciencedirect.com/science/article \"Few-shot remaining useful life prediction based on Bayesian meta-learning\"",
+      "platform": "web search tool",
+      "date": "2026-10-08",
+      "limits": "no explicit year/language filter; review as-of2026-10-08",
+      "total_hit_count": null,
+      "hit_count_note": "search tool returned selected records; complete database hit count unavailable",
+      "screening": "purposeful narrative primary-source screening; no systematic completeness claim"
+    },
+    {
+      "query_id": "Q18",
+      "query": "site.sciencedirect.com/science/article \"Uncertainty aware predictive maintenance using a hybrid Transformer\"",
+      "platform": "web search tool",
+      "date": "2026-10-08",
+      "limits": "no explicit year/language filter; review as-of2026-10-08",
+      "total_hit_count": null,
+      "hit_count_note": "search tool returned selected records; complete database hit count unavailable",
+      "screening": "purposeful narrative primary-source screening; no systematic completeness claim"
+    },
+    {
+      "query_id": "Q19",
+      "query": "\"Uncertainty aware predictive maintenance\" \"Author\" 103992",
+      "platform": "web search tool",
+      "date": "2026-10-08",
+      "limits": "no explicit year/language filter; review as-of2026-10-08",
+      "total_hit_count": null,
+      "hit_count_note": "search tool returned selected records; complete database hit count unavailable",
+      "screening": "purposeful narrative primary-source screening; no systematic completeness claim"
+    },
+    {
+      "query_id": "Q20",
+      "query": "\"112763\" Xu Gao Wang Zio Bayesian calibration site:sciencedirect.com",
+      "platform": "web search tool",
+      "date": "2026-10-08",
+      "limits": "no explicit year/language filter; review as-of2026-10-08",
+      "total_hit_count": null,
+      "hit_count_note": "search tool returned selected records; complete database hit count unavailable",
+      "screening": "purposeful narrative primary-source screening; no systematic completeness claim"
+    },
+    {
+      "query_id": "Q21",
+      "query": "\"Utilizing uncertainty information\" site:mediatum.ub.tum.de",
+      "platform": "web search tool",
+      "date": "2026-10-08",
+      "limits": "no explicit year/language filter; review as-of2026-10-08",
+      "total_hit_count": null,
+      "hit_count_note": "search tool returned selected records; complete database hit count unavailable",
+      "screening": "purposeful narrative primary-source screening; no systematic completeness claim"
+    },
+    {
+      "query_id": "Q22",
+      "query": "\"Rank-normalization\" \"R-hat\" \"1.01\" \"400\"",
+      "platform": "web search tool",
+      "date": "2026-10-08",
+      "limits": "no explicit year/language filter; review as-of2026-10-08",
+      "total_hit_count": null,
+      "hit_count_note": "search tool returned selected records; complete database hit count unavailable",
+      "screening": "purposeful narrative primary-source screening; no systematic completeness claim"
+    }
+  ],
+  "additional_methods": "opened primary pages, full texts, official metadata, and selected backward references; no bibliographic-database completeness claim",
+  "screening_limitations": "purposeful single-lead screening; methods audited independently, literature screening not dual independent"
+}

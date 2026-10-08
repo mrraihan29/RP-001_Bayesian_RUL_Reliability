@@ -1,0 +1,177 @@
+{
+  "schema_version": "0.2",
+  "dataset": "FD001_train",
+  "mode": "time-series",
+  "field_count": 26,
+  "fields": [
+    {
+      "name": "engine_id",
+      "type": "integer",
+      "unit": "identifier",
+      "nullable": false,
+      "namespace": "FD001_train"
+    },
+    {
+      "name": "cycle",
+      "type": "integer",
+      "unit": "operating cycle",
+      "nullable": false,
+      "range": "positive consecutive integer"
+    },
+    {
+      "name": "setting_1",
+      "type": "float",
+      "unit": "not independently verified",
+      "nullable": false
+    },
+    {
+      "name": "setting_2",
+      "type": "float",
+      "unit": "not independently verified",
+      "nullable": false
+    },
+    {
+      "name": "setting_3",
+      "type": "float",
+      "unit": "not independently verified",
+      "nullable": false
+    },
+    {
+      "name": "sensor_1",
+      "type": "float",
+      "unit": "not independently verified",
+      "nullable": false
+    },
+    {
+      "name": "sensor_2",
+      "type": "float",
+      "unit": "not independently verified",
+      "nullable": false
+    },
+    {
+      "name": "sensor_3",
+      "type": "float",
+      "unit": "not independently verified",
+      "nullable": false
+    },
+    {
+      "name": "sensor_4",
+      "type": "float",
+      "unit": "not independently verified",
+      "nullable": false
+    },
+    {
+      "name": "sensor_5",
+      "type": "float",
+      "unit": "not independently verified",
+      "nullable": false
+    },
+    {
+      "name": "sensor_6",
+      "type": "float",
+      "unit": "not independently verified",
+      "nullable": false
+    },
+    {
+      "name": "sensor_7",
+      "type": "float",
+      "unit": "not independently verified",
+      "nullable": false
+    },
+    {
+      "name": "sensor_8",
+      "type": "float",
+      "unit": "not independently verified",
+      "nullable": false
+    },
+    {
+      "name": "sensor_9",
+      "type": "float",
+      "unit": "not independently verified",
+      "nullable": false
+    },
+    {
+      "name": "sensor_10",
+      "type": "float",
+      "unit": "not independently verified",
+      "nullable": false
+    },
+    {
+      "name": "sensor_11",
+      "type": "float",
+      "unit": "not independently verified",
+      "nullable": false
+    },
+    {
+      "name": "sensor_12",
+      "type": "float",
+      "unit": "not independently verified",
+      "nullable": false
+    },
+    {
+      "name": "sensor_13",
+      "type": "float",
+      "unit": "not independently verified",
+      "nullable": false
+    },
+    {
+      "name": "sensor_14",
+      "type": "float",
+      "unit": "not independently verified",
+      "nullable": false
+    },
+    {
+      "name": "sensor_15",
+      "type": "float",
+      "unit": "not independently verified",
+      "nullable": false
+    },
+    {
+      "name": "sensor_16",
+      "type": "float",
+      "unit": "not independently verified",
+      "nullable": false
+    },
+    {
+      "name": "sensor_17",
+      "type": "float",
+      "unit": "not independently verified",
+      "nullable": false
+    },
+    {
+      "name": "sensor_18",
+      "type": "float",
+      "unit": "not independently verified",
+      "nullable": false
+    },
+    {
+      "name": "sensor_19",
+      "type": "float",
+      "unit": "not independently verified",
+      "nullable": false
+    },
+    {
+      "name": "sensor_20",
+      "type": "float",
+      "unit": "not independently verified",
+      "nullable": false
+    },
+    {
+      "name": "sensor_21",
+      "type": "float",
+      "unit": "not independently verified",
+      "nullable": false
+    }
+  ],
+  "key": [
+    "engine_id",
+    "cycle"
+  ],
+  "outcome": "uncapped terminal_cycle-cutoff; prediction only while cutoff<terminal_cycle",
+  "checks": {
+    "finite_numeric": true,
+    "unique_keys": true,
+    "ordered_complete_cycles": true
+  },
+  "no_cleaning_or_remediation": true
+}

@@ -1,0 +1,25 @@
+{
+  "version": "0.2-before-lead-fixes",
+  "documents": [
+    {
+      "path": "logs/methodology_audit_inputs/02_dataset_feasibility_sample_precision.md",
+      "sha256": "5009dd6c04512d15f117904bb18e3795232715d974751a0e4da22350ba130a86"
+    },
+    {
+      "path": "logs/methodology_audit_inputs/03_candidate_mathematical_model.md",
+      "sha256": "ca2f407ab13709ade2f3c8625e42754c8f8ef12b748bf545c391629cac5491ed"
+    },
+    {
+      "path": "logs/methodology_audit_inputs/04_statistical_analysis_plan.md",
+      "sha256": "c1ae4e4920b153d2781ca0e76f91e53dfa6d2f0cac160069d919cbe05a078db8"
+    },
+    {
+      "path": "logs/methodology_audit_inputs/05_fair_comparator_design.md",
+      "sha256": "cd52ab07fc44088368edad6d4054ba3790787413c022bff9c1afe2e09563b143"
+    },
+    {
+      "path": "logs/methodology_audit_inputs/06_proposed_protocol_lock.md",
+      "sha256": "83b79de560054c59fe7aeefa378e2afdf143c2e7b2ce6b24331ea8e984bfcd14"
+    }
+  ]
+}
