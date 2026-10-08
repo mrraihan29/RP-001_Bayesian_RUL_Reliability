@@ -10,11 +10,18 @@ from .v04_common import PLAN,provenance,write,sha
 from .pilot import convert_trace,diagnostics,recovery
 
 def run(run_id):
-    cfg=next(r for r in PLAN['runs'] if r['run_id']==run_id)
+    base_id=run_id.removesuffix('_infra1')
+    cfg=next(r for r in PLAN['runs'] if r['run_id']==base_id)
+    if base_id!=run_id:
+        original=json.loads((ROOT/'experiments/v0.4/registry'/f'{base_id}.json').read_text())
+        assert cfg['kind']=='pipeline' and cfg['cutoff_mode']=='canonical'
+        assert original['status']=='failed' and original['artifacts_sha256']=={}
+        assert 'cutoff_salt is only valid' in original['exception']
+        assert original['configuration']==cfg, 'No scientific configuration change for infrastructure repair'
     directory=ROOT/'experiments/v0.4/fits';directory.mkdir(parents=True,exist_ok=True)
     record=ROOT/'experiments/v0.4/registry'/f'{run_id}.json'
     if record.exists() or (directory/f'{run_id}.nc').exists(): raise FileExistsError('No scientific overwrite/retry')
-    meta=provenance();meta.update(run_id=run_id,configuration=cfg,status='running')
+    meta=provenance();meta.update(run_id=run_id,configuration=cfg,status='running',infrastructure_repair_of=base_id if base_id!=run_id else None,infrastructure_repair_campaign=1 if base_id!=run_id else None,scientific_sampler_started=False)
     write(record,meta);start=time.perf_counter();cpu=time.process_time();peak=[psutil.Process().memory_info().rss]
     done=threading.Event()
     def monitor():
@@ -34,7 +41,7 @@ def run(run_id):
         elif cfg['kind']=='pipeline':
             from .v04_pipeline import build_bootstrap_pipeline_data,reselect_refit_calibrate_cqr
             from .comparators import predict_endpoints
-            pipeline=build_bootstrap_pipeline_data(load_training(),bootstrap_seed=cfg['bootstrap_seed'],cutoff_mode=cfg['cutoff_mode'],cutoff_salt=str(cfg['cutoff_salt']),input_source_sha256=sha(ROOT/'configs/proposed_split_manifest.json'))
+            pipeline=build_bootstrap_pipeline_data(load_training(),bootstrap_seed=cfg['bootstrap_seed'],cutoff_mode=cfg['cutoff_mode'],cutoff_salt=str(cfg['cutoff_salt']) if cfg['cutoff_mode']=='alternate' else None,input_source_sha256=sha(ROOT/'configs/proposed_split_manifest.json'))
             meta['pipeline_metadata']=pipeline.metadata
             if pipeline.status!='ready': raise ValueError(';'.join(pipeline.failure_reasons))
             data=pipeline.refit_fit_tune;pre=pipeline.refit_preprocessor
@@ -60,6 +67,7 @@ def run(run_id):
         meta['data_sha256']=sha(directory/f'{run_id}_data.npz')
         model=build_model(data,PLAN['prior'],cfg.get('prior_scale',1.),cfg.get('error','normal'),cfg.get('rho_zero',False),extra)
         compiled=nutpie.compile_pymc_model(model,backend='numba')
+        meta['scientific_sampler_started']=True;write(record,meta)
         raw=nutpie.sample(compiled,draws=cfg['draws'],tune=PLAN['sampling']['warmup'],chains=4,cores=2,seed=cfg['seed'],target_accept=.95,maxdepth=12,progress_bar=False,save_warmup=False)
         idata=convert_trace(raw);idata.to_netcdf(directory/f'{run_id}.nc')
         diag,summary=diagnostics(idata,cfg.get('rho_zero',False))
