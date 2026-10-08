@@ -1,6 +1,6 @@
 {
   "schema_version": "0.1",
-  "git_commit": "not yet committed at manifest preparation",
+  "git_commit": "108bfa8dcfc94fb81572483c129ec607b4b7d40f",
   "git_dirty": true,
   "runtime": "Preflight only: bundled CPython3.12.14; global3.11.9 inventoried separately",
   "dependency_lock": "not created; research environment unvalidated",
@@ -44,5 +44,6 @@
     "account_inspected": false,
     "runtime_started": false
   },
-  "research_environment_approved": false
+  "research_environment_approved": false,
+  "snapshot_note": "References the reviewed source commit before final provenance-only commit; working bytes preserved with .gitattributes. Research environment remains unvalidated."
 }

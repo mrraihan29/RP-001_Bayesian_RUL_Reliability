@@ -39,6 +39,6 @@
   "equation_checks": "PASS",
   "static_draft_validation": "PASS",
   "handoff_schema": "PASS",
-  "artifact_inventory_count": 69,
+  "artifact_inventory_count": 71,
   "broken_local_links": []
 }
