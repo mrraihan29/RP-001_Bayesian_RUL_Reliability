@@ -18,13 +18,15 @@ def git_state():
 def write_json(path,obj):
     path.write_text(json.dumps(obj,indent=2,allow_nan=False)+"\n")
 def convert_trace(trace):
-    if isinstance(trace,az.InferenceData): return trace
-    groups={}
-    for name in ("posterior","sample_stats","warmup_posterior","warmup_sample_stats"):
-        if name in trace:
-            node=trace[name]
-            groups[name]=node.to_dataset()
-    idata=az.InferenceData(**groups)
+    if isinstance(trace,az.InferenceData):
+        idata=trace
+    else:
+        groups={}
+        for name in ("posterior","sample_stats","warmup_posterior","warmup_sample_stats"):
+            if name in trace:
+                node=trace[name]
+                groups[name]=node.to_dataset()
+        idata=az.InferenceData(**groups)
     # Preserve nested backend metadata as JSON attributes without altering any samples.
     def safe(value):
         return json.dumps(value,sort_keys=True,default=str) if isinstance(value,(dict,list,tuple)) else value

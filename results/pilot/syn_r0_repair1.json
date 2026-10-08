@@ -1,0 +1,36 @@
+{
+  "exception": "Traceback (most recent call last):\n  File \"C:\\Coding\\Project\\NAOBI RESEARCH\\RP-001_Bayesian_RUL_Reliability\\src\\rp001\\pilot.py\", line 177, in run\n    idata.to_netcdf(outdir/(run_id+\".nc\"))\n  File \"C:\\Coding\\Project\\NAOBI RESEARCH\\RP-001_Bayesian_RUL_Reliability\\.venv\\Lib\\site-packages\\arviz\\data\\inference_data.py\", line 500, in to_netcdf\n    xr.Dataset(attrs=self._attrs).to_netcdf(\n  File \"C:\\Coding\\Project\\NAOBI RESEARCH\\RP-001_Bayesian_RUL_Reliability\\.venv\\Lib\\site-packages\\xarray\\core\\dataset.py\", line 2214, in to_netcdf\n    return to_netcdf(  # type: ignore[return-value]  # mypy cannot resolve the overloads:(\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Coding\\Project\\NAOBI RESEARCH\\RP-001_Bayesian_RUL_Reliability\\.venv\\Lib\\site-packages\\xarray\\backends\\writers.py\", line 406, in to_netcdf\n    _validate_attrs(dataset, engine, invalid_netcdf)\n  File \"C:\\Coding\\Project\\NAOBI RESEARCH\\RP-001_Bayesian_RUL_Reliability\\.venv\\Lib\\site-packages\\xarray\\backends\\writers.py\", line 157, in _validate_attrs\n    check_attr(k, v, valid_types)\n  File \"C:\\Coding\\Project\\NAOBI RESEARCH\\RP-001_Bayesian_RUL_Reliability\\.venv\\Lib\\site-packages\\xarray\\backends\\writers.py\", line 132, in check_attr\n    raise TypeError(\nTypeError: Invalid value for attr 'sample_stats': {'inference_library': 'nutpie', 'inference_library_version': '0.16.11', 'inference_library_settings': '{\"sampler\": \"nuts\", \"adaptation\": \"diag\", \"settings\": {\"num_tune\": 1000, \"num_draws\": 2000, \"maxdepth\": 12, \"mindepth\": 0, \"store_gradient\": false, \"store_unconstrained\": false, \"store_transformed\": false, \"max_energy_error\": 1000.0, \"store_divergences\": false, \"adapt_options\": {\"step_size_settings\": {\"target_accept\": 0.95, \"initial_step\": 0.1, \"jitter\": 0.1, \"adapt_options\": {\"method\": \"DualAverage\", \"dual_average\": {\"k\": 0.75, \"t0\": 10.0, \"gamma\": 0.05, \"max_step_size\": 3.141592653589793}, \"adam\": {\"beta1\": 0.9, \"beta2\": 0.999, \"epsilon\": 1e-08, \"learning_rate\": 0.05}}}, \"mass_matrix_options\": {\"store_mass_matrix\": false, \"use_grad_based_estimate\": true}, \"early_window\": 0.3, \"step_size_window\": 0.15, \"mass_matrix_switch_freq\": 80, \"early_mass_matrix_switch_freq\": 10, \"mass_matrix_update_freq\": 1, \"mass_matrix_window_growth\": 1.5}, \"check_turning\": true, \"target_integration_time\": null, \"trajectory_kind\": \"Euclidean\", \"num_chains\": 4, \"seed\": 13101, \"extra_doublings\": 0}}'}. For serialization to netCDF files, its value must be of one of the following types: str, Number, ndarray, number, list, tuple, bytes\n",
+  "run_id": "syn_r0_repair1",
+  "phase": "exploratory",
+  "status": "failed",
+  "code_commit": "992e1cf12673fc1e5e99b0e954475abff34478db",
+  "code_dirty": true,
+  "config_hash": "0b2e4b227170de643187ae8a88348f54b7256f2c786e5c307714e09d3ec33d45",
+  "environment_fingerprint": "f57b00a67e9d67b2920791bfddc8dc812dbdeb9306588a26557dfd6be15f826c",
+  "config": {
+    "run_id": "syn_r0_repair1",
+    "sampling": {
+      "chains": 4,
+      "cores": 2,
+      "warmup": 1000,
+      "draws": 2000,
+      "target_accept": 0.95,
+      "max_treedepth": 12,
+      "sampler": "nutpie if validated; explicit recorded fallback"
+    },
+    "source_plan": "configs/pilot_plan_v0.3.json",
+    "id": "syn_r0",
+    "n": 56,
+    "rho": 0,
+    "weak": false,
+    "seed": 13101,
+    "prior_scale": 1.0,
+    "error": "normal",
+    "rho_zero": false
+  },
+  "wall_seconds": 19.213840300013544,
+  "process_cpu_seconds": 24.921875,
+  "peak_process_rss_gib": 0.37213134765625,
+  "official_test_access": false,
+  "confirmatory": false
+}
