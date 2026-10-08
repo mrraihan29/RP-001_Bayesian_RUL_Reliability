@@ -66,3 +66,5 @@ logs/**/*.log
 # Operating-system noise
 .DS_Store
 Thumbs.db
+# Isolated pilot runtime caches
+.cache/

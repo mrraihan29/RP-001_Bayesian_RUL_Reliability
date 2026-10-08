@@ -1,0 +1,1232 @@
+{
+  "audit_id": "RP-001-development-data-audit-v1",
+  "generated_at_utc": "2026-10-08T12:09:38.485402+00:00",
+  "scope": {
+    "dataset": "NASA C-MAPSS FD001 training trajectories only",
+    "purpose": "training-only proposed split, eligibility, prefix integrity, and cutoff design audit",
+    "official_test_trajectories_or_labels_opened": false,
+    "official_archive_entries_inspected": false,
+    "calibration_residuals_inspected_or_computed": false,
+    "models_fitted": false,
+    "confirmatory_evaluation_performed": false,
+    "primary_research_question_changed": false,
+    "practical_5_cycle_threshold_approved": false
+  },
+  "execution": {
+    "python_executable": "C:\\Users\\Raihan\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+    "command": "C:\\Users\\Raihan\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe \"C:\\Coding\\Project\\NAOBI RESEARCH\\RP-001_Bayesian_RUL_Reliability\\src\\rp001\\development_data_audit.py\" --project-root \"C:\\Coding\\Project\\NAOBI RESEARCH\\RP-001_Bayesian_RUL_Reliability\"",
+    "working_directory": "C:\\Coding\\Project\\NAOBI RESEARCH\\RP-001_Bayesian_RUL_Reliability",
+    "script_path": "src/rp001/development_data_audit.py",
+    "audit_script_sha256": "5697fc66c254637547499f9a88e2ced5472a6de176bb4a26972975710ea16f92"
+  },
+  "method": {
+    "split_seed": "RP001-20261008-v0.2",
+    "reserved_role_sizes": {
+      "fit": 55,
+      "tune": 15,
+      "calibration": 30
+    },
+    "canonical_cutoff_rule": "C=30+SHA256(SEED|cutoff|engine) mod 221; support 30..250",
+    "eligibility_rule": "eligible iff C<T; no redraw or replacement",
+    "feature_rule": "schema columns after engine_id and cycle for observed cycles 1..C; T is used for training eligibility only and is excluded from features",
+    "lifetime_quartiles": "four rank-based groups of 25 engines; ties ordered by engine ID"
+  },
+  "source_validation": {
+    "training_source_sha256_matches_training_audit": true,
+    "recomputed_rows": 20631,
+    "recomputed_engines": 100,
+    "field_count": 26,
+    "complete_ordered_cycles": true,
+    "finite_numeric_values": true,
+    "manifest_entries": 100,
+    "canonical_hash_roles_and_cutoffs_reproduced": true,
+    "manifest_eligibility_matches_C_lt_T": true,
+    "input_hashes_sha256": {
+      "training_trajectory": "963b5e22825b34d8b21c69e1aeb4af3e647050eb672ee8834ba4b5d91d2de0f8",
+      "training_audit": "25511cdb8f8d8553b9fee396774aed4cc9f529e67e3163caf89067e18be9fc7e",
+      "schema_contract": "2797cac13ec8fd9cd99c33b1097b6342ecbd7a0e8fb849aee8cf790f8b18d13d",
+      "split_manifest": "6d6e0f10d979d41739c6c07b6bab8f0c32d2844ebd150e82d13caa3bd29e124b",
+      "protocol_config": "4860d88f8d902fe74f30cf587dc77099a8a4f21ac3f4c323398d8fd2e0f7bcdb"
+    }
+  },
+  "canonical_split": {
+    "role_counts": {
+      "fit": {
+        "reserved": 55,
+        "eligible": 43
+      },
+      "tune": {
+        "reserved": 15,
+        "eligible": 13
+      },
+      "calibration": {
+        "reserved": 30,
+        "eligible": 25
+      }
+    },
+    "total_reserved": 100,
+    "total_eligible": 81,
+    "total_ineligible": 19,
+    "expected_counts_match_43_13_25": true
+  },
+  "cutoff_and_lifetime": {
+    "canonical_cutoff_distribution_all_reserved": {
+      "n": 100,
+      "min": 30.0,
+      "q1": 77.75,
+      "median": 126.0,
+      "mean": 129.63,
+      "q3": 181.25,
+      "max": 249.0
+    },
+    "canonical_cutoff_histogram_all_reserved": [
+      {
+        "min_cutoff_inclusive": 30,
+        "max_cutoff_inclusive": 73,
+        "count": 23
+      },
+      {
+        "min_cutoff_inclusive": 74,
+        "max_cutoff_inclusive": 117,
+        "count": 21
+      },
+      {
+        "min_cutoff_inclusive": 118,
+        "max_cutoff_inclusive": 161,
+        "count": 23
+      },
+      {
+        "min_cutoff_inclusive": 162,
+        "max_cutoff_inclusive": 205,
+        "count": 19
+      },
+      {
+        "min_cutoff_inclusive": 206,
+        "max_cutoff_inclusive": 250,
+        "count": 14
+      }
+    ],
+    "canonical_cutoff_distribution_eligible_only": {
+      "n": 81,
+      "min": 30.0,
+      "q1": 67.0,
+      "median": 110.0,
+      "mean": 112.24691358024691,
+      "q3": 154.0,
+      "max": 230.0
+    },
+    "training_lifetime_all_reserved": {
+      "n": 100,
+      "min": 128.0,
+      "q1": 177.0,
+      "median": 199.0,
+      "mean": 206.31,
+      "q3": 229.25,
+      "max": 362.0
+    },
+    "training_lifetime_eligible_only": {
+      "n": 81,
+      "min": 128.0,
+      "q1": 185.0,
+      "median": 202.0,
+      "mean": 214.2716049382716,
+      "q3": 234.0,
+      "max": 362.0
+    },
+    "training_lifetime_ineligible_only": {
+      "n": 19,
+      "min": 135.0,
+      "q1": 154.0,
+      "median": 165.0,
+      "mean": 172.3684210526316,
+      "q3": 194.0,
+      "max": 213.0
+    },
+    "cutoff_vs_lifetime_descriptive_association_all_reserved": {
+      "n": 100,
+      "pearson_r": -0.01476028964947497,
+      "spearman_rho": -0.06735732699656843
+    },
+    "cutoff_vs_lifetime_descriptive_association_eligible_only": {
+      "n": 81,
+      "pearson_r": 0.24397030805861986,
+      "spearman_rho": 0.1803076860928527
+    },
+    "survival_selection": {
+      "rule": "C<T",
+      "eligible_count": 81,
+      "ineligible_count": 19,
+      "eligible_fraction": 0.81,
+      "subgroup_sizes": {
+        "by_role": {
+          "fit": {
+            "reserved": 55,
+            "eligible": 43,
+            "ineligible": 12,
+            "eligible_fraction": 0.7818181818181819,
+            "eligible_cutoff_median": 105.0,
+            "eligible_lifetime_median": 207.0
+          },
+          "tune": {
+            "reserved": 15,
+            "eligible": 13,
+            "ineligible": 2,
+            "eligible_fraction": 0.8666666666666667,
+            "eligible_cutoff_median": 123.0,
+            "eligible_lifetime_median": 208.0
+          },
+          "calibration": {
+            "reserved": 30,
+            "eligible": 25,
+            "ineligible": 5,
+            "eligible_fraction": 0.8333333333333334,
+            "eligible_cutoff_median": 107.0,
+            "eligible_lifetime_median": 200.0
+          }
+        },
+        "by_cutoff_band": [
+          {
+            "min_cutoff_inclusive": 30,
+            "max_cutoff_inclusive": 73,
+            "assigned": 23,
+            "eligible": 23,
+            "by_role": {
+              "fit": {
+                "assigned": 11,
+                "eligible": 11
+              },
+              "tune": {
+                "assigned": 3,
+                "eligible": 3
+              },
+              "calibration": {
+                "assigned": 9,
+                "eligible": 9
+              }
+            }
+          },
+          {
+            "min_cutoff_inclusive": 74,
+            "max_cutoff_inclusive": 117,
+            "assigned": 21,
+            "eligible": 21,
+            "by_role": {
+              "fit": {
+                "assigned": 14,
+                "eligible": 14
+              },
+              "tune": {
+                "assigned": 2,
+                "eligible": 2
+              },
+              "calibration": {
+                "assigned": 5,
+                "eligible": 5
+              }
+            }
+          },
+          {
+            "min_cutoff_inclusive": 118,
+            "max_cutoff_inclusive": 161,
+            "assigned": 23,
+            "eligible": 21,
+            "by_role": {
+              "fit": {
+                "assigned": 12,
+                "eligible": 11
+              },
+              "tune": {
+                "assigned": 5,
+                "eligible": 4
+              },
+              "calibration": {
+                "assigned": 6,
+                "eligible": 6
+              }
+            }
+          },
+          {
+            "min_cutoff_inclusive": 162,
+            "max_cutoff_inclusive": 205,
+            "assigned": 19,
+            "eligible": 12,
+            "by_role": {
+              "fit": {
+                "assigned": 8,
+                "eligible": 4
+              },
+              "tune": {
+                "assigned": 4,
+                "eligible": 4
+              },
+              "calibration": {
+                "assigned": 7,
+                "eligible": 4
+              }
+            }
+          },
+          {
+            "min_cutoff_inclusive": 206,
+            "max_cutoff_inclusive": 250,
+            "assigned": 14,
+            "eligible": 4,
+            "by_role": {
+              "fit": {
+                "assigned": 10,
+                "eligible": 3
+              },
+              "tune": {
+                "assigned": 1,
+                "eligible": 0
+              },
+              "calibration": {
+                "assigned": 3,
+                "eligible": 1
+              }
+            }
+          }
+        ],
+        "by_lifetime_rank_quartile": [
+          {
+            "quartile": 1,
+            "assigned": 25,
+            "eligible": 14,
+            "ineligible": 11,
+            "eligibility_fraction": 0.56,
+            "lifetime_min": 128,
+            "lifetime_max": 174,
+            "lifetime_median": 156.0,
+            "cutoff_median": 126.0
+          },
+          {
+            "quartile": 2,
+            "assigned": 25,
+            "eligible": 20,
+            "ineligible": 5,
+            "eligibility_fraction": 0.8,
+            "lifetime_min": 178,
+            "lifetime_max": 199,
+            "lifetime_median": 191.0,
+            "cutoff_median": 129.0
+          },
+          {
+            "quartile": 3,
+            "assigned": 25,
+            "eligible": 22,
+            "ineligible": 3,
+            "eligibility_fraction": 0.88,
+            "lifetime_min": 199,
+            "lifetime_max": 229,
+            "lifetime_median": 210.0,
+            "cutoff_median": 117.0
+          },
+          {
+            "quartile": 4,
+            "assigned": 25,
+            "eligible": 25,
+            "ineligible": 0,
+            "eligibility_fraction": 1.0,
+            "lifetime_min": 230,
+            "lifetime_max": 362,
+            "lifetime_median": 267.0,
+            "cutoff_median": 154.0
+          }
+        ],
+        "by_role_and_lifetime_rank_quartile": [
+          {
+            "role": "fit",
+            "lifetime_quartile": 1,
+            "assigned": 15,
+            "eligible": 8
+          },
+          {
+            "role": "tune",
+            "lifetime_quartile": 1,
+            "assigned": 5,
+            "eligible": 3
+          },
+          {
+            "role": "calibration",
+            "lifetime_quartile": 1,
+            "assigned": 5,
+            "eligible": 3
+          },
+          {
+            "role": "fit",
+            "lifetime_quartile": 2,
+            "assigned": 11,
+            "eligible": 9
+          },
+          {
+            "role": "tune",
+            "lifetime_quartile": 2,
+            "assigned": 3,
+            "eligible": 3
+          },
+          {
+            "role": "calibration",
+            "lifetime_quartile": 2,
+            "assigned": 11,
+            "eligible": 8
+          },
+          {
+            "role": "fit",
+            "lifetime_quartile": 3,
+            "assigned": 15,
+            "eligible": 12
+          },
+          {
+            "role": "tune",
+            "lifetime_quartile": 3,
+            "assigned": 2,
+            "eligible": 2
+          },
+          {
+            "role": "calibration",
+            "lifetime_quartile": 3,
+            "assigned": 8,
+            "eligible": 8
+          },
+          {
+            "role": "fit",
+            "lifetime_quartile": 4,
+            "assigned": 14,
+            "eligible": 14
+          },
+          {
+            "role": "tune",
+            "lifetime_quartile": 4,
+            "assigned": 5,
+            "eligible": 5
+          },
+          {
+            "role": "calibration",
+            "lifetime_quartile": 4,
+            "assigned": 6,
+            "eligible": 6
+          }
+        ]
+      },
+      "interpretation": "eligibility depends mechanically on cutoff and training lifetime; no population or exchangeability inference"
+    },
+    "official_cutoff_distribution": {
+      "identified_from_allowed_training_metadata": false,
+      "reason": "allowed inputs contain proposed training cutoffs and training lifetimes only; official test cutoffs and their generating mechanism are unobserved"
+    }
+  },
+  "prefix_integrity": {
+    "features_use_only_cycles_at_or_before_cutoff": true,
+    "observed_prefixes_checked": 81,
+    "feature_row_count": 9092,
+    "future_rows_used_as_features": 0,
+    "target_or_terminal_cycle_in_feature_matrix": false,
+    "duplicate_audit": {
+      "population": "canonical eligible training prefixes only",
+      "eligible_prefix_count": 81,
+      "pair_comparisons": 3240,
+      "comparison_rule": "cycle-aligned raw settings and sensors over the shared initial prefix min(C_a,C_b)",
+      "exact_common_prefix_pairs": [],
+      "near_duplicate_screen": {
+        "minimum_common_cycles": 30,
+        "mean_feature_nrmse_threshold": 0.02,
+        "maximum_single_channel_nrmse_threshold": 0.1,
+        "normalization": "per-channel population SD from eligible observed prefixes only; zero-variance scale set to 1",
+        "flagged_pairs": [],
+        "interpretation": "heuristic screen only; not a semantic-duplicate oracle"
+      },
+      "closest_pairs_by_screen_metric": [
+        {
+          "engine_a": 39,
+          "engine_b": 94,
+          "common_cycles": 46,
+          "mean_feature_nrmse": 0.762422004008843,
+          "max_channel_nrmse": 1.306685495082817
+        },
+        {
+          "engine_a": 22,
+          "engine_b": 32,
+          "common_cycles": 44,
+          "mean_feature_nrmse": 0.7760385858540093,
+          "max_channel_nrmse": 1.4182702507134908
+        },
+        {
+          "engine_a": 12,
+          "engine_b": 39,
+          "common_cycles": 46,
+          "mean_feature_nrmse": 0.7795198558603932,
+          "max_channel_nrmse": 1.4113615736187137
+        },
+        {
+          "engine_a": 32,
+          "engine_b": 94,
+          "common_cycles": 44,
+          "mean_feature_nrmse": 0.7815289740189397,
+          "max_channel_nrmse": 1.374185234967667
+        },
+        {
+          "engine_a": 32,
+          "engine_b": 84,
+          "common_cycles": 44,
+          "mean_feature_nrmse": 0.7817621610735793,
+          "max_channel_nrmse": 1.5190038572778666
+        }
+      ],
+      "feature_channels_compared": [
+        "setting_1",
+        "setting_2",
+        "setting_3",
+        "sensor_1",
+        "sensor_2",
+        "sensor_3",
+        "sensor_4",
+        "sensor_5",
+        "sensor_6",
+        "sensor_7",
+        "sensor_8",
+        "sensor_9",
+        "sensor_10",
+        "sensor_11",
+        "sensor_12",
+        "sensor_13",
+        "sensor_14",
+        "sensor_15",
+        "sensor_16",
+        "sensor_17",
+        "sensor_18",
+        "sensor_19",
+        "sensor_20",
+        "sensor_21"
+      ],
+      "future_rows_in_prefix_features": 0
+    }
+  },
+  "design_sensitivity": {
+    "purpose": "design sensitivity only; canonical role assignment fixed; no model fitting or performance scoring",
+    "scenario_count": 100,
+    "alternative_cutoff_rule": "C_r=30+SHA256(SEED|cutoff-sensitivity-r|engine) mod 221",
+    "canonical_total_eligible": 81,
+    "alternative_total_eligible_count_distribution": {
+      "n": 100,
+      "min": 69.0,
+      "q1": 75.0,
+      "median": 78.0,
+      "mean": 77.38,
+      "q3": 80.0,
+      "max": 85.0
+    },
+    "by_role": {
+      "fit": {
+        "canonical_eligible": 43,
+        "alternative_eligible_count_distribution": {
+          "n": 100,
+          "min": 34.0,
+          "q1": 41.0,
+          "median": 43.0,
+          "mean": 42.81,
+          "q3": 45.0,
+          "max": 51.0
+        }
+      },
+      "tune": {
+        "canonical_eligible": 13,
+        "alternative_eligible_count_distribution": {
+          "n": 100,
+          "min": 8.0,
+          "q1": 10.0,
+          "median": 11.5,
+          "mean": 11.5,
+          "q3": 13.0,
+          "max": 15.0
+        }
+      },
+      "calibration": {
+        "canonical_eligible": 25,
+        "alternative_eligible_count_distribution": {
+          "n": 100,
+          "min": 18.0,
+          "q1": 21.0,
+          "median": 23.0,
+          "mean": 23.07,
+          "q3": 24.25,
+          "max": 29.0
+        }
+      }
+    },
+    "engines_with_changing_eligibility": 83,
+    "status_mismatch_pairs_vs_canonical_all_scenarios": 2870,
+    "unstable_engine_details": [
+      {
+        "engine": 1,
+        "role": "tune",
+        "canonical_eligible": true,
+        "alternative_eligible_scenarios": 72,
+        "selection_frequency": 0.72,
+        "status_mismatches_vs_canonical": 28
+      },
+      {
+        "engine": 3,
+        "role": "fit",
+        "canonical_eligible": true,
+        "alternative_eligible_scenarios": 64,
+        "selection_frequency": 0.64,
+        "status_mismatches_vs_canonical": 36
+      },
+      {
+        "engine": 4,
+        "role": "fit",
+        "canonical_eligible": true,
+        "alternative_eligible_scenarios": 70,
+        "selection_frequency": 0.7,
+        "status_mismatches_vs_canonical": 30
+      },
+      {
+        "engine": 6,
+        "role": "calibration",
+        "canonical_eligible": false,
+        "alternative_eligible_scenarios": 70,
+        "selection_frequency": 0.7,
+        "status_mismatches_vs_canonical": 70
+      },
+      {
+        "engine": 8,
+        "role": "fit",
+        "canonical_eligible": false,
+        "alternative_eligible_scenarios": 62,
+        "selection_frequency": 0.62,
+        "status_mismatches_vs_canonical": 62
+      },
+      {
+        "engine": 9,
+        "role": "fit",
+        "canonical_eligible": true,
+        "alternative_eligible_scenarios": 72,
+        "selection_frequency": 0.72,
+        "status_mismatches_vs_canonical": 28
+      },
+      {
+        "engine": 10,
+        "role": "fit",
+        "canonical_eligible": true,
+        "alternative_eligible_scenarios": 88,
+        "selection_frequency": 0.88,
+        "status_mismatches_vs_canonical": 12
+      },
+      {
+        "engine": 11,
+        "role": "calibration",
+        "canonical_eligible": true,
+        "alternative_eligible_scenarios": 92,
+        "selection_frequency": 0.92,
+        "status_mismatches_vs_canonical": 8
+      },
+      {
+        "engine": 12,
+        "role": "fit",
+        "canonical_eligible": true,
+        "alternative_eligible_scenarios": 64,
+        "selection_frequency": 0.64,
+        "status_mismatches_vs_canonical": 36
+      },
+      {
+        "engine": 13,
+        "role": "fit",
+        "canonical_eligible": true,
+        "alternative_eligible_scenarios": 63,
+        "selection_frequency": 0.63,
+        "status_mismatches_vs_canonical": 37
+      },
+      {
+        "engine": 14,
+        "role": "calibration",
+        "canonical_eligible": false,
+        "alternative_eligible_scenarios": 67,
+        "selection_frequency": 0.67,
+        "status_mismatches_vs_canonical": 67
+      },
+      {
+        "engine": 15,
+        "role": "fit",
+        "canonical_eligible": false,
+        "alternative_eligible_scenarios": 80,
+        "selection_frequency": 0.8,
+        "status_mismatches_vs_canonical": 80
+      },
+      {
+        "engine": 16,
+        "role": "calibration",
+        "canonical_eligible": true,
+        "alternative_eligible_scenarios": 86,
+        "selection_frequency": 0.86,
+        "status_mismatches_vs_canonical": 14
+      },
+      {
+        "engine": 18,
+        "role": "fit",
+        "canonical_eligible": true,
+        "alternative_eligible_scenarios": 69,
+        "selection_frequency": 0.69,
+        "status_mismatches_vs_canonical": 31
+      },
+      {
+        "engine": 19,
+        "role": "fit",
+        "canonical_eligible": false,
+        "alternative_eligible_scenarios": 58,
+        "selection_frequency": 0.58,
+        "status_mismatches_vs_canonical": 58
+      },
+      {
+        "engine": 20,
+        "role": "tune",
+        "canonical_eligible": true,
+        "alternative_eligible_scenarios": 97,
+        "selection_frequency": 0.97,
+        "status_mismatches_vs_canonical": 3
+      },
+      {
+        "engine": 21,
+        "role": "tune",
+        "canonical_eligible": true,
+        "alternative_eligible_scenarios": 71,
+        "selection_frequency": 0.71,
+        "status_mismatches_vs_canonical": 29
+      },
+      {
+        "engine": 22,
+        "role": "fit",
+        "canonical_eligible": true,
+        "alternative_eligible_scenarios": 79,
+        "selection_frequency": 0.79,
+        "status_mismatches_vs_canonical": 21
+      },
+      {
+        "engine": 23,
+        "role": "fit",
+        "canonical_eligible": true,
+        "alternative_eligible_scenarios": 56,
+        "selection_frequency": 0.56,
+        "status_mismatches_vs_canonical": 44
+      },
+      {
+        "engine": 24,
+        "role": "fit",
+        "canonical_eligible": false,
+        "alternative_eligible_scenarios": 57,
+        "selection_frequency": 0.57,
+        "status_mismatches_vs_canonical": 57
+      },
+      {
+        "engine": 25,
+        "role": "calibration",
+        "canonical_eligible": true,
+        "alternative_eligible_scenarios": 94,
+        "selection_frequency": 0.94,
+        "status_mismatches_vs_canonical": 6
+      },
+      {
+        "engine": 26,
+        "role": "calibration",
+        "canonical_eligible": true,
+        "alternative_eligible_scenarios": 72,
+        "selection_frequency": 0.72,
+        "status_mismatches_vs_canonical": 28
+      },
+      {
+        "engine": 27,
+        "role": "tune",
+        "canonical_eligible": false,
+        "alternative_eligible_scenarios": 65,
+        "selection_frequency": 0.65,
+        "status_mismatches_vs_canonical": 65
+      },
+      {
+        "engine": 28,
+        "role": "fit",
+        "canonical_eligible": false,
+        "alternative_eligible_scenarios": 61,
+        "selection_frequency": 0.61,
+        "status_mismatches_vs_canonical": 61
+      },
+      {
+        "engine": 29,
+        "role": "calibration",
+        "canonical_eligible": false,
+        "alternative_eligible_scenarios": 62,
+        "selection_frequency": 0.62,
+        "status_mismatches_vs_canonical": 62
+      },
+      {
+        "engine": 30,
+        "role": "fit",
+        "canonical_eligible": false,
+        "alternative_eligible_scenarios": 76,
+        "selection_frequency": 0.76,
+        "status_mismatches_vs_canonical": 76
+      },
+      {
+        "engine": 31,
+        "role": "calibration",
+        "canonical_eligible": true,
+        "alternative_eligible_scenarios": 92,
+        "selection_frequency": 0.92,
+        "status_mismatches_vs_canonical": 8
+      },
+      {
+        "engine": 32,
+        "role": "fit",
+        "canonical_eligible": true,
+        "alternative_eligible_scenarios": 74,
+        "selection_frequency": 0.74,
+        "status_mismatches_vs_canonical": 26
+      },
+      {
+        "engine": 33,
+        "role": "calibration",
+        "canonical_eligible": true,
+        "alternative_eligible_scenarios": 80,
+        "selection_frequency": 0.8,
+        "status_mismatches_vs_canonical": 20
+      },
+      {
+        "engine": 34,
+        "role": "calibration",
+        "canonical_eligible": true,
+        "alternative_eligible_scenarios": 73,
+        "selection_frequency": 0.73,
+        "status_mismatches_vs_canonical": 27
+      },
+      {
+        "engine": 35,
+        "role": "tune",
+        "canonical_eligible": true,
+        "alternative_eligible_scenarios": 65,
+        "selection_frequency": 0.65,
+        "status_mismatches_vs_canonical": 35
+      },
+      {
+        "engine": 36,
+        "role": "fit",
+        "canonical_eligible": true,
+        "alternative_eligible_scenarios": 66,
+        "selection_frequency": 0.66,
+        "status_mismatches_vs_canonical": 34
+      },
+      {
+        "engine": 37,
+        "role": "calibration",
+        "canonical_eligible": false,
+        "alternative_eligible_scenarios": 68,
+        "selection_frequency": 0.68,
+        "status_mismatches_vs_canonical": 68
+      },
+      {
+        "engine": 38,
+        "role": "fit",
+        "canonical_eligible": false,
+        "alternative_eligible_scenarios": 79,
+        "selection_frequency": 0.79,
+        "status_mismatches_vs_canonical": 79
+      },
+      {
+        "engine": 39,
+        "role": "calibration",
+        "canonical_eligible": true,
+        "alternative_eligible_scenarios": 49,
+        "selection_frequency": 0.49,
+        "status_mismatches_vs_canonical": 51
+      },
+      {
+        "engine": 40,
+        "role": "calibration",
+        "canonical_eligible": true,
+        "alternative_eligible_scenarios": 65,
+        "selection_frequency": 0.65,
+        "status_mismatches_vs_canonical": 35
+      },
+      {
+        "engine": 41,
+        "role": "calibration",
+        "canonical_eligible": true,
+        "alternative_eligible_scenarios": 86,
+        "selection_frequency": 0.86,
+        "status_mismatches_vs_canonical": 14
+      },
+      {
+        "engine": 42,
+        "role": "fit",
+        "canonical_eligible": true,
+        "alternative_eligible_scenarios": 77,
+        "selection_frequency": 0.77,
+        "status_mismatches_vs_canonical": 23
+      },
+      {
+        "engine": 43,
+        "role": "fit",
+        "canonical_eligible": true,
+        "alternative_eligible_scenarios": 78,
+        "selection_frequency": 0.78,
+        "status_mismatches_vs_canonical": 22
+      },
+      {
+        "engine": 44,
+        "role": "fit",
+        "canonical_eligible": true,
+        "alternative_eligible_scenarios": 71,
+        "selection_frequency": 0.71,
+        "status_mismatches_vs_canonical": 29
+      },
+      {
+        "engine": 45,
+        "role": "calibration",
+        "canonical_eligible": true,
+        "alternative_eligible_scenarios": 59,
+        "selection_frequency": 0.59,
+        "status_mismatches_vs_canonical": 41
+      },
+      {
+        "engine": 47,
+        "role": "fit",
+        "canonical_eligible": true,
+        "alternative_eligible_scenarios": 84,
+        "selection_frequency": 0.84,
+        "status_mismatches_vs_canonical": 16
+      },
+      {
+        "engine": 48,
+        "role": "tune",
+        "canonical_eligible": true,
+        "alternative_eligible_scenarios": 87,
+        "selection_frequency": 0.87,
+        "status_mismatches_vs_canonical": 13
+      },
+      {
+        "engine": 49,
+        "role": "fit",
+        "canonical_eligible": true,
+        "alternative_eligible_scenarios": 89,
+        "selection_frequency": 0.89,
+        "status_mismatches_vs_canonical": 11
+      },
+      {
+        "engine": 50,
+        "role": "calibration",
+        "canonical_eligible": true,
+        "alternative_eligible_scenarios": 71,
+        "selection_frequency": 0.71,
+        "status_mismatches_vs_canonical": 29
+      },
+      {
+        "engine": 51,
+        "role": "calibration",
+        "canonical_eligible": true,
+        "alternative_eligible_scenarios": 85,
+        "selection_frequency": 0.85,
+        "status_mismatches_vs_canonical": 15
+      },
+      {
+        "engine": 52,
+        "role": "fit",
+        "canonical_eligible": true,
+        "alternative_eligible_scenarios": 76,
+        "selection_frequency": 0.76,
+        "status_mismatches_vs_canonical": 24
+      },
+      {
+        "engine": 53,
+        "role": "calibration",
+        "canonical_eligible": false,
+        "alternative_eligible_scenarios": 75,
+        "selection_frequency": 0.75,
+        "status_mismatches_vs_canonical": 75
+      },
+      {
+        "engine": 55,
+        "role": "calibration",
+        "canonical_eligible": true,
+        "alternative_eligible_scenarios": 73,
+        "selection_frequency": 0.73,
+        "status_mismatches_vs_canonical": 27
+      },
+      {
+        "engine": 57,
+        "role": "fit",
+        "canonical_eligible": true,
+        "alternative_eligible_scenarios": 51,
+        "selection_frequency": 0.51,
+        "status_mismatches_vs_canonical": 49
+      },
+      {
+        "engine": 58,
+        "role": "tune",
+        "canonical_eligible": true,
+        "alternative_eligible_scenarios": 60,
+        "selection_frequency": 0.6,
+        "status_mismatches_vs_canonical": 40
+      },
+      {
+        "engine": 59,
+        "role": "calibration",
+        "canonical_eligible": true,
+        "alternative_eligible_scenarios": 93,
+        "selection_frequency": 0.93,
+        "status_mismatches_vs_canonical": 7
+      },
+      {
+        "engine": 60,
+        "role": "tune",
+        "canonical_eligible": true,
+        "alternative_eligible_scenarios": 62,
+        "selection_frequency": 0.62,
+        "status_mismatches_vs_canonical": 38
+      },
+      {
+        "engine": 61,
+        "role": "calibration",
+        "canonical_eligible": true,
+        "alternative_eligible_scenarios": 67,
+        "selection_frequency": 0.67,
+        "status_mismatches_vs_canonical": 33
+      },
+      {
+        "engine": 62,
+        "role": "calibration",
+        "canonical_eligible": true,
+        "alternative_eligible_scenarios": 63,
+        "selection_frequency": 0.63,
+        "status_mismatches_vs_canonical": 37
+      },
+      {
+        "engine": 63,
+        "role": "calibration",
+        "canonical_eligible": true,
+        "alternative_eligible_scenarios": 60,
+        "selection_frequency": 0.6,
+        "status_mismatches_vs_canonical": 40
+      },
+      {
+        "engine": 65,
+        "role": "tune",
+        "canonical_eligible": false,
+        "alternative_eligible_scenarios": 53,
+        "selection_frequency": 0.53,
+        "status_mismatches_vs_canonical": 53
+      },
+      {
+        "engine": 66,
+        "role": "calibration",
+        "canonical_eligible": true,
+        "alternative_eligible_scenarios": 78,
+        "selection_frequency": 0.78,
+        "status_mismatches_vs_canonical": 22
+      },
+      {
+        "engine": 68,
+        "role": "fit",
+        "canonical_eligible": false,
+        "alternative_eligible_scenarios": 70,
+        "selection_frequency": 0.7,
+        "status_mismatches_vs_canonical": 70
+      },
+      {
+        "engine": 70,
+        "role": "fit",
+        "canonical_eligible": true,
+        "alternative_eligible_scenarios": 58,
+        "selection_frequency": 0.58,
+        "status_mismatches_vs_canonical": 42
+      },
+      {
+        "engine": 71,
+        "role": "tune",
+        "canonical_eligible": true,
+        "alternative_eligible_scenarios": 84,
+        "selection_frequency": 0.84,
+        "status_mismatches_vs_canonical": 16
+      },
+      {
+        "engine": 72,
+        "role": "calibration",
+        "canonical_eligible": true,
+        "alternative_eligible_scenarios": 86,
+        "selection_frequency": 0.86,
+        "status_mismatches_vs_canonical": 14
+      },
+      {
+        "engine": 73,
+        "role": "fit",
+        "canonical_eligible": false,
+        "alternative_eligible_scenarios": 79,
+        "selection_frequency": 0.79,
+        "status_mismatches_vs_canonical": 79
+      },
+      {
+        "engine": 74,
+        "role": "fit",
+        "canonical_eligible": true,
+        "alternative_eligible_scenarios": 72,
+        "selection_frequency": 0.72,
+        "status_mismatches_vs_canonical": 28
+      },
+      {
+        "engine": 75,
+        "role": "calibration",
+        "canonical_eligible": true,
+        "alternative_eligible_scenarios": 92,
+        "selection_frequency": 0.92,
+        "status_mismatches_vs_canonical": 8
+      },
+      {
+        "engine": 76,
+        "role": "tune",
+        "canonical_eligible": true,
+        "alternative_eligible_scenarios": 83,
+        "selection_frequency": 0.83,
+        "status_mismatches_vs_canonical": 17
+      },
+      {
+        "engine": 77,
+        "role": "fit",
+        "canonical_eligible": false,
+        "alternative_eligible_scenarios": 60,
+        "selection_frequency": 0.6,
+        "status_mismatches_vs_canonical": 60
+      },
+      {
+        "engine": 78,
+        "role": "tune",
+        "canonical_eligible": true,
+        "alternative_eligible_scenarios": 90,
+        "selection_frequency": 0.9,
+        "status_mismatches_vs_canonical": 10
+      },
+      {
+        "engine": 79,
+        "role": "calibration",
+        "canonical_eligible": true,
+        "alternative_eligible_scenarios": 79,
+        "selection_frequency": 0.79,
+        "status_mismatches_vs_canonical": 21
+      },
+      {
+        "engine": 80,
+        "role": "fit",
+        "canonical_eligible": true,
+        "alternative_eligible_scenarios": 70,
+        "selection_frequency": 0.7,
+        "status_mismatches_vs_canonical": 30
+      },
+      {
+        "engine": 81,
+        "role": "fit",
+        "canonical_eligible": true,
+        "alternative_eligible_scenarios": 96,
+        "selection_frequency": 0.96,
+        "status_mismatches_vs_canonical": 4
+      },
+      {
+        "engine": 82,
+        "role": "fit",
+        "canonical_eligible": true,
+        "alternative_eligible_scenarios": 84,
+        "selection_frequency": 0.84,
+        "status_mismatches_vs_canonical": 16
+      },
+      {
+        "engine": 85,
+        "role": "calibration",
+        "canonical_eligible": true,
+        "alternative_eligible_scenarios": 70,
+        "selection_frequency": 0.7,
+        "status_mismatches_vs_canonical": 30
+      },
+      {
+        "engine": 87,
+        "role": "fit",
+        "canonical_eligible": true,
+        "alternative_eligible_scenarios": 75,
+        "selection_frequency": 0.75,
+        "status_mismatches_vs_canonical": 25
+      },
+      {
+        "engine": 88,
+        "role": "fit",
+        "canonical_eligible": true,
+        "alternative_eligible_scenarios": 81,
+        "selection_frequency": 0.81,
+        "status_mismatches_vs_canonical": 19
+      },
+      {
+        "engine": 89,
+        "role": "fit",
+        "canonical_eligible": true,
+        "alternative_eligible_scenarios": 85,
+        "selection_frequency": 0.85,
+        "status_mismatches_vs_canonical": 15
+      },
+      {
+        "engine": 90,
+        "role": "fit",
+        "canonical_eligible": false,
+        "alternative_eligible_scenarios": 58,
+        "selection_frequency": 0.58,
+        "status_mismatches_vs_canonical": 58
+      },
+      {
+        "engine": 91,
+        "role": "fit",
+        "canonical_eligible": false,
+        "alternative_eligible_scenarios": 54,
+        "selection_frequency": 0.54,
+        "status_mismatches_vs_canonical": 54
+      },
+      {
+        "engine": 93,
+        "role": "fit",
+        "canonical_eligible": true,
+        "alternative_eligible_scenarios": 49,
+        "selection_frequency": 0.49,
+        "status_mismatches_vs_canonical": 51
+      },
+      {
+        "engine": 97,
+        "role": "fit",
+        "canonical_eligible": true,
+        "alternative_eligible_scenarios": 75,
+        "selection_frequency": 0.75,
+        "status_mismatches_vs_canonical": 25
+      },
+      {
+        "engine": 98,
+        "role": "tune",
+        "canonical_eligible": true,
+        "alternative_eligible_scenarios": 61,
+        "selection_frequency": 0.61,
+        "status_mismatches_vs_canonical": 39
+      },
+      {
+        "engine": 99,
+        "role": "fit",
+        "canonical_eligible": true,
+        "alternative_eligible_scenarios": 71,
+        "selection_frequency": 0.71,
+        "status_mismatches_vs_canonical": 29
+      },
+      {
+        "engine": 100,
+        "role": "fit",
+        "canonical_eligible": true,
+        "alternative_eligible_scenarios": 80,
+        "selection_frequency": 0.8,
+        "status_mismatches_vs_canonical": 20
+      }
+    ],
+    "interpretation": "deterministic hash perturbations summarize count and membership sensitivity only; not a probability model, performance comparison, or cutoff-exchangeability evidence"
+  },
+  "interpretation_limits": [
+    "The deterministic hash rule is outcome-blind by construction but does not prove stochastic independence between cutoff and lifetime.",
+    "The official cutoff distribution is unidentifiable from the allowed training metadata.",
+    "No exchangeability claim between pseudo-cutoff training pairs and official test pairs is supported.",
+    "Near-duplicate screening is a thresholded heuristic, not a semantic-duplicate oracle.",
+    "Cross train-test duplicate, test-schema, and test-label integrity checks were not performed."
+  ]
+}

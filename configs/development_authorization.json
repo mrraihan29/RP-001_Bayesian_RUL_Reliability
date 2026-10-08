@@ -1,0 +1,24 @@
+{
+  "version": "0.3",
+  "date": "2026-10-08",
+  "owners": [
+    "Raihan",
+    "Rei"
+  ],
+  "decision": "APPROVED_WITH_CONDITIONS_DEVELOPMENT_SYNTHETIC_PILOT_ONLY",
+  "scope": [
+    "synthetic verification",
+    "official FD001 training-only development",
+    "diagnostic pilot"
+  ],
+  "stage_a_approved": true,
+  "final_protocol_approved": false,
+  "test_labels_access_authorized": false,
+  "official_test_covariates_used_for_development": false,
+  "confirmatory_evaluation_authorized": false,
+  "primary_question_change_authorized": false,
+  "practical_threshold_5_cycles_approved": false,
+  "colab_pro_authorized_if_measured_need": true,
+  "additional_spending_authorized": false,
+  "source": "Research Owner Decision in current chat; preserved scope in docs/v0.3/owner_decision.md"
+}

@@ -1,0 +1,88 @@
+{
+  "version": "0.3",
+  "phase": "exploratory",
+  "scope": "synthetic and FD001 training only",
+  "test_access": false,
+  "primary_endpoint": "proposed mean 90% interval score",
+  "primary_comparison": "proposed Bayesian vs CQR; no confirmatory test in pilot",
+  "practical_decision_rule": "effect sizes only; no fixed practical-superiority/equivalence threshold",
+  "synthetic_design": [
+    {
+      "id": "syn_r0",
+      "n": 56,
+      "rho": 0,
+      "weak": false,
+      "seed": 3101
+    },
+    {
+      "id": "syn_r05",
+      "n": 56,
+      "rho": 0.5,
+      "weak": false,
+      "seed": 3102
+    },
+    {
+      "id": "syn_r09",
+      "n": 56,
+      "rho": 0.9,
+      "weak": false,
+      "seed": 3103
+    },
+    {
+      "id": "syn_weak",
+      "n": 56,
+      "rho": 0.5,
+      "weak": true,
+      "seed": 3104
+    }
+  ],
+  "training_runs": [
+    "base",
+    "prior_half",
+    "prior_double",
+    "rho_zero",
+    "contamination"
+  ],
+  "sampling": {
+    "chains": 4,
+    "cores": 2,
+    "warmup": 1000,
+    "draws": 2000,
+    "target_accept": 0.95,
+    "max_treedepth": 12,
+    "sampler": "nutpie if validated; explicit recorded fallback"
+  },
+  "failure_criteria": {
+    "likelihood_abs_tolerance": 1e-8,
+    "gradient_relative_tolerance": 0.0001,
+    "rhat_max_exclusive": 1.01,
+    "bulk_ess_min": 400,
+    "tail_ess_min": 400,
+    "divergences_max": 0,
+    "bfmi_min": 0.3,
+    "max_depth_fraction_max": 0.01,
+    "repairs_max": 2,
+    "new_engine_weight_ess_min": 1000,
+    "predictive_quantile_mc_error_cycles_max": 0.5,
+    "synthetic_interpretation": "Four fixed regimes are recovery diagnostics, not repeated-sampling calibration certification. Gross systematic parameter bias or prior dominance requires revision; no post-hoc acceptance threshold tuned to fits."
+  },
+  "prior_predictive_draws": 4000,
+  "posterior_predictive_draws": 1000,
+  "calibration_design_simulations": 5000,
+  "calibration_sizes": [
+    9,
+    19,
+    25,
+    30,
+    50,
+    100
+  ],
+  "calibration_residual_access_policy": "Only after all CQR configurations and Bayesian training candidate policy frozen; pilot outcomes remain exploratory.",
+  "compute_envelope": {
+    "aggregate_cpu_hours": 32,
+    "artifact_gib": 10,
+    "default": "local CPU",
+    "extra_spending": false
+  },
+  "stopping": "Preserve each failure. If sampling/identifiability fail, recommend REVISE AGAIN rather than claim readiness."
+}
