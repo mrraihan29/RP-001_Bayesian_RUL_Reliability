@@ -43,7 +43,7 @@ def run(run_id):
             meta['cqr']=dict(status=cqr.status,candidate_summaries=cqr.candidate_summaries,tuning_scores=cqr.tuning_scores,calibration=cqr.calibration_metadata,failures=cqr.failure_reasons)
             if cqr.status=='completed':
                 lo,hi=predict_endpoints(cqr.interval_refit,pipeline.anchor_features['summary'],pipeline.anchor_features['full_sequence'])
-                np.savez(directory/f'{run_id}_cqr_anchors.npz',lower=np.maximum(0,np.minimum(lo,hi)-cqr.calibration_correction),upper=np.maximum(lo,hi)+cqr.calibration_correction,ids=pipeline.anchor.ids)
+                np.savez(directory/f'{run_id}_cqr_anchors.npz',lower=np.maximum(0,np.minimum(lo,hi)-cqr.calibration_correction),upper=np.maximum(0,np.maximum(lo,hi)+cqr.calibration_correction),ids=pipeline.anchor.ids)
             np.savez(directory/f'{run_id}_anchors.npz',a=pipeline.anchor.a,z=pipeline.anchor.z,ids=pipeline.anchor.ids,B=pipeline.anchor.B)
         else:
             engines=load_training();ids=[r['engine'] for r in manifest() if r['eligible_alive'] and r['role'] in ('fit','tune')]
