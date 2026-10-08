@@ -1,9 +1,9 @@
 # RP-001 — Web Review
 
-Repository private untuk owner review. Versi terbaru: **v0.5 — READY FOR OWNER LOCK REVIEW**, dengan status **PROTOCOL_DRAFTED**.
+Repository PUBLIC sesuai instruksi Raihan. **PROTOCOL_DRAFTED — G3-AM-001 pending owner disposition.**
 
-Mulai dari [Pre-Lock Resolution Memo](docs/v0.5/01_prelock_resolution_memo.md), [Proposed Locked Analysis Contract](docs/v0.5/02_proposed_locked_analysis_contract.md), dan [indeks evidence](docs/v0.5/README.md). Satu investigasi bounded selesai; kegagalan lama tetap tersimpan. Scientific review tidak memberi izin final lock, official sensors/labels, confirmatory evaluation, atau fallback.
+Baca [G3 status report](docs/protocol_lock/G3_FORMAL_PROTOCOL_LOCK_COMPLETION_REPORT.md), [amendment terbatas](docs/protocol_lock/AMENDMENT_REQUEST_G3_AM_001.md), dan [verification report](docs/protocol_lock/LOCK_VERIFICATION_REPORT.md). Seluruh 593 baseline files cocok. Lock berhenti karena aturan bracket/toleransi quantile tidak cocok dengan helper kode; tidak diperbaiki diam-diam.
 
-[Receipt v0.5](logs/v0.5/delivery_receipt.json) mengidentifikasi snapshot ilmiah dan fingerprint. Receipt administratif tersimpan pada commit sesudah snapshot itu, sehingga tidak mengklaim memuat hash commit dirinya sendiri.
+[Attempt receipt](docs/protocol_lock/LOCK_RECEIPT.json) mencatat evidence commit administratif; successful lock commit null. A diizinkan tetapi belum berhasil; B sensors, C freeze acceptance, D labels/scoring masih terpisah dan belum diizinkan.
 
-Baseline yang sudah ditinjau owner adalah61b4c2c63cbad6c1b9bd99168e33d1367aa180bc: [paket v0.4](docs/v0.4/README.md) dan [receipt v0.4 tetap](logs/v0.4/delivery_receipt.json). Source/hasil historis tidak ditimpa. Raw training, arsip NASA, official sensors/labels, dan33payload historis yang dikecualikan dari Git tetap lokal serta manifest-bound. Payload baru v0.4/v0.5 dan laporan ada di repository.
+[Paket v0.5](docs/v0.5/README.md) dan c583ce62eac9a6b3dcd29c1929cc07c17569beb7 dipertahankan. Raw data/protected members tidak dipublikasikan. Current aliases memiliki byte archives. Caption private pada evidence lama merupakan catatan historis.

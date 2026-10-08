@@ -1,0 +1,37 @@
+{
+  "README.md": {
+    "archive": "research/protocol_lock/baseline_current_aliases/README.md",
+    "sha256": "de85851cdbc61e4a92ee8105605abaec5ca740f89c7b3bf00e6aecd83ce2e464",
+    "bytes": 1931
+  },
+  "GITHUB_REVIEW.md": {
+    "archive": "research/protocol_lock/baseline_current_aliases/GITHUB_REVIEW.md",
+    "sha256": "d4bde36ac2d332a04ff520b5fe930fab9ce9b03afc24afc5c3252affab8a5ae2",
+    "bytes": 1187
+  },
+  "research/protocol.json": {
+    "archive": "research/protocol_lock/baseline_current_aliases/research/protocol.json",
+    "sha256": "89bf84f4683c9f30c3126040f7f53a881f5ee3f647a44faccbd09f72f3c0395f",
+    "bytes": 7711
+  },
+  "research/state_manifest.json": {
+    "archive": "research/protocol_lock/baseline_current_aliases/research/state_manifest.json",
+    "sha256": "b66d38d04cd313d8918e9ea6af6f46c123dc5b107df1cc55b1875c8ac933d1aa",
+    "bytes": 910
+  },
+  "research/gate_results.json": {
+    "archive": "research/protocol_lock/baseline_current_aliases/research/gate_results.json",
+    "sha256": "b27fb81a5d3e1693efbb1fb5a40e460225d7ba230030424b3d3751e640bc6919",
+    "bytes": 3765
+  },
+  "research/decision_log.md": {
+    "archive": "research/protocol_lock/baseline_current_aliases/research/decision_log.md",
+    "sha256": "628f01226ad1c4c076893ff2c68ceb8275bd11edeaa54d93a1f046d0e1d86a0e",
+    "bytes": 2103
+  },
+  "research/artifact_map.csv": {
+    "archive": "research/protocol_lock/baseline_current_aliases/research/artifact_map.csv",
+    "sha256": "4033e5bbdc4be3ea7da5b1b71843f411931987eefc8efb7fd640cf12c25744c5",
+    "bytes": 92327
+  }
+}

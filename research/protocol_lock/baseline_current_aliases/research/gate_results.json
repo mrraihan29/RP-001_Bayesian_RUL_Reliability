@@ -1,7 +1,7 @@
 {
   "version": "0.5",
-  "scope": "G3 formal lock verification only",
-  "recommendation": "OWNER AMENDMENT REVIEW REQUIRED",
+  "scope": "Restricted contract owner review; not validated research",
+  "recommendation": "READY FOR OWNER LOCK REVIEW",
   "gates": [
     {
       "gate": "BOUNDED_AUTHORIZATION",
@@ -95,14 +95,13 @@
     },
     {
       "gate": "OWNER_PROTOCOL_LOCK",
-      "state": "FAIL",
+      "state": "BLOCKED",
       "owner": "Rei SOL lead / Raihan x Rei final authorization",
       "artifact_version": "0.5",
       "evidence_ids": [
-        "G3-AM-001",
-        "G3-VERIFY"
+        "V05-MEMO"
       ],
-      "rationale": "Stage A authorization received; G3-AM-001 consistency mismatch prevents lock."
+      "rationale": "Owner approval absent; scientific readiness is for review only."
     },
     {
       "gate": "CONFIRMATORY_EVALUATION",
@@ -113,17 +112,6 @@
         "V05-MEMO"
       ],
       "rationale": "Not authorized, no official results."
-    },
-    {
-      "gate": "G3_BASELINE_BYTE_IDENTITY",
-      "state": "PASS",
-      "owner": "Rei / SOL",
-      "artifact_version": "G3-lock-attempt-1",
-      "evidence_ids": [
-        "G3-BASELINE"
-      ],
-      "rationale": "593 files, 560 Git blobs, 33 local-only plus live environment match."
     }
-  ],
-  "updated_at": "2026-10-08T17:18:03.859503+00:00"
+  ]
 }

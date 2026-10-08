@@ -1,0 +1,118 @@
+{
+  "version": "G3-lock-attempt-1",
+  "overall": "FAIL_FOR_FORMAL_LOCK",
+  "locked": false,
+  "cryptographic_signature": null,
+  "identity_limit": "AI role attribution only; not a human signature or independently authenticated identity",
+  "components": [
+    {
+      "component": "MODEL_SPECIFICATION",
+      "disposition": "CONSISTENT",
+      "direct_verifier": "Rei / SOL lead",
+      "verified_at": "2026-10-08T17:18:03.859503+00:00",
+      "rationale": "Direct SOL review: joint Gaussian g/z/logR marginal, covariance and AR1/Woodbury source match; prior dense-oracle evidence retained.",
+      "source_hashes": {
+        "src/rp001/model.py": "52627ae6f49311c3bb837ed3685a4d93b7e9a4d059fe08d6b892c4abab60d399",
+        "src/rp001/v04_model.py": "45dc8556475d4822e7fc2f17236fb1b2c04d7dafe0d9aa0548021d9abd1fa23e"
+      },
+      "scope": "Direct static scientific consistency review, saved-state identity/metadata and already archived scoped numerical evidence; no fresh numerical experiment"
+    },
+    {
+      "component": "PRIOR",
+      "disposition": "CONSISTENT",
+      "direct_verifier": "Rei / SOL lead",
+      "verified_at": "2026-10-08T17:18:03.859503+00:00",
+      "rationale": "anchored_v04 priors and saved fit policy match; exposed development adaptation remains disclosed.",
+      "source_hashes": {
+        "src/rp001/v04_model.py": "45dc8556475d4822e7fc2f17236fb1b2c04d7dafe0d9aa0548021d9abd1fa23e",
+        "configs/v0.4/remediation_plan.json": "0c6a7e1e924636cec6196295eac19b29a6bd7faa85e18b081549f8287ab0b99b"
+      },
+      "scope": "Direct static scientific consistency review, saved-state identity/metadata and already archived scoped numerical evidence; no fresh numerical experiment"
+    },
+    {
+      "component": "POSTERIOR_PREDICTION",
+      "disposition": "CONSISTENT_WITH_ROUTE_BLOCKER",
+      "direct_verifier": "Rei / SOL lead",
+      "verified_at": "2026-10-08T17:18:03.859503+00:00",
+      "rationale": "Separate sensor-only importance update/conditional Gaussian mixture match; 3 x 4 x 8000 principal states verified. Quantile route pending.",
+      "source_hashes": {
+        "src/rp001/v04_predict.py": "412f3f59fe823ffa7f1de048c7c7b68a2777bc83a400f40b6a717db22a1604e2",
+        "src/rp001/v04_analysis.py": "2fcf53103f3e9364396a7f575f3d319fa0afba4fa34115d788d6e9326087f25e"
+      },
+      "scope": "Direct static scientific consistency review, saved-state identity/metadata and already archived scoped numerical evidence; no fresh numerical experiment"
+    },
+    {
+      "component": "CQR",
+      "disposition": "CONSISTENT",
+      "direct_verifier": "Rei / SOL lead",
+      "verified_at": "2026-10-08T17:18:03.859503+00:00",
+      "rationale": "12 fixed candidates/ties/refit agree; ceil(26*.9)=24, q=19.987558518873357; support projection retained. No official exchangeability guarantee.",
+      "source_hashes": {
+        "src/rp001/comparators.py": "37d8e96ab23f7e3525010ed6aa412a2ff89dd622a4e3d0cceb9d215a8c4e41aa",
+        "src/rp001/metrics.py": "8eb710c14c35ab556ee52448a2a85e30203d40247f7627bdcd9df6add1a88531",
+        "results/pilot/comparator_calibration.json": "b941da7179e2698675511c2876cf8eed6cce60e142e17263c60228956a45497b"
+      },
+      "scope": "Direct static scientific consistency review, saved-state identity/metadata and already archived scoped numerical evidence; no fresh numerical experiment"
+    },
+    {
+      "component": "PRIMARY_SCORE",
+      "disposition": "CONSISTENT",
+      "direct_verifier": "Rei / SOL lead",
+      "verified_at": "2026-10-08T17:18:03.859503+00:00",
+      "rationale": "IS90=U-L+20max(L-y,0)+20max(y-U,0); Bayesian-minus-CQR on complete uncapped finite cohort. Future contrast requires compensated aggregation.",
+      "source_hashes": {
+        "src/rp001/metrics.py": "8eb710c14c35ab556ee52448a2a85e30203d40247f7627bdcd9df6add1a88531",
+        "src/rp001/v05_score_numerics.py": "60523e545bea9ba0984dfd6f14eee0d6f76460c850da6c2fe16f57d994abcf2f"
+      },
+      "scope": "Direct static scientific consistency review, saved-state identity/metadata and already archived scoped numerical evidence; no fresh numerical experiment"
+    },
+    {
+      "component": "NUMERICAL_GATES",
+      "disposition": "FAIL",
+      "direct_verifier": "Rei / SOL lead",
+      "verified_at": "2026-10-08T17:18:03.859503+00:00",
+      "rationale": "Other guard thresholds/influence formulas agree; bracket/tolerance/helper identity conflicts (G3-AM-001). No threshold relaxed.",
+      "source_hashes": {
+        "src/rp001/v04_precision.py": "396a5f55ca2e9c51fd21f02f50e59c57be7aedd38321a4a3123b0b955f1fde33",
+        "src/rp001/prediction.py": "f54fafe5875a8c7e009ee3c392cbf75c9e9d041646521e9a4123dd5e21b65d9b",
+        "docs/v0.5/02_proposed_locked_analysis_contract.md": "1e03e072682878fde6ced8c00ddcde44594af59e56129e65db1127a0166fa598"
+      },
+      "scope": "Direct static scientific consistency review, saved-state identity/metadata and already archived scoped numerical evidence; no fresh numerical experiment"
+    },
+    {
+      "component": "SCORE_UNCERTAINTY",
+      "disposition": "CONSISTENT",
+      "direct_verifier": "Rei / SOL lead",
+      "verified_at": "2026-10-08T17:18:03.859503+00:00",
+      "rationale": "X=-Q*w*(F-p)/(mean(w)*f), indicator score gradients, aligned joint covariance/projection, Satterthwaite approximation, kink qualification and 19/N conditional sensitivity agree. Prior saved-draw check retained.",
+      "source_hashes": {
+        "src/rp001/v05_score_numerics.py": "60523e545bea9ba0984dfd6f14eee0d6f76460c850da6c2fe16f57d994abcf2f",
+        "docs/v0.5/03_mathematical_validity.md": "6fa6d58b29969c737f3bb9f41da33246c71443304173638ffa5ac09d1c405131"
+      },
+      "scope": "Direct static scientific consistency review, saved-state identity/metadata and already archived scoped numerical evidence; no fresh numerical experiment"
+    },
+    {
+      "component": "FINITE_ESTIMAND",
+      "disposition": "CONSISTENT",
+      "direct_verifier": "Rei / SOL lead",
+      "verified_at": "2026-10-08T17:18:03.859503+00:00",
+      "rationale": "Exact complete stored prediction comparison only; no population inference, binary competitive decision, practical margin, superiority/equivalence/noninferiority or operational certification.",
+      "source_hashes": {
+        "docs/v0.5/02_proposed_locked_analysis_contract.md": "1e03e072682878fde6ced8c00ddcde44594af59e56129e65db1127a0166fa598"
+      },
+      "scope": "Direct static scientific consistency review, saved-state identity/metadata and already archived scoped numerical evidence; no fresh numerical experiment"
+    },
+    {
+      "component": "PROTECTED_ACCESS",
+      "disposition": "CONSISTENT_AND_HONORED",
+      "direct_verifier": "Rei / SOL lead",
+      "verified_at": "2026-10-08T17:18:03.859503+00:00",
+      "rationale": "A lock authorized but unsuccessful; B sensors, C freeze acceptance and D labels/scoring separate and unauthorized. No protected member reads/predictions.",
+      "source_hashes": {
+        "docs/protocol_lock/OWNER_AUTHORIZATION_G3.md": "ac5a51a4ddb17048507e36cd30ae7f735e0d52180dead411dbeb918338faf132",
+        "docs/v0.5/02_proposed_locked_analysis_contract.md": "1e03e072682878fde6ced8c00ddcde44594af59e56129e65db1127a0166fa598"
+      },
+      "scope": "Direct static scientific consistency review, saved-state identity/metadata and already archived scoped numerical evidence; no fresh numerical experiment"
+    }
+  ]
+}

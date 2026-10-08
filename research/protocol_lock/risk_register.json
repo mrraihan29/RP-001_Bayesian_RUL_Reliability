@@ -1,0 +1,19 @@
+{
+  "artifact_version": "G3-lock-attempt-1",
+  "risks": [
+    {
+      "risk_id": "G3-AM-001",
+      "statement": "Exact quantile numerical description combines legacy/precision procedures.",
+      "severity": "critical",
+      "likelihood": "Observed",
+      "affected_claims_or_gates": [
+        "G3_PROTOCOL_LOCK_CONSISTENCY"
+      ],
+      "owner": "Research Owners Raihan x Rei; SOL supplies clarification",
+      "disposition": "Draft retained; concrete existing-source amendment unexecuted",
+      "trigger": "Before lock completion and Stage B"
+    }
+  ],
+  "retained_scientific_risks": "research/v0.5/blocker_disposition.json",
+  "new_robustness_experiment_required": false
+}

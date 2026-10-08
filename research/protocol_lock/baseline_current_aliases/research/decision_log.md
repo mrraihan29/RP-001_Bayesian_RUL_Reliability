@@ -21,8 +21,3 @@ Owner-directed finite-benchmark estimand and unchanged question/90%IS/Bayesian-v
 ## v0.5 bounded pre-lock return
 
 READY FOR OWNER LOCK REVIEW for restricted descriptive finite-benchmark contract. One inquiry PASS, original FAIL retained; population inference omitted; numerical failure policy fixed. No final lock, test access, fallback or confirmation authorized. Full disposition docs/v0.5/01_prelock_resolution_memo.md.
-
-
-## 2026-10-08T17:18:03.859503+00:00 | G3 formal lock: AMENDMENT REQUIRED
-
-Human Stage A lock authorization recorded byte-exact. Actual baseline PASS; G3-AM-001 bracket/tolerance/helper mismatch fails consistency. Direct SOL review retained. No source/method/results changed, scientific runs appended or protected data accessed. PROTOCOL_DRAFTED. Concrete existing-precision-helper amendment awaits owner acceptance. B/C/D unauthorized. Historical private captions retained; repository PUBLIC under later explicit human direction and G3 instruction.

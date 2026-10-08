@@ -581,9 +581,3 @@ V05-A1006,bounded-prelock-source-and-verification,logs/v0.5/closure_qc.json,,RP0
 V05-A1007,bounded-prelock-source-and-verification,logs/v0.5/native_validation.json,,RP001-v0.5-bounded-prelock,9aedb7486a8ee0c4a41d2a8bd86b6316f51ae6ac8333423455a57bf65eea2d10
 V05-A1008,bounded-prelock-source-and-verification,logs/v0.5/report_integrity.json,,RP001-v0.5-bounded-prelock,85697523fc1763a78c6c560c297d5a44a8e4f1a1c0cfc6cdfab645badd91754c
 V05-A1009,bounded-prelock-source-and-verification,research/v0.5/proposed_analysis_contract.json,,RP001-v0.5-bounded-prelock,2ca6b5fa921647a57fab06d47224d397c446eb4184bebffcf39b882cf2ae96fe
-G3-REPORT,governance-verification,docs/protocol_lock/G3_FORMAL_PROTOCOL_LOCK_COMPLETION_REPORT.md,,RP001-G3-formal-lock-only,de6110967f43d8984f5972eee807deeae6385d5313a1ffa38eff898b442370af
-G3-AM-001,governance-verification,docs/protocol_lock/AMENDMENT_REQUEST_G3_AM_001.md,,RP001-G3-formal-lock-only,0360abed700e05eb76f60fa80c6d8c0e5b9433844056018988a9560e7d67adc7
-G3-VERIFY,governance-verification,docs/protocol_lock/LOCK_VERIFICATION_REPORT.md,,RP001-G3-formal-lock-only,3b41883026b784adc8aef022c836d7303e171471b26598f09623ac6b2f6b32c9
-G3-BASELINE,governance-verification,logs/protocol_lock/baseline_verification.json,,RP001-G3-formal-lock-only,719ffdbc0cba985bea224390529ceb40e2854883e9c2051952101bff9339b7ed
-G3-AUTH,governance-verification,docs/protocol_lock/OWNER_AUTHORIZATION_G3.md,,RP001-G3-formal-lock-only,ac5a51a4ddb17048507e36cd30ae7f735e0d52180dead411dbeb918338faf132
-G3-SAVED,governance-verification,logs/protocol_lock/saved_state_verification.json,,RP001-G3-formal-lock-only,cbd369121c34a288a8d2b7d9366f850dd9d7b63e47c59861717a085d55db6ad4

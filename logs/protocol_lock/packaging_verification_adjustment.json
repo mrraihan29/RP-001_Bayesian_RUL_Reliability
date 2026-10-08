@@ -1,0 +1,11 @@
+{
+  "cause": "Those two administrative records were already committed after c583 and before G3, not introduced by G3",
+  "science_runs": 0,
+  "initial_assertion": "Expected no src/configs/experiments/v05-evidence changes compared with c583",
+  "observed": [
+    "logs/v0.5/delivery_receipt.json",
+    "logs/v0.5/github_visibility_reconciliation.json"
+  ],
+  "scope": "Packaging-only check adjustment; no scientific change or experiment",
+  "resolution": "Compare unchanged scientific/evidence paths against recorded administrative baseline HEAD; preserve independent exact c583 scientific source and delivery-manifest hash checks"
+}

@@ -88,27 +88,17 @@
     }
   ],
   "artifact_version": "0.5",
-  "owner": "Raihan × Rei",
+  "owner": "Raihan \u00d7 Rei",
   "owner_stage_a_approved": true,
   "owner_stage_b_approved": false,
   "new_engine_conditioning": "Full separate sensor-only theta update and weighted predictive-mixture CDF; three joint sensor oracles and known-target validation; all25/75 development numerical guards PASS. Future endpoints require prospective numerical/integrity checks.",
-  "updated_at": "2026-10-08T17:18:03.859503+00:00",
+  "updated_at": "2026-10-08T16:31:26.535785+00:00",
   "practical_threshold_cycles": null,
   "practical_decision_rule": "Descriptive comparison only; no binary competitive, practical superiority, equivalence or noninferiority threshold.",
-  "pilot_disposition": "OWNER AMENDMENT REVIEW REQUIRED",
+  "pilot_disposition": "READY FOR OWNER LOCK REVIEW",
   "pilot_precision_acceptance": "PASS in tested development cohort: max approximate upperMCSE0.220513<0.5; original v0.3 .728972FAIL retained.",
   "secondary_population_hypothesis": null,
   "primary_estimand": "Exact mean paired Bayesian-minus-calibratedCQR90% interval score in cycles over all planned finite official FD001 endpoints and frozen stored predictions.",
   "competitive_definition": "Descriptive score levels/difference/ratio/per-engine decomposition; no binary equivalence/noninferiority/practical margin, primary populationp-value or general superiority.",
-  "proposed_analysis_contract": "docs/v0.5/02_proposed_locked_analysis_contract.md",
-  "owner_protocol_lock_directive_received": true,
-  "owner_protocol_lock_directive": "docs/protocol_lock/OWNER_AUTHORIZATION_G3.md",
-  "formal_lock_integrity": "FAIL_G3_AM_001",
-  "protected_evaluation_authorization": {
-    "stage_A_formal_lock": true,
-    "stage_B_official_test_sensors": false,
-    "stage_C_prediction_freeze_acceptance": false,
-    "stage_D_official_test_labels_and_scoring": false
-  },
-  "legacy_owner_stage_b_field_note": "Legacy final-protocol completion remains false: no consistent final lock completed. This is not the new official-sensor Stage B, whose separate authorization is explicitly false."
+  "proposed_analysis_contract": "docs/v0.5/02_proposed_locked_analysis_contract.md"
 }

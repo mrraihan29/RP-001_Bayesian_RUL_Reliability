@@ -1,0 +1,46 @@
+{
+  "checked_at_utc": "2026-10-08T22:50:45.534214+00:00",
+  "package_integrity": "PASS",
+  "formal_protocol_lock": "FAIL_G3_AM_001",
+  "protocol_status": "PROTOCOL_DRAFTED",
+  "baseline_files_preserved": 593,
+  "baseline_files_current": 586,
+  "baseline_files_byte_archived": 7,
+  "all_scientific_sources_configs_results_v05_evidence_unchanged": true,
+  "historical_experiment_registry_unchanged": true,
+  "historical_claim_ledger_unchanged": true,
+  "new_scientific_experiments": 0,
+  "protected_access": false,
+  "native_structural_validation": {
+    "handoff": {
+      "result": "PASS",
+      "errors": []
+    },
+    "research": {
+      "status": "PROTOCOL_DRAFTED",
+      "protocol_status": "PROTOCOL_DRAFTED",
+      "mode": "dataset-benchmark",
+      "hard_failures": [],
+      "warnings": [],
+      "info": []
+    }
+  },
+  "relative_document_links_checked": 17,
+  "receipt_links_deferred_until_postcommit": true,
+  "embedded_comparator_preprocessor_identity": {
+    "mean": true,
+    "sd": true,
+    "retained": true,
+    "pc": true,
+    "pc_scale": true,
+    "fit_ids": true,
+    "pc1_explained_ratio": true
+  },
+  "owner_authorization": {
+    "stage_A_formal_lock": true,
+    "stage_B_official_test_sensors": false,
+    "stage_C_prediction_freeze_acceptance": false,
+    "stage_D_official_test_labels_and_scoring": false
+  },
+  "source_map_sha256": "0967e8db64935764b5c34fb35b15978739c6a2d536f6ea13bb05fd0540681d5d"
+}

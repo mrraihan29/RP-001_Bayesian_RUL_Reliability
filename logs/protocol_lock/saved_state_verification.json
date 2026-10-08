@@ -1,0 +1,437 @@
+{
+  "scope": "Saved-state metadata/finite-value/array identity audit only; no fit, predictions, sampling, score calculation or new scientific run",
+  "posterior_states": [
+    {
+      "path": "experiments/v0.4/fits/v04_main_r1.nc",
+      "sha256": "750157b158f665d2c962202813f2cfd11a0152730956743dc434b6b47db75415",
+      "variables": {
+        "beta": {
+          "shape": [
+            4,
+            8000,
+            2
+          ],
+          "dtype": "float64",
+          "finite": true
+        },
+        "gamma": {
+          "shape": [
+            4,
+            8000,
+            2
+          ],
+          "dtype": "float64",
+          "finite": true
+        },
+        "Gamma": {
+          "shape": [
+            4,
+            8000,
+            2,
+            2
+          ],
+          "dtype": "float64",
+          "finite": true
+        },
+        "tau": {
+          "shape": [
+            4,
+            8000,
+            2
+          ],
+          "dtype": "float64",
+          "finite": true
+        },
+        "r_g": {
+          "shape": [
+            4,
+            8000
+          ],
+          "dtype": "float64",
+          "finite": true
+        },
+        "sigma_z": {
+          "shape": [
+            4,
+            8000
+          ],
+          "dtype": "float64",
+          "finite": true
+        },
+        "sigma_r": {
+          "shape": [
+            4,
+            8000
+          ],
+          "dtype": "float64",
+          "finite": true
+        },
+        "rho": {
+          "shape": [
+            4,
+            8000
+          ],
+          "dtype": "float64",
+          "finite": true
+        },
+        "eta_rho": {
+          "shape": [
+            4,
+            8000
+          ],
+          "dtype": "float64",
+          "finite": true
+        },
+        "gcor_u": {
+          "shape": [
+            4,
+            8000
+          ],
+          "dtype": "float64",
+          "finite": true
+        }
+      },
+      "principal_chain_draw_shape_pass": true,
+      "finite_pass": true
+    },
+    {
+      "path": "experiments/v0.4/fits/v04_main_r2.nc",
+      "sha256": "bce67cd39c38c54271ab59d1a9922795ff62524aac25bd09f64eed3a3f99fe3b",
+      "variables": {
+        "beta": {
+          "shape": [
+            4,
+            8000,
+            2
+          ],
+          "dtype": "float64",
+          "finite": true
+        },
+        "gamma": {
+          "shape": [
+            4,
+            8000,
+            2
+          ],
+          "dtype": "float64",
+          "finite": true
+        },
+        "Gamma": {
+          "shape": [
+            4,
+            8000,
+            2,
+            2
+          ],
+          "dtype": "float64",
+          "finite": true
+        },
+        "tau": {
+          "shape": [
+            4,
+            8000,
+            2
+          ],
+          "dtype": "float64",
+          "finite": true
+        },
+        "r_g": {
+          "shape": [
+            4,
+            8000
+          ],
+          "dtype": "float64",
+          "finite": true
+        },
+        "sigma_z": {
+          "shape": [
+            4,
+            8000
+          ],
+          "dtype": "float64",
+          "finite": true
+        },
+        "sigma_r": {
+          "shape": [
+            4,
+            8000
+          ],
+          "dtype": "float64",
+          "finite": true
+        },
+        "rho": {
+          "shape": [
+            4,
+            8000
+          ],
+          "dtype": "float64",
+          "finite": true
+        },
+        "eta_rho": {
+          "shape": [
+            4,
+            8000
+          ],
+          "dtype": "float64",
+          "finite": true
+        },
+        "gcor_u": {
+          "shape": [
+            4,
+            8000
+          ],
+          "dtype": "float64",
+          "finite": true
+        }
+      },
+      "principal_chain_draw_shape_pass": true,
+      "finite_pass": true
+    },
+    {
+      "path": "experiments/v0.4/fits/v04_main_r3.nc",
+      "sha256": "805ec463ea94b565c536fc39dcc3d95a784d9fd1527f15ab106a4b2acf23cb96",
+      "variables": {
+        "beta": {
+          "shape": [
+            4,
+            8000,
+            2
+          ],
+          "dtype": "float64",
+          "finite": true
+        },
+        "gamma": {
+          "shape": [
+            4,
+            8000,
+            2
+          ],
+          "dtype": "float64",
+          "finite": true
+        },
+        "Gamma": {
+          "shape": [
+            4,
+            8000,
+            2,
+            2
+          ],
+          "dtype": "float64",
+          "finite": true
+        },
+        "tau": {
+          "shape": [
+            4,
+            8000,
+            2
+          ],
+          "dtype": "float64",
+          "finite": true
+        },
+        "r_g": {
+          "shape": [
+            4,
+            8000
+          ],
+          "dtype": "float64",
+          "finite": true
+        },
+        "sigma_z": {
+          "shape": [
+            4,
+            8000
+          ],
+          "dtype": "float64",
+          "finite": true
+        },
+        "sigma_r": {
+          "shape": [
+            4,
+            8000
+          ],
+          "dtype": "float64",
+          "finite": true
+        },
+        "rho": {
+          "shape": [
+            4,
+            8000
+          ],
+          "dtype": "float64",
+          "finite": true
+        },
+        "eta_rho": {
+          "shape": [
+            4,
+            8000
+          ],
+          "dtype": "float64",
+          "finite": true
+        },
+        "gcor_u": {
+          "shape": [
+            4,
+            8000
+          ],
+          "dtype": "float64",
+          "finite": true
+        }
+      },
+      "principal_chain_draw_shape_pass": true,
+      "finite_pass": true
+    }
+  ],
+  "selected_comparator": {
+    "path": "results/pilot/selected_comparator.joblib",
+    "sha256": "85027f22fc1c4f4d20748412d6072ad7b23e493f0b008fffc15cb0800683458f",
+    "object_metadata": {
+      "preprocessor": {
+        "type": "dict"
+      },
+      "selected": {
+        "type": "CandidateFit",
+        "spec": "CandidateSpec(candidate_id='gb-depth1-leaf10-lr0p1', family='gradient_boosting', parameters=(('max_depth', 1), ('min_samples_leaf', 10), ('learning_rate', 0.1), ('n_estimators', 200)))",
+        "status": "completed",
+        "train_size": "56",
+        "lower_model": {
+          "type": "GradientBoostingRegressor",
+          "parameters": {
+            "loss": "quantile",
+            "alpha": 0.05,
+            "n_estimators": 200,
+            "max_depth": 1,
+            "min_samples_leaf": 10,
+            "learning_rate": 0.1,
+            "random_state": 20261008
+          }
+        },
+        "upper_model": {
+          "type": "GradientBoostingRegressor",
+          "parameters": {
+            "loss": "quantile",
+            "alpha": 0.95,
+            "n_estimators": 200,
+            "max_depth": 1,
+            "min_samples_leaf": 10,
+            "learning_rate": 0.1,
+            "random_state": 20261008
+          }
+        }
+      },
+      "median": {
+        "type": "MedianFit",
+        "spec": "CandidateSpec(candidate_id='gb-depth1-leaf10-lr0p1', family='gradient_boosting', parameters=(('max_depth', 1), ('min_samples_leaf', 10), ('learning_rate', 0.1), ('n_estimators', 200)))",
+        "status": "completed",
+        "train_size": "56",
+        "quantile": "0.5",
+        "conformal_shift_applied": "False",
+        "model": {
+          "type": "GradientBoostingRegressor",
+          "parameters": {
+            "loss": "quantile",
+            "alpha": 0.5,
+            "n_estimators": 200,
+            "max_depth": 1,
+            "min_samples_leaf": 10,
+            "learning_rate": 0.1,
+            "random_state": 20261008
+          }
+        }
+      },
+      "reference": {
+        "type": "GaussianLogRReferenceFit"
+      }
+    }
+  },
+  "refit_preprocessor": {
+    "path": "results/pilot/refit_preprocessor.npz",
+    "sha256": "f23b7fdd1c354d92468cdff02b056d7cda603cfc00d52d3ba24917dcd5c01b9e",
+    "fit_engine_count": 56,
+    "comparisons": [
+      {
+        "path": "experiments/v0.4/fits/v04_main_r1_pre.npz",
+        "sha256": "f23b7fdd1c354d92468cdff02b056d7cda603cfc00d52d3ba24917dcd5c01b9e",
+        "equal_to_refit_preprocessor": {
+          "mean": true,
+          "sd": true,
+          "retained": true,
+          "pc": true,
+          "pc_scale": true,
+          "fit_ids": true,
+          "pc1_explained_ratio": true
+        },
+        "all_equal": true
+      },
+      {
+        "path": "experiments/v0.4/fits/v04_main_r2_pre.npz",
+        "sha256": "f23b7fdd1c354d92468cdff02b056d7cda603cfc00d52d3ba24917dcd5c01b9e",
+        "equal_to_refit_preprocessor": {
+          "mean": true,
+          "sd": true,
+          "retained": true,
+          "pc": true,
+          "pc_scale": true,
+          "fit_ids": true,
+          "pc1_explained_ratio": true
+        },
+        "all_equal": true
+      },
+      {
+        "path": "experiments/v0.4/fits/v04_main_r3_pre.npz",
+        "sha256": "f23b7fdd1c354d92468cdff02b056d7cda603cfc00d52d3ba24917dcd5c01b9e",
+        "equal_to_refit_preprocessor": {
+          "mean": true,
+          "sd": true,
+          "retained": true,
+          "pc": true,
+          "pc_scale": true,
+          "fit_ids": true,
+          "pc1_explained_ratio": true
+        },
+        "all_equal": true
+      }
+    ]
+  },
+  "CQR_calibration": {
+    "file_sha256": "b941da7179e2698675511c2876cf8eed6cce60e142e17263c60228956a45497b",
+    "selected_candidate": "gb-depth1-leaf10-lr0p1",
+    "n_calibration": 25,
+    "rank": 24,
+    "q": 19.987558518873357,
+    "calibration_engine_ids": [
+      11,
+      16,
+      25,
+      26,
+      31,
+      33,
+      34,
+      39,
+      40,
+      41,
+      45,
+      50,
+      51,
+      55,
+      56,
+      59,
+      61,
+      62,
+      63,
+      66,
+      72,
+      75,
+      79,
+      85,
+      86
+    ]
+  },
+  "Bayesian_secondary_calibration_record": {
+    "correction": 0.0,
+    "rank": 24,
+    "n": 25,
+    "secondary_only": true,
+    "development_calibration_exposed": true
+  },
+  "overall_saved_state_integrity": "PASS"
+}
