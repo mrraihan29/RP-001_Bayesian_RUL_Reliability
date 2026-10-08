@@ -73,3 +73,9 @@ results/**/*.joblib
 
 # Windows PyTensor configuration parsing artifact
 CodingProjectNAOBI RESEARCHRP-001_Bayesian_RUL_Reliability.cachepytensor/
+
+# Administrative post-commit receipt (avoids circular commit identity)
+logs/v0.3_delivery_receipt.json
+
+# Administrative post-commit receipt (avoids circular commit identity)
+logs/v0.3_snapshot_validation.json
