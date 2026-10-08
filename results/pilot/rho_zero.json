@@ -1,0 +1,196 @@
+{
+  "diagnostics": {
+    "rhat_max": 1.00106430867106,
+    "bulk_ess_min": 4322.5640086446065,
+    "tail_ess_min": 4496.104856522711,
+    "divergences": 0,
+    "bfmi": [
+      0.9591688027245645,
+      0.9786066894794351,
+      1.0365484043392104,
+      0.9916777297905774
+    ],
+    "maxdepth_fraction": 0.0,
+    "sample_stat_keys": [
+      "depth",
+      "maxdepth_reached",
+      "step_size",
+      "transformation_update_id",
+      "step_size_bar",
+      "mean_tree_accept",
+      "mean_tree_accept_sym",
+      "n_steps",
+      "max_energy_error",
+      "tuning",
+      "index_in_trajectory",
+      "logp",
+      "energy",
+      "energy_error",
+      "fisher_distance",
+      "transformation_index",
+      "diverging",
+      "divergence_draw",
+      "divergence_message",
+      "divergence_energy_error"
+    ],
+    "acceptance": "PASS",
+    "failures": []
+  },
+  "recovery": null,
+  "posterior_predictive_checks": {
+    "conditional_y_statistics": [
+      4.499148975270348,
+      0.7532448078304887,
+      5.156360481595361
+    ],
+    "joint_y_statistics": [
+      4.499148975270348,
+      0.7532448078304887,
+      5.156360481595361
+    ],
+    "observed_z_statistics": [
+      1.1055426429156106,
+      0.466162841631757
+    ],
+    "conditional_y_replica_quantiles": [
+      [
+        4.341878712988588,
+        0.6114533434500015,
+        5.045214605795153
+      ],
+      [
+        4.501201887331916,
+        0.7450655913600028,
+        5.287882421016617
+      ],
+      [
+        4.647457504588566,
+        0.9071741090407054,
+        5.580809152059784
+      ]
+    ],
+    "joint_y_replica_quantiles": [
+      [
+        4.251675761462101,
+        0.5306230728566392,
+        5.023310066157108
+      ],
+      [
+        4.511253529138016,
+        0.7128672620506235,
+        5.398843777070791
+      ],
+      [
+        4.781913752547655,
+        0.9531474683808296,
+        5.878753610437212
+      ]
+    ],
+    "joint_z_replica_quantiles": [
+      [
+        0.806380846247774,
+        0.21772458879602272
+      ],
+      [
+        1.0488815160515985,
+        0.4368179529261828
+      ],
+      [
+        1.3460989248264974,
+        0.6670721114480067
+      ]
+    ],
+    "conditional_tail_areas": [
+      0.507,
+      0.454,
+      0.842
+    ],
+    "joint_z_tail_areas": [
+      0.341,
+      0.388
+    ],
+    "n_draws": 1000,
+    "scope": "Model fit diagnostics, not out-of-sample performance or calibration."
+  },
+  "compile_seconds": 29.582553100015502,
+  "sampling_seconds": 3.629014999984065,
+  "posterior_file": "results\\pilot\\rho_zero.nc",
+  "posterior_sha256": "7cd6b654d15f6b172eb55fec825884c9c2eb29c4c9b482482fc91d627d795501",
+  "run_id": "rho_zero",
+  "phase": "robustness",
+  "status": "completed",
+  "code_commit": "861acc732c065a4f5ad16e562589eb0c4d740ce3",
+  "code_dirty": true,
+  "config_hash": "e2c05524b2a1e45d75fb3a975463e0bd843ef0fd65f17d58eed299b82345af1c",
+  "environment_fingerprint": "f57b00a67e9d67b2920791bfddc8dc812dbdeb9306588a26557dfd6be15f826c",
+  "config": {
+    "run_id": "rho_zero",
+    "sampling": {
+      "chains": 4,
+      "cores": 2,
+      "warmup": 1000,
+      "draws": 2000,
+      "target_accept": 0.95,
+      "max_treedepth": 12,
+      "sampler": "nutpie if validated; explicit recorded fallback"
+    },
+    "source_plan": "configs/pilot_plan_v0.3.json",
+    "dataset": "FD001 training fit43",
+    "data_sha256": "963b5e22825b34d8b21c69e1aeb4af3e647050eb672ee8834ba4b5d91d2de0f8",
+    "preprocessing_fit_ids": [
+      2,
+      3,
+      4,
+      5,
+      7,
+      9,
+      10,
+      12,
+      13,
+      17,
+      18,
+      22,
+      23,
+      32,
+      36,
+      42,
+      43,
+      44,
+      46,
+      47,
+      49,
+      52,
+      54,
+      57,
+      67,
+      69,
+      70,
+      74,
+      80,
+      81,
+      82,
+      83,
+      84,
+      87,
+      88,
+      89,
+      92,
+      93,
+      94,
+      96,
+      97,
+      99,
+      100
+    ],
+    "pc1_explained_ratio": 0.45546984475906727,
+    "prior_scale": 1.0,
+    "error": "normal",
+    "rho_zero": true,
+    "seed": 13003
+  },
+  "wall_seconds": 34.73261179999099,
+  "process_cpu_seconds": 38.0625,
+  "peak_process_rss_gib": 0.5028533935546875,
+  "official_test_access": false,
+  "confirmatory": false
+}

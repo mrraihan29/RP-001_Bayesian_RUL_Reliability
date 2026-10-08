@@ -1,0 +1,132 @@
+{
+  "status": "PASS",
+  "meaning": "Delivery integrity only; predictive readiness remains FAIL and protocol not locked",
+  "checks": [
+    {
+      "check": "original_proposal_unchanged",
+      "status": "PASS",
+      "details": null
+    },
+    {
+      "check": "training_fingerprint",
+      "status": "PASS",
+      "details": null
+    },
+    {
+      "check": "archive_fingerprint",
+      "status": "PASS",
+      "details": null
+    },
+    {
+      "check": "no_extracted_official_test_payload",
+      "status": "PASS",
+      "details": []
+    },
+    {
+      "check": "environment_hash_recomputed",
+      "status": "PASS",
+      "details": null
+    },
+    {
+      "check": "actual_pilot_runtime_matches",
+      "status": "PASS",
+      "details": {}
+    },
+    {
+      "check": "owner_scope_consistent",
+      "status": "PASS",
+      "details": null
+    },
+    {
+      "check": "primary_question_unchanged",
+      "status": "PASS",
+      "details": null
+    },
+    {
+      "check": "protocol_and_split_hashes",
+      "status": "PASS",
+      "details": null
+    },
+    {
+      "check": "nine_deliverables_present",
+      "status": "PASS",
+      "details": [
+        "01_updated_research_protocol.md",
+        "02_mathematical_verification_report.md",
+        "03_synthetic_recovery_diagnostic_pilot_report.md",
+        "04_dataset_split_eligibility_cutoff_audit.md",
+        "05_calibration_feasibility_precision_report.md",
+        "06_comparative_evaluation_design.md",
+        "07_compute_environment_report.md",
+        "08_risks_assumptions_decisions.md",
+        "09_owner_return_recommendation.md"
+      ]
+    },
+    {
+      "check": "final_integrated_tests",
+      "status": "PASS",
+      "details": {
+        "tests": 36,
+        "failures_errors": 0
+      }
+    },
+    {
+      "check": "registry_unique_and_protected",
+      "status": "PASS",
+      "details": 30
+    },
+    {
+      "check": "registered_data_config_posterior_hashes",
+      "status": "PASS",
+      "details": []
+    },
+    {
+      "check": "successful_fits_and_retained_failures",
+      "status": "PASS",
+      "details": {
+        "completed": 11,
+        "failed": 2
+      }
+    },
+    {
+      "check": "sampler_gates",
+      "status": "PASS",
+      "details": null
+    },
+    {
+      "check": "auxiliary_sampler_gates",
+      "status": "PASS",
+      "details": null
+    },
+    {
+      "check": "predictive_failure_propagated",
+      "status": "PASS",
+      "details": {
+        "quantile_mcse_max_approx": 0.7289724141720796,
+        "threshold": 0.5
+      }
+    },
+    {
+      "check": "analysis_source_identity",
+      "status": "PASS",
+      "details": null
+    },
+    {
+      "check": "handoff_evidence_hashes",
+      "status": "PASS",
+      "details": null
+    },
+    {
+      "check": "risk_ids_and_severities_preserved",
+      "status": "PASS",
+      "details": null
+    },
+    {
+      "check": "critical_fail_not_marked_ready",
+      "status": "PASS",
+      "details": null
+    }
+  ],
+  "environment_fingerprint": "f57b00a67e9d67b2920791bfddc8dc812dbdeb9306588a26557dfd6be15f826c",
+  "training_sha256": "963b5e22825b34d8b21c69e1aeb4af3e647050eb672ee8834ba4b5d91d2de0f8"
+}

@@ -1,0 +1,68 @@
+[
+  {
+    "run": "syn_r0_repair2",
+    "rhat_aux_max": 1.0006126775778224,
+    "ess_aux_min": 9905.777634478001,
+    "tail_aux_min": 5672.937219655398
+  },
+  {
+    "run": "syn_r05",
+    "rhat_aux_max": 1.002175641303237,
+    "ess_aux_min": 3410.4660081731427,
+    "tail_aux_min": 3478.6149832174647
+  },
+  {
+    "run": "syn_r09",
+    "rhat_aux_max": 1.0030573249536214,
+    "ess_aux_min": 806.1019212761045,
+    "tail_aux_min": 1416.3906021193393
+  },
+  {
+    "run": "syn_weak",
+    "rhat_aux_max": 1.002299191185314,
+    "ess_aux_min": 2767.1679138267746,
+    "tail_aux_min": 3187.7940474262004
+  },
+  {
+    "run": "base",
+    "rhat_aux_max": 1.0001378786231718,
+    "ess_aux_min": 8084.063405069895,
+    "tail_aux_min": 5772.059335951386
+  },
+  {
+    "run": "prior_half",
+    "rhat_aux_max": 1.000501978761257,
+    "ess_aux_min": 8686.051966124647,
+    "tail_aux_min": 5621.674800356562
+  },
+  {
+    "run": "prior_double",
+    "rhat_aux_max": 1.0007895736942094,
+    "ess_aux_min": 8283.352223536192,
+    "tail_aux_min": 6026.989879725721
+  },
+  {
+    "run": "rho_zero",
+    "rhat_aux_max": 1.0001724295816499,
+    "ess_aux_min": 8684.32047113468,
+    "tail_aux_min": 6435.020040976411
+  },
+  {
+    "run": "contamination",
+    "rhat_aux_max": 1.0001820147726228,
+    "ess_aux_min": 9125.814572716785,
+    "tail_aux_min": 5921.784896408171
+  },
+  {
+    "run": "refit",
+    "rhat_aux_max": 1.0004115422631499,
+    "ess_aux_min": 9555.749756445955,
+    "tail_aux_min": 5996.913916223602
+  },
+  {
+    "run": "sensor_oracle",
+    "rhat_aux_max": 1.0006364390887492,
+    "ess_aux_min": 8303.707045748335,
+    "tail_aux_min": 6195.6980486450575
+  }
+]

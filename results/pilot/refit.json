@@ -1,0 +1,209 @@
+{
+  "diagnostics": {
+    "rhat_max": 1.0009359366768744,
+    "bulk_ess_min": 4134.374389725155,
+    "tail_ess_min": 4643.396496206659,
+    "divergences": 0,
+    "bfmi": [
+      1.058465057033592,
+      0.9697145691895609,
+      0.9806799739427542,
+      1.0181239338230217
+    ],
+    "maxdepth_fraction": 0.0,
+    "sample_stat_keys": [
+      "depth",
+      "maxdepth_reached",
+      "step_size",
+      "transformation_update_id",
+      "step_size_bar",
+      "mean_tree_accept",
+      "mean_tree_accept_sym",
+      "n_steps",
+      "max_energy_error",
+      "tuning",
+      "index_in_trajectory",
+      "logp",
+      "energy",
+      "energy_error",
+      "fisher_distance",
+      "transformation_index",
+      "diverging",
+      "divergence_draw",
+      "divergence_message",
+      "divergence_energy_error"
+    ],
+    "acceptance": "PASS",
+    "failures": []
+  },
+  "recovery": null,
+  "posterior_predictive_checks": {
+    "conditional_y_statistics": [
+      4.427464062654474,
+      0.7730130737437344,
+      5.181720422964181
+    ],
+    "joint_y_statistics": [
+      4.427464062654474,
+      0.7730130737437344,
+      5.181720422964181
+    ],
+    "observed_z_statistics": [
+      1.1263605684152151,
+      0.5153023015584676
+    ],
+    "conditional_y_replica_quantiles": [
+      [
+        4.3103652794177565,
+        0.6537194840083376,
+        5.076168198027387
+      ],
+      [
+        4.424202887906745,
+        0.7688752491632795,
+        5.281417145764883
+      ],
+      [
+        4.551746250554336,
+        0.8965522863102052,
+        5.527548094703823
+      ]
+    ],
+    "joint_y_replica_quantiles": [
+      [
+        4.207181810473423,
+        0.5827562865103999,
+        5.00676967953678
+      ],
+      [
+        4.438863564366326,
+        0.7368000837513751,
+        5.370003087253451
+      ],
+      [
+        4.677154975769556,
+        0.9184291874602567,
+        5.797129755926254
+      ]
+    ],
+    "joint_z_replica_quantiles": [
+      [
+        0.8677461675324811,
+        0.30479230177017275
+      ],
+      [
+        1.0620666325890675,
+        0.481789671690091
+      ],
+      [
+        1.3266800499243494,
+        0.6763177152977172
+      ]
+    ],
+    "conditional_tail_areas": [
+      0.48,
+      0.471,
+      0.819
+    ],
+    "joint_z_tail_areas": [
+      0.283,
+      0.38
+    ],
+    "n_draws": 1000,
+    "scope": "Model fit diagnostics, not out-of-sample performance or calibration."
+  },
+  "compile_seconds": 24.31269270001212,
+  "sampling_seconds": 6.034362899983535,
+  "posterior_file": "results\\pilot\\refit.nc",
+  "posterior_sha256": "3c760d41cc2610774e9c4b59240c9c310f47ce762b4b0d51dd68592b4b3f9b7b",
+  "run_id": "refit",
+  "phase": "robustness",
+  "status": "completed",
+  "code_commit": "033028051ceeaf03dd4105685e6e207b4ac867e7",
+  "code_dirty": true,
+  "config_hash": "d405a181b5654b2cf16abe5cc860a2cdd75e79e6f204ad03e0fde6f6b222c2c7",
+  "environment_fingerprint": "f57b00a67e9d67b2920791bfddc8dc812dbdeb9306588a26557dfd6be15f826c",
+  "config": {
+    "run_id": "refit",
+    "sampling": {
+      "chains": 4,
+      "cores": 2,
+      "warmup": 1000,
+      "draws": 2000,
+      "target_accept": 0.95,
+      "max_treedepth": 12,
+      "sampler": "nutpie if validated; explicit recorded fallback"
+    },
+    "source_plan": "configs/pilot_plan_v0.3.json",
+    "dataset": "FD001 training fitting cohort n=56",
+    "data_sha256": "963b5e22825b34d8b21c69e1aeb4af3e647050eb672ee8834ba4b5d91d2de0f8",
+    "preprocessing_fit_ids": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      7,
+      9,
+      10,
+      12,
+      13,
+      17,
+      18,
+      20,
+      21,
+      22,
+      23,
+      32,
+      35,
+      36,
+      42,
+      43,
+      44,
+      46,
+      47,
+      48,
+      49,
+      52,
+      54,
+      57,
+      58,
+      60,
+      64,
+      67,
+      69,
+      70,
+      71,
+      74,
+      76,
+      78,
+      80,
+      81,
+      82,
+      83,
+      84,
+      87,
+      88,
+      89,
+      92,
+      93,
+      94,
+      95,
+      96,
+      97,
+      98,
+      99,
+      100
+    ],
+    "pc1_explained_ratio": 0.4571814194700053,
+    "prior_scale": 1.0,
+    "error": "normal",
+    "rho_zero": false,
+    "seed": 13005
+  },
+  "wall_seconds": 32.20228169998154,
+  "process_cpu_seconds": 37.703125,
+  "peak_process_rss_gib": 0.47013092041015625,
+  "official_test_access": false,
+  "confirmatory": false
+}

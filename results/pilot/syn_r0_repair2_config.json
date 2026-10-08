@@ -1,0 +1,21 @@
+{
+  "run_id": "syn_r0_repair2",
+  "sampling": {
+    "chains": 4,
+    "cores": 2,
+    "warmup": 1000,
+    "draws": 2000,
+    "target_accept": 0.95,
+    "max_treedepth": 12,
+    "sampler": "nutpie if validated; explicit recorded fallback"
+  },
+  "source_plan": "configs/pilot_plan_v0.3.json",
+  "id": "syn_r0",
+  "n": 56,
+  "rho": 0,
+  "weak": false,
+  "seed": 13101,
+  "prior_scale": 1.0,
+  "error": "normal",
+  "rho_zero": false
+}

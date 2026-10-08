@@ -8,3 +8,7 @@
 - 2026-10-08: User reports ColabPro; added as optional untested compute resource.
 - 2026-10-08: Independent methods audit completed; median, short-history, hash wording repaired; numerical pilot gates remain deferred.
 - 2026-10-08: Package offered for owner StageA review; approval absent. Source proposal section18 governs final confirmatory authorization.
+
+## Development return v0.3 — 2026-10-08
+
+Owner StageA approved; final StageB absent. Development completed; REVISE AGAIN after predictive MCSE.728972>.5cycle. LocalCPU used; test covariates/labels untouched. Detailed decisions/deviations/risks: docs/v0.3/08_risks_assumptions_decisions.md.

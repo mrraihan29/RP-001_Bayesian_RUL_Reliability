@@ -1,0 +1,87 @@
+{
+  "status": "PROTOCOL_DRAFTED",
+  "gates": [
+    {
+      "gate": "G0_WORKSPACE",
+      "state": "PASS",
+      "owner": "Rei research lead",
+      "artifact_version": "0.2",
+      "evidence_ids": [
+        "E-G0"
+      ],
+      "rationale": "Required structure and byte-identical source verified"
+    },
+    {
+      "gate": "G1_NARRATIVE_EVIDENCE_MAP",
+      "state": "PASS",
+      "owner": "literature-evidence-engine",
+      "artifact_version": "0.2",
+      "evidence_ids": [
+        "S03",
+        "S05",
+        "S06",
+        "S07",
+        "S09"
+      ],
+      "rationale": "Scoped design review, no systematic completeness or novelty certification"
+    },
+    {
+      "gate": "EVIDENCE_VALIDATED",
+      "state": "DEFERRED",
+      "owner": "literature-evidence-engine",
+      "artifact_version": "0.2",
+      "evidence_ids": [
+        "S12",
+        "S13"
+      ],
+      "rationale": "Current full-method/status/novelty review not complete; narrow methods claims supported"
+    },
+    {
+      "gate": "DATA_VALIDATED",
+      "state": "DEFERRED",
+      "owner": "data-quality-engine",
+      "artifact_version": "0.2",
+      "evidence_ids": [
+        "E-TRAIN"
+      ],
+      "rationale": "Training audit only; whole benchmark/rights release not validated"
+    },
+    {
+      "gate": "G2_ESTIMAND_DRAFT",
+      "state": "PASS",
+      "owner": "rei-quant-research",
+      "artifact_version": "0.2",
+      "evidence_ids": [
+        "E-PRECISION",
+        "E-METHOD-AUDIT"
+      ],
+      "rationale": "Independent units, population assumptions and endpoint explicit"
+    },
+    {
+      "gate": "PROTOCOL_LOCK",
+      "state": "BLOCKED",
+      "owner": "Raihan",
+      "artifact_version": "0.2",
+      "evidence_ids": [
+        "E-PROPOSAL"
+      ],
+      "rationale": "No owner approval; implementation/pilot numerical acceptance unresolved"
+    },
+    {
+      "gate": "EXPERIMENT_VALIDATED",
+      "state": "DEFERRED",
+      "owner": "scientific-research-engine",
+      "artifact_version": "0.2",
+      "evidence_ids": [],
+      "rationale": "No experiment run; specialists activated when scope enters experiment"
+    },
+    {
+      "gate": "SCIENTIFIC_VALIDATED",
+      "state": "DEFERRED",
+      "owner": "scientific-research-engine",
+      "artifact_version": "0.2",
+      "evidence_ids": [],
+      "rationale": "No empirical model comparison evidence"
+    }
+  ]
+}

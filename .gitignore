@@ -70,3 +70,6 @@ Thumbs.db
 .cache/
 
 results/**/*.joblib
+
+# Windows PyTensor configuration parsing artifact
+CodingProjectNAOBI RESEARCHRP-001_Bayesian_RUL_Reliability.cachepytensor/

@@ -1,0 +1,426 @@
+{
+  "schema_version": "1.0.0",
+  "handoff_id": "RP001-DEVELOPMENT-RETURN-20261008",
+  "parent_work_id": "RP-001",
+  "producer": "scientific-research-engine",
+  "consumer": "scientific-research-engine",
+  "producer_role": "Rei / SOL Extra High lead, direct mathematical verifier",
+  "consumer_role": "Research Owners Raihan × Rei for final authorization",
+  "human_recipient": "Raihan × Rei",
+  "artifact_type": "development-pilot-evidence-package",
+  "artifact_version": "0.3",
+  "artifact_identity": {
+    "path_or_uri": "docs/v0.3/09_owner_return_recommendation.md",
+    "sha256_or_version": "6c3fd29fa881dbb7de3234f51b470e64c4ad2b8956960aad5e5233cc37585710",
+    "created_at": "2026-10-08T13:08:19.003853+00:00",
+    "source_revision": "Original proposalSHA4ff06a6cf6f7a699dcbb9c66a76bfe6e21d60b64bc738c345e3b08c1f5118346;protocolSHA743a79476e015e4332aa6a9d2d8639dd6dbdde55dbb662c2bd1523384f163d08"
+  },
+  "scope": "Nine deliverables; synthetic and official FD001 training-only development; no test/confirmatory work",
+  "applicability": "APPLICABLE_MANDATORY",
+  "claims_or_requirements": "Owner required development evidence returned; critical prediction failure retained; final lock unsupported",
+  "evidence": [
+    {
+      "evidence_id": "E-OWNER",
+      "kind": "user-authorization",
+      "location": "configs/development_authorization.json",
+      "sha256": "74af9088066c779972dde0d35fce416f50d80eb0d98031ff81ccd96ac062e6e2",
+      "collected_at": "2026-10-08T13:08:19.003853+00:00",
+      "method": "Owner scope recorded",
+      "supports": "Development only, final approval absent",
+      "provenance_chain": "authorized source/design -> retained executable result -> direct lead review"
+    },
+    {
+      "evidence_id": "E-MATH",
+      "kind": "direct-lead-verification",
+      "location": "logs/final_pilot_tests.xml",
+      "sha256": "caeded7242ccc6f5503a957760f0193643e21087590da0d88ca65d58975a56a7",
+      "collected_at": "2026-10-08T13:08:19.003853+00:00",
+      "method": "36 final tests; dense independent oracles and direct formulas",
+      "supports": "Implementation/conditioning tested domain",
+      "provenance_chain": "authorized source/design -> retained executable result -> direct lead review"
+    },
+    {
+      "evidence_id": "E-SYN",
+      "kind": "fixed-synthetic-pilot",
+      "location": "results/pilot/syn_r09.json",
+      "sha256": "bec0b7ea33739df66e9862cfedec6cce08eef46ae96aac404f8a80f805aec19c",
+      "collected_at": "2026-10-08T13:08:19.003853+00:00",
+      "method": "Four fixed synthetic cases; all retained",
+      "supports": "Scoped recovery/sampling diagnostics",
+      "provenance_chain": "authorized source/design -> retained executable result -> direct lead review"
+    },
+    {
+      "evidence_id": "E-RUNS",
+      "kind": "experiment-registry",
+      "location": "research/experiment_registry.jsonl",
+      "sha256": "54397c2fab29fd76ae5fa91f0ddab93c018f1c7d20ab1c481b49c61ea48d755c",
+      "collected_at": "2026-10-08T13:08:19.003853+00:00",
+      "method": "Retained30 records, historical failures included",
+      "supports": "Run identities and exposure",
+      "provenance_chain": "authorized source/design -> retained executable result -> direct lead review"
+    },
+    {
+      "evidence_id": "E-DATA",
+      "kind": "training-audit",
+      "location": "experiments/development_data_audit.json",
+      "sha256": "0d87c1ee401b63d043d693857a41aa0b7f9a6728b88f93b3ce45665c0e58fe16",
+      "collected_at": "2026-10-08T13:08:19.003853+00:00",
+      "method": "Worker audit plus lead reconstruction/future-isolation test",
+      "supports": "Training split/eligibility/cutoff limits",
+      "provenance_chain": "authorized source/design -> retained executable result -> direct lead review"
+    },
+    {
+      "evidence_id": "E-CAL",
+      "kind": "calibration-feasibility",
+      "location": "results/pilot/comparator_calibration.json",
+      "sha256": "b941da7179e2698675511c2876cf8eed6cce60e142e17263c60228956a45497b",
+      "collected_at": "2026-10-08T13:08:19.003853+00:00",
+      "method": "Frozen selection then fixed-cohort correction/influence",
+      "supports": "Rank24/q and calibration sensitivity",
+      "provenance_chain": "authorized source/design -> retained executable result -> direct lead review"
+    },
+    {
+      "evidence_id": "E-DESIGN",
+      "kind": "synthetic-design",
+      "location": "results/pilot/statistical_design.json",
+      "sha256": "70570d553a55abf01d881eba680c4d731a897ae77b21eb617582e56a5da77941",
+      "collected_at": "2026-10-08T13:08:19.003853+00:00",
+      "method": "Analytic+simulation rank/variance/bootstrap checks",
+      "supports": "Conditional coverage/pipeline distinction",
+      "provenance_chain": "authorized source/design -> retained executable result -> direct lead review"
+    },
+    {
+      "evidence_id": "E-PRED",
+      "kind": "predictive-diagnostics",
+      "location": "results/pilot/predictive_integration.json",
+      "sha256": "beb53bfeb77e3278a8660dd885bf52ebec37844b1fa1fc26237707d2072af00b",
+      "collected_at": "2026-10-08T13:08:19.003853+00:00",
+      "method": "Weighted mixture quantiles and sensor-only MCMC oracle",
+      "supports": "Observed predictive precision FAIL",
+      "provenance_chain": "authorized source/design -> retained executable result -> direct lead review"
+    },
+    {
+      "evidence_id": "E-ENV",
+      "kind": "environment-provenance",
+      "location": "logs/pilot_environment.json",
+      "sha256": "f0cf426d4b6f45b54f42c65155e48da7d4016ee3631aebd1cf4a6774a9b991fe",
+      "collected_at": "2026-10-08T13:08:19.003853+00:00",
+      "method": "Exact package lock/import/CPU measurements",
+      "supports": "Local environment validation only",
+      "provenance_chain": "authorized source/design -> retained executable result -> direct lead review"
+    }
+  ],
+  "gate_results": [
+    {
+      "gate": "DEVELOPMENT_AUTHORIZATION",
+      "state": "PASS",
+      "owner": "Rei lead / Raihan × Rei for final authorization",
+      "artifact_version": "0.3",
+      "evidence_ids": [
+        "E-OWNER"
+      ],
+      "rationale": "Synthetic and FD001 training-only scope authorized"
+    },
+    {
+      "gate": "TRAINING_SPLIT_AUDIT",
+      "state": "PASS",
+      "owner": "Rei lead / Raihan × Rei for final authorization",
+      "artifact_version": "0.3",
+      "evidence_ids": [
+        "E-DATA",
+        "E-MATH"
+      ],
+      "rationale": "Scoped training audit; official population/rights not validated"
+    },
+    {
+      "gate": "IMPLEMENTATION_MATHEMATICS",
+      "state": "PASS",
+      "owner": "Rei lead / Raihan × Rei for final authorization",
+      "artifact_version": "0.3",
+      "evidence_ids": [
+        "E-MATH"
+      ],
+      "rationale": "Dense likelihood/gradient/conditioning/CQR checks in tested domain"
+    },
+    {
+      "gate": "MCMC_DIAGNOSTICS",
+      "state": "PASS",
+      "owner": "Rei lead / Raihan × Rei for final authorization",
+      "artifact_version": "0.3",
+      "evidence_ids": [
+        "E-SYN",
+        "E-RUNS"
+      ],
+      "rationale": "11 successful fits pass;2infrastructure failures retained"
+    },
+    {
+      "gate": "GLOBAL_IDENTIFIABILITY",
+      "state": "DEFERRED",
+      "owner": "Rei lead / Raihan × Rei for final authorization",
+      "artifact_version": "0.3",
+      "evidence_ids": [
+        "E-SYN"
+      ],
+      "rationale": "Four recoveries and correlations do not prove global/practical identification"
+    },
+    {
+      "gate": "PREDICTIVE_PRECISION",
+      "state": "FAIL",
+      "owner": "Rei lead / Raihan × Rei for final authorization",
+      "artifact_version": "0.3",
+      "evidence_ids": [
+        "E-PRED"
+      ],
+      "rationale": "Maximum approximate quantile MCSE .728972>.5cycle"
+    },
+    {
+      "gate": "CALIBRATION_TRANSPORT",
+      "state": "DEFERRED",
+      "owner": "Rei lead / Raihan × Rei for final authorization",
+      "artifact_version": "0.3",
+      "evidence_ids": [
+        "E-CAL",
+        "E-DATA",
+        "E-DESIGN"
+      ],
+      "rationale": "Official-cutoff score exchangeability unknown"
+    },
+    {
+      "gate": "FULL_PIPELINE_UNCERTAINTY",
+      "state": "DEFERRED",
+      "owner": "Rei lead / Raihan × Rei for final authorization",
+      "artifact_version": "0.3",
+      "evidence_ids": [
+        "E-DESIGN"
+      ],
+      "rationale": "Illustration excludes PCA/HPO/Bayesian/cutoff variation"
+    },
+    {
+      "gate": "LOCAL_ENVIRONMENT",
+      "state": "PASS",
+      "owner": "Rei lead / Raihan × Rei for final authorization",
+      "artifact_version": "0.3",
+      "evidence_ids": [
+        "E-ENV"
+      ],
+      "rationale": "Scoped runtime/dependency validation; Colab unused"
+    },
+    {
+      "gate": "PROTOCOL_LOCK",
+      "state": "BLOCKED",
+      "owner": "Rei lead / Raihan × Rei for final authorization",
+      "artifact_version": "0.3",
+      "evidence_ids": [
+        "E-OWNER",
+        "E-PRED"
+      ],
+      "rationale": "Final owner approval absent and critical numerical/scientific risks open"
+    },
+    {
+      "gate": "SCIENTIFIC_VALIDATED",
+      "state": "DEFERRED",
+      "owner": "Rei lead / Raihan × Rei for final authorization",
+      "artifact_version": "0.3",
+      "evidence_ids": [
+        "E-OWNER"
+      ],
+      "rationale": "No official confirmatory results or accepted primary predictions"
+    }
+  ],
+  "assumptions": [
+    "Official-cutoff exchangeability unverified",
+    "Conditional assessment inference is not whole-pipeline uncertainty",
+    "Synthetic recovery is four fixed diagnostic cases",
+    "Historical source states may be dirty and are disclosed"
+  ],
+  "risks": [
+    {
+      "risk_id": "R01",
+      "severity": "critical",
+      "statement": "Pseudo-cutoff and official-test mechanisms may differ",
+      "disposition": "Unverified transport; no formal official-population guarantee",
+      "affected_claims_or_gates": "Calibration/protocol",
+      "owner": "Rei lead / Research Owners",
+      "likelihood": "not quantified",
+      "trigger": "Calibration/protocol"
+    },
+    {
+      "risk_id": "R02",
+      "severity": "critical",
+      "statement": "Latent/covariance effects may be weakly identified at56 engines",
+      "disposition": "Recovery/MCMC scoped passes; global/practical identifiability remains open",
+      "affected_claims_or_gates": "Model acceptance",
+      "owner": "Rei lead / Research Owners",
+      "likelihood": "not quantified",
+      "trigger": "Model acceptance"
+    },
+    {
+      "risk_id": "R03",
+      "severity": "critical",
+      "statement": "Posterior/new-engine conditioning may be unreliable",
+      "disposition": "Sampler/oracle passes are partial; predictive MCSE .728972>.5 remains FAIL",
+      "affected_claims_or_gates": "Inferential readiness",
+      "owner": "Rei lead / Research Owners",
+      "likelihood": "not quantified",
+      "trigger": "Inferential readiness"
+    },
+    {
+      "risk_id": "R04",
+      "severity": "high",
+      "statement": "100 assessment engines give broad coverage/effect precision",
+      "disposition": "Wilson/planning documented; noÂ±2pp certification/equivalence",
+      "affected_claims_or_gates": "Sample precision",
+      "owner": "Rei lead / Research Owners",
+      "likelihood": "not quantified",
+      "trigger": "Sample precision"
+    },
+    {
+      "risk_id": "R05",
+      "severity": "high",
+      "statement": "25 calibration scores give unstable/coarse tail correction",
+      "disposition": "Rank24 verified; cohort/influence sensitivity reported",
+      "affected_claims_or_gates": "Calibration",
+      "owner": "Rei lead / Research Owners",
+      "likelihood": "not quantified",
+      "trigger": "Calibration"
+    },
+    {
+      "risk_id": "R06",
+      "severity": "critical",
+      "statement": "Future features, ID leakage or adaptive test access",
+      "disposition": "Prefix/future-isolation tests pass; protected official checks deferred",
+      "affected_claims_or_gates": "Data access/integrity",
+      "owner": "Rei lead / Research Owners",
+      "likelihood": "not quantified",
+      "trigger": "Data access/integrity"
+    },
+    {
+      "risk_id": "R07",
+      "severity": "high",
+      "statement": "One-PC/local-linear representation may miss nonlinear/early health signal",
+      "disposition": "Prior/PPC are coarse; no physical-state claim; broader representation assessment open",
+      "affected_claims_or_gates": "Representation",
+      "owner": "Rei lead / Research Owners",
+      "likelihood": "not quantified",
+      "trigger": "Representation"
+    },
+    {
+      "risk_id": "R08",
+      "severity": "high",
+      "statement": "Comparison confounds representation/structure with inference",
+      "disposition": "Same information, disclose unequal search, secondary calibration ablation",
+      "affected_claims_or_gates": "Fairness/attribution",
+      "owner": "Rei lead / Research Owners",
+      "likelihood": "not quantified",
+      "trigger": "Fairness/attribution"
+    },
+    {
+      "risk_id": "R09",
+      "severity": "high",
+      "statement": "Novelty and current full methods unresolved",
+      "disposition": "Primary-source review before publication novelty claim",
+      "affected_claims_or_gates": "Publication",
+      "owner": "Rei lead / Research Owners",
+      "likelihood": "not quantified",
+      "trigger": "Publication"
+    },
+    {
+      "risk_id": "R10",
+      "severity": "medium",
+      "statement": "Redistribution license unclear",
+      "disposition": "Internal study only; rights review before release",
+      "affected_claims_or_gates": "Data redistribution",
+      "owner": "Rei lead / Research Owners",
+      "likelihood": "not quantified",
+      "trigger": "Data redistribution"
+    },
+    {
+      "risk_id": "R11",
+      "severity": "high",
+      "statement": "Skew/influential misses challenge bootstrap",
+      "disposition": "Synthetic checks executed; final extreme/degenerate-case failure policy pending",
+      "affected_claims_or_gates": "Inference",
+      "owner": "Rei lead / Research Owners",
+      "likelihood": "not quantified",
+      "trigger": "Inference"
+    },
+    {
+      "risk_id": "R12",
+      "severity": "medium",
+      "statement": "Runtime/Colab resources may be unreliable or variable",
+      "disposition": "Local isolated environment validated; storage failures/dirty starts retained; Colab untested",
+      "affected_claims_or_gates": "Reproduction/compute",
+      "owner": "Rei lead / Research Owners",
+      "likelihood": "not quantified",
+      "trigger": "Reproduction/compute"
+    },
+    {
+      "risk_id": "R13",
+      "severity": "high",
+      "statement": "Synthetic-to-real gap",
+      "disposition": "Permanent scope boundary; no maintenance/safety certification",
+      "affected_claims_or_gates": "External validity",
+      "owner": "Rei lead / Research Owners",
+      "likelihood": "not quantified",
+      "trigger": "External validity"
+    },
+    {
+      "risk_id": "R14",
+      "severity": "medium",
+      "statement": "Exploration/prior search may cherry-pick wins",
+      "disposition": "Fixed principal/grid and all failures retained; disclose any adaptation after calibration exposure",
+      "affected_claims_or_gates": "Selection integrity",
+      "owner": "Rei lead / Research Owners",
+      "likelihood": "not quantified",
+      "trigger": "Selection integrity"
+    },
+    {
+      "risk_id": "R15",
+      "severity": "medium",
+      "statement": "Conditional CI ignores training preprocessing/pipeline variability",
+      "disposition": "State fixed-pipeline scope; full outer resampling unresolved",
+      "affected_claims_or_gates": "Uncertainty interpretation",
+      "owner": "Rei lead / Research Owners",
+      "likelihood": "not quantified",
+      "trigger": "Uncertainty interpretation"
+    },
+    {
+      "risk_id": "R16",
+      "severity": "high",
+      "statement": "Prior predictive tails lack domain justification",
+      "disposition": "Defend prospective prior policy; no favorable-score prior selection",
+      "affected_claims_or_gates": "Prior plausibility",
+      "owner": "Rei lead / Research Owners",
+      "likelihood": "not quantified",
+      "trigger": "Prior plausibility"
+    },
+    {
+      "risk_id": "R17",
+      "severity": "critical",
+      "statement": "Final owner approval absent",
+      "disposition": "Development authorized, final lock/test/confirmatory authorization absent",
+      "affected_claims_or_gates": "Governance",
+      "owner": "Rei lead / Research Owners",
+      "likelihood": "not quantified",
+      "trigger": "Governance"
+    }
+  ],
+  "unresolved": [
+    "Predictive quantile precision",
+    "Prior plausibility and identifiability",
+    "Official-cutoff calibration claim scope",
+    "Full-pipeline sensitivity and inference-failure policy",
+    "Novelty/current methods before publication",
+    "Data redistribution rights",
+    "Final Research Owner authorization"
+  ],
+  "requested_decision": "Review REVISE AGAIN disposition and prospective revisions; this handoff does not authorize protocol lock, official test access or confirmatory evaluation",
+  "return_to_parent": "COMPLETE",
+  "return_interpretation": "Evidence return complete; consumer must reject final readiness because upstream precision FAIL/lockBLOCKED remain",
+  "worker_contribution": "GPT6LUNAMAX training audit and comparator contract; material mathematics independently checked by lead",
+  "deviations": [
+    "Two storage-only repairs with same seeds/data/model/sampler",
+    "Existing refit56 and sensor-only oracle added as development numerical checks",
+    "Calibration responses seen after recorded development freeze"
+  ]
+}

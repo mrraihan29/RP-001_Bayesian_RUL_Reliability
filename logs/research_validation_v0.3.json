@@ -1,0 +1,9 @@
+{
+  "status": "PROTOCOL_DRAFTED",
+  "protocol_status": "PROTOCOL_DRAFTED",
+  "mode": "dataset-benchmark",
+  "hard_failures": [],
+  "warnings": [],
+  "info": [],
+  "validator": "scientific-research-engine/scripts/validate_research_project.py"
+}

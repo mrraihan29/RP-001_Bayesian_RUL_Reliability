@@ -1,0 +1,14 @@
+{
+  "counts": {
+    "tune": 13,
+    "fit": 43,
+    "calibration": 25
+  },
+  "all_pearson": -0.014760289649474956,
+  "survivor_pearson": 0.24397030805861994,
+  "all_spearman": -0.06735732699656843,
+  "survivor_spearman": 0.1803076860928527,
+  "interpretation": "Descriptive association; fixed hash does not prove stochastic independence.",
+  "verifier": "lead independent reimplementation",
+  "official_test_access": false
+}

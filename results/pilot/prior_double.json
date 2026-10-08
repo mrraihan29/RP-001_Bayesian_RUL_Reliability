@@ -1,0 +1,196 @@
+{
+  "diagnostics": {
+    "rhat_max": 1.0015189609908905,
+    "bulk_ess_min": 3934.98488355451,
+    "tail_ess_min": 4196.2849959918,
+    "divergences": 0,
+    "bfmi": [
+      1.0120950301420644,
+      1.019124965981132,
+      0.9308802101174275,
+      0.9069965746375612
+    ],
+    "maxdepth_fraction": 0.0,
+    "sample_stat_keys": [
+      "depth",
+      "maxdepth_reached",
+      "step_size",
+      "transformation_update_id",
+      "step_size_bar",
+      "mean_tree_accept",
+      "mean_tree_accept_sym",
+      "n_steps",
+      "max_energy_error",
+      "tuning",
+      "index_in_trajectory",
+      "logp",
+      "energy",
+      "energy_error",
+      "fisher_distance",
+      "transformation_index",
+      "diverging",
+      "divergence_draw",
+      "divergence_message",
+      "divergence_energy_error"
+    ],
+    "acceptance": "PASS",
+    "failures": []
+  },
+  "recovery": null,
+  "posterior_predictive_checks": {
+    "conditional_y_statistics": [
+      4.499148975270348,
+      0.7532448078304887,
+      5.156360481595361
+    ],
+    "joint_y_statistics": [
+      4.499148975270348,
+      0.7532448078304887,
+      5.156360481595361
+    ],
+    "observed_z_statistics": [
+      1.1055426429156106,
+      0.466162841631757
+    ],
+    "conditional_y_replica_quantiles": [
+      [
+        4.338311785533066,
+        0.6220184416182516,
+        5.0470847946004875
+      ],
+      [
+        4.5052940318787495,
+        0.756937861094414,
+        5.29049143188041
+      ],
+      [
+        4.659915910056682,
+        0.9099395809923371,
+        5.580532249556777
+      ]
+    ],
+    "joint_y_replica_quantiles": [
+      [
+        4.213020995965774,
+        0.5698565764098052,
+        5.0353006086514265
+      ],
+      [
+        4.503459003900054,
+        0.7541756880928436,
+        5.442553515799015
+      ],
+      [
+        4.801455639642026,
+        0.9985496990540308,
+        5.920018765657689
+      ]
+    ],
+    "joint_z_replica_quantiles": [
+      [
+        0.8616253894335637,
+        0.22880363137911372
+      ],
+      [
+        1.1028364744655788,
+        0.43930016479253825
+      ],
+      [
+        1.4543954712544536,
+        0.657516609853697
+      ]
+    ],
+    "conditional_tail_areas": [
+      0.525,
+      0.528,
+      0.85
+    ],
+    "joint_z_tail_areas": [
+      0.49,
+      0.409
+    ],
+    "n_draws": 1000,
+    "scope": "Model fit diagnostics, not out-of-sample performance or calibration."
+  },
+  "compile_seconds": 29.13581469998462,
+  "sampling_seconds": 6.431614100001752,
+  "posterior_file": "results\\pilot\\prior_double.nc",
+  "posterior_sha256": "08250ad48e1a10cb0a0bb43795840c9bfb08a6f7400899940d3e2efa0c043ddc",
+  "run_id": "prior_double",
+  "phase": "robustness",
+  "status": "completed",
+  "code_commit": "861acc732c065a4f5ad16e562589eb0c4d740ce3",
+  "code_dirty": true,
+  "config_hash": "57b3a0f5bfdb4288d9e555057ab9e64a2ed534a71def936fc432e1ab65e39054",
+  "environment_fingerprint": "f57b00a67e9d67b2920791bfddc8dc812dbdeb9306588a26557dfd6be15f826c",
+  "config": {
+    "run_id": "prior_double",
+    "sampling": {
+      "chains": 4,
+      "cores": 2,
+      "warmup": 1000,
+      "draws": 2000,
+      "target_accept": 0.95,
+      "max_treedepth": 12,
+      "sampler": "nutpie if validated; explicit recorded fallback"
+    },
+    "source_plan": "configs/pilot_plan_v0.3.json",
+    "dataset": "FD001 training fit43",
+    "data_sha256": "963b5e22825b34d8b21c69e1aeb4af3e647050eb672ee8834ba4b5d91d2de0f8",
+    "preprocessing_fit_ids": [
+      2,
+      3,
+      4,
+      5,
+      7,
+      9,
+      10,
+      12,
+      13,
+      17,
+      18,
+      22,
+      23,
+      32,
+      36,
+      42,
+      43,
+      44,
+      46,
+      47,
+      49,
+      52,
+      54,
+      57,
+      67,
+      69,
+      70,
+      74,
+      80,
+      81,
+      82,
+      83,
+      84,
+      87,
+      88,
+      89,
+      92,
+      93,
+      94,
+      96,
+      97,
+      99,
+      100
+    ],
+    "pc1_explained_ratio": 0.45546984475906727,
+    "prior_scale": 2.0,
+    "error": "normal",
+    "rho_zero": false,
+    "seed": 13002
+  },
+  "wall_seconds": 37.745960000000196,
+  "process_cpu_seconds": 43.734375,
+  "peak_process_rss_gib": 0.483367919921875,
+  "official_test_access": false,
+  "confirmatory": false
+}

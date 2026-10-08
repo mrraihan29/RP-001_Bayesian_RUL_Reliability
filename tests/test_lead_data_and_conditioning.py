@@ -28,3 +28,28 @@ def test_global_sensor_only_update_matches_conjugate_gaussian():
     np.testing.assert_allclose(estimate,mean,atol=.005)
     np.testing.assert_allclose(variance,var,atol=.005)
     assert abs(estimate-.2)>.1
+
+import hashlib
+from collections import Counter
+from scipy.stats import spearmanr
+from rp001.data import ROOT
+def test_lead_independent_cutoff_and_survival_audit():
+    raw=load_training();records=manifest();seed="RP001-20261008-v0.2"
+    ordered=sorted(range(1,101),key=lambda i:hashlib.sha256(f"{seed}|split|{i}".encode()).hexdigest())
+    roles={i:"fit" if j<55 else "tune" if j<70 else "calibration" for j,i in enumerate(ordered)}
+    counts=Counter();all_c=[];all_t=[];surv_c=[];surv_t=[]
+    for r in records:
+        i=r["engine"];c=30+int(hashlib.sha256(f"{seed}|cutoff|{i}".encode()).hexdigest(),16)%221
+        T=int(raw[i][-1,1])
+        assert r["role"]==roles[i] and r["proposed_cutoff"]==c and r["eligible_alive"]==(c<T)
+        all_c.append(c);all_t.append(T)
+        if c<T:counts[r["role"]]+=1;surv_c.append(c);surv_t.append(T)
+    assert counts=={"fit":43,"tune":13,"calibration":25}
+    result={"counts":dict(counts),"all_pearson":float(np.corrcoef(all_c,all_t)[0,1]),
+            "survivor_pearson":float(np.corrcoef(surv_c,surv_t)[0,1]),
+            "all_spearman":float(spearmanr(all_c,all_t).statistic),
+            "survivor_spearman":float(spearmanr(surv_c,surv_t).statistic),
+            "interpretation":"Descriptive association; fixed hash does not prove stochastic independence.",
+            "verifier":"lead independent reimplementation","official_test_access":False}
+    import json
+    (ROOT/"logs/lead_cutoff_verification.json").write_text(json.dumps(result,indent=2)+"\n")

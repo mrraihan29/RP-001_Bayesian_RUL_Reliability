@@ -1,0 +1,194 @@
+{
+  "version": "0.3",
+  "owner": "Raihan × Rei",
+  "risk_id_policy": "OriginalR01–R15 retained with unchanged severities; newR16/R17",
+  "risks": [
+    {
+      "risk_id": "R01",
+      "severity": "critical",
+      "statement": "Pseudo-cutoff and official-test mechanisms may differ",
+      "disposition": "Unverified transport; no formal official-population guarantee",
+      "affected_claims_or_gates": "Calibration/protocol",
+      "owner": "Rei lead / Research Owners",
+      "likelihood": "not quantified",
+      "status": "open",
+      "trigger": "Calibration/protocol"
+    },
+    {
+      "risk_id": "R02",
+      "severity": "critical",
+      "statement": "Latent/covariance effects may be weakly identified at56 engines",
+      "disposition": "Recovery/MCMC scoped passes; global/practical identifiability remains open",
+      "affected_claims_or_gates": "Model acceptance",
+      "owner": "Rei lead / Research Owners",
+      "likelihood": "not quantified",
+      "status": "open",
+      "trigger": "Model acceptance"
+    },
+    {
+      "risk_id": "R03",
+      "severity": "critical",
+      "statement": "Posterior/new-engine conditioning may be unreliable",
+      "disposition": "Sampler/oracle passes are partial; predictive MCSE .728972>.5 remains FAIL",
+      "affected_claims_or_gates": "Inferential readiness",
+      "owner": "Rei lead / Research Owners",
+      "likelihood": "not quantified",
+      "status": "open",
+      "trigger": "Inferential readiness"
+    },
+    {
+      "risk_id": "R04",
+      "severity": "high",
+      "statement": "100 assessment engines give broad coverage/effect precision",
+      "disposition": "Wilson/planning documented; no±2pp certification/equivalence",
+      "affected_claims_or_gates": "Sample precision",
+      "owner": "Rei lead / Research Owners",
+      "likelihood": "not quantified",
+      "status": "open",
+      "trigger": "Sample precision"
+    },
+    {
+      "risk_id": "R05",
+      "severity": "high",
+      "statement": "25 calibration scores give unstable/coarse tail correction",
+      "disposition": "Rank24 verified; cohort/influence sensitivity reported",
+      "affected_claims_or_gates": "Calibration",
+      "owner": "Rei lead / Research Owners",
+      "likelihood": "not quantified",
+      "status": "open",
+      "trigger": "Calibration"
+    },
+    {
+      "risk_id": "R06",
+      "severity": "critical",
+      "statement": "Future features, ID leakage or adaptive test access",
+      "disposition": "Prefix/future-isolation tests pass; protected official checks deferred",
+      "affected_claims_or_gates": "Data access/integrity",
+      "owner": "Rei lead / Research Owners",
+      "likelihood": "not quantified",
+      "status": "open",
+      "trigger": "Data access/integrity"
+    },
+    {
+      "risk_id": "R07",
+      "severity": "high",
+      "statement": "One-PC/local-linear representation may miss nonlinear/early health signal",
+      "disposition": "Prior/PPC are coarse; no physical-state claim; broader representation assessment open",
+      "affected_claims_or_gates": "Representation",
+      "owner": "Rei lead / Research Owners",
+      "likelihood": "not quantified",
+      "status": "open",
+      "trigger": "Representation"
+    },
+    {
+      "risk_id": "R08",
+      "severity": "high",
+      "statement": "Comparison confounds representation/structure with inference",
+      "disposition": "Same information, disclose unequal search, secondary calibration ablation",
+      "affected_claims_or_gates": "Fairness/attribution",
+      "owner": "Rei lead / Research Owners",
+      "likelihood": "not quantified",
+      "status": "open",
+      "trigger": "Fairness/attribution"
+    },
+    {
+      "risk_id": "R09",
+      "severity": "high",
+      "statement": "Novelty and current full methods unresolved",
+      "disposition": "Primary-source review before publication novelty claim",
+      "affected_claims_or_gates": "Publication",
+      "owner": "Rei lead / Research Owners",
+      "likelihood": "not quantified",
+      "status": "open",
+      "trigger": "Publication"
+    },
+    {
+      "risk_id": "R10",
+      "severity": "medium",
+      "statement": "Redistribution license unclear",
+      "disposition": "Internal study only; rights review before release",
+      "affected_claims_or_gates": "Data redistribution",
+      "owner": "Rei lead / Research Owners",
+      "likelihood": "not quantified",
+      "status": "open",
+      "trigger": "Data redistribution"
+    },
+    {
+      "risk_id": "R11",
+      "severity": "high",
+      "statement": "Skew/influential misses challenge bootstrap",
+      "disposition": "Synthetic checks executed; final extreme/degenerate-case failure policy pending",
+      "affected_claims_or_gates": "Inference",
+      "owner": "Rei lead / Research Owners",
+      "likelihood": "not quantified",
+      "status": "open",
+      "trigger": "Inference"
+    },
+    {
+      "risk_id": "R12",
+      "severity": "medium",
+      "statement": "Runtime/Colab resources may be unreliable or variable",
+      "disposition": "Local isolated environment validated; storage failures/dirty starts retained; Colab untested",
+      "affected_claims_or_gates": "Reproduction/compute",
+      "owner": "Rei lead / Research Owners",
+      "likelihood": "not quantified",
+      "status": "open",
+      "trigger": "Reproduction/compute"
+    },
+    {
+      "risk_id": "R13",
+      "severity": "high",
+      "statement": "Synthetic-to-real gap",
+      "disposition": "Permanent scope boundary; no maintenance/safety certification",
+      "affected_claims_or_gates": "External validity",
+      "owner": "Rei lead / Research Owners",
+      "likelihood": "not quantified",
+      "status": "open",
+      "trigger": "External validity"
+    },
+    {
+      "risk_id": "R14",
+      "severity": "medium",
+      "statement": "Exploration/prior search may cherry-pick wins",
+      "disposition": "Fixed principal/grid and all failures retained; disclose any adaptation after calibration exposure",
+      "affected_claims_or_gates": "Selection integrity",
+      "owner": "Rei lead / Research Owners",
+      "likelihood": "not quantified",
+      "status": "open",
+      "trigger": "Selection integrity"
+    },
+    {
+      "risk_id": "R15",
+      "severity": "medium",
+      "statement": "Conditional CI ignores training preprocessing/pipeline variability",
+      "disposition": "State fixed-pipeline scope; full outer resampling unresolved",
+      "affected_claims_or_gates": "Uncertainty interpretation",
+      "owner": "Rei lead / Research Owners",
+      "likelihood": "not quantified",
+      "status": "open",
+      "trigger": "Uncertainty interpretation"
+    },
+    {
+      "risk_id": "R16",
+      "severity": "high",
+      "statement": "Prior predictive tails lack domain justification",
+      "disposition": "Defend prospective prior policy; no favorable-score prior selection",
+      "affected_claims_or_gates": "Prior plausibility",
+      "owner": "Rei lead / Research Owners",
+      "likelihood": "not quantified",
+      "status": "open",
+      "trigger": "Prior plausibility"
+    },
+    {
+      "risk_id": "R17",
+      "severity": "critical",
+      "statement": "Final owner approval absent",
+      "disposition": "Development authorized, final lock/test/confirmatory authorization absent",
+      "affected_claims_or_gates": "Governance",
+      "owner": "Rei lead / Research Owners",
+      "likelihood": "not quantified",
+      "status": "open",
+      "trigger": "Governance"
+    }
+  ]
+}

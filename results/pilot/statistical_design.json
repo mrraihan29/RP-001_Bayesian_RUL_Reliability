@@ -1,0 +1,188 @@
+{
+  "calibration": {
+    "finite_rank_formula": "ceil((n+1)*(1-alpha)); alpha=.10",
+    "n25_wrong_rank23_ideal_coverage": 0.8846153846153846,
+    "n25_correct_rank24_ideal_coverage": 0.9230769230769231,
+    "continuous_score_conditional_coverage_law": "Beta(k,n+1-k), conditional fixed fit; ties/nonshrinking may overcover",
+    "design_rows": [
+      {
+        "n_calibration": 9,
+        "rank": 9,
+        "rank_coverage": 0.9,
+        "coverage_mean_theory": 0.9,
+        "coverage_sd_theory": 0.09045340337332909,
+        "conditional_coverage95_range_theory": [
+          0.6637328831200572,
+          0.9971908632534008
+        ],
+        "prob_conditional_coverage_lt90_theory": 0.38742048900000003,
+        "simulated_mean_conditional_coverage": 0.8990156799097149,
+        "mean_mcse": 0.001279495497174345,
+        "simulated_conditional_coverage95_range": [
+          0.6603350305069178,
+          0.9968453669111077
+        ],
+        "simulation_count": 5000
+      },
+      {
+        "n_calibration": 19,
+        "rank": 18,
+        "rank_coverage": 0.9,
+        "coverage_mean_theory": 0.9,
+        "coverage_sd_theory": 0.06546536707079771,
+        "conditional_coverage95_range_theory": [
+          0.7397193458047858,
+          0.9869878356282226
+        ],
+        "prob_conditional_coverage_lt90_theory": 0.42026497883159786,
+        "simulated_mean_conditional_coverage": 0.8984600140717394,
+        "mean_mcse": 0.0009248465866773481,
+        "simulated_conditional_coverage95_range": [
+          0.7404747655917072,
+          0.9859947726544701
+        ],
+        "simulation_count": 5000
+      },
+      {
+        "n_calibration": 25,
+        "rank": 24,
+        "rank_coverage": 0.9230769230769231,
+        "coverage_mean_theory": 0.9230769230769231,
+        "coverage_sd_theory": 0.05128205128205128,
+        "conditional_coverage95_range_theory": [
+          0.796483086077586,
+          0.9901604099812025
+        ],
+        "prob_conditional_coverage_lt90_theory": 0.27120590646136666,
+        "simulated_mean_conditional_coverage": 0.9229954367623614,
+        "mean_mcse": 0.0007204610137302458,
+        "simulated_conditional_coverage95_range": [
+          0.7959456769641058,
+          0.9901640830975594
+        ],
+        "simulation_count": 5000
+      },
+      {
+        "n_calibration": 30,
+        "rank": 28,
+        "rank_coverage": 0.9032258064516129,
+        "coverage_mean_theory": 0.9032258064516129,
+        "coverage_sd_theory": 0.05226403789038597,
+        "conditional_coverage95_range_theory": [
+          0.7792645984770381,
+          0.9788828629702774
+        ],
+        "prob_conditional_coverage_lt90_theory": 0.4113512395595056,
+        "simulated_mean_conditional_coverage": 0.9035097335994764,
+        "mean_mcse": 0.000738721727063905,
+        "simulated_conditional_coverage95_range": [
+          0.7797062238735686,
+          0.9781300889636669
+        ],
+        "simulation_count": 5000
+      },
+      {
+        "n_calibration": 50,
+        "rank": 46,
+        "rank_coverage": 0.9019607843137255,
+        "coverage_mean_theory": 0.9019607843137255,
+        "coverage_sd_theory": 0.04123747545849869,
+        "conditional_coverage95_range_theory": [
+          0.8076572164040372,
+          0.9667249064109775
+        ],
+        "prob_conditional_coverage_lt90_theory": 0.43119840682906185,
+        "simulated_mean_conditional_coverage": 0.9020347383299085,
+        "mean_mcse": 0.0005743419890823372,
+        "simulated_conditional_coverage95_range": [
+          0.809936988012665,
+          0.9662495392963228
+        ],
+        "simulation_count": 5000
+      },
+      {
+        "n_calibration": 100,
+        "rank": 91,
+        "rank_coverage": 0.900990099009901,
+        "coverage_mean_theory": 0.900990099009901,
+        "coverage_sd_theory": 0.029573262383448536,
+        "conditional_coverage95_range_theory": [
+          0.8360177449703647,
+          0.9509953107785141
+        ],
+        "prob_conditional_coverage_lt90_theory": 0.451290165442004,
+        "simulated_mean_conditional_coverage": 0.9006916443346549,
+        "mean_mcse": 0.0004125529840602601,
+        "simulated_conditional_coverage95_range": [
+          0.8356930106002569,
+          0.9499739282088708
+        ],
+        "simulation_count": 5000
+      }
+    ],
+    "shift_illustration": {
+      "target_score_sd_multiple": 1.5,
+      "mean_coverage": 0.7738258496229631,
+      "mcse": 0.001142309253152876,
+      "scope": "Synthetic score-distribution mismatch, not measured official-test shift"
+    },
+    "seed": 8103301,
+    "official_test_access": false
+  },
+  "pipeline_uncertainty": {
+    "n_pipeline_realizations": 400,
+    "assessment_repetitions_per_pipeline": 40,
+    "engines_per_assessment": 100,
+    "n_fitting": 56,
+    "n_calibration": 25,
+    "within_fixed_pipeline_variance_mean": 122.43268430524309,
+    "between_pipeline_variance_mc_debiased": 136.09281282316434,
+    "total_variance_law_estimate": 258.52549712840744,
+    "fixed_pipeline_sd": 11.064930379593136,
+    "all_pipeline_sd": 16.07872809423704,
+    "correction_quantiles": [
+      0.0,
+      3.259915066692276,
+      32.72198883476147
+    ],
+    "pipeline_mean_score_quantiles": [
+      102.66830976661896,
+      110.61001057101959,
+      155.999006124125
+    ],
+    "seed": 8103302,
+    "scope": "Synthetic Gaussian-regression/conformal illustration only. Includes fit+calibration variation; excludes HPO, PCA, Bayesian sampling and data-selection variation. Not an uncertainty estimate for proposed primary comparison."
+  },
+  "bootstrap_design": {
+    "results": [
+      {
+        "distribution": "normal",
+        "valid_simulations": 1000,
+        "invalid": 0,
+        "two_sided95_coverage": 0.951,
+        "coverage_mcse": 0.006826346021115546,
+        "one_sided_false_positive": 0.056,
+        "false_positive_mcse": 0.007270763371201128
+      },
+      {
+        "distribution": "centered_lognormal",
+        "valid_simulations": 1000,
+        "invalid": 0,
+        "two_sided95_coverage": 0.942,
+        "coverage_mcse": 0.007391616873188169,
+        "one_sided_false_positive": 0.066,
+        "false_positive_mcse": 0.007851369307324678
+      }
+    ],
+    "simulations": 1000,
+    "bootstrap_resamples_each": 1000,
+    "n_engines": 100,
+    "seed": 8103303,
+    "scope": "Synthetic bootstrap operating characteristics; no observed primary test. Heavy influence can invalidate approximation; no favorable fallback selected."
+  },
+  "status": "EXECUTED_EXPLORATORY_DESIGN_ONLY",
+  "wall_seconds": 6.386779899999965,
+  "script_sha256": "093b66b5f2f990295a8579e23efa1ff0be4b48f1b00c7c3b3b473741d7451a9c",
+  "official_test_access": false,
+  "confirmatory": false
+}

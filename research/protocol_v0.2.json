@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.3",
+  "schema_version": "0.2",
   "title": "A Rigorous Evaluation of Bayesian Predictive Uncertainty for Turbofan Remaining Useful Life Estimation",
   "mode": "dataset-benchmark",
   "status": "PROTOCOL_DRAFTED",
@@ -8,13 +8,12 @@
   "background_gap": "Narrative evidence map; Bayesian and conformal RUL already exist. Novelty unresolved; rigorous conditional-pipeline comparative evaluation proposed.",
   "unit_of_analysis": "independent engine for primary outcome; sensor cycles nested within engine",
   "target_context": "simulated FD001 official-cutoff benchmark; broader generator/cutoff transport assumption qualified",
-  "confirmatory_or_exploratory": "Current work exploratory development only; one proposed primary comparison requires future final owner authorization",
+  "confirmatory_or_exploratory": "One proposed directional confirmatory comparison after final lock; all remaining analyses exploratory",
   "hypotheses": [
     "H0: D>=0; H1: D<0, Bayesian minus CQR mean90% interval score conditional frozen pipeline"
   ],
   "primary_claims": [
-    "Comparative superiority unresolved; no official endpoint comparison executed",
-    "Development implementation checks and sampler diagnostics pass within tested scope; predictive precision fails"
+    "Bayesian lower interval score is unresolved; no empirical model result exists"
   ],
   "primary_outcomes": [
     "Mean90% interval score in cycles, uncapped RUL, one endpoint per engine"
@@ -33,16 +32,16 @@
   ],
   "data_plan": "Official NASA original archive; only train_FD001/readme extracted; complete integrity before evaluation; data/raw/provenance.json",
   "split_policy": "55/15/30 reserved; seedRP001-20261008-v0.2; one outcome-blind hash cutoff30..250; eligible43/13/25; refit56,calibrate25; configs/proposed_split_manifest.json",
-  "test_access_policy": "No official test sensors or labels in development. Final protocol and test/confirmatory access require explicit Research Owner authorization; prediction hashes before future label scoring.",
+  "test_access_policy": "No test labels before owner StageB lock/readiness and all prediction hashes. No model/preprocessing selection using test covariates. Only predefined per-engine sensor inference at prediction.",
   "model_selection_policy": "Fixed Bayesian candidate; CQR12 fixed configurations selected by uncalibrated mean interval score on13 tuning engines; refit56; calibration25 reserved.",
   "hyperparameter_policy": "Fixed priors; exploratory sensitivities not winner search. CQR8 boosting +4 linear endpoint configurations; final selected tau.50 fit only.",
-  "analysis_plan": "docs/v0.3/06_comparative_evaluation_design.md; proposed paired bootstrap-t20000, frozen-pipeline conditional inference; influential/degenerate failure policy pending",
-  "uncertainty_plan": "Conditional assessment-engine uncertainty excludes training/PCA/HPO/calibration variation; illustrative total-variance simulation executed, full-pipeline study unresolved",
+  "analysis_plan": "docs/04_statistical_analysis_plan.md; paired mean score difference, bootstrap-t20,000 engine resamples, one-sided upper95% bound; descriptive finite benchmark and qualified population inference",
+  "uncertainty_plan": "Conditional pipeline paired engine uncertainty; no training/selection/calibration variability included; diagnostics/design simulation before lock",
   "multiple_comparisons_plan": "One primary comparison; secondary findings exploratory; no post-hoc winner substitution",
   "ablation_plan": "rho0, Bayesian calibration, restricted representation sensitivity; exploratory",
   "robustness_plan": "Prior half/double, contamination-normal residual alternative, stage diagnostics; FD003 deferred",
   "stopping_rule": "Fixed planned runs; at most2 computational repairs; any method change before lock recorded; no post-test redesign retains confirmatory status.",
-  "compute_budget": "Local CPU;32 aggregate CPU-hour/10GiB envelope; logged sampler CPU623.015625seconds including failures; no Colab or extra spending",
+  "compute_budget": "Proposed32 aggregate CPU-hours/10GiB artifacts; local isolated CPU first, user-reported ColabPro option; estimates unmeasured",
   "ethics_and_risk": "Synthetic research only, no real-engine safety/maintenance deployment; raw redistribution terms review before release; risks docs/08",
   "preregistration": {
     "required": true,
@@ -57,24 +56,11 @@
       "disclosed": true,
       "change": "Scope narrowed to comparative evidence; joint sensor landmark candidate specified; median/short-history/hash wording corrected after independent audit",
       "held_out_labels_visible": false
-    },
-    {
-      "date": "2026-10-08",
-      "phase": "authorized pre-lock development",
-      "disclosed": true,
-      "change": "Two storage-only backend repairs; existing refit56 step plus sensor-only oracle; comparator feature/estimability checks; no principal question or winner substitution",
-      "held_out_labels_visible": false,
-      "development_calibration_outcomes_visible_after_freeze": true
     }
   ],
-  "artifact_version": "0.3",
-  "owner": "Raihan × Rei",
-  "owner_stage_a_approved": true,
+  "artifact_version": "0.2",
+  "owner": "Raihan",
+  "owner_stage_a_approved": false,
   "owner_stage_b_approved": false,
-  "new_engine_conditioning": "Full per-engine sensor-only global posterior update via importance-weighted mixture CDF; conjugate and one exact MCMC oracle verified; cohort approximate quantile MCSE gate FAIL",
-  "updated_at": "2026-10-08T13:03:17.799128+00:00",
-  "practical_threshold_cycles": null,
-  "practical_decision_rule": "Report effect sizes/intervals/decomposition; no practical superiority/equivalence claim without owner-approved utility mapping",
-  "pilot_disposition": "REVISE AGAIN",
-  "pilot_precision_acceptance": "FAIL: maximum approximate predictive quantile MCSE0.728972>.5cycle"
+  "new_engine_conditioning": "Full joint sensor-only theta update candidate; precise implementation/MC acceptance pending pilot; modular approximation only if explicitly revised before lock"
 }

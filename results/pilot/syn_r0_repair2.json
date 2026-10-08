@@ -1,0 +1,326 @@
+{
+  "diagnostics": {
+    "rhat_max": 1.0012756728621346,
+    "bulk_ess_min": 6713.929734375316,
+    "tail_ess_min": 5413.670605245242,
+    "divergences": 0,
+    "bfmi": [
+      1.0167027996815035,
+      0.9748662743248941,
+      1.0057963102522156,
+      0.9436712139081367
+    ],
+    "maxdepth_fraction": 0.0,
+    "sample_stat_keys": [
+      "depth",
+      "maxdepth_reached",
+      "step_size",
+      "transformation_update_id",
+      "step_size_bar",
+      "mean_tree_accept",
+      "mean_tree_accept_sym",
+      "n_steps",
+      "max_energy_error",
+      "tuning",
+      "index_in_trajectory",
+      "logp",
+      "energy",
+      "energy_error",
+      "fisher_distance",
+      "transformation_index",
+      "diverging",
+      "divergence_draw",
+      "divergence_message",
+      "divergence_energy_error"
+    ],
+    "acceptance": "PASS",
+    "failures": []
+  },
+  "recovery": {
+    "parameters": [
+      {
+        "parameter": "beta(0,)",
+        "truth": 4.605170185988092,
+        "mean": 4.62021339283702,
+        "sd": 0.04581429455638137,
+        "equal_tail95": [
+          4.53044096154586,
+          4.708490583692203
+        ],
+        "truth_in95": true,
+        "standardized_mean_error": 0.32835181671117175
+      },
+      {
+        "parameter": "beta(1,)",
+        "truth": -0.4,
+        "mean": -0.3809545797472896,
+        "sd": 0.09495857743242847,
+        "equal_tail95": [
+          -0.5725141702394231,
+          -0.1957367758586206
+        ],
+        "truth_in95": true,
+        "standardized_mean_error": 0.20056555992809566
+      },
+      {
+        "parameter": "gamma(0,)",
+        "truth": -0.35,
+        "mean": -0.30150700159125327,
+        "sd": 0.10384302369990858,
+        "equal_tail95": [
+          -0.5050085522065674,
+          -0.09627910741840598
+        ],
+        "truth_in95": true,
+        "standardized_mean_error": 0.46698369019843367
+      },
+      {
+        "parameter": "gamma(1,)",
+        "truth": 0.15,
+        "mean": 0.2681203958027736,
+        "sd": 0.1365763166859191,
+        "equal_tail95": [
+          -0.00034196919785067466,
+          0.5356253944807741
+        ],
+        "truth_in95": true,
+        "standardized_mean_error": 0.8648673406122959
+      },
+      {
+        "parameter": "Gamma(0, 0)",
+        "truth": 0.1,
+        "mean": 0.14919823845407196,
+        "sd": 0.058060286840111205,
+        "equal_tail95": [
+          0.03450358965044969,
+          0.2660932381990594
+        ],
+        "truth_in95": true,
+        "standardized_mean_error": 0.8473647157403145
+      },
+      {
+        "parameter": "Gamma(0, 1)",
+        "truth": 0.5,
+        "mean": 0.5002533452947128,
+        "sd": 0.0964515636722649,
+        "equal_tail95": [
+          0.3067638241612262,
+          0.6911010895610733
+        ],
+        "truth_in95": true,
+        "standardized_mean_error": 0.0026266582424067093
+      },
+      {
+        "parameter": "Gamma(1, 0)",
+        "truth": -0.1,
+        "mean": -0.08972736529565638,
+        "sd": 0.05338057214623264,
+        "equal_tail95": [
+          -0.19403949360640643,
+          0.016549282667876326
+        ],
+        "truth_in95": true,
+        "standardized_mean_error": 0.19244144997551557
+      },
+      {
+        "parameter": "Gamma(1, 1)",
+        "truth": -0.25,
+        "mean": -0.23658382207672338,
+        "sd": 0.0885001026675365,
+        "equal_tail95": [
+          -0.4064022299830685,
+          -0.06104778082795375
+        ],
+        "truth_in95": true,
+        "standardized_mean_error": 0.15159505490831401
+      },
+      {
+        "parameter": "tau(0,)",
+        "truth": 0.45,
+        "mean": 0.3847373968663934,
+        "sd": 0.04028520928629763,
+        "equal_tail95": [
+          0.3133786606950292,
+          0.47248514551460513
+        ],
+        "truth_in95": true,
+        "standardized_mean_error": -1.6200140024047147
+      },
+      {
+        "parameter": "tau(1,)",
+        "truth": 0.3,
+        "mean": 0.3242202751595642,
+        "sd": 0.04325223217431153,
+        "equal_tail95": [
+          0.2453741514408558,
+          0.4187905653141439
+        ],
+        "truth_in95": true,
+        "standardized_mean_error": 0.5599774610927288
+      },
+      {
+        "parameter": "r_g()",
+        "truth": 0.2,
+        "mean": 0.07911311298472824,
+        "sd": 0.1520392812783825,
+        "equal_tail95": [
+          -0.22139187830335,
+          0.3734408698485924
+        ],
+        "truth_in95": true,
+        "standardized_mean_error": -0.7951029891671811
+      },
+      {
+        "parameter": "sigma_z()",
+        "truth": 0.3,
+        "mean": 0.30247284009284947,
+        "sd": 0.005421145149547498,
+        "equal_tail95": [
+          0.2919285886460742,
+          0.31351004884849265
+        ],
+        "truth_in95": true,
+        "standardized_mean_error": 0.45614718378383384
+      },
+      {
+        "parameter": "sigma_r()",
+        "truth": 0.25,
+        "mean": 0.2825896270721615,
+        "sd": 0.028044246338379073,
+        "equal_tail95": [
+          0.23322972499391695,
+          0.3433142658854339
+        ],
+        "truth_in95": true,
+        "standardized_mean_error": 1.1620789048469453
+      },
+      {
+        "parameter": "rho()",
+        "truth": 0.0,
+        "mean": -0.027464481300600398,
+        "sd": 0.02726979477192043,
+        "equal_tail95": [
+          -0.08091900251072437,
+          0.026108620294623238
+        ],
+        "truth_in95": true,
+        "standardized_mean_error": -1.007139273702215
+      }
+    ],
+    "max_abs_standardized_mean_error": 1.6200140024047147,
+    "gross_recovery_flag": false,
+    "interpretation": "Four fixed datasets, not SBC or repeated-sampling interval coverage."
+  },
+  "posterior_predictive_checks": {
+    "conditional_y_statistics": [
+      4.416251995634703,
+      0.4467684615237957,
+      4.944196000245273
+    ],
+    "joint_y_statistics": [
+      4.416251995634703,
+      0.4467684615237957,
+      4.944196000245273
+    ],
+    "observed_z_statistics": [
+      0.6080829557544147,
+      -0.202437102933098
+    ],
+    "conditional_y_replica_quantiles": [
+      [
+        4.31040730271761,
+        0.35715414078872393,
+        4.797467331176798
+      ],
+      [
+        4.415217747587342,
+        0.453915675100266,
+        4.986448423888941
+      ],
+      [
+        4.510300087213842,
+        0.5397148384382897,
+        5.183337541303725
+      ]
+    ],
+    "joint_y_replica_quantiles": [
+      [
+        4.295355357614663,
+        0.3646946910010244,
+        4.797559708033935
+      ],
+      [
+        4.4160614688449105,
+        0.45527397581841506,
+        4.994974928615768
+      ],
+      [
+        4.529425243539827,
+        0.5637763694917738,
+        5.224307921092528
+      ]
+    ],
+    "joint_z_replica_quantiles": [
+      [
+        0.5173942296333152,
+        -0.30675017262983073
+      ],
+      [
+        0.612369205141524,
+        -0.143158239176436
+      ],
+      [
+        0.7296384834905262,
+        0.013218927681922617
+      ]
+    ],
+    "conditional_tail_areas": [
+      0.495,
+      0.559,
+      0.667
+    ],
+    "joint_z_tail_areas": [
+      0.529,
+      0.757
+    ],
+    "n_draws": 1000,
+    "scope": "Model fit diagnostics, not out-of-sample performance or calibration."
+  },
+  "compile_seconds": 12.960048599983566,
+  "sampling_seconds": 6.135777899995446,
+  "posterior_file": "results\\pilot\\syn_r0_repair2.nc",
+  "posterior_sha256": "35aef1780e5fb35c86ad00842987401fdcb4e6439c51740bb326c689031f06bf",
+  "run_id": "syn_r0_repair2",
+  "phase": "exploratory",
+  "status": "completed",
+  "code_commit": "861acc732c065a4f5ad16e562589eb0c4d740ce3",
+  "code_dirty": true,
+  "config_hash": "2ae82332d7c20e3ae11278402d26053bede37f765c54e76144750cc4e8c1de90",
+  "environment_fingerprint": "f57b00a67e9d67b2920791bfddc8dc812dbdeb9306588a26557dfd6be15f826c",
+  "config": {
+    "run_id": "syn_r0_repair2",
+    "sampling": {
+      "chains": 4,
+      "cores": 2,
+      "warmup": 1000,
+      "draws": 2000,
+      "target_accept": 0.95,
+      "max_treedepth": 12,
+      "sampler": "nutpie if validated; explicit recorded fallback"
+    },
+    "source_plan": "configs/pilot_plan_v0.3.json",
+    "id": "syn_r0",
+    "n": 56,
+    "rho": 0,
+    "weak": false,
+    "seed": 13101,
+    "prior_scale": 1.0,
+    "error": "normal",
+    "rho_zero": false
+  },
+  "wall_seconds": 20.94465710001532,
+  "process_cpu_seconds": 26.59375,
+  "peak_process_rss_gib": 0.3847007751464844,
+  "official_test_access": false,
+  "confirmatory": false
+}
