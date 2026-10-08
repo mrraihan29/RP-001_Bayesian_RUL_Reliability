@@ -1,0 +1,148 @@
+{
+  "version": "0.5",
+  "risks": [
+    {
+      "risk_id": "R01",
+      "severity_retained": "critical",
+      "issue": "Pseudo-cutoff and official-test mechanisms may differ",
+      "impact_class": "OUTSIDE_BENCHMARK_GENERALIZATION",
+      "pre_experiment_disposition": "Unknowncutofftransport excludespopulation/conformalguarantees, notenumeration.",
+      "baseline_evidence": "05_estimand_cutoff_transport.md"
+    },
+    {
+      "risk_id": "R02",
+      "severity_retained": "critical",
+      "issue": "Latent/covariance effects may be weakly identified at56 engines",
+      "impact_class": "ACCEPT_WITH_RESTRICTED_CLAIMS",
+      "pre_experiment_disposition": "Stressfailure notautomaticprimaryblocker; actualprincipalpasses; onediagnosis/fixedfutureguards; nophysical/robustnessclaim.",
+      "baseline_evidence": "04_identifiability_synthetic_validation.md"
+    },
+    {
+      "risk_id": "R03",
+      "severity_retained": "critical",
+      "issue": "Posterior/new-engine conditioning may be unreliable",
+      "impact_class": "FIXED_NUMERICAL_FAILURE_POLICY",
+      "pre_experiment_disposition": "Futureendpointmustpass beforelabelaccess; accepteddevelopmentpassdoesnotcertifyfuturecase.",
+      "baseline_evidence": "02_numerical_precision_remediation.md"
+    },
+    {
+      "risk_id": "R04",
+      "severity_retained": "high",
+      "issue": "100 assessment engines give broad coverage/effect precision",
+      "impact_class": "OUTSIDE_BENCHMARK_GENERALIZATION",
+      "pre_experiment_disposition": "Noiidpopulationpower/coverageprecisionclaim forcompletefiniteenumeration.",
+      "baseline_evidence": "10_risks_assumptions_decisions.md"
+    },
+    {
+      "risk_id": "R05",
+      "severity_retained": "high",
+      "issue": "25 calibration scores give unstable/coarse tail correction",
+      "impact_class": "ACCEPT_WITH_RESTRICTED_CLAIMS",
+      "pre_experiment_disposition": "n25correctionvaries; scoreofspecifiedrealizedprocedurevaliddescriptive; nocoverageguarantee.",
+      "baseline_evidence": "10_risks_assumptions_decisions.md"
+    },
+    {
+      "risk_id": "R06",
+      "severity_retained": "critical",
+      "issue": "Future features, ID leakage or adaptive test access",
+      "impact_class": "PRIMARY_VALIDITY_PRECONDITION",
+      "pre_experiment_disposition": "Leakage/adaptivetestuse invalidatescomparison; mandatoryfutureaudit/predictionfreeze beforelabels.",
+      "baseline_evidence": "01_updated_research_protocol.md"
+    },
+    {
+      "risk_id": "R07",
+      "severity_retained": "high",
+      "issue": "One-PC/local-linear representation may miss nonlinear/early health signal",
+      "impact_class": "ACCEPT_WITH_RESTRICTED_CLAIMS",
+      "pre_experiment_disposition": "Representationmisspecification canhurtperformance withoutinvalidatingcomparison; nophysicalstateclaim.",
+      "baseline_evidence": "10_risks_assumptions_decisions.md"
+    },
+    {
+      "risk_id": "R08",
+      "severity_retained": "high",
+      "issue": "Comparison confounds representation/structure with inference",
+      "impact_class": "ACCEPT_WITH_RESTRICTED_CLAIMS",
+      "pre_experiment_disposition": "Comparecompleteprocedures, notisolateBayesianphilosophy; fixed/disclosedfeaturesearchdifferences.",
+      "baseline_evidence": "10_risks_assumptions_decisions.md"
+    },
+    {
+      "risk_id": "R09",
+      "severity_retained": "high",
+      "issue": "Novelty and current full methods unresolved",
+      "impact_class": "PUBLICATION_REQUIREMENT",
+      "pre_experiment_disposition": "No noveltyclaim; primarysourceevidencereview beforepublication.",
+      "baseline_evidence": "10_risks_assumptions_decisions.md"
+    },
+    {
+      "risk_id": "R10",
+      "severity_retained": "medium",
+      "issue": "Redistribution license unclear",
+      "impact_class": "PUBLICATION_REQUIREMENT",
+      "pre_experiment_disposition": "Privatereviewonly; license/redistributionreview beforepublicrelease.",
+      "baseline_evidence": "10_risks_assumptions_decisions.md"
+    },
+    {
+      "risk_id": "R11",
+      "severity_retained": "high",
+      "issue": "Skew/influential misses challenge bootstrap",
+      "impact_class": "ACCEPT_WITH_RESTRICTED_CLAIMS",
+      "pre_experiment_disposition": "Adversebootstrapstudyretained; omitpopulationinferencefromlockedprimarycontract.",
+      "baseline_evidence": "06_statistical_inference_pipeline_uncertainty_plan.md"
+    },
+    {
+      "risk_id": "R12",
+      "severity_retained": "medium",
+      "issue": "Runtime/Colab resources may be unreliable or variable",
+      "impact_class": "FIXED_NUMERICAL_FAILURE_POLICY",
+      "pre_experiment_disposition": "Pinnedruntime/timeouts/sourcecustody; recordandstopcomputationalfailure.",
+      "baseline_evidence": "10_risks_assumptions_decisions.md"
+    },
+    {
+      "risk_id": "R13",
+      "severity_retained": "high",
+      "issue": "Synthetic-to-real gap",
+      "impact_class": "OUTSIDE_BENCHMARK_GENERALIZATION",
+      "pre_experiment_disposition": "No real-fleet/maintenance/safetygeneralization.",
+      "baseline_evidence": "10_risks_assumptions_decisions.md"
+    },
+    {
+      "risk_id": "R14",
+      "severity_retained": "medium",
+      "issue": "Exploration/prior search may cherry-pick wins",
+      "impact_class": "PRIMARY_VALIDITY_PRECONDITION",
+      "pre_experiment_disposition": "Developmentcalexposureadaptationsdisclosed/fixed; neverselectusingofficialoutcomes.",
+      "baseline_evidence": "10_risks_assumptions_decisions.md"
+    },
+    {
+      "risk_id": "R15",
+      "severity_retained": "medium",
+      "issue": "Conditional CI ignores training preprocessing/pipeline variability",
+      "impact_class": "ACCEPT_WITH_RESTRICTED_CLAIMS",
+      "pre_experiment_disposition": "Eightperturbationssensitivityonly; no unconditionalvarianceclaim.",
+      "baseline_evidence": "06_statistical_inference_pipeline_uncertainty_plan.md"
+    },
+    {
+      "risk_id": "R16",
+      "severity_retained": "high",
+      "issue": "Prior predictive tails lack domain justification",
+      "impact_class": "ACCEPT_WITH_RESTRICTED_CLAIMS",
+      "pre_experiment_disposition": "Properfixedworkingpriors benchmarkpredictiononly, notdomaincertification.",
+      "baseline_evidence": "03_bayesian_prior_plausibility.md"
+    },
+    {
+      "risk_id": "R17",
+      "severity_retained": "critical",
+      "issue": "Final owner approval absent",
+      "impact_class": "OWNER_AUTHORIZATION_GATE",
+      "pre_experiment_disposition": "Finalownerlockapprovalpending; notscientificreason towithholdqualifiedownerlockreview.",
+      "baseline_evidence": "11_prelock_recommendation.md"
+    }
+  ],
+  "invalidators": [
+    "Incorrectmath/implementation",
+    "Leakage orofficialoutcomeadaptiveprocedure",
+    "Incomplete/nonfinitepairedscorevector",
+    "Unauthorizeddatause"
+  ],
+  "no_automatic_stress_blocker": true
+}

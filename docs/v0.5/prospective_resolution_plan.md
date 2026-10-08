@@ -1,0 +1,13 @@
+# Prospective bounded resolution v0.5
+
+The owners accept v0.4 and authorize one material high-rho investigation, no indefinite experimentation. All17 risks are classified before computation in [blocker disposition](../../research/v0.5/blocker_disposition.json). Incorrect math, leakage/adaptive official-outcome selection, unauthorized data use and unscorable incomplete paired endpoints invalidate the primary finite comparison. Fixed pre-label numerical failure rules address future prediction risk. Other risks restrict claims or publication/generalization, rather than automatically blocking owner lock review.
+
+One new four-chain fit uses the exact failed high-rho3 dataset/truth, equivalent innovation-scale coordinates restoring the unchanged prior by its Jacobian, seed54103, retained4,000/warmup2,000 perchain, target.95/depth12. Dense likelihood/gradient/prior-density checks must pass first. Original convergence thresholds apply to physical and auxiliary coordinates. One invocation, no retry/seeds/extra draws; wall600sec/CPU1hour/128MiB, one scientific process/localCPU. Every outcome remains. The original failedfit is not an oracle or accepted validation and is never replaced.
+
+If implementation is invalid, STOP/RE-SCOPE. If it is valid and actual principal/conditioning remain valid, a remaining stress failure can be accepted as a restricted robustness claim with fixed endpoint failure handling. No automatic fallback or universal sampler/physical identification claim.
+
+Competitive means descriptive characterization: score levels, signed finite mean difference, ratio and per-engine decomposition. No binary competitive/equivalent verdict, practical margin, primary population p-value or general superiority follows from its sign.
+
+All future endpoint quantile guards must pass before label release. Score numerical uncertainty uses aligned chain/draw joint influence, preserving covariance across engines/endpoints. Post-label scoreMCSE/kink flags qualify ideal-posterior interpretation and never trigger repairs. The complete stored-prediction finite mean remains exact; any missing/nonfinite paired score makes it unavailable, retaining all failures. Omit population bootstrap from the proposed locked analysis; retain historical adverse results as disclosure.
+
+Exact truths/inputhash/seeds/tolerances/decisionbranches are in [resolution_plan.json](../../configs/v0.5/resolution_plan.json). Final return is a concise memo, proposed locked contract and READY FOR OWNER LOCK REVIEW / RE-SCOPE / STOP recommendation. No test sensors/labels, confirmatory work, final lock, fallback activation or extra spending is authorized.

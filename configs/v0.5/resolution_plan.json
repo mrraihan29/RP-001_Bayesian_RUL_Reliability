@@ -1,0 +1,129 @@
+{
+  "version": "0.5",
+  "created_at": "2026-10-08T16:09:48.782731+00:00",
+  "owner_reviewed_scientific_commit": "61b4c2c63cbad6c1b9bd99168e33d1367aa180bc",
+  "authorization": "Owner response: bounded pre-lock resolution; one material high-rho investigation; no indefinite experiments.",
+  "primary_question_unchanged": true,
+  "primary_estimand": "Exact complete finite FD001 paired mean90%interval-score difference for frozen stored predictions.",
+  "competitive_definition": "Descriptive score levels/difference/ratio/per-engine decomposition; no binary equivalence/noninferiority/practical margin, primary populationp-value or general superiority.",
+  "prior": {
+    "id": "anchored_v04",
+    "beta_mu": [
+      4.605170185988092,
+      0.0
+    ],
+    "beta_sd": [
+      0.6,
+      0.5
+    ],
+    "gamma_sd": 0.25,
+    "Gamma_sd": [
+      0.5,
+      0.35
+    ],
+    "tau_sd": 0.35,
+    "sigma_z_sd": 0.4,
+    "sigma_r_sd": 0.4,
+    "eta_rho_sd": 0.75,
+    "lkj_eta": 2,
+    "justification": "Hundreds-of-cycles RUL scale; prior latent-zero intercept median95% range31..324; PC units/slope-per30 anchored; correlation residual not inferred from raw trend. No calibration interval-score selection.",
+    "development_adaptation_after_calibration_exposure": true,
+    "broader_policy": "Multiply beta/gamma/Gamma/tau/sigma_z/sigma_r scale priors by1.5; eta_rho and LKJ correlation priors fixed."
+  },
+  "investigation": {
+    "run_id": "v05_highrho_innovation",
+    "input_path": "experiments/v0.4/fits/v04_syn_high_rho_3_data.npz",
+    "input_sha256": "3ed0b8984fa4feac1da2633f2db9609f59fe604321eb24e7e1c6067facc9d230",
+    "truth": {
+      "beta": [
+        4.605170185988092,
+        -0.4
+      ],
+      "gamma": [
+        -0.35,
+        0.15
+      ],
+      "Gamma": [
+        [
+          0.1,
+          0.5
+        ],
+        [
+          -0.1,
+          -0.25
+        ]
+      ],
+      "tau": [
+        0.45,
+        0.3
+      ],
+      "r_g": 0.2,
+      "sigma_z": 0.3,
+      "sigma_r": 0.25,
+      "rho": 0.95
+    },
+    "original_failed_run": "v04_syn_high_rho_3",
+    "parameterization": "nu=sigma_z*sqrt(1-rho^2);sigma_z=nu*cosh(eta_rho); referenceHNnu prior cancelled and originalHNsigmaz density/Jacobian restored. Exactsameposterior, no principal/fallback substitution.",
+    "seed": 54103,
+    "chains": 4,
+    "cores": 2,
+    "draws": 4000,
+    "warmup": 2000,
+    "target_accept": 0.95,
+    "maxdepth": 12,
+    "preflight_rho": [
+      0.5,
+      0.95,
+      0.99,
+      0.999
+    ],
+    "preflight_sigma_z": [
+      0.1,
+      0.3,
+      0.6
+    ],
+    "density_tolerance": {
+      "atol": 1e-07,
+      "rtol": 1e-08
+    },
+    "gradient_tolerance": {
+      "finite_difference_step": 1e-05,
+      "atol": 0.0001,
+      "rtol": 0.0001
+    },
+    "acceptance": {
+      "rhat_exclusive": 1.01,
+      "bulk_ess_min": 400,
+      "tail_ess_min": 400,
+      "divergences_max": 0,
+      "bfmi_exclusive": 0.3,
+      "depth_saturation_max": 0.01
+    },
+    "auxiliary": [
+      "eta_rho",
+      "gcor_u",
+      "nu"
+    ],
+    "stopping": "One MCMC invocation maximum, no newseeds/draws/scientific or infrastructurefit retry; wall600sec, registeredCPU<=1hour, payload<=128MiB, one scientific process. Deterministicstorage recovery only ifneeded, no samplingreinvocation.",
+    "decision": "Unresolved implementation/likelihood discrepancy -> STOP/RE-SCOPE beforeMCMC. Ifimplementationvalid and actualprincipal/conditioning remainvalid, acceptprincipal with restrictedrobustness and fixedendpointpolicy even ifstressfitfails; no universalrobustness/SBC/physicalclaim. Fallback onlyforseparateownerapproval."
+  },
+  "endpoint_policy": {
+    "quantile_guard": "Everyfutureengine,.05/.50/.95,batch250/500,alpha=.05/(N*3*2),upperMCSE<=.5,weightESS>=1000,influenceESS>=400; physical/auxMCMCpass; all3fitpair predictions compatibleBonferroni.",
+    "prelabel_failure": "Any input/quantile/predictionfailure retained and stops beforelabels; noengine drop/replace/impute/cap or resultdriven furtherdraws.",
+    "score_influence": "X_ij=-exp(qij)*w_i*(F_theta_i(qij)-p)/(meanw_i*f_i). H=N^-1 sum_i[(-1+20I[y<L_i])*X_iL+(1-20I[y>U_i])*X_iU]; alignedcommonposteriorchains/draws preservecrossengine/crossendpointcovariance.",
+    "score_guard": "ChainbatchLRV/Satterthwaite upperMCSE at250/500,alpha=.05/2; max>.5cycles or anylabel within3*quantileupperMCSE ofitsendpoint -> NUMERICALLY_QUALIFIED idealposteriorscoreinterpretation. Completefinite storedpredictionmean remains exact. Noafterlabel repairs/reruns withoutownerreview. .5is numericalresolution, notpracticalmargin.",
+    "lipschitz": "Conditionalon endpoint errorradii eps, scoremeanchange<=19/N sum(epsL+epsU). MCSEis approximate, notabsoluteerrorbound/coverageguarantee.",
+    "demonstration": "Re-use all25v04cal prefixes/knownlabels and fixedpooled12x8000posterior toverifypropagation only; no CQRcomparison/model/priorselection."
+  },
+  "inferential_boundary": "Noengine-samplingCI orp-value forenumeration; omitpopulationbootstrap fromproposedlockcontract; historicalstressdisclosure retained. Noformalofficialconformal/conditionalcoverage,totalpipelinevariance,practicalequivalence orrealengineclaim.",
+  "protected_scope": {
+    "official_test_sensors_authorized": false,
+    "official_test_labels_authorized": false,
+    "confirmatory_authorized": false,
+    "protocol_lock_authorized": false,
+    "fallback_activation_authorized": false,
+    "additional_spending_authorized": false
+  },
+  "environment_fingerprint": "f57b00a67e9d67b2920791bfddc8dc812dbdeb9306588a26557dfd6be15f826c",
+  "baseline_preservation": "Oldscientificsource/configs/reports/results immutable; newv05filesonly."
+}
