@@ -41,9 +41,7 @@
     "prior_half",
     "prior_double",
     "rho_zero",
-    "contamination",
-    "refit",
-    "sensor_oracle"
+    "contamination"
   ],
   "sampling": {
     "chains": 4,
@@ -55,7 +53,7 @@
     "sampler": "nutpie if validated; explicit recorded fallback"
   },
   "failure_criteria": {
-    "likelihood_abs_tolerance": 1e-08,
+    "likelihood_abs_tolerance": 1e-8,
     "gradient_relative_tolerance": 0.0001,
     "rhat_max_exclusive": 1.01,
     "bulk_ess_min": 400,
@@ -86,6 +84,5 @@
     "default": "local CPU",
     "extra_spending": false
   },
-  "stopping": "Preserve each failure. If sampling/identifiability fail, recommend REVISE AGAIN rather than claim readiness.",
-  "development_refinement": "Refit56 is the existing proposed final-fitting step; sensor-only exact oracle checks the already-proposed prediction algorithm. No primary question or model winner search changed."
+  "stopping": "Preserve each failure. If sampling/identifiability fail, recommend REVISE AGAIN rather than claim readiness."
 }

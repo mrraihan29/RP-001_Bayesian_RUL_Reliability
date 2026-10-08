@@ -132,7 +132,7 @@ def run(run_id):
     if metrics.exists(): raise FileExistsError("Preserve completed/failed runs; choose a new repair ID.")
     commit,dirty=git_state()
     config={"run_id":run_id,"sampling":PLAN["sampling"],"source_plan":"configs/pilot_plan_v0.3.json"}
-    truth=None;scale=1.;error="normal";rho_zero=False
+    truth=None;scale=1.;error="normal";rho_zero=False;extra_sensor=None
     base_id=run_id.split("_repair")[0]
     syn=next((x for x in PLAN["synthetic_design"] if x["id"]==base_id),None)
     if syn:
@@ -141,15 +141,23 @@ def run(run_id):
         seed=10000+syn["seed"]
     elif base_id in PLAN["training_runs"]:
         engines=load_training()
-        ids=[r["engine"] for r in manifest() if r["role"]=="fit" and r["eligible_alive"]]
+        roles=("fit","tune") if base_id in ("refit","sensor_oracle") else ("fit",)
+        ids=[r["engine"] for r in manifest() if r["role"] in roles and r["eligible_alive"]]
         pre=fit_preprocessor(engines,ids)
-        data=make_dataset(engines,pre,("fit",))
-        prepath=outdir/"fit_preprocessor.npz"
+        data=make_dataset(engines,pre,roles)
+        if base_id=="sensor_oracle":
+            calibration=make_dataset(engines,pre,("calibration",),allow_calibration=True)
+            extra_sensor=replace(calibration,a=calibration.a[:1],z=calibration.z[:1],ids=calibration.ids[:1],y=None)
+            assert int(extra_sensor.ids[0]) not in set(data.ids)
+            np.savez(outdir/(run_id+"_extra_sensors.npz"),a=extra_sensor.a,z=extra_sensor.z,B=extra_sensor.B,ids=extra_sensor.ids)
+            config["extra_sensor_engine"]=int(extra_sensor.ids[0])
+            config["extra_sensor_sha256"]=sha(outdir/(run_id+"_extra_sensors.npz"))
+        prepath=outdir/("refit_preprocessor_bayes.npz" if len(ids)==56 else "fit_preprocessor.npz")
         if prepath.exists():
             stored=np.load(prepath)
             for key in pre: np.testing.assert_array_equal(stored[key],pre[key])
         else: np.savez(prepath,**pre)
-        config.update({"dataset":"FD001 training fit43","data_sha256":"963b5e22825b34d8b21c69e1aeb4af3e647050eb672ee8834ba4b5d91d2de0f8",
+        config.update({"dataset":f"FD001 training fitting cohort n={len(ids)}","data_sha256":"963b5e22825b34d8b21c69e1aeb4af3e647050eb672ee8834ba4b5d91d2de0f8",
                        "preprocessing_fit_ids":ids,"pc1_explained_ratio":pre["pc1_explained_ratio"]})
         seed=13000+PLAN["training_runs"].index(base_id)
         scale=.5 if base_id=="prior_half" else 2. if base_id=="prior_double" else 1.
@@ -167,7 +175,7 @@ def run(run_id):
     start=time.perf_counter();cpu=time.process_time()
     result={}
     try:
-        model=build_model(data,scale,error,rho_zero)
+        model=build_model(data,scale,error,rho_zero,extra_sensor=extra_sensor)
         cstart=time.perf_counter()
         compiled=nutpie.compile_pymc_model(model,backend="numba")
         compile_seconds=time.perf_counter()-cstart

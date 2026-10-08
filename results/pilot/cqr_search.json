@@ -1,0 +1,351 @@
+{
+  "records": [
+    {
+      "candidate_id": "gb-depth1-leaf5-lr0p03",
+      "config": {
+        "candidate_id": "gb-depth1-leaf5-lr0p03",
+        "family": "gradient_boosting",
+        "parameters": [
+          [
+            "max_depth",
+            1
+          ],
+          [
+            "min_samples_leaf",
+            5
+          ],
+          [
+            "learning_rate",
+            0.03
+          ],
+          [
+            "n_estimators",
+            200
+          ]
+        ]
+      },
+      "status": "completed",
+      "tuning_mean90_interval_score": 180.89722326821555,
+      "elapsed_seconds": 0.4308463999768719,
+      "failure": null,
+      "config_hash": "75a6aa6ea4b8597f3755ef91287efdd595a33cc121257d3f7162715932a560a3"
+    },
+    {
+      "candidate_id": "gb-depth1-leaf5-lr0p1",
+      "config": {
+        "candidate_id": "gb-depth1-leaf5-lr0p1",
+        "family": "gradient_boosting",
+        "parameters": [
+          [
+            "max_depth",
+            1
+          ],
+          [
+            "min_samples_leaf",
+            5
+          ],
+          [
+            "learning_rate",
+            0.1
+          ],
+          [
+            "n_estimators",
+            200
+          ]
+        ]
+      },
+      "status": "completed",
+      "tuning_mean90_interval_score": 190.0153558885695,
+      "elapsed_seconds": 0.39881670000613667,
+      "failure": null,
+      "config_hash": "543cdd6f5af72e9e89798fcf99ce3485e79eb48dcf21240690637d71f02219f0"
+    },
+    {
+      "candidate_id": "gb-depth1-leaf10-lr0p03",
+      "config": {
+        "candidate_id": "gb-depth1-leaf10-lr0p03",
+        "family": "gradient_boosting",
+        "parameters": [
+          [
+            "max_depth",
+            1
+          ],
+          [
+            "min_samples_leaf",
+            10
+          ],
+          [
+            "learning_rate",
+            0.03
+          ],
+          [
+            "n_estimators",
+            200
+          ]
+        ]
+      },
+      "status": "completed",
+      "tuning_mean90_interval_score": 163.83333727921035,
+      "elapsed_seconds": 0.41690889999154024,
+      "failure": null,
+      "config_hash": "a4e765b029bbfe9709a81f9dc43261ade9ba6a2aac1d955ed4cca351b6d28d21"
+    },
+    {
+      "candidate_id": "gb-depth1-leaf10-lr0p1",
+      "config": {
+        "candidate_id": "gb-depth1-leaf10-lr0p1",
+        "family": "gradient_boosting",
+        "parameters": [
+          [
+            "max_depth",
+            1
+          ],
+          [
+            "min_samples_leaf",
+            10
+          ],
+          [
+            "learning_rate",
+            0.1
+          ],
+          [
+            "n_estimators",
+            200
+          ]
+        ]
+      },
+      "status": "completed",
+      "tuning_mean90_interval_score": 148.0281089978563,
+      "elapsed_seconds": 0.41201549998368137,
+      "failure": null,
+      "config_hash": "eb2840536e5c3a383fd305053e5bfcafd70fb83e802ee83bb88a1c29af0425fe"
+    },
+    {
+      "candidate_id": "gb-depth2-leaf5-lr0p03",
+      "config": {
+        "candidate_id": "gb-depth2-leaf5-lr0p03",
+        "family": "gradient_boosting",
+        "parameters": [
+          [
+            "max_depth",
+            2
+          ],
+          [
+            "min_samples_leaf",
+            5
+          ],
+          [
+            "learning_rate",
+            0.03
+          ],
+          [
+            "n_estimators",
+            200
+          ]
+        ]
+      },
+      "status": "completed",
+      "tuning_mean90_interval_score": 154.35450556212325,
+      "elapsed_seconds": 0.42448940000031143,
+      "failure": null,
+      "config_hash": "05962a393cd2a1b0c7ddf4d8db9dfead23c186e6d2fb65b2d05f5362bdef103f"
+    },
+    {
+      "candidate_id": "gb-depth2-leaf5-lr0p1",
+      "config": {
+        "candidate_id": "gb-depth2-leaf5-lr0p1",
+        "family": "gradient_boosting",
+        "parameters": [
+          [
+            "max_depth",
+            2
+          ],
+          [
+            "min_samples_leaf",
+            5
+          ],
+          [
+            "learning_rate",
+            0.1
+          ],
+          [
+            "n_estimators",
+            200
+          ]
+        ]
+      },
+      "status": "completed",
+      "tuning_mean90_interval_score": 165.79803433747156,
+      "elapsed_seconds": 0.4853520999895409,
+      "failure": null,
+      "config_hash": "0ec164e09768c973633890457159c6870eb7443bd2d50922022beb3a22af3a84"
+    },
+    {
+      "candidate_id": "gb-depth2-leaf10-lr0p03",
+      "config": {
+        "candidate_id": "gb-depth2-leaf10-lr0p03",
+        "family": "gradient_boosting",
+        "parameters": [
+          [
+            "max_depth",
+            2
+          ],
+          [
+            "min_samples_leaf",
+            10
+          ],
+          [
+            "learning_rate",
+            0.03
+          ],
+          [
+            "n_estimators",
+            200
+          ]
+        ]
+      },
+      "status": "completed",
+      "tuning_mean90_interval_score": 163.83333727921035,
+      "elapsed_seconds": 0.4166047000035178,
+      "failure": null,
+      "config_hash": "79134dd74aa12d550be7dd6c7b56dc3d778bdcab5b62ef9af45bd6c66453730b"
+    },
+    {
+      "candidate_id": "gb-depth2-leaf10-lr0p1",
+      "config": {
+        "candidate_id": "gb-depth2-leaf10-lr0p1",
+        "family": "gradient_boosting",
+        "parameters": [
+          [
+            "max_depth",
+            2
+          ],
+          [
+            "min_samples_leaf",
+            10
+          ],
+          [
+            "learning_rate",
+            0.1
+          ],
+          [
+            "n_estimators",
+            200
+          ]
+        ]
+      },
+      "status": "completed",
+      "tuning_mean90_interval_score": 149.96476640512248,
+      "elapsed_seconds": 0.4102417000103742,
+      "failure": null,
+      "config_hash": "cb613b19b65a9e174382237b5d3aa30799cf62c840e3a995c75b17959adeea7f"
+    },
+    {
+      "candidate_id": "linear-l1-alpha0p001",
+      "config": {
+        "candidate_id": "linear-l1-alpha0p001",
+        "family": "linear",
+        "parameters": [
+          [
+            "alpha",
+            0.001
+          ]
+        ]
+      },
+      "status": "completed",
+      "tuning_mean90_interval_score": 271.583310812041,
+      "elapsed_seconds": 0.03679239997291006,
+      "failure": null,
+      "config_hash": "979494bda5c95299d9675d62313b6b43f7317f419738343413a2c8477bc345f6"
+    },
+    {
+      "candidate_id": "linear-l1-alpha0p01",
+      "config": {
+        "candidate_id": "linear-l1-alpha0p01",
+        "family": "linear",
+        "parameters": [
+          [
+            "alpha",
+            0.01
+          ]
+        ]
+      },
+      "status": "completed",
+      "tuning_mean90_interval_score": 174.7045793273778,
+      "elapsed_seconds": 0.015412799984915182,
+      "failure": null,
+      "config_hash": "e597b5c91b4ee333709ec4430f2671740487991349bc884c75469e63e8ab095e"
+    },
+    {
+      "candidate_id": "linear-l1-alpha0p1",
+      "config": {
+        "candidate_id": "linear-l1-alpha0p1",
+        "family": "linear",
+        "parameters": [
+          [
+            "alpha",
+            0.1
+          ]
+        ]
+      },
+      "status": "completed",
+      "tuning_mean90_interval_score": 229.4615384615386,
+      "elapsed_seconds": 0.01716139999916777,
+      "failure": null,
+      "config_hash": "90e5ab0896e5025df0f8552a84ddf187a7864a81b6606372b8a08beba3a51b8a"
+    },
+    {
+      "candidate_id": "linear-l1-alpha1",
+      "config": {
+        "candidate_id": "linear-l1-alpha1",
+        "family": "linear",
+        "parameters": [
+          [
+            "alpha",
+            1.0
+          ]
+        ]
+      },
+      "status": "completed",
+      "tuning_mean90_interval_score": 229.4615384615386,
+      "elapsed_seconds": 0.014297599991550669,
+      "failure": null,
+      "config_hash": "4251cdbc662398fb252b27f178746967e921a0b83e6e556fe2c45198421cec6a"
+    }
+  ],
+  "selection": {
+    "candidate": {
+      "candidate_id": "gb-depth1-leaf10-lr0p1",
+      "family": "gradient_boosting",
+      "parameters": [
+        [
+          "max_depth",
+          1
+        ],
+        [
+          "min_samples_leaf",
+          10
+        ],
+        [
+          "learning_rate",
+          0.1
+        ],
+        [
+          "n_estimators",
+          200
+        ]
+      ]
+    },
+    "best_observed_score": 148.0281089978563,
+    "selected_candidate_score": 148.0281089978563,
+    "tie_candidate_ids": [
+      "gb-depth1-leaf10-lr0p1"
+    ],
+    "unscored_candidate_ids": [],
+    "failure_reasons": []
+  },
+  "calibration_accessed": false,
+  "phase": "tuning",
+  "code_commit": "ab34d3c8e908c90fd98c5abde3ccb051bac7857c",
+  "code_dirty": true
+}
