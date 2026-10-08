@@ -1,0 +1,304 @@
+{
+  "created_at": "2026-10-08T14:42:34.002631+00:00",
+  "git_commit": "6aab2089eec1f0ee0818bbb56960ce0677e767fd",
+  "source_dirty": false,
+  "executed_source_sha256": {
+    "src/rp001/__init__.py": "77b845af67e6f3d0b795acb93e4e651143b49fd33c7d437c774b5704a4d384f4",
+    "src/rp001/comparator_pilot.py": "ec2777d4ce2f498eac5b7a55f29ff5635364bd9aded09a1ba70ad4d1774a5b66",
+    "src/rp001/comparators.py": "37d8e96ab23f7e3525010ed6aa412a2ff89dd622a4e3d0cceb9d215a8c4e41aa",
+    "src/rp001/data.py": "3a0ef34d51468ad05279cbcaeb9e3ab8075134f75771c4375136f4167b512170",
+    "src/rp001/development_data_audit.py": "5697fc66c254637547499f9a88e2ced5472a6de176bb4a26972975710ea16f92",
+    "src/rp001/environment.py": "bf3d2e6a20f3a7673cf1499f7ea7adce3b7952eb3c5d48f2b6a44821f51ca2fd",
+    "src/rp001/metrics.py": "8eb710c14c35ab556ee52448a2a85e30203d40247f7627bdcd9df6add1a88531",
+    "src/rp001/model.py": "52627ae6f49311c3bb837ed3685a4d93b7e9a4d059fe08d6b892c4abab60d399",
+    "src/rp001/pilot.py": "40ab3eaef48aa82f59c5234715268f2f3f37764f484ab89456baef39bcd940c1",
+    "src/rp001/prediction.py": "f54fafe5875a8c7e009ee3c392cbf75c9e9d041646521e9a4123dd5e21b65d9b",
+    "src/rp001/predictive_analysis.py": "a4346a6c63101d8bef4f1f8f98298002e50ea5718e3098e058498953a31366fc",
+    "src/rp001/statistical_design.py": "093b66b5f2f990295a8579e23efa1ff0be4b48f1b00c7c3b3b473741d7451a9c",
+    "src/rp001/v04_analysis.py": "0da0a7087a6697df4035bcb3077561637322fc2783892d975ab55e9153faeb45",
+    "src/rp001/v04_common.py": "6c353d14140d9af2c1a20935751fb0218b8e7312da8490f3a743d92bc5e11933",
+    "src/rp001/v04_inference.py": "dc05f013b9c9bf05463269b4bd6c6ece74505467e5a4c2125a0ed0690ded1d64",
+    "src/rp001/v04_inference_run.py": "36be33a5637e9b0c0d7f0ea8164b3a7f70beb0c54a2cbb1c71ba0aa35def7af1",
+    "src/rp001/v04_model.py": "45dc8556475d4822e7fc2f17236fb1b2c04d7dafe0d9aa0548021d9abd1fa23e",
+    "src/rp001/v04_pipeline.py": "0b75f708359915f8a197c429a49f2e096c050a21879dbc6e703253155388e569",
+    "src/rp001/v04_precision.py": "396a5f55ca2e9c51fd21f02f50e59c57be7aedd38321a4a3123b0b955f1fde33",
+    "src/rp001/v04_precision_validation.py": "47c5f33e1deb98bf3872f18fbe23f669783819c6180a2fdaf3595c6a024c4a7f",
+    "src/rp001/v04_predict.py": "412f3f59fe823ffa7f1de048c7c7b68a2777bc83a400f40b6a717db22a1604e2",
+    "src/rp001/v04_run.py": "82bba7e2e570601ecd6c1e4d384aa6b9c9e423ebfe42f72f24f0b41926f12a37"
+  },
+  "plan_sha256": "0c6a7e1e924636cec6196295eac19b29a6bd7faa85e18b081549f8287ab0b99b",
+  "environment_fingerprint": "f57b00a67e9d67b2920791bfddc8dc812dbdeb9306588a26557dfd6be15f826c",
+  "dataset_sha256": "963b5e22825b34d8b21c69e1aeb4af3e647050eb672ee8834ba4b5d91d2de0f8",
+  "confirmatory": false,
+  "official_test_access": false,
+  "run_id": "v04_syn_confounded_3",
+  "configuration": {
+    "run_id": "v04_syn_confounded_3",
+    "kind": "synthetic",
+    "regime": "confounded",
+    "n": 56,
+    "assessment_n": 20,
+    "data_seed": 42303,
+    "assessment_seed": 43303,
+    "seed": 44303,
+    "draws": 2000,
+    "prior": "anchored_v04"
+  },
+  "status": "completed",
+  "data_sha256": "c142322f44fbbaf30026226a37b28ffe1964859492fd5f23563b52cc7b6134d7",
+  "diagnostics": {
+    "rhat_max": 1.0030656754918525,
+    "bulk_ess_min": 1604.5277755228499,
+    "tail_ess_min": 1931.5256861891658,
+    "divergences": 0,
+    "bfmi": [
+      0.9518773978978115,
+      0.8664954172186442,
+      0.9898379707876085,
+      0.9126470495839017
+    ],
+    "maxdepth_fraction": 0.0,
+    "sample_stat_keys": [
+      "depth",
+      "maxdepth_reached",
+      "step_size",
+      "transformation_update_id",
+      "step_size_bar",
+      "mean_tree_accept",
+      "mean_tree_accept_sym",
+      "n_steps",
+      "max_energy_error",
+      "tuning",
+      "index_in_trajectory",
+      "logp",
+      "energy",
+      "energy_error",
+      "fisher_distance",
+      "transformation_index",
+      "diverging",
+      "divergence_draw",
+      "divergence_message",
+      "divergence_energy_error"
+    ],
+    "acceptance": "PASS",
+    "failures": [],
+    "auxiliary_rhat_max": 1.0030656754918525,
+    "auxiliary_bulk_min": 2778.3497137866884,
+    "auxiliary_tail_min": 3587.179605302002
+  },
+  "recovery": {
+    "parameters": [
+      {
+        "parameter": "beta(0,)",
+        "truth": 4.605170185988092,
+        "mean": 4.620259609800054,
+        "sd": 0.03834253995430865,
+        "equal_tail95": [
+          4.5435503494139,
+          4.698243477205203
+        ],
+        "truth_in95": true,
+        "standardized_mean_error": 0.393542624717705
+      },
+      {
+        "parameter": "beta(1,)",
+        "truth": -0.4,
+        "mean": -0.33911652120418695,
+        "sd": 0.12146420562865728,
+        "equal_tail95": [
+          -0.5700632713272544,
+          -0.0983345297900524
+        ],
+        "truth_in95": true,
+        "standardized_mean_error": 0.5012462600047558
+      },
+      {
+        "parameter": "gamma(0,)",
+        "truth": -0.1,
+        "mean": -0.12949448872342373,
+        "sd": 0.05857881231812986,
+        "equal_tail95": [
+          -0.24724447493336582,
+          -0.015313286989258578
+        ],
+        "truth_in95": true,
+        "standardized_mean_error": -0.5035009682894394
+      },
+      {
+        "parameter": "gamma(1,)",
+        "truth": 0.05,
+        "mean": 0.09535094207313555,
+        "sd": 0.22897958435176127,
+        "equal_tail95": [
+          -0.36205821284701956,
+          0.5364415633763282
+        ],
+        "truth_in95": true,
+        "standardized_mean_error": 0.19805670536752684
+      },
+      {
+        "parameter": "Gamma(0, 0)",
+        "truth": 0.1,
+        "mean": 0.07647390348691409,
+        "sd": 0.09923748629815632,
+        "equal_tail95": [
+          -0.11953012004878505,
+          0.2731006216112276
+        ],
+        "truth_in95": true,
+        "standardized_mean_error": -0.23706864603968708
+      },
+      {
+        "parameter": "Gamma(0, 1)",
+        "truth": 1.2,
+        "mean": 1.2228064321959724,
+        "sd": 0.157287167771151,
+        "equal_tail95": [
+          0.9106701551112057,
+          1.5311071236225415
+        ],
+        "truth_in95": true,
+        "standardized_mean_error": 0.144998683103985
+      },
+      {
+        "parameter": "Gamma(1, 0)",
+        "truth": -0.1,
+        "mean": -0.07357109302540013,
+        "sd": 0.1122899715078419,
+        "equal_tail95": [
+          -0.29761787749700824,
+          0.15025179231594799
+        ],
+        "truth_in95": true,
+        "standardized_mean_error": 0.23536302146763108
+      },
+      {
+        "parameter": "Gamma(1, 1)",
+        "truth": -0.8,
+        "mean": -0.3893783150488033,
+        "sd": 0.1717699577489245,
+        "equal_tail95": [
+          -0.7327792601826112,
+          -0.05471116345182563
+        ],
+        "truth_in95": false,
+        "standardized_mean_error": 2.3905326072874797
+      },
+      {
+        "parameter": "tau(0,)",
+        "truth": 0.45,
+        "mean": 0.5410513265575372,
+        "sd": 0.07961999620612102,
+        "equal_tail95": [
+          0.39252135150807993,
+          0.7094903864200017
+        ],
+        "truth_in95": true,
+        "standardized_mean_error": 1.143573610853015
+      },
+      {
+        "parameter": "tau(1,)",
+        "truth": 0.3,
+        "mean": 0.15882527236713323,
+        "sd": 0.11466449667933425,
+        "equal_tail95": [
+          0.0049180166516176954,
+          0.42099252114344976
+        ],
+        "truth_in95": true,
+        "standardized_mean_error": -1.2311982498616802
+      },
+      {
+        "parameter": "r_g()",
+        "truth": 0.2,
+        "mean": -0.01084197107970125,
+        "sd": 0.40957997201365814,
+        "equal_tail95": [
+          -0.7885057402388724,
+          0.7485881997451173
+        ],
+        "truth_in95": true,
+        "standardized_mean_error": -0.5147760766795266
+      },
+      {
+        "parameter": "sigma_z()",
+        "truth": 0.6,
+        "mean": 0.6214485012101207,
+        "sd": 0.03270371838432096,
+        "equal_tail95": [
+          0.5649823979538313,
+          0.6928413890057642
+        ],
+        "truth_in95": true,
+        "standardized_mean_error": 0.6558428909540681
+      },
+      {
+        "parameter": "sigma_r()",
+        "truth": 0.15,
+        "mean": 0.15394188111658932,
+        "sd": 0.020551305192667853,
+        "equal_tail95": [
+          0.11207131391992325,
+          0.19364069727327737
+        ],
+        "truth_in95": true,
+        "standardized_mean_error": 0.1918068502041265
+      },
+      {
+        "parameter": "rho()",
+        "truth": 0.8,
+        "mean": 0.8131492232886142,
+        "sd": 0.019172816255900456,
+        "equal_tail95": [
+          0.7752654231361613,
+          0.8515172922764678
+        ],
+        "truth_in95": true,
+        "standardized_mean_error": 0.6858263863331727
+      }
+    ],
+    "max_abs_standardized_mean_error": 2.3905326072874797,
+    "gross_recovery_flag": false,
+    "interpretation": "One of four fixed-truth replicates per regime; not SBC. Posterior interval recovery and gross standardized errors are diagnostic, not identifiability proof."
+  },
+  "truth": {
+    "beta": [
+      4.605170185988092,
+      -0.4
+    ],
+    "gamma": [
+      -0.1,
+      0.05
+    ],
+    "Gamma": [
+      [
+        0.1,
+        1.2
+      ],
+      [
+        -0.1,
+        -0.8
+      ]
+    ],
+    "tau": [
+      0.45,
+      0.3
+    ],
+    "r_g": 0.2,
+    "sigma_z": 0.6,
+    "sigma_r": 0.15,
+    "rho": 0.8
+  },
+  "posterior_sha256": "b1bcd6b2de9d2912b5c5c112324500cca363bb351f2a0e7660e9357130b998f9",
+  "n_engines": 56,
+  "n_distinct_engines": 56,
+  "wall_seconds": 56.56258559998241,
+  "cpu_seconds": 68.203125,
+  "peak_rss_bytes": 506449920,
+  "artifacts_sha256": {
+    "experiments/v0.4/fits/v04_syn_confounded_3.nc": "b1bcd6b2de9d2912b5c5c112324500cca363bb351f2a0e7660e9357130b998f9",
+    "experiments/v0.4/fits/v04_syn_confounded_3_assessment.npz": "7d1300a5c7d5896be4722b8a891ed9a466eed0ec82e35291e72fb565c8869018",
+    "experiments/v0.4/fits/v04_syn_confounded_3_data.npz": "c142322f44fbbaf30026226a37b28ffe1964859492fd5f23563b52cc7b6134d7",
+    "experiments/v0.4/fits/v04_syn_confounded_3_summary.csv": "6d2dba1164df348fbfff0040c01e8cf7030bae6d286b74ece270b2d4493559b9"
+  }
+}

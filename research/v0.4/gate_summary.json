@@ -1,0 +1,16 @@
+{
+  "version": "0.4",
+  "recommendation": "B. REVISE AGAIN",
+  "numerical_precision_pass": true,
+  "mcse_estimator_validation_pass": true,
+  "mcmc_fits": 33,
+  "mcmc_pass": 32,
+  "mcmc_fail": [
+    "v04_syn_high_rho_3"
+  ],
+  "confirmatory_authorized": false,
+  "official_test_access": false,
+  "protocol_lock_authorized": false,
+  "protocol_status": "PROTOCOL_DRAFTED",
+  "full_gate_results": "research/gate_results.json"
+}

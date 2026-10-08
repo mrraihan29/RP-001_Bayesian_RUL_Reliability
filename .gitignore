@@ -79,3 +79,7 @@ logs/v0.3_delivery_receipt.json
 
 # Administrative post-commit receipt (avoids circular commit identity)
 logs/v0.3_snapshot_validation.json
+
+# v0.4 administrative receipts generated after final commit
+logs/v0.4/delivery_receipt.json
+logs/v0.4/postcommit_validation.json

@@ -1,0 +1,81 @@
+# Python environments, bytecode, and tool caches
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+
+# Secrets and local environment files
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+secrets.*
+
+# Raw, intermediate, and processed data payloads.
+# Documentation and common provenance metadata remain trackable.
+data/raw/**
+!data/raw/**/
+!data/raw/.gitkeep
+!data/raw/**/*.md
+!data/raw/**/*.json
+!data/raw/**/*.yaml
+!data/raw/**/*.yml
+!data/raw/**/*.toml
+!data/raw/**/*.sha256
+data/interim/**
+!data/interim/**/
+!data/interim/.gitkeep
+!data/interim/**/*.md
+!data/interim/**/*.json
+!data/interim/**/*.yaml
+!data/interim/**/*.yml
+!data/interim/**/*.toml
+!data/interim/**/*.sha256
+data/processed/**
+!data/processed/**/
+!data/processed/.gitkeep
+!data/processed/**/*.md
+!data/processed/**/*.json
+!data/processed/**/*.yaml
+!data/processed/**/*.yml
+!data/processed/**/*.toml
+!data/processed/**/*.sha256
+
+# Common large posterior samples and generated analysis stores
+results/**/*.nc
+results/**/*.netcdf
+results/**/*.zarr/
+results/**/*.h5
+results/**/*.hdf5
+results/**/*.parquet
+results/**/*.feather
+results/**/*.npz
+results/**/*.npy
+results/**/*.pkl
+results/**/*.pickle
+experiments/**/artifacts/
+logs/**/*.log
+
+# Operating-system noise
+.DS_Store
+Thumbs.db
+# Isolated pilot runtime caches
+.cache/
+
+results/**/*.joblib
+
+# Windows PyTensor configuration parsing artifact
+CodingProjectNAOBI RESEARCHRP-001_Bayesian_RUL_Reliability.cachepytensor/
+
+# Administrative post-commit receipt (avoids circular commit identity)
+logs/v0.3_delivery_receipt.json
+
+# Administrative post-commit receipt (avoids circular commit identity)
+logs/v0.3_snapshot_validation.json

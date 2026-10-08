@@ -1,0 +1,577 @@
+{
+  "schema_version": "1.0.0",
+  "handoff_id": "RP001-V04-TARGETED-RETURN-20261008",
+  "parent_work_id": "RP-001",
+  "producer": "scientific-research-engine",
+  "consumer": "scientific-research-engine",
+  "producer_role": "Rei / SOL Extra High direct mathematical verifier",
+  "consumer_role": "Research Owners Raihan x Rei for final authorization",
+  "human_recipient": "Raihan x Rei",
+  "artifact_type": "targeted-prelock-remediation-evidence-package",
+  "artifact_version": "0.4",
+  "artifact_identity": {
+    "path_or_uri": "docs/v0.4/11_prelock_recommendation.md",
+    "sha256_or_version": "4b67549a0ceff20b08d015f9414afb99ac1a067ed8fb6eb0c8556c55c709c0c7",
+    "created_at": "2026-10-08T15:31:13.921469+00:00",
+    "source_revision": "Executed analysis87a0083314daafb79f7ae3c67e23abd5979bc82a; final deliverycommit in postcommitreceipt"
+  },
+  "scope": "Eleven v0.4 deliverables; synthetic/officialFD001train only; noofficialtest/prediction/evaluation/lock.",
+  "applicability": "APPLICABLE_MANDATORY",
+  "claims_or_requirements": "Owner requested evidence return complete; highrho failure retained and B recommendation; no final readiness.",
+  "evidence": [
+    {
+      "evidence_id": "V04-E-OWNER",
+      "kind": "owner-authorization",
+      "location": "docs/v0.4/owner_directive.md",
+      "sha256": "a157394255492dc75d9d5daf8a3f405b2cb5cadf742bfc9b91c6acad0a49a13e",
+      "collected_at": "2026-10-08T15:31:13.921469+00:00",
+      "method": "Owner-directed remediation boundary",
+      "supports": "Development-only v0.4 authorization, finite-benchmark target and eleven deliverables",
+      "provenance_chain": "Owner scope -> prospective plan1f01ef5 -> exact perrun executedsource+environment -> immutable result -> direct SOL review"
+    },
+    {
+      "evidence_id": "V04-E-MATH",
+      "kind": "direct-lead-verification",
+      "location": "docs/v0.4/08_independent_mathematical_reverification.md",
+      "sha256": "7b0322182454bb3ac28a79cdfcf4e0304cf03772d001e7a9e9c9c335818c908f",
+      "collected_at": "2026-10-08T15:31:13.921469+00:00",
+      "method": "SOL derivations with independent dense/covariance/influence/rank oracles",
+      "supports": "Equations/diagnostic verdicts in explicit scope",
+      "provenance_chain": "Owner scope -> prospective plan1f01ef5 -> exact perrun executedsource+environment -> immutable result -> direct SOL review"
+    },
+    {
+      "evidence_id": "V04-E-TEST",
+      "kind": "verification-log",
+      "location": "logs/v0.4/final_tests.xml",
+      "sha256": "5bfec00b127f424925740f16424532e6ea8fbc6268d5d25faea9583092758c8d",
+      "collected_at": "2026-10-08T15:31:13.921469+00:00",
+      "method": "55tests including independent lead oracles, original36 retained",
+      "supports": "Implementation checks, not scientific readiness",
+      "provenance_chain": "Owner scope -> prospective plan1f01ef5 -> exact perrun executedsource+environment -> immutable result -> direct SOL review"
+    },
+    {
+      "evidence_id": "V04-E-PREC",
+      "kind": "precision-diagnostic",
+      "location": "experiments/v0.4/analysis/principal_precision_all25.json",
+      "sha256": "25318bec7573439fbd9bfd9f40c4bfc78dc97bd198a91ab76556d771a49906de",
+      "collected_at": "2026-10-08T15:31:13.921469+00:00",
+      "method": "75quantiles/two batch sizes/all25engineIDs",
+      "supports": "Tested development numerical gate",
+      "provenance_chain": "Owner scope -> prospective plan1f01ef5 -> exact perrun executedsource+environment -> immutable result -> direct SOL review"
+    },
+    {
+      "evidence_id": "V04-E-MC",
+      "kind": "known-target-validation",
+      "location": "experiments/v0.4/precision/v04_precision_mcse_validation.json",
+      "sha256": "35b8f4c36b382503fc46d607ef61d2043c1e562d76c08af185a5d18aa867dc1d",
+      "collected_at": "2026-10-08T15:31:13.921469+00:00",
+      "method": "600stationary independent ARchain replications/18summaries",
+      "supports": "Scoped MCSE estimator behavior",
+      "provenance_chain": "Owner scope -> prospective plan1f01ef5 -> exact perrun executedsource+environment -> immutable result -> direct SOL review"
+    },
+    {
+      "evidence_id": "V04-E-SYN",
+      "kind": "retained-convergence-failure",
+      "location": "experiments/v0.4/registry/v04_syn_high_rho_3.json",
+      "sha256": "ed2f0d8bef459a8aeb5332cba2f686de96d1b0139d1758ada378462a902efe3a",
+      "collected_at": "2026-10-08T15:31:13.921469+00:00",
+      "method": "Fixed-truth rho.95 repeat3 diagnostics retained",
+      "supports": "R02 practical/sampling robustness blocker",
+      "provenance_chain": "Owner scope -> prospective plan1f01ef5 -> exact perrun executedsource+environment -> immutable result -> direct SOL review"
+    },
+    {
+      "evidence_id": "V04-E-PPC",
+      "kind": "fitted-model-check",
+      "location": "experiments/v0.4/analysis/posterior_predictive.json",
+      "sha256": "a391ed3a378ba79f9c6580f5ba9f218aa548ef6a2b8d2e9e0e4d2d7c316bdabe",
+      "collected_at": "2026-10-08T15:31:13.921469+00:00",
+      "method": "1,000principal posterior-predictive draws with fixed seed",
+      "supports": "Selected moments only, not independent calibration",
+      "provenance_chain": "Owner scope -> prospective plan1f01ef5 -> exact perrun executedsource+environment -> immutable result -> direct SOL review"
+    },
+    {
+      "evidence_id": "V04-E-PIPE",
+      "kind": "pipeline-sensitivity",
+      "location": "experiments/v0.4/analysis/pipeline_variation.json",
+      "sha256": "dbde56623335db020179f671e08533b55897de05f550a183b0b63ec6b92e47ab",
+      "collected_at": "2026-10-08T15:31:13.921469+00:00",
+      "method": "Eightfull-stage/fourmatched observed-data perturbation pairs",
+      "supports": "Sensitivity without totalvariance/performance claim",
+      "provenance_chain": "Owner scope -> prospective plan1f01ef5 -> exact perrun executedsource+environment -> immutable result -> direct SOL review"
+    },
+    {
+      "evidence_id": "V04-E-OC",
+      "kind": "synthetic-operating-characteristics",
+      "location": "experiments/v0.4/inference/v04_paired_bootstrap_t_oc.json",
+      "sha256": "1d91e53ea6c44f5ebc5d86a3c846b4e152a9542dc2fd3aa80bdb729c429b425a",
+      "collected_at": "2026-10-08T15:31:13.921469+00:00",
+      "method": "4,000datasets/7,996,000resamples; all failures retained",
+      "supports": "Conditional inferential stress limitations",
+      "provenance_chain": "Owner scope -> prospective plan1f01ef5 -> exact perrun executedsource+environment -> immutable result -> direct SOL review"
+    },
+    {
+      "evidence_id": "V04-E-PRIOR",
+      "kind": "prior-plausibility",
+      "location": "experiments/v0.4/analysis/prior_predictive.json",
+      "sha256": "e6a91874130d167f02cccea3fd2053da96b89ef38f723b306df7701bfed123af",
+      "collected_at": "2026-10-08T15:31:13.921469+00:00",
+      "method": "Proper workingpriors, analytical moment checks, fixedseedprior draws",
+      "supports": "Benchmarkscale assessment, not expertelicitation",
+      "provenance_chain": "Owner scope -> prospective plan1f01ef5 -> exact perrun executedsource+environment -> immutable result -> direct SOL review"
+    },
+    {
+      "evidence_id": "V04-E-RUNS",
+      "kind": "experiment-ledger",
+      "location": "research/experiment_registry.jsonl",
+      "sha256": "4b434af8b1c22596213cb58c5cbbb626b14c1b1d6d7bc27a1944800e56cb212a",
+      "collected_at": "2026-10-08T15:31:13.921469+00:00",
+      "method": "30unchangedhistorical prefix+41newrecords including allfailures",
+      "supports": "Complete normalized lineage plus immutable detailedrecord files",
+      "provenance_chain": "Owner scope -> prospective plan1f01ef5 -> exact perrun executedsource+environment -> immutable result -> direct SOL review"
+    },
+    {
+      "evidence_id": "V04-E-ENV",
+      "kind": "environment-provenance",
+      "location": "logs/pilot_environment.json",
+      "sha256": "f0cf426d4b6f45b54f42c65155e48da7d4016ee3631aebd1cf4a6774a9b991fe",
+      "collected_at": "2026-10-08T15:31:13.921469+00:00",
+      "method": "Exact64-package lock and runtimefingerprint",
+      "supports": "Local CPUenvironment only",
+      "provenance_chain": "Owner scope -> prospective plan1f01ef5 -> exact perrun executedsource+environment -> immutable result -> direct SOL review"
+    },
+    {
+      "evidence_id": "V04-E-DATA",
+      "kind": "split-cutoff-provenance",
+      "location": "configs/proposed_split_manifest.json",
+      "sha256": "6d6e0f10d979d41739c6c07b6bab8f0c32d2844ebd150e82d13caa3bd29e124b",
+      "collected_at": "2026-10-08T15:31:13.921469+00:00",
+      "method": "Frozen original training engine roles/cutoffs",
+      "supports": "Training survivorcohort only; officialtransport unproved",
+      "provenance_chain": "Owner scope -> prospective plan1f01ef5 -> exact perrun executedsource+environment -> immutable result -> direct SOL review"
+    },
+    {
+      "evidence_id": "V04-E-ADVERSARY",
+      "kind": "independent-worker-audit",
+      "location": "docs/v0.4/adversarial_final_review.md",
+      "sha256": "c7967dc242100819494cb7ce78e3eb9a86499cfc895cfad77b6d501878ffce97",
+      "collected_at": "2026-10-08T15:31:13.921469+00:00",
+      "method": "Read-only methodological adversary; root dispositions in report11",
+      "supports": "Negativefindingsretained, not delegated finalmathauthority",
+      "provenance_chain": "Owner scope -> prospective plan1f01ef5 -> exact perrun executedsource+environment -> immutable result -> direct SOL review"
+    }
+  ],
+  "gate_results": [
+    {
+      "gate": "DEVELOPMENT_AUTHORIZATION",
+      "state": "PASS",
+      "owner": "Rei / SOL lead; final authorization Research Owners Raihan x Rei",
+      "artifact_version": "0.4",
+      "evidence_ids": [
+        "V04-E-OWNER"
+      ],
+      "rationale": "Only synthetic/FD001train v0.4 approved; no final lock/testaccess."
+    },
+    {
+      "gate": "TRAINING_SPLIT_AUDIT",
+      "state": "PASS",
+      "owner": "Rei / SOL lead; final authorization Research Owners Raihan x Rei",
+      "artifact_version": "0.4",
+      "evidence_ids": [
+        "V04-E-DATA",
+        "V04-E-MATH"
+      ],
+      "rationale": "Original training split/eligibility preserved; official audit deferred."
+    },
+    {
+      "gate": "IMPLEMENTATION_MATHEMATICS",
+      "state": "PASS",
+      "owner": "Rei / SOL lead; final authorization Research Owners Raihan x Rei",
+      "artifact_version": "0.4",
+      "evidence_ids": [
+        "V04-E-MATH",
+        "V04-E-TEST"
+      ],
+      "rationale": "Direct lead equations/oracles within stated model/diagnostic assumptions."
+    },
+    {
+      "gate": "PREDICTIVE_PRECISION",
+      "state": "PASS",
+      "owner": "Rei / SOL lead; final authorization Research Owners Raihan x Rei",
+      "artifact_version": "0.4",
+      "evidence_ids": [
+        "V04-E-PREC",
+        "V04-E-MC"
+      ],
+      "rationale": "All25/75approximate upperMCSE guards <=.5, max.220513; replications/oracles compatible. Future endpoints untested."
+    },
+    {
+      "gate": "MCMC_DIAGNOSTICS",
+      "state": "FAIL",
+      "owner": "Rei / SOL lead; final authorization Research Owners Raihan x Rei",
+      "artifact_version": "0.4",
+      "evidence_ids": [
+        "V04-E-SYN",
+        "V04-E-RUNS"
+      ],
+      "rationale": "33actualfits/32pass/highrho3fails strict Rhat<1.01; notrerun."
+    },
+    {
+      "gate": "STRUCTURAL_IDENTIFIABILITY",
+      "state": "PASS",
+      "owner": "Rei / SOL lead; final authorization Research Owners Raihan x Rei",
+      "artifact_version": "0.4",
+      "evidence_ids": [
+        "V04-E-MATH"
+      ],
+      "rationale": "Generic population-moment proof under fullrank/interior assumptions; no practical/physical guarantee."
+    },
+    {
+      "gate": "PRACTICAL_STRESS_RELIABILITY",
+      "state": "FAIL",
+      "owner": "Rei / SOL lead; final authorization Research Owners Raihan x Rei",
+      "artifact_version": "0.4",
+      "evidence_ids": [
+        "V04-E-SYN",
+        "V04-E-MATH"
+      ],
+      "rationale": "Highrho illconditioning/convergence failure remains critical for conservative prelock readiness."
+    },
+    {
+      "gate": "PRIOR_PLAUSIBILITY",
+      "state": "PASS",
+      "owner": "Rei / SOL lead; final authorization Research Owners Raihan x Rei",
+      "artifact_version": "0.4",
+      "evidence_ids": [
+        "V04-E-PRIOR",
+        "V04-E-MATH"
+      ],
+      "rationale": "Proper anchored workingprior mathematical/scaletail assessment accepted with claimrestriction; domainelicitation absent."
+    },
+    {
+      "gate": "CALIBRATION_TRANSPORT",
+      "state": "DEFERRED",
+      "owner": "Rei / SOL lead; final authorization Research Owners Raihan x Rei",
+      "artifact_version": "0.4",
+      "evidence_ids": [
+        "V04-E-DATA",
+        "V04-E-MATH"
+      ],
+      "rationale": "Unknownofficial cutoffscore exchangeability; no primary transportedcoverageclaim."
+    },
+    {
+      "gate": "PIPELINE_SENSITIVITY",
+      "state": "PASS",
+      "owner": "Rei / SOL lead; final authorization Research Owners Raihan x Rei",
+      "artifact_version": "0.4",
+      "evidence_ids": [
+        "V04-E-PIPE"
+      ],
+      "rationale": "Eightcomplete fullstageperturbations; notunconditionalvariance."
+    },
+    {
+      "gate": "FULL_PIPELINE_UNCERTAINTY",
+      "state": "DEFERRED",
+      "owner": "Rei / SOL lead; final authorization Research Owners Raihan x Rei",
+      "artifact_version": "0.4",
+      "evidence_ids": [
+        "V04-E-PIPE",
+        "V04-E-OC"
+      ],
+      "rationale": "Noindependentpipelinepopulationor independentassessmentoutcomes; excludedfromprimaryclaim."
+    },
+    {
+      "gate": "SECONDARY_INFERENCE_STRESS",
+      "state": "FAIL",
+      "owner": "Rei / SOL lead; final authorization Research Owners Raihan x Rei",
+      "artifact_version": "0.4",
+      "evidence_ids": [
+        "V04-E-OC"
+      ],
+      "rationale": "No nominal95/5 stressdomain certification; frozen suppressible diagnostic only, finitecontrastprimary."
+    },
+    {
+      "gate": "LOCAL_ENVIRONMENT",
+      "state": "PASS",
+      "owner": "Rei / SOL lead; final authorization Research Owners Raihan x Rei",
+      "artifact_version": "0.4",
+      "evidence_ids": [
+        "V04-E-ENV",
+        "V04-E-RUNS"
+      ],
+      "rationale": "Pinned CPUenvironment, .693registeredCPUhours, noColab/spending."
+    },
+    {
+      "gate": "PROTOCOL_LOCK",
+      "state": "BLOCKED",
+      "owner": "Rei / SOL lead; final authorization Research Owners Raihan x Rei",
+      "artifact_version": "0.4",
+      "evidence_ids": [
+        "V04-E-OWNER",
+        "V04-E-SYN"
+      ],
+      "rationale": "Finalownerapprovalabsent; B. REVISE AGAIN, unchangeddraftstate."
+    },
+    {
+      "gate": "SCIENTIFIC_VALIDATED",
+      "state": "DEFERRED",
+      "owner": "Rei / SOL lead; final authorization Research Owners Raihan x Rei",
+      "artifact_version": "0.4",
+      "evidence_ids": [
+        "V04-E-OWNER",
+        "V04-E-RUNS"
+      ],
+      "rationale": "Noofficialcomparativeresults; criticalstresslimitation; evidence return is notvalidatedresearch."
+    }
+  ],
+  "assumptions": [
+    "Genericidentification requiresfixedfullrankknownrepresentation andinteriorcovariance; no physicalstateclaim.",
+    "ApproximateMCMCMCSErequiresadequatemixing/positiveCDFdensity; all25developmentpasses do notcertifyfutureendpoints.",
+    "Finitebenchmarkenumerationdiffersfromconditionalenginepopulationandtotalpipelineuncertainty.",
+    "Officialcutofftransport/exchangeabilityunverified; developmentcaloutcomesalreadyexposed.",
+    "Properworkingprior scalejustification doesnotreplace externaldomainelicitation."
+  ],
+  "risks": [
+    {
+      "risk_id": "R01",
+      "severity": "critical",
+      "statement": "Pseudo-cutoff and official-test mechanisms may differ",
+      "disposition": "Exact finite-benchmark target; no transported population/conformal claim. Official cutoff mechanism remains unaudited.",
+      "affected_claims_or_gates": "Calibration/protocol",
+      "owner": "Rei lead / Research Owners",
+      "likelihood": "not quantified",
+      "status": "MITIGATED BY CLAIM RESTRICTION",
+      "trigger": "Calibration/protocol",
+      "evidence": "05_estimand_cutoff_transport.md",
+      "remaining_uncertainty": "Original severity retained. Disposition applies only to the restricted development/finite-benchmark claim; excluded claims remain unproved."
+    },
+    {
+      "risk_id": "R02",
+      "severity": "critical",
+      "statement": "Latent/covariance effects may be weakly identified at56 engines",
+      "disposition": "Generic identification proof does not remove high-rho sampling failure. Nuisance interpretation is restricted; one failed stress fit prevents claiming robust sampler behavior and requires prospective remedy.",
+      "affected_claims_or_gates": "Model acceptance",
+      "owner": "Rei lead / Research Owners",
+      "likelihood": "not quantified",
+      "status": "STILL BLOCKED",
+      "trigger": "Model acceptance",
+      "evidence": "04_identifiability_synthetic_validation.md",
+      "remaining_uncertainty": "Original severity retained. Disposition applies only to the restricted development/finite-benchmark claim; excluded claims remain unproved."
+    },
+    {
+      "risk_id": "R03",
+      "severity": "critical",
+      "statement": "Posterior/new-engine conditioning may be unreliable",
+      "disposition": "All original 25 engines/75 quantiles pass the frozen dependence-adjusted MCSE guards, independent replications, sensor oracles and known-target validation. Future official endpoints require their own guards; approximate MCSE limits are not absolute-error guarantees.",
+      "affected_claims_or_gates": "Inferential readiness",
+      "owner": "Rei lead / Research Owners",
+      "likelihood": "not quantified",
+      "status": "RESOLVED",
+      "trigger": "Inferential readiness",
+      "evidence": "02_numerical_precision_remediation.md",
+      "remaining_uncertainty": "Original severity retained. Disposition applies only to the restricted development/finite-benchmark claim; excluded claims remain unproved.",
+      "resolution_scope": "Original25 development calibration sensor prefixes and75quantiles only; futureofficialendpointsunverified."
+    },
+    {
+      "risk_id": "R04",
+      "severity": "high",
+      "statement": "100 assessment engines give broad coverage/effect precision",
+      "disposition": "Wilson/planning documented; no\u00b12pp certification/equivalence; benchmark-development scope retained.",
+      "affected_claims_or_gates": "Sample precision",
+      "owner": "Rei lead / Research Owners",
+      "likelihood": "not quantified",
+      "status": "MITIGATED BY CLAIM RESTRICTION",
+      "trigger": "Sample precision",
+      "evidence": "10_risks_assumptions_decisions.md",
+      "remaining_uncertainty": "Original severity retained. Disposition applies only to the restricted development/finite-benchmark claim; excluded claims remain unproved."
+    },
+    {
+      "risk_id": "R05",
+      "severity": "high",
+      "statement": "25 calibration scores give unstable/coarse tail correction",
+      "disposition": "Rank24 verified; cohort/influence sensitivity reported; benchmark-development scope retained.",
+      "affected_claims_or_gates": "Calibration",
+      "owner": "Rei lead / Research Owners",
+      "likelihood": "not quantified",
+      "status": "MITIGATED BY CLAIM RESTRICTION",
+      "trigger": "Calibration",
+      "evidence": "10_risks_assumptions_decisions.md",
+      "remaining_uncertainty": "Original severity retained. Disposition applies only to the restricted development/finite-benchmark claim; excluded claims remain unproved."
+    },
+    {
+      "risk_id": "R06",
+      "severity": "critical",
+      "statement": "Future features, ID leakage or adaptive test access",
+      "disposition": "Train-only guarded imports and prefix tests; calibration exposure disclosed; official data unopened. Future official integrity/overlap audits require separate access and remain deferred.",
+      "affected_claims_or_gates": "Data access/integrity",
+      "owner": "Rei lead / Research Owners",
+      "likelihood": "not quantified",
+      "status": "MITIGATED BY CLAIM RESTRICTION",
+      "trigger": "Data access/integrity",
+      "evidence": "01_updated_research_protocol.md",
+      "remaining_uncertainty": "Original severity retained. Disposition applies only to the restricted development/finite-benchmark claim; excluded claims remain unproved."
+    },
+    {
+      "risk_id": "R07",
+      "severity": "high",
+      "statement": "One-PC/local-linear representation may miss nonlinear/early health signal",
+      "disposition": "Prior/PPC are coarse; no physical-state claim; broader representation assessment open; benchmark-development scope retained.",
+      "affected_claims_or_gates": "Representation",
+      "owner": "Rei lead / Research Owners",
+      "likelihood": "not quantified",
+      "status": "MITIGATED BY CLAIM RESTRICTION",
+      "trigger": "Representation",
+      "evidence": "10_risks_assumptions_decisions.md",
+      "remaining_uncertainty": "Original severity retained. Disposition applies only to the restricted development/finite-benchmark claim; excluded claims remain unproved."
+    },
+    {
+      "risk_id": "R08",
+      "severity": "high",
+      "statement": "Comparison confounds representation/structure with inference",
+      "disposition": "Same information, disclose unequal search, secondary calibration ablation; benchmark-development scope retained.",
+      "affected_claims_or_gates": "Fairness/attribution",
+      "owner": "Rei lead / Research Owners",
+      "likelihood": "not quantified",
+      "status": "MITIGATED BY CLAIM RESTRICTION",
+      "trigger": "Fairness/attribution",
+      "evidence": "10_risks_assumptions_decisions.md",
+      "remaining_uncertainty": "Original severity retained. Disposition applies only to the restricted development/finite-benchmark claim; excluded claims remain unproved."
+    },
+    {
+      "risk_id": "R09",
+      "severity": "high",
+      "statement": "Novelty and current full methods unresolved",
+      "disposition": "Primary-source review before publication novelty claim; benchmark-development scope retained.",
+      "affected_claims_or_gates": "Publication",
+      "owner": "Rei lead / Research Owners",
+      "likelihood": "not quantified",
+      "status": "MITIGATED BY CLAIM RESTRICTION",
+      "trigger": "Publication",
+      "evidence": "10_risks_assumptions_decisions.md",
+      "remaining_uncertainty": "Original severity retained. Disposition applies only to the restricted development/finite-benchmark claim; excluded claims remain unproved."
+    },
+    {
+      "risk_id": "R10",
+      "severity": "medium",
+      "statement": "Redistribution license unclear",
+      "disposition": "Internal study only; rights review before release; benchmark-development scope retained.",
+      "affected_claims_or_gates": "Data redistribution",
+      "owner": "Rei lead / Research Owners",
+      "likelihood": "not quantified",
+      "status": "MITIGATED BY CLAIM RESTRICTION",
+      "trigger": "Data redistribution",
+      "evidence": "10_risks_assumptions_decisions.md",
+      "remaining_uncertainty": "Original severity retained. Disposition applies only to the restricted development/finite-benchmark claim; excluded claims remain unproved."
+    },
+    {
+      "risk_id": "R11",
+      "severity": "high",
+      "statement": "Skew/influential misses challenge bootstrap",
+      "disposition": "Frozen bootstrap-t failure policy completed: 999/4,000 diagnostics unavailable; lognormal sigma1.5 coverage .914 and one-sided rejection .112. Primary finite contrast has no population test; secondary diagnostic is stress-limited and suppressible, with no nominal-control certification or substitute test.",
+      "affected_claims_or_gates": "Inference",
+      "owner": "Rei lead / Research Owners",
+      "likelihood": "not quantified",
+      "status": "MITIGATED BY CLAIM RESTRICTION",
+      "trigger": "Inference",
+      "evidence": "06_statistical_inference_pipeline_uncertainty_plan.md",
+      "remaining_uncertainty": "Original severity retained. Disposition applies only to the restricted development/finite-benchmark claim; excluded claims remain unproved."
+    },
+    {
+      "risk_id": "R12",
+      "severity": "medium",
+      "statement": "Runtime/Colab resources may be unreliable or variable",
+      "disposition": "Local isolated environment validated; storage failures/dirty starts retained; Colab untested; benchmark-development scope retained.",
+      "affected_claims_or_gates": "Reproduction/compute",
+      "owner": "Rei lead / Research Owners",
+      "likelihood": "not quantified",
+      "status": "MITIGATED BY CLAIM RESTRICTION",
+      "trigger": "Reproduction/compute",
+      "evidence": "10_risks_assumptions_decisions.md",
+      "remaining_uncertainty": "Original severity retained. Disposition applies only to the restricted development/finite-benchmark claim; excluded claims remain unproved."
+    },
+    {
+      "risk_id": "R13",
+      "severity": "high",
+      "statement": "Synthetic-to-real gap",
+      "disposition": "Permanent scope boundary; no maintenance/safety certification; benchmark-development scope retained.",
+      "affected_claims_or_gates": "External validity",
+      "owner": "Rei lead / Research Owners",
+      "likelihood": "not quantified",
+      "status": "MITIGATED BY CLAIM RESTRICTION",
+      "trigger": "External validity",
+      "evidence": "10_risks_assumptions_decisions.md",
+      "remaining_uncertainty": "Original severity retained. Disposition applies only to the restricted development/finite-benchmark claim; excluded claims remain unproved."
+    },
+    {
+      "risk_id": "R14",
+      "severity": "medium",
+      "statement": "Exploration/prior search may cherry-pick wins",
+      "disposition": "Fixed principal/grid and all failures retained; disclose any adaptation after calibration exposure; benchmark-development scope retained.",
+      "affected_claims_or_gates": "Selection integrity",
+      "owner": "Rei lead / Research Owners",
+      "likelihood": "not quantified",
+      "status": "MITIGATED BY CLAIM RESTRICTION",
+      "trigger": "Selection integrity",
+      "evidence": "10_risks_assumptions_decisions.md",
+      "remaining_uncertainty": "Original severity retained. Disposition applies only to the restricted development/finite-benchmark claim; excluded claims remain unproved."
+    },
+    {
+      "risk_id": "R15",
+      "severity": "medium",
+      "statement": "Conditional CI ignores training preprocessing/pipeline variability",
+      "disposition": "Eight complete PCA/HPO/refit/calibration perturbations quantify fixed-anchor sensitivity; four dependent pairs and finite MCMC noise do not estimate unconditional total variance. Conditional bootstrap excludes repeated-pipeline uncertainty.",
+      "affected_claims_or_gates": "Uncertainty interpretation",
+      "owner": "Rei lead / Research Owners",
+      "likelihood": "not quantified",
+      "status": "MITIGATED BY CLAIM RESTRICTION",
+      "trigger": "Uncertainty interpretation",
+      "evidence": "06_statistical_inference_pipeline_uncertainty_plan.md",
+      "remaining_uncertainty": "Original severity retained. Disposition applies only to the restricted development/finite-benchmark claim; excluded claims remain unproved."
+    },
+    {
+      "risk_id": "R16",
+      "severity": "high",
+      "statement": "Prior predictive tails lack domain justification",
+      "disposition": "Proper anchored working priors and analytical/simulated moments are documented; historical calibration exposure disclosed. No new favorable-score selection; domain-expert elicitation and official-tail adequacy remain unverified.",
+      "affected_claims_or_gates": "Prior plausibility",
+      "owner": "Rei lead / Research Owners",
+      "likelihood": "not quantified",
+      "status": "MITIGATED BY CLAIM RESTRICTION",
+      "trigger": "Prior plausibility",
+      "evidence": "03_bayesian_prior_plausibility.md",
+      "remaining_uncertainty": "Original severity retained. Disposition applies only to the restricted development/finite-benchmark claim; excluded claims remain unproved."
+    },
+    {
+      "risk_id": "R17",
+      "severity": "critical",
+      "statement": "Final owner approval absent",
+      "disposition": "Owner authorization for final protocol/test/confirmatory work absent. This is a governance gate, not permission supplied by scientific review.",
+      "affected_claims_or_gates": "Governance",
+      "owner": "Rei lead / Research Owners",
+      "likelihood": "not quantified",
+      "status": "STILL BLOCKED",
+      "trigger": "Governance",
+      "evidence": "11_prelock_recommendation.md",
+      "remaining_uncertainty": "Original severity retained. Disposition applies only to the restricted development/finite-benchmark claim; excluded claims remain unproved."
+    }
+  ],
+  "unresolved": [
+    "Highrho practical/sampling reliability",
+    "Futureendpointprecision andofficialintegrityaudit",
+    "Officialcutofftransport/conformalscore exchangeability",
+    "Workingprior/domainelicitation",
+    "Smallcalibration/tuningprecision and comparatorattribution",
+    "Secondaryskew/degenerateinference andfullpipelinevariance",
+    "Novelty/redistribution rights",
+    "FinalResearchOwnerauthorization"
+  ],
+  "requested_decision": "Review B. REVISE AGAIN and a new prospective bounded development plan; no current-plan extension or protocol/test/confirmatory authorization is inferred.",
+  "return_to_parent": "COMPLETE",
+  "return_interpretation": "Requested development evidence return complete; scientific state PROTOCOL_DRAFTED and mandatory readiness FAIL/BLOCKED remain.",
+  "worker_contribution": "Controlled GPT6LUNAMAX precision/inference/pipeline implementation and adversarial review; SOL independently verified all material mathematics.",
+  "deviations": [
+    "Anchoredv04prior adaptationafterv03calibrationexposure, beforev04newscience; no favorablecalibrationscoreselection.",
+    "Fourcanonicalpreparationfailuresretained; sameplannedfitsstartedonlyafterhelperrepair asinfra1.",
+    "600validationrawrecordsserializedwithoutresampling; originalfailurebytearchive retained.",
+    "Analysis-only correctionsreviewedbeforeanalysis; sources/commitsrecorded; thresholds/seedsunchanged."
+  ]
+}

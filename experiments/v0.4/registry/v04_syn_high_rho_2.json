@@ -1,0 +1,304 @@
+{
+  "created_at": "2026-10-08T14:36:51.110952+00:00",
+  "git_commit": "6aab2089eec1f0ee0818bbb56960ce0677e767fd",
+  "source_dirty": false,
+  "executed_source_sha256": {
+    "src/rp001/__init__.py": "77b845af67e6f3d0b795acb93e4e651143b49fd33c7d437c774b5704a4d384f4",
+    "src/rp001/comparator_pilot.py": "ec2777d4ce2f498eac5b7a55f29ff5635364bd9aded09a1ba70ad4d1774a5b66",
+    "src/rp001/comparators.py": "37d8e96ab23f7e3525010ed6aa412a2ff89dd622a4e3d0cceb9d215a8c4e41aa",
+    "src/rp001/data.py": "3a0ef34d51468ad05279cbcaeb9e3ab8075134f75771c4375136f4167b512170",
+    "src/rp001/development_data_audit.py": "5697fc66c254637547499f9a88e2ced5472a6de176bb4a26972975710ea16f92",
+    "src/rp001/environment.py": "bf3d2e6a20f3a7673cf1499f7ea7adce3b7952eb3c5d48f2b6a44821f51ca2fd",
+    "src/rp001/metrics.py": "8eb710c14c35ab556ee52448a2a85e30203d40247f7627bdcd9df6add1a88531",
+    "src/rp001/model.py": "52627ae6f49311c3bb837ed3685a4d93b7e9a4d059fe08d6b892c4abab60d399",
+    "src/rp001/pilot.py": "40ab3eaef48aa82f59c5234715268f2f3f37764f484ab89456baef39bcd940c1",
+    "src/rp001/prediction.py": "f54fafe5875a8c7e009ee3c392cbf75c9e9d041646521e9a4123dd5e21b65d9b",
+    "src/rp001/predictive_analysis.py": "a4346a6c63101d8bef4f1f8f98298002e50ea5718e3098e058498953a31366fc",
+    "src/rp001/statistical_design.py": "093b66b5f2f990295a8579e23efa1ff0be4b48f1b00c7c3b3b473741d7451a9c",
+    "src/rp001/v04_analysis.py": "0da0a7087a6697df4035bcb3077561637322fc2783892d975ab55e9153faeb45",
+    "src/rp001/v04_common.py": "6c353d14140d9af2c1a20935751fb0218b8e7312da8490f3a743d92bc5e11933",
+    "src/rp001/v04_inference.py": "dc05f013b9c9bf05463269b4bd6c6ece74505467e5a4c2125a0ed0690ded1d64",
+    "src/rp001/v04_inference_run.py": "36be33a5637e9b0c0d7f0ea8164b3a7f70beb0c54a2cbb1c71ba0aa35def7af1",
+    "src/rp001/v04_model.py": "45dc8556475d4822e7fc2f17236fb1b2c04d7dafe0d9aa0548021d9abd1fa23e",
+    "src/rp001/v04_pipeline.py": "0b75f708359915f8a197c429a49f2e096c050a21879dbc6e703253155388e569",
+    "src/rp001/v04_precision.py": "396a5f55ca2e9c51fd21f02f50e59c57be7aedd38321a4a3123b0b955f1fde33",
+    "src/rp001/v04_precision_validation.py": "47c5f33e1deb98bf3872f18fbe23f669783819c6180a2fdaf3595c6a024c4a7f",
+    "src/rp001/v04_predict.py": "412f3f59fe823ffa7f1de048c7c7b68a2777bc83a400f40b6a717db22a1604e2",
+    "src/rp001/v04_run.py": "82bba7e2e570601ecd6c1e4d384aa6b9c9e423ebfe42f72f24f0b41926f12a37"
+  },
+  "plan_sha256": "0c6a7e1e924636cec6196295eac19b29a6bd7faa85e18b081549f8287ab0b99b",
+  "environment_fingerprint": "f57b00a67e9d67b2920791bfddc8dc812dbdeb9306588a26557dfd6be15f826c",
+  "dataset_sha256": "963b5e22825b34d8b21c69e1aeb4af3e647050eb672ee8834ba4b5d91d2de0f8",
+  "confirmatory": false,
+  "official_test_access": false,
+  "run_id": "v04_syn_high_rho_2",
+  "configuration": {
+    "run_id": "v04_syn_high_rho_2",
+    "kind": "synthetic",
+    "regime": "high_rho",
+    "n": 56,
+    "assessment_n": 20,
+    "data_seed": 42102,
+    "assessment_seed": 43102,
+    "seed": 44102,
+    "draws": 2000,
+    "prior": "anchored_v04"
+  },
+  "status": "completed",
+  "data_sha256": "5ef2c3a5db868a636f8cbb6bfed37a72347a7f0270c58955a4f3440d87ca6cc5",
+  "diagnostics": {
+    "rhat_max": 1.004808813725403,
+    "bulk_ess_min": 669.9254093212987,
+    "tail_ess_min": 850.1530359460938,
+    "divergences": 0,
+    "bfmi": [
+      0.7964331931613071,
+      0.8305414970922893,
+      0.81098978946149,
+      0.9048561018009331
+    ],
+    "maxdepth_fraction": 0.0,
+    "sample_stat_keys": [
+      "depth",
+      "maxdepth_reached",
+      "step_size",
+      "transformation_update_id",
+      "step_size_bar",
+      "mean_tree_accept",
+      "mean_tree_accept_sym",
+      "n_steps",
+      "max_energy_error",
+      "tuning",
+      "index_in_trajectory",
+      "logp",
+      "energy",
+      "energy_error",
+      "fisher_distance",
+      "transformation_index",
+      "diverging",
+      "divergence_draw",
+      "divergence_message",
+      "divergence_energy_error"
+    ],
+    "acceptance": "PASS",
+    "failures": [],
+    "auxiliary_rhat_max": 1.0046078298087602,
+    "auxiliary_bulk_min": 680.1236572543038,
+    "auxiliary_tail_min": 872.3750087392626
+  },
+  "recovery": {
+    "parameters": [
+      {
+        "parameter": "beta(0,)",
+        "truth": 4.605170185988092,
+        "mean": 4.618053156258366,
+        "sd": 0.04235225797040946,
+        "equal_tail95": [
+          4.535143266402787,
+          4.701506997946281
+        ],
+        "truth_in95": true,
+        "standardized_mean_error": 0.3041861493966914
+      },
+      {
+        "parameter": "beta(1,)",
+        "truth": -0.4,
+        "mean": -0.5351594505215557,
+        "sd": 0.09283181285513323,
+        "equal_tail95": [
+          -0.7174240620662151,
+          -0.3489630537458665
+        ],
+        "truth_in95": true,
+        "standardized_mean_error": -1.4559604769592935
+      },
+      {
+        "parameter": "gamma(0,)",
+        "truth": -0.35,
+        "mean": -0.43636929260545027,
+        "sd": 0.11779043905077077,
+        "equal_tail95": [
+          -0.6967379128010585,
+          -0.24190639490199045
+        ],
+        "truth_in95": true,
+        "standardized_mean_error": -0.7332453576153397
+      },
+      {
+        "parameter": "gamma(1,)",
+        "truth": 0.15,
+        "mean": 0.01312650170969724,
+        "sd": 0.20671153781054707,
+        "equal_tail95": [
+          -0.4129263766400211,
+          0.4176769953644466
+        ],
+        "truth_in95": true,
+        "standardized_mean_error": -0.6621473563597041
+      },
+      {
+        "parameter": "Gamma(0, 0)",
+        "truth": 0.1,
+        "mean": 0.12795814680176684,
+        "sd": 0.07953517059657925,
+        "equal_tail95": [
+          -0.026534329016557088,
+          0.28277968751706173
+        ],
+        "truth_in95": true,
+        "standardized_mean_error": 0.35151929130292575
+      },
+      {
+        "parameter": "Gamma(0, 1)",
+        "truth": 0.5,
+        "mean": 0.3312380819557538,
+        "sd": 0.1265199823789786,
+        "equal_tail95": [
+          0.08205246275896796,
+          0.5825800152917767
+        ],
+        "truth_in95": true,
+        "standardized_mean_error": -1.3338756050307996
+      },
+      {
+        "parameter": "Gamma(1, 0)",
+        "truth": -0.1,
+        "mean": -0.07711191735821761,
+        "sd": 0.06643834972876442,
+        "equal_tail95": [
+          -0.20708140671515188,
+          0.05146391989798816
+        ],
+        "truth_in95": true,
+        "standardized_mean_error": 0.3445010710715023
+      },
+      {
+        "parameter": "Gamma(1, 1)",
+        "truth": -0.25,
+        "mean": -0.29079853059971283,
+        "sd": 0.10703779509713189,
+        "equal_tail95": [
+          -0.5010848528720211,
+          -0.08338624007600492
+        ],
+        "truth_in95": true,
+        "standardized_mean_error": -0.3811600431669023
+      },
+      {
+        "parameter": "tau(0,)",
+        "truth": 0.45,
+        "mean": 0.45103144603176476,
+        "sd": 0.0753675502484913,
+        "equal_tail95": [
+          0.3092990443029544,
+          0.6056313636586007
+        ],
+        "truth_in95": true,
+        "standardized_mean_error": 0.013685545415288276
+      },
+      {
+        "parameter": "tau(1,)",
+        "truth": 0.3,
+        "mean": 0.19468586924516412,
+        "sd": 0.10955127945062551,
+        "equal_tail95": [
+          0.009680117441871241,
+          0.4101322400282885
+        ],
+        "truth_in95": true,
+        "standardized_mean_error": -0.9613226909166377
+      },
+      {
+        "parameter": "r_g()",
+        "truth": 0.2,
+        "mean": 0.21724733602535262,
+        "sd": 0.3135339011772113,
+        "equal_tail95": [
+          -0.501323351610205,
+          0.7556465787497507
+        ],
+        "truth_in95": true,
+        "standardized_mean_error": 0.05500947731838513
+      },
+      {
+        "parameter": "sigma_z()",
+        "truth": 0.3,
+        "mean": 0.38243412547524536,
+        "sd": 0.06263475669070097,
+        "equal_tail95": [
+          0.26176664191876076,
+          0.5038942895654902
+        ],
+        "truth_in95": true,
+        "standardized_mean_error": 1.316108337138059
+      },
+      {
+        "parameter": "sigma_r()",
+        "truth": 0.25,
+        "mean": 0.16816051931122436,
+        "sd": 0.04403073273381061,
+        "equal_tail95": [
+          0.05607491832089259,
+          0.23962458848742962
+        ],
+        "truth_in95": false,
+        "standardized_mean_error": -1.8586899560254693
+      },
+      {
+        "parameter": "rho()",
+        "truth": 0.95,
+        "mean": 0.9643710576648801,
+        "sd": 0.01302639825454018,
+        "equal_tail95": [
+          0.9307311263602689,
+          0.9811686027577612
+        ],
+        "truth_in95": true,
+        "standardized_mean_error": 1.10322572548949
+      }
+    ],
+    "max_abs_standardized_mean_error": 1.8586899560254693,
+    "gross_recovery_flag": false,
+    "interpretation": "One of four fixed-truth replicates per regime; not SBC. Posterior interval recovery and gross standardized errors are diagnostic, not identifiability proof."
+  },
+  "truth": {
+    "beta": [
+      4.605170185988092,
+      -0.4
+    ],
+    "gamma": [
+      -0.35,
+      0.15
+    ],
+    "Gamma": [
+      [
+        0.1,
+        0.5
+      ],
+      [
+        -0.1,
+        -0.25
+      ]
+    ],
+    "tau": [
+      0.45,
+      0.3
+    ],
+    "r_g": 0.2,
+    "sigma_z": 0.3,
+    "sigma_r": 0.25,
+    "rho": 0.95
+  },
+  "posterior_sha256": "24226c7d8db84413a95b33877cea9c4d7c71b32b69b89b0d80ab4dbe2c444da7",
+  "n_engines": 56,
+  "n_distinct_engines": 56,
+  "wall_seconds": 58.879646100016544,
+  "cpu_seconds": 72.5,
+  "peak_rss_bytes": 506540032,
+  "artifacts_sha256": {
+    "experiments/v0.4/fits/v04_syn_high_rho_2.nc": "24226c7d8db84413a95b33877cea9c4d7c71b32b69b89b0d80ab4dbe2c444da7",
+    "experiments/v0.4/fits/v04_syn_high_rho_2_assessment.npz": "0d9f42d6e9d88ec4dc586ae0be7f8afc5725552d31847bd8afdd3998e1f5e5db",
+    "experiments/v0.4/fits/v04_syn_high_rho_2_data.npz": "5ef2c3a5db868a636f8cbb6bfed37a72347a7f0270c58955a4f3440d87ca6cc5",
+    "experiments/v0.4/fits/v04_syn_high_rho_2_summary.csv": "786bf4b3e4cb0ba62f0b312290097fbf3250ebfc9e1e457d3dc634c2f6521842"
+  }
+}

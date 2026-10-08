@@ -1,0 +1,399 @@
+{
+  "status": "PASS",
+  "method": "Direct SOL arithmetic recomputation, exact known-target quantiles, complete identity counts, Git blob hashing and old-evidence custody checks; no additional sampling",
+  "mcse_groups": [
+    {
+      "rho": 0.0,
+      "p": 0.05,
+      "batch": 250,
+      "ratio": 0.953072947755873,
+      "coverage": 0.955
+    },
+    {
+      "rho": 0.0,
+      "p": 0.05,
+      "batch": 500,
+      "ratio": 0.9487100459704463,
+      "coverage": 0.945
+    },
+    {
+      "rho": 0.0,
+      "p": 0.5,
+      "batch": 250,
+      "ratio": 0.9795984572186169,
+      "coverage": 0.94
+    },
+    {
+      "rho": 0.0,
+      "p": 0.5,
+      "batch": 500,
+      "ratio": 0.972402050780349,
+      "coverage": 0.96
+    },
+    {
+      "rho": 0.0,
+      "p": 0.95,
+      "batch": 250,
+      "ratio": 0.9892838935289556,
+      "coverage": 0.95
+    },
+    {
+      "rho": 0.0,
+      "p": 0.95,
+      "batch": 500,
+      "ratio": 0.9839487304757563,
+      "coverage": 0.94
+    },
+    {
+      "rho": 0.8,
+      "p": 0.05,
+      "batch": 250,
+      "ratio": 0.9202571408598377,
+      "coverage": 0.97
+    },
+    {
+      "rho": 0.8,
+      "p": 0.05,
+      "batch": 500,
+      "ratio": 0.910360608720044,
+      "coverage": 0.96
+    },
+    {
+      "rho": 0.8,
+      "p": 0.5,
+      "batch": 250,
+      "ratio": 0.9280145004466579,
+      "coverage": 0.97
+    },
+    {
+      "rho": 0.8,
+      "p": 0.5,
+      "batch": 500,
+      "ratio": 0.9217102581494991,
+      "coverage": 0.96
+    },
+    {
+      "rho": 0.8,
+      "p": 0.95,
+      "batch": 250,
+      "ratio": 0.9741756726104279,
+      "coverage": 0.955
+    },
+    {
+      "rho": 0.8,
+      "p": 0.95,
+      "batch": 500,
+      "ratio": 0.9742125475259152,
+      "coverage": 0.95
+    },
+    {
+      "rho": 0.95,
+      "p": 0.05,
+      "batch": 250,
+      "ratio": 0.9627249275324588,
+      "coverage": 0.95
+    },
+    {
+      "rho": 0.95,
+      "p": 0.05,
+      "batch": 500,
+      "ratio": 0.9323570606666154,
+      "coverage": 0.95
+    },
+    {
+      "rho": 0.95,
+      "p": 0.5,
+      "batch": 250,
+      "ratio": 0.9761350730357593,
+      "coverage": 0.95
+    },
+    {
+      "rho": 0.95,
+      "p": 0.5,
+      "batch": 500,
+      "ratio": 0.9472900035895099,
+      "coverage": 0.945
+    },
+    {
+      "rho": 0.95,
+      "p": 0.95,
+      "batch": 250,
+      "ratio": 1.0252184040964292,
+      "coverage": 0.925
+    },
+    {
+      "rho": 0.95,
+      "p": 0.95,
+      "batch": 500,
+      "ratio": 0.9988368986543401,
+      "coverage": 0.925
+    }
+  ],
+  "oc_replicates_recounted": 4000,
+  "source_snapshot_checks": [
+    {
+      "record": "v04_broader.json",
+      "commit": "6aab2089eec1f0ee0818bbb56960ce0677e767fd",
+      "source_file_count": 22,
+      "split_manifest_match": true
+    },
+    {
+      "record": "v04_contamination.json",
+      "commit": "6aab2089eec1f0ee0818bbb56960ce0677e767fd",
+      "source_file_count": 22,
+      "split_manifest_match": true
+    },
+    {
+      "record": "v04_lead_analysis.json",
+      "commit": "87a0083314daafb79f7ae3c67e23abd5979bc82a",
+      "source_file_count": 22,
+      "split_manifest_match": true
+    },
+    {
+      "record": "v04_main_r1.json",
+      "commit": "003ab72a7867ee100554ed2f64785140107c1ac0",
+      "source_file_count": 22,
+      "split_manifest_match": true
+    },
+    {
+      "record": "v04_main_r2.json",
+      "commit": "003ab72a7867ee100554ed2f64785140107c1ac0",
+      "source_file_count": 22,
+      "split_manifest_match": true
+    },
+    {
+      "record": "v04_main_r3.json",
+      "commit": "6aab2089eec1f0ee0818bbb56960ce0677e767fd",
+      "source_file_count": 22,
+      "split_manifest_match": true
+    },
+    {
+      "record": "v04_oracle_e11.json",
+      "commit": "6aab2089eec1f0ee0818bbb56960ce0677e767fd",
+      "source_file_count": 22,
+      "split_manifest_match": true
+    },
+    {
+      "record": "v04_oracle_e61.json",
+      "commit": "6aab2089eec1f0ee0818bbb56960ce0677e767fd",
+      "source_file_count": 22,
+      "split_manifest_match": true
+    },
+    {
+      "record": "v04_oracle_e86.json",
+      "commit": "6aab2089eec1f0ee0818bbb56960ce0677e767fd",
+      "source_file_count": 22,
+      "split_manifest_match": true
+    },
+    {
+      "record": "v04_pipeline_1_alternate.json",
+      "commit": "6aab2089eec1f0ee0818bbb56960ce0677e767fd",
+      "source_file_count": 22,
+      "split_manifest_match": true
+    },
+    {
+      "record": "v04_pipeline_1_canonical.json",
+      "commit": "6aab2089eec1f0ee0818bbb56960ce0677e767fd",
+      "source_file_count": 22,
+      "split_manifest_match": true
+    },
+    {
+      "record": "v04_pipeline_1_canonical_infra1.json",
+      "commit": "7a824ed0fe8346d3d65412de042dcaf2055894c1",
+      "source_file_count": 22,
+      "split_manifest_match": true
+    },
+    {
+      "record": "v04_pipeline_2_alternate.json",
+      "commit": "6aab2089eec1f0ee0818bbb56960ce0677e767fd",
+      "source_file_count": 22,
+      "split_manifest_match": true
+    },
+    {
+      "record": "v04_pipeline_2_canonical.json",
+      "commit": "6aab2089eec1f0ee0818bbb56960ce0677e767fd",
+      "source_file_count": 22,
+      "split_manifest_match": true
+    },
+    {
+      "record": "v04_pipeline_2_canonical_infra1.json",
+      "commit": "7a824ed0fe8346d3d65412de042dcaf2055894c1",
+      "source_file_count": 22,
+      "split_manifest_match": true
+    },
+    {
+      "record": "v04_pipeline_3_alternate.json",
+      "commit": "6aab2089eec1f0ee0818bbb56960ce0677e767fd",
+      "source_file_count": 22,
+      "split_manifest_match": true
+    },
+    {
+      "record": "v04_pipeline_3_canonical.json",
+      "commit": "6aab2089eec1f0ee0818bbb56960ce0677e767fd",
+      "source_file_count": 22,
+      "split_manifest_match": true
+    },
+    {
+      "record": "v04_pipeline_3_canonical_infra1.json",
+      "commit": "7a824ed0fe8346d3d65412de042dcaf2055894c1",
+      "source_file_count": 22,
+      "split_manifest_match": true
+    },
+    {
+      "record": "v04_pipeline_4_alternate.json",
+      "commit": "7a824ed0fe8346d3d65412de042dcaf2055894c1",
+      "source_file_count": 22,
+      "split_manifest_match": true
+    },
+    {
+      "record": "v04_pipeline_4_canonical.json",
+      "commit": "6aab2089eec1f0ee0818bbb56960ce0677e767fd",
+      "source_file_count": 22,
+      "split_manifest_match": true
+    },
+    {
+      "record": "v04_pipeline_4_canonical_infra1.json",
+      "commit": "7a824ed0fe8346d3d65412de042dcaf2055894c1",
+      "source_file_count": 22,
+      "split_manifest_match": true
+    },
+    {
+      "record": "v04_precision_validation.json",
+      "commit": "ba44bc1c3e4a155a704eec9afce932757b6d4fa9",
+      "source_file_count": 22,
+      "split_manifest_match": true
+    },
+    {
+      "record": "v04_rho_zero.json",
+      "commit": "6aab2089eec1f0ee0818bbb56960ce0677e767fd",
+      "source_file_count": 22,
+      "split_manifest_match": true
+    },
+    {
+      "record": "v04_syn_confounded_1.json",
+      "commit": "6aab2089eec1f0ee0818bbb56960ce0677e767fd",
+      "source_file_count": 22,
+      "split_manifest_match": true
+    },
+    {
+      "record": "v04_syn_confounded_2.json",
+      "commit": "6aab2089eec1f0ee0818bbb56960ce0677e767fd",
+      "source_file_count": 22,
+      "split_manifest_match": true
+    },
+    {
+      "record": "v04_syn_confounded_3.json",
+      "commit": "6aab2089eec1f0ee0818bbb56960ce0677e767fd",
+      "source_file_count": 22,
+      "split_manifest_match": true
+    },
+    {
+      "record": "v04_syn_confounded_4.json",
+      "commit": "6aab2089eec1f0ee0818bbb56960ce0677e767fd",
+      "source_file_count": 22,
+      "split_manifest_match": true
+    },
+    {
+      "record": "v04_syn_high_rho_1.json",
+      "commit": "6aab2089eec1f0ee0818bbb56960ce0677e767fd",
+      "source_file_count": 22,
+      "split_manifest_match": true
+    },
+    {
+      "record": "v04_syn_high_rho_2.json",
+      "commit": "6aab2089eec1f0ee0818bbb56960ce0677e767fd",
+      "source_file_count": 22,
+      "split_manifest_match": true
+    },
+    {
+      "record": "v04_syn_high_rho_3.json",
+      "commit": "6aab2089eec1f0ee0818bbb56960ce0677e767fd",
+      "source_file_count": 22,
+      "split_manifest_match": true
+    },
+    {
+      "record": "v04_syn_high_rho_4.json",
+      "commit": "6aab2089eec1f0ee0818bbb56960ce0677e767fd",
+      "source_file_count": 22,
+      "split_manifest_match": true
+    },
+    {
+      "record": "v04_syn_regular_1.json",
+      "commit": "6aab2089eec1f0ee0818bbb56960ce0677e767fd",
+      "source_file_count": 22,
+      "split_manifest_match": true
+    },
+    {
+      "record": "v04_syn_regular_2.json",
+      "commit": "6aab2089eec1f0ee0818bbb56960ce0677e767fd",
+      "source_file_count": 22,
+      "split_manifest_match": true
+    },
+    {
+      "record": "v04_syn_regular_3.json",
+      "commit": "6aab2089eec1f0ee0818bbb56960ce0677e767fd",
+      "source_file_count": 22,
+      "split_manifest_match": true
+    },
+    {
+      "record": "v04_syn_regular_4.json",
+      "commit": "6aab2089eec1f0ee0818bbb56960ce0677e767fd",
+      "source_file_count": 22,
+      "split_manifest_match": true
+    },
+    {
+      "record": "v04_syn_weak_1.json",
+      "commit": "6aab2089eec1f0ee0818bbb56960ce0677e767fd",
+      "source_file_count": 22,
+      "split_manifest_match": true
+    },
+    {
+      "record": "v04_syn_weak_2.json",
+      "commit": "6aab2089eec1f0ee0818bbb56960ce0677e767fd",
+      "source_file_count": 22,
+      "split_manifest_match": true
+    },
+    {
+      "record": "v04_syn_weak_3.json",
+      "commit": "6aab2089eec1f0ee0818bbb56960ce0677e767fd",
+      "source_file_count": 22,
+      "split_manifest_match": true
+    },
+    {
+      "record": "v04_syn_weak_4.json",
+      "commit": "6aab2089eec1f0ee0818bbb56960ce0677e767fd",
+      "source_file_count": 22,
+      "split_manifest_match": true
+    }
+  ],
+  "historical_immutable_files_verified": 97,
+  "calibration_engine_ids": [
+    11,
+    16,
+    25,
+    26,
+    31,
+    33,
+    34,
+    39,
+    40,
+    41,
+    45,
+    50,
+    51,
+    55,
+    56,
+    59,
+    61,
+    62,
+    63,
+    66,
+    72,
+    75,
+    79,
+    85,
+    86
+  ],
+  "n_quantiles_verified": 75,
+  "official_test_access": false
+}

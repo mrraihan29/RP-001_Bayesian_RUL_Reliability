@@ -12,3 +12,7 @@
 ## Development return v0.3 — 2026-10-08
 
 Owner StageA approved; final StageB absent. Development completed; REVISE AGAIN after predictive MCSE.728972>.5cycle. LocalCPU used; test covariates/labels untouched. Detailed decisions/deviations/risks: docs/v0.3/08_risks_assumptions_decisions.md.
+
+## Targeted remediation return v0.4 — 2026-10-08
+
+Owner-directed finite-benchmark estimand and unchanged question/90%IS/Bayesian-versusCQR. Frozen33-fit plan complete; all25 predictive precision PASS, one high-rho convergence FAIL; B. REVISE AGAIN. Two infrastructure-only campaigns, all failures retained. No official sensors/labels/predictions/confirmatory work or protocol lock. Direct SOL mathematics and controlled LUNA workers documented in docs/v0.4; see report11 for next prospective owner decision.

@@ -1,0 +1,304 @@
+{
+  "created_at": "2026-10-08T14:41:15.558640+00:00",
+  "git_commit": "6aab2089eec1f0ee0818bbb56960ce0677e767fd",
+  "source_dirty": false,
+  "executed_source_sha256": {
+    "src/rp001/__init__.py": "77b845af67e6f3d0b795acb93e4e651143b49fd33c7d437c774b5704a4d384f4",
+    "src/rp001/comparator_pilot.py": "ec2777d4ce2f498eac5b7a55f29ff5635364bd9aded09a1ba70ad4d1774a5b66",
+    "src/rp001/comparators.py": "37d8e96ab23f7e3525010ed6aa412a2ff89dd622a4e3d0cceb9d215a8c4e41aa",
+    "src/rp001/data.py": "3a0ef34d51468ad05279cbcaeb9e3ab8075134f75771c4375136f4167b512170",
+    "src/rp001/development_data_audit.py": "5697fc66c254637547499f9a88e2ced5472a6de176bb4a26972975710ea16f92",
+    "src/rp001/environment.py": "bf3d2e6a20f3a7673cf1499f7ea7adce3b7952eb3c5d48f2b6a44821f51ca2fd",
+    "src/rp001/metrics.py": "8eb710c14c35ab556ee52448a2a85e30203d40247f7627bdcd9df6add1a88531",
+    "src/rp001/model.py": "52627ae6f49311c3bb837ed3685a4d93b7e9a4d059fe08d6b892c4abab60d399",
+    "src/rp001/pilot.py": "40ab3eaef48aa82f59c5234715268f2f3f37764f484ab89456baef39bcd940c1",
+    "src/rp001/prediction.py": "f54fafe5875a8c7e009ee3c392cbf75c9e9d041646521e9a4123dd5e21b65d9b",
+    "src/rp001/predictive_analysis.py": "a4346a6c63101d8bef4f1f8f98298002e50ea5718e3098e058498953a31366fc",
+    "src/rp001/statistical_design.py": "093b66b5f2f990295a8579e23efa1ff0be4b48f1b00c7c3b3b473741d7451a9c",
+    "src/rp001/v04_analysis.py": "0da0a7087a6697df4035bcb3077561637322fc2783892d975ab55e9153faeb45",
+    "src/rp001/v04_common.py": "6c353d14140d9af2c1a20935751fb0218b8e7312da8490f3a743d92bc5e11933",
+    "src/rp001/v04_inference.py": "dc05f013b9c9bf05463269b4bd6c6ece74505467e5a4c2125a0ed0690ded1d64",
+    "src/rp001/v04_inference_run.py": "36be33a5637e9b0c0d7f0ea8164b3a7f70beb0c54a2cbb1c71ba0aa35def7af1",
+    "src/rp001/v04_model.py": "45dc8556475d4822e7fc2f17236fb1b2c04d7dafe0d9aa0548021d9abd1fa23e",
+    "src/rp001/v04_pipeline.py": "0b75f708359915f8a197c429a49f2e096c050a21879dbc6e703253155388e569",
+    "src/rp001/v04_precision.py": "396a5f55ca2e9c51fd21f02f50e59c57be7aedd38321a4a3123b0b955f1fde33",
+    "src/rp001/v04_precision_validation.py": "47c5f33e1deb98bf3872f18fbe23f669783819c6180a2fdaf3595c6a024c4a7f",
+    "src/rp001/v04_predict.py": "412f3f59fe823ffa7f1de048c7c7b68a2777bc83a400f40b6a717db22a1604e2",
+    "src/rp001/v04_run.py": "82bba7e2e570601ecd6c1e4d384aa6b9c9e423ebfe42f72f24f0b41926f12a37"
+  },
+  "plan_sha256": "0c6a7e1e924636cec6196295eac19b29a6bd7faa85e18b081549f8287ab0b99b",
+  "environment_fingerprint": "f57b00a67e9d67b2920791bfddc8dc812dbdeb9306588a26557dfd6be15f826c",
+  "dataset_sha256": "963b5e22825b34d8b21c69e1aeb4af3e647050eb672ee8834ba4b5d91d2de0f8",
+  "confirmatory": false,
+  "official_test_access": false,
+  "run_id": "v04_syn_confounded_2",
+  "configuration": {
+    "run_id": "v04_syn_confounded_2",
+    "kind": "synthetic",
+    "regime": "confounded",
+    "n": 56,
+    "assessment_n": 20,
+    "data_seed": 42302,
+    "assessment_seed": 43302,
+    "seed": 44302,
+    "draws": 2000,
+    "prior": "anchored_v04"
+  },
+  "status": "completed",
+  "data_sha256": "666e7ff1605983f7d18690af7cd5fbc3205a3c770cfc113353e83138fc84f4c3",
+  "diagnostics": {
+    "rhat_max": 1.0067400890897011,
+    "bulk_ess_min": 1486.8518641527664,
+    "tail_ess_min": 1675.9371608695951,
+    "divergences": 0,
+    "bfmi": [
+      0.9362380131763072,
+      0.8782359015451107,
+      0.9458172250547088,
+      0.9018766383231741
+    ],
+    "maxdepth_fraction": 0.0,
+    "sample_stat_keys": [
+      "depth",
+      "maxdepth_reached",
+      "step_size",
+      "transformation_update_id",
+      "step_size_bar",
+      "mean_tree_accept",
+      "mean_tree_accept_sym",
+      "n_steps",
+      "max_energy_error",
+      "tuning",
+      "index_in_trajectory",
+      "logp",
+      "energy",
+      "energy_error",
+      "fisher_distance",
+      "transformation_index",
+      "diverging",
+      "divergence_draw",
+      "divergence_message",
+      "divergence_energy_error"
+    ],
+    "acceptance": "PASS",
+    "failures": [],
+    "auxiliary_rhat_max": 1.0014472336024316,
+    "auxiliary_bulk_min": 2877.530485694035,
+    "auxiliary_tail_min": 3374.6446840994445
+  },
+  "recovery": {
+    "parameters": [
+      {
+        "parameter": "beta(0,)",
+        "truth": 4.605170185988092,
+        "mean": 4.625458128201845,
+        "sd": 0.042778836938499404,
+        "equal_tail95": [
+          4.546420512115621,
+          4.722896293633554
+        ],
+        "truth_in95": true,
+        "standardized_mean_error": 0.47425184193108694
+      },
+      {
+        "parameter": "beta(1,)",
+        "truth": -0.4,
+        "mean": -0.3561161275495133,
+        "sd": 0.19843755506195063,
+        "equal_tail95": [
+          -0.7473547451014884,
+          0.05353594078703715
+        ],
+        "truth_in95": true,
+        "standardized_mean_error": 0.22114701240290202
+      },
+      {
+        "parameter": "gamma(0,)",
+        "truth": -0.1,
+        "mean": -0.0948787401429232,
+        "sd": 0.06596435531623454,
+        "equal_tail95": [
+          -0.2284845335795445,
+          0.03707920019439814
+        ],
+        "truth_in95": true,
+        "standardized_mean_error": 0.07763677568779943
+      },
+      {
+        "parameter": "gamma(1,)",
+        "truth": 0.05,
+        "mean": 0.16415319802299144,
+        "sd": 0.22241155002445492,
+        "equal_tail95": [
+          -0.29245541577231193,
+          0.5911333446249958
+        ],
+        "truth_in95": true,
+        "standardized_mean_error": 0.5132521130779399
+      },
+      {
+        "parameter": "Gamma(0, 0)",
+        "truth": 0.1,
+        "mean": 0.08910861427577176,
+        "sd": 0.09068292388621209,
+        "equal_tail95": [
+          -0.09166558628952585,
+          0.2677922065569925
+        ],
+        "truth_in95": true,
+        "standardized_mean_error": -0.12010404227696317
+      },
+      {
+        "parameter": "Gamma(0, 1)",
+        "truth": 1.2,
+        "mean": 0.9950388742303117,
+        "sd": 0.13913920631017718,
+        "equal_tail95": [
+          0.713997637805588,
+          1.266057612165013
+        ],
+        "truth_in95": true,
+        "standardized_mean_error": -1.4730652215506899
+      },
+      {
+        "parameter": "Gamma(1, 0)",
+        "truth": -0.1,
+        "mean": -0.11789465702316768,
+        "sd": 0.11095182069155114,
+        "equal_tail95": [
+          -0.33461915513384377,
+          0.09642822742992578
+        ],
+        "truth_in95": true,
+        "standardized_mean_error": -0.1612831309268486
+      },
+      {
+        "parameter": "Gamma(1, 1)",
+        "truth": -0.8,
+        "mean": -0.8015028253362382,
+        "sd": 0.1639293346843553,
+        "equal_tail95": [
+          -1.1288923279096792,
+          -0.47450193393232865
+        ],
+        "truth_in95": true,
+        "standardized_mean_error": -0.00916751927976657
+      },
+      {
+        "parameter": "tau(0,)",
+        "truth": 0.45,
+        "mean": 0.4523950275218502,
+        "sd": 0.07930293588420312,
+        "equal_tail95": [
+          0.2976162667590337,
+          0.612875501685783
+        ],
+        "truth_in95": true,
+        "standardized_mean_error": 0.03020099439127133
+      },
+      {
+        "parameter": "tau(1,)",
+        "truth": 0.3,
+        "mean": 0.16641688143316233,
+        "sd": 0.11778242368044367,
+        "equal_tail95": [
+          0.00618488607867775,
+          0.42995094724743316
+        ],
+        "truth_in95": true,
+        "standardized_mean_error": -1.1341515515868732
+      },
+      {
+        "parameter": "r_g()",
+        "truth": 0.2,
+        "mean": 0.16739649784456667,
+        "sd": 0.40718737159547647,
+        "equal_tail95": [
+          -0.6963229542432209,
+          0.8237824952130529
+        ],
+        "truth_in95": true,
+        "standardized_mean_error": -0.08007002286854699
+      },
+      {
+        "parameter": "sigma_z()",
+        "truth": 0.6,
+        "mean": 0.6052258437972506,
+        "sd": 0.0324684934586268,
+        "equal_tail95": [
+          0.5498102993080491,
+          0.675387364808798
+        ],
+        "truth_in95": true,
+        "standardized_mean_error": 0.16095122503634884
+      },
+      {
+        "parameter": "sigma_r()",
+        "truth": 0.15,
+        "mean": 0.13706714348044027,
+        "sd": 0.025480722012910358,
+        "equal_tail95": [
+          0.06789856536264632,
+          0.17636629976807744
+        ],
+        "truth_in95": true,
+        "standardized_mean_error": -0.5075545548908312
+      },
+      {
+        "parameter": "rho()",
+        "truth": 0.8,
+        "mean": 0.8061967123629735,
+        "sd": 0.02038244682511165,
+        "equal_tail95": [
+          0.766253358523528,
+          0.8463607400557416
+        ],
+        "truth_in95": true,
+        "standardized_mean_error": 0.30402200560822673
+      }
+    ],
+    "max_abs_standardized_mean_error": 1.4730652215506899,
+    "gross_recovery_flag": false,
+    "interpretation": "One of four fixed-truth replicates per regime; not SBC. Posterior interval recovery and gross standardized errors are diagnostic, not identifiability proof."
+  },
+  "truth": {
+    "beta": [
+      4.605170185988092,
+      -0.4
+    ],
+    "gamma": [
+      -0.1,
+      0.05
+    ],
+    "Gamma": [
+      [
+        0.1,
+        1.2
+      ],
+      [
+        -0.1,
+        -0.8
+      ]
+    ],
+    "tau": [
+      0.45,
+      0.3
+    ],
+    "r_g": 0.2,
+    "sigma_z": 0.6,
+    "sigma_r": 0.15,
+    "rho": 0.8
+  },
+  "posterior_sha256": "60d3b972a3c0103a05ed7bf1be884cfbf9b8a847232c56e875aeb68ddd1ffa08",
+  "n_engines": 56,
+  "n_distinct_engines": 56,
+  "wall_seconds": 60.68828639999265,
+  "cpu_seconds": 75.890625,
+  "peak_rss_bytes": 506871808,
+  "artifacts_sha256": {
+    "experiments/v0.4/fits/v04_syn_confounded_2.nc": "60d3b972a3c0103a05ed7bf1be884cfbf9b8a847232c56e875aeb68ddd1ffa08",
+    "experiments/v0.4/fits/v04_syn_confounded_2_assessment.npz": "bb86ae4f07037bcdfce25814ee9840f14e83eb2eb92e10b2e440bce1c7e937eb",
+    "experiments/v0.4/fits/v04_syn_confounded_2_data.npz": "666e7ff1605983f7d18690af7cd5fbc3205a3c770cfc113353e83138fc84f4c3",
+    "experiments/v0.4/fits/v04_syn_confounded_2_summary.csv": "937078b48e4a3cb493a6607ca8819ef606b54d7a57912ecbe53884e0cb1c9057"
+  }
+}

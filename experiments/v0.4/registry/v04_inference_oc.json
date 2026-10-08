@@ -1,0 +1,696 @@
+{
+  "run_id": "v04_inference_oc_500x1999_n100_seed50001",
+  "status": "completed_with_retained_replicate_failures",
+  "started_utc": "2026-10-08T14:49:28.747578+00:00",
+  "finished_utc": "2026-10-08T14:49:40.004383+00:00",
+  "frozen_plan_path": "configs/v0.4/remediation_plan.json",
+  "frozen_plan_sha256": "0c6a7e1e924636cec6196295eac19b29a6bd7faa85e18b081549f8287ab0b99b",
+  "executed_source_sha256": {
+    "src/rp001/v04_inference_run.py": "36be33a5637e9b0c0d7f0ea8164b3a7f70beb0c54a2cbb1c71ba0aa35def7af1",
+    "src/rp001/v04_inference.py": "dc05f013b9c9bf05463269b4bd6c6ece74505467e5a4c2125a0ed0690ded1d64"
+  },
+  "all_rp001_source_sha256": {
+    "src/rp001/__init__.py": "77b845af67e6f3d0b795acb93e4e651143b49fd33c7d437c774b5704a4d384f4",
+    "src/rp001/comparator_pilot.py": "ec2777d4ce2f498eac5b7a55f29ff5635364bd9aded09a1ba70ad4d1774a5b66",
+    "src/rp001/comparators.py": "37d8e96ab23f7e3525010ed6aa412a2ff89dd622a4e3d0cceb9d215a8c4e41aa",
+    "src/rp001/data.py": "3a0ef34d51468ad05279cbcaeb9e3ab8075134f75771c4375136f4167b512170",
+    "src/rp001/development_data_audit.py": "5697fc66c254637547499f9a88e2ced5472a6de176bb4a26972975710ea16f92",
+    "src/rp001/environment.py": "bf3d2e6a20f3a7673cf1499f7ea7adce3b7952eb3c5d48f2b6a44821f51ca2fd",
+    "src/rp001/metrics.py": "8eb710c14c35ab556ee52448a2a85e30203d40247f7627bdcd9df6add1a88531",
+    "src/rp001/model.py": "52627ae6f49311c3bb837ed3685a4d93b7e9a4d059fe08d6b892c4abab60d399",
+    "src/rp001/pilot.py": "40ab3eaef48aa82f59c5234715268f2f3f37764f484ab89456baef39bcd940c1",
+    "src/rp001/prediction.py": "f54fafe5875a8c7e009ee3c392cbf75c9e9d041646521e9a4123dd5e21b65d9b",
+    "src/rp001/predictive_analysis.py": "a4346a6c63101d8bef4f1f8f98298002e50ea5718e3098e058498953a31366fc",
+    "src/rp001/statistical_design.py": "093b66b5f2f990295a8579e23efa1ff0be4b48f1b00c7c3b3b473741d7451a9c",
+    "src/rp001/v04_analysis.py": "0da0a7087a6697df4035bcb3077561637322fc2783892d975ab55e9153faeb45",
+    "src/rp001/v04_common.py": "6c353d14140d9af2c1a20935751fb0218b8e7312da8490f3a743d92bc5e11933",
+    "src/rp001/v04_inference.py": "dc05f013b9c9bf05463269b4bd6c6ece74505467e5a4c2125a0ed0690ded1d64",
+    "src/rp001/v04_inference_run.py": "36be33a5637e9b0c0d7f0ea8164b3a7f70beb0c54a2cbb1c71ba0aa35def7af1",
+    "src/rp001/v04_model.py": "45dc8556475d4822e7fc2f17236fb1b2c04d7dafe0d9aa0548021d9abd1fa23e",
+    "src/rp001/v04_pipeline.py": "0b75f708359915f8a197c429a49f2e096c050a21879dbc6e703253155388e569",
+    "src/rp001/v04_precision.py": "396a5f55ca2e9c51fd21f02f50e59c57be7aedd38321a4a3123b0b955f1fde33",
+    "src/rp001/v04_precision_validation.py": "47c5f33e1deb98bf3872f18fbe23f669783819c6180a2fdaf3595c6a024c4a7f",
+    "src/rp001/v04_predict.py": "412f3f59fe823ffa7f1de048c7c7b68a2777bc83a400f40b6a717db22a1604e2",
+    "src/rp001/v04_run.py": "a8c9761fd19a3bce23ee11ed2a9772c16fc7f50ad7ea016bd672447e793cf110"
+  },
+  "git_snapshot": {
+    "head_commit": "7a824ed0fe8346d3d65412de042dcaf2055894c1",
+    "branch": "main",
+    "scientific_sources_and_plan_clean_at_run_start": true,
+    "full_worktree_status_porcelain_v1": "?? docs/v0.4/01_updated_research_protocol.md\n?? docs/v0.4/06_statistical_inference_pipeline_uncertainty_plan.md\n?? docs/v0.4/08_independent_mathematical_reverification.md\n?? docs/v0.4/adversarial_interim_review.md\n?? experiments/v0.4/fits/v04_broader.nc\n?? experiments/v0.4/fits/v04_broader_data.npz\n?? experiments/v0.4/fits/v04_broader_pre.npz\n?? experiments/v0.4/fits/v04_broader_summary.csv\n?? experiments/v0.4/fits/v04_contamination.nc\n?? experiments/v0.4/fits/v04_contamination_data.npz\n?? experiments/v0.4/fits/v04_contamination_pre.npz\n?? experiments/v0.4/fits/v04_contamination_summary.csv\n?? experiments/v0.4/fits/v04_main_r1.nc\n?? experiments/v0.4/fits/v04_main_r1_data.npz\n?? experiments/v0.4/fits/v04_main_r1_pre.npz\n?? experiments/v0.4/fits/v04_main_r1_summary.csv\n?? experiments/v0.4/fits/v04_main_r2.nc\n?? experiments/v0.4/fits/v04_main_r2_data.npz\n?? experiments/v0.4/fits/v04_main_r2_pre.npz\n?? experiments/v0.4/fits/v04_main_r2_summary.csv\n?? experiments/v0.4/fits/v04_main_r3.nc\n?? experiments/v0.4/fits/v04_main_r3_data.npz\n?? experiments/v0.4/fits/v04_main_r3_pre.npz\n?? experiments/v0.4/fits/v04_main_r3_summary.csv\n?? experiments/v0.4/fits/v04_oracle_e11.nc\n?? experiments/v0.4/fits/v04_oracle_e11_data.npz\n?? experiments/v0.4/fits/v04_oracle_e11_extra.npz\n?? experiments/v0.4/fits/v04_oracle_e11_pre.npz\n?? experiments/v0.4/fits/v04_oracle_e11_summary.csv\n?? experiments/v0.4/fits/v04_oracle_e61.nc\n?? experiments/v0.4/fits/v04_oracle_e61_data.npz\n?? experiments/v0.4/fits/v04_oracle_e61_extra.npz\n?? experiments/v0.4/fits/v04_oracle_e61_pre.npz\n?? experiments/v0.4/fits/v04_oracle_e61_summary.csv\n?? experiments/v0.4/fits/v04_oracle_e86.nc\n?? experiments/v0.4/fits/v04_oracle_e86_data.npz\n?? experiments/v0.4/fits/v04_oracle_e86_extra.npz\n?? experiments/v0.4/fits/v04_oracle_e86_pre.npz\n?? experiments/v0.4/fits/v04_oracle_e86_summary.csv\n?? experiments/v0.4/fits/v04_pipeline_1_alternate.nc\n?? experiments/v0.4/fits/v04_pipeline_1_alternate_anchors.npz\n?? experiments/v0.4/fits/v04_pipeline_1_alternate_calibration.npz\n?? experiments/v0.4/fits/v04_pipeline_1_alternate_cqr_anchors.npz\n?? experiments/v0.4/fits/v04_pipeline_1_alternate_data.npz\n?? experiments/v0.4/fits/v04_pipeline_1_alternate_pre.npz\n?? experiments/v0.4/fits/v04_pipeline_1_alternate_summary.csv\n?? experiments/v0.4/fits/v04_pipeline_1_canonical_infra1.nc\n?? experiments/v0.4/fits/v04_pipeline_1_canonical_infra1_anchors.npz\n?? experiments/v0.4/fits/v04_pipeline_1_canonical_infra1_calibration.npz\n?? experiments/v0.4/fits/v04_pipeline_1_canonical_infra1_cqr_anchors.npz\n?? experiments/v0.4/fits/v04_pipeline_1_canonical_infra1_data.npz\n?? experiments/v0.4/fits/v04_pipeline_1_canonical_infra1_pre.npz\n?? experiments/v0.4/fits/v04_pipeline_1_canonical_infra1_summary.csv\n?? experiments/v0.4/fits/v04_pipeline_2_alternate.nc\n?? experiments/v0.4/fits/v04_pipeline_2_alternate_anchors.npz\n?? experiments/v0.4/fits/v04_pipeline_2_alternate_calibration.npz\n?? experiments/v0.4/fits/v04_pipeline_2_alternate_cqr_anchors.npz\n?? experiments/v0.4/fits/v04_pipeline_2_alternate_data.npz\n?? experiments/v0.4/fits/v04_pipeline_2_alternate_pre.npz\n?? experiments/v0.4/fits/v04_pipeline_2_alternate_summary.csv\n?? experiments/v0.4/fits/v04_pipeline_2_canonical_infra1.nc\n?? experiments/v0.4/fits/v04_pipeline_2_canonical_infra1_anchors.npz\n?? experiments/v0.4/fits/v04_pipeline_2_canonical_infra1_calibration.npz\n?? experiments/v0.4/fits/v04_pipeline_2_canonical_infra1_cqr_anchors.npz\n?? experiments/v0.4/fits/v04_pipeline_2_canonical_infra1_data.npz\n?? experiments/v0.4/fits/v04_pipeline_2_canonical_infra1_pre.npz\n?? experiments/v0.4/fits/v04_pipeline_2_canonical_infra1_summary.csv\n?? experiments/v0.4/fits/v04_pipeline_3_alternate.nc\n?? experiments/v0.4/fits/v04_pipeline_3_alternate_anchors.npz\n?? experiments/v0.4/fits/v04_pipeline_3_alternate_calibration.npz\n?? experiments/v0.4/fits/v04_pipeline_3_alternate_cqr_anchors.npz\n?? experiments/v0.4/fits/v04_pipeline_3_alternate_data.npz\n?? experiments/v0.4/fits/v04_pipeline_3_alternate_pre.npz\n?? experiments/v0.4/fits/v04_pipeline_3_alternate_summary.csv\n?? experiments/v0.4/fits/v04_pipeline_3_canonical_infra1.nc\n?? experiments/v0.4/fits/v04_pipeline_3_canonical_infra1_anchors.npz\n?? experiments/v0.4/fits/v04_pipeline_3_canonical_infra1_calibration.npz\n?? experiments/v0.4/fits/v04_pipeline_3_canonical_infra1_cqr_anchors.npz\n?? experiments/v0.4/fits/v04_pipeline_3_canonical_infra1_data.npz\n?? experiments/v0.4/fits/v04_pipeline_3_canonical_infra1_pre.npz\n?? experiments/v0.4/fits/v04_pipeline_3_canonical_infra1_summary.csv\n?? experiments/v0.4/fits/v04_pipeline_4_alternate.nc\n?? experiments/v0.4/fits/v04_pipeline_4_alternate_anchors.npz\n?? experiments/v0.4/fits/v04_pipeline_4_alternate_calibration.npz\n?? experiments/v0.4/fits/v04_pipeline_4_alternate_cqr_anchors.npz\n?? experiments/v0.4/fits/v04_pipeline_4_alternate_data.npz\n?? experiments/v0.4/fits/v04_pipeline_4_alternate_pre.npz\n?? experiments/v0.4/fits/v04_pipeline_4_alternate_summary.csv\n?? experiments/v0.4/fits/v04_pipeline_4_canonical_infra1_anchors.npz\n?? experiments/v0.4/fits/v04_pipeline_4_canonical_infra1_calibration.npz\n?? experiments/v0.4/fits/v04_pipeline_4_canonical_infra1_cqr_anchors.npz\n?? experiments/v0.4/fits/v04_pipeline_4_canonical_infra1_data.npz\n?? experiments/v0.4/fits/v04_pipeline_4_canonical_infra1_pre.npz\n?? experiments/v0.4/fits/v04_rho_zero.nc\n?? experiments/v0.4/fits/v04_rho_zero_data.npz\n?? experiments/v0.4/fits/v04_rho_zero_pre.npz\n?? experiments/v0.4/fits/v04_rho_zero_summary.csv\n?? experiments/v0.4/fits/v04_syn_confounded_1.nc\n?? experiments/v0.4/fits/v04_syn_confounded_1_assessment.npz\n?? experiments/v0.4/fits/v04_syn_confounded_1_data.npz\n?? experiments/v0.4/fits/v04_syn_confounded_1_summary.csv\n?? experiments/v0.4/fits/v04_syn_confounded_2.nc\n?? experiments/v0.4/fits/v04_syn_confounded_2_assessment.npz\n?? experiments/v0.4/fits/v04_syn_confounded_2_data.npz\n?? experiments/v0.4/fits/v04_syn_confounded_2_summary.csv\n?? experiments/v0.4/fits/v04_syn_confounded_3.nc\n?? experiments/v0.4/fits/v04_syn_confounded_3_assessment.npz\n?? experiments/v0.4/fits/v04_syn_confounded_3_data.npz\n?? experiments/v0.4/fits/v04_syn_confounded_3_summary.csv\n?? experiments/v0.4/fits/v04_syn_confounded_4.nc\n?? experiments/v0.4/fits/v04_syn_confounded_4_assessment.npz\n?? experiments/v0.4/fits/v04_syn_confounded_4_data.npz\n?? experiments/v0.4/fits/v04_syn_confounded_4_summary.csv\n?? experiments/v0.4/fits/v04_syn_high_rho_1.nc\n?? experiments/v0.4/fits/v04_syn_high_rho_1_assessment.npz\n?? experiments/v0.4/fits/v04_syn_high_rho_1_data.npz\n?? experiments/v0.4/fits/v04_syn_high_rho_1_summary.csv\n?? experiments/v0.4/fits/v04_syn_high_rho_2.nc\n?? experiments/v0.4/fits/v04_syn_high_rho_2_assessment.npz\n?? experiments/v0.4/fits/v04_syn_high_rho_2_data.npz\n?? experiments/v0.4/fits/v04_syn_high_rho_2_summary.csv\n?? experiments/v0.4/fits/v04_syn_high_rho_3.nc\n?? experiments/v0.4/fits/v04_syn_high_rho_3_assessment.npz\n?? experiments/v0.4/fits/v04_syn_high_rho_3_data.npz\n?? experiments/v0.4/fits/v04_syn_high_rho_3_summary.csv\n?? experiments/v0.4/fits/v04_syn_high_rho_4.nc\n?? experiments/v0.4/fits/v04_syn_high_rho_4_assessment.npz\n?? experiments/v0.4/fits/v04_syn_high_rho_4_data.npz\n?? experiments/v0.4/fits/v04_syn_high_rho_4_summary.csv\n?? experiments/v0.4/fits/v04_syn_regular_1.nc\n?? experiments/v0.4/fits/v04_syn_regular_1_assessment.npz\n?? experiments/v0.4/fits/v04_syn_regular_1_data.npz\n?? experiments/v0.4/fits/v04_syn_regular_1_summary.csv\n?? experiments/v0.4/fits/v04_syn_regular_2.nc\n?? experiments/v0.4/fits/v04_syn_regular_2_assessment.npz\n?? experiments/v0.4/fits/v04_syn_regular_2_data.npz\n?? experiments/v0.4/fits/v04_syn_regular_2_summary.csv\n?? experiments/v0.4/fits/v04_syn_regular_3.nc\n?? experiments/v0.4/fits/v04_syn_regular_3_assessment.npz\n?? experiments/v0.4/fits/v04_syn_regular_3_data.npz\n?? experiments/v0.4/fits/v04_syn_regular_3_summary.csv\n?? experiments/v0.4/fits/v04_syn_regular_4.nc\n?? experiments/v0.4/fits/v04_syn_regular_4_assessment.npz\n?? experiments/v0.4/fits/v04_syn_regular_4_data.npz\n?? experiments/v0.4/fits/v04_syn_regular_4_summary.csv\n?? experiments/v0.4/fits/v04_syn_weak_1.nc\n?? experiments/v0.4/fits/v04_syn_weak_1_assessment.npz\n?? experiments/v0.4/fits/v04_syn_weak_1_data.npz\n?? experiments/v0.4/fits/v04_syn_weak_1_summary.csv\n?? experiments/v0.4/fits/v04_syn_weak_2.nc\n?? experiments/v0.4/fits/v04_syn_weak_2_assessment.npz\n?? experiments/v0.4/fits/v04_syn_weak_2_data.npz\n?? experiments/v0.4/fits/v04_syn_weak_2_summary.csv\n?? experiments/v0.4/fits/v04_syn_weak_3.nc\n?? experiments/v0.4/fits/v04_syn_weak_3_assessment.npz\n?? experiments/v0.4/fits/v04_syn_weak_3_data.npz\n?? experiments/v0.4/fits/v04_syn_weak_3_summary.csv\n?? experiments/v0.4/fits/v04_syn_weak_4.nc\n?? experiments/v0.4/fits/v04_syn_weak_4_assessment.npz\n?? experiments/v0.4/fits/v04_syn_weak_4_data.npz\n?? experiments/v0.4/fits/v04_syn_weak_4_summary.csv\n?? experiments/v0.4/registry/v04_broader.json\n?? experiments/v0.4/registry/v04_contamination.json\n?? experiments/v0.4/registry/v04_main_r1.json\n?? experiments/v0.4/registry/v04_main_r2.json\n?? experiments/v0.4/registry/v04_main_r3.json\n?? experiments/v0.4/registry/v04_oracle_e11.json\n?? experiments/v0.4/registry/v04_oracle_e61.json\n?? experiments/v0.4/registry/v04_oracle_e86.json\n?? experiments/v0.4/registry/v04_pipeline_1_alternate.json\n?? experiments/v0.4/registry/v04_pipeline_1_canonical.json\n?? experiments/v0.4/registry/v04_pipeline_1_canonical_infra1.json\n?? experiments/v0.4/registry/v04_pipeline_2_alternate.json\n?? experiments/v0.4/registry/v04_pipeline_2_canonical.json\n?? experiments/v0.4/registry/v04_pipeline_2_canonical_infra1.json\n?? experiments/v0.4/registry/v04_pipeline_3_alternate.json\n?? experiments/v0.4/registry/v04_pipeline_3_canonical.json\n?? experiments/v0.4/registry/v04_pipeline_3_canonical_infra1.json\n?? experiments/v0.4/registry/v04_pipeline_4_alternate.json\n?? experiments/v0.4/registry/v04_pipeline_4_canonical.json\n?? experiments/v0.4/registry/v04_pipeline_4_canonical_infra1.json\n?? experiments/v0.4/registry/v04_rho_zero.json\n?? experiments/v0.4/registry/v04_syn_confounded_1.json\n?? experiments/v0.4/registry/v04_syn_confounded_2.json\n?? experiments/v0.4/registry/v04_syn_confounded_3.json\n?? experiments/v0.4/registry/v04_syn_confounded_4.json\n?? experiments/v0.4/registry/v04_syn_high_rho_1.json\n?? experiments/v0.4/registry/v04_syn_high_rho_2.json\n?? experiments/v0.4/registry/v04_syn_high_rho_3.json\n?? experiments/v0.4/registry/v04_syn_high_rho_4.json\n?? experiments/v0.4/registry/v04_syn_regular_1.json\n?? experiments/v0.4/registry/v04_syn_regular_2.json\n?? experiments/v0.4/registry/v04_syn_regular_3.json\n?? experiments/v0.4/registry/v04_syn_regular_4.json\n?? experiments/v0.4/registry/v04_syn_weak_1.json\n?? experiments/v0.4/registry/v04_syn_weak_2.json\n?? experiments/v0.4/registry/v04_syn_weak_3.json\n?? experiments/v0.4/registry/v04_syn_weak_4.json\n?? logs/v0.4/build_reports.py",
+    "plan_git_blob_oid": "a962bc1b2245e7be247232488c9a5b501ebf868e"
+  },
+  "environment": {
+    "fingerprint": "f57b00a67e9d67b2920791bfddc8dc812dbdeb9306588a26557dfd6be15f826c",
+    "metadata_path": "logs/pilot_environment.json",
+    "metadata_sha256": "f0cf426d4b6f45b54f42c65155e48da7d4016ee3631aebd1cf4a6774a9b991fe"
+  },
+  "dataset_sha256": "963b5e22825b34d8b21c69e1aeb4af3e647050eb672ee8834ba4b5d91d2de0f8",
+  "configuration": {
+    "n": 100,
+    "replications_per_scenario": 500,
+    "bootstrap_count_per_dataset": 1999,
+    "scenario_seed_assignments_in_frozen_order": [
+      {
+        "scenario_index": 0,
+        "frozen_plan_name": "normal",
+        "implementation_name": "normal",
+        "root_seed": 50001
+      },
+      {
+        "scenario_index": 1,
+        "frozen_plan_name": "lognormal1",
+        "implementation_name": "centered_lognormal_sigma1",
+        "root_seed": 50002
+      },
+      {
+        "scenario_index": 2,
+        "frozen_plan_name": "lognormal1p5",
+        "implementation_name": "centered_lognormal_sigma1p5",
+        "root_seed": 50003
+      },
+      {
+        "scenario_index": 3,
+        "frozen_plan_name": "t3",
+        "implementation_name": "student_t3",
+        "root_seed": 50004
+      },
+      {
+        "scenario_index": 4,
+        "frozen_plan_name": "rare_outlier",
+        "implementation_name": "rare_outlier_mixture",
+        "root_seed": 50005
+      },
+      {
+        "scenario_index": 5,
+        "frozen_plan_name": "t1p5",
+        "implementation_name": "student_t1p5_infinite_variance",
+        "root_seed": 50006
+      },
+      {
+        "scenario_index": 6,
+        "frozen_plan_name": "sparse_discrete",
+        "implementation_name": "sparse_discrete_pm1",
+        "root_seed": 50007
+      },
+      {
+        "scenario_index": 7,
+        "frozen_plan_name": "all_zero",
+        "implementation_name": "all_zero",
+        "root_seed": 50008
+      }
+    ],
+    "numerical_policy": {
+      "quantile_method": "linear",
+      "resampling_chunk_size": 256,
+      "dtype": "float64",
+      "zero_standard_error_policy": "invalidate_replicate_if_any_zero",
+      "nonfinite_policy": "invalidate_replicate"
+    },
+    "future_official_benchmark_secondary_bootstrap_count": 20000,
+    "future_official_benchmark_secondary_bootstrap_status": "not run; separate plan item requiring owner lock/authorization"
+  },
+  "runtime": {
+    "scientific_execution_wall_seconds": 11.256835000007413,
+    "scientific_execution_process_cpu_seconds": 11.140625
+  },
+  "scope": {
+    "synthetic_only": true,
+    "official_test_sensors_read": false,
+    "official_test_labels_read": false,
+    "confirmatory": false,
+    "primary_benchmark_effect": "exact finite-benchmark stored-prediction mean; not evaluated by this run",
+    "bootstrap_role": "secondary conditional synthetic operating-characteristic diagnostic"
+  },
+  "failure_counts": {
+    "attempted": 4000,
+    "completed_with_interval": 3001,
+    "failed_or_unavailable": 999,
+    "by_status": {
+      "ok": 3001,
+      "zero_bootstrap_standard_error": 434,
+      "zero_observed_standard_error": 565
+    },
+    "input_failures": 0,
+    "unexpected_errors": 0
+  },
+  "scenario_results": [
+    {
+      "scenario": "normal",
+      "definition": {
+        "distribution": "N(0, 1)",
+        "mean": 0.0,
+        "variance": 1.0,
+        "parameters": {
+          "loc": 0.0,
+          "scale": 1.0
+        },
+        "stress_only": false
+      },
+      "nsim_attempted": 500,
+      "nsim_interval_available": 500,
+      "simulation_failure_counts_by_status": {
+        "ok": 500
+      },
+      "coverage_95_conditional_on_interval_available": {
+        "successes": 479,
+        "trials": 500,
+        "proportion": 0.958,
+        "binomial_mcse": 0.00897061870775924,
+        "wilson_interval": [
+          0.9366484142456699,
+          0.9723676898915483
+        ]
+      },
+      "one_sided_h0_mean_ge_zero_rejection_conditional_on_interval_available": {
+        "successes": 25,
+        "trials": 500,
+        "proportion": 0.05,
+        "binomial_mcse": 0.009746794344808964,
+        "wilson_interval": [
+          0.03409374524384944,
+          0.07276816117154758
+        ]
+      },
+      "interval_availability": {
+        "successes": 500,
+        "trials": 500,
+        "proportion": 1.0,
+        "binomial_mcse": 0.0,
+        "wilson_interval": [
+          0.9923756595384479,
+          1.0
+        ]
+      },
+      "bootstrap_count_per_valid_generated_dataset": 1999,
+      "bootstrap_zero_standard_error_draws_total": 0,
+      "bootstrap_draws_attempted_total": 999500,
+      "bootstrap_zero_standard_error_fraction": 0.0,
+      "simulations_with_any_zero_bootstrap_se_draw": 0,
+      "simulations_with_zero_observed_se": 0,
+      "bootstrap_nonfinite_draws_total": 0,
+      "influence_max_abs_centered_contribution_share": {
+        "n_defined": 500,
+        "median": 0.03389646665806072,
+        "p95": 0.04414436473937516,
+        "maximum": 0.04998754632692352
+      },
+      "influence_max_leave_one_out_mean_shift_in_se_units": {
+        "n_defined": 500,
+        "median": 0.2732244077752397,
+        "p95": 0.34373097250382134,
+        "maximum": 0.40098252235117854
+      },
+      "elapsed_seconds": 1.589598600025056,
+      "nominal_interpretation": "Conditional on interval availability; failures and zero-SE fractions are separately retained"
+    },
+    {
+      "scenario": "centered_lognormal_sigma1",
+      "definition": {
+        "distribution": "Lognormal(0,1) - exp(1/2)",
+        "mean": 0.0,
+        "variance": 4.670774270471604,
+        "parameters": {
+          "log_mean": 0.0,
+          "log_sigma": 1.0,
+          "centering_constant": 1.6487212707001282
+        },
+        "stress_only": false
+      },
+      "nsim_attempted": 500,
+      "nsim_interval_available": 500,
+      "simulation_failure_counts_by_status": {
+        "ok": 500
+      },
+      "coverage_95_conditional_on_interval_available": {
+        "successes": 473,
+        "trials": 500,
+        "proportion": 0.946,
+        "binomial_mcse": 0.010107818755794947,
+        "wilson_interval": [
+          0.9225734384893529,
+          0.9626256498189425
+        ]
+      },
+      "one_sided_h0_mean_ge_zero_rejection_conditional_on_interval_available": {
+        "successes": 41,
+        "trials": 500,
+        "proportion": 0.082,
+        "binomial_mcse": 0.012269963325128565,
+        "wilson_interval": [
+          0.06101908946846895,
+          0.10935485915738874
+        ]
+      },
+      "interval_availability": {
+        "successes": 500,
+        "trials": 500,
+        "proportion": 1.0,
+        "binomial_mcse": 0.0,
+        "wilson_interval": [
+          0.9923756595384479,
+          1.0
+        ]
+      },
+      "bootstrap_count_per_valid_generated_dataset": 1999,
+      "bootstrap_zero_standard_error_draws_total": 0,
+      "bootstrap_draws_attempted_total": 999500,
+      "bootstrap_zero_standard_error_fraction": 0.0,
+      "simulations_with_any_zero_bootstrap_se_draw": 0,
+      "simulations_with_zero_observed_se": 0,
+      "bootstrap_nonfinite_draws_total": 0,
+      "influence_max_abs_centered_contribution_share": {
+        "n_defined": 500,
+        "median": 0.08189735125469985,
+        "p95": 0.1641838447317053,
+        "maximum": 0.31728643858406114
+      },
+      "influence_max_leave_one_out_mean_shift_in_se_units": {
+        "n_defined": 500,
+        "median": 0.5327593777963074,
+        "p95": 0.8186493780722738,
+        "maximum": 0.9762298796345691
+      },
+      "elapsed_seconds": 1.5943150999955833,
+      "nominal_interpretation": "Conditional on interval availability; failures and zero-SE fractions are separately retained"
+    },
+    {
+      "scenario": "centered_lognormal_sigma1p5",
+      "definition": {
+        "distribution": "Lognormal(0,1.5) - exp(1.125)",
+        "mean": 0.0,
+        "variance": 80.5293954641633,
+        "parameters": {
+          "log_mean": 0.0,
+          "log_sigma": 1.5,
+          "centering_constant": 3.080216848918031
+        },
+        "stress_only": false
+      },
+      "nsim_attempted": 500,
+      "nsim_interval_available": 500,
+      "simulation_failure_counts_by_status": {
+        "ok": 500
+      },
+      "coverage_95_conditional_on_interval_available": {
+        "successes": 457,
+        "trials": 500,
+        "proportion": 0.914,
+        "binomial_mcse": 0.01253826144248077,
+        "wilson_interval": [
+          0.8861601885014426,
+          0.9355268575963923
+        ]
+      },
+      "one_sided_h0_mean_ge_zero_rejection_conditional_on_interval_available": {
+        "successes": 56,
+        "trials": 500,
+        "proportion": 0.112,
+        "binomial_mcse": 0.014103616557464968,
+        "wilson_interval": [
+          0.08726280019410228,
+          0.1426536880040623
+        ]
+      },
+      "interval_availability": {
+        "successes": 500,
+        "trials": 500,
+        "proportion": 1.0,
+        "binomial_mcse": 0.0,
+        "wilson_interval": [
+          0.9923756595384479,
+          1.0
+        ]
+      },
+      "bootstrap_count_per_valid_generated_dataset": 1999,
+      "bootstrap_zero_standard_error_draws_total": 0,
+      "bootstrap_draws_attempted_total": 999500,
+      "bootstrap_zero_standard_error_fraction": 0.0,
+      "simulations_with_any_zero_bootstrap_se_draw": 0,
+      "simulations_with_zero_observed_se": 0,
+      "bootstrap_nonfinite_draws_total": 0,
+      "influence_max_abs_centered_contribution_share": {
+        "n_defined": 500,
+        "median": 0.1177060644738426,
+        "p95": 0.24864266738245608,
+        "maximum": 0.46137782744788997
+      },
+      "influence_max_leave_one_out_mean_shift_in_se_units": {
+        "n_defined": 500,
+        "median": 0.6512820015107912,
+        "p95": 0.9246017062926695,
+        "maximum": 0.9973427440665086
+      },
+      "elapsed_seconds": 1.478147700021509,
+      "nominal_interpretation": "Conditional on interval availability; failures and zero-SE fractions are separately retained"
+    },
+    {
+      "scenario": "student_t3",
+      "definition": {
+        "distribution": "Student-t(df=3, loc=0, scale=1)",
+        "mean": 0.0,
+        "variance": 3.0,
+        "parameters": {
+          "df": 3.0,
+          "loc": 0.0,
+          "scale": 1.0
+        },
+        "stress_only": false
+      },
+      "nsim_attempted": 500,
+      "nsim_interval_available": 500,
+      "simulation_failure_counts_by_status": {
+        "ok": 500
+      },
+      "coverage_95_conditional_on_interval_available": {
+        "successes": 467,
+        "trials": 500,
+        "proportion": 0.934,
+        "binomial_mcse": 0.01110351295761841,
+        "wilson_interval": [
+          0.9087605988391466,
+          0.9526214736402262
+        ]
+      },
+      "one_sided_h0_mean_ge_zero_rejection_conditional_on_interval_available": {
+        "successes": 35,
+        "trials": 500,
+        "proportion": 0.07,
+        "binomial_mcse": 0.011410521460476731,
+        "wilson_interval": [
+          0.0507597429450181,
+          0.09579718985191686
+        ]
+      },
+      "interval_availability": {
+        "successes": 500,
+        "trials": 500,
+        "proportion": 1.0,
+        "binomial_mcse": 0.0,
+        "wilson_interval": [
+          0.9923756595384479,
+          1.0
+        ]
+      },
+      "bootstrap_count_per_valid_generated_dataset": 1999,
+      "bootstrap_zero_standard_error_draws_total": 0,
+      "bootstrap_draws_attempted_total": 999500,
+      "bootstrap_zero_standard_error_fraction": 0.0,
+      "simulations_with_any_zero_bootstrap_se_draw": 0,
+      "simulations_with_zero_observed_se": 0,
+      "bootstrap_nonfinite_draws_total": 0,
+      "influence_max_abs_centered_contribution_share": {
+        "n_defined": 500,
+        "median": 0.05950819586264043,
+        "p95": 0.12944496233070166,
+        "maximum": 0.255866327585904
+      },
+      "influence_max_leave_one_out_mean_shift_in_se_units": {
+        "n_defined": 500,
+        "median": 0.4202580125611517,
+        "p95": 0.7151932560261812,
+        "maximum": 0.9413685182244099
+      },
+      "elapsed_seconds": 1.3233174000051804,
+      "nominal_interpretation": "Conditional on interval availability; failures and zero-SE fractions are separately retained"
+    },
+    {
+      "scenario": "rare_outlier_mixture",
+      "definition": {
+        "distribution": "0.99*N(0,1) + 0.01*N(0,30^2)",
+        "mean": 0.0,
+        "variance": 9.99,
+        "parameters": {
+          "outlier_probability": 0.01,
+          "base_sd": 1.0,
+          "outlier_sd": 30.0
+        },
+        "stress_only": false
+      },
+      "nsim_attempted": 500,
+      "nsim_interval_available": 500,
+      "simulation_failure_counts_by_status": {
+        "ok": 500
+      },
+      "coverage_95_conditional_on_interval_available": {
+        "successes": 463,
+        "trials": 500,
+        "proportion": 0.926,
+        "binomial_mcse": 0.011706750189527404,
+        "wilson_interval": [
+          0.8996652466777695,
+          0.945838815248988
+        ]
+      },
+      "one_sided_h0_mean_ge_zero_rejection_conditional_on_interval_available": {
+        "successes": 34,
+        "trials": 500,
+        "proportion": 0.068,
+        "binomial_mcse": 0.011258419071965654,
+        "wilson_interval": [
+          0.04906650742490687,
+          0.0935209227338743
+        ]
+      },
+      "interval_availability": {
+        "successes": 500,
+        "trials": 500,
+        "proportion": 1.0,
+        "binomial_mcse": 0.0,
+        "wilson_interval": [
+          0.9923756595384479,
+          1.0
+        ]
+      },
+      "bootstrap_count_per_valid_generated_dataset": 1999,
+      "bootstrap_zero_standard_error_draws_total": 0,
+      "bootstrap_draws_attempted_total": 999500,
+      "bootstrap_zero_standard_error_fraction": 0.0,
+      "simulations_with_any_zero_bootstrap_se_draw": 0,
+      "simulations_with_zero_observed_se": 0,
+      "bootstrap_nonfinite_draws_total": 0,
+      "influence_max_abs_centered_contribution_share": {
+        "n_defined": 500,
+        "median": 0.1300148878547235,
+        "p95": 0.3542188880794779,
+        "maximum": 0.4310021515324592
+      },
+      "influence_max_leave_one_out_mean_shift_in_se_units": {
+        "n_defined": 500,
+        "median": 0.723362344442189,
+        "p95": 0.9751318193263451,
+        "maximum": 0.9921447487517397
+      },
+      "elapsed_seconds": 1.3140343000122812,
+      "nominal_interpretation": "Conditional on interval availability; failures and zero-SE fractions are separately retained"
+    },
+    {
+      "scenario": "student_t1p5_infinite_variance",
+      "definition": {
+        "distribution": "Student-t(df=1.5, loc=0, scale=1)",
+        "mean": 0.0,
+        "variance": null,
+        "parameters": {
+          "df": 1.5,
+          "loc": 0.0,
+          "scale": 1.0
+        },
+        "stress_only": true
+      },
+      "nsim_attempted": 500,
+      "nsim_interval_available": 500,
+      "simulation_failure_counts_by_status": {
+        "ok": 500
+      },
+      "coverage_95_conditional_on_interval_available": {
+        "successes": 452,
+        "trials": 500,
+        "proportion": 0.904,
+        "binomial_mcse": 0.013174520864152895,
+        "wilson_interval": [
+          0.8750130375724849,
+          0.9268264953345811
+        ]
+      },
+      "one_sided_h0_mean_ge_zero_rejection_conditional_on_interval_available": {
+        "successes": 50,
+        "trials": 500,
+        "proportion": 0.1,
+        "binomial_mcse": 0.01341640786499874,
+        "wilson_interval": [
+          0.07667756273730172,
+          0.1294219096319401
+        ]
+      },
+      "interval_availability": {
+        "successes": 500,
+        "trials": 500,
+        "proportion": 1.0,
+        "binomial_mcse": 0.0,
+        "wilson_interval": [
+          0.9923756595384479,
+          1.0
+        ]
+      },
+      "bootstrap_count_per_valid_generated_dataset": 1999,
+      "bootstrap_zero_standard_error_draws_total": 0,
+      "bootstrap_draws_attempted_total": 999500,
+      "bootstrap_zero_standard_error_fraction": 0.0,
+      "simulations_with_any_zero_bootstrap_se_draw": 0,
+      "simulations_with_zero_observed_se": 0,
+      "bootstrap_nonfinite_draws_total": 0,
+      "influence_max_abs_centered_contribution_share": {
+        "n_defined": 500,
+        "median": 0.12406220120709668,
+        "p95": 0.3709050661190798,
+        "maximum": 0.4983918370646504
+      },
+      "influence_max_leave_one_out_mean_shift_in_se_units": {
+        "n_defined": 500,
+        "median": 0.6431885423444785,
+        "p95": 0.9655487785188268,
+        "maximum": 0.9975248319247447
+      },
+      "elapsed_seconds": 1.3105463000247255,
+      "nominal_interpretation": "Stress-only diagnostic; do not interpret as conventional variance-based bootstrap coverage"
+    },
+    {
+      "scenario": "sparse_discrete_pm1",
+      "definition": {
+        "distribution": "P(-1)=0.01, P(0)=0.98, P(+1)=0.01",
+        "mean": 0.0,
+        "variance": 0.02,
+        "parameters": {
+          "probability_minus_one": 0.01,
+          "probability_zero": 0.98,
+          "probability_plus_one": 0.01
+        },
+        "stress_only": true
+      },
+      "nsim_attempted": 500,
+      "nsim_interval_available": 1,
+      "simulation_failure_counts_by_status": {
+        "zero_bootstrap_standard_error": 434,
+        "zero_observed_standard_error": 65,
+        "ok": 1
+      },
+      "coverage_95_conditional_on_interval_available": {
+        "successes": 1,
+        "trials": 1,
+        "proportion": 1.0,
+        "binomial_mcse": 0.0,
+        "wilson_interval": [
+          0.20654931437723745,
+          1.0
+        ]
+      },
+      "one_sided_h0_mean_ge_zero_rejection_conditional_on_interval_available": {
+        "successes": 0,
+        "trials": 1,
+        "proportion": 0.0,
+        "binomial_mcse": 0.0,
+        "wilson_interval": [
+          0.0,
+          0.7934506856227626
+        ]
+      },
+      "interval_availability": {
+        "successes": 1,
+        "trials": 500,
+        "proportion": 0.002,
+        "binomial_mcse": 0.0019979989989987483,
+        "wilson_interval": [
+          0.00035313639455927543,
+          0.011240706705146753
+        ]
+      },
+      "bootstrap_count_per_valid_generated_dataset": 1999,
+      "bootstrap_zero_standard_error_draws_total": 270027,
+      "bootstrap_draws_attempted_total": 999500,
+      "bootstrap_zero_standard_error_fraction": 0.27016208104052025,
+      "simulations_with_any_zero_bootstrap_se_draw": 499,
+      "simulations_with_zero_observed_se": 65,
+      "bootstrap_nonfinite_draws_total": 0,
+      "influence_max_abs_centered_contribution_share": {
+        "n_defined": 435,
+        "median": 0.25505050505050514,
+        "p95": 0.5,
+        "maximum": 0.5000000000000001
+      },
+      "influence_max_leave_one_out_mean_shift_in_se_units": {
+        "n_defined": 435,
+        "median": 0.7035264706814486,
+        "p95": 1.0000000000000002,
+        "maximum": 1.0000000000000002
+      },
+      "elapsed_seconds": 1.2856483999930788,
+      "nominal_interpretation": "Stress-only diagnostic; do not interpret as conventional variance-based bootstrap coverage"
+    },
+    {
+      "scenario": "all_zero",
+      "definition": {
+        "distribution": "point mass at 0",
+        "mean": 0.0,
+        "variance": 0.0,
+        "parameters": {},
+        "stress_only": true
+      },
+      "nsim_attempted": 500,
+      "nsim_interval_available": 0,
+      "simulation_failure_counts_by_status": {
+        "zero_observed_standard_error": 500
+      },
+      "coverage_95_conditional_on_interval_available": {
+        "successes": 0,
+        "trials": 0,
+        "proportion": null,
+        "binomial_mcse": null,
+        "wilson_interval": null
+      },
+      "one_sided_h0_mean_ge_zero_rejection_conditional_on_interval_available": {
+        "successes": 0,
+        "trials": 0,
+        "proportion": null,
+        "binomial_mcse": null,
+        "wilson_interval": null
+      },
+      "interval_availability": {
+        "successes": 0,
+        "trials": 500,
+        "proportion": 0.0,
+        "binomial_mcse": 0.0,
+        "wilson_interval": [
+          4.336808689942018e-19,
+          0.007624340461552238
+        ]
+      },
+      "bootstrap_count_per_valid_generated_dataset": 1999,
+      "bootstrap_zero_standard_error_draws_total": 999500,
+      "bootstrap_draws_attempted_total": 999500,
+      "bootstrap_zero_standard_error_fraction": 1.0,
+      "simulations_with_any_zero_bootstrap_se_draw": 500,
+      "simulations_with_zero_observed_se": 500,
+      "bootstrap_nonfinite_draws_total": 0,
+      "influence_max_abs_centered_contribution_share": {
+        "n_defined": 0,
+        "median": null,
+        "p95": null,
+        "maximum": null
+      },
+      "influence_max_leave_one_out_mean_shift_in_se_units": {
+        "n_defined": 0,
+        "median": null,
+        "p95": null,
+        "maximum": null
+      },
+      "elapsed_seconds": 1.2314982000098098,
+      "nominal_interpretation": "Stress-only diagnostic; do not interpret as conventional variance-based bootstrap coverage"
+    }
+  ],
+  "result_artifact": {
+    "path": "experiments/v0.4/inference/v04_paired_bootstrap_t_oc.json",
+    "sha256": "1d91e53ea6c44f5ebc5d86a3c846b4e152a9542dc2fd3aa80bdb729c429b425a",
+    "replicate_records": 4000
+  },
+  "registry_path": "experiments/v0.4/registry/v04_inference_oc.json"
+}

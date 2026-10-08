@@ -1,0 +1,374 @@
+{
+  "schema_version": "0.1",
+  "generated_at": "2026-10-08T11:54:45.557893+00:00",
+  "git_commit": "108bfa8dcfc94fb81572483c129ec607b4b7d40f",
+  "git_dirty": true,
+  "file_count": 73,
+  "files": [
+    {
+      "path": ".gitattributes",
+      "size": 75,
+      "sha256": "94111320c51ffcbdfe53ce0260596517af4a7c34551f034712ffb3a9e4df7cf8"
+    },
+    {
+      "path": ".gitignore",
+      "size": 1301,
+      "sha256": "f6b32333cb1ba0692ff3e227b66e813efa7edf51903374ccbaab23759b73e76a"
+    },
+    {
+      "path": "configs/.gitkeep",
+      "size": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "configs/proposed_protocol_v0.2.json",
+      "size": 4653,
+      "sha256": "4860d88f8d902fe74f30cf587dc77099a8a4f21ac3f4c323398d8fd2e0f7bcdb"
+    },
+    {
+      "path": "configs/proposed_split_manifest.json",
+      "size": 14035,
+      "sha256": "6d6e0f10d979d41739c6c07b6bab8f0c32d2844ebd150e82d13caa3bd29e124b"
+    },
+    {
+      "path": "configs/protocol_lock_record.json",
+      "size": 696,
+      "sha256": "cc20d01a85ae88ed9b9b90da051387c305225fa6a18136dc1c6b9724a93c0601"
+    },
+    {
+      "path": "data/interim/.gitkeep",
+      "size": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "data/processed/.gitkeep",
+      "size": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "data/raw/.gitkeep",
+      "size": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "data/raw/CMAPSSData.zip",
+      "size": 12425978,
+      "sha256": "74bef434a34db25c7bf72e668ea4cd52afe5f2cf8e44367c55a82bfd91a5a34f"
+    },
+    {
+      "path": "data/raw/NASA_CMAPSS_original.zip",
+      "size": 12429152,
+      "sha256": "c9c5dec12a945a82e8bb4446589d7fb3cc057b5e5d81fa1a12e25ee9912ad3b2"
+    },
+    {
+      "path": "data/raw/provenance.json",
+      "size": 2648,
+      "sha256": "d7f72145e04b4a4da9c51049d3d5fc1e1200d2534a21997ba4ef8701bcbe1bd6"
+    },
+    {
+      "path": "data/raw/readme.txt",
+      "size": 2442,
+      "sha256": "4f5270554b775c67e73aff383c5436fd329d6e4cc3d3a116913276fae511269b"
+    },
+    {
+      "path": "data/raw/schema_contract.json",
+      "size": 4033,
+      "sha256": "2797cac13ec8fd9cd99c33b1097b6342ecbd7a0e8fb849aee8cf790f8b18d13d"
+    },
+    {
+      "path": "data/raw/train_FD001.txt",
+      "size": 3515356,
+      "sha256": "963b5e22825b34d8b21c69e1aeb4af3e647050eb672ee8834ba4b5d91d2de0f8"
+    },
+    {
+      "path": "data/raw/training_audit.json",
+      "size": 3247,
+      "sha256": "25511cdb8f8d8553b9fee396774aed4cc9f529e67e3163caf89067e18be9fc7e"
+    },
+    {
+      "path": "docs/00_research_lead_review.md",
+      "size": 6424,
+      "sha256": "16bc6612c42131588563ce84dbbee87210dd261567f537119b09100c6c8e1f21"
+    },
+    {
+      "path": "docs/01_literature_gap_novelty_review.md",
+      "size": 6755,
+      "sha256": "0c2ad0dc87aa269028bea52c727c4c3c133e336e40faa684a7e6526cffe304d2"
+    },
+    {
+      "path": "docs/02_dataset_feasibility_sample_precision.md",
+      "size": 5819,
+      "sha256": "7ece65faf284efde08086e40fd19764e8a77784df6d626e0f52b204d3103b123"
+    },
+    {
+      "path": "docs/03_candidate_mathematical_model.md",
+      "size": 8322,
+      "sha256": "e85d88a7e698a6558cbbc30344c718a87698b6b0c00934e1821ffff30d6a7198"
+    },
+    {
+      "path": "docs/04_statistical_analysis_plan.md",
+      "size": 6873,
+      "sha256": "500a8e577f4a7d2a52e21036def1001ff7a8cd55f84589e9790b1c901fc6d0cb"
+    },
+    {
+      "path": "docs/05_fair_comparator_design.md",
+      "size": 7519,
+      "sha256": "eac3bfb1d51da5653c9f33bfc966753ef45a1df5366d80b556d8fc76c4d5eca2"
+    },
+    {
+      "path": "docs/06_proposed_protocol_lock.md",
+      "size": 6508,
+      "sha256": "83b79de560054c59fe7aeefa378e2afdf143c2e7b2ce6b24331ea8e984bfcd14"
+    },
+    {
+      "path": "docs/07_compute_feasibility_estimate.md",
+      "size": 5602,
+      "sha256": "162827b011772b4274e9b068e0bf7824477cbe1e6fccd002dae0bc5ccc9035a6"
+    },
+    {
+      "path": "docs/08_risks_assumptions_decisions.md",
+      "size": 7168,
+      "sha256": "55127bdbcda12ad0f6b4990a36a3e32d42b4f2b42a607a22a6d54649466c670e"
+    },
+    {
+      "path": "docs/09_methodology_audit.md",
+      "size": 2517,
+      "sha256": "113a3d273063172fca607397d75b50814763d2c19040d53c65bf8e80f66b649e"
+    },
+    {
+      "path": "docs/g0_handoff.json",
+      "size": 3842,
+      "sha256": "a26a1a39b7787724dc61cae2569df64134f0ff7e692cd1fdc58b2d5b1562175f"
+    },
+    {
+      "path": "docs/proposal_v0.1.md",
+      "size": 16058,
+      "sha256": "4ff06a6cf6f7a699dcbb9c66a76bfe6e21d60b64bc738c345e3b08c1f5118346"
+    },
+    {
+      "path": "docs/research_lead_handoff.json",
+      "size": 8110,
+      "sha256": "ca6d4e6f184ef52348221e3706eee246b986879cb4d876288f8e5bb7b1c5eb22"
+    },
+    {
+      "path": "experiments/.gitkeep",
+      "size": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "figures/.gitkeep",
+      "size": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "literature/.gitkeep",
+      "size": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "literature/citation_status_audit.py",
+      "size": 1810,
+      "sha256": "7109e448269c1e5bc234b4ae119230e72fb09591607b9c70da95c36aee260aca"
+    },
+    {
+      "path": "literature/claim_evidence_map.json",
+      "size": 1461,
+      "sha256": "fe520f6dac0d4366f1640b8d9a5478b855d82b9f1f3994d7a56439c1646966a5"
+    },
+    {
+      "path": "literature/crossref_status_audit.json",
+      "size": 10659,
+      "sha256": "f41528e2f8a21caa6666b9a0f8baa1090eb05553749827162fa9e8df1fc533c7"
+    },
+    {
+      "path": "literature/evidence_records.json",
+      "size": 19167,
+      "sha256": "f39799915d17a56b05780c34976e1e372945da1b524cf05271971ab1d817b70f"
+    },
+    {
+      "path": "literature/search_log.json",
+      "size": 11631,
+      "sha256": "f66b0bbe69444e000dc0ff82f7bfabb458c9597795164791aebacdcefcd70a9a"
+    },
+    {
+      "path": "logs/.gitkeep",
+      "size": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "logs/delivery_verification.json",
+      "size": 1428,
+      "sha256": "e426b76e1ee7186c0676324723aace783f178649d8dffaebc885f78cff4ff8b9"
+    },
+    {
+      "path": "logs/finalize_review_text.py",
+      "size": 5438,
+      "sha256": "f2e65f83463207a576e508176f3a8c736d1102828812f297ffab2101b03edeb7"
+    },
+    {
+      "path": "logs/handoff_validation.json",
+      "size": 43,
+      "sha256": "b74e19c3b4435a0d2960f4f64037521892909f9b5c9244841d6c040c9f1fab60"
+    },
+    {
+      "path": "logs/mathematical_preflight.json",
+      "size": 1720,
+      "sha256": "c54b0caaf5a3b44b8c8eab6ec7dbd2d6e61022c1f5d86d91257ec541291f9012"
+    },
+    {
+      "path": "logs/methodology_audit_inputs/02_dataset_feasibility_sample_precision.md",
+      "size": 5537,
+      "sha256": "5009dd6c04512d15f117904bb18e3795232715d974751a0e4da22350ba130a86"
+    },
+    {
+      "path": "logs/methodology_audit_inputs/03_candidate_mathematical_model.md",
+      "size": 7742,
+      "sha256": "ca2f407ab13709ade2f3c8625e42754c8f8ef12b748bf545c391629cac5491ed"
+    },
+    {
+      "path": "logs/methodology_audit_inputs/04_statistical_analysis_plan.md",
+      "size": 6324,
+      "sha256": "c1ae4e4920b153d2781ca0e76f91e53dfa6d2f0cac160069d919cbe05a078db8"
+    },
+    {
+      "path": "logs/methodology_audit_inputs/05_fair_comparator_design.md",
+      "size": 6383,
+      "sha256": "cd52ab07fc44088368edad6d4054ba3790787413c022bff9c1afe2e09563b143"
+    },
+    {
+      "path": "logs/methodology_audit_inputs/06_proposed_protocol_lock.md",
+      "size": 6508,
+      "sha256": "83b79de560054c59fe7aeefa378e2afdf143c2e7b2ce6b24331ea8e984bfcd14"
+    },
+    {
+      "path": "logs/methodology_audit_inputs.json",
+      "size": 970,
+      "sha256": "727f8463d035fcf160cab3af0ad484983c4b24b13aa5bc2e011bc463bbfc7394"
+    },
+    {
+      "path": "logs/prepare_review_package.py",
+      "size": 26388,
+      "sha256": "da4ca286987ad705cbaca0a0bdc5ea00b08987b0eae02d20f21c315a48f28ee4"
+    },
+    {
+      "path": "logs/python_capabilities.json",
+      "size": 452,
+      "sha256": "5f8cf91860109c5a081d46d0b7e124b73225c2a51d554e1f04a0429a3425656d"
+    },
+    {
+      "path": "logs/record_review_snapshot.py",
+      "size": 1002,
+      "sha256": "257b0d9bde7a67ef065dee510f434ec6757dc98c476af820525160dfded95eae"
+    },
+    {
+      "path": "logs/research_validation.json",
+      "size": 170,
+      "sha256": "f7a087d1ad64fe9a2ba90123ccdf1c90e795cafde9364b6d849be6c3daa3c8d8"
+    },
+    {
+      "path": "logs/sample_precision.json",
+      "size": 2311,
+      "sha256": "b8dc99709426591ed20d495304b93fde4b1ad99799e815f346201385bf35ab1d"
+    },
+    {
+      "path": "logs/verify_delivery.py",
+      "size": 6319,
+      "sha256": "825404f64da4f874fe8228aac22da7cd79c167a0b69a0e19a91655f34dbfc8ce"
+    },
+    {
+      "path": "manuscript/.gitkeep",
+      "size": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "notebooks/.gitkeep",
+      "size": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "pyproject.toml",
+      "size": 712,
+      "sha256": "12bf3337b13b03923fb57d6f6820301f472742d6856caeae7271be3f9bfe80d5"
+    },
+    {
+      "path": "README.md",
+      "size": 3341,
+      "sha256": "d2e15f9aa39be99ff05382b1d8eb3f7d4b56f450832768dc03d79b78270bad17"
+    },
+    {
+      "path": "research/artifact_map.csv",
+      "size": 10322,
+      "sha256": "2ce1c675a62ea83e6ac97748b08d72e1e294f7a09676ccd195c5e9b0b2c2c947"
+    },
+    {
+      "path": "research/claim_ledger.csv",
+      "size": 1275,
+      "sha256": "a11bd4cbbb76949021637a86f1689b8fcdbc001f57d633ea8622b17cf5fe9f32"
+    },
+    {
+      "path": "research/data_manifest.json",
+      "size": 466,
+      "sha256": "651966cb1a349b5b0dc0bc2e02dcffe06ce4eef6ef51485191454964a48dc26d"
+    },
+    {
+      "path": "research/decision_log.md",
+      "size": 942,
+      "sha256": "1737a7a3d87ee26103d5bb2085a8fd148e741ce046181bd9b0097d57bc5379c4"
+    },
+    {
+      "path": "research/environment_manifest.json",
+      "size": 2045,
+      "sha256": "cc669b68de741af1550a7daa2bca39e34a24d0a0710cc57f3f88266121c8deea"
+    },
+    {
+      "path": "research/experiment_registry.jsonl",
+      "size": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "research/gate_results.json",
+      "size": 2459,
+      "sha256": "584291626bf2c3b3c7c58272796478319d76b5968ab5530f30aa7c15e3aefa6e"
+    },
+    {
+      "path": "research/literature_ledger.csv",
+      "size": 6712,
+      "sha256": "b0eb06996c76419e4fb00e8ad8aae8d421292108cecfd83d08afc2da2185a6b7"
+    },
+    {
+      "path": "research/protocol.json",
+      "size": 4653,
+      "sha256": "4860d88f8d902fe74f30cf587dc77099a8a4f21ac3f4c323398d8fd2e0f7bcdb"
+    },
+    {
+      "path": "research/workflow_route.json",
+      "size": 1305,
+      "sha256": "685a143197a222bc49308893b62eefb9555e13ed10a6a8223725d49962078ff6"
+    },
+    {
+      "path": "results/.gitkeep",
+      "size": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "src/.gitkeep",
+      "size": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "src/rp001_preflight.py",
+      "size": 5725,
+      "sha256": "950ad28ff5477ec36ecd14c43479e4fca05001a88e5e29c8b09324d0b0dd1820"
+    },
+    {
+      "path": "tests/.gitkeep",
+      "size": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "tests/verify_protocol_mathematics.py",
+      "size": 7844,
+      "sha256": "e74ae615c20dd8200ac4731d1639317ee6566fc8212b5c86656b1afd9090075f"
+    }
+  ]
+}

@@ -1,122 +1,168 @@
 {
-  "version": "0.3",
-  "scope": "development evidence return; not final research readiness",
-  "recommendation": "REVISE AGAIN",
+  "version": "0.4",
+  "scope": "Development evidence return, not final research readiness",
+  "recommendation": "B. REVISE AGAIN",
   "gates": [
     {
       "gate": "DEVELOPMENT_AUTHORIZATION",
       "state": "PASS",
-      "owner": "Rei lead / Raihan × Rei for final authorization",
-      "artifact_version": "0.3",
+      "owner": "Rei / SOL lead; final authorization Research Owners Raihan x Rei",
+      "artifact_version": "0.4",
       "evidence_ids": [
-        "E-OWNER"
+        "V04-E-OWNER"
       ],
-      "rationale": "Synthetic and FD001 training-only scope authorized"
+      "rationale": "Only synthetic/FD001train v0.4 approved; no final lock/testaccess."
     },
     {
       "gate": "TRAINING_SPLIT_AUDIT",
       "state": "PASS",
-      "owner": "Rei lead / Raihan × Rei for final authorization",
-      "artifact_version": "0.3",
+      "owner": "Rei / SOL lead; final authorization Research Owners Raihan x Rei",
+      "artifact_version": "0.4",
       "evidence_ids": [
-        "E-DATA",
-        "E-MATH"
+        "V04-E-DATA",
+        "V04-E-MATH"
       ],
-      "rationale": "Scoped training audit; official population/rights not validated"
+      "rationale": "Original training split/eligibility preserved; official audit deferred."
     },
     {
       "gate": "IMPLEMENTATION_MATHEMATICS",
       "state": "PASS",
-      "owner": "Rei lead / Raihan × Rei for final authorization",
-      "artifact_version": "0.3",
+      "owner": "Rei / SOL lead; final authorization Research Owners Raihan x Rei",
+      "artifact_version": "0.4",
       "evidence_ids": [
-        "E-MATH"
+        "V04-E-MATH",
+        "V04-E-TEST"
       ],
-      "rationale": "Dense likelihood/gradient/conditioning/CQR checks in tested domain"
-    },
-    {
-      "gate": "MCMC_DIAGNOSTICS",
-      "state": "PASS",
-      "owner": "Rei lead / Raihan × Rei for final authorization",
-      "artifact_version": "0.3",
-      "evidence_ids": [
-        "E-SYN",
-        "E-RUNS"
-      ],
-      "rationale": "11 successful fits pass;2infrastructure failures retained"
-    },
-    {
-      "gate": "GLOBAL_IDENTIFIABILITY",
-      "state": "DEFERRED",
-      "owner": "Rei lead / Raihan × Rei for final authorization",
-      "artifact_version": "0.3",
-      "evidence_ids": [
-        "E-SYN"
-      ],
-      "rationale": "Four recoveries and correlations do not prove global/practical identification"
+      "rationale": "Direct lead equations/oracles within stated model/diagnostic assumptions."
     },
     {
       "gate": "PREDICTIVE_PRECISION",
-      "state": "FAIL",
-      "owner": "Rei lead / Raihan × Rei for final authorization",
-      "artifact_version": "0.3",
+      "state": "PASS",
+      "owner": "Rei / SOL lead; final authorization Research Owners Raihan x Rei",
+      "artifact_version": "0.4",
       "evidence_ids": [
-        "E-PRED"
+        "V04-E-PREC",
+        "V04-E-MC"
       ],
-      "rationale": "Maximum approximate quantile MCSE .728972>.5cycle"
+      "rationale": "All25/75approximate upperMCSE guards <=.5, max.220513; replications/oracles compatible. Future endpoints untested."
+    },
+    {
+      "gate": "MCMC_DIAGNOSTICS",
+      "state": "FAIL",
+      "owner": "Rei / SOL lead; final authorization Research Owners Raihan x Rei",
+      "artifact_version": "0.4",
+      "evidence_ids": [
+        "V04-E-SYN",
+        "V04-E-RUNS"
+      ],
+      "rationale": "33actualfits/32pass/highrho3fails strict Rhat<1.01; notrerun."
+    },
+    {
+      "gate": "STRUCTURAL_IDENTIFIABILITY",
+      "state": "PASS",
+      "owner": "Rei / SOL lead; final authorization Research Owners Raihan x Rei",
+      "artifact_version": "0.4",
+      "evidence_ids": [
+        "V04-E-MATH"
+      ],
+      "rationale": "Generic population-moment proof under fullrank/interior assumptions; no practical/physical guarantee."
+    },
+    {
+      "gate": "PRACTICAL_STRESS_RELIABILITY",
+      "state": "FAIL",
+      "owner": "Rei / SOL lead; final authorization Research Owners Raihan x Rei",
+      "artifact_version": "0.4",
+      "evidence_ids": [
+        "V04-E-SYN",
+        "V04-E-MATH"
+      ],
+      "rationale": "Highrho illconditioning/convergence failure remains critical for conservative prelock readiness."
+    },
+    {
+      "gate": "PRIOR_PLAUSIBILITY",
+      "state": "PASS",
+      "owner": "Rei / SOL lead; final authorization Research Owners Raihan x Rei",
+      "artifact_version": "0.4",
+      "evidence_ids": [
+        "V04-E-PRIOR",
+        "V04-E-MATH"
+      ],
+      "rationale": "Proper anchored workingprior mathematical/scaletail assessment accepted with claimrestriction; domainelicitation absent."
     },
     {
       "gate": "CALIBRATION_TRANSPORT",
       "state": "DEFERRED",
-      "owner": "Rei lead / Raihan × Rei for final authorization",
-      "artifact_version": "0.3",
+      "owner": "Rei / SOL lead; final authorization Research Owners Raihan x Rei",
+      "artifact_version": "0.4",
       "evidence_ids": [
-        "E-CAL",
-        "E-DATA",
-        "E-DESIGN"
+        "V04-E-DATA",
+        "V04-E-MATH"
       ],
-      "rationale": "Official-cutoff score exchangeability unknown"
+      "rationale": "Unknownofficial cutoffscore exchangeability; no primary transportedcoverageclaim."
+    },
+    {
+      "gate": "PIPELINE_SENSITIVITY",
+      "state": "PASS",
+      "owner": "Rei / SOL lead; final authorization Research Owners Raihan x Rei",
+      "artifact_version": "0.4",
+      "evidence_ids": [
+        "V04-E-PIPE"
+      ],
+      "rationale": "Eightcomplete fullstageperturbations; notunconditionalvariance."
     },
     {
       "gate": "FULL_PIPELINE_UNCERTAINTY",
       "state": "DEFERRED",
-      "owner": "Rei lead / Raihan × Rei for final authorization",
-      "artifact_version": "0.3",
+      "owner": "Rei / SOL lead; final authorization Research Owners Raihan x Rei",
+      "artifact_version": "0.4",
       "evidence_ids": [
-        "E-DESIGN"
+        "V04-E-PIPE",
+        "V04-E-OC"
       ],
-      "rationale": "Illustration excludes PCA/HPO/Bayesian/cutoff variation"
+      "rationale": "Noindependentpipelinepopulationor independentassessmentoutcomes; excludedfromprimaryclaim."
+    },
+    {
+      "gate": "SECONDARY_INFERENCE_STRESS",
+      "state": "FAIL",
+      "owner": "Rei / SOL lead; final authorization Research Owners Raihan x Rei",
+      "artifact_version": "0.4",
+      "evidence_ids": [
+        "V04-E-OC"
+      ],
+      "rationale": "No nominal95/5 stressdomain certification; frozen suppressible diagnostic only, finitecontrastprimary."
     },
     {
       "gate": "LOCAL_ENVIRONMENT",
       "state": "PASS",
-      "owner": "Rei lead / Raihan × Rei for final authorization",
-      "artifact_version": "0.3",
+      "owner": "Rei / SOL lead; final authorization Research Owners Raihan x Rei",
+      "artifact_version": "0.4",
       "evidence_ids": [
-        "E-ENV"
+        "V04-E-ENV",
+        "V04-E-RUNS"
       ],
-      "rationale": "Scoped runtime/dependency validation; Colab unused"
+      "rationale": "Pinned CPUenvironment, .693registeredCPUhours, noColab/spending."
     },
     {
       "gate": "PROTOCOL_LOCK",
       "state": "BLOCKED",
-      "owner": "Rei lead / Raihan × Rei for final authorization",
-      "artifact_version": "0.3",
+      "owner": "Rei / SOL lead; final authorization Research Owners Raihan x Rei",
+      "artifact_version": "0.4",
       "evidence_ids": [
-        "E-OWNER",
-        "E-PRED"
+        "V04-E-OWNER",
+        "V04-E-SYN"
       ],
-      "rationale": "Final owner approval absent and critical numerical/scientific risks open"
+      "rationale": "Finalownerapprovalabsent; B. REVISE AGAIN, unchangeddraftstate."
     },
     {
       "gate": "SCIENTIFIC_VALIDATED",
       "state": "DEFERRED",
-      "owner": "Rei lead / Raihan × Rei for final authorization",
-      "artifact_version": "0.3",
+      "owner": "Rei / SOL lead; final authorization Research Owners Raihan x Rei",
+      "artifact_version": "0.4",
       "evidence_ids": [
-        "E-OWNER"
+        "V04-E-OWNER",
+        "V04-E-RUNS"
       ],
-      "rationale": "No official confirmatory results or accepted primary predictions"
+      "rationale": "Noofficialcomparativeresults; criticalstresslimitation; evidence return is notvalidatedresearch."
     }
   ]
 }

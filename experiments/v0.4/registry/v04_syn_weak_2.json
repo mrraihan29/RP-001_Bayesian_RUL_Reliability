@@ -1,0 +1,304 @@
+{
+  "created_at": "2026-10-08T14:39:02.817071+00:00",
+  "git_commit": "6aab2089eec1f0ee0818bbb56960ce0677e767fd",
+  "source_dirty": false,
+  "executed_source_sha256": {
+    "src/rp001/__init__.py": "77b845af67e6f3d0b795acb93e4e651143b49fd33c7d437c774b5704a4d384f4",
+    "src/rp001/comparator_pilot.py": "ec2777d4ce2f498eac5b7a55f29ff5635364bd9aded09a1ba70ad4d1774a5b66",
+    "src/rp001/comparators.py": "37d8e96ab23f7e3525010ed6aa412a2ff89dd622a4e3d0cceb9d215a8c4e41aa",
+    "src/rp001/data.py": "3a0ef34d51468ad05279cbcaeb9e3ab8075134f75771c4375136f4167b512170",
+    "src/rp001/development_data_audit.py": "5697fc66c254637547499f9a88e2ced5472a6de176bb4a26972975710ea16f92",
+    "src/rp001/environment.py": "bf3d2e6a20f3a7673cf1499f7ea7adce3b7952eb3c5d48f2b6a44821f51ca2fd",
+    "src/rp001/metrics.py": "8eb710c14c35ab556ee52448a2a85e30203d40247f7627bdcd9df6add1a88531",
+    "src/rp001/model.py": "52627ae6f49311c3bb837ed3685a4d93b7e9a4d059fe08d6b892c4abab60d399",
+    "src/rp001/pilot.py": "40ab3eaef48aa82f59c5234715268f2f3f37764f484ab89456baef39bcd940c1",
+    "src/rp001/prediction.py": "f54fafe5875a8c7e009ee3c392cbf75c9e9d041646521e9a4123dd5e21b65d9b",
+    "src/rp001/predictive_analysis.py": "a4346a6c63101d8bef4f1f8f98298002e50ea5718e3098e058498953a31366fc",
+    "src/rp001/statistical_design.py": "093b66b5f2f990295a8579e23efa1ff0be4b48f1b00c7c3b3b473741d7451a9c",
+    "src/rp001/v04_analysis.py": "0da0a7087a6697df4035bcb3077561637322fc2783892d975ab55e9153faeb45",
+    "src/rp001/v04_common.py": "6c353d14140d9af2c1a20935751fb0218b8e7312da8490f3a743d92bc5e11933",
+    "src/rp001/v04_inference.py": "dc05f013b9c9bf05463269b4bd6c6ece74505467e5a4c2125a0ed0690ded1d64",
+    "src/rp001/v04_inference_run.py": "36be33a5637e9b0c0d7f0ea8164b3a7f70beb0c54a2cbb1c71ba0aa35def7af1",
+    "src/rp001/v04_model.py": "45dc8556475d4822e7fc2f17236fb1b2c04d7dafe0d9aa0548021d9abd1fa23e",
+    "src/rp001/v04_pipeline.py": "0b75f708359915f8a197c429a49f2e096c050a21879dbc6e703253155388e569",
+    "src/rp001/v04_precision.py": "396a5f55ca2e9c51fd21f02f50e59c57be7aedd38321a4a3123b0b955f1fde33",
+    "src/rp001/v04_precision_validation.py": "47c5f33e1deb98bf3872f18fbe23f669783819c6180a2fdaf3595c6a024c4a7f",
+    "src/rp001/v04_predict.py": "412f3f59fe823ffa7f1de048c7c7b68a2777bc83a400f40b6a717db22a1604e2",
+    "src/rp001/v04_run.py": "82bba7e2e570601ecd6c1e4d384aa6b9c9e423ebfe42f72f24f0b41926f12a37"
+  },
+  "plan_sha256": "0c6a7e1e924636cec6196295eac19b29a6bd7faa85e18b081549f8287ab0b99b",
+  "environment_fingerprint": "f57b00a67e9d67b2920791bfddc8dc812dbdeb9306588a26557dfd6be15f826c",
+  "dataset_sha256": "963b5e22825b34d8b21c69e1aeb4af3e647050eb672ee8834ba4b5d91d2de0f8",
+  "confirmatory": false,
+  "official_test_access": false,
+  "run_id": "v04_syn_weak_2",
+  "configuration": {
+    "run_id": "v04_syn_weak_2",
+    "kind": "synthetic",
+    "regime": "weak",
+    "n": 56,
+    "assessment_n": 20,
+    "data_seed": 42202,
+    "assessment_seed": 43202,
+    "seed": 44202,
+    "draws": 2000,
+    "prior": "anchored_v04"
+  },
+  "status": "completed",
+  "data_sha256": "5eda60194c21da1c609331c6f3fb587e4970be78b8ec6848ff7910c3962e25f9",
+  "diagnostics": {
+    "rhat_max": 1.002385365870253,
+    "bulk_ess_min": 5320.875403585071,
+    "tail_ess_min": 4923.455703556531,
+    "divergences": 0,
+    "bfmi": [
+      1.0000958812624459,
+      0.9939924695232161,
+      0.9330345776535439,
+      0.9541582837632195
+    ],
+    "maxdepth_fraction": 0.0,
+    "sample_stat_keys": [
+      "depth",
+      "maxdepth_reached",
+      "step_size",
+      "transformation_update_id",
+      "step_size_bar",
+      "mean_tree_accept",
+      "mean_tree_accept_sym",
+      "n_steps",
+      "max_energy_error",
+      "tuning",
+      "index_in_trajectory",
+      "logp",
+      "energy",
+      "energy_error",
+      "fisher_distance",
+      "transformation_index",
+      "diverging",
+      "divergence_draw",
+      "divergence_message",
+      "divergence_energy_error"
+    ],
+    "acceptance": "PASS",
+    "failures": [],
+    "auxiliary_rhat_max": 1.000112338082653,
+    "auxiliary_bulk_min": 5531.785304809973,
+    "auxiliary_tail_min": 5094.284204126115
+  },
+  "recovery": {
+    "parameters": [
+      {
+        "parameter": "beta(0,)",
+        "truth": 4.605170185988092,
+        "mean": 4.5405055545430235,
+        "sd": 0.03942162623857461,
+        "equal_tail95": [
+          4.4623598190348766,
+          4.61806179214627
+        ],
+        "truth_in95": true,
+        "standardized_mean_error": -1.6403339388823346
+      },
+      {
+        "parameter": "beta(1,)",
+        "truth": -0.4,
+        "mean": -0.3158754399552492,
+        "sd": 0.07549681257535697,
+        "equal_tail95": [
+          -0.46474387608391904,
+          -0.1695959783414201
+        ],
+        "truth_in95": true,
+        "standardized_mean_error": 1.1142796255243503
+      },
+      {
+        "parameter": "gamma(0,)",
+        "truth": -0.03,
+        "mean": -0.0506845386245627,
+        "sd": 0.06863476441078467,
+        "equal_tail95": [
+          -0.1851894267373182,
+          0.08592341473163169
+        ],
+        "truth_in95": true,
+        "standardized_mean_error": -0.3013711608415241
+      },
+      {
+        "parameter": "gamma(1,)",
+        "truth": 0.02,
+        "mean": -0.016887490725293768,
+        "sd": 0.11066682176083749,
+        "equal_tail95": [
+          -0.23314973349612225,
+          0.20299581716516105
+        ],
+        "truth_in95": true,
+        "standardized_mean_error": -0.33332023219218737
+      },
+      {
+        "parameter": "Gamma(0, 0)",
+        "truth": 0.1,
+        "mean": 0.1562116072288979,
+        "sd": 0.07296622619261327,
+        "equal_tail95": [
+          0.013996281023360068,
+          0.2986646885504379
+        ],
+        "truth_in95": true,
+        "standardized_mean_error": 0.7703784361892692
+      },
+      {
+        "parameter": "Gamma(0, 1)",
+        "truth": 0.5,
+        "mean": 0.4116021893295057,
+        "sd": 0.11874348781926611,
+        "equal_tail95": [
+          0.17544054222203498,
+          0.6417031988522003
+        ],
+        "truth_in95": true,
+        "standardized_mean_error": -0.7444434410166598
+      },
+      {
+        "parameter": "Gamma(1, 0)",
+        "truth": -0.1,
+        "mean": -0.12417810385171449,
+        "sd": 0.06198893794874685,
+        "equal_tail95": [
+          -0.24406372412946228,
+          -0.0039936927363669605
+        ],
+        "truth_in95": true,
+        "standardized_mean_error": -0.3900390077937004
+      },
+      {
+        "parameter": "Gamma(1, 1)",
+        "truth": -0.25,
+        "mean": -0.2443636761958582,
+        "sd": 0.10111645644830197,
+        "equal_tail95": [
+          -0.43868931146792134,
+          -0.04340817368548607
+        ],
+        "truth_in95": true,
+        "standardized_mean_error": 0.055740915001540846
+      },
+      {
+        "parameter": "tau(0,)",
+        "truth": 0.45,
+        "mean": 0.5284585620287944,
+        "sd": 0.052823146943840354,
+        "equal_tail95": [
+          0.4353088140916953,
+          0.6396153467314274
+        ],
+        "truth_in95": true,
+        "standardized_mean_error": 1.485306472032207
+      },
+      {
+        "parameter": "tau(1,)",
+        "truth": 0.3,
+        "mean": 0.3746972398401693,
+        "sd": 0.05604903330659591,
+        "equal_tail95": [
+          0.2708429092494636,
+          0.4912970006593707
+        ],
+        "truth_in95": true,
+        "standardized_mean_error": 1.3327123668942715
+      },
+      {
+        "parameter": "r_g()",
+        "truth": 0.2,
+        "mean": 0.37002484518231227,
+        "sd": 0.13570604234636904,
+        "equal_tail95": [
+          0.0774265660978897,
+          0.6087944634594945
+        ],
+        "truth_in95": true,
+        "standardized_mean_error": 1.252890750054811
+      },
+      {
+        "parameter": "sigma_z()",
+        "truth": 0.3,
+        "mean": 0.28595572874661723,
+        "sd": 0.007235163475559629,
+        "equal_tail95": [
+          0.2725645949983742,
+          0.3008817956098148
+        ],
+        "truth_in95": true,
+        "standardized_mean_error": -1.941113189884967
+      },
+      {
+        "parameter": "sigma_r()",
+        "truth": 0.25,
+        "mean": 0.25157936457047286,
+        "sd": 0.025805328843876957,
+        "equal_tail95": [
+          0.20717994674911225,
+          0.3084279202911856
+        ],
+        "truth_in95": true,
+        "standardized_mean_error": 0.06120303988482643
+      },
+      {
+        "parameter": "rho()",
+        "truth": 0.5,
+        "mean": 0.4425998036809096,
+        "sd": 0.027108954840634584,
+        "equal_tail95": [
+          0.3886386969665736,
+          0.4963144761315555
+        ],
+        "truth_in95": false,
+        "standardized_mean_error": -2.117388761629835
+      }
+    ],
+    "max_abs_standardized_mean_error": 2.117388761629835,
+    "gross_recovery_flag": false,
+    "interpretation": "One of four fixed-truth replicates per regime; not SBC. Posterior interval recovery and gross standardized errors are diagnostic, not identifiability proof."
+  },
+  "truth": {
+    "beta": [
+      4.605170185988092,
+      -0.4
+    ],
+    "gamma": [
+      -0.03,
+      0.02
+    ],
+    "Gamma": [
+      [
+        0.1,
+        0.5
+      ],
+      [
+        -0.1,
+        -0.25
+      ]
+    ],
+    "tau": [
+      0.45,
+      0.3
+    ],
+    "r_g": 0.2,
+    "sigma_z": 0.3,
+    "sigma_r": 0.25,
+    "rho": 0.5
+  },
+  "posterior_sha256": "6c13c37ee58e8822143ccde171e8895da8b7c2115613deb42d81438de32ccaff",
+  "n_engines": 56,
+  "n_distinct_engines": 56,
+  "wall_seconds": 61.06947119999677,
+  "cpu_seconds": 62.9375,
+  "peak_rss_bytes": 503742464,
+  "artifacts_sha256": {
+    "experiments/v0.4/fits/v04_syn_weak_2.nc": "6c13c37ee58e8822143ccde171e8895da8b7c2115613deb42d81438de32ccaff",
+    "experiments/v0.4/fits/v04_syn_weak_2_assessment.npz": "96f828ad314869de89b7bc7dbafc57ca0e7e59624563cedcc8ff3794d6af662e",
+    "experiments/v0.4/fits/v04_syn_weak_2_data.npz": "5eda60194c21da1c609331c6f3fb587e4970be78b8ec6848ff7910c3962e25f9",
+    "experiments/v0.4/fits/v04_syn_weak_2_summary.csv": "2452244378e46a049fe58d709112a92ae725c6cb120cf7f66026e3ddaa7d20b1"
+  }
+}

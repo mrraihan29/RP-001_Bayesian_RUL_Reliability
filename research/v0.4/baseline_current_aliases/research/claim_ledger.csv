@@ -1,0 +1,8 @@
+claim_id,claim,claim_type,scope,evidence_ids,status,caveats
+C01,FD001 official training contains100 engines and20631 complete rows,descriptive,downloaded training hash only,E-TRAIN,supported,No test schema audit
+C02,Bayesian has lower90% interval score than CQR,comparative,future locked FD001 endpoint comparison,,unresolved,Models fitted for development; no official primary endpoint comparison; quantile precision FAIL
+C03,Exact conformal90% guarantee holds at official cutoff mechanism,theoretical,official FD001 test,S05;S07;S08,not-supported,Exchangeability/selection mechanism not established
+C04,RP001 research combination is publication-novel,evidence-gap,current literature,S03;S04;S10;S11;S12;S13,unresolved,"Narrative search, missing full methods and recent identity discrepancies"
+C05,100 engines establish tight±2pp90% calibration,comparative,future coverage estimation,E-PRECISION,not-supported,Observed90/100 hypothetical Wilson95 interval82.56..94.48%
+C06,Synthetic FD001 evidence generalizes to real-engine operational safety,generalization,real fleet,S01;S02,not-supported,Synthetic-to-real gap
+C07,Proposed landmark model is algebraically coherent for sampled alive cohort,methodological,specified equations only,E-MATH;E-SYN;E-PPC,qualified,Likelihood/gradient and four fixed synthetic recovery cases verified; identifiability/domain plausibility qualified; not a generative survival model

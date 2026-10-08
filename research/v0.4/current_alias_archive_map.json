@@ -1,0 +1,11 @@
+{
+  "research/protocol.json": "research/v0.4/baseline_current_aliases/research/protocol.json",
+  "research/gate_results.json": "research/v0.4/baseline_current_aliases/research/gate_results.json",
+  "research/state_manifest.json": "research/v0.4/baseline_current_aliases/research/state_manifest.json",
+  "research/environment_manifest.json": "research/v0.4/baseline_current_aliases/research/environment_manifest.json",
+  "research/claim_ledger.csv": "research/v0.4/baseline_current_aliases/research/claim_ledger.csv",
+  "research/decision_log.md": "research/v0.4/baseline_current_aliases/research/decision_log.md",
+  "research/artifact_map.csv": "research/v0.4/baseline_current_aliases/research/artifact_map.csv",
+  "README.md": "research/v0.4/baseline_current_aliases/README.md",
+  ".gitignore": "research/v0.4/baseline_current_aliases/.gitignore"
+}

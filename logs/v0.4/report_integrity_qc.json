@@ -1,0 +1,14 @@
+{
+  "status": "PASS",
+  "eleven_numbered_reports": true,
+  "markdown_targets_checked": true,
+  "missing_targets": [],
+  "deferred_postcommit_targets": [
+    "delivery_manifest.json",
+    "delivery_receipt.json"
+  ],
+  "handoff_evidence_hashes_match": true,
+  "critical_risk_vocabulary_owner_compliant": true,
+  "recommendation": "B. REVISE AGAIN",
+  "no_scientific_reruns": true
+}

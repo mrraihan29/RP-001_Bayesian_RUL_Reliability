@@ -1,0 +1,592 @@
+{
+  "run_id": "v04_syn_high_rho_1",
+  "posterior_evidence_accepted": true,
+  "unaccepted_scope": "Raw diagnostic summaries retained; no calibrated posterior/coverage conclusion from a failed convergence fit",
+  "diagnostics": {
+    "rhat_max": 1.0038124036086997,
+    "bulk_ess_min": 573.2665463936175,
+    "tail_ess_min": 1318.300411669369,
+    "divergences": 0,
+    "bfmi": [
+      0.882474579569787,
+      0.8764952534089586,
+      0.8531352953229953,
+      0.8326047221417685
+    ],
+    "maxdepth_fraction": 0.0,
+    "sample_stat_keys": [
+      "depth",
+      "maxdepth_reached",
+      "step_size",
+      "transformation_update_id",
+      "step_size_bar",
+      "mean_tree_accept",
+      "mean_tree_accept_sym",
+      "n_steps",
+      "max_energy_error",
+      "tuning",
+      "index_in_trajectory",
+      "logp",
+      "energy",
+      "energy_error",
+      "fisher_distance",
+      "transformation_index",
+      "diverging",
+      "divergence_draw",
+      "divergence_message",
+      "divergence_energy_error"
+    ],
+    "acceptance": "PASS",
+    "failures": [],
+    "auxiliary_rhat_max": 1.0037874400494073,
+    "auxiliary_bulk_min": 574.8590006897824,
+    "auxiliary_tail_min": 1398.466931392268
+  },
+  "recovery": {
+    "parameters": [
+      {
+        "parameter": "beta(0,)",
+        "truth": 4.605170185988092,
+        "mean": 4.619056939817726,
+        "sd": 0.04625896003198347,
+        "equal_tail95": [
+          4.526409360928591,
+          4.708821488663225
+        ],
+        "truth_in95": true,
+        "standardized_mean_error": 0.300195979763342
+      },
+      {
+        "parameter": "beta(1,)",
+        "truth": -0.4,
+        "mean": -0.32571827115568475,
+        "sd": 0.1040001459987638,
+        "equal_tail95": [
+          -0.5294291728911602,
+          -0.11434279395762595
+        ],
+        "truth_in95": true,
+        "standardized_mean_error": 0.7142463900502432
+      },
+      {
+        "parameter": "gamma(0,)",
+        "truth": -0.35,
+        "mean": -0.3117793999793052,
+        "sd": 0.1386346850864188,
+        "equal_tail95": [
+          -0.6060031040235183,
+          -0.04668725543191602
+        ],
+        "truth_in95": true,
+        "standardized_mean_error": 0.27569291189192463
+      },
+      {
+        "parameter": "gamma(1,)",
+        "truth": 0.15,
+        "mean": 0.2390293402835916,
+        "sd": 0.13500161337064848,
+        "equal_tail95": [
+          -0.02517755315026741,
+          0.5219156326064758
+        ],
+        "truth_in95": true,
+        "standardized_mean_error": 0.6594687134527832
+      },
+      {
+        "parameter": "Gamma(0, 0)",
+        "truth": 0.1,
+        "mean": 0.013217258609599944,
+        "sd": 0.07061048222407167,
+        "equal_tail95": [
+          -0.1228268993903397,
+          0.15619652534697384
+        ],
+        "truth_in95": true,
+        "standardized_mean_error": -1.2290348211333295
+      },
+      {
+        "parameter": "Gamma(0, 1)",
+        "truth": 0.5,
+        "mean": 0.531374142601774,
+        "sd": 0.11144623187393884,
+        "equal_tail95": [
+          0.30012159411394623,
+          0.7453582609513496
+        ],
+        "truth_in95": true,
+        "standardized_mean_error": 0.28151820007034845
+      },
+      {
+        "parameter": "Gamma(1, 0)",
+        "truth": -0.1,
+        "mean": -0.13236916385810826,
+        "sd": 0.07770007652757849,
+        "equal_tail95": [
+          -0.2813318409437956,
+          0.021446431691312128
+        ],
+        "truth_in95": true,
+        "standardized_mean_error": -0.41659114514024065
+      },
+      {
+        "parameter": "Gamma(1, 1)",
+        "truth": -0.25,
+        "mean": -0.2374497879558071,
+        "sd": 0.12180090864477684,
+        "equal_tail95": [
+          -0.4701012014318974,
+          0.0005604413091361156
+        ],
+        "truth_in95": true,
+        "standardized_mean_error": 0.10303873906880819
+      },
+      {
+        "parameter": "tau(0,)",
+        "truth": 0.45,
+        "mean": 0.3824769851419015,
+        "sd": 0.0898673914396301,
+        "equal_tail95": [
+          0.17533926701998337,
+          0.5343405563808623
+        ],
+        "truth_in95": true,
+        "standardized_mean_error": -0.7513627999702008
+      },
+      {
+        "parameter": "tau(1,)",
+        "truth": 0.3,
+        "mean": 0.3955833918740284,
+        "sd": 0.09131298643640738,
+        "equal_tail95": [
+          0.208593304653266,
+          0.5705588557429729
+        ],
+        "truth_in95": true,
+        "standardized_mean_error": 1.0467666824213997
+      },
+      {
+        "parameter": "r_g()",
+        "truth": 0.2,
+        "mean": 0.016759274522963497,
+        "sd": 0.2781207682733511,
+        "equal_tail95": [
+          -0.6340559482096008,
+          0.4507060693281948
+        ],
+        "truth_in95": true,
+        "standardized_mean_error": -0.658853082474367
+      },
+      {
+        "parameter": "sigma_z()",
+        "truth": 0.3,
+        "mean": 0.2960326700294355,
+        "sd": 0.06929931724354801,
+        "equal_tail95": [
+          0.1932471214526786,
+          0.44326418146856017
+        ],
+        "truth_in95": true,
+        "standardized_mean_error": -0.05724919275353831
+      },
+      {
+        "parameter": "sigma_r()",
+        "truth": 0.25,
+        "mean": 0.2697610808795455,
+        "sd": 0.03210667919426291,
+        "equal_tail95": [
+          0.2109177713504341,
+          0.3373059164450013
+        ],
+        "truth_in95": true,
+        "standardized_mean_error": 0.6154819300987239
+      },
+      {
+        "parameter": "rho()",
+        "truth": 0.95,
+        "mean": 0.9370114554854447,
+        "sd": 0.02790258296275369,
+        "equal_tail95": [
+          0.875750294548778,
+          0.9755667446316044
+        ],
+        "truth_in95": true,
+        "standardized_mean_error": -0.46549613460134626
+      }
+    ],
+    "max_abs_standardized_mean_error": 1.2290348211333295,
+    "gross_recovery_flag": false,
+    "interpretation": "One of four fixed-truth replicates per regime; not SBC. Posterior interval recovery and gross standardized errors are diagnostic, not identifiability proof."
+  },
+  "prior_posterior_sd": [
+    {
+      "parameter": "beta[0]",
+      "posterior_sd": 0.04625896003198346,
+      "prior_sd": 0.601622473822962,
+      "sd_ratio": 0.07689034576456992,
+      "policy": "matching-prior-reference"
+    },
+    {
+      "parameter": "beta[1]",
+      "posterior_sd": 0.10400014599876378,
+      "prior_sd": 0.49539825614946,
+      "sd_ratio": 0.20993240227996945,
+      "policy": "matching-prior-reference"
+    },
+    {
+      "parameter": "gamma[0]",
+      "posterior_sd": 0.13863468508641888,
+      "prior_sd": 0.2503410552560277,
+      "sd_ratio": 0.5537832575828804,
+      "policy": "matching-prior-reference"
+    },
+    {
+      "parameter": "gamma[1]",
+      "posterior_sd": 0.13500161337064848,
+      "prior_sd": 0.24976390288203004,
+      "sd_ratio": 0.5405169114225975,
+      "policy": "matching-prior-reference"
+    },
+    {
+      "parameter": "Gamma[0]",
+      "posterior_sd": 0.07061048222407161,
+      "prior_sd": 0.5021200598511987,
+      "sd_ratio": 0.1406246988917287,
+      "policy": "matching-prior-reference"
+    },
+    {
+      "parameter": "Gamma[1]",
+      "posterior_sd": 0.1114462318739389,
+      "prior_sd": 0.3540925013812204,
+      "sd_ratio": 0.3147376220598202,
+      "policy": "matching-prior-reference"
+    },
+    {
+      "parameter": "Gamma[2]",
+      "posterior_sd": 0.07770007652757846,
+      "prior_sd": 0.5036690019564015,
+      "sd_ratio": 0.15426813289237187,
+      "policy": "matching-prior-reference"
+    },
+    {
+      "parameter": "Gamma[3]",
+      "posterior_sd": 0.12180090864477688,
+      "prior_sd": 0.34878380618777766,
+      "sd_ratio": 0.34921606589499143,
+      "policy": "matching-prior-reference"
+    },
+    {
+      "parameter": "tau[0]",
+      "posterior_sd": 0.08986739143963007,
+      "prior_sd": 0.2144132740615272,
+      "sd_ratio": 0.4191316597956621,
+      "policy": "matching-prior-reference"
+    },
+    {
+      "parameter": "tau[1]",
+      "posterior_sd": 0.09131298643640752,
+      "prior_sd": 0.21263410110878433,
+      "sd_ratio": 0.42943716911000784,
+      "policy": "matching-prior-reference"
+    },
+    {
+      "parameter": "r_g[0]",
+      "posterior_sd": 0.2781207682733511,
+      "prior_sd": 0.4445495968124148,
+      "sd_ratio": 0.625623710532143,
+      "policy": "matching-prior-reference"
+    },
+    {
+      "parameter": "sigma_z[0]",
+      "posterior_sd": 0.06929931724354801,
+      "prior_sd": 0.24464684155478977,
+      "sd_ratio": 0.283262668764224,
+      "policy": "matching-prior-reference"
+    },
+    {
+      "parameter": "sigma_r[0]",
+      "posterior_sd": 0.03210667919426291,
+      "prior_sd": 0.24052934169689466,
+      "sd_ratio": 0.1334834202253896,
+      "policy": "matching-prior-reference"
+    },
+    {
+      "parameter": "rho[0]",
+      "posterior_sd": 0.02790258296275369,
+      "prior_sd": 0.5405116681251056,
+      "sd_ratio": 0.05162253584560069,
+      "policy": "matching-prior-reference"
+    }
+  ],
+  "strongest_correlations": [
+    {
+      "a": "sigma_z[0]",
+      "b": "rho[0]",
+      "correlation": 0.9321008887470056
+    },
+    {
+      "a": "tau[0]",
+      "b": "sigma_z[0]",
+      "correlation": -0.7266974200256504
+    },
+    {
+      "a": "beta[1]",
+      "b": "gamma[0]",
+      "correlation": -0.6741241333731434
+    },
+    {
+      "a": "tau[0]",
+      "b": "rho[0]",
+      "correlation": -0.6579533140727776
+    },
+    {
+      "a": "tau[1]",
+      "b": "rho[0]",
+      "correlation": -0.5956316500209449
+    },
+    {
+      "a": "tau[1]",
+      "b": "sigma_z[0]",
+      "correlation": -0.5952166275266927
+    },
+    {
+      "a": "tau[0]",
+      "b": "r_g[0]",
+      "correlation": 0.5679780730900067
+    },
+    {
+      "a": "tau[1]",
+      "b": "r_g[0]",
+      "correlation": 0.5528238521169161
+    },
+    {
+      "a": "r_g[0]",
+      "b": "sigma_z[0]",
+      "correlation": -0.5406225077936642
+    },
+    {
+      "a": "r_g[0]",
+      "b": "rho[0]",
+      "correlation": -0.5103773144883637
+    }
+  ],
+  "predictive_assessment": {
+    "n": 20,
+    "coverage": {
+      "successes": 20,
+      "trials": 20,
+      "proportion": 1.0,
+      "binomial_mcse": 0.0,
+      "wilson_interval": [
+        0.8388748419471808,
+        1.0
+      ]
+    },
+    "median_rmse": 23.690192393103093,
+    "mean_interval_score": 103.34291523958174,
+    "engine_predictions": [
+      {
+        "engine": 0,
+        "quantiles": [
+          115.30720853714928,
+          188.98239942463405,
+          308.5429621022261
+        ],
+        "weight_ess": 7330.373281855709
+      },
+      {
+        "engine": 1,
+        "quantiles": [
+          49.56043715574567,
+          79.7129437204343,
+          128.44020030517203
+        ],
+        "weight_ess": 7611.309148705734
+      },
+      {
+        "engine": 2,
+        "quantiles": [
+          62.110878649135856,
+          100.55342361704034,
+          161.93791704455478
+        ],
+        "weight_ess": 7177.089692076388
+      },
+      {
+        "engine": 3,
+        "quantiles": [
+          83.8153054522059,
+          138.197553035601,
+          228.86428295859227
+        ],
+        "weight_ess": 5760.375712293086
+      },
+      {
+        "engine": 4,
+        "quantiles": [
+          31.36481057673369,
+          50.65944109784123,
+          82.15564712049802
+        ],
+        "weight_ess": 7261.28242648561
+      },
+      {
+        "engine": 5,
+        "quantiles": [
+          42.5962163934595,
+          68.52849437042036,
+          110.0771069640874
+        ],
+        "weight_ess": 7793.834656003092
+      },
+      {
+        "engine": 6,
+        "quantiles": [
+          91.94088182583067,
+          149.1628415651599,
+          241.6791821985941
+        ],
+        "weight_ess": 7803.589086852746
+      },
+      {
+        "engine": 7,
+        "quantiles": [
+          96.2827966168861,
+          160.9000599487938,
+          268.08115006295395
+        ],
+        "weight_ess": 3346.1271721863486
+      },
+      {
+        "engine": 8,
+        "quantiles": [
+          39.724813440027496,
+          63.832142687971675,
+          102.5021795075079
+        ],
+        "weight_ess": 7676.442558646214
+      },
+      {
+        "engine": 9,
+        "quantiles": [
+          49.41792206107604,
+          79.75547444382433,
+          128.35751718868423
+        ],
+        "weight_ess": 7369.989677675534
+      },
+      {
+        "engine": 10,
+        "quantiles": [
+          61.846004051970006,
+          99.15867048616374,
+          158.96427303720984
+        ],
+        "weight_ess": 7742.404747385129
+      },
+      {
+        "engine": 11,
+        "quantiles": [
+          70.03304916846004,
+          117.77109426266364,
+          199.33149234093946
+        ],
+        "weight_ess": 2397.946623672572
+      },
+      {
+        "engine": 12,
+        "quantiles": [
+          102.17035479778366,
+          166.31176938934874,
+          269.62451371364705
+        ],
+        "weight_ess": 7469.412460465673
+      },
+      {
+        "engine": 13,
+        "quantiles": [
+          34.54063864802864,
+          56.12953632925924,
+          91.45240980063767
+        ],
+        "weight_ess": 6516.293668780405
+      },
+      {
+        "engine": 14,
+        "quantiles": [
+          59.933210299041875,
+          99.76849169332684,
+          167.43406336932074
+        ],
+        "weight_ess": 3494.930992167316
+      },
+      {
+        "engine": 15,
+        "quantiles": [
+          57.80606444201059,
+          92.5306828809081,
+          147.9850520677265
+        ],
+        "weight_ess": 7582.2654375377015
+      },
+      {
+        "engine": 16,
+        "quantiles": [
+          44.23610937965975,
+          71.68645880921258,
+          115.84264652667407
+        ],
+        "weight_ess": 6866.796994132744
+      },
+      {
+        "engine": 17,
+        "quantiles": [
+          41.586586254800345,
+          67.12210132435045,
+          108.62272427238861
+        ],
+        "weight_ess": 7312.970089359126
+      },
+      {
+        "engine": 18,
+        "quantiles": [
+          60.60345060885266,
+          97.75387570498539,
+          156.9954481693553
+        ],
+        "weight_ess": 7612.019131529025
+      },
+      {
+        "engine": 19,
+        "quantiles": [
+          53.90111766145846,
+          86.48621226120154,
+          138.74539206118152
+        ],
+        "weight_ess": 7758.487952998004
+      }
+    ],
+    "truth_rul": [
+      174.58411831879505,
+      70.73998051102258,
+      127.51018132633688,
+      104.8389627565639,
+      53.45046464817457,
+      76.5729613226429,
+      213.77159627068616,
+      127.1425323082757,
+      56.505868845877984,
+      64.35548113512887,
+      69.89806069092647,
+      111.17635798181644,
+      180.78288455116063,
+      45.08803503960097,
+      131.70731270156682,
+      110.19302256367287,
+      68.90619779673058,
+      64.3803792401665,
+      107.89449755862441,
+      59.30366597366323
+    ],
+    "scope": "Independent synthetic engines; fixed-truth/selected age law; predictive adequacy diagnostic only"
+  }
+}

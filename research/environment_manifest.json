@@ -1,7 +1,7 @@
 {
-  "schema_version": "0.3",
-  "git_commit": "9f282d512727f9561a7a34d84460d0aef5b8dede",
-  "git_dirty": true,
+  "schema_version": "0.4",
+  "git_commit": "87a0083314daafb79f7ae3c67e23abd5979bc82a",
+  "git_dirty": false,
   "runtime": "IsolatedCPython3.12.14;float64;nutpieNUTS;Windows11",
   "dependency_lock": "configs/requirements-pilot.lock",
   "environment_fingerprint": "f57b00a67e9d67b2920791bfddc8dc812dbdeb9306588a26557dfd6be15f826c",
@@ -15,5 +15,5 @@
   "pilot_environment_validated": true,
   "final_research_authorized": false,
   "full_metadata": "logs/pilot_environment.json",
-  "notes": "Start identities and dirty flags retained per run; final code/evidence checkpoint in delivery provenance; environment fingerprint does not certify final scientific readiness"
+  "notes": "Executed scientific source snapshot for analysis; per-run commits/dirty flags remain authoritative. Final evidence commit is in delivery receipt. Fingerprint certifies bytes/configuration, not research readiness."
 }

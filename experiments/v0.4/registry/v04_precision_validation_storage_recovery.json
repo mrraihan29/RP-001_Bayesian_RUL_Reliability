@@ -1,0 +1,619 @@
+{
+  "run_id": "v04_precision_mcse_validation_storage_recovery",
+  "status": "completed",
+  "status_interpretation": "The original validation execution completed 600 replications and retained all raw records; this record documents storage-only reconstruction. The original failed registry remains unchanged.",
+  "original_scientific_run_id": "v04_precision_mcse_validation",
+  "original_scientific_status": "failed_with_retained_partial_records",
+  "original_scientific_error_type": "FileNotFoundError",
+  "original_scientific_error_message": "[Errno 2] No such file or directory: 'C:\\\\Coding\\\\Project\\\\NAOBI RESEARCH\\\\RP-001_Bayesian_RUL_Reliability\\\\experiments\\\\v0.4\\\\precision\\\\v04_precision_mcse_validation.json'",
+  "original_scientific_runtime": {
+    "scientific_execution_wall_seconds": 14.801169800019125,
+    "scientific_execution_process_cpu_seconds": 14.640625
+  },
+  "original_scientific_commit": "ba44bc1c3e4a155a704eec9afce932757b6d4fa9",
+  "original_scientific_shared_v04_common_provenance": {
+    "created_at": "2026-10-08T14:53:32.460356+00:00",
+    "git_commit": "ba44bc1c3e4a155a704eec9afce932757b6d4fa9",
+    "source_dirty": false,
+    "executed_source_sha256": {
+      "src/rp001/__init__.py": "77b845af67e6f3d0b795acb93e4e651143b49fd33c7d437c774b5704a4d384f4",
+      "src/rp001/comparator_pilot.py": "ec2777d4ce2f498eac5b7a55f29ff5635364bd9aded09a1ba70ad4d1774a5b66",
+      "src/rp001/comparators.py": "37d8e96ab23f7e3525010ed6aa412a2ff89dd622a4e3d0cceb9d215a8c4e41aa",
+      "src/rp001/data.py": "3a0ef34d51468ad05279cbcaeb9e3ab8075134f75771c4375136f4167b512170",
+      "src/rp001/development_data_audit.py": "5697fc66c254637547499f9a88e2ced5472a6de176bb4a26972975710ea16f92",
+      "src/rp001/environment.py": "bf3d2e6a20f3a7673cf1499f7ea7adce3b7952eb3c5d48f2b6a44821f51ca2fd",
+      "src/rp001/metrics.py": "8eb710c14c35ab556ee52448a2a85e30203d40247f7627bdcd9df6add1a88531",
+      "src/rp001/model.py": "52627ae6f49311c3bb837ed3685a4d93b7e9a4d059fe08d6b892c4abab60d399",
+      "src/rp001/pilot.py": "40ab3eaef48aa82f59c5234715268f2f3f37764f484ab89456baef39bcd940c1",
+      "src/rp001/prediction.py": "f54fafe5875a8c7e009ee3c392cbf75c9e9d041646521e9a4123dd5e21b65d9b",
+      "src/rp001/predictive_analysis.py": "a4346a6c63101d8bef4f1f8f98298002e50ea5718e3098e058498953a31366fc",
+      "src/rp001/statistical_design.py": "093b66b5f2f990295a8579e23efa1ff0be4b48f1b00c7c3b3b473741d7451a9c",
+      "src/rp001/v04_analysis.py": "611ddd81d84979903a88d2144454f5a034e976c1060bfe2b61f4f2373b0909d4",
+      "src/rp001/v04_common.py": "d3def7f05886eb6949a7999fd6be35022de31f7331c7f43649d80fff5e612b8a",
+      "src/rp001/v04_inference.py": "dc05f013b9c9bf05463269b4bd6c6ece74505467e5a4c2125a0ed0690ded1d64",
+      "src/rp001/v04_inference_run.py": "36be33a5637e9b0c0d7f0ea8164b3a7f70beb0c54a2cbb1c71ba0aa35def7af1",
+      "src/rp001/v04_model.py": "45dc8556475d4822e7fc2f17236fb1b2c04d7dafe0d9aa0548021d9abd1fa23e",
+      "src/rp001/v04_pipeline.py": "0b75f708359915f8a197c429a49f2e096c050a21879dbc6e703253155388e569",
+      "src/rp001/v04_precision.py": "396a5f55ca2e9c51fd21f02f50e59c57be7aedd38321a4a3123b0b955f1fde33",
+      "src/rp001/v04_precision_validation.py": "47c5f33e1deb98bf3872f18fbe23f669783819c6180a2fdaf3595c6a024c4a7f",
+      "src/rp001/v04_predict.py": "412f3f59fe823ffa7f1de048c7c7b68a2777bc83a400f40b6a717db22a1604e2",
+      "src/rp001/v04_run.py": "a8c9761fd19a3bce23ee11ed2a9772c16fc7f50ad7ea016bd672447e793cf110"
+    },
+    "plan_sha256": "0c6a7e1e924636cec6196295eac19b29a6bd7faa85e18b081549f8287ab0b99b",
+    "environment_fingerprint": "f57b00a67e9d67b2920791bfddc8dc812dbdeb9306588a26557dfd6be15f826c",
+    "split_manifest_sha256": "6d6e0f10d979d41739c6c07b6bab8f0c32d2844ebd150e82d13caa3bd29e124b",
+    "dataset_sha256": "963b5e22825b34d8b21c69e1aeb4af3e647050eb672ee8834ba4b5d91d2de0f8",
+    "confirmatory": false,
+    "official_test_access": false
+  },
+  "frozen_plan_sha256": "0c6a7e1e924636cec6196295eac19b29a6bd7faa85e18b081549f8287ab0b99b",
+  "executed_source_sha256": {
+    "src/rp001/v04_precision_validation.py": "47c5f33e1deb98bf3872f18fbe23f669783819c6180a2fdaf3595c6a024c4a7f",
+    "src/rp001/v04_precision.py": "396a5f55ca2e9c51fd21f02f50e59c57be7aedd38321a4a3123b0b955f1fde33"
+  },
+  "raw_record_count": 600,
+  "raw_records_sha256_canonical_json": "5caee94be4986610d9f34195d38ac2b4c3cef4a317788719e30ae05e4e53172e",
+  "original_registry_path": "experiments/v0.4/registry/v04_precision_validation.json",
+  "original_registry_sha256": "ed6777b5ebff7f4204088da0ee5bfb6e98e841eff44f03a09f06fc86082357e9",
+  "archived_original_registry_path": "logs/v0.4/archive/v04_precision_validation_original_failed_registry.json",
+  "archived_original_registry_sha256": "ed6777b5ebff7f4204088da0ee5bfb6e98e841eff44f03a09f06fc86082357e9",
+  "recovery_commit": "f81da0f0965a50efc9af65685f5349f924a99466",
+  "recovery_helper_path": "logs/v0.4/recover_precision_serialization.py",
+  "recovery_helper_sha256": "f3d6cb045fd52f1ea82aa31d8ad794b54fee29cb403f07ca4683d32d37d60af1",
+  "recovery_started_utc": "2026-10-08T14:57:58.787405+00:00",
+  "recovery_finished_utc": "2026-10-08T14:57:59.794489+00:00",
+  "recovery_wall_seconds": 1.0063596999971196,
+  "recovery_process_cpu_seconds": 0.890625,
+  "recovery_runtime_scope": "Includes archive, deterministic reconstruction, result serialization/fsync; excludes this registry serialization/fsync.",
+  "result_artifact": {
+    "path": "experiments/v0.4/precision/v04_precision_mcse_validation.json",
+    "sha256": "35b8f4c36b382503fc46d607ef61d2043c1e562d76c08af185a5d18aa867dc1d"
+  },
+  "summary": {
+    "groups": [
+      {
+        "rho": 0.0,
+        "probability": 0.05,
+        "batch_size": 250,
+        "replications": 200,
+        "rms_actual_error_cycles": 0.08851695131730664,
+        "rms_estimated_mcse_cycles": 0.09287531612950575,
+        "rms_actual_error_over_rms_estimated_mcse": 0.9530729477558731,
+        "empirical_1p96_mcse_coverage": 0.955,
+        "empirical_1p96_mcse_coverage_successes": 191,
+        "empirical_1p96_mcse_coverage_wilson95": [
+          0.9167032959981803,
+          0.976147456998507
+        ],
+        "rms_approximate_upper_mcse_cycles": 0.1730650113145374,
+        "rms_actual_error_over_rms_approximate_upper_mcse": 0.5114664751989142,
+        "empirical_1p96_approximate_upper_mcse_coverage": 1.0,
+        "empirical_1p96_approximate_upper_mcse_coverage_successes": 200,
+        "empirical_1p96_approximate_upper_mcse_coverage_wilson95": [
+          0.9811546736227335,
+          1.0
+        ],
+        "plan_criterion_checks": {
+          "rms_ratio_in_range_0p75_to_1p33": true,
+          "normal_interval_coverage_at_least_0p90": true,
+          "both": true,
+          "interpretation": "Targeted validation criteria for this conjugate design; they do not certify universal MCSE calibration."
+        }
+      },
+      {
+        "rho": 0.0,
+        "probability": 0.05,
+        "batch_size": 500,
+        "replications": 200,
+        "rms_actual_error_cycles": 0.08851695131730664,
+        "rms_estimated_mcse_cycles": 0.09330242859056229,
+        "rms_actual_error_over_rms_estimated_mcse": 0.9487100459704464,
+        "empirical_1p96_mcse_coverage": 0.945,
+        "empirical_1p96_mcse_coverage_successes": 189,
+        "empirical_1p96_mcse_coverage_wilson95": [
+          0.9042130012276914,
+          0.9690146582965411
+        ],
+        "rms_approximate_upper_mcse_cycles": 0.3409428320134895,
+        "rms_actual_error_over_rms_approximate_upper_mcse": 0.25962402785990946,
+        "empirical_1p96_approximate_upper_mcse_coverage": 1.0,
+        "empirical_1p96_approximate_upper_mcse_coverage_successes": 200,
+        "empirical_1p96_approximate_upper_mcse_coverage_wilson95": [
+          0.9811546736227335,
+          1.0
+        ],
+        "plan_criterion_checks": {
+          "rms_ratio_in_range_0p75_to_1p33": true,
+          "normal_interval_coverage_at_least_0p90": true,
+          "both": true,
+          "interpretation": "Targeted validation criteria for this conjugate design; they do not certify universal MCSE calibration."
+        }
+      },
+      {
+        "rho": 0.0,
+        "probability": 0.5,
+        "batch_size": 250,
+        "replications": 200,
+        "rms_actual_error_cycles": 0.17504554352047572,
+        "rms_estimated_mcse_cycles": 0.17869111800919343,
+        "rms_actual_error_over_rms_estimated_mcse": 0.979598457218617,
+        "empirical_1p96_mcse_coverage": 0.94,
+        "empirical_1p96_mcse_coverage_successes": 188,
+        "empirical_1p96_mcse_coverage_wilson95": [
+          0.8980683070423372,
+          0.9653478057456681
+        ],
+        "rms_approximate_upper_mcse_cycles": 0.33326804169003876,
+        "rms_actual_error_over_rms_approximate_upper_mcse": 0.5252395118139759,
+        "empirical_1p96_approximate_upper_mcse_coverage": 0.995,
+        "empirical_1p96_approximate_upper_mcse_coverage_successes": 199,
+        "empirical_1p96_approximate_upper_mcse_coverage_wilson95": [
+          0.9722262956021069,
+          0.9991168312843989
+        ],
+        "plan_criterion_checks": {
+          "rms_ratio_in_range_0p75_to_1p33": true,
+          "normal_interval_coverage_at_least_0p90": true,
+          "both": true,
+          "interpretation": "Targeted validation criteria for this conjugate design; they do not certify universal MCSE calibration."
+        }
+      },
+      {
+        "rho": 0.0,
+        "probability": 0.5,
+        "batch_size": 500,
+        "replications": 200,
+        "rms_actual_error_cycles": 0.17504554352047572,
+        "rms_estimated_mcse_cycles": 0.18001354828489133,
+        "rms_actual_error_over_rms_estimated_mcse": 0.972402050780349,
+        "empirical_1p96_mcse_coverage": 0.96,
+        "empirical_1p96_mcse_coverage_successes": 192,
+        "empirical_1p96_mcse_coverage_wilson95": [
+          0.923067931799067,
+          0.9795943679338476
+        ],
+        "rms_approximate_upper_mcse_cycles": 0.6651674914042749,
+        "rms_actual_error_over_rms_approximate_upper_mcse": 0.2631600999485507,
+        "empirical_1p96_approximate_upper_mcse_coverage": 1.0,
+        "empirical_1p96_approximate_upper_mcse_coverage_successes": 200,
+        "empirical_1p96_approximate_upper_mcse_coverage_wilson95": [
+          0.9811546736227335,
+          1.0
+        ],
+        "plan_criterion_checks": {
+          "rms_ratio_in_range_0p75_to_1p33": true,
+          "normal_interval_coverage_at_least_0p90": true,
+          "both": true,
+          "interpretation": "Targeted validation criteria for this conjugate design; they do not certify universal MCSE calibration."
+        }
+      },
+      {
+        "rho": 0.0,
+        "probability": 0.95,
+        "batch_size": 250,
+        "replications": 200,
+        "rms_actual_error_cycles": 0.34895862144507467,
+        "rms_estimated_mcse_cycles": 0.35273860590237227,
+        "rms_actual_error_over_rms_estimated_mcse": 0.9892838935289555,
+        "empirical_1p96_mcse_coverage": 0.95,
+        "empirical_1p96_mcse_coverage_successes": 190,
+        "empirical_1p96_mcse_coverage_wilson95": [
+          0.9104218518612239,
+          0.972617354399236
+        ],
+        "rms_approximate_upper_mcse_cycles": 0.6574390095006556,
+        "rms_actual_error_over_rms_approximate_upper_mcse": 0.5307847821657542,
+        "empirical_1p96_approximate_upper_mcse_coverage": 0.995,
+        "empirical_1p96_approximate_upper_mcse_coverage_successes": 199,
+        "empirical_1p96_approximate_upper_mcse_coverage_wilson95": [
+          0.9722262956021069,
+          0.9991168312843989
+        ],
+        "plan_criterion_checks": {
+          "rms_ratio_in_range_0p75_to_1p33": true,
+          "normal_interval_coverage_at_least_0p90": true,
+          "both": true,
+          "interpretation": "Targeted validation criteria for this conjugate design; they do not certify universal MCSE calibration."
+        }
+      },
+      {
+        "rho": 0.0,
+        "probability": 0.95,
+        "batch_size": 500,
+        "replications": 200,
+        "rms_actual_error_cycles": 0.34895862144507467,
+        "rms_estimated_mcse_cycles": 0.3546512238258056,
+        "rms_actual_error_over_rms_estimated_mcse": 0.9839487304757562,
+        "empirical_1p96_mcse_coverage": 0.94,
+        "empirical_1p96_mcse_coverage_successes": 188,
+        "empirical_1p96_mcse_coverage_wilson95": [
+          0.8980683070423372,
+          0.9653478057456681
+        ],
+        "rms_approximate_upper_mcse_cycles": 1.270974729711571,
+        "rms_actual_error_over_rms_approximate_upper_mcse": 0.2745598423693803,
+        "empirical_1p96_approximate_upper_mcse_coverage": 1.0,
+        "empirical_1p96_approximate_upper_mcse_coverage_successes": 200,
+        "empirical_1p96_approximate_upper_mcse_coverage_wilson95": [
+          0.9811546736227335,
+          1.0
+        ],
+        "plan_criterion_checks": {
+          "rms_ratio_in_range_0p75_to_1p33": true,
+          "normal_interval_coverage_at_least_0p90": true,
+          "both": true,
+          "interpretation": "Targeted validation criteria for this conjugate design; they do not certify universal MCSE calibration."
+        }
+      },
+      {
+        "rho": 0.8,
+        "probability": 0.05,
+        "batch_size": 250,
+        "replications": 200,
+        "rms_actual_error_cycles": 0.21766018802701453,
+        "rms_estimated_mcse_cycles": 0.23652105304354915,
+        "rms_actual_error_over_rms_estimated_mcse": 0.9202571408598377,
+        "empirical_1p96_mcse_coverage": 0.97,
+        "empirical_1p96_mcse_coverage_successes": 194,
+        "empirical_1p96_mcse_coverage_wilson95": [
+          0.9361057075454807,
+          0.9861796856598887
+        ],
+        "rms_approximate_upper_mcse_cycles": 0.44042454899193695,
+        "rms_actual_error_over_rms_approximate_upper_mcse": 0.4942053946021055,
+        "empirical_1p96_approximate_upper_mcse_coverage": 1.0,
+        "empirical_1p96_approximate_upper_mcse_coverage_successes": 200,
+        "empirical_1p96_approximate_upper_mcse_coverage_wilson95": [
+          0.9811546736227335,
+          1.0
+        ],
+        "plan_criterion_checks": {
+          "rms_ratio_in_range_0p75_to_1p33": true,
+          "normal_interval_coverage_at_least_0p90": true,
+          "both": true,
+          "interpretation": "Targeted validation criteria for this conjugate design; they do not certify universal MCSE calibration."
+        }
+      },
+      {
+        "rho": 0.8,
+        "probability": 0.05,
+        "batch_size": 500,
+        "replications": 200,
+        "rms_actual_error_cycles": 0.21766018802701453,
+        "rms_estimated_mcse_cycles": 0.23909227392103677,
+        "rms_actual_error_over_rms_estimated_mcse": 0.910360608720044,
+        "empirical_1p96_mcse_coverage": 0.96,
+        "empirical_1p96_mcse_coverage_successes": 192,
+        "empirical_1p96_mcse_coverage_wilson95": [
+          0.923067931799067,
+          0.9795943679338476
+        ],
+        "rms_approximate_upper_mcse_cycles": 0.8569749128625261,
+        "rms_actual_error_over_rms_approximate_upper_mcse": 0.25398665090436673,
+        "empirical_1p96_approximate_upper_mcse_coverage": 1.0,
+        "empirical_1p96_approximate_upper_mcse_coverage_successes": 200,
+        "empirical_1p96_approximate_upper_mcse_coverage_wilson95": [
+          0.9811546736227335,
+          1.0
+        ],
+        "plan_criterion_checks": {
+          "rms_ratio_in_range_0p75_to_1p33": true,
+          "normal_interval_coverage_at_least_0p90": true,
+          "both": true,
+          "interpretation": "Targeted validation criteria for this conjugate design; they do not certify universal MCSE calibration."
+        }
+      },
+      {
+        "rho": 0.8,
+        "probability": 0.5,
+        "batch_size": 250,
+        "replications": 200,
+        "rms_actual_error_cycles": 0.4044413328237279,
+        "rms_estimated_mcse_cycles": 0.4358135919525701,
+        "rms_actual_error_over_rms_estimated_mcse": 0.9280145004466579,
+        "empirical_1p96_mcse_coverage": 0.97,
+        "empirical_1p96_mcse_coverage_successes": 194,
+        "empirical_1p96_mcse_coverage_wilson95": [
+          0.9361057075454807,
+          0.9861796856598887
+        ],
+        "rms_approximate_upper_mcse_cycles": 0.8143410916848765,
+        "rms_actual_error_over_rms_approximate_upper_mcse": 0.4966485628116057,
+        "empirical_1p96_approximate_upper_mcse_coverage": 1.0,
+        "empirical_1p96_approximate_upper_mcse_coverage_successes": 200,
+        "empirical_1p96_approximate_upper_mcse_coverage_wilson95": [
+          0.9811546736227335,
+          1.0
+        ],
+        "plan_criterion_checks": {
+          "rms_ratio_in_range_0p75_to_1p33": true,
+          "normal_interval_coverage_at_least_0p90": true,
+          "both": true,
+          "interpretation": "Targeted validation criteria for this conjugate design; they do not certify universal MCSE calibration."
+        }
+      },
+      {
+        "rho": 0.8,
+        "probability": 0.5,
+        "batch_size": 500,
+        "replications": 200,
+        "rms_actual_error_cycles": 0.4044413328237279,
+        "rms_estimated_mcse_cycles": 0.4387944359388138,
+        "rms_actual_error_over_rms_estimated_mcse": 0.9217102581494991,
+        "empirical_1p96_mcse_coverage": 0.96,
+        "empirical_1p96_mcse_coverage_successes": 192,
+        "empirical_1p96_mcse_coverage_wilson95": [
+          0.923067931799067,
+          0.9795943679338476
+        ],
+        "rms_approximate_upper_mcse_cycles": 1.5960183259672134,
+        "rms_actual_error_over_rms_approximate_upper_mcse": 0.25340644668264056,
+        "empirical_1p96_approximate_upper_mcse_coverage": 1.0,
+        "empirical_1p96_approximate_upper_mcse_coverage_successes": 200,
+        "empirical_1p96_approximate_upper_mcse_coverage_wilson95": [
+          0.9811546736227335,
+          1.0
+        ],
+        "plan_criterion_checks": {
+          "rms_ratio_in_range_0p75_to_1p33": true,
+          "normal_interval_coverage_at_least_0p90": true,
+          "both": true,
+          "interpretation": "Targeted validation criteria for this conjugate design; they do not certify universal MCSE calibration."
+        }
+      },
+      {
+        "rho": 0.8,
+        "probability": 0.95,
+        "batch_size": 250,
+        "replications": 200,
+        "rms_actual_error_cycles": 0.8053835140357607,
+        "rms_estimated_mcse_cycles": 0.8267333466433554,
+        "rms_actual_error_over_rms_estimated_mcse": 0.9741756726104278,
+        "empirical_1p96_mcse_coverage": 0.955,
+        "empirical_1p96_mcse_coverage_successes": 191,
+        "empirical_1p96_mcse_coverage_wilson95": [
+          0.9167032959981803,
+          0.976147456998507
+        ],
+        "rms_approximate_upper_mcse_cycles": 1.5516628642895929,
+        "rms_actual_error_over_rms_approximate_upper_mcse": 0.5190454270518965,
+        "empirical_1p96_approximate_upper_mcse_coverage": 1.0,
+        "empirical_1p96_approximate_upper_mcse_coverage_successes": 200,
+        "empirical_1p96_approximate_upper_mcse_coverage_wilson95": [
+          0.9811546736227335,
+          1.0
+        ],
+        "plan_criterion_checks": {
+          "rms_ratio_in_range_0p75_to_1p33": true,
+          "normal_interval_coverage_at_least_0p90": true,
+          "both": true,
+          "interpretation": "Targeted validation criteria for this conjugate design; they do not certify universal MCSE calibration."
+        }
+      },
+      {
+        "rho": 0.8,
+        "probability": 0.95,
+        "batch_size": 500,
+        "replications": 200,
+        "rms_actual_error_cycles": 0.8053835140357607,
+        "rms_estimated_mcse_cycles": 0.8267020539625483,
+        "rms_actual_error_over_rms_estimated_mcse": 0.9742125475259151,
+        "empirical_1p96_mcse_coverage": 0.95,
+        "empirical_1p96_mcse_coverage_successes": 190,
+        "empirical_1p96_mcse_coverage_wilson95": [
+          0.9104218518612239,
+          0.972617354399236
+        ],
+        "rms_approximate_upper_mcse_cycles": 3.055819759882775,
+        "rms_actual_error_over_rms_approximate_upper_mcse": 0.26355727016656777,
+        "empirical_1p96_approximate_upper_mcse_coverage": 1.0,
+        "empirical_1p96_approximate_upper_mcse_coverage_successes": 200,
+        "empirical_1p96_approximate_upper_mcse_coverage_wilson95": [
+          0.9811546736227335,
+          1.0
+        ],
+        "plan_criterion_checks": {
+          "rms_ratio_in_range_0p75_to_1p33": true,
+          "normal_interval_coverage_at_least_0p90": true,
+          "both": true,
+          "interpretation": "Targeted validation criteria for this conjugate design; they do not certify universal MCSE calibration."
+        }
+      },
+      {
+        "rho": 0.95,
+        "probability": 0.05,
+        "batch_size": 250,
+        "replications": 200,
+        "rms_actual_error_cycles": 0.45569137370630175,
+        "rms_estimated_mcse_cycles": 0.4733349689763153,
+        "rms_actual_error_over_rms_estimated_mcse": 0.9627249275324588,
+        "empirical_1p96_mcse_coverage": 0.95,
+        "empirical_1p96_mcse_coverage_successes": 190,
+        "empirical_1p96_mcse_coverage_wilson95": [
+          0.9104218518612239,
+          0.972617354399236
+        ],
+        "rms_approximate_upper_mcse_cycles": 0.8764724951924652,
+        "rms_actual_error_over_rms_approximate_upper_mcse": 0.5199152012251522,
+        "empirical_1p96_approximate_upper_mcse_coverage": 0.995,
+        "empirical_1p96_approximate_upper_mcse_coverage_successes": 199,
+        "empirical_1p96_approximate_upper_mcse_coverage_wilson95": [
+          0.9722262956021069,
+          0.9991168312843989
+        ],
+        "plan_criterion_checks": {
+          "rms_ratio_in_range_0p75_to_1p33": true,
+          "normal_interval_coverage_at_least_0p90": true,
+          "both": true,
+          "interpretation": "Targeted validation criteria for this conjugate design; they do not certify universal MCSE calibration."
+        }
+      },
+      {
+        "rho": 0.95,
+        "probability": 0.05,
+        "batch_size": 500,
+        "replications": 200,
+        "rms_actual_error_cycles": 0.45569137370630175,
+        "rms_estimated_mcse_cycles": 0.48875199527152413,
+        "rms_actual_error_over_rms_estimated_mcse": 0.9323570606666154,
+        "empirical_1p96_mcse_coverage": 0.95,
+        "empirical_1p96_mcse_coverage_successes": 190,
+        "empirical_1p96_mcse_coverage_wilson95": [
+          0.9104218518612239,
+          0.972617354399236
+        ],
+        "rms_approximate_upper_mcse_cycles": 1.7574099073287608,
+        "rms_actual_error_over_rms_approximate_upper_mcse": 0.25929714621840644,
+        "empirical_1p96_approximate_upper_mcse_coverage": 1.0,
+        "empirical_1p96_approximate_upper_mcse_coverage_successes": 200,
+        "empirical_1p96_approximate_upper_mcse_coverage_wilson95": [
+          0.9811546736227335,
+          1.0
+        ],
+        "plan_criterion_checks": {
+          "rms_ratio_in_range_0p75_to_1p33": true,
+          "normal_interval_coverage_at_least_0p90": true,
+          "both": true,
+          "interpretation": "Targeted validation criteria for this conjugate design; they do not certify universal MCSE calibration."
+        }
+      },
+      {
+        "rho": 0.95,
+        "probability": 0.5,
+        "batch_size": 250,
+        "replications": 200,
+        "rms_actual_error_cycles": 0.8526264517857365,
+        "rms_estimated_mcse_cycles": 0.87347179231465,
+        "rms_actual_error_over_rms_estimated_mcse": 0.9761350730357593,
+        "empirical_1p96_mcse_coverage": 0.95,
+        "empirical_1p96_mcse_coverage_successes": 190,
+        "empirical_1p96_mcse_coverage_wilson95": [
+          0.9104218518612239,
+          0.972617354399236
+        ],
+        "rms_approximate_upper_mcse_cycles": 1.6324186552024067,
+        "rms_actual_error_over_rms_approximate_upper_mcse": 0.5223086915041519,
+        "empirical_1p96_approximate_upper_mcse_coverage": 0.995,
+        "empirical_1p96_approximate_upper_mcse_coverage_successes": 199,
+        "empirical_1p96_approximate_upper_mcse_coverage_wilson95": [
+          0.9722262956021069,
+          0.9991168312843989
+        ],
+        "plan_criterion_checks": {
+          "rms_ratio_in_range_0p75_to_1p33": true,
+          "normal_interval_coverage_at_least_0p90": true,
+          "both": true,
+          "interpretation": "Targeted validation criteria for this conjugate design; they do not certify universal MCSE calibration."
+        }
+      },
+      {
+        "rho": 0.95,
+        "probability": 0.5,
+        "batch_size": 500,
+        "replications": 200,
+        "rms_actual_error_cycles": 0.8526264517857365,
+        "rms_estimated_mcse_cycles": 0.9000690903049009,
+        "rms_actual_error_over_rms_estimated_mcse": 0.9472900035895099,
+        "empirical_1p96_mcse_coverage": 0.945,
+        "empirical_1p96_mcse_coverage_successes": 189,
+        "empirical_1p96_mcse_coverage_wilson95": [
+          0.9042130012276914,
+          0.9690146582965411
+        ],
+        "rms_approximate_upper_mcse_cycles": 3.3139871174307602,
+        "rms_actual_error_over_rms_approximate_upper_mcse": 0.2572811605999101,
+        "empirical_1p96_approximate_upper_mcse_coverage": 1.0,
+        "empirical_1p96_approximate_upper_mcse_coverage_successes": 200,
+        "empirical_1p96_approximate_upper_mcse_coverage_wilson95": [
+          0.9811546736227335,
+          1.0
+        ],
+        "plan_criterion_checks": {
+          "rms_ratio_in_range_0p75_to_1p33": true,
+          "normal_interval_coverage_at_least_0p90": true,
+          "both": true,
+          "interpretation": "Targeted validation criteria for this conjugate design; they do not certify universal MCSE calibration."
+        }
+      },
+      {
+        "rho": 0.95,
+        "probability": 0.95,
+        "batch_size": 250,
+        "replications": 200,
+        "rms_actual_error_cycles": 1.7019636590342224,
+        "rms_estimated_mcse_cycles": 1.66009862116574,
+        "rms_actual_error_over_rms_estimated_mcse": 1.0252184040964292,
+        "empirical_1p96_mcse_coverage": 0.925,
+        "empirical_1p96_mcse_coverage_successes": 185,
+        "empirical_1p96_mcse_coverage_wilson95": [
+          0.8799563897637055,
+          0.954025082815618
+        ],
+        "rms_approximate_upper_mcse_cycles": 3.1742971265099484,
+        "rms_actual_error_over_rms_approximate_upper_mcse": 0.536170242168062,
+        "empirical_1p96_approximate_upper_mcse_coverage": 1.0,
+        "empirical_1p96_approximate_upper_mcse_coverage_successes": 200,
+        "empirical_1p96_approximate_upper_mcse_coverage_wilson95": [
+          0.9811546736227335,
+          1.0
+        ],
+        "plan_criterion_checks": {
+          "rms_ratio_in_range_0p75_to_1p33": true,
+          "normal_interval_coverage_at_least_0p90": true,
+          "both": true,
+          "interpretation": "Targeted validation criteria for this conjugate design; they do not certify universal MCSE calibration."
+        }
+      },
+      {
+        "rho": 0.95,
+        "probability": 0.95,
+        "batch_size": 500,
+        "replications": 200,
+        "rms_actual_error_cycles": 1.7019636590342224,
+        "rms_estimated_mcse_cycles": 1.7039455203618865,
+        "rms_actual_error_over_rms_estimated_mcse": 0.9988368986543401,
+        "empirical_1p96_mcse_coverage": 0.925,
+        "empirical_1p96_mcse_coverage_successes": 185,
+        "empirical_1p96_mcse_coverage_wilson95": [
+          0.8799563897637055,
+          0.954025082815618
+        ],
+        "rms_approximate_upper_mcse_cycles": 6.566495766779917,
+        "rms_actual_error_over_rms_approximate_upper_mcse": 0.2591890285903333,
+        "empirical_1p96_approximate_upper_mcse_coverage": 1.0,
+        "empirical_1p96_approximate_upper_mcse_coverage_successes": 200,
+        "empirical_1p96_approximate_upper_mcse_coverage_wilson95": [
+          0.9811546736227335,
+          1.0
+        ],
+        "plan_criterion_checks": {
+          "rms_ratio_in_range_0p75_to_1p33": true,
+          "normal_interval_coverage_at_least_0p90": true,
+          "both": true,
+          "interpretation": "Targeted validation criteria for this conjugate design; they do not certify universal MCSE calibration."
+        }
+      }
+    ],
+    "group_count": 18,
+    "replication_record_count": 600,
+    "criteria_are_targeted_not_universal": true
+  },
+  "storage_recovery": {
+    "mode": "storage_only_raw_record_reconstruction",
+    "resampling_performed": false,
+    "validation_runner_reinvoked": false,
+    "original_failed_registry_path": "experiments/v0.4/registry/v04_precision_validation.json",
+    "original_failed_registry_sha256": "ed6777b5ebff7f4204088da0ee5bfb6e98e841eff44f03a09f06fc86082357e9",
+    "archived_original_registry_path": "logs/v0.4/archive/v04_precision_validation_original_failed_registry.json",
+    "archived_original_registry_sha256": "ed6777b5ebff7f4204088da0ee5bfb6e98e841eff44f03a09f06fc86082357e9",
+    "raw_record_count": 600,
+    "raw_records_sha256_canonical_json": "5caee94be4986610d9f34195d38ac2b4c3cef4a317788719e30ae05e4e53172e",
+    "recovery_commit": "f81da0f0965a50efc9af65685f5349f924a99466",
+    "recovery_helper_path": "logs/v0.4/recover_precision_serialization.py",
+    "recovery_helper_sha256": "f3d6cb045fd52f1ea82aa31d8ad794b54fee29cb403f07ca4683d32d37d60af1",
+    "prepared_utc": "2026-10-08T14:57:59.269592+00:00",
+    "preparation_wall_seconds": 0.48173259999020956,
+    "preparation_process_cpu_seconds": 0.375,
+    "preparation_runtime_scope": "Includes input verification, digesting, and deterministic group-summary reconstruction; excludes result and registry serialization/fsync."
+  }
+}

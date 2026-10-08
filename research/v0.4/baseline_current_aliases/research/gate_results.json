@@ -1,0 +1,122 @@
+{
+  "version": "0.3",
+  "scope": "development evidence return; not final research readiness",
+  "recommendation": "REVISE AGAIN",
+  "gates": [
+    {
+      "gate": "DEVELOPMENT_AUTHORIZATION",
+      "state": "PASS",
+      "owner": "Rei lead / Raihan × Rei for final authorization",
+      "artifact_version": "0.3",
+      "evidence_ids": [
+        "E-OWNER"
+      ],
+      "rationale": "Synthetic and FD001 training-only scope authorized"
+    },
+    {
+      "gate": "TRAINING_SPLIT_AUDIT",
+      "state": "PASS",
+      "owner": "Rei lead / Raihan × Rei for final authorization",
+      "artifact_version": "0.3",
+      "evidence_ids": [
+        "E-DATA",
+        "E-MATH"
+      ],
+      "rationale": "Scoped training audit; official population/rights not validated"
+    },
+    {
+      "gate": "IMPLEMENTATION_MATHEMATICS",
+      "state": "PASS",
+      "owner": "Rei lead / Raihan × Rei for final authorization",
+      "artifact_version": "0.3",
+      "evidence_ids": [
+        "E-MATH"
+      ],
+      "rationale": "Dense likelihood/gradient/conditioning/CQR checks in tested domain"
+    },
+    {
+      "gate": "MCMC_DIAGNOSTICS",
+      "state": "PASS",
+      "owner": "Rei lead / Raihan × Rei for final authorization",
+      "artifact_version": "0.3",
+      "evidence_ids": [
+        "E-SYN",
+        "E-RUNS"
+      ],
+      "rationale": "11 successful fits pass;2infrastructure failures retained"
+    },
+    {
+      "gate": "GLOBAL_IDENTIFIABILITY",
+      "state": "DEFERRED",
+      "owner": "Rei lead / Raihan × Rei for final authorization",
+      "artifact_version": "0.3",
+      "evidence_ids": [
+        "E-SYN"
+      ],
+      "rationale": "Four recoveries and correlations do not prove global/practical identification"
+    },
+    {
+      "gate": "PREDICTIVE_PRECISION",
+      "state": "FAIL",
+      "owner": "Rei lead / Raihan × Rei for final authorization",
+      "artifact_version": "0.3",
+      "evidence_ids": [
+        "E-PRED"
+      ],
+      "rationale": "Maximum approximate quantile MCSE .728972>.5cycle"
+    },
+    {
+      "gate": "CALIBRATION_TRANSPORT",
+      "state": "DEFERRED",
+      "owner": "Rei lead / Raihan × Rei for final authorization",
+      "artifact_version": "0.3",
+      "evidence_ids": [
+        "E-CAL",
+        "E-DATA",
+        "E-DESIGN"
+      ],
+      "rationale": "Official-cutoff score exchangeability unknown"
+    },
+    {
+      "gate": "FULL_PIPELINE_UNCERTAINTY",
+      "state": "DEFERRED",
+      "owner": "Rei lead / Raihan × Rei for final authorization",
+      "artifact_version": "0.3",
+      "evidence_ids": [
+        "E-DESIGN"
+      ],
+      "rationale": "Illustration excludes PCA/HPO/Bayesian/cutoff variation"
+    },
+    {
+      "gate": "LOCAL_ENVIRONMENT",
+      "state": "PASS",
+      "owner": "Rei lead / Raihan × Rei for final authorization",
+      "artifact_version": "0.3",
+      "evidence_ids": [
+        "E-ENV"
+      ],
+      "rationale": "Scoped runtime/dependency validation; Colab unused"
+    },
+    {
+      "gate": "PROTOCOL_LOCK",
+      "state": "BLOCKED",
+      "owner": "Rei lead / Raihan × Rei for final authorization",
+      "artifact_version": "0.3",
+      "evidence_ids": [
+        "E-OWNER",
+        "E-PRED"
+      ],
+      "rationale": "Final owner approval absent and critical numerical/scientific risks open"
+    },
+    {
+      "gate": "SCIENTIFIC_VALIDATED",
+      "state": "DEFERRED",
+      "owner": "Rei lead / Raihan × Rei for final authorization",
+      "artifact_version": "0.3",
+      "evidence_ids": [
+        "E-OWNER"
+      ],
+      "rationale": "No official confirmatory results or accepted primary predictions"
+    }
+  ]
+}

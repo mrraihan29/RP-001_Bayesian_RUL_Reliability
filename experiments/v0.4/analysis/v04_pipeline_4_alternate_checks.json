@@ -1,0 +1,198 @@
+{
+  "run_id": "v04_pipeline_4_alternate",
+  "posterior_evidence_accepted": true,
+  "unaccepted_scope": "Raw diagnostic summaries retained; no calibrated posterior/coverage conclusion from a failed convergence fit",
+  "diagnostics": {
+    "rhat_max": 1.000870978245855,
+    "bulk_ess_min": 3116.8700296591564,
+    "tail_ess_min": 4150.6965691753885,
+    "divergences": 0,
+    "bfmi": [
+      0.9546445281645908,
+      0.9925868789277356,
+      1.04753453198734,
+      1.0093099488846853
+    ],
+    "maxdepth_fraction": 0.0,
+    "sample_stat_keys": [
+      "depth",
+      "maxdepth_reached",
+      "step_size",
+      "transformation_update_id",
+      "step_size_bar",
+      "mean_tree_accept",
+      "mean_tree_accept_sym",
+      "n_steps",
+      "max_energy_error",
+      "tuning",
+      "index_in_trajectory",
+      "logp",
+      "energy",
+      "energy_error",
+      "fisher_distance",
+      "transformation_index",
+      "diverging",
+      "divergence_draw",
+      "divergence_message",
+      "divergence_energy_error"
+    ],
+    "acceptance": "PASS",
+    "failures": [],
+    "auxiliary_rhat_max": 1.0003621749816787,
+    "auxiliary_bulk_min": 5881.235912692106,
+    "auxiliary_tail_min": 5532.936249492849
+  },
+  "recovery": null,
+  "prior_posterior_sd": [
+    {
+      "parameter": "beta[0]",
+      "posterior_sd": 0.0957912098152675,
+      "prior_sd": 0.601622473822962,
+      "sd_ratio": 0.1592214619353727,
+      "policy": "matching-prior-reference"
+    },
+    {
+      "parameter": "beta[1]",
+      "posterior_sd": 0.17149952885260303,
+      "prior_sd": 0.49539825614946,
+      "sd_ratio": 0.3461851686471464,
+      "policy": "matching-prior-reference"
+    },
+    {
+      "parameter": "gamma[0]",
+      "posterior_sd": 0.0876588741769439,
+      "prior_sd": 0.2503410552560277,
+      "sd_ratio": 0.35015780406970726,
+      "policy": "matching-prior-reference"
+    },
+    {
+      "parameter": "gamma[1]",
+      "posterior_sd": 0.15541742529567373,
+      "prior_sd": 0.24976390288203004,
+      "sd_ratio": 0.6222573538542173,
+      "policy": "matching-prior-reference"
+    },
+    {
+      "parameter": "Gamma[0]",
+      "posterior_sd": 0.16405897803081035,
+      "prior_sd": 0.5021200598511987,
+      "sd_ratio": 0.32673257085054236,
+      "policy": "matching-prior-reference"
+    },
+    {
+      "parameter": "Gamma[1]",
+      "posterior_sd": 0.25162286247203075,
+      "prior_sd": 0.3540925013812204,
+      "sd_ratio": 0.7106133608887991,
+      "policy": "matching-prior-reference"
+    },
+    {
+      "parameter": "Gamma[2]",
+      "posterior_sd": 0.09853534041641776,
+      "prior_sd": 0.5036690019564015,
+      "sd_ratio": 0.1956351096328679,
+      "policy": "matching-prior-reference"
+    },
+    {
+      "parameter": "Gamma[3]",
+      "posterior_sd": 0.15928856389226748,
+      "prior_sd": 0.34878380618777766,
+      "sd_ratio": 0.45669713176565874,
+      "policy": "matching-prior-reference"
+    },
+    {
+      "parameter": "tau[0]",
+      "posterior_sd": 0.10181474537197013,
+      "prior_sd": 0.2144132740615272,
+      "sd_ratio": 0.4748528085194659,
+      "policy": "matching-prior-reference"
+    },
+    {
+      "parameter": "tau[1]",
+      "posterior_sd": 0.0629421415376572,
+      "prior_sd": 0.21263410110878433,
+      "sd_ratio": 0.29601151089803696,
+      "policy": "matching-prior-reference"
+    },
+    {
+      "parameter": "r_g[0]",
+      "posterior_sd": 0.05582319787096828,
+      "prior_sd": 0.4445495968124148,
+      "sd_ratio": 0.12557248566018567,
+      "policy": "matching-prior-reference"
+    },
+    {
+      "parameter": "sigma_z[0]",
+      "posterior_sd": 0.004621025883080608,
+      "prior_sd": 0.24464684155478977,
+      "sd_ratio": 0.018888557292270246,
+      "policy": "matching-prior-reference"
+    },
+    {
+      "parameter": "sigma_r[0]",
+      "posterior_sd": 0.05583129799857979,
+      "prior_sd": 0.24052934169689466,
+      "sd_ratio": 0.2321184501013441,
+      "policy": "matching-prior-reference"
+    },
+    {
+      "parameter": "rho[0]",
+      "posterior_sd": 0.028636295227398204,
+      "prior_sd": 0.5405116681251056,
+      "sd_ratio": 0.05297997604146098,
+      "policy": "matching-prior-reference"
+    }
+  ],
+  "strongest_correlations": [
+    {
+      "a": "gamma[0]",
+      "b": "gamma[1]",
+      "correlation": -0.7683952466560279
+    },
+    {
+      "a": "Gamma[0]",
+      "b": "Gamma[2]",
+      "correlation": 0.7374362913593046
+    },
+    {
+      "a": "Gamma[1]",
+      "b": "Gamma[3]",
+      "correlation": 0.6327267479288379
+    },
+    {
+      "a": "tau[0]",
+      "b": "tau[1]",
+      "correlation": 0.545011997839763
+    },
+    {
+      "a": "tau[0]",
+      "b": "r_g[0]",
+      "correlation": 0.448687447306216
+    },
+    {
+      "a": "beta[1]",
+      "b": "gamma[0]",
+      "correlation": -0.4466912282759793
+    },
+    {
+      "a": "beta[0]",
+      "b": "gamma[1]",
+      "correlation": -0.4257621678712211
+    },
+    {
+      "a": "tau[1]",
+      "b": "r_g[0]",
+      "correlation": 0.41577601582767953
+    },
+    {
+      "a": "Gamma[2]",
+      "b": "Gamma[3]",
+      "correlation": -0.3703925328172149
+    },
+    {
+      "a": "Gamma[1]",
+      "b": "tau[0]",
+      "correlation": -0.3602866468972487
+    }
+  ]
+}

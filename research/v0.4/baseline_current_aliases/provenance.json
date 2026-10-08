@@ -1,0 +1,52 @@
+{
+  "created_at": "2026-10-08T15:22:48.793613+00:00",
+  "copied_byte_for_byte_before_disclosed_alias_updates": true,
+  "source_revision": "87a0083314daafb79f7ae3c67e23abd5979bc82a",
+  "files": [
+    {
+      "original_path": "research/protocol.json",
+      "archived_path": "research/v0.4/baseline_current_aliases/research/protocol.json",
+      "sha256": "743a79476e015e4332aa6a9d2d8639dd6dbdde55dbb662c2bd1523384f163d08"
+    },
+    {
+      "original_path": "research/gate_results.json",
+      "archived_path": "research/v0.4/baseline_current_aliases/research/gate_results.json",
+      "sha256": "b802d2358ade6c09b08ad9824d4934cc1d7a3d91a1fe2787ab9a11cdb4501daa"
+    },
+    {
+      "original_path": "research/state_manifest.json",
+      "archived_path": "research/v0.4/baseline_current_aliases/research/state_manifest.json",
+      "sha256": "b5dcbc72057c3deb4ec9eaa955d90a5346a294188db2622283d5fbd2921b6948"
+    },
+    {
+      "original_path": "research/environment_manifest.json",
+      "archived_path": "research/v0.4/baseline_current_aliases/research/environment_manifest.json",
+      "sha256": "781045c3d4c10f0d635b4dd4ef30b7c5056fc1e3ea38ba77918079771701efc8"
+    },
+    {
+      "original_path": "research/claim_ledger.csv",
+      "archived_path": "research/v0.4/baseline_current_aliases/research/claim_ledger.csv",
+      "sha256": "0c1399e200e971cfd5903074087619d26813ddc33329618bf7af6a2692a196dc"
+    },
+    {
+      "original_path": "research/decision_log.md",
+      "archived_path": "research/v0.4/baseline_current_aliases/research/decision_log.md",
+      "sha256": "86e495a434377a0bdbd1dc25e2faa6448ffa6de2f948f6e0b70ee645336a8e90"
+    },
+    {
+      "original_path": "research/artifact_map.csv",
+      "archived_path": "research/v0.4/baseline_current_aliases/research/artifact_map.csv",
+      "sha256": "cbb39fd5cb16c02ab093b533fbf95e375835451232826447554915e694d711a0"
+    },
+    {
+      "original_path": "README.md",
+      "archived_path": "research/v0.4/baseline_current_aliases/README.md",
+      "sha256": "6fed4f48cbe0e1eaf05913f30ff2a2b67d2d28e07a8c5352dacf5c6f7ba28f23"
+    },
+    {
+      "original_path": ".gitignore",
+      "archived_path": "research/v0.4/baseline_current_aliases/.gitignore",
+      "sha256": "30cd8ae2cbf671949c86783fc4450a8bf5a7cbc52677c3c4ed7a06f465a70511"
+    }
+  ]
+}
