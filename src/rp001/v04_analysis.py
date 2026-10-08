@@ -57,7 +57,7 @@ def prior_analysis():
         ys=np.asarray(ys);x=a[:,1]
         gs=prior['gamma_sd']*scale;G=np.asarray(prior['Gamma_sd'])*scale;ts=prior['tau_sd']*scale;ss=prior['sigma_r_sd']*scale;bs=np.asarray(prior['beta_sd'])*scale
         analytic=bs[0]**2+bs[1]**2*x**2+2*gs**2*(G[0]**2+G[1]**2*x**2+ts**2)+ss**2
-        policies[name]=dict(ages=[30,100,250],draws=12000,seed=49001+index,log_rul_mean=ys.mean(0).tolist(),log_rul_variance=ys.var(0,ddof=1).tolist(),analytic_log_rul_variance=analytic.tolist(),rul_quantiles=np.exp(np.quantile(ys,[.01,.05,.5,.95,.99],axis=0)).tolist(),prob_lt1=np.mean(ys<0,axis=0).tolist(),prob_gt1000=np.mean(ys>np.log(1000),axis=0).tolist(),prob_gt5000=np.mean(ys>np.log(5000),axis=0).tolist(),sensor_endpoint_variance=np.var(sensor,axis=0,ddof=1).tolist(),analytic_sensor_endpoint_variance=(G[0]**2+G[1]**2*x**2+ts**2+(prior['sigma_z_sd']*scale)**2).tolist())
+        policies[name]=dict(ages=[30,100,250],draws=12000,seed=49001+index,log_rul_mean=ys.mean(0).tolist(),log_rul_variance=ys.var(0,ddof=1).tolist(),log_rul_mean_mcse=(ys.std(0,ddof=1)/np.sqrt(len(ys))).tolist(),log_rul_variance_mcse=np.sqrt(np.maximum(0,np.mean((ys-ys.mean(0))**4,axis=0)-(len(ys)-3)/(len(ys)-1)*ys.var(0,ddof=1)**2)/len(ys)).tolist(),analytic_log_rul_variance=analytic.tolist(),rul_quantiles=np.exp(np.quantile(ys,[.01,.05,.5,.95,.99],axis=0)).tolist(),prob_lt1=np.mean(ys<0,axis=0).tolist(),prob_gt1000=np.mean(ys>np.log(1000),axis=0).tolist(),prob_gt5000=np.mean(ys>np.log(5000),axis=0).tolist(),sensor_endpoint_variance=np.var(sensor,axis=0,ddof=1).tolist(),analytic_sensor_endpoint_variance=(G[0]**2+G[1]**2*x**2+ts**2+(prior['sigma_z_sd']*scale)**2).tolist())
     write(OUT/'prior_predictive.json',dict(provenance=provenance(),policies=policies))
     return draws0
 
@@ -65,21 +65,28 @@ def main():
     OUT.mkdir(parents=True,exist_ok=True);start=time.perf_counter();cpu=time.process_time();prov=provenance()
     if (OUT/'summary.json').exists(): raise FileExistsError('Preserve analysis')
     records={r['run_id']:json.loads((ROOT/'experiments/v0.4/registry'/f"{r['run_id']}.json").read_text()) for r in PLAN['runs']}
+    preparation_failures=[]
+    for key,record in list(records.items()):
+        repair=ROOT/'experiments/v0.4/registry'/f'{key}_infra1.json'
+        if record['status']=='failed' and repair.exists():
+            resumed=json.loads(repair.read_text())
+            assert resumed['infrastructure_repair_of']==key and resumed['configuration']==record['configuration'] and record['artifacts_sha256']=={}
+            preparation_failures.append(record);records[key]=resumed
     missing=[k for k,r in records.items() if r['status']!='completed']
     prior_draws=prior_analysis()
     prior_sd={k:np.std(np.asarray([p[k] for p in prior_draws]).reshape(12000,-1),axis=0,ddof=1) for k in prior_draws[0]}
     recovered=[]
     for cfg in PLAN['runs']:
-        name=cfg['run_id'];record=records[name]
+        record=records[cfg['run_id']];name=record['run_id']
         if record['status']!='completed': continue
         idata=az.from_netcdf(DIR/f'{name}.nc');pa=arrays(idata);names=[];parts=[];info=[]
         for key in ('beta','gamma','Gamma','tau','r_g','sigma_z','sigma_r','rho'):
             arr=pa[key].reshape(len(pa['rho']),-1);parts.append(arr)
             for j in range(arr.shape[1]):
-                label=f'{key}[{j}]';names.append(label);info.append(dict(parameter=label,posterior_sd=float(arr[:,j].std(ddof=1)),prior_sd=float(prior_sd[key][j]),sd_ratio=float(arr[:,j].std(ddof=1)/prior_sd[key][j])))
+                label=f'{key}[{j}]';names.append(label);scale=cfg.get('prior_scale',1.) if key in ('beta','gamma','Gamma','tau','sigma_z','sigma_r') else 1.;psd=float(prior_sd[key][j]*scale);fixed=(key=='rho' and cfg.get('rho_zero',False));info.append(dict(parameter=label,posterior_sd=float(arr[:,j].std(ddof=1)),prior_sd=0. if fixed else psd,sd_ratio=None if fixed else float(arr[:,j].std(ddof=1)/psd),policy='fixed/not-data-contraction' if fixed else 'matching-prior-reference'))
         corr=np.corrcoef(np.column_stack(parts),rowvar=False)
         couplings=sorted([dict(a=names[i],b=names[j],correlation=float(corr[i,j])) for i in range(len(names)) for j in range(i+1,len(names)) if np.isfinite(corr[i,j])],key=lambda x:abs(x['correlation']),reverse=True)[:10]
-        detail=dict(run_id=name,diagnostics=record.get('diagnostics'),recovery=record.get('recovery'),prior_posterior_sd=info,strongest_correlations=couplings)
+        detail=dict(run_id=name,posterior_evidence_accepted=record['diagnostics']['acceptance']=='PASS',unaccepted_scope='Raw diagnostic summaries retained; no calibrated posterior/coverage conclusion from a failed convergence fit',diagnostics=record.get('diagnostics'),recovery=record.get('recovery'),prior_posterior_sd=info,strongest_correlations=couplings)
         if cfg['kind']=='synthetic':
             assessment=load_data(DIR/f'{name}_assessment.npz');pred=raw_quantiles(idata,replace(assessment,y=None));Q=np.asarray([p['quantiles'] for p in pred]);y=np.exp(assessment.y);covered=(y>=Q[:,0])&(y<=Q[:,2]);scores=interval_score(y,Q[:,0],Q[:,2]);detail['predictive_assessment']=dict(n=len(y),coverage=_wilson_summary(int(covered.sum()),len(y)),median_rmse=float(np.sqrt(np.mean((y-Q[:,1])**2))),mean_interval_score=float(scores.mean()),engine_predictions=pred,truth_rul=y.tolist(),scope='Independent synthetic engines; fixed-truth/selected age law; predictive adequacy diagnostic only')
             recovered.append(detail)
@@ -96,7 +103,7 @@ def main():
         for a,b in combinations(range(3),2):
             for ra,rb in zip(rep_results[a],rep_results[b]):
                 ca=max(x['quantile_rul_mcse'] for x in ra['batch_size_results']);cb=max(x['quantile_rul_mcse'] for x in rb['batch_size_results']);diff=abs(ra['quantile_rul']-rb['quantile_rul']);se=np.hypot(ca,cb)
-                comparisons.append(dict(replications=[a+1,b+1],engine=ra['engine'],probability=ra['probability'],difference=diff,combined_mcse=float(se),z=float(diff/se) if se else None,compatible=bool(diff<=zcut*se)))
+                comparisons.append(dict(replications=[a+1,b+1],engine=ra['engine'],probability=ra['probability'],difference=diff,combined_mcse=float(se),z=float(diff/se) if np.isfinite(se) and se>0 else None,compatible=bool(np.isfinite(se) and se>0 and diff<=zcut*se)))
         oracles=[];ozcut=norm.ppf(1-.05/(2*9))
         for engine in (11,61,86):
             name=f'v04_oracle_e{engine}'
@@ -104,10 +111,11 @@ def main():
             oi=az.from_netcdf(DIR/f'{name}.nc');one=load_data(DIR/f'{name}_extra.npz',True);rr=precision(oi,one,reweight=False)
             for a,b in zip([r for r in rs if r['engine']==engine],rr):
                 ca=max(x['quantile_rul_mcse'] for x in a['batch_size_results']);cb=max(x['quantile_rul_mcse'] for x in b['batch_size_results']);diff=abs(a['quantile_rul']-b['quantile_rul']);se=np.hypot(ca,cb)
-                oracles.append(dict(engine=engine,probability=a['probability'],importance_quantile=a['quantile_rul'],oracle_quantile=b['quantile_rul'],combined_mcse=float(se),difference=diff,z=float(diff/se),compatible=bool(diff<=ozcut*se),oracle_precision=b,oracle_mcmc=records[name]['diagnostics']['acceptance']))
-        maxmc=max(b['approximate_upper_quantile_rul_mcse'] or float('inf') for r in rs for b in r['batch_size_results'])
+                oracles.append(dict(engine=engine,probability=a['probability'],importance_quantile=a['quantile_rul'],oracle_quantile=b['quantile_rul'],combined_mcse=float(se),difference=diff,z=float(diff/se) if np.isfinite(se) and se>0 else None,compatible=bool(np.isfinite(se) and se>0 and diff<=ozcut*se),oracle_precision=b,oracle_mcmc=records[name]['diagnostics']['acceptance']))
+        maxmc=max(float('inf') if b['approximate_upper_quantile_rul_mcse'] is None else b['approximate_upper_quantile_rul_mcse'] for r in rs for b in r['batch_size_results'])
         passes=all(r['gate_pass'] for r in rs) and all(r['compatible'] for r in comparisons) and len(oracles)==9 and all(r['compatible'] and r['oracle_mcmc']=='PASS' for r in oracles) and all(records[n]['diagnostics']['acceptance']=='PASS' for n in principal_names)
-        precision_summary=dict(n_engines=25,n_quantiles=75,n_draws=96000,max_upper_mcse_cycles=maxmc,min_weight_ess=min(r['weight_ess'] for r in rs),min_influence_ess=min(b['influence_ess'] for r in rs for b in r['batch_size_results']),numerical_gate='PASS' if passes else 'FAIL',replication_z_threshold=float(zcut),oracle_z_threshold=float(ozcut),replication_comparisons=comparisons,oracle_comparisons=oracles)
+        validation_path=ROOT/'experiments/v0.4/precision/v04_precision_mcse_validation.json';validation=json.loads(validation_path.read_text());vr=json.loads((ROOT/'experiments/v0.4/registry/v04_precision_validation.json').read_text());assert vr['plan_sha256']==prov['plan_sha256'];validation_pass=all(g['plan_criterion_checks']['both'] for g in validation['summary']['groups']);component_pass=passes;passes=passes and validation_pass
+        precision_summary=dict(mcse_estimator_validation_pass=validation_pass,component_mcmc_prediction_gate='PASS' if component_pass else 'FAIL',n_engines=25,n_quantiles=75,n_draws=96000,max_upper_mcse_cycles=maxmc,min_weight_ess=min(r['weight_ess'] for r in rs),min_influence_ess=min(b['influence_ess'] for r in rs for b in r['batch_size_results']),numerical_gate='PASS' if passes else 'FAIL',replication_z_threshold=float(zcut),oracle_z_threshold=float(ozcut),replication_comparisons=comparisons,oracle_comparisons=oracles)
         write(OUT/'precision_summary.json',precision_summary)
         Q=np.array([[r['quantile_rul'] for r in rs if r['engine']==e] for e in cal.ids]);posthoc=calibrate(np.exp(cal.y),Q[:,0],Q[:,2]);write(OUT/'principal_posthoc_calibration.json',dict(correction=float(posthoc),rank=24,n=25,secondary_only=True,development_calibration_exposed=True))
         # Prior sensitivity is prediction sensitivity only, not calibration-score search.
@@ -122,8 +130,8 @@ def main():
         write(OUT/'v03_retrospective_precision.json',dict(old_reported_max_mcse=.728972,old_failure_retained=True,results=retro))
     pipeline=[]
     for cfg in [r for r in PLAN['runs'] if r['kind']=='pipeline']:
-        name=cfg['run_id'];row=dict(run_id=name,status=records[name]['status'],configuration=cfg,stage_metadata=records[name].get('pipeline_metadata'),cqr=records[name].get('cqr'))
-        if records[name]['status']=='completed':
+        record=records[cfg['run_id']];name=record['run_id'];row=dict(run_id=name,status=record['status'],configuration=cfg,stage_metadata=record.get('pipeline_metadata'),cqr=record.get('cqr'))
+        if record['status']=='completed':
             anchor=load_data(DIR/f'{name}_anchors.npz',True);row['bayesian_anchors']=raw_quantiles(az.from_netcdf(DIR/f'{name}.nc'),anchor)
             calibration=load_data(DIR/f'{name}_calibration.npz');cal_predictions=raw_quantiles(az.from_netcdf(DIR/f'{name}.nc'),replace(calibration,y=None));CQ=np.asarray([p['quantiles'] for p in cal_predictions]);row['bayesian_posthoc_correction']=float(calibrate(np.exp(calibration.y),CQ[:,0],CQ[:,2]));row['calibration_distinct_n']=len(set(calibration.ids));row['calibration_score_rows']=len(calibration.ids)
             cp=DIR/f'{name}_cqr_anchors.npz'
@@ -138,7 +146,7 @@ def main():
             for j in range(len(rows[0]['recovery']['parameters'])):
                 v=[r['recovery']['parameters'][j] for r in rows];params[v[0]['parameter']]=dict(covered95=_wilson_summary(sum(p['truth_in95'] for p in v),len(v)),mean_bias=float(np.mean([p['mean']-p['truth'] for p in v])),max_abs_z=max(abs(p['standardized_mean_error']) for p in v))
         regimes[regime]=dict(n_completed=len(rows),n_mcmc_pass=sum(r['diagnostics']['acceptance']=='PASS' for r in rows),parameter_summary=params,n_predictive=sum(r['predictive_assessment']['n'] for r in rows),predictive_covered=sum(r['predictive_assessment']['coverage']['successes'] for r in rows))
-    summary=dict(provenance=prov,failed_run_ids=missing,precision=precision_summary,synthetic=regimes,n_mcmc_fits=len(records),n_mcmc_completed=sum(r['status']=='completed' for r in records.values()),mcmc_failed_diagnostics=[n for n,r in records.items() if r.get('diagnostics',{}).get('acceptance')=='FAIL'],cpu_fit_seconds=sum(r['cpu_seconds'] for r in records.values()),wall_fit_seconds=sum(r['wall_seconds'] for r in records.values()),analysis_wall_seconds=time.perf_counter()-start,analysis_cpu_seconds=time.process_time()-cpu)
+    summary=dict(provenance=prov,failed_run_ids=missing,precision=precision_summary,synthetic=regimes,n_mcmc_fits=len(records),preparation_failures=[r['run_id'] for r in preparation_failures],preparation_cpu_seconds=sum(r['cpu_seconds'] for r in preparation_failures),n_mcmc_completed=sum(r['status']=='completed' for r in records.values()),mcmc_failed_diagnostics=[n for n,r in records.items() if r.get('diagnostics',{}).get('acceptance')=='FAIL'],cpu_fit_seconds=sum(r['cpu_seconds'] for r in records.values()),wall_fit_seconds=sum(r['wall_seconds'] for r in records.values()),analysis_wall_seconds=time.perf_counter()-start,analysis_cpu_seconds=time.process_time()-cpu)
     write(OUT/'summary.json',summary);write(ROOT/'experiments/v0.4/registry/v04_lead_analysis.json',dict(prov,run_id='v04_lead_analysis',status='completed',cpu_seconds=summary['analysis_cpu_seconds'],wall_seconds=summary['analysis_wall_seconds'],result_sha256=sha(OUT/'summary.json')))
     print(json.dumps({k:v for k,v in summary.items() if k not in ('provenance','precision','synthetic')},indent=2),flush=True)
 if __name__=='__main__':main()
