@@ -97,4 +97,4 @@ def features(data, full=False):
         grid=np.linspace(0,w-1,30)
         seq=np.array([np.interp(grid,np.arange(w),z) for z in data.z])
         return np.column_stack((data.a[:,1],seq))
-    return np.column_stack((data.a[:,1],coef,rs))
+    return np.column_stack((data.a[:,1],data.z[:,-1],coef,rs))

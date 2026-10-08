@@ -24,7 +24,17 @@ def convert_trace(trace):
         if name in trace:
             node=trace[name]
             groups[name]=node.to_dataset()
-    return az.InferenceData(**groups)
+    idata=az.InferenceData(**groups)
+    # Preserve nested backend metadata as JSON attributes without altering any samples.
+    def safe(value):
+        return json.dumps(value,sort_keys=True,default=str) if isinstance(value,(dict,list,tuple)) else value
+    idata.attrs={k:safe(v) for k,v in idata.attrs.items()}
+    for group in idata.groups():
+        ds=getattr(idata,group)
+        ds.attrs={k:safe(v) for k,v in ds.attrs.items()}
+        for variable in ds.variables:
+            ds[variable].attrs={k:safe(v) for k,v in ds[variable].attrs.items()}
+    return idata
 def diagnostics(idata,rho_zero=False):
     names=["beta","gamma","Gamma","tau","r_g","sigma_z","sigma_r"]+([] if rho_zero else ["rho"])
     summary=az.summary(idata,var_names=names,round_to="none")
@@ -121,22 +131,27 @@ def run(run_id):
     commit,dirty=git_state()
     config={"run_id":run_id,"sampling":PLAN["sampling"],"source_plan":"configs/pilot_plan_v0.3.json"}
     truth=None;scale=1.;error="normal";rho_zero=False
-    syn=next((x for x in PLAN["synthetic_design"] if x["id"]==run_id),None)
+    base_id=run_id.split("_repair")[0]
+    syn=next((x for x in PLAN["synthetic_design"] if x["id"]==base_id),None)
     if syn:
         data,truth=generate_synthetic(syn["n"],syn["seed"],syn["rho"],syn["weak"])
         config.update(syn)
         seed=10000+syn["seed"]
-    elif run_id in PLAN["training_runs"]:
+    elif base_id in PLAN["training_runs"]:
         engines=load_training()
         ids=[r["engine"] for r in manifest() if r["role"]=="fit" and r["eligible_alive"]]
         pre=fit_preprocessor(engines,ids)
         data=make_dataset(engines,pre,("fit",))
-        np.savez(outdir/"fit_preprocessor.npz",**pre)
+        prepath=outdir/"fit_preprocessor.npz"
+        if prepath.exists():
+            stored=np.load(prepath)
+            for key in pre: np.testing.assert_array_equal(stored[key],pre[key])
+        else: np.savez(prepath,**pre)
         config.update({"dataset":"FD001 training fit43","data_sha256":"963b5e22825b34d8b21c69e1aeb4af3e647050eb672ee8834ba4b5d91d2de0f8",
                        "preprocessing_fit_ids":ids,"pc1_explained_ratio":pre["pc1_explained_ratio"]})
-        seed=13000+PLAN["training_runs"].index(run_id)
-        scale=.5 if run_id=="prior_half" else 2. if run_id=="prior_double" else 1.
-        rho_zero=run_id=="rho_zero";error="contamination" if run_id=="contamination" else "normal"
+        seed=13000+PLAN["training_runs"].index(base_id)
+        scale=.5 if base_id=="prior_half" else 2. if base_id=="prior_double" else 1.
+        rho_zero=base_id=="rho_zero";error="contamination" if base_id=="contamination" else "normal"
     else: raise ValueError("Unknown prespecified pilot run")
     config.update({"prior_scale":scale,"error":error,"rho_zero":rho_zero,"seed":seed})
     config_hash=hashlib.sha256(json.dumps(config,sort_keys=True).encode()).hexdigest()
