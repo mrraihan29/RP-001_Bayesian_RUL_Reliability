@@ -1,0 +1,547 @@
+{
+  "version": "0.4",
+  "created_at": "2026-10-08T14:13:00.261663+00:00",
+  "scope": "targeted synthetic/FD001 training-only remediation",
+  "prospectively_frozen_before_new_scientific_runs": true,
+  "primary_question_unchanged": true,
+  "primary_estimand": "Exact finite-benchmark mean90%interval-score difference on all official FD001 endpoints using stored predictions",
+  "primary_comparison": "Bayesian principal versus calibrated CQR",
+  "official_test_sensors_authorized": false,
+  "official_test_labels_authorized": false,
+  "confirmatory_authorized": false,
+  "final_protocol_lock_authorized": false,
+  "prior": {
+    "id": "anchored_v04",
+    "beta_mu": [
+      4.605170185988092,
+      0.0
+    ],
+    "beta_sd": [
+      0.6,
+      0.5
+    ],
+    "gamma_sd": 0.25,
+    "Gamma_sd": [
+      0.5,
+      0.35
+    ],
+    "tau_sd": 0.35,
+    "sigma_z_sd": 0.4,
+    "sigma_r_sd": 0.4,
+    "eta_rho_sd": 0.75,
+    "lkj_eta": 2,
+    "justification": "Hundreds-of-cycles RUL scale; prior latent-zero intercept median95% range31..324; PC units/slope-per30 anchored; correlation residual not inferred from raw trend. No calibration interval-score selection.",
+    "development_adaptation_after_calibration_exposure": true,
+    "broader_policy": "Multiply beta/gamma/Gamma/tau/sigma_z/sigma_r scale priors by1.5; eta_rho and LKJ correlation priors fixed."
+  },
+  "principal_policy": "anchored_v04 fixed before new predictions; broader/noise alternatives sensitivity-only, never winner search",
+  "sampling": {
+    "chains": 4,
+    "cores": 2,
+    "warmup": 1000,
+    "target_accept": 0.95,
+    "maxdepth": 12,
+    "sampler": "nutpie NUTS"
+  },
+  "mcmc_acceptance": {
+    "rhat_exclusive": 1.01,
+    "bulk_ess_min": 400,
+    "tail_ess_min": 400,
+    "divergences_max": 0,
+    "bfmi_exclusive": 0.3,
+    "depth_saturation_max": 0.01
+  },
+  "precision": {
+    "required_engines": "all25 original eligible calibration engines, including86",
+    "quantiles": [
+      0.05,
+      0.5,
+      0.95
+    ],
+    "threshold_cycles": 0.5,
+    "pooling": "all3 independent4-chain principal replications,12chains\u00c3\u20148000draws",
+    "batch_sizes": [
+      250,
+      500
+    ],
+    "upper_mcse_tail_probability": 0.0003333333333333334,
+    "upper_mcse_note": "Approximate Satterthwaite/chi-square variance uncertainty guard under stationary long-batch Gaussian approximation; not finite-sample guarantee",
+    "acceptance": "All75quantiles at both batch sizes approximate upperMCSE\u00e2\u2030\u00a4.5; weightESS\u00e2\u2030\u00a51000; influenceESS\u00e2\u2030\u00a5400; MCMC passed; all pairwise independent replication differences compatible with zBonferroni .05/(2*225); oracle agreement compatible with .05/(2*9) combinedMCSE",
+    "oracle_engines": [
+      11,
+      61,
+      86
+    ],
+    "oracle_selection": "firstdeterministic11, lowestv03weightESS61, worstv03MCSE86; no best-case selection",
+    "no_extra_draws_after_result": true,
+    "root_tolerance_log": 1e-10,
+    "MCSE_estimator_validation": {
+      "replications_per_rho": 200,
+      "rho": [
+        0,
+        0.8,
+        0.95
+      ],
+      "chains": 4,
+      "draws": 2000,
+      "seed": 48001,
+      "known_target": "conjugate sensor-only Gaussian update then lognormal mixture prediction",
+      "criteria": "per-rho/per-quantile RMSerror / RMSreportedMCSE between.75and1.33;95%normalMCinterval coverage\u00e2\u2030\u00a5.90; report binomial MC uncertainty; no universal certification"
+    }
+  },
+  "prior_predictive": {
+    "draws_per_policy": 12000,
+    "seed": 49001,
+    "ages": [
+      30,
+      100,
+      250
+    ],
+    "policies": [
+      "anchored_v04",
+      "broader1p5",
+      "historical_v03"
+    ],
+    "policy_fixed_before_draws": true,
+    "checks": "logR moments, R quantiles, tailsR<1/>1000/>5000; hundreds-cycle anchors are scale assessments not hard population support bounds"
+  },
+  "synthetic": {
+    "regimes": {
+      "regular": {
+        "rho": 0.5,
+        "weak": false
+      },
+      "high_rho": {
+        "rho": 0.95,
+        "weak": false
+      },
+      "weak": {
+        "rho": 0.5,
+        "weak": true
+      },
+      "confounded": {
+        "rho": 0.8,
+        "gamma": [
+          -0.1,
+          0.05
+        ],
+        "Gamma": [
+          [
+            0.1,
+            1.2
+          ],
+          [
+            -0.1,
+            -0.8
+          ]
+        ],
+        "sigma_z": 0.6,
+        "sigma_r": 0.15
+      }
+    },
+    "repeated_recovery": "4fixedtruthdatasets/regime; notSBC",
+    "predictive_assessment": "20independent synthetic alive-landmark engines/run; use full per-engine sensor update; broadWilson intervals; no CQR superiority evaluation",
+    "parameter_checks": "recovery/errors/coverage, posterior correlations, prior-to-posterior SD ratios; not physical-state interpretation",
+    "identifiability": "direct generic covariance inversion proof plus numerical checks; practical weak identification remains qualified"
+  },
+  "pipeline": {
+    "runs": 8,
+    "paired_bootstrap_replicates": 4,
+    "stage_policy": "fixed original role strata, resample engines within roles, one cutoff/unique engine, duplicate multiplicities only; repeat PCA,HPO12,refit,Bayesianfit,CQRcalibration;4paired canonical/alternate cutoff perturbations",
+    "minimum_distinct_eligible": {
+      "fit": 20,
+      "tune": 5,
+      "calibration": 9
+    },
+    "anchors": "fixedoriginal25 calibration sensorprefixes, no assessment-superiority claim",
+    "purpose": "prediction-map/calibration/selection sensitivity under observed-data perturbations; not true total pipeline variance or an independent performance estimate",
+    "duplicate_calibration": "bootstrap sensitivity only; no conformal guarantee claimed"
+  },
+  "inference_simulation": {
+    "scenarios": [
+      "normal",
+      "lognormal1",
+      "lognormal1p5",
+      "t3",
+      "rare_outlier",
+      "t1p5",
+      "sparse_discrete",
+      "all_zero"
+    ],
+    "n": 100,
+    "replications": 500,
+    "bootstrap_count": 1999,
+    "seed": 50001,
+    "primary_inference": "Finite benchmark stored-prediction effect/descriptive decomposition; no primary p-value or unconditional superpopulation superiority claim",
+    "secondary_bootstrap": "20k pairedbootstrap-t diagnostic conditionalfixedpipeline; missing/nonfinite/infinite scores,zeroSE,any invalid bootstrap pivot =>suppressed diagnostic, no deletion/imputation/favorable fallback",
+    "stress": "retain all scenarios/failures; no tuning inference procedure using officialtest results"
+  },
+  "fallback_policy": {
+    "model": "same2latent hierarchy withrho0 andr_g0 diagonalSigma, fixedanchoredpriors",
+    "activation": "only if principal numerical/model interpretation blocks after bounded plan; not auto-substituted; return REVISE AGAIN or RE-SCOPE and require owner-review before a new principal/test evaluation",
+    "inference": "finite-benchmark descriptive result remains; suppress unavailable secondary inference, no alternate significance test selected"
+  },
+  "compute": {
+    "scientific_mcmc_runs_max": 33,
+    "additional_infrastructure_repairs_max": 2,
+    "aggregate_cpu_hours_max": 6,
+    "artifact_gib_max": 2,
+    "per_fit_wall_minutes_max": 10,
+    "parallel_processes_max": 2,
+    "default": "localCPU",
+    "extra_spending": false,
+    "colab": "onlymeasuredneed; currentlyunneeded"
+  },
+  "runs": [
+    {
+      "run_id": "v04_main_r1",
+      "kind": "training",
+      "draws": 8000,
+      "seed": 41001,
+      "prior": "anchored_v04"
+    },
+    {
+      "run_id": "v04_main_r2",
+      "kind": "training",
+      "draws": 8000,
+      "seed": 41002,
+      "prior": "anchored_v04"
+    },
+    {
+      "run_id": "v04_main_r3",
+      "kind": "training",
+      "draws": 8000,
+      "seed": 41003,
+      "prior": "anchored_v04"
+    },
+    {
+      "run_id": "v04_oracle_e11",
+      "kind": "oracle",
+      "engine": 11,
+      "draws": 16000,
+      "seed": 41111,
+      "prior": "anchored_v04"
+    },
+    {
+      "run_id": "v04_oracle_e61",
+      "kind": "oracle",
+      "engine": 61,
+      "draws": 16000,
+      "seed": 41161,
+      "prior": "anchored_v04"
+    },
+    {
+      "run_id": "v04_oracle_e86",
+      "kind": "oracle",
+      "engine": 86,
+      "draws": 16000,
+      "seed": 41186,
+      "prior": "anchored_v04"
+    },
+    {
+      "run_id": "v04_broader",
+      "kind": "training",
+      "draws": 2000,
+      "seed": 41201,
+      "prior": "anchored_v04",
+      "prior_scale": 1.5,
+      "error": "normal",
+      "rho_zero": false
+    },
+    {
+      "run_id": "v04_rho_zero",
+      "kind": "training",
+      "draws": 2000,
+      "seed": 41202,
+      "prior": "anchored_v04",
+      "prior_scale": 1.0,
+      "error": "normal",
+      "rho_zero": true
+    },
+    {
+      "run_id": "v04_contamination",
+      "kind": "training",
+      "draws": 2000,
+      "seed": 41203,
+      "prior": "anchored_v04",
+      "prior_scale": 1.0,
+      "error": "contamination",
+      "rho_zero": false
+    },
+    {
+      "run_id": "v04_syn_regular_1",
+      "kind": "synthetic",
+      "regime": "regular",
+      "n": 56,
+      "assessment_n": 20,
+      "data_seed": 42001,
+      "assessment_seed": 43001,
+      "seed": 44001,
+      "draws": 2000,
+      "prior": "anchored_v04"
+    },
+    {
+      "run_id": "v04_syn_regular_2",
+      "kind": "synthetic",
+      "regime": "regular",
+      "n": 56,
+      "assessment_n": 20,
+      "data_seed": 42002,
+      "assessment_seed": 43002,
+      "seed": 44002,
+      "draws": 2000,
+      "prior": "anchored_v04"
+    },
+    {
+      "run_id": "v04_syn_regular_3",
+      "kind": "synthetic",
+      "regime": "regular",
+      "n": 56,
+      "assessment_n": 20,
+      "data_seed": 42003,
+      "assessment_seed": 43003,
+      "seed": 44003,
+      "draws": 2000,
+      "prior": "anchored_v04"
+    },
+    {
+      "run_id": "v04_syn_regular_4",
+      "kind": "synthetic",
+      "regime": "regular",
+      "n": 56,
+      "assessment_n": 20,
+      "data_seed": 42004,
+      "assessment_seed": 43004,
+      "seed": 44004,
+      "draws": 2000,
+      "prior": "anchored_v04"
+    },
+    {
+      "run_id": "v04_syn_high_rho_1",
+      "kind": "synthetic",
+      "regime": "high_rho",
+      "n": 56,
+      "assessment_n": 20,
+      "data_seed": 42101,
+      "assessment_seed": 43101,
+      "seed": 44101,
+      "draws": 2000,
+      "prior": "anchored_v04"
+    },
+    {
+      "run_id": "v04_syn_high_rho_2",
+      "kind": "synthetic",
+      "regime": "high_rho",
+      "n": 56,
+      "assessment_n": 20,
+      "data_seed": 42102,
+      "assessment_seed": 43102,
+      "seed": 44102,
+      "draws": 2000,
+      "prior": "anchored_v04"
+    },
+    {
+      "run_id": "v04_syn_high_rho_3",
+      "kind": "synthetic",
+      "regime": "high_rho",
+      "n": 56,
+      "assessment_n": 20,
+      "data_seed": 42103,
+      "assessment_seed": 43103,
+      "seed": 44103,
+      "draws": 2000,
+      "prior": "anchored_v04"
+    },
+    {
+      "run_id": "v04_syn_high_rho_4",
+      "kind": "synthetic",
+      "regime": "high_rho",
+      "n": 56,
+      "assessment_n": 20,
+      "data_seed": 42104,
+      "assessment_seed": 43104,
+      "seed": 44104,
+      "draws": 2000,
+      "prior": "anchored_v04"
+    },
+    {
+      "run_id": "v04_syn_weak_1",
+      "kind": "synthetic",
+      "regime": "weak",
+      "n": 56,
+      "assessment_n": 20,
+      "data_seed": 42201,
+      "assessment_seed": 43201,
+      "seed": 44201,
+      "draws": 2000,
+      "prior": "anchored_v04"
+    },
+    {
+      "run_id": "v04_syn_weak_2",
+      "kind": "synthetic",
+      "regime": "weak",
+      "n": 56,
+      "assessment_n": 20,
+      "data_seed": 42202,
+      "assessment_seed": 43202,
+      "seed": 44202,
+      "draws": 2000,
+      "prior": "anchored_v04"
+    },
+    {
+      "run_id": "v04_syn_weak_3",
+      "kind": "synthetic",
+      "regime": "weak",
+      "n": 56,
+      "assessment_n": 20,
+      "data_seed": 42203,
+      "assessment_seed": 43203,
+      "seed": 44203,
+      "draws": 2000,
+      "prior": "anchored_v04"
+    },
+    {
+      "run_id": "v04_syn_weak_4",
+      "kind": "synthetic",
+      "regime": "weak",
+      "n": 56,
+      "assessment_n": 20,
+      "data_seed": 42204,
+      "assessment_seed": 43204,
+      "seed": 44204,
+      "draws": 2000,
+      "prior": "anchored_v04"
+    },
+    {
+      "run_id": "v04_syn_confounded_1",
+      "kind": "synthetic",
+      "regime": "confounded",
+      "n": 56,
+      "assessment_n": 20,
+      "data_seed": 42301,
+      "assessment_seed": 43301,
+      "seed": 44301,
+      "draws": 2000,
+      "prior": "anchored_v04"
+    },
+    {
+      "run_id": "v04_syn_confounded_2",
+      "kind": "synthetic",
+      "regime": "confounded",
+      "n": 56,
+      "assessment_n": 20,
+      "data_seed": 42302,
+      "assessment_seed": 43302,
+      "seed": 44302,
+      "draws": 2000,
+      "prior": "anchored_v04"
+    },
+    {
+      "run_id": "v04_syn_confounded_3",
+      "kind": "synthetic",
+      "regime": "confounded",
+      "n": 56,
+      "assessment_n": 20,
+      "data_seed": 42303,
+      "assessment_seed": 43303,
+      "seed": 44303,
+      "draws": 2000,
+      "prior": "anchored_v04"
+    },
+    {
+      "run_id": "v04_syn_confounded_4",
+      "kind": "synthetic",
+      "regime": "confounded",
+      "n": 56,
+      "assessment_n": 20,
+      "data_seed": 42304,
+      "assessment_seed": 43304,
+      "seed": 44304,
+      "draws": 2000,
+      "prior": "anchored_v04"
+    },
+    {
+      "run_id": "v04_pipeline_1_canonical",
+      "kind": "pipeline",
+      "bootstrap_seed": 45001,
+      "cutoff_mode": "canonical",
+      "cutoff_salt": 46001,
+      "seed": 47001,
+      "draws": 2000,
+      "prior": "anchored_v04"
+    },
+    {
+      "run_id": "v04_pipeline_1_alternate",
+      "kind": "pipeline",
+      "bootstrap_seed": 45001,
+      "cutoff_mode": "alternate",
+      "cutoff_salt": 46001,
+      "seed": 47002,
+      "draws": 2000,
+      "prior": "anchored_v04"
+    },
+    {
+      "run_id": "v04_pipeline_2_canonical",
+      "kind": "pipeline",
+      "bootstrap_seed": 45002,
+      "cutoff_mode": "canonical",
+      "cutoff_salt": 46002,
+      "seed": 47003,
+      "draws": 2000,
+      "prior": "anchored_v04"
+    },
+    {
+      "run_id": "v04_pipeline_2_alternate",
+      "kind": "pipeline",
+      "bootstrap_seed": 45002,
+      "cutoff_mode": "alternate",
+      "cutoff_salt": 46002,
+      "seed": 47004,
+      "draws": 2000,
+      "prior": "anchored_v04"
+    },
+    {
+      "run_id": "v04_pipeline_3_canonical",
+      "kind": "pipeline",
+      "bootstrap_seed": 45003,
+      "cutoff_mode": "canonical",
+      "cutoff_salt": 46003,
+      "seed": 47005,
+      "draws": 2000,
+      "prior": "anchored_v04"
+    },
+    {
+      "run_id": "v04_pipeline_3_alternate",
+      "kind": "pipeline",
+      "bootstrap_seed": 45003,
+      "cutoff_mode": "alternate",
+      "cutoff_salt": 46003,
+      "seed": 47006,
+      "draws": 2000,
+      "prior": "anchored_v04"
+    },
+    {
+      "run_id": "v04_pipeline_4_canonical",
+      "kind": "pipeline",
+      "bootstrap_seed": 45004,
+      "cutoff_mode": "canonical",
+      "cutoff_salt": 46004,
+      "seed": 47007,
+      "draws": 2000,
+      "prior": "anchored_v04"
+    },
+    {
+      "run_id": "v04_pipeline_4_alternate",
+      "kind": "pipeline",
+      "bootstrap_seed": 45004,
+      "cutoff_mode": "alternate",
+      "cutoff_salt": 46004,
+      "seed": 47008,
+      "draws": 2000,
+      "prior": "anchored_v04"
+    }
+  ],
+  "stopping": "Preserve everyfailure; no scientific retry/tuning to forcePASS; stop ifCPU/artifact/time envelope exceeded; return B/C ifcriticalissuesopen",
+  "adaptive_development": "v03caloutcomesalreadyknown; everyprior/numerical/inferencepolicy change recorded; new results are exploratory",
+  "practical_superiority_margin": null
+}
