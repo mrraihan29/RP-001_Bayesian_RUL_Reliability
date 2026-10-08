@@ -1,0 +1,43 @@
+{
+  "version": "0.5",
+  "created_at": "2026-10-08T16:41:35.435790+00:00",
+  "scientific_delivery_commit": "c583ce62eac9a6b3dcd29c1929cc07c17569beb7",
+  "owner_reviewed_v04_commit": "61b4c2c63cbad6c1b9bd99168e33d1367aa180bc",
+  "manifest_sha256": "3b557427c9c4ae59f61c77edfc6b150f9ea333aab22e324057b1f23e868f7d83",
+  "manifest_files_verified": 593,
+  "git_blobs_verified": 560,
+  "historical_local_only_files": 33,
+  "recommendation": "READY FOR OWNER LOCK REVIEW",
+  "protocol_status": "PROTOCOL_DRAFTED",
+  "final_owner_authorization": false,
+  "official_test_sensors_accessed": false,
+  "official_test_labels_accessed": false,
+  "confirmatory_evaluation": false,
+  "fallback_activated": false,
+  "new_sampler_invocations": 1,
+  "tests_passed": 59,
+  "environment_fingerprint": "f57b00a67e9d67b2920791bfddc8dc812dbdeb9306588a26557dfd6be15f826c",
+  "dataset_fingerprint": "963b5e22825b34d8b21c69e1aeb4af3e647050eb672ee8834ba4b5d91d2de0f8",
+  "split_fingerprint": "6d6e0f10d979d41739c6c07b6bab8f0c32d2844ebd150e82d13caa3bd29e124b",
+  "frozen_plan_fingerprint": "6046cd808d6a4b68ed42fd7d3458f0f142273aa323f64bb077cb8c0bc7dc0745",
+  "preexecution_plan_source_commit": "304d8e76d03fe7d69dc7f8f9bb6de3c600a219dd",
+  "score_demo_source_commit": "60e9208fdd216abf51677f80514ac77e7e4fe9e6",
+  "registered_new_scientific_CPU_seconds": 99.578125,
+  "native_structural_validation": {
+    "handoff": {
+      "result": "PASS",
+      "errors": []
+    },
+    "research": {
+      "status": "PROTOCOL_DRAFTED",
+      "protocol_status": "PROTOCOL_DRAFTED",
+      "mode": "dataset-benchmark",
+      "hard_failures": [],
+      "warnings": [],
+      "info": []
+    }
+  },
+  "repository_url": "https://github.com/mrraihan29/RP-001_Bayesian_RUL_Reliability",
+  "repository_visibility": "private",
+  "note": "Frozen post-commit administrative receipt identifies complete scientific snapshot; its own later storage commit is separate. Scientific review does not grant owner authorization."
+}
