@@ -536,3 +536,4 @@ V04-A0534,current-alias,.gitignore,,RP001-v0.4-disclosed-current-alias-update,1d
 V04-A0535,final-verification,logs/v0.4/native_validation.json,,RP001-v0.4-targeted-return,37ca0a0a424559500cb2ebec3d078eed101d85a0ade3342a20c628c95178eeaf
 V04-A0536,final-verification,logs/v0.4/report_integrity_qc.json,,RP001-v0.4-targeted-return,eb286b087ca7de0c06fa99976521b9d81d71814bab8878868075583a2695c422
 V04-A0537,final-verification,logs/v0.4/final_precommit_qc.py,,RP001-v0.4-targeted-return,4f8786893aa83d42fd4ed9aacc054168da9b779f91ac06a528090b517084cd0d
+V04-A0538,delivery-provenance,logs/v0.4/build_delivery_manifest.py,,RP001-v0.4-targeted-return,f3b397524d24479bed6701352a0fdef098f56afdfdd967333d669a8f1d382e4f
