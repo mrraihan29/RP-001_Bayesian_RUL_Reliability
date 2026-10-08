@@ -1,0 +1,11 @@
+{
+  "checked_at_utc": "2026-10-08T22:52:45.826030+00:00",
+  "status": "PASS",
+  "administrative_evidence_commit": "8ba3edf44d2458c0d2367f6716370073cfaaca18",
+  "successful_lock_commit": null,
+  "sealed_evidence_files_verified": 38,
+  "receipt_sha256": "e5e046e03c5304c087c83a61ad8cffb8e57da8da4bb5964da14ca904524d8761",
+  "sealed_file_map_sha256": "f24b815f9d35834cdf525d6ea8a7b66181e41537f95c406437bdd24ece6cef9a",
+  "receipt_credential_signature_scan": "PASS",
+  "scope": "Receipt identity and prior sealed evidence only; no experiment/official data. This newer receipt verification is excluded from its own prior evidence map."
+}
