@@ -4,5 +4,5 @@
   "broken_links": [],
   "expected_pending_receipt": "logs/v0.5/delivery_receipt.json",
   "scientific_code_unchanged_since_execution": true,
-  "contract_sha256": "a3b38dcf9bb02a29f617b95694cbab2cbbcd1fd28cbfc7c4be64af2823313b43"
+  "contract_sha256": "1e03e072682878fde6ced8c00ddcde44594af59e56129e65db1127a0166fa598"
 }

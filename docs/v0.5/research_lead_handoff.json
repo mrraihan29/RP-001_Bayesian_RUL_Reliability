@@ -11,7 +11,7 @@
   "artifact_version": "0.5",
   "artifact_identity": {
     "path_or_uri": "docs/v0.5/01_prelock_resolution_memo.md",
-    "sha256_or_version": "8bdcc7d967f342a81b819522279f768774e0b8eea6e25f39ebeea242836efa0b",
+    "sha256_or_version": "e9553f04b4c92388617b81a6719a41a516dab6b6f9290a17d94c544d811ae67c",
     "created_at": "2026-10-08T16:31:26.535785+00:00",
     "source_revision": "Plan/inquiry304d8e7;score60e9208;final snapshot in v05receipt."
   },
@@ -23,7 +23,7 @@
       "evidence_id": "V05-MEMO",
       "kind": "bounded-evidence",
       "location": "docs/v0.5/01_prelock_resolution_memo.md",
-      "sha256": "8bdcc7d967f342a81b819522279f768774e0b8eea6e25f39ebeea242836efa0b",
+      "sha256": "e9553f04b4c92388617b81a6719a41a516dab6b6f9290a17d94c544d811ae67c",
       "collected_at": "2026-10-08T16:31:26.535785+00:00",
       "method": "DirectSOLbounded scientific disposition",
       "supports": "Restrictedclaim only;notfinalauthorization",
@@ -33,7 +33,7 @@
       "evidence_id": "V05-CONTRACT",
       "kind": "bounded-evidence",
       "location": "docs/v0.5/02_proposed_locked_analysis_contract.md",
-      "sha256": "a3b38dcf9bb02a29f617b95694cbab2cbbcd1fd28cbfc7c4be64af2823313b43",
+      "sha256": "1e03e072682878fde6ced8c00ddcde44594af59e56129e65db1127a0166fa598",
       "collected_at": "2026-10-08T16:31:26.535785+00:00",
       "method": "Proposedfiniteanalysis/failure/phasecontract",
       "supports": "Restrictedclaim only;notfinalauthorization",

@@ -4,7 +4,7 @@
   "owner": "Raihan x Rei",
   "final_authorization": false,
   "contract_path": "docs/v0.5/02_proposed_locked_analysis_contract.md",
-  "contract_sha256": "a3b38dcf9bb02a29f617b95694cbab2cbbcd1fd28cbfc7c4be64af2823313b43",
+  "contract_sha256": "1e03e072682878fde6ced8c00ddcde44594af59e56129e65db1127a0166fa598",
   "primary_question_unchanged": true,
   "competitive_definition": "Descriptive complete finite-benchmark characterization; no binary margin/population superiority",
   "population_inference_included": false,
