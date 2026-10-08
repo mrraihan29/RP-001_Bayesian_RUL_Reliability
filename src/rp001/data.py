@@ -52,8 +52,10 @@ def transform_prefix(rows, c, pre):
     return z
 def make_dataset(engines, pre, roles=("fit",), allow_calibration=False):
     entries=[r for r in manifest() if r["eligible_alive"] and r["role"] in roles]
-    if "calibration" in roles and not allow_calibration:
-        raise PermissionError("Calibration outcomes require a frozen selection record.")
+    if "calibration" in roles:
+        freeze=ROOT/"configs/pilot_selection_freeze.json"
+        if not allow_calibration or not freeze.exists() or not json.loads(freeze.read_text()).get("frozen",False):
+            raise PermissionError("Calibration outcomes require a frozen selection record.")
     aa,zz,yy,ids=[],[],[],[]
     for r in entries:
         i,c=r["engine"],r["proposed_cutoff"]
