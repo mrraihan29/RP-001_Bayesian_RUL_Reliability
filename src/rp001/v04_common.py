@@ -21,8 +21,10 @@ def provenance():
     keys=['python','implementation','platform','packages','float_dtype','sampler','blas_threads']
     canonical={k:env[k] for k in keys}
     fingerprint=hashlib.sha256(json.dumps(canonical,sort_keys=True).encode()).hexdigest()
+    split_sha=sha(ROOT/'configs/proposed_split_manifest.json')
+    assert split_sha=='6d6e0f10d979d41739c6c07b6bab8f0c32d2844ebd150e82d13caa3bd29e124b','Frozen manifest changed'
     dirty=subprocess.check_output([git,'-C',str(ROOT),'status','--porcelain','--','src/rp001','configs/v0.4'],text=True).strip()
     if dirty: raise RuntimeError('Scientific execution requires committed source/plan: '+dirty)
     return dict(created_at=datetime.now(timezone.utc).isoformat(),git_commit=commit,source_dirty=False,
         executed_source_sha256=sources,plan_sha256=sha(PLAN_PATH),environment_fingerprint=fingerprint,
-        dataset_sha256=sha(ROOT/'data/raw/train_FD001.txt'),confirmatory=False,official_test_access=False)
+        split_manifest_sha256=split_sha,dataset_sha256=sha(ROOT/'data/raw/train_FD001.txt'),confirmatory=False,official_test_access=False)

@@ -63,7 +63,10 @@ def prior_analysis():
 
 def main():
     OUT.mkdir(parents=True,exist_ok=True);start=time.perf_counter();cpu=time.process_time();prov=provenance()
-    if (OUT/'summary.json').exists(): raise FileExistsError('Preserve analysis')
+    if any(OUT.iterdir()): raise FileExistsError('Preserve all partial/completed analysis; new repair identity required')
+    analysis_record=ROOT/'experiments/v0.4/registry/v04_lead_analysis.json'
+    if analysis_record.exists(): raise FileExistsError('Preserve analysis registry')
+    write(analysis_record,dict(prov,run_id='v04_lead_analysis',status='running'))
     records={r['run_id']:json.loads((ROOT/'experiments/v0.4/registry'/f"{r['run_id']}.json").read_text()) for r in PLAN['runs']}
     preparation_failures=[]
     for key,record in list(records.items()):
@@ -96,8 +99,15 @@ def main():
     if all(records[n]['status']=='completed' for n in principal_names):
         reps=[az.from_netcdf(DIR/f'{n}.nc') for n in principal_names]
         pre=dict(np.load(DIR/'v04_main_r1_pre.npz'));cal=make_dataset(load_training(),pre,('calibration',),allow_calibration=True);sensor=replace(cal,y=None)
+        assert len(sensor.ids)==25 and len(set(sensor.ids))==25 and {11,61,86}.issubset(set(sensor.ids))
+        expected_ids=sorted(r['engine'] for r in manifest() if r['role']=='calibration' and r['eligible_alive'])
+        assert sorted(sensor.ids.tolist())==expected_ids
+        np.savez(OUT/'principal_calibration_inputs.npz',a=cal.a,z=cal.z,y=cal.y,ids=cal.ids,B=cal.B,**pre)
+        for index,name in enumerate(principal_names):
+            other=dict(np.load(DIR/f'{name}_pre.npz'))
+            for key in pre: np.testing.assert_array_equal(pre[key],other[key])
         pooled=az.concat(*reps,dim='chain');pooled.posterior=pooled.posterior.assign_coords(chain=np.arange(12))
-        rs=precision(pooled,sensor);write(OUT/'principal_precision_all25.json',dict(provenance=prov,results=rs))
+        rs=precision(pooled,sensor);assert len(rs)==75 and len({(r['engine'],r['probability']) for r in rs})==75 and {r['engine'] for r in rs}==set(expected_ids);write(OUT/'principal_precision_all25.json',dict(provenance=prov,results=rs))
         rep_results=[precision(rep,sensor) for rep in reps];write(OUT/'principal_replication_precision.json',dict(provenance=prov,results=rep_results))
         comparisons=[];zcut=norm.ppf(1-.05/(2*225))
         for a,b in combinations(range(3),2):
@@ -108,7 +118,7 @@ def main():
         for engine in (11,61,86):
             name=f'v04_oracle_e{engine}'
             if records[name]['status']!='completed': continue
-            oi=az.from_netcdf(DIR/f'{name}.nc');one=load_data(DIR/f'{name}_extra.npz',True);rr=precision(oi,one,reweight=False)
+            oi=az.from_netcdf(DIR/f'{name}.nc');one=load_data(DIR/f'{name}_extra.npz',True);assert one.ids.tolist()==[engine] and records[name]['configuration']['engine']==engine;rr=precision(oi,one,reweight=False)
             for a,b in zip([r for r in rs if r['engine']==engine],rr):
                 ca=max(x['quantile_rul_mcse'] for x in a['batch_size_results']);cb=max(x['quantile_rul_mcse'] for x in b['batch_size_results']);diff=abs(a['quantile_rul']-b['quantile_rul']);se=np.hypot(ca,cb)
                 oracles.append(dict(engine=engine,probability=a['probability'],importance_quantile=a['quantile_rul'],oracle_quantile=b['quantile_rul'],combined_mcse=float(se),difference=diff,z=float(diff/se) if np.isfinite(se) and se>0 else None,compatible=bool(np.isfinite(se) and se>0 and diff<=ozcut*se),oracle_precision=b,oracle_mcmc=records[name]['diagnostics']['acceptance']))
@@ -147,6 +157,6 @@ def main():
                 v=[r['recovery']['parameters'][j] for r in rows];params[v[0]['parameter']]=dict(covered95=_wilson_summary(sum(p['truth_in95'] for p in v),len(v)),mean_bias=float(np.mean([p['mean']-p['truth'] for p in v])),max_abs_z=max(abs(p['standardized_mean_error']) for p in v))
         regimes[regime]=dict(n_completed=len(rows),n_mcmc_pass=sum(r['diagnostics']['acceptance']=='PASS' for r in rows),parameter_summary=params,n_predictive=sum(r['predictive_assessment']['n'] for r in rows),predictive_covered=sum(r['predictive_assessment']['coverage']['successes'] for r in rows))
     summary=dict(provenance=prov,failed_run_ids=missing,precision=precision_summary,synthetic=regimes,n_mcmc_fits=len(records),preparation_failures=[r['run_id'] for r in preparation_failures],preparation_cpu_seconds=sum(r['cpu_seconds'] for r in preparation_failures),n_mcmc_completed=sum(r['status']=='completed' for r in records.values()),mcmc_failed_diagnostics=[n for n,r in records.items() if r.get('diagnostics',{}).get('acceptance')=='FAIL'],cpu_fit_seconds=sum(r['cpu_seconds'] for r in records.values()),wall_fit_seconds=sum(r['wall_seconds'] for r in records.values()),analysis_wall_seconds=time.perf_counter()-start,analysis_cpu_seconds=time.process_time()-cpu)
-    write(OUT/'summary.json',summary);write(ROOT/'experiments/v0.4/registry/v04_lead_analysis.json',dict(prov,run_id='v04_lead_analysis',status='completed',cpu_seconds=summary['analysis_cpu_seconds'],wall_seconds=summary['analysis_wall_seconds'],result_sha256=sha(OUT/'summary.json')))
+    write(OUT/'summary.json',summary);write(ROOT/'experiments/v0.4/registry/v04_lead_analysis.json',dict(prov,run_id='v04_lead_analysis',status='completed',cpu_seconds=summary['analysis_cpu_seconds'],wall_seconds=summary['analysis_wall_seconds'],calibration_inputs_sha256=sha(OUT/'principal_calibration_inputs.npz'),result_sha256=sha(OUT/'summary.json')))
     print(json.dumps({k:v for k,v in summary.items() if k not in ('provenance','precision','synthetic')},indent=2),flush=True)
 if __name__=='__main__':main()
