@@ -1,0 +1,10 @@
+{
+  "created_at": "2026-10-08T15:40:33.385919+00:00",
+  "parent_evidence_commit": "bade492ddba310b8a3443597ea525974a88ba659",
+  "type": "report-only index clarification",
+  "finding": "Gamma rowSD wording could be misread as distinct scalar SDs for latent rows. Executed source uses a repeated intercept/age vector in each row.",
+  "exact_executed_structure": "np.tile([0.5,0.35],(2,1)) = [[.5,.35],[.5,.35]]",
+  "scope": "Reports01/03/08/11 wording; no scientific source/config/prior/seed/draw/target/threshold/result changed; no new science.",
+  "material_prior_moment_verdict": "PASS; existing formula G0^2+G1^2*x^2 uses age-coefficient scales, consistent with repeated rows.",
+  "historical_manifest_receipt_custody": "Exact original manifest/receipts in archive/preclarification_* and Git parent bade492."
+}

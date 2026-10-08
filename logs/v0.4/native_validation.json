@@ -5,7 +5,8 @@
     "result": "PASS",
     "errors": [],
     "exit_code": 0,
-    "artifact_sha256": "c8794e31485245a62ba10715ce71f0530cca46986e79b51c0de360a93e3d47cf"
+    "artifact_sha256": "e657edd2a1dce48fe6c58713dde784caae9ae63cacfff82e4a01972c352d5c0b",
+    "postvalidation_change": "Evidence hashes refreshed after report-only Gamma-index clarification; schema and gate structure unchanged."
   },
   "scientific_workspace": {
     "command": ".venv/Scripts/python.exe C:/Users/Raihan/.codex/skills/scientific-research-engine/scripts/validate_research_project.py . --json",

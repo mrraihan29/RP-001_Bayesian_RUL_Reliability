@@ -11,7 +11,7 @@
   "artifact_version": "0.4",
   "artifact_identity": {
     "path_or_uri": "docs/v0.4/11_prelock_recommendation.md",
-    "sha256_or_version": "4b67549a0ceff20b08d015f9414afb99ac1a067ed8fb6eb0c8556c55c709c0c7",
+    "sha256_or_version": "9228e0ce6351fbb5765000906ef47aec8b6f87778491d0a590828ee8e6fa9069",
     "created_at": "2026-10-08T15:31:13.921469+00:00",
     "source_revision": "Executed analysis87a0083314daafb79f7ae3c67e23abd5979bc82a; final deliverycommit in postcommitreceipt"
   },
@@ -33,7 +33,7 @@
       "evidence_id": "V04-E-MATH",
       "kind": "direct-lead-verification",
       "location": "docs/v0.4/08_independent_mathematical_reverification.md",
-      "sha256": "7b0322182454bb3ac28a79cdfcf4e0304cf03772d001e7a9e9c9c335818c908f",
+      "sha256": "28b6caaab259b2317fba86f683d11e03a4458dd2bc605b4431f205baaf796e18",
       "collected_at": "2026-10-08T15:31:13.921469+00:00",
       "method": "SOL derivations with independent dense/covariance/influence/rank oracles",
       "supports": "Equations/diagnostic verdicts in explicit scope",
@@ -573,5 +573,6 @@
     "Fourcanonicalpreparationfailuresretained; sameplannedfitsstartedonlyafterhelperrepair asinfra1.",
     "600validationrawrecordsserializedwithoutresampling; originalfailurebytearchive retained.",
     "Analysis-only correctionsreviewedbeforeanalysis; sources/commitsrecorded; thresholds/seedsunchanged."
-  ]
+  ],
+  "report_only_clarification": "logs/v0.4/final_prior_index_clarification.json"
 }

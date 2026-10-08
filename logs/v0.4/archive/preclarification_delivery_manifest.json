@@ -1,6 +1,6 @@
 {
   "artifact_version": "0.4",
-  "created_at": "2026-10-08T15:40:35.406907+00:00",
+  "created_at": "2026-10-08T15:36:22.495371+00:00",
   "evidence_checkpoint_commit": "ca33e7d3f12a6687d8d41111ddc6d7fce573f6c2",
   "executed_analysis_commit": "87a0083314daafb79f7ae3c67e23abd5979bc82a",
   "scope": "Complete authorized synthetic/FD001train-only v0.4 evidence plus preserved reference/history closure; closedarchives hashed asouterbytesonly.",
@@ -361,8 +361,8 @@
     },
     {
       "path": "docs/v0.4/01_updated_research_protocol.md",
-      "bytes": 11312,
-      "sha256": "191a6bb6b6b6cff6776b854aad5414102cf45fa82e9c6158373045c42d5374b6",
+      "bytes": 11181,
+      "sha256": "250b6a8fd14e493d13b96a8ff2db30c1fa241897062b39327ae8ad206b37a701",
       "git_tracked_at_evidence_checkpoint": true
     },
     {
@@ -373,8 +373,8 @@
     },
     {
       "path": "docs/v0.4/03_bayesian_prior_plausibility.md",
-      "bytes": 6327,
-      "sha256": "5030f0c420cc1295987e4c3962dd6b986570f604b4edf7de06bac5f507dcbf85",
+      "bytes": 6250,
+      "sha256": "166491ac255ee7dc614e84d17a2218954ff0ddf792ce5573802e2cd9e59db8cf",
       "git_tracked_at_evidence_checkpoint": true
     },
     {
@@ -403,8 +403,8 @@
     },
     {
       "path": "docs/v0.4/08_independent_mathematical_reverification.md",
-      "bytes": 13261,
-      "sha256": "28b6caaab259b2317fba86f683d11e03a4458dd2bc605b4431f205baaf796e18",
+      "bytes": 13004,
+      "sha256": "7b0322182454bb3ac28a79cdfcf4e0304cf03772d001e7a9e9c9c335818c908f",
       "git_tracked_at_evidence_checkpoint": true
     },
     {
@@ -421,8 +421,8 @@
     },
     {
       "path": "docs/v0.4/11_prelock_recommendation.md",
-      "bytes": 11029,
-      "sha256": "9228e0ce6351fbb5765000906ef47aec8b6f87778491d0a590828ee8e6fa9069",
+      "bytes": 10805,
+      "sha256": "4b67549a0ceff20b08d015f9414afb99ac1a067ed8fb6eb0c8556c55c709c0c7",
       "git_tracked_at_evidence_checkpoint": true
     },
     {
@@ -457,8 +457,8 @@
     },
     {
       "path": "docs/v0.4/research_lead_handoff.json",
-      "bytes": 30927,
-      "sha256": "e657edd2a1dce48fe6c58713dde784caae9ae63cacfff82e4a01972c352d5c0b",
+      "bytes": 30845,
+      "sha256": "c8794e31485245a62ba10715ce71f0530cca46986e79b51c0de360a93e3d47cf",
       "git_tracked_at_evidence_checkpoint": true
     },
     {
@@ -2256,24 +2256,6 @@
       "git_tracked_at_evidence_checkpoint": true
     },
     {
-      "path": "logs/v0.4/archive/preclarification_delivery_manifest.json",
-      "bytes": 126385,
-      "sha256": "330dbe1dd01e66fc9364914c248b6d6c7f5359d12363f17d8cf32a3a18830329",
-      "git_tracked_at_evidence_checkpoint": false
-    },
-    {
-      "path": "logs/v0.4/archive/preclarification_delivery_receipt.json",
-      "bytes": 3333,
-      "sha256": "5655a07c0df5e4291cc4e34d4dc6db4e2707aad7db52e3901a72a1069d897cb1",
-      "git_tracked_at_evidence_checkpoint": false
-    },
-    {
-      "path": "logs/v0.4/archive/preclarification_postcommit_validation.json",
-      "bytes": 351,
-      "sha256": "5b0016c8cc030451bc4c428f63ab2e74d456543cf147a9109b05613d0c538ed2",
-      "git_tracked_at_evidence_checkpoint": false
-    },
-    {
       "path": "logs/v0.4/archive/v04_precision_validation_original_failed_registry.json",
       "bytes": 11751256,
       "sha256": "ed6777b5ebff7f4204088da0ee5bfb6e98e841eff44f03a09f06fc86082357e9",
@@ -2289,7 +2271,7 @@
       "path": "logs/v0.4/build_delivery_manifest.py",
       "bytes": 4657,
       "sha256": "f3b397524d24479bed6701352a0fdef098f56afdfdd967333d669a8f1d382e4f",
-      "git_tracked_at_evidence_checkpoint": true
+      "git_tracked_at_evidence_checkpoint": false
     },
     {
       "path": "logs/v0.4/build_handoff.py",
@@ -2310,12 +2292,6 @@
       "git_tracked_at_evidence_checkpoint": true
     },
     {
-      "path": "logs/v0.4/final_prior_index_clarification.json",
-      "bytes": 823,
-      "sha256": "7a4f46d8202c3f95cf1123c8a2ac03bdd1b7a77bcb9e3ed32e8855c3c2863fa0",
-      "git_tracked_at_evidence_checkpoint": false
-    },
-    {
       "path": "logs/v0.4/final_tests.xml",
       "bytes": 7333,
       "sha256": "5bfec00b127f424925740f16424532e6ea8fbc6268d5d25faea9583092758c8d",
@@ -2326,12 +2302,6 @@
       "bytes": 14107,
       "sha256": "5d18b1714600f2ebfacc29da314e193875fccd5c8c67b2ad947dc19d21dac149",
       "git_tracked_at_evidence_checkpoint": true
-    },
-    {
-      "path": "logs/v0.4/finalize_prior_wording.py",
-      "bytes": 5508,
-      "sha256": "06931a25cf48c9cf2c9f53c4a616b6c97130d7a5882e9aa11af9811163dc28ba",
-      "git_tracked_at_evidence_checkpoint": false
     },
     {
       "path": "logs/v0.4/finalize_reports.py",
@@ -2359,8 +2329,8 @@
     },
     {
       "path": "logs/v0.4/native_validation.json",
-      "bytes": 1237,
-      "sha256": "9014870f6cde166623dd2722d334ebb51e05eb498fd4cbbb7209b8aeb356a2e8",
+      "bytes": 1096,
+      "sha256": "37ca0a0a424559500cb2ebec3d078eed101d85a0ade3342a20c628c95178eeaf",
       "git_tracked_at_evidence_checkpoint": true
     },
     {
@@ -2425,8 +2395,8 @@
     },
     {
       "path": "research/artifact_map.csv",
-      "bytes": 85712,
-      "sha256": "2fbcd2b37922793d0cf6ca7a175b88d880de842808fb37b852021ebdc8e97b94",
+      "bytes": 84787,
+      "sha256": "82af80433b195910309ed506f0f35c23aa6f85066927f5da515f25774653189c",
       "git_tracked_at_evidence_checkpoint": true
     },
     {
@@ -3264,8 +3234,6 @@
       "git_tracked_at_evidence_checkpoint": true
     }
   ],
-  "file_count": 537,
-  "retained_bytes": 195576447,
-  "preclarification_manifest_commit": "bade492ddba310b8a3443597ea525974a88ba659",
-  "report_only_clarification": "logs/v0.4/final_prior_index_clarification.json"
+  "file_count": 532,
+  "retained_bytes": 195438210
 }

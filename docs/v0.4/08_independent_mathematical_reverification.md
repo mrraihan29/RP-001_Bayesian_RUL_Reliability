@@ -37,7 +37,7 @@ All proposed priors are proper. Half-normal scales exclude negative SDs, LKJ eta
     E(logR)=log100,
     Var(logR)=b0²+b1²x²+2 s_gamma²(G0²+G1²x²+s_tau²)+s_sigma_r².
 
-At sensor basis [1,t], Var(z)=(1+t²)(G0²+G1²x²+s_tau²)+s_sigma_z². Products and mixtures make marginal logR nonnormal; these moments do not justify Gaussian marginal tail approximations. Prior predictive simulation assesses its actual tails, including above1000/5000 cycles. The center100 is an engineering-scale anchor, not an empirical RUL population law or an externally validated elicitation. Its latent-zero beta intercept alone has median95% prior range exp(log100±1.96*.6)≈31..324 cycles. Changes after historical calibration exposure are disclosed; no new calibration interval-score ranking selects priors.
+In these formulas G0/G1 denote the intercept/age-coefficient prior SDs within each Gamma row, not different SDs for the two latent coordinates. Both Gamma rows repeat [.5,.35], exactly as `np.tile(Gamma_sd,(2,1))` in the executed model and prior generator. At sensor basis [1,t], Var(z)=(1+t²)(G0²+G1²x²+s_tau²)+s_sigma_z². Products and mixtures make marginal logR nonnormal; these moments do not justify Gaussian marginal tail approximations. Prior predictive simulation assesses its actual tails, including above1000/5000 cycles. The center100 is an engineering-scale anchor, not an empirical RUL population law or an externally validated elicitation. Its latent-zero beta intercept alone has median95% prior range exp(log100±1.96*.6)≈31..324 cycles. Changes after historical calibration exposure are disclosed; no new calibration interval-score ranking selects priors.
 
 ## Conformal rank, calibration precision and interval score
 

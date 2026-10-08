@@ -1,0 +1,9 @@
+{
+  "status": "PASS",
+  "final_git_commit": "bade492ddba310b8a3443597ea525974a88ba659",
+  "manifest_sha256": "330dbe1dd01e66fc9364914c248b6d6c7f5359d12363f17d8cf32a3a18830329",
+  "files_checked": 532,
+  "Git_blob_files_checked": 499,
+  "clean_worktree": true,
+  "interpretation": "Byte/source deliveryvalidation, not scientific readiness."
+}
