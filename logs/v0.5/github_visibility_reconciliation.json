@@ -1,0 +1,40 @@
+{
+  "kind": "administrative-visibility-correction-and-remote-byte-verification",
+  "created_at": "2026-10-08T16:47:01.241281+00:00",
+  "repository": "https://github.com/mrraihan29/RP-001_Bayesian_RUL_Reliability",
+  "scientific_snapshot": "c583ce62eac9a6b3dcd29c1929cc07c17569beb7",
+  "observed_after_v05_push": "public",
+  "earlier_private_description": "Incorrect assumption from prior delivery notes, not verified historical visibility",
+  "repository_public_event": "2026-10-08T15:47:30Z",
+  "stars_and_forks_before_change": [
+    0,
+    0
+  ],
+  "remedy": "Changed repository to private for restricted owner review; same contents and URLs",
+  "verified_current_visibility": "private",
+  "remote_head_at_verification": "960ec0f3cb10edbaaca8b6513bd18571537d2507",
+  "remote_files": [
+    {
+      "path": "docs/v0.5/01_prelock_resolution_memo.md",
+      "sha256": "e9553f04b4c92388617b81a6719a41a516dab6b6f9290a17d94c544d811ae67c",
+      "url": "https://github.com/mrraihan29/RP-001_Bayesian_RUL_Reliability/blob/c583ce62eac9a6b3dcd29c1929cc07c17569beb7/docs/v0.5/01_prelock_resolution_memo.md",
+      "status": "MATCH"
+    },
+    {
+      "path": "docs/v0.5/02_proposed_locked_analysis_contract.md",
+      "sha256": "1e03e072682878fde6ced8c00ddcde44594af59e56129e65db1127a0166fa598",
+      "url": "https://github.com/mrraihan29/RP-001_Bayesian_RUL_Reliability/blob/c583ce62eac9a6b3dcd29c1929cc07c17569beb7/docs/v0.5/02_proposed_locked_analysis_contract.md",
+      "status": "MATCH"
+    },
+    {
+      "path": "logs/v0.5/delivery_receipt.json",
+      "sha256": "9c2f278b233d2f147e5086c8540c219274f158fa58051844b88fd2c5d7f6dd8c",
+      "url": "https://github.com/mrraihan29/RP-001_Bayesian_RUL_Reliability/blob/main/logs/v0.5/delivery_receipt.json",
+      "status": "MATCH"
+    }
+  ],
+  "scientific_source_plan_results_unchanged": true,
+  "raw_training_nasa_archive_and_official_test_members_uploaded": false,
+  "remaining_publication_risk": "Data-derived review artifacts were publicly reachable before correction; absence of external copies cannot be certified. Public redistribution/rights review remains unresolved.",
+  "receipt_interpretation": "Frozen scientific receipt identifies its snapshot; private field describes intended/current review scope, not proof that historical repository access was always private."
+}
