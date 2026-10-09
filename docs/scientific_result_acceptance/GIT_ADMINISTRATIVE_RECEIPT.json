@@ -1,0 +1,13 @@
+{
+  "decision_state": "SCIENTIFIC_RESULT_ACCEPTED_RESTRICTED",
+  "protocol_status": "PROTOCOL_LOCKED",
+  "public_payload_commit": "e324751032d3ae0abead0d4a36c20e0c1a4d588a",
+  "public_receipt_sha256": "12189fa1fbc88dd3b4acf48e93a94f3dd2897507426ebe4d2be930a6b4414560",
+  "remote_delivery_state": "BYTE_VERIFIED",
+  "protected_acceptance_manifest_sha256": "5a05250d6e7a8fbbf331245c244fd06695dfde68d792349013fdd1babd8b1a63",
+  "protected_acceptance_record_sha256": "b12b31299bd2838edd59502e352b3b4477adb8bef4db93ef116341c6e350664f",
+  "protected_acceptance_report_sha256": "2f63be53a5ad9b3f13ede9c44676e71ae8f5d44c0f6e8dfe24ec462576c42659",
+  "public_scientific_result_release_state": "NOT_AUTHORIZED",
+  "research_validation_state": "NOT_AUTHORIZED",
+  "next_review_gate_state": "PROPOSED_ONLY_NOT_INITIATED"
+}
