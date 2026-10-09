@@ -1,0 +1,48 @@
+{
+  "record": "C001",
+  "at_utc": "2026-10-09T03:14:58.871207+00:00",
+  "scope": "Stage C final read-only existing-artifact integrity verification and conditional owner acceptance only",
+  "owner_directive": "docs/stage_C/OWNER_STAGE_C_DECISION.md",
+  "owner_directive_sha256": "6799a82744a2f35564d204ab4dd0ab307c92d30cb3be27065f2d893d1734b5d2",
+  "owner_provenance": "Human Raihan attachment in current conversation; stated Research Owners Raihan x Rei; no invented cryptographic signature or independently verified legal identity",
+  "verifier": "scripts/stage_C/verify_freeze.py",
+  "verifier_sha256": "2ac5c9ddca895606f440cca92f106d1981d35f0450565c0db87dcfad5ede1348",
+  "reviewed_scientific_lock_commit": "fc7083d23d3cff5e4ee9a9f5d0af9036ec32e26d",
+  "reviewed_B_evidence_commit": "97eccae2e41c48ab63ab263931b964cb5165c181",
+  "reviewed_B_receipt_commit": "e3ce076de4bd6e1eec4844f5c53dc4d3d15d03cd",
+  "candidate_bundle_sha256": "96084deb61336367b48f19251f0cd529e5deb98c754eb09a05dca5f52ef4263e",
+  "expected_manifest_sha256": {
+    "base_payload_manifest": "09ae59cb40c33af4170ae8b041550a9d1f8e49042b1ef8065e764c45e55fb7a1",
+    "verification_manifest": "6090ea4a08eaffb758b48042c8629c42e18cc82e5729d94b08e8eb96a15116df",
+    "review_tables_manifest": "2911bf37b68668584e1bf71564003ad5820a2073c32263cf048be456fd6404b3"
+  },
+  "bounded_checks": [
+    "Rehash3016 existing base files plus all3 verification members and3 existing CSVs",
+    "Validate bundle manifest identity and exact file inventories",
+    "Verify all100 Bayesian and100 CQR table rows against sealed JSON values using exact float64 hex comparison; match complete100-ID ledger",
+    "Rehash frozen scientific source/config/model/preprocessor/calibration and preserve allStageB public artifacts",
+    "Verify unchanged stored300 pooled quantile gates and900 compatibility checks using existing values only",
+    "Retain13 individual-fit batch exceedances and original failure/audit records",
+    "Verify intact pre-label event chain and documented procedural label boundary"
+  ],
+  "failure_policy": "STAGE_C_BLOCKED immediately on material discrepancy, preserve candidate; no regeneration/repair",
+  "success_policy": "STAGE_C_ACCEPTED only after all checks PASS under this explicit owner decision",
+  "new_roots": 0,
+  "new_predictions": 0,
+  "new_samples": 0,
+  "fitting": false,
+  "recalibration": false,
+  "official_label_content_access": false,
+  "outcome_scoring": false,
+  "restricted_payloads": "Keep allraw sensors,engine-level predictions,full protected file maps,and StageC detailed checks local under .protected",
+  "protected_details_path": ".protected/stage_C/C001",
+  "public_acceptance_path": "docs/stage_C",
+  "terminal_boundary": "STOP after StageC; StageD remains NOT_AUTHORIZED",
+  "scientific_claim": "Integrity/numerical readiness acceptance only; no predictive accuracy,coverage,comparison or superiority claim",
+  "verification_design_review": {
+    "status": "PASS",
+    "method": "SOL static code/authority review",
+    "AST_forbidden_calls_absent": true,
+    "science_library_execution_absent": true
+  }
+}
