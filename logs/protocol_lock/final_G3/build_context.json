@@ -1,0 +1,151 @@
+{
+  "version": "RP-001-G3-v0.5-AM1",
+  "recorded_lock_at_utc": "2026-10-09T02:08:59.252709+00:00",
+  "client_date": "2026-10-09",
+  "amendment_change_record": {
+    "amendment": "G3-AM-001",
+    "decision": "APPROVED",
+    "owner_reviewed_commit": "1fc660b3ce09dd2b23b6a05e0698903bf6060355",
+    "observed_at_utc": "2026-10-09T02:08:59.252709+00:00",
+    "client_date": "2026-10-09",
+    "source": "Current human Raihan user message; UTF-8 transcription stored, not an independently signed document",
+    "stated_research_owners": "Raihan x Rei",
+    "owner_decision_document": "docs/protocol_lock/OWNER_AMENDMENT_DECISION_G3_AM_001.md",
+    "owner_decision_document_sha256": "e1b2ab0e21512d41b840621a05e6ef3deec19022e78ca7f4425a71a7033cd64a",
+    "original_contract_path": "docs/v0.5/02_proposed_locked_analysis_contract.md",
+    "original_contract_sha256": "1e03e072682878fde6ced8c00ddcde44594af59e56129e65db1127a0166fa598",
+    "amended_source_contract_path": "docs/protocol_lock/provenance/amended_v0.5_source_contract.md",
+    "amended_source_contract_sha256": "b5d719bad3d24e531de57e7503d4eb9a697f1840bcc5f3d41692ed0c5fd98a9f",
+    "exact_diff_path": "docs/protocol_lock/AMENDMENT_DIFF.patch",
+    "exact_diff_sha256": "632b2b5cccfb5d830ab74ae1d1c810bc0bbd54758557cea3dab8e54c3f41fe9b",
+    "removed_clause": "Brent bracket min(mu-12SD)..max(mu+12SD), xtol=1e-12 (frozen v0.4 precision implementation); failure retained with no result-selected bracket/draw repair.",
+    "approved_replacement_clause": "For principal official endpoints and independent-fit diagnostics, use the quantile returned by rp001.v04_precision.estimate_mixture_quantile_mcse and its _weighted_quantile implementation at the approved source hash. For probability p, finite component means and positive component SDs, set m_min=min(mu), m_max=max(mu), s_max=max(SD), r=(abs(Phi^-1(p))+12)*s_max+(m_max-m_min), and initial bracket [m_min-r,m_max+r]. Preserve the existing deterministic limit of 100 bracket-check attempts, doubling r only if the CDF does not bracket p; invalid/nonfinite bracketing is retained as failure. Brent uses xtol=1e-12, rtol=4*float64 epsilon, and remaining defaults bound to the pinned SciPy environment. The same returned log quantile and exponentiated endpoint supply prediction storage, CDF/density checks, quantile diagnostics and score influence. The legacy rp001.prediction.mixture_quantile helper remains historical and does not supply official primary endpoints. Retain root residual <=1e-10 and every existing numerical/prediction-failure guard. This predetermined algorithm grants no additional draws, model change, result-selected repair or post-label retry.",
+    "substitution_count": 1,
+    "inverse_substitution_recovers_original_bytes": true,
+    "locked_contract_path": "docs/protocol_lock/LOCKED_ANALYSIS_CONTRACT.md",
+    "locked_contract_sha256": "335e202170d826c80453a3c2136c999b966560303e18e6678464d50caff2c0e4",
+    "locked_scientific_body_sha256": "360b3b50ad9054f22a92a549046594a32b178856617c7cad205b6e8389dcfe3c",
+    "administrative_cover_bytes": 1051,
+    "scientific_source_unchanged": true,
+    "canonical_quantile_source": {
+      "module": "src/rp001/v04_precision.py",
+      "module_sha256": "396a5f55ca2e9c51fd21f02f50e59c57be7aedd38321a4a3123b0b955f1fde33",
+      "function_source_sha256": "2e8a81c4d8a667a7cf3c4d864793b1e8e9a74b3418715504d936a2e95a4e0083",
+      "public_entry_point": "rp001.v04_precision.estimate_mixture_quantile_mcse",
+      "solver_helper": "rp001.v04_precision._weighted_quantile",
+      "initial_radius": "(abs(Phi^-1(p))+12)*max(SD)+(max(mu)-min(mu))",
+      "bracket": [
+        "min(mu)-radius",
+        "max(mu)+radius"
+      ],
+      "bracket_check_attempts_max": 100,
+      "radius_update": "multiply by 2 only if not bracketed; exact loop and failure semantics in pinned source",
+      "brent_xtol": 1e-12,
+      "brent_rtol": "4*float64 epsilon",
+      "scipy_version": "1.18.1",
+      "brent_signature": "(f, a, b, args=(), xtol=2e-12, rtol=np.float64(8.881784197001252e-16), maxiter=100, full_output=False, disp=True)",
+      "root_residual_guard": 1e-10,
+      "no_root_or_prediction_computation_in_G3": true
+    },
+    "historical_preservation_map": "research/protocol_lock/final_G3/preservation_map.json"
+  },
+  "preservation_map": {
+    "docs/protocol_lock/AMENDMENT_REQUEST_G3_AM_001.md": {
+      "archive": "docs/protocol_lock/history/G3_lock_attempt_1/AMENDMENT_REQUEST_G3_AM_001.md",
+      "sha256": "0360abed700e05eb76f60fa80c6d8c0e5b9433844056018988a9560e7d67adc7",
+      "bytes": 4694,
+      "source_commit": "1fc660b3ce09dd2b23b6a05e0698903bf6060355"
+    },
+    "docs/protocol_lock/G3_FORMAL_PROTOCOL_LOCK_COMPLETION_REPORT.md": {
+      "archive": "docs/protocol_lock/history/G3_lock_attempt_1/G3_FORMAL_PROTOCOL_LOCK_COMPLETION_REPORT.md",
+      "sha256": "de6110967f43d8984f5972eee807deeae6385d5313a1ffa38eff898b442370af",
+      "bytes": 2648,
+      "source_commit": "1fc660b3ce09dd2b23b6a05e0698903bf6060355"
+    },
+    "docs/protocol_lock/LOCK_RECEIPT.json": {
+      "archive": "docs/protocol_lock/history/G3_lock_attempt_1/LOCK_RECEIPT.json",
+      "sha256": "e5e046e03c5304c087c83a61ad8cffb8e57da8da4bb5964da14ca904524d8761",
+      "bytes": 11207,
+      "source_commit": "1fc660b3ce09dd2b23b6a05e0698903bf6060355"
+    },
+    "docs/protocol_lock/LOCK_VERIFICATION_REPORT.md": {
+      "archive": "docs/protocol_lock/history/G3_lock_attempt_1/LOCK_VERIFICATION_REPORT.md",
+      "sha256": "3b41883026b784adc8aef022c836d7303e171471b26598f09623ac6b2f6b32c9",
+      "bytes": 8628,
+      "source_commit": "1fc660b3ce09dd2b23b6a05e0698903bf6060355"
+    },
+    "docs/protocol_lock/OWNER_AUTHORIZATION_G3.md": {
+      "archive": "docs/protocol_lock/history/G3_lock_attempt_1/OWNER_AUTHORIZATION_G3.md",
+      "sha256": "ac5a51a4ddb17048507e36cd30ae7f735e0d52180dead411dbeb918338faf132",
+      "bytes": 12810,
+      "source_commit": "1fc660b3ce09dd2b23b6a05e0698903bf6060355"
+    },
+    "docs/protocol_lock/README.md": {
+      "archive": "docs/protocol_lock/history/G3_lock_attempt_1/README.md",
+      "sha256": "06902734465b71e8855f1016642b92d432e4d6834287903c2cea1b2db9623c7d",
+      "bytes": 603,
+      "source_commit": "1fc660b3ce09dd2b23b6a05e0698903bf6060355"
+    },
+    "docs/protocol_lock/research_lead_handoff.json": {
+      "archive": "docs/protocol_lock/history/G3_lock_attempt_1/research_lead_handoff.json",
+      "sha256": "73dbdf542fd10107e9c7d9b272f6fd80a98595b6258d5bd8ece53bb4a502df13",
+      "bytes": 6152,
+      "source_commit": "1fc660b3ce09dd2b23b6a05e0698903bf6060355"
+    },
+    "docs/protocol_lock/VERIFIED_BASELINE_MANIFEST.json": {
+      "archive": "docs/protocol_lock/history/G3_lock_attempt_1/VERIFIED_BASELINE_MANIFEST.json",
+      "sha256": "3faf756426c0696926f644c274e47f7fbb330d5c9e0ea395b14d2d578f0d6c11",
+      "bytes": 196836,
+      "source_commit": "1fc660b3ce09dd2b23b6a05e0698903bf6060355"
+    },
+    "README.md": {
+      "archive": "research/protocol_lock/final_G3/baseline_current_aliases/README.md",
+      "sha256": "7ed40e877da2562bc6436423d22e5b75c345fc20cbcf79f67eab225237850f69",
+      "bytes": 1592,
+      "source_commit": "1fc660b3ce09dd2b23b6a05e0698903bf6060355"
+    },
+    "GITHUB_REVIEW.md": {
+      "archive": "research/protocol_lock/final_G3/baseline_current_aliases/GITHUB_REVIEW.md",
+      "sha256": "17fae7260d80a7d0a509fa0bba4fd8af3145b189ecde2c0f987243efad9d3c0f",
+      "bytes": 1020,
+      "source_commit": "1fc660b3ce09dd2b23b6a05e0698903bf6060355"
+    },
+    "research/protocol.json": {
+      "archive": "research/protocol_lock/final_G3/baseline_current_aliases/research/protocol.json",
+      "sha256": "b3b6587b3785eaa0c5602ad5967d60c5fe897f04e7d3835b118cc5420da28921",
+      "bytes": 8347,
+      "source_commit": "1fc660b3ce09dd2b23b6a05e0698903bf6060355"
+    },
+    "research/state_manifest.json": {
+      "archive": "research/protocol_lock/final_G3/baseline_current_aliases/research/state_manifest.json",
+      "sha256": "08c99e0c355c3f3c71468f4982d88d79b80b2142d0b3b5d1f9e0a7623cfa4279",
+      "bytes": 1672,
+      "source_commit": "1fc660b3ce09dd2b23b6a05e0698903bf6060355"
+    },
+    "research/gate_results.json": {
+      "archive": "research/protocol_lock/final_G3/baseline_current_aliases/research/gate_results.json",
+      "sha256": "03d4677544b8bc7e1e7a10141a7db58769d8778f2deab0a45d5c8cfeebabb26c",
+      "bytes": 4141,
+      "source_commit": "1fc660b3ce09dd2b23b6a05e0698903bf6060355"
+    },
+    "research/decision_log.md": {
+      "archive": "research/protocol_lock/final_G3/baseline_current_aliases/research/decision_log.md",
+      "sha256": "0e0cfe95efcf8254899396e9b5905666edbff66dadb71ad1a6ed37c039bf3508",
+      "bytes": 2654,
+      "source_commit": "1fc660b3ce09dd2b23b6a05e0698903bf6060355"
+    },
+    "research/artifact_map.csv": {
+      "archive": "research/protocol_lock/final_G3/baseline_current_aliases/research/artifact_map.csv",
+      "sha256": "734ae2f63080a6d499fb1dea4290272816e262bccc657efc37cef0255988225a",
+      "bytes": 93389,
+      "source_commit": "1fc660b3ce09dd2b23b6a05e0698903bf6060355"
+    },
+    "configs/protocol_lock_record.json": {
+      "archive": "research/protocol_lock/final_G3/baseline_current_aliases/configs/protocol_lock_record.json",
+      "sha256": "468a7dfd7641b8a6a89c7adc5b45a7dbfc630d5f0971e51071724279d144e640",
+      "bytes": 775,
+      "source_commit": "1fc660b3ce09dd2b23b6a05e0698903bf6060355"
+    }
+  },
+  "source_map_sha256": "0967e8db64935764b5c34fb35b15978739c6a2d536f6ea13bb05fd0540681d5d"
+}

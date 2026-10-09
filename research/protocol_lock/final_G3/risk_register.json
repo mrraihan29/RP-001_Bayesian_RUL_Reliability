@@ -1,0 +1,11 @@
+{
+  "version": "RP-001-G3-v0.5-AM1",
+  "G3_AM_001": {
+    "status": "RESOLVED_BY_EXPLICIT_OWNER_AMENDMENT",
+    "decision_source": "docs/protocol_lock/OWNER_AMENDMENT_DECISION_G3_AM_001.md",
+    "original_failed_case": "docs/protocol_lock/history/G3_lock_attempt_1/LOCK_VERIFICATION_REPORT.md"
+  },
+  "unresolved_scientific_risks": "research/v0.5/blocker_disposition.json",
+  "execution_stage_readiness": "DEFERRED_UNTIL_SEPARATE_STAGE_B_AUTHORIZATION",
+  "novelty_data_rights_clean_replay": "UNRESOLVED_PUBLICATION_REQUIREMENTS"
+}

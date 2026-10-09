@@ -1,0 +1,133 @@
+{
+  "schema_version": "1.0.0",
+  "handoff_id": "RP001-G3-LOCK-ATTEMPT-1",
+  "parent_work_id": "RP-001",
+  "producer": "scientific-research-engine",
+  "consumer": "scientific-research-engine",
+  "producer_role": "Rei / SOL lead",
+  "consumer_role": "Research Owners",
+  "human_recipient": "Raihan x Rei",
+  "artifact_type": "formal-lock-verification-and-amendment-request",
+  "artifact_version": "G3-lock-attempt-1",
+  "artifact_identity": {
+    "path_or_uri": "docs/protocol_lock/G3_FORMAL_PROTOCOL_LOCK_COMPLETION_REPORT.md",
+    "sha256_or_version": "de6110967f43d8984f5972eee807deeae6385d5313a1ffa38eff898b442370af",
+    "created_at": "2026-10-08T17:18:03.859503+00:00",
+    "source_revision": "c583ce62eac9a6b3dcd29c1929cc07c17569beb7"
+  },
+  "scope": "Formal lock only; no experiments or protected evaluation",
+  "applicability": "APPLICABLE_MANDATORY",
+  "claims_or_requirements": "Return failed consistency gate and concrete amendment; do not force lock.",
+  "evidence": [
+    {
+      "evidence_id": "G3-REPORT",
+      "kind": "static-governance-verification",
+      "location": "docs/protocol_lock/G3_FORMAL_PROTOCOL_LOCK_COMPLETION_REPORT.md",
+      "sha256": "de6110967f43d8984f5972eee807deeae6385d5313a1ffa38eff898b442370af",
+      "collected_at": "2026-10-08T17:18:03.859503+00:00",
+      "method": "Actual hashes/Git/environment/static SOL review",
+      "supports": "Baseline PASS, consistent formal lock FAIL",
+      "provenance_chain": "Human G3 -> approved c583 -> existing byte/source audit -> amendment -> owner return"
+    },
+    {
+      "evidence_id": "G3-AM-001",
+      "kind": "static-governance-verification",
+      "location": "docs/protocol_lock/AMENDMENT_REQUEST_G3_AM_001.md",
+      "sha256": "0360abed700e05eb76f60fa80c6d8c0e5b9433844056018988a9560e7d67adc7",
+      "collected_at": "2026-10-08T17:18:03.859503+00:00",
+      "method": "Actual hashes/Git/environment/static SOL review",
+      "supports": "Baseline PASS, consistent formal lock FAIL",
+      "provenance_chain": "Human G3 -> approved c583 -> existing byte/source audit -> amendment -> owner return"
+    },
+    {
+      "evidence_id": "G3-VERIFY",
+      "kind": "static-governance-verification",
+      "location": "docs/protocol_lock/LOCK_VERIFICATION_REPORT.md",
+      "sha256": "3b41883026b784adc8aef022c836d7303e171471b26598f09623ac6b2f6b32c9",
+      "collected_at": "2026-10-08T17:18:03.859503+00:00",
+      "method": "Actual hashes/Git/environment/static SOL review",
+      "supports": "Baseline PASS, consistent formal lock FAIL",
+      "provenance_chain": "Human G3 -> approved c583 -> existing byte/source audit -> amendment -> owner return"
+    },
+    {
+      "evidence_id": "G3-BASELINE",
+      "kind": "static-governance-verification",
+      "location": "logs/protocol_lock/baseline_verification.json",
+      "sha256": "719ffdbc0cba985bea224390529ceb40e2854883e9c2051952101bff9339b7ed",
+      "collected_at": "2026-10-08T17:18:03.859503+00:00",
+      "method": "Actual hashes/Git/environment/static SOL review",
+      "supports": "Baseline PASS, consistent formal lock FAIL",
+      "provenance_chain": "Human G3 -> approved c583 -> existing byte/source audit -> amendment -> owner return"
+    },
+    {
+      "evidence_id": "G3-AUTH",
+      "kind": "static-governance-verification",
+      "location": "docs/protocol_lock/OWNER_AUTHORIZATION_G3.md",
+      "sha256": "ac5a51a4ddb17048507e36cd30ae7f735e0d52180dead411dbeb918338faf132",
+      "collected_at": "2026-10-08T17:18:03.859503+00:00",
+      "method": "Actual hashes/Git/environment/static SOL review",
+      "supports": "Baseline PASS, consistent formal lock FAIL",
+      "provenance_chain": "Human G3 -> approved c583 -> existing byte/source audit -> amendment -> owner return"
+    },
+    {
+      "evidence_id": "G3-SAVED",
+      "kind": "static-governance-verification",
+      "location": "logs/protocol_lock/saved_state_verification.json",
+      "sha256": "cbd369121c34a288a8d2b7d9366f850dd9d7b63e47c59861717a085d55db6ad4",
+      "collected_at": "2026-10-08T17:18:03.859503+00:00",
+      "method": "Actual hashes/Git/environment/static SOL review",
+      "supports": "Baseline PASS, consistent formal lock FAIL",
+      "provenance_chain": "Human G3 -> approved c583 -> existing byte/source audit -> amendment -> owner return"
+    }
+  ],
+  "gate_results": [
+    {
+      "gate": "G3_BASELINE_IDENTITY",
+      "state": "PASS",
+      "owner": "Rei / SOL",
+      "artifact_version": "G3-lock-attempt-1",
+      "evidence_ids": [
+        "G3-BASELINE"
+      ],
+      "rationale": "All baseline actual identities match."
+    },
+    {
+      "gate": "G3_PROTOCOL_LOCK_CONSISTENCY",
+      "state": "FAIL",
+      "owner": "Rei / SOL; owner amendment decision",
+      "artifact_version": "G3-lock-attempt-1",
+      "evidence_ids": [
+        "G3-AM-001",
+        "G3-VERIFY"
+      ],
+      "rationale": "Exact quantile procedure mismatches approved prose."
+    }
+  ],
+  "assumptions": [
+    "Target mixture/formulas unchanged; no demonstrated posterior invalidity or material historical score difference.",
+    "Historical scientific bytes preserved."
+  ],
+  "risks": [
+    {
+      "risk_id": "G3-AM-001",
+      "statement": "Exact quantile numerical description combines legacy/precision procedures.",
+      "severity": "critical",
+      "likelihood": "Observed",
+      "affected_claims_or_gates": [
+        "G3_PROTOCOL_LOCK_CONSISTENCY"
+      ],
+      "owner": "Research Owners Raihan x Rei; SOL supplies clarification",
+      "disposition": "Draft retained; concrete existing-source amendment unexecuted",
+      "trigger": "Before lock completion and Stage B"
+    }
+  ],
+  "unresolved": [
+    "G3-AM-001 numerical-route disposition"
+  ],
+  "requested_decision": "Approve recommended existing-helper clarification or specify alternative reviewed procedure; then resume G3 only.",
+  "return_to_parent": {
+    "state": "BLOCKED",
+    "decision_owner": "Research Owners Raihan x Rei",
+    "reason": "G3 section 3 requires owner amendment; concrete proposal supplied."
+  }
+}

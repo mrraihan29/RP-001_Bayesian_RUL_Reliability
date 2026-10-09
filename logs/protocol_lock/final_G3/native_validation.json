@@ -1,0 +1,14 @@
+{
+  "handoff": {
+    "result": "PASS",
+    "errors": []
+  },
+  "research": {
+    "status": "PROTOCOL_LOCKED",
+    "protocol_status": "PROTOCOL_LOCKED",
+    "mode": "dataset-benchmark",
+    "hard_failures": [],
+    "warnings": [],
+    "info": []
+  }
+}

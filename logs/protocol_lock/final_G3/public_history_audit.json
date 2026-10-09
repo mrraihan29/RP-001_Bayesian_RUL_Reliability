@@ -1,0 +1,16 @@
+{
+  "audit_utc": "2026-10-09T02:10:13.595972+00:00",
+  "head_before_G3": "1fc660b3ce09dd2b23b6a05e0698903bf6060355",
+  "scope": "All reachable Git history: filename audit plus concrete credential/private-key signature scan of text-sized blobs; no secret values printed. No public release of raw/protected inputs. This bounded scan is not a proof of absence of every possible secret.",
+  "reachable_blob_count": 637,
+  "text_blobs_scanned": 521,
+  "binary_blobs_skipped_for_secret_patterns": 108,
+  "over_5MiB_blobs_skipped_for_secret_patterns": 8,
+  "forbidden_path_findings": [],
+  "credential_pattern_findings": [],
+  "status": "PASS",
+  "history_identity_sha256": "8c7e6acd055fa3daae92d8cbff6e2cc2557cda4fa416c1fad1913580d07b6433",
+  "repository_visibility": "PUBLIC; verified through authenticated gh repo view",
+  "scientific_publication_authorized": false,
+  "raw_dataset_redistribution_rights": "unresolved; raw dataset/protected members remain ignored and unpublished"
+}

@@ -26,8 +26,3 @@ READY FOR OWNER LOCK REVIEW for restricted descriptive finite-benchmark contract
 ## 2026-10-08T17:18:03.859503+00:00 | G3 formal lock: AMENDMENT REQUIRED
 
 Human Stage A lock authorization recorded byte-exact. Actual baseline PASS; G3-AM-001 bracket/tolerance/helper mismatch fails consistency. Direct SOL review retained. No source/method/results changed, scientific runs appended or protected data accessed. PROTOCOL_DRAFTED. Concrete existing-precision-helper amendment awaits owner acceptance. B/C/D unauthorized. Historical private captions retained; repository PUBLIC under later explicit human direction and G3 instruction.
-
-
-## 2026-10-09T02:08:59.252709+00:00 | Formal G3 lock completed after approved G3-AM-001
-
-Human Raihan explicitly approved the existing precision-helper clarification at reviewed1fc660b. Single clause corrected; all original scientific bytes unchanged. Direct SOL source/model/prior/CQR/score/numerical/finite/protected consistency PASS. Original contract/failed G3 archive retained; exact diff and identities recorded. PROTOCOL_LOCKED; no scientific experiments or official access; B/C/D false. Receipt binds post-verification payload commit. Historical adverse findings and publication/replay limits retained.

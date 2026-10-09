@@ -1,0 +1,98 @@
+{
+  "docs/protocol_lock/AMENDMENT_REQUEST_G3_AM_001.md": {
+    "archive": "docs/protocol_lock/history/G3_lock_attempt_1/AMENDMENT_REQUEST_G3_AM_001.md",
+    "sha256": "0360abed700e05eb76f60fa80c6d8c0e5b9433844056018988a9560e7d67adc7",
+    "bytes": 4694,
+    "source_commit": "1fc660b3ce09dd2b23b6a05e0698903bf6060355"
+  },
+  "docs/protocol_lock/G3_FORMAL_PROTOCOL_LOCK_COMPLETION_REPORT.md": {
+    "archive": "docs/protocol_lock/history/G3_lock_attempt_1/G3_FORMAL_PROTOCOL_LOCK_COMPLETION_REPORT.md",
+    "sha256": "de6110967f43d8984f5972eee807deeae6385d5313a1ffa38eff898b442370af",
+    "bytes": 2648,
+    "source_commit": "1fc660b3ce09dd2b23b6a05e0698903bf6060355"
+  },
+  "docs/protocol_lock/LOCK_RECEIPT.json": {
+    "archive": "docs/protocol_lock/history/G3_lock_attempt_1/LOCK_RECEIPT.json",
+    "sha256": "e5e046e03c5304c087c83a61ad8cffb8e57da8da4bb5964da14ca904524d8761",
+    "bytes": 11207,
+    "source_commit": "1fc660b3ce09dd2b23b6a05e0698903bf6060355"
+  },
+  "docs/protocol_lock/LOCK_VERIFICATION_REPORT.md": {
+    "archive": "docs/protocol_lock/history/G3_lock_attempt_1/LOCK_VERIFICATION_REPORT.md",
+    "sha256": "3b41883026b784adc8aef022c836d7303e171471b26598f09623ac6b2f6b32c9",
+    "bytes": 8628,
+    "source_commit": "1fc660b3ce09dd2b23b6a05e0698903bf6060355"
+  },
+  "docs/protocol_lock/OWNER_AUTHORIZATION_G3.md": {
+    "archive": "docs/protocol_lock/history/G3_lock_attempt_1/OWNER_AUTHORIZATION_G3.md",
+    "sha256": "ac5a51a4ddb17048507e36cd30ae7f735e0d52180dead411dbeb918338faf132",
+    "bytes": 12810,
+    "source_commit": "1fc660b3ce09dd2b23b6a05e0698903bf6060355"
+  },
+  "docs/protocol_lock/README.md": {
+    "archive": "docs/protocol_lock/history/G3_lock_attempt_1/README.md",
+    "sha256": "06902734465b71e8855f1016642b92d432e4d6834287903c2cea1b2db9623c7d",
+    "bytes": 603,
+    "source_commit": "1fc660b3ce09dd2b23b6a05e0698903bf6060355"
+  },
+  "docs/protocol_lock/research_lead_handoff.json": {
+    "archive": "docs/protocol_lock/history/G3_lock_attempt_1/research_lead_handoff.json",
+    "sha256": "73dbdf542fd10107e9c7d9b272f6fd80a98595b6258d5bd8ece53bb4a502df13",
+    "bytes": 6152,
+    "source_commit": "1fc660b3ce09dd2b23b6a05e0698903bf6060355"
+  },
+  "docs/protocol_lock/VERIFIED_BASELINE_MANIFEST.json": {
+    "archive": "docs/protocol_lock/history/G3_lock_attempt_1/VERIFIED_BASELINE_MANIFEST.json",
+    "sha256": "3faf756426c0696926f644c274e47f7fbb330d5c9e0ea395b14d2d578f0d6c11",
+    "bytes": 196836,
+    "source_commit": "1fc660b3ce09dd2b23b6a05e0698903bf6060355"
+  },
+  "README.md": {
+    "archive": "research/protocol_lock/final_G3/baseline_current_aliases/README.md",
+    "sha256": "7ed40e877da2562bc6436423d22e5b75c345fc20cbcf79f67eab225237850f69",
+    "bytes": 1592,
+    "source_commit": "1fc660b3ce09dd2b23b6a05e0698903bf6060355"
+  },
+  "GITHUB_REVIEW.md": {
+    "archive": "research/protocol_lock/final_G3/baseline_current_aliases/GITHUB_REVIEW.md",
+    "sha256": "17fae7260d80a7d0a509fa0bba4fd8af3145b189ecde2c0f987243efad9d3c0f",
+    "bytes": 1020,
+    "source_commit": "1fc660b3ce09dd2b23b6a05e0698903bf6060355"
+  },
+  "research/protocol.json": {
+    "archive": "research/protocol_lock/final_G3/baseline_current_aliases/research/protocol.json",
+    "sha256": "b3b6587b3785eaa0c5602ad5967d60c5fe897f04e7d3835b118cc5420da28921",
+    "bytes": 8347,
+    "source_commit": "1fc660b3ce09dd2b23b6a05e0698903bf6060355"
+  },
+  "research/state_manifest.json": {
+    "archive": "research/protocol_lock/final_G3/baseline_current_aliases/research/state_manifest.json",
+    "sha256": "08c99e0c355c3f3c71468f4982d88d79b80b2142d0b3b5d1f9e0a7623cfa4279",
+    "bytes": 1672,
+    "source_commit": "1fc660b3ce09dd2b23b6a05e0698903bf6060355"
+  },
+  "research/gate_results.json": {
+    "archive": "research/protocol_lock/final_G3/baseline_current_aliases/research/gate_results.json",
+    "sha256": "03d4677544b8bc7e1e7a10141a7db58769d8778f2deab0a45d5c8cfeebabb26c",
+    "bytes": 4141,
+    "source_commit": "1fc660b3ce09dd2b23b6a05e0698903bf6060355"
+  },
+  "research/decision_log.md": {
+    "archive": "research/protocol_lock/final_G3/baseline_current_aliases/research/decision_log.md",
+    "sha256": "0e0cfe95efcf8254899396e9b5905666edbff66dadb71ad1a6ed37c039bf3508",
+    "bytes": 2654,
+    "source_commit": "1fc660b3ce09dd2b23b6a05e0698903bf6060355"
+  },
+  "research/artifact_map.csv": {
+    "archive": "research/protocol_lock/final_G3/baseline_current_aliases/research/artifact_map.csv",
+    "sha256": "734ae2f63080a6d499fb1dea4290272816e262bccc657efc37cef0255988225a",
+    "bytes": 93389,
+    "source_commit": "1fc660b3ce09dd2b23b6a05e0698903bf6060355"
+  },
+  "configs/protocol_lock_record.json": {
+    "archive": "research/protocol_lock/final_G3/baseline_current_aliases/configs/protocol_lock_record.json",
+    "sha256": "468a7dfd7641b8a6a89c7adc5b45a7dbfc630d5f0971e51071724279d144e640",
+    "bytes": 775,
+    "source_commit": "1fc660b3ce09dd2b23b6a05e0698903bf6060355"
+  }
+}

@@ -1,133 +1,177 @@
 {
   "schema_version": "1.0.0",
-  "handoff_id": "RP001-G3-LOCK-ATTEMPT-1",
+  "handoff_id": "RP001-G3-FINAL-LOCK-AM1",
   "parent_work_id": "RP-001",
   "producer": "scientific-research-engine",
   "consumer": "scientific-research-engine",
-  "producer_role": "Rei / SOL lead",
+  "producer_role": "Rei / SOL direct final mathematical verifier",
   "consumer_role": "Research Owners",
   "human_recipient": "Raihan x Rei",
-  "artifact_type": "formal-lock-verification-and-amendment-request",
-  "artifact_version": "G3-lock-attempt-1",
+  "artifact_type": "formal-protocol-lock-completion",
+  "artifact_version": "RP-001-G3-v0.5-AM1",
   "artifact_identity": {
     "path_or_uri": "docs/protocol_lock/G3_FORMAL_PROTOCOL_LOCK_COMPLETION_REPORT.md",
-    "sha256_or_version": "de6110967f43d8984f5972eee807deeae6385d5313a1ffa38eff898b442370af",
-    "created_at": "2026-10-08T17:18:03.859503+00:00",
-    "source_revision": "c583ce62eac9a6b3dcd29c1929cc07c17569beb7"
+    "sha256_or_version": "2f6cea6896f8eeafebc12e34f12ab52ab2e64bda2e4dcf01a019cc23fd2ae4c7",
+    "created_at": "2026-10-09T02:08:59.252709+00:00",
+    "source_revision": "c583ce62eac9a6b3dcd29c1929cc07c17569beb7; approved amendment review 1fc660b3ce09dd2b23b6a05e0698903bf6060355"
   },
-  "scope": "Formal lock only; no experiments or protected evaluation",
+  "scope": "G3 formal lock only; no new science or protected access",
   "applicability": "APPLICABLE_MANDATORY",
-  "claims_or_requirements": "Return failed consistency gate and concrete amendment; do not force lock.",
+  "claims_or_requirements": "Complete immutable approved lock and halt at separately authorized B gate",
   "evidence": [
     {
-      "evidence_id": "G3-REPORT",
-      "kind": "static-governance-verification",
+      "evidence_id": "G3-LOCK-REPORT",
+      "kind": "formal-lock-verification",
       "location": "docs/protocol_lock/G3_FORMAL_PROTOCOL_LOCK_COMPLETION_REPORT.md",
-      "sha256": "de6110967f43d8984f5972eee807deeae6385d5313a1ffa38eff898b442370af",
-      "collected_at": "2026-10-08T17:18:03.859503+00:00",
-      "method": "Actual hashes/Git/environment/static SOL review",
-      "supports": "Baseline PASS, consistent formal lock FAIL",
-      "provenance_chain": "Human G3 -> approved c583 -> existing byte/source audit -> amendment -> owner return"
+      "sha256": "2f6cea6896f8eeafebc12e34f12ab52ab2e64bda2e4dcf01a019cc23fd2ae4c7",
+      "collected_at": "2026-10-09T02:08:59.252709+00:00",
+      "method": "Direct SOL source consistency, exact approved diff, actual identity checks",
+      "supports": "Authorized formal lock, no scientific result validation",
+      "provenance_chain": "Human G3 directive -> c583 -> failed G3 1fc -> human G3-AM001 approval -> unchanged pinned source -> exact corrected contract -> verified lock"
     },
     {
-      "evidence_id": "G3-AM-001",
-      "kind": "static-governance-verification",
-      "location": "docs/protocol_lock/AMENDMENT_REQUEST_G3_AM_001.md",
-      "sha256": "0360abed700e05eb76f60fa80c6d8c0e5b9433844056018988a9560e7d67adc7",
-      "collected_at": "2026-10-08T17:18:03.859503+00:00",
-      "method": "Actual hashes/Git/environment/static SOL review",
-      "supports": "Baseline PASS, consistent formal lock FAIL",
-      "provenance_chain": "Human G3 -> approved c583 -> existing byte/source audit -> amendment -> owner return"
-    },
-    {
-      "evidence_id": "G3-VERIFY",
-      "kind": "static-governance-verification",
+      "evidence_id": "G3-LOCK-VERIFY",
+      "kind": "formal-lock-verification",
       "location": "docs/protocol_lock/LOCK_VERIFICATION_REPORT.md",
-      "sha256": "3b41883026b784adc8aef022c836d7303e171471b26598f09623ac6b2f6b32c9",
-      "collected_at": "2026-10-08T17:18:03.859503+00:00",
-      "method": "Actual hashes/Git/environment/static SOL review",
-      "supports": "Baseline PASS, consistent formal lock FAIL",
-      "provenance_chain": "Human G3 -> approved c583 -> existing byte/source audit -> amendment -> owner return"
+      "sha256": "b085cf5b4ba6ee2dabf11e4abe72e310ab577bb528642f244defe6a7d919609b",
+      "collected_at": "2026-10-09T02:08:59.252709+00:00",
+      "method": "Direct SOL source consistency, exact approved diff, actual identity checks",
+      "supports": "Authorized formal lock, no scientific result validation",
+      "provenance_chain": "Human G3 directive -> c583 -> failed G3 1fc -> human G3-AM001 approval -> unchanged pinned source -> exact corrected contract -> verified lock"
     },
     {
-      "evidence_id": "G3-BASELINE",
-      "kind": "static-governance-verification",
-      "location": "logs/protocol_lock/baseline_verification.json",
-      "sha256": "719ffdbc0cba985bea224390529ceb40e2854883e9c2051952101bff9339b7ed",
-      "collected_at": "2026-10-08T17:18:03.859503+00:00",
-      "method": "Actual hashes/Git/environment/static SOL review",
-      "supports": "Baseline PASS, consistent formal lock FAIL",
-      "provenance_chain": "Human G3 -> approved c583 -> existing byte/source audit -> amendment -> owner return"
+      "evidence_id": "G3-AM-DECISION",
+      "kind": "formal-lock-verification",
+      "location": "docs/protocol_lock/OWNER_AMENDMENT_DECISION_G3_AM_001.md",
+      "sha256": "e1b2ab0e21512d41b840621a05e6ef3deec19022e78ca7f4425a71a7033cd64a",
+      "collected_at": "2026-10-09T02:08:59.252709+00:00",
+      "method": "Direct SOL source consistency, exact approved diff, actual identity checks",
+      "supports": "Authorized formal lock, no scientific result validation",
+      "provenance_chain": "Human G3 directive -> c583 -> failed G3 1fc -> human G3-AM001 approval -> unchanged pinned source -> exact corrected contract -> verified lock"
     },
     {
-      "evidence_id": "G3-AUTH",
-      "kind": "static-governance-verification",
-      "location": "docs/protocol_lock/OWNER_AUTHORIZATION_G3.md",
-      "sha256": "ac5a51a4ddb17048507e36cd30ae7f735e0d52180dead411dbeb918338faf132",
-      "collected_at": "2026-10-08T17:18:03.859503+00:00",
-      "method": "Actual hashes/Git/environment/static SOL review",
-      "supports": "Baseline PASS, consistent formal lock FAIL",
-      "provenance_chain": "Human G3 -> approved c583 -> existing byte/source audit -> amendment -> owner return"
+      "evidence_id": "G3-LOCK-CONTRACT",
+      "kind": "formal-lock-verification",
+      "location": "docs/protocol_lock/LOCKED_ANALYSIS_CONTRACT.md",
+      "sha256": "335e202170d826c80453a3c2136c999b966560303e18e6678464d50caff2c0e4",
+      "collected_at": "2026-10-09T02:08:59.252709+00:00",
+      "method": "Direct SOL source consistency, exact approved diff, actual identity checks",
+      "supports": "Authorized formal lock, no scientific result validation",
+      "provenance_chain": "Human G3 directive -> c583 -> failed G3 1fc -> human G3-AM001 approval -> unchanged pinned source -> exact corrected contract -> verified lock"
     },
     {
-      "evidence_id": "G3-SAVED",
-      "kind": "static-governance-verification",
-      "location": "logs/protocol_lock/saved_state_verification.json",
-      "sha256": "cbd369121c34a288a8d2b7d9366f850dd9d7b63e47c59861717a085d55db6ad4",
-      "collected_at": "2026-10-08T17:18:03.859503+00:00",
-      "method": "Actual hashes/Git/environment/static SOL review",
-      "supports": "Baseline PASS, consistent formal lock FAIL",
-      "provenance_chain": "Human G3 -> approved c583 -> existing byte/source audit -> amendment -> owner return"
+      "evidence_id": "G3-LOCK-PROTOCOL",
+      "kind": "formal-lock-verification",
+      "location": "docs/protocol_lock/LOCKED_RESEARCH_PROTOCOL.md",
+      "sha256": "78f37893cb0d7df1214f738a7236fecd8617bd16ab664654f0b451bd6679c594",
+      "collected_at": "2026-10-09T02:08:59.252709+00:00",
+      "method": "Direct SOL source consistency, exact approved diff, actual identity checks",
+      "supports": "Authorized formal lock, no scientific result validation",
+      "provenance_chain": "Human G3 directive -> c583 -> failed G3 1fc -> human G3-AM001 approval -> unchanged pinned source -> exact corrected contract -> verified lock"
+    },
+    {
+      "evidence_id": "G3-LOCK-CHANGE",
+      "kind": "formal-lock-verification",
+      "location": "docs/protocol_lock/AMENDMENT_CHANGE_RECORD.json",
+      "sha256": "880225f3daa0c5f9153b49c69ac3b1cdd24df7c7d4f0244ef6f0d10d886abfda",
+      "collected_at": "2026-10-09T02:08:59.252709+00:00",
+      "method": "Direct SOL source consistency, exact approved diff, actual identity checks",
+      "supports": "Authorized formal lock, no scientific result validation",
+      "provenance_chain": "Human G3 directive -> c583 -> failed G3 1fc -> human G3-AM001 approval -> unchanged pinned source -> exact corrected contract -> verified lock"
+    },
+    {
+      "evidence_id": "G3-LOCK-SOURCE",
+      "kind": "formal-lock-verification",
+      "location": "docs/protocol_lock/FROZEN_CODE_AND_ENVIRONMENT_MANIFEST.json",
+      "sha256": "e9667092f3ea5b04173c0b5f7ef45d8d9b7759873a6e0b16f843a5c0d168551c",
+      "collected_at": "2026-10-09T02:08:59.252709+00:00",
+      "method": "Direct SOL source consistency, exact approved diff, actual identity checks",
+      "supports": "Authorized formal lock, no scientific result validation",
+      "provenance_chain": "Human G3 directive -> c583 -> failed G3 1fc -> human G3-AM001 approval -> unchanged pinned source -> exact corrected contract -> verified lock"
+    },
+    {
+      "evidence_id": "G3-LOCK-DATA",
+      "kind": "formal-lock-verification",
+      "location": "docs/protocol_lock/FROZEN_DATA_AND_SPLIT_MANIFEST.json",
+      "sha256": "f8a7f411b01aea09c0243a53f4432299bca111a92efbd5b4c81a2406faf99c40",
+      "collected_at": "2026-10-09T02:08:59.252709+00:00",
+      "method": "Direct SOL source consistency, exact approved diff, actual identity checks",
+      "supports": "Authorized formal lock, no scientific result validation",
+      "provenance_chain": "Human G3 directive -> c583 -> failed G3 1fc -> human G3-AM001 approval -> unchanged pinned source -> exact corrected contract -> verified lock"
+    },
+    {
+      "evidence_id": "G3-LOCK-MODEL",
+      "kind": "formal-lock-verification",
+      "location": "docs/protocol_lock/FROZEN_MODEL_AND_CONFIGURATION_MANIFEST.json",
+      "sha256": "c8e3c469838705696c8ee2124d74e2c81223fdb2414c2fc95b7a47ec3415200f",
+      "collected_at": "2026-10-09T02:08:59.252709+00:00",
+      "method": "Direct SOL source consistency, exact approved diff, actual identity checks",
+      "supports": "Authorized formal lock, no scientific result validation",
+      "provenance_chain": "Human G3 directive -> c583 -> failed G3 1fc -> human G3-AM001 approval -> unchanged pinned source -> exact corrected contract -> verified lock"
     }
   ],
   "gate_results": [
     {
-      "gate": "G3_BASELINE_IDENTITY",
+      "gate": "G3_SOURCE_AND_APPROVED_CONTRACT",
       "state": "PASS",
-      "owner": "Rei / SOL",
-      "artifact_version": "G3-lock-attempt-1",
+      "owner": "Rei / SOL direct verifier",
+      "artifact_version": "RP-001-G3-v0.5-AM1",
       "evidence_ids": [
-        "G3-BASELINE"
+        "G3-LOCK-VERIFY",
+        "G3-AM-DECISION",
+        "G3-LOCK-CHANGE"
       ],
-      "rationale": "All baseline actual identities match."
+      "rationale": "Approved one-clause correction, all scientific source unchanged, direct component consistency PASS."
     },
     {
-      "gate": "G3_PROTOCOL_LOCK_CONSISTENCY",
-      "state": "FAIL",
-      "owner": "Rei / SOL; owner amendment decision",
-      "artifact_version": "G3-lock-attempt-1",
+      "gate": "OWNER_FORMAL_PROTOCOL_LOCK",
+      "state": "PASS",
+      "owner": "Raihan x Rei Research Owners",
+      "artifact_version": "RP-001-G3-v0.5-AM1",
       "evidence_ids": [
-        "G3-AM-001",
-        "G3-VERIFY"
+        "G3-AM-DECISION",
+        "G3-LOCK-REPORT"
       ],
-      "rationale": "Exact quantile procedure mismatches approved prose."
+      "rationale": "G3 directive and explicit approved amendment permit formal lock only."
+    },
+    {
+      "gate": "PROTECTED_EVALUATION",
+      "state": "BLOCKED",
+      "owner": "Research Owners",
+      "artifact_version": "RP-001-G3-v0.5-AM1",
+      "evidence_ids": [
+        "G3-LOCK-REPORT"
+      ],
+      "rationale": "B/C/D each require separate future authorization."
     }
   ],
   "assumptions": [
-    "Target mixture/formulas unchanged; no demonstrated posterior invalidity or material historical score difference.",
-    "Historical scientific bytes preserved."
+    "Original qualified scientific evidence remains unchanged.",
+    "Future endpoint success/official count and driver readiness are not certified by protocol lock."
   ],
   "risks": [
     {
-      "risk_id": "G3-AM-001",
-      "statement": "Exact quantile numerical description combines legacy/precision procedures.",
-      "severity": "critical",
-      "likelihood": "Observed",
+      "risk_id": "EXECUTION-PUBLICATION-LIMITS",
+      "statement": "Future endpoints/driver/integrity/numerical success untested; restricted finite claims and replay/data-rights limits remain.",
+      "severity": "high",
+      "likelihood": "Known limitations/future performance unknown",
       "affected_claims_or_gates": [
-        "G3_PROTOCOL_LOCK_CONSISTENCY"
+        "OFFICIAL_EVALUATION",
+        "PUBLICATION"
       ],
-      "owner": "Research Owners Raihan x Rei; SOL supplies clarification",
-      "disposition": "Draft retained; concrete existing-source amendment unexecuted",
-      "trigger": "Before lock completion and Stage B"
+      "owner": "Research Owners Raihan x Rei; SOL enforces scientific policy",
+      "disposition": "Retain restricted claims; future stages require separate authorization and guards; novelty/rights/replay before publication",
+      "trigger": "Any proposed Stage B/C/D or publication"
     }
   ],
   "unresolved": [
-    "G3-AM-001 numerical-route disposition"
+    "Future separately authorized endpoint integrity/numerical completion",
+    "Novelty, lawful dataset redistribution and complete clean replay"
   ],
-  "requested_decision": "Approve recommended existing-helper clarification or specify alternative reviewed procedure; then resume G3 only.",
+  "requested_decision": "Review completed receipt/package; any Stage B decision is separate. No additional authorization requested to complete G3.",
   "return_to_parent": {
-    "state": "BLOCKED",
+    "state": "COMPLETE",
     "decision_owner": "Research Owners Raihan x Rei",
-    "reason": "G3 section 3 requires owner amendment; concrete proposal supplied."
+    "reason": "Formal G3 completion only; halt before B/C/D."
   }
 }

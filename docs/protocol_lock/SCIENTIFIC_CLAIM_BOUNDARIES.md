@@ -1,0 +1,11 @@
+# RP-001 | Locked Scientific Claim Boundaries
+
+The primary comparison is descriptive enumeration of the exact complete finite FD001 benchmark and its frozen stored predictions. Negative Bayesian-minus-CQR mean score means lower stored Bayesian mean score on that benchmark. Competitive is comparative characterization, with no binary practical superiority/equivalence decision or five-cycle margin.
+
+Report both mean90% interval scores, signed paired contrast, score ratio when CQR mean>0, interval width/miss penalties, complete per-engine records, exact empirical coverage fraction and descriptive median errors. No population p-value, engine-sampling SE/CI, Wilson/binomial CI, population bootstrap, general superiority/noninferiority/equivalence, guaranteed official conformal coverage, maintenance utility/safety certification, causal benefit of Bayesian philosophy or physical identification.
+
+Model-conditional predictive uncertainty, conditional numerical MCSE and observed pipeline sensitivity are distinct. Numerical guards/Satterthwaite bounds are approximate under stationarity/mixing/ratio-CLT/density assumptions; they are not guaranteed absolute-error or finite-sample coverage bounds. Score influence retains shared posterior dependence. CQR has no posterior Monte Carlo error conditional on its frozen fit/correction; full repeated-training/calibration uncertainty remains unestimated.
+
+Disclose original high-rho failure and bounded diagnostic PASS without replacement, v0.3 precision failure, weak nuisance separation, small 25-calibration/13-tuning cohorts, exposed calibration/prior adaptation, eight dependent pipeline perturbations and winner changes, adverse bootstrap findings/999 unavailable replicates, unequal features/search/compute, unknown cutoff exchangeability/transport, synthetic-to-real gap and all prediction failures. No removal of difficult engines. Limited or negative results are scientifically admissible.
+
+Novelty review, data-rights clearance, lawful custodian availability for 33 ignored historical payloads and reproducibility limits remain outstanding before scientific publication. Public GitHub access does not certify rights or scientific validity. PROTOCOL_LOCKED is not RESEARCH_VALIDATED.

@@ -1,0 +1,278 @@
+{
+  "version": "G3-lock-attempt-1",
+  "status": "FORMAL_LOCK_NOT_COMPLETED_AMENDMENT_REQUIRED",
+  "protocol_status": "PROTOCOL_DRAFTED",
+  "created_at_utc": "2026-10-08T22:52:09.593190+00:00",
+  "successful_lock_commit": null,
+  "locked_protocol_version": null,
+  "administrative_evidence_commit": "8ba3edf44d2458c0d2367f6716370073cfaaca18",
+  "owner_reviewed_scientific_commit": "c583ce62eac9a6b3dcd29c1929cc07c17569beb7",
+  "administrative_baseline_head": "2eca96034ccb69877b16f601f05c85fcda9fc40c",
+  "owner_authorization": {
+    "attachment_sha256": "ac5a51a4ddb17048507e36cd30ae7f735e0d52180dead411dbeb918338faf132",
+    "attachment_bytes": 12810,
+    "source": "human user attachment in current Codex conversation",
+    "sender": "Raihan",
+    "stated_research_owners": "Raihan x Rei",
+    "verified_identity_limit": "Authenticated conversation context only; no independent legal identity or cryptographic signature",
+    "authorization": "G3 Stage A formal lock only; B/C/D not authorized"
+  },
+  "authorization_document_sha256": "ac5a51a4ddb17048507e36cd30ae7f735e0d52180dead411dbeb918338faf132",
+  "approved_contract_sha256": "1e03e072682878fde6ced8c00ddcde44594af59e56129e65db1127a0166fa598",
+  "scientific_source_map_sha256": "0967e8db64935764b5c34fb35b15978739c6a2d536f6ea13bb05fd0540681d5d",
+  "environment_fingerprint": "f57b00a67e9d67b2920791bfddc8dc812dbdeb9306588a26557dfd6be15f826c",
+  "dataset_split_plan": {
+    "data/raw/train_FD001.txt": {
+      "path": "data/raw/train_FD001.txt",
+      "bytes": 3515356,
+      "sha256": "963b5e22825b34d8b21c69e1aeb4af3e647050eb672ee8834ba4b5d91d2de0f8",
+      "expected_sha256": "963b5e22825b34d8b21c69e1aeb4af3e647050eb672ee8834ba4b5d91d2de0f8",
+      "matches": true
+    },
+    "configs/proposed_split_manifest.json": {
+      "path": "configs/proposed_split_manifest.json",
+      "bytes": 14035,
+      "sha256": "6d6e0f10d979d41739c6c07b6bab8f0c32d2844ebd150e82d13caa3bd29e124b",
+      "expected_sha256": "6d6e0f10d979d41739c6c07b6bab8f0c32d2844ebd150e82d13caa3bd29e124b",
+      "matches": true
+    },
+    "configs/v0.5/resolution_plan.json": {
+      "path": "configs/v0.5/resolution_plan.json",
+      "bytes": 5780,
+      "sha256": "6046cd808d6a4b68ed42fd7d3458f0f142273aa323f64bb077cb8c0bc7dc0745",
+      "expected_sha256": "6046cd808d6a4b68ed42fd7d3458f0f142273aa323f64bb077cb8c0bc7dc0745",
+      "matches": true
+    }
+  },
+  "principal_posteriors": [
+    {
+      "path": "experiments/v0.4/fits/v04_main_r1.nc",
+      "sha256": "750157b158f665d2c962202813f2cfd11a0152730956743dc434b6b47db75415",
+      "bytes": 6134707,
+      "run_id": "v04_main_r1"
+    },
+    {
+      "path": "experiments/v0.4/fits/v04_main_r2.nc",
+      "sha256": "bce67cd39c38c54271ab59d1a9922795ff62524aac25bd09f64eed3a3f99fe3b",
+      "bytes": 6135609,
+      "run_id": "v04_main_r2"
+    },
+    {
+      "path": "experiments/v0.4/fits/v04_main_r3.nc",
+      "sha256": "805ec463ea94b565c536fc39dcc3d95a784d9fd1527f15ab106a4b2acf23cb96",
+      "bytes": 6136478,
+      "run_id": "v04_main_r3"
+    }
+  ],
+  "baseline_files_verified": 593,
+  "exact_baseline_git_blobs_verified": 560,
+  "historical_local_only_verified": 33,
+  "new_scientific_experiments": 0,
+  "official_test_access": false,
+  "confirmatory_scoring": false,
+  "protected_phase_authorization": {
+    "stage_A_formal_lock": true,
+    "stage_B_official_test_sensors": false,
+    "stage_C_prediction_freeze_acceptance": false,
+    "stage_D_official_test_labels_and_scoring": false
+  },
+  "outstanding_amendment": "G3-AM-001",
+  "amendment_applied": false,
+  "repository_visibility": "PUBLIC",
+  "scientific_publication_authorized": false,
+  "sealed_administrative_files": [
+    {
+      "path": "GITHUB_REVIEW.md",
+      "bytes": 1020,
+      "sha256": "17fae7260d80a7d0a509fa0bba4fd8af3145b189ecde2c0f987243efad9d3c0f"
+    },
+    {
+      "path": "README.md",
+      "bytes": 1592,
+      "sha256": "7ed40e877da2562bc6436423d22e5b75c345fc20cbcf79f67eab225237850f69"
+    },
+    {
+      "path": "docs/protocol_lock/AMENDMENT_REQUEST_G3_AM_001.md",
+      "bytes": 4694,
+      "sha256": "0360abed700e05eb76f60fa80c6d8c0e5b9433844056018988a9560e7d67adc7"
+    },
+    {
+      "path": "docs/protocol_lock/G3_FORMAL_PROTOCOL_LOCK_COMPLETION_REPORT.md",
+      "bytes": 2648,
+      "sha256": "de6110967f43d8984f5972eee807deeae6385d5313a1ffa38eff898b442370af"
+    },
+    {
+      "path": "docs/protocol_lock/LOCK_VERIFICATION_REPORT.md",
+      "bytes": 8628,
+      "sha256": "3b41883026b784adc8aef022c836d7303e171471b26598f09623ac6b2f6b32c9"
+    },
+    {
+      "path": "docs/protocol_lock/OWNER_AUTHORIZATION_G3.md",
+      "bytes": 12810,
+      "sha256": "ac5a51a4ddb17048507e36cd30ae7f735e0d52180dead411dbeb918338faf132"
+    },
+    {
+      "path": "docs/protocol_lock/README.md",
+      "bytes": 603,
+      "sha256": "06902734465b71e8855f1016642b92d432e4d6834287903c2cea1b2db9623c7d"
+    },
+    {
+      "path": "docs/protocol_lock/VERIFIED_BASELINE_MANIFEST.json",
+      "bytes": 196836,
+      "sha256": "3faf756426c0696926f644c274e47f7fbb330d5c9e0ea395b14d2d578f0d6c11"
+    },
+    {
+      "path": "docs/protocol_lock/research_lead_handoff.json",
+      "bytes": 6152,
+      "sha256": "73dbdf542fd10107e9c7d9b272f6fd80a98595b6258d5bd8ece53bb4a502df13"
+    },
+    {
+      "path": "logs/protocol_lock/audit_baseline.py",
+      "bytes": 7933,
+      "sha256": "ec71811a17168f627d3703f3da8b98cb6d4bf2afce4c2e8b53e6c394bb8943f3"
+    },
+    {
+      "path": "logs/protocol_lock/audit_public_history.py",
+      "bytes": 3022,
+      "sha256": "a2a0601b25b4a81f652faa566b8f8a02a5418aab859d7514023a5b8e2ce777ad"
+    },
+    {
+      "path": "logs/protocol_lock/audit_saved_states.py",
+      "bytes": 3478,
+      "sha256": "1a7c531cbf65f71bc4c5c6db09cb90927e6bf1bc893c674dad5432d3cfb63c38"
+    },
+    {
+      "path": "logs/protocol_lock/audit_staged_public.py",
+      "bytes": 1852,
+      "sha256": "a16be10a256e77a1fd3b294456c7cafa4035765466084ee2098b1bcfd1dff52b"
+    },
+    {
+      "path": "logs/protocol_lock/baseline_verification.json",
+      "bytes": 193960,
+      "sha256": "719ffdbc0cba985bea224390529ceb40e2854883e9c2051952101bff9339b7ed"
+    },
+    {
+      "path": "logs/protocol_lock/build_attempt_package.py",
+      "bytes": 29484,
+      "sha256": "e42e7c40db70584cd9d9e94a26b71b50189f73d6d86e2ae79be7b1906e42a653"
+    },
+    {
+      "path": "logs/protocol_lock/create_attempt_receipt.py",
+      "bytes": 3107,
+      "sha256": "51ede3d39923c3cf5ce5dd0586d62aaf201d029888a94185836517ca26720e2c"
+    },
+    {
+      "path": "logs/protocol_lock/direct_SOL_component_review.json",
+      "bytes": 7539,
+      "sha256": "d685d2352ea309b6b579f8e5429883a48237d6b46e7eab1398c406477bf1f9c9"
+    },
+    {
+      "path": "logs/protocol_lock/native_validation.json",
+      "bytes": 267,
+      "sha256": "9aedb7486a8ee0c4a41d2a8bd86b6316f51ae6ac8333423455a57bf65eea2d10"
+    },
+    {
+      "path": "logs/protocol_lock/package_qc.json",
+      "bytes": 1472,
+      "sha256": "dca97a1248f77470dc3aa623f695311d2cb70a4a44bcc380da6491858681267f"
+    },
+    {
+      "path": "logs/protocol_lock/packaging_verification_adjustment.json",
+      "bytes": 642,
+      "sha256": "35c46bc04b7cbba0301d043d8e387656151389e89893faa3a35d09849f11d558"
+    },
+    {
+      "path": "logs/protocol_lock/public_history_audit.json",
+      "bytes": 995,
+      "sha256": "4aaddf93d398b23bd62d000a2f7f50c0f545fd22857206c8d884827ed84b9a3f"
+    },
+    {
+      "path": "logs/protocol_lock/saved_state_verification.json",
+      "bytes": 10459,
+      "sha256": "cbd369121c34a288a8d2b7d9366f850dd9d7b63e47c59861717a085d55db6ad4"
+    },
+    {
+      "path": "logs/protocol_lock/staged_public_audit.json",
+      "bytes": 7294,
+      "sha256": "026ad13bfb909e2348cec2de61de79be4e43a7e56f7244b9c6a897d7ea0dc184"
+    },
+    {
+      "path": "logs/protocol_lock/verify_attempt_package.py",
+      "bytes": 5515,
+      "sha256": "1c64139cdbb5fb21ccc3be548b4e2bf23aa15eb76cc507cd62f404abd6e451a0"
+    },
+    {
+      "path": "research/artifact_map.csv",
+      "bytes": 93389,
+      "sha256": "734ae2f63080a6d499fb1dea4290272816e262bccc657efc37cef0255988225a"
+    },
+    {
+      "path": "research/decision_log.md",
+      "bytes": 2654,
+      "sha256": "0e0cfe95efcf8254899396e9b5905666edbff66dadb71ad1a6ed37c039bf3508"
+    },
+    {
+      "path": "research/gate_results.json",
+      "bytes": 4141,
+      "sha256": "03d4677544b8bc7e1e7a10141a7db58769d8778f2deab0a45d5c8cfeebabb26c"
+    },
+    {
+      "path": "research/protocol.json",
+      "bytes": 8347,
+      "sha256": "b3b6587b3785eaa0c5602ad5967d60c5fe897f04e7d3835b118cc5420da28921"
+    },
+    {
+      "path": "research/protocol_lock/baseline_alias_archive_map.json",
+      "bytes": 1600,
+      "sha256": "73a83f18dfab3da358b9ac0089a1670b311e880e25a891957bace2231c9fa490"
+    },
+    {
+      "path": "research/protocol_lock/baseline_current_aliases/GITHUB_REVIEW.md",
+      "bytes": 1187,
+      "sha256": "d4bde36ac2d332a04ff520b5fe930fab9ce9b03afc24afc5c3252affab8a5ae2"
+    },
+    {
+      "path": "research/protocol_lock/baseline_current_aliases/README.md",
+      "bytes": 1931,
+      "sha256": "de85851cdbc61e4a92ee8105605abaec5ca740f89c7b3bf00e6aecd83ce2e464"
+    },
+    {
+      "path": "research/protocol_lock/baseline_current_aliases/research/artifact_map.csv",
+      "bytes": 92327,
+      "sha256": "4033e5bbdc4be3ea7da5b1b71843f411931987eefc8efb7fd640cf12c25744c5"
+    },
+    {
+      "path": "research/protocol_lock/baseline_current_aliases/research/decision_log.md",
+      "bytes": 2103,
+      "sha256": "628f01226ad1c4c076893ff2c68ceb8275bd11edeaa54d93a1f046d0e1d86a0e"
+    },
+    {
+      "path": "research/protocol_lock/baseline_current_aliases/research/gate_results.json",
+      "bytes": 3765,
+      "sha256": "b27fb81a5d3e1693efbb1fb5a40e460225d7ba230030424b3d3751e640bc6919"
+    },
+    {
+      "path": "research/protocol_lock/baseline_current_aliases/research/protocol.json",
+      "bytes": 7711,
+      "sha256": "89bf84f4683c9f30c3126040f7f53a881f5ee3f647a44faccbd09f72f3c0395f"
+    },
+    {
+      "path": "research/protocol_lock/baseline_current_aliases/research/state_manifest.json",
+      "bytes": 910,
+      "sha256": "b66d38d04cd313d8918e9ea6af6f46c123dc5b107df1cc55b1875c8ac933d1aa"
+    },
+    {
+      "path": "research/protocol_lock/risk_register.json",
+      "bytes": 703,
+      "sha256": "86cc34e1a013611f1907c388aeec2ae61dd39d1f955e03cc928f099f99f33009"
+    },
+    {
+      "path": "research/state_manifest.json",
+      "bytes": 1672,
+      "sha256": "08c99e0c355c3f3c71468f4982d88d79b80b2142d0b3b5d1f9e0a7623cfa4279"
+    }
+  ],
+  "sealed_file_map_sha256": "f24b815f9d35834cdf525d6ea8a7b66181e41537f95c406437bdd24ece6cef9a",
+  "self_reference_policy": "This post-commit receipt is stored in a later administrative commit. It records the evidence commit, not a successful lock or its own storage commit. The receipt and later verification outputs are excluded from the sealed prior evidence file map.",
+  "no_cryptographic_owner_signature": true
+}

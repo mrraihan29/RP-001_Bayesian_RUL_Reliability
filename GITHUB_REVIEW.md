@@ -1,9 +1,9 @@
 # RP-001 — Web Review
 
-Repository PUBLIC sesuai instruksi Raihan. **PROTOCOL_DRAFTED — G3-AM-001 pending owner disposition.**
+Repository PUBLIC. Status terbaru: **PROTOCOL_LOCKED — RP-001-G3-v0.5-AM1, Stage A saja**.
 
-Baca [G3 status report](docs/protocol_lock/G3_FORMAL_PROTOCOL_LOCK_COMPLETION_REPORT.md), [amendment terbatas](docs/protocol_lock/AMENDMENT_REQUEST_G3_AM_001.md), dan [verification report](docs/protocol_lock/LOCK_VERIFICATION_REPORT.md). Seluruh 593 baseline files cocok. Lock berhenti karena aturan bracket/toleransi quantile tidak cocok dengan helper kode; tidak diperbaiki diam-diam.
+Baca [completion report](docs/protocol_lock/G3_FORMAL_PROTOCOL_LOCK_COMPLETION_REPORT.md), [locked contract](docs/protocol_lock/LOCKED_ANALYSIS_CONTRACT.md), [verification](docs/protocol_lock/LOCK_VERIFICATION_REPORT.md), dan [receipt](docs/protocol_lock/LOCK_RECEIPT.json).
 
-[Attempt receipt](docs/protocol_lock/LOCK_RECEIPT.json) mencatat evidence commit administratif; successful lock commit null. A diizinkan tetapi belum berhasil; B sensors, C freeze acceptance, D labels/scoring masih terpisah dan belum diizinkan.
+G3-AM-001 sudah disetujui owner. Perubahan hanya klarifikasi prosedur quantile yang cocok dengan kode tersimpan; tidak ada perubahan implementasi/model/prior/posterior/CQR/estimand/threshold. Kontrak v0.5 asli serta [laporan G3 gagal](docs/protocol_lock/history/G3_lock_attempt_1/HISTORY_CONTEXT.md) dipertahankan utuh.
 
-[Paket v0.5](docs/v0.5/README.md) dan c583ce62eac9a6b3dcd29c1929cc07c17569beb7 dipertahankan. Raw data/protected members tidak dipublikasikan. Current aliases memiliki byte archives. Caption private pada evidence lama merupakan catatan historis.
+B official sensors, C freeze acceptance, D labels/scoring masih memerlukan izin terpisah. Tidak ada test access atau eksperimen baru. Public GitHub tidak menggantikan izin dataset redistribution/publication; raw data/protected members tetap tidak dipublikasikan.

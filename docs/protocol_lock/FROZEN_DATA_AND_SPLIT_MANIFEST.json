@@ -1,0 +1,1050 @@
+{
+  "version": "RP-001-G3-v0.5-AM1",
+  "status": "FROZEN",
+  "dataset": "NASA original C-MAPSS FD001",
+  "training_sha256": "963b5e22825b34d8b21c69e1aeb4af3e647050eb672ee8834ba4b5d91d2de0f8",
+  "training_rows": 20631,
+  "training_engines": 100,
+  "training_fields": 26,
+  "data_provenance_record": {
+    "path": "data/raw/provenance.json",
+    "sha256": "d7f72145e04b4a4da9c51049d3d5fc1e1200d2534a21997ba4ef8701bcbe1bd6"
+  },
+  "opaque_archive_identities": [
+    {
+      "path": "data/raw/NASA_CMAPSS_original.zip",
+      "sha256": "c9c5dec12a945a82e8bb4446589d7fb3cc057b5e5d81fa1a12e25ee9912ad3b2",
+      "size_bytes": 12429152
+    },
+    {
+      "path": "data/raw/CMAPSSData.zip",
+      "sha256": "74bef434a34db25c7bf72e668ea4cd52afe5f2cf8e44367c55a82bfd91a5a34f",
+      "size_bytes": 12425978
+    }
+  ],
+  "opaque_archive_inspection": "Whole-file hash only; no protected member listing/extraction/read",
+  "split_manifest": {
+    "path": "configs/proposed_split_manifest.json",
+    "sha256": "6d6e0f10d979d41739c6c07b6bab8f0c32d2844ebd150e82d13caa3bd29e124b",
+    "entries": [
+      {
+        "dataset": "FD001_train",
+        "engine": 1,
+        "role": "tune",
+        "proposed_cutoff": 129,
+        "eligible_alive": true
+      },
+      {
+        "dataset": "FD001_train",
+        "engine": 2,
+        "role": "fit",
+        "proposed_cutoff": 69,
+        "eligible_alive": true
+      },
+      {
+        "dataset": "FD001_train",
+        "engine": 3,
+        "role": "fit",
+        "proposed_cutoff": 121,
+        "eligible_alive": true
+      },
+      {
+        "dataset": "FD001_train",
+        "engine": 4,
+        "role": "fit",
+        "proposed_cutoff": 112,
+        "eligible_alive": true
+      },
+      {
+        "dataset": "FD001_train",
+        "engine": 5,
+        "role": "fit",
+        "proposed_cutoff": 158,
+        "eligible_alive": true
+      },
+      {
+        "dataset": "FD001_train",
+        "engine": 6,
+        "role": "calibration",
+        "proposed_cutoff": 249,
+        "eligible_alive": false
+      },
+      {
+        "dataset": "FD001_train",
+        "engine": 7,
+        "role": "fit",
+        "proposed_cutoff": 135,
+        "eligible_alive": true
+      },
+      {
+        "dataset": "FD001_train",
+        "engine": 8,
+        "role": "fit",
+        "proposed_cutoff": 188,
+        "eligible_alive": false
+      },
+      {
+        "dataset": "FD001_train",
+        "engine": 9,
+        "role": "fit",
+        "proposed_cutoff": 37,
+        "eligible_alive": true
+      },
+      {
+        "dataset": "FD001_train",
+        "engine": 10,
+        "role": "fit",
+        "proposed_cutoff": 74,
+        "eligible_alive": true
+      },
+      {
+        "dataset": "FD001_train",
+        "engine": 11,
+        "role": "calibration",
+        "proposed_cutoff": 210,
+        "eligible_alive": true
+      },
+      {
+        "dataset": "FD001_train",
+        "engine": 12,
+        "role": "fit",
+        "proposed_cutoff": 126,
+        "eligible_alive": true
+      },
+      {
+        "dataset": "FD001_train",
+        "engine": 13,
+        "role": "fit",
+        "proposed_cutoff": 67,
+        "eligible_alive": true
+      },
+      {
+        "dataset": "FD001_train",
+        "engine": 14,
+        "role": "calibration",
+        "proposed_cutoff": 197,
+        "eligible_alive": false
+      },
+      {
+        "dataset": "FD001_train",
+        "engine": 15,
+        "role": "fit",
+        "proposed_cutoff": 211,
+        "eligible_alive": false
+      },
+      {
+        "dataset": "FD001_train",
+        "engine": 16,
+        "role": "calibration",
+        "proposed_cutoff": 160,
+        "eligible_alive": true
+      },
+      {
+        "dataset": "FD001_train",
+        "engine": 17,
+        "role": "fit",
+        "proposed_cutoff": 44,
+        "eligible_alive": true
+      },
+      {
+        "dataset": "FD001_train",
+        "engine": 18,
+        "role": "fit",
+        "proposed_cutoff": 191,
+        "eligible_alive": true
+      },
+      {
+        "dataset": "FD001_train",
+        "engine": 19,
+        "role": "fit",
+        "proposed_cutoff": 176,
+        "eligible_alive": false
+      },
+      {
+        "dataset": "FD001_train",
+        "engine": 20,
+        "role": "tune",
+        "proposed_cutoff": 193,
+        "eligible_alive": true
+      },
+      {
+        "dataset": "FD001_train",
+        "engine": 21,
+        "role": "tune",
+        "proposed_cutoff": 170,
+        "eligible_alive": true
+      },
+      {
+        "dataset": "FD001_train",
+        "engine": 22,
+        "role": "fit",
+        "proposed_cutoff": 141,
+        "eligible_alive": true
+      },
+      {
+        "dataset": "FD001_train",
+        "engine": 23,
+        "role": "fit",
+        "proposed_cutoff": 81,
+        "eligible_alive": true
+      },
+      {
+        "dataset": "FD001_train",
+        "engine": 24,
+        "role": "fit",
+        "proposed_cutoff": 193,
+        "eligible_alive": false
+      },
+      {
+        "dataset": "FD001_train",
+        "engine": 25,
+        "role": "calibration",
+        "proposed_cutoff": 189,
+        "eligible_alive": true
+      },
+      {
+        "dataset": "FD001_train",
+        "engine": 26,
+        "role": "calibration",
+        "proposed_cutoff": 98,
+        "eligible_alive": true
+      },
+      {
+        "dataset": "FD001_train",
+        "engine": 27,
+        "role": "tune",
+        "proposed_cutoff": 233,
+        "eligible_alive": false
+      },
+      {
+        "dataset": "FD001_train",
+        "engine": 28,
+        "role": "fit",
+        "proposed_cutoff": 216,
+        "eligible_alive": false
+      },
+      {
+        "dataset": "FD001_train",
+        "engine": 29,
+        "role": "calibration",
+        "proposed_cutoff": 186,
+        "eligible_alive": false
+      },
+      {
+        "dataset": "FD001_train",
+        "engine": 30,
+        "role": "fit",
+        "proposed_cutoff": 211,
+        "eligible_alive": false
+      },
+      {
+        "dataset": "FD001_train",
+        "engine": 31,
+        "role": "calibration",
+        "proposed_cutoff": 183,
+        "eligible_alive": true
+      },
+      {
+        "dataset": "FD001_train",
+        "engine": 32,
+        "role": "fit",
+        "proposed_cutoff": 44,
+        "eligible_alive": true
+      },
+      {
+        "dataset": "FD001_train",
+        "engine": 33,
+        "role": "calibration",
+        "proposed_cutoff": 156,
+        "eligible_alive": true
+      },
+      {
+        "dataset": "FD001_train",
+        "engine": 34,
+        "role": "calibration",
+        "proposed_cutoff": 164,
+        "eligible_alive": true
+      },
+      {
+        "dataset": "FD001_train",
+        "engine": 35,
+        "role": "tune",
+        "proposed_cutoff": 33,
+        "eligible_alive": true
+      },
+      {
+        "dataset": "FD001_train",
+        "engine": 36,
+        "role": "fit",
+        "proposed_cutoff": 105,
+        "eligible_alive": true
+      },
+      {
+        "dataset": "FD001_train",
+        "engine": 37,
+        "role": "calibration",
+        "proposed_cutoff": 214,
+        "eligible_alive": false
+      },
+      {
+        "dataset": "FD001_train",
+        "engine": 38,
+        "role": "fit",
+        "proposed_cutoff": 238,
+        "eligible_alive": false
+      },
+      {
+        "dataset": "FD001_train",
+        "engine": 39,
+        "role": "calibration",
+        "proposed_cutoff": 46,
+        "eligible_alive": true
+      },
+      {
+        "dataset": "FD001_train",
+        "engine": 40,
+        "role": "calibration",
+        "proposed_cutoff": 87,
+        "eligible_alive": true
+      },
+      {
+        "dataset": "FD001_train",
+        "engine": 41,
+        "role": "calibration",
+        "proposed_cutoff": 62,
+        "eligible_alive": true
+      },
+      {
+        "dataset": "FD001_train",
+        "engine": 42,
+        "role": "fit",
+        "proposed_cutoff": 102,
+        "eligible_alive": true
+      },
+      {
+        "dataset": "FD001_train",
+        "engine": 43,
+        "role": "fit",
+        "proposed_cutoff": 74,
+        "eligible_alive": true
+      },
+      {
+        "dataset": "FD001_train",
+        "engine": 44,
+        "role": "fit",
+        "proposed_cutoff": 71,
+        "eligible_alive": true
+      },
+      {
+        "dataset": "FD001_train",
+        "engine": 45,
+        "role": "calibration",
+        "proposed_cutoff": 51,
+        "eligible_alive": true
+      },
+      {
+        "dataset": "FD001_train",
+        "engine": 46,
+        "role": "fit",
+        "proposed_cutoff": 100,
+        "eligible_alive": true
+      },
+      {
+        "dataset": "FD001_train",
+        "engine": 47,
+        "role": "fit",
+        "proposed_cutoff": 117,
+        "eligible_alive": true
+      },
+      {
+        "dataset": "FD001_train",
+        "engine": 48,
+        "role": "tune",
+        "proposed_cutoff": 51,
+        "eligible_alive": true
+      },
+      {
+        "dataset": "FD001_train",
+        "engine": 49,
+        "role": "fit",
+        "proposed_cutoff": 93,
+        "eligible_alive": true
+      },
+      {
+        "dataset": "FD001_train",
+        "engine": 50,
+        "role": "calibration",
+        "proposed_cutoff": 107,
+        "eligible_alive": true
+      },
+      {
+        "dataset": "FD001_train",
+        "engine": 51,
+        "role": "calibration",
+        "proposed_cutoff": 149,
+        "eligible_alive": true
+      },
+      {
+        "dataset": "FD001_train",
+        "engine": 52,
+        "role": "fit",
+        "proposed_cutoff": 91,
+        "eligible_alive": true
+      },
+      {
+        "dataset": "FD001_train",
+        "engine": 53,
+        "role": "calibration",
+        "proposed_cutoff": 198,
+        "eligible_alive": false
+      },
+      {
+        "dataset": "FD001_train",
+        "engine": 54,
+        "role": "fit",
+        "proposed_cutoff": 213,
+        "eligible_alive": true
+      },
+      {
+        "dataset": "FD001_train",
+        "engine": 55,
+        "role": "calibration",
+        "proposed_cutoff": 152,
+        "eligible_alive": true
+      },
+      {
+        "dataset": "FD001_train",
+        "engine": 56,
+        "role": "calibration",
+        "proposed_cutoff": 112,
+        "eligible_alive": true
+      },
+      {
+        "dataset": "FD001_train",
+        "engine": 57,
+        "role": "fit",
+        "proposed_cutoff": 121,
+        "eligible_alive": true
+      },
+      {
+        "dataset": "FD001_train",
+        "engine": 58,
+        "role": "tune",
+        "proposed_cutoff": 123,
+        "eligible_alive": true
+      },
+      {
+        "dataset": "FD001_train",
+        "engine": 59,
+        "role": "calibration",
+        "proposed_cutoff": 154,
+        "eligible_alive": true
+      },
+      {
+        "dataset": "FD001_train",
+        "engine": 60,
+        "role": "tune",
+        "proposed_cutoff": 84,
+        "eligible_alive": true
+      },
+      {
+        "dataset": "FD001_train",
+        "engine": 61,
+        "role": "calibration",
+        "proposed_cutoff": 165,
+        "eligible_alive": true
+      },
+      {
+        "dataset": "FD001_train",
+        "engine": 62,
+        "role": "calibration",
+        "proposed_cutoff": 61,
+        "eligible_alive": true
+      },
+      {
+        "dataset": "FD001_train",
+        "engine": 63,
+        "role": "calibration",
+        "proposed_cutoff": 156,
+        "eligible_alive": true
+      },
+      {
+        "dataset": "FD001_train",
+        "engine": 64,
+        "role": "tune",
+        "proposed_cutoff": 118,
+        "eligible_alive": true
+      },
+      {
+        "dataset": "FD001_train",
+        "engine": 65,
+        "role": "tune",
+        "proposed_cutoff": 159,
+        "eligible_alive": false
+      },
+      {
+        "dataset": "FD001_train",
+        "engine": 66,
+        "role": "calibration",
+        "proposed_cutoff": 51,
+        "eligible_alive": true
+      },
+      {
+        "dataset": "FD001_train",
+        "engine": 67,
+        "role": "fit",
+        "proposed_cutoff": 171,
+        "eligible_alive": true
+      },
+      {
+        "dataset": "FD001_train",
+        "engine": 68,
+        "role": "fit",
+        "proposed_cutoff": 242,
+        "eligible_alive": false
+      },
+      {
+        "dataset": "FD001_train",
+        "engine": 69,
+        "role": "fit",
+        "proposed_cutoff": 208,
+        "eligible_alive": true
+      },
+      {
+        "dataset": "FD001_train",
+        "engine": 70,
+        "role": "fit",
+        "proposed_cutoff": 110,
+        "eligible_alive": true
+      },
+      {
+        "dataset": "FD001_train",
+        "engine": 71,
+        "role": "tune",
+        "proposed_cutoff": 180,
+        "eligible_alive": true
+      },
+      {
+        "dataset": "FD001_train",
+        "engine": 72,
+        "role": "calibration",
+        "proposed_cutoff": 63,
+        "eligible_alive": true
+      },
+      {
+        "dataset": "FD001_train",
+        "engine": 73,
+        "role": "fit",
+        "proposed_cutoff": 215,
+        "eligible_alive": false
+      },
+      {
+        "dataset": "FD001_train",
+        "engine": 74,
+        "role": "fit",
+        "proposed_cutoff": 45,
+        "eligible_alive": true
+      },
+      {
+        "dataset": "FD001_train",
+        "engine": 75,
+        "role": "calibration",
+        "proposed_cutoff": 79,
+        "eligible_alive": true
+      },
+      {
+        "dataset": "FD001_train",
+        "engine": 76,
+        "role": "tune",
+        "proposed_cutoff": 127,
+        "eligible_alive": true
+      },
+      {
+        "dataset": "FD001_train",
+        "engine": 77,
+        "role": "fit",
+        "proposed_cutoff": 175,
+        "eligible_alive": false
+      },
+      {
+        "dataset": "FD001_train",
+        "engine": 78,
+        "role": "tune",
+        "proposed_cutoff": 205,
+        "eligible_alive": true
+      },
+      {
+        "dataset": "FD001_train",
+        "engine": 79,
+        "role": "calibration",
+        "proposed_cutoff": 46,
+        "eligible_alive": true
+      },
+      {
+        "dataset": "FD001_train",
+        "engine": 80,
+        "role": "fit",
+        "proposed_cutoff": 144,
+        "eligible_alive": true
+      },
+      {
+        "dataset": "FD001_train",
+        "engine": 81,
+        "role": "fit",
+        "proposed_cutoff": 44,
+        "eligible_alive": true
+      },
+      {
+        "dataset": "FD001_train",
+        "engine": 82,
+        "role": "fit",
+        "proposed_cutoff": 57,
+        "eligible_alive": true
+      },
+      {
+        "dataset": "FD001_train",
+        "engine": 83,
+        "role": "fit",
+        "proposed_cutoff": 182,
+        "eligible_alive": true
+      },
+      {
+        "dataset": "FD001_train",
+        "engine": 84,
+        "role": "fit",
+        "proposed_cutoff": 181,
+        "eligible_alive": true
+      },
+      {
+        "dataset": "FD001_train",
+        "engine": 85,
+        "role": "calibration",
+        "proposed_cutoff": 52,
+        "eligible_alive": true
+      },
+      {
+        "dataset": "FD001_train",
+        "engine": 86,
+        "role": "calibration",
+        "proposed_cutoff": 30,
+        "eligible_alive": true
+      },
+      {
+        "dataset": "FD001_train",
+        "engine": 87,
+        "role": "fit",
+        "proposed_cutoff": 135,
+        "eligible_alive": true
+      },
+      {
+        "dataset": "FD001_train",
+        "engine": 88,
+        "role": "fit",
+        "proposed_cutoff": 150,
+        "eligible_alive": true
+      },
+      {
+        "dataset": "FD001_train",
+        "engine": 89,
+        "role": "fit",
+        "proposed_cutoff": 60,
+        "eligible_alive": true
+      },
+      {
+        "dataset": "FD001_train",
+        "engine": 90,
+        "role": "fit",
+        "proposed_cutoff": 221,
+        "eligible_alive": false
+      },
+      {
+        "dataset": "FD001_train",
+        "engine": 91,
+        "role": "fit",
+        "proposed_cutoff": 149,
+        "eligible_alive": false
+      },
+      {
+        "dataset": "FD001_train",
+        "engine": 92,
+        "role": "fit",
+        "proposed_cutoff": 230,
+        "eligible_alive": true
+      },
+      {
+        "dataset": "FD001_train",
+        "engine": 93,
+        "role": "fit",
+        "proposed_cutoff": 79,
+        "eligible_alive": true
+      },
+      {
+        "dataset": "FD001_train",
+        "engine": 94,
+        "role": "fit",
+        "proposed_cutoff": 82,
+        "eligible_alive": true
+      },
+      {
+        "dataset": "FD001_train",
+        "engine": 95,
+        "role": "tune",
+        "proposed_cutoff": 46,
+        "eligible_alive": true
+      },
+      {
+        "dataset": "FD001_train",
+        "engine": 96,
+        "role": "fit",
+        "proposed_cutoff": 34,
+        "eligible_alive": true
+      },
+      {
+        "dataset": "FD001_train",
+        "engine": 97,
+        "role": "fit",
+        "proposed_cutoff": 126,
+        "eligible_alive": true
+      },
+      {
+        "dataset": "FD001_train",
+        "engine": 98,
+        "role": "tune",
+        "proposed_cutoff": 103,
+        "eligible_alive": true
+      },
+      {
+        "dataset": "FD001_train",
+        "engine": 99,
+        "role": "fit",
+        "proposed_cutoff": 104,
+        "eligible_alive": true
+      },
+      {
+        "dataset": "FD001_train",
+        "engine": 100,
+        "role": "fit",
+        "proposed_cutoff": 118,
+        "eligible_alive": true
+      }
+    ]
+  },
+  "split_rule": {
+    "seed": "RP001-20261008-v0.2",
+    "roles": "IDs sorted by SHA256(seed|split|ID); 55 fit,15 tune,30 calibration",
+    "cutoff": "30 + int(SHA256(seed|cutoff|ID),16)%221",
+    "eligibility": "C<T, no redraw/replacement",
+    "eligible_counts": {
+      "fit": 43,
+      "tune": 13,
+      "calibration": 25
+    },
+    "refit_engines": 56
+  },
+  "calibration_engine_ids": [
+    11,
+    16,
+    25,
+    26,
+    31,
+    33,
+    34,
+    39,
+    40,
+    41,
+    45,
+    50,
+    51,
+    55,
+    56,
+    59,
+    61,
+    62,
+    63,
+    66,
+    72,
+    75,
+    79,
+    85,
+    86
+  ],
+  "preprocessing_policy": "Fit43 for tuning/refit56 for final; equal engine weight1/n,row1/(n*C); SD<=1e-8 drop; PC1 sign largest loading positive; scale sqrt(top eigenvalue); saved refit maps shared",
+  "official_cutoff_policy": "One endpoint at last observed C, no hash pseudo-cutoff, label eligibility/min-history/30..250 restriction, engine dropping or pooled test preprocessing",
+  "official_population_expected_n": 100,
+  "official_count_verified": false,
+  "protected_authorization": {
+    "stage_A_formal_lock": true,
+    "stage_B_official_test_sensors": false,
+    "stage_C_prediction_freeze_acceptance": false,
+    "stage_D_official_test_labels_and_scoring": false
+  },
+  "stage_B_integrity_policy": "All expected endpoints, 26 fields, finite values, positive contiguous cycles, unique engine-cycle namespaces; overlap audit and >=30common cycles near-duplicate meanNRMSE<=.02/maxchannel<=.10 heuristic; flag stops for owner, no engine deletion",
+  "label_policy": "Stage D only after Stage C acceptance; exact complete N alignment, source/hash, finite positive uncapped RUL",
+  "raw_redistribution_rights": "Unresolved; raw archive/training/protected members remain ignored and excluded from public Git",
+  "local_only_historical_payloads": [
+    {
+      "original_path": "data/raw/CMAPSSData.zip",
+      "verified_current_location": "data/raw/CMAPSSData.zip",
+      "sha256": "74bef434a34db25c7bf72e668ea4cd52afe5f2cf8e44367c55a82bfd91a5a34f",
+      "bytes": 12425978,
+      "matches": true,
+      "available_in_original_git_snapshot": false
+    },
+    {
+      "original_path": "data/raw/NASA_CMAPSS_original.zip",
+      "verified_current_location": "data/raw/NASA_CMAPSS_original.zip",
+      "sha256": "c9c5dec12a945a82e8bb4446589d7fb3cc057b5e5d81fa1a12e25ee9912ad3b2",
+      "bytes": 12429152,
+      "matches": true,
+      "available_in_original_git_snapshot": false
+    },
+    {
+      "original_path": "data/raw/readme.txt",
+      "verified_current_location": "data/raw/readme.txt",
+      "sha256": "4f5270554b775c67e73aff383c5436fd329d6e4cc3d3a116913276fae511269b",
+      "bytes": 2442,
+      "matches": true,
+      "available_in_original_git_snapshot": false
+    },
+    {
+      "original_path": "data/raw/train_FD001.txt",
+      "verified_current_location": "data/raw/train_FD001.txt",
+      "sha256": "963b5e22825b34d8b21c69e1aeb4af3e647050eb672ee8834ba4b5d91d2de0f8",
+      "bytes": 3515356,
+      "matches": true,
+      "available_in_original_git_snapshot": false
+    },
+    {
+      "original_path": "results/pilot/base.nc",
+      "verified_current_location": "results/pilot/base.nc",
+      "sha256": "4d059e06f77bfc1cb970f7f166a90f94e6be0d77cd6b36dc8ff66246990a1405",
+      "bytes": 1653439,
+      "matches": true,
+      "available_in_original_git_snapshot": false
+    },
+    {
+      "original_path": "results/pilot/base_data.npz",
+      "verified_current_location": "results/pilot/base_data.npz",
+      "sha256": "6df7d51b259a5af06a0fe68f4633c08e80aa6acfacab1c7fe34b3bb13ceeca8d",
+      "bytes": 13372,
+      "matches": true,
+      "available_in_original_git_snapshot": false
+    },
+    {
+      "original_path": "results/pilot/contamination.nc",
+      "verified_current_location": "results/pilot/contamination.nc",
+      "sha256": "4dd74290f4bcba275cfda6a5d8dd1d89338996a0f184bef9f1a04a95c09e00f2",
+      "bytes": 1651753,
+      "matches": true,
+      "available_in_original_git_snapshot": false
+    },
+    {
+      "original_path": "results/pilot/contamination_data.npz",
+      "verified_current_location": "results/pilot/contamination_data.npz",
+      "sha256": "6df7d51b259a5af06a0fe68f4633c08e80aa6acfacab1c7fe34b3bb13ceeca8d",
+      "bytes": 13372,
+      "matches": true,
+      "available_in_original_git_snapshot": false
+    },
+    {
+      "original_path": "results/pilot/fit_preprocessor.npz",
+      "verified_current_location": "results/pilot/fit_preprocessor.npz",
+      "sha256": "e1f4a4df8c73fb43f867c64073455a87fd2ecfc8b7ccec1a4ddce42eafd7fc6b",
+      "bytes": 2583,
+      "matches": true,
+      "available_in_original_git_snapshot": false
+    },
+    {
+      "original_path": "results/pilot/prior_double.nc",
+      "verified_current_location": "results/pilot/prior_double.nc",
+      "sha256": "08250ad48e1a10cb0a0bb43795840c9bfb08a6f7400899940d3e2efa0c043ddc",
+      "bytes": 1651768,
+      "matches": true,
+      "available_in_original_git_snapshot": false
+    },
+    {
+      "original_path": "results/pilot/prior_double_data.npz",
+      "verified_current_location": "results/pilot/prior_double_data.npz",
+      "sha256": "6df7d51b259a5af06a0fe68f4633c08e80aa6acfacab1c7fe34b3bb13ceeca8d",
+      "bytes": 13372,
+      "matches": true,
+      "available_in_original_git_snapshot": false
+    },
+    {
+      "original_path": "results/pilot/prior_half.nc",
+      "verified_current_location": "results/pilot/prior_half.nc",
+      "sha256": "864b7427a2bf0e1d726dbb68215f2581e01bb66fd886d07f4f4875b9d2a60fd0",
+      "bytes": 1653048,
+      "matches": true,
+      "available_in_original_git_snapshot": false
+    },
+    {
+      "original_path": "results/pilot/prior_half_data.npz",
+      "verified_current_location": "results/pilot/prior_half_data.npz",
+      "sha256": "6df7d51b259a5af06a0fe68f4633c08e80aa6acfacab1c7fe34b3bb13ceeca8d",
+      "bytes": 13372,
+      "matches": true,
+      "available_in_original_git_snapshot": false
+    },
+    {
+      "original_path": "results/pilot/refit.nc",
+      "verified_current_location": "results/pilot/refit.nc",
+      "sha256": "3c760d41cc2610774e9c4b59240c9c310f47ce762b4b0d51dd68592b4b3f9b7b",
+      "bytes": 1649855,
+      "matches": true,
+      "available_in_original_git_snapshot": false
+    },
+    {
+      "original_path": "results/pilot/refit_data.npz",
+      "verified_current_location": "results/pilot/refit_data.npz",
+      "sha256": "4bbbfa52d699728301baef6593af545a1c16603ea892665a5801ba4a9222f503",
+      "bytes": 16908,
+      "matches": true,
+      "available_in_original_git_snapshot": false
+    },
+    {
+      "original_path": "results/pilot/refit_preprocessor.npz",
+      "verified_current_location": "results/pilot/refit_preprocessor.npz",
+      "sha256": "f23b7fdd1c354d92468cdff02b056d7cda603cfc00d52d3ba24917dcd5c01b9e",
+      "bytes": 2687,
+      "matches": true,
+      "available_in_original_git_snapshot": false
+    },
+    {
+      "original_path": "results/pilot/refit_preprocessor_bayes.npz",
+      "verified_current_location": "results/pilot/refit_preprocessor_bayes.npz",
+      "sha256": "f23b7fdd1c354d92468cdff02b056d7cda603cfc00d52d3ba24917dcd5c01b9e",
+      "bytes": 2687,
+      "matches": true,
+      "available_in_original_git_snapshot": false
+    },
+    {
+      "original_path": "results/pilot/rho_zero.nc",
+      "verified_current_location": "results/pilot/rho_zero.nc",
+      "sha256": "7cd6b654d15f6b172eb55fec825884c9c2eb29c4c9b482482fc91d627d795501",
+      "bytes": 1526662,
+      "matches": true,
+      "available_in_original_git_snapshot": false
+    },
+    {
+      "original_path": "results/pilot/rho_zero_data.npz",
+      "verified_current_location": "results/pilot/rho_zero_data.npz",
+      "sha256": "6df7d51b259a5af06a0fe68f4633c08e80aa6acfacab1c7fe34b3bb13ceeca8d",
+      "bytes": 13372,
+      "matches": true,
+      "available_in_original_git_snapshot": false
+    },
+    {
+      "original_path": "results/pilot/selected_comparator.joblib",
+      "verified_current_location": "results/pilot/selected_comparator.joblib",
+      "sha256": "85027f22fc1c4f4d20748412d6072ad7b23e493f0b008fffc15cb0800683458f",
+      "bytes": 300460,
+      "matches": true,
+      "available_in_original_git_snapshot": false
+    },
+    {
+      "original_path": "results/pilot/sensor_oracle.nc",
+      "verified_current_location": "results/pilot/sensor_oracle.nc",
+      "sha256": "1937f0949e880daa50b38cc880f818456353ad12242f36f06a42e7f4a5b90c8b",
+      "bytes": 1649596,
+      "matches": true,
+      "available_in_original_git_snapshot": false
+    },
+    {
+      "original_path": "results/pilot/sensor_oracle_data.npz",
+      "verified_current_location": "results/pilot/sensor_oracle_data.npz",
+      "sha256": "4bbbfa52d699728301baef6593af545a1c16603ea892665a5801ba4a9222f503",
+      "bytes": 16908,
+      "matches": true,
+      "available_in_original_git_snapshot": false
+    },
+    {
+      "original_path": "results/pilot/sensor_oracle_extra_sensors.npz",
+      "verified_current_location": "results/pilot/sensor_oracle_extra_sensors.npz",
+      "sha256": "c0b5f71045f2a4ac5a76d7174b5de793f03b9d62a9aa4a852ad430b644b259d3",
+      "bytes": 1706,
+      "matches": true,
+      "available_in_original_git_snapshot": false
+    },
+    {
+      "original_path": "results/pilot/syn_r05.nc",
+      "verified_current_location": "results/pilot/syn_r05.nc",
+      "sha256": "6c69801f46747a27aa681cf17cdddb548e41877a8ea40d8a8dc1190a9bae7edc",
+      "bytes": 1654057,
+      "matches": true,
+      "available_in_original_git_snapshot": false
+    },
+    {
+      "original_path": "results/pilot/syn_r05_data.npz",
+      "verified_current_location": "results/pilot/syn_r05_data.npz",
+      "sha256": "769ec0c24f8c2b185ecb3d9744083ee21c584502625c5ad6e3cafe576ad45a1a",
+      "bytes": 16908,
+      "matches": true,
+      "available_in_original_git_snapshot": false
+    },
+    {
+      "original_path": "results/pilot/syn_r09.nc",
+      "verified_current_location": "results/pilot/syn_r09.nc",
+      "sha256": "20af9c5b850a30acfea39768ae78e08c301ab088705453238633e6b689a11f0d",
+      "bytes": 1660340,
+      "matches": true,
+      "available_in_original_git_snapshot": false
+    },
+    {
+      "original_path": "results/pilot/syn_r09_data.npz",
+      "verified_current_location": "results/pilot/syn_r09_data.npz",
+      "sha256": "2c0cb7854779de66763f3ee6e5b471479d4abf0375a2bbfc6e219b1311146656",
+      "bytes": 16908,
+      "matches": true,
+      "available_in_original_git_snapshot": false
+    },
+    {
+      "original_path": "results/pilot/syn_r0_data.npz",
+      "verified_current_location": "results/pilot/syn_r0_data.npz",
+      "sha256": "d4192d286976a8d870ccd75a313d7b466d4c85eb1cb07987cd8cca523eb91106",
+      "bytes": 16908,
+      "matches": true,
+      "available_in_original_git_snapshot": false
+    },
+    {
+      "original_path": "results/pilot/syn_r0_repair1_data.npz",
+      "verified_current_location": "results/pilot/syn_r0_repair1_data.npz",
+      "sha256": "d4192d286976a8d870ccd75a313d7b466d4c85eb1cb07987cd8cca523eb91106",
+      "bytes": 16908,
+      "matches": true,
+      "available_in_original_git_snapshot": false
+    },
+    {
+      "original_path": "results/pilot/syn_r0_repair2.nc",
+      "verified_current_location": "results/pilot/syn_r0_repair2.nc",
+      "sha256": "35aef1780e5fb35c86ad00842987401fdcb4e6439c51740bb326c689031f06bf",
+      "bytes": 1651498,
+      "matches": true,
+      "available_in_original_git_snapshot": false
+    },
+    {
+      "original_path": "results/pilot/syn_r0_repair2_data.npz",
+      "verified_current_location": "results/pilot/syn_r0_repair2_data.npz",
+      "sha256": "d4192d286976a8d870ccd75a313d7b466d4c85eb1cb07987cd8cca523eb91106",
+      "bytes": 16908,
+      "matches": true,
+      "available_in_original_git_snapshot": false
+    },
+    {
+      "original_path": "results/pilot/syn_weak.nc",
+      "verified_current_location": "results/pilot/syn_weak.nc",
+      "sha256": "1e805691881e2cb2ce54d6aafc34d67f9090cc91a016f48f2f6e3d1976081631",
+      "bytes": 1657258,
+      "matches": true,
+      "available_in_original_git_snapshot": false
+    },
+    {
+      "original_path": "results/pilot/syn_weak_data.npz",
+      "verified_current_location": "results/pilot/syn_weak_data.npz",
+      "sha256": "6fcfc2f886936c05194ca720161d21815f9d40226f87eb3d48a63476f997cedb",
+      "bytes": 16908,
+      "matches": true,
+      "available_in_original_git_snapshot": false
+    }
+  ]
+}

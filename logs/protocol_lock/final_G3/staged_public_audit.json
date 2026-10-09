@@ -1,0 +1,301 @@
+{
+  "scope": "All staged files; filenames and concrete credential/private-key signatures; no secret values printed. Bounded scan, not proof against every possible secret.",
+  "audited_at_utc": "2026-10-09T02:16:56.860513+00:00",
+  "status": "PASS",
+  "files_checked": 58,
+  "findings": [],
+  "staged_files": [
+    {
+      "path": "GITHUB_REVIEW.md",
+      "bytes": 988,
+      "sha256": "c9d253020f2c68156868cf74fb100092045d43236b8eef45e5f84998ce734711"
+    },
+    {
+      "path": "README.md",
+      "bytes": 1662,
+      "sha256": "422e7902f696c315c666732833b8748c6f190cb6d411caf473a765308b77896c"
+    },
+    {
+      "path": "configs/protocol_lock_record.json",
+      "bytes": 1482,
+      "sha256": "df9c6e56f1c8d5f5a1538c761235435f99ac4bf723810e81a746aef8b4b7f021"
+    },
+    {
+      "path": "docs/protocol_lock/AMENDMENT_CHANGE_RECORD.json",
+      "bytes": 4081,
+      "sha256": "880225f3daa0c5f9153b49c69ac3b1cdd24df7c7d4f0244ef6f0d10d886abfda"
+    },
+    {
+      "path": "docs/protocol_lock/AMENDMENT_DIFF.patch",
+      "bytes": 2717,
+      "sha256": "632b2b5cccfb5d830ab74ae1d1c810bc0bbd54758557cea3dab8e54c3f41fe9b"
+    },
+    {
+      "path": "docs/protocol_lock/FROZEN_CODE_AND_ENVIRONMENT_MANIFEST.json",
+      "bytes": 12121,
+      "sha256": "e9667092f3ea5b04173c0b5f7ef45d8d9b7759873a6e0b16f843a5c0d168551c"
+    },
+    {
+      "path": "docs/protocol_lock/FROZEN_DATA_AND_SPLIT_MANIFEST.json",
+      "bytes": 30675,
+      "sha256": "f8a7f411b01aea09c0243a53f4432299bca111a92efbd5b4c81a2406faf99c40"
+    },
+    {
+      "path": "docs/protocol_lock/FROZEN_MODEL_AND_CONFIGURATION_MANIFEST.json",
+      "bytes": 22566,
+      "sha256": "c8e3c469838705696c8ee2124d74e2c81223fdb2414c2fc95b7a47ec3415200f"
+    },
+    {
+      "path": "docs/protocol_lock/G3_FORMAL_PROTOCOL_LOCK_COMPLETION_REPORT.md",
+      "bytes": 3561,
+      "sha256": "2f6cea6896f8eeafebc12e34f12ab52ab2e64bda2e4dcf01a019cc23fd2ae4c7"
+    },
+    {
+      "path": "docs/protocol_lock/LOCKED_ANALYSIS_CONTRACT.md",
+      "bytes": 14076,
+      "sha256": "335e202170d826c80453a3c2136c999b966560303e18e6678464d50caff2c0e4"
+    },
+    {
+      "path": "docs/protocol_lock/LOCKED_RESEARCH_PROTOCOL.md",
+      "bytes": 3911,
+      "sha256": "78f37893cb0d7df1214f738a7236fecd8617bd16ab664654f0b451bd6679c594"
+    },
+    {
+      "path": "docs/protocol_lock/LOCK_DECISION_RECORD.md",
+      "bytes": 2534,
+      "sha256": "944be25383841860241608d55e33e7311403ce3a5bb8c8f0a0212ae7d54d4cd4"
+    },
+    {
+      "path": "docs/protocol_lock/LOCK_RECEIPT.json",
+      "bytes": 525,
+      "sha256": "c58306211b14ed3827cff6f449497336108aa77c738c9484f07decda848bf758"
+    },
+    {
+      "path": "docs/protocol_lock/LOCK_VERIFICATION_REPORT.md",
+      "bytes": 10593,
+      "sha256": "b085cf5b4ba6ee2dabf11e4abe72e310ab577bb528642f244defe6a7d919609b"
+    },
+    {
+      "path": "docs/protocol_lock/OWNER_AMENDMENT_DECISION_G3_AM_001.md",
+      "bytes": 2567,
+      "sha256": "e1b2ab0e21512d41b840621a05e6ef3deec19022e78ca7f4425a71a7033cd64a"
+    },
+    {
+      "path": "docs/protocol_lock/PROTECTED_EVALUATION_ACCESS_POLICY.md",
+      "bytes": 2531,
+      "sha256": "75194576c749d1a4e4e47fcb1e644bfc87bd49c52bdd6c8dc15bb7d9b4c0aa68"
+    },
+    {
+      "path": "docs/protocol_lock/README.md",
+      "bytes": 1259,
+      "sha256": "025a19cd0686076ee23e07f86fc1769796b07ddd2a63fe7d376518ab3f899d10"
+    },
+    {
+      "path": "docs/protocol_lock/SCIENTIFIC_CLAIM_BOUNDARIES.md",
+      "bytes": 2253,
+      "sha256": "5e4caee6fec8663362e74d06147c757946900abc9a807583408de39da41f520a"
+    },
+    {
+      "path": "docs/protocol_lock/history/G3_lock_attempt_1/AMENDMENT_REQUEST_G3_AM_001.md",
+      "bytes": 4694,
+      "sha256": "0360abed700e05eb76f60fa80c6d8c0e5b9433844056018988a9560e7d67adc7"
+    },
+    {
+      "path": "docs/protocol_lock/history/G3_lock_attempt_1/G3_FORMAL_PROTOCOL_LOCK_COMPLETION_REPORT.md",
+      "bytes": 2648,
+      "sha256": "de6110967f43d8984f5972eee807deeae6385d5313a1ffa38eff898b442370af"
+    },
+    {
+      "path": "docs/protocol_lock/history/G3_lock_attempt_1/HISTORY_CONTEXT.md",
+      "bytes": 429,
+      "sha256": "fb6e0695b237efdf804a87cefa5584c058ac6f77260225475cd6b7480525f6f9"
+    },
+    {
+      "path": "docs/protocol_lock/history/G3_lock_attempt_1/LOCK_RECEIPT.json",
+      "bytes": 11207,
+      "sha256": "e5e046e03c5304c087c83a61ad8cffb8e57da8da4bb5964da14ca904524d8761"
+    },
+    {
+      "path": "docs/protocol_lock/history/G3_lock_attempt_1/LOCK_VERIFICATION_REPORT.md",
+      "bytes": 8628,
+      "sha256": "3b41883026b784adc8aef022c836d7303e171471b26598f09623ac6b2f6b32c9"
+    },
+    {
+      "path": "docs/protocol_lock/history/G3_lock_attempt_1/OWNER_AUTHORIZATION_G3.md",
+      "bytes": 12810,
+      "sha256": "ac5a51a4ddb17048507e36cd30ae7f735e0d52180dead411dbeb918338faf132"
+    },
+    {
+      "path": "docs/protocol_lock/history/G3_lock_attempt_1/README.md",
+      "bytes": 603,
+      "sha256": "06902734465b71e8855f1016642b92d432e4d6834287903c2cea1b2db9623c7d"
+    },
+    {
+      "path": "docs/protocol_lock/history/G3_lock_attempt_1/VERIFIED_BASELINE_MANIFEST.json",
+      "bytes": 196836,
+      "sha256": "3faf756426c0696926f644c274e47f7fbb330d5c9e0ea395b14d2d578f0d6c11"
+    },
+    {
+      "path": "docs/protocol_lock/history/G3_lock_attempt_1/research_lead_handoff.json",
+      "bytes": 6152,
+      "sha256": "73dbdf542fd10107e9c7d9b272f6fd80a98595b6258d5bd8ece53bb4a502df13"
+    },
+    {
+      "path": "docs/protocol_lock/provenance/amended_v0.5_source_contract.md",
+      "bytes": 13417,
+      "sha256": "b5d719bad3d24e531de57e7503d4eb9a697f1840bcc5f3d41692ed0c5fd98a9f"
+    },
+    {
+      "path": "docs/protocol_lock/research_lead_handoff.json",
+      "bytes": 9581,
+      "sha256": "f9c5db5bc2fd135d9e122813efd65a3dd985d6c6d82d97a23249c1dbbd71af24"
+    },
+    {
+      "path": "logs/protocol_lock/final_G3/administrative_reference_reconciliation.json",
+      "bytes": 3971,
+      "sha256": "44e40b75614a41c5eb23e21c282fd7aef51ef1c7ca5c166fe5e82bc8a9fed8e8"
+    },
+    {
+      "path": "logs/protocol_lock/final_G3/audit_public_history.py",
+      "bytes": 3031,
+      "sha256": "3ade5808a7d2f9d06355bb9443aa2db0caee6fac4cc9a9414c422ed51509e29a"
+    },
+    {
+      "path": "logs/protocol_lock/final_G3/audit_resume_baseline.py",
+      "bytes": 9616,
+      "sha256": "402fb6dc387efd7a41cefcd55a176fd84ffd4c5f65c539a67f7c5d0a02c39a39"
+    },
+    {
+      "path": "logs/protocol_lock/final_G3/audit_staged_public.py",
+      "bytes": 1870,
+      "sha256": "8234ab1aa522f983da60874f4d4407a7f8d7bcc1131250e317b8b206f4d204b6"
+    },
+    {
+      "path": "logs/protocol_lock/final_G3/build_context.json",
+      "bytes": 9656,
+      "sha256": "df4931e0fd9657e64b47d7772a61a8dff8a0d26716c89d631f0ce5d5dc5f529b"
+    },
+    {
+      "path": "logs/protocol_lock/final_G3/build_final_lock.py",
+      "bytes": 31456,
+      "sha256": "78046536980c99f3f543fff60f4c4e8511928a5bf8bcf598006dfa4f262bd8ea"
+    },
+    {
+      "path": "logs/protocol_lock/final_G3/create_final_lock_receipt.py",
+      "bytes": 5513,
+      "sha256": "9a73b7ba5d65bf69a7de36fc73d563252b1b178a0c3cac31059d565cfce3eed8"
+    },
+    {
+      "path": "logs/protocol_lock/final_G3/direct_SOL_component_review.json",
+      "bytes": 9370,
+      "sha256": "450b159d29b99e69a0ba03d8fbcc9b54dd9619cc172e578a0ab4bfe1a961dc21"
+    },
+    {
+      "path": "logs/protocol_lock/final_G3/finalize_lock_reports.py",
+      "bytes": 24966,
+      "sha256": "3f1646fc8d7694a4ee3096e961a459a1bb874179cd24030d1e59e6b9612ca840"
+    },
+    {
+      "path": "logs/protocol_lock/final_G3/native_validation.json",
+      "bytes": 265,
+      "sha256": "ea9f9cf8feab63b92f8afb6cbdeb72077de6c7fd9c72f5a896ced0a0d3825518"
+    },
+    {
+      "path": "logs/protocol_lock/final_G3/package_qc.json",
+      "bytes": 1608,
+      "sha256": "89aae0a31904555ce150a7484c9ee7cc55c1ab2efe5c50781aa4d78b657d265e"
+    },
+    {
+      "path": "logs/protocol_lock/final_G3/public_history_audit.json",
+      "bytes": 995,
+      "sha256": "35e9fa7b3f766c51d6a565b96356504dbb4abd93b25eabcf1c974807e7242ed0"
+    },
+    {
+      "path": "logs/protocol_lock/final_G3/resume_baseline_verification.json",
+      "bytes": 232109,
+      "sha256": "4d9391b4b3eeed1ddd5a1f79d6f4b32f8a130219e0508af6b68940286ef6bcf3"
+    },
+    {
+      "path": "logs/protocol_lock/final_G3/verify_final_lock.py",
+      "bytes": 7819,
+      "sha256": "5b1a53e5abf45c5cbfa427e7295f910a203ba3e43de8a0a9ea26fb2b5afad2d1"
+    },
+    {
+      "path": "research/artifact_map.csv",
+      "bytes": 95606,
+      "sha256": "7e1b00e1b155d3b9acf066c804d67dbda10232e360ec717622f5290a817ceedc"
+    },
+    {
+      "path": "research/decision_log.md",
+      "bytes": 3267,
+      "sha256": "998fd67099b28ef826dcfb272c76d44164133783fd1f96b74ecb0aa4230bec2b"
+    },
+    {
+      "path": "research/gate_results.json",
+      "bytes": 4648,
+      "sha256": "40241c7b1cf6f5a510c2e54dcb96fa699386af6eb0622bf64e77a089b3b9a893"
+    },
+    {
+      "path": "research/protocol.json",
+      "bytes": 9037,
+      "sha256": "16b9bc8317b3139ed4978dc7ff3adbcc4b119cde1433990b703224746292349c"
+    },
+    {
+      "path": "research/protocol_lock/final_G3/baseline_current_aliases/GITHUB_REVIEW.md",
+      "bytes": 1020,
+      "sha256": "17fae7260d80a7d0a509fa0bba4fd8af3145b189ecde2c0f987243efad9d3c0f"
+    },
+    {
+      "path": "research/protocol_lock/final_G3/baseline_current_aliases/README.md",
+      "bytes": 1592,
+      "sha256": "7ed40e877da2562bc6436423d22e5b75c345fc20cbcf79f67eab225237850f69"
+    },
+    {
+      "path": "research/protocol_lock/final_G3/baseline_current_aliases/configs/protocol_lock_record.json",
+      "bytes": 775,
+      "sha256": "468a7dfd7641b8a6a89c7adc5b45a7dbfc630d5f0971e51071724279d144e640"
+    },
+    {
+      "path": "research/protocol_lock/final_G3/baseline_current_aliases/research/artifact_map.csv",
+      "bytes": 93389,
+      "sha256": "734ae2f63080a6d499fb1dea4290272816e262bccc657efc37cef0255988225a"
+    },
+    {
+      "path": "research/protocol_lock/final_G3/baseline_current_aliases/research/decision_log.md",
+      "bytes": 2654,
+      "sha256": "0e0cfe95efcf8254899396e9b5905666edbff66dadb71ad1a6ed37c039bf3508"
+    },
+    {
+      "path": "research/protocol_lock/final_G3/baseline_current_aliases/research/gate_results.json",
+      "bytes": 4141,
+      "sha256": "03d4677544b8bc7e1e7a10141a7db58769d8778f2deab0a45d5c8cfeebabb26c"
+    },
+    {
+      "path": "research/protocol_lock/final_G3/baseline_current_aliases/research/protocol.json",
+      "bytes": 8347,
+      "sha256": "b3b6587b3785eaa0c5602ad5967d60c5fe897f04e7d3835b118cc5420da28921"
+    },
+    {
+      "path": "research/protocol_lock/final_G3/baseline_current_aliases/research/state_manifest.json",
+      "bytes": 1672,
+      "sha256": "08c99e0c355c3f3c71468f4982d88d79b80b2142d0b3b5d1f9e0a7623cfa4279"
+    },
+    {
+      "path": "research/protocol_lock/final_G3/preservation_map.json",
+      "bytes": 5008,
+      "sha256": "5f499a253bfd79671a59fda6e73f749929e6817848a6136060861a9addda9ad8"
+    },
+    {
+      "path": "research/protocol_lock/final_G3/risk_register.json",
+      "bytes": 543,
+      "sha256": "834dcb8b7d8e5979616442b23d98b719c32f0cf4abbaf16ba67edbcbe536feb2"
+    },
+    {
+      "path": "research/state_manifest.json",
+      "bytes": 2101,
+      "sha256": "5075c1dabb3dbc98b58da50f723c0a80b3a7b108396efa05d44919ddbe1e8efd"
+    }
+  ],
+  "historical_scan": "logs/protocol_lock/final_G3/public_history_audit.json",
+  "raw_dataset_redistribution_authorized": false
+}

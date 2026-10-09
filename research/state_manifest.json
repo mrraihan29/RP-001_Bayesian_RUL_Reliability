@@ -1,22 +1,22 @@
 {
   "schema_version": "0.5",
-  "record_type": "current-G3-lock-attempt-state-pointer",
+  "record_type": "current-formal-G3-locked-state-pointer",
   "created_at": "2026-10-08T16:31:26.535785+00:00",
-  "protocol_status": "PROTOCOL_DRAFTED",
-  "recommendation": "OWNER AMENDMENT REVIEW REQUIRED",
+  "protocol_status": "PROTOCOL_LOCKED",
+  "recommendation": "PROTOCOL_LOCKED_AWAITING_SEPARATE_STAGE_B_AUTHORIZATION",
   "scientific_execution_source_commit": "304d8e76d03fe7d69dc7f8f9bb6de3c600a219dd",
   "final_artifact_manifest": "logs/v0.5/delivery_manifest.json",
   "final_commit_receipt": "logs/v0.5/delivery_receipt.json",
-  "baseline_state_archive": "research/protocol_lock/baseline_current_aliases/research/state_manifest.json",
+  "baseline_state_archive": "research/protocol_lock/final_G3/baseline_current_aliases/research/state_manifest.json",
   "environment_fingerprint": "f57b00a67e9d67b2920791bfddc8dc812dbdeb9306588a26557dfd6be15f826c",
   "official_test_access": false,
   "confirmatory": false,
   "protocol_lock_authorized": true,
-  "note": "Human G3 lock authorized; consistency fails pending amendment. No protected access or new science.",
+  "note": "Formal G3 lock completed after approved quantile specification amendment; no scientific implementation change or protected permission.",
   "analysis_source_commit": "60e9208fdd216abf51677f80514ac77e7e4fe9e6",
-  "updated_at": "2026-10-08T17:18:03.859503+00:00",
-  "protocol_lock_succeeded": false,
-  "protocol_locked_at": null,
+  "updated_at": "2026-10-09T02:08:59.252709+00:00",
+  "protocol_lock_succeeded": true,
+  "protocol_locked_at": "2026-10-09T02:08:59.252709+00:00",
   "owner_directive": "docs/protocol_lock/OWNER_AUTHORIZATION_G3.md",
   "owner_directive_sha256": "ac5a51a4ddb17048507e36cd30ae7f735e0d52180dead411dbeb918338faf132",
   "protected_evaluation_authorization": {
@@ -25,9 +25,14 @@
     "stage_C_prediction_freeze_acceptance": false,
     "stage_D_official_test_labels_and_scoring": false
   },
-  "blockers": [
+  "blockers": [],
+  "latest_status_report": "docs/protocol_lock/G3_FORMAL_PROTOCOL_LOCK_COMPLETION_REPORT.md",
+  "latest_attempt_receipt": "docs/protocol_lock/LOCK_RECEIPT.json",
+  "locked_protocol_version": "RP-001-G3-v0.5-AM1",
+  "resolved_amendments": [
     "G3-AM-001"
   ],
-  "latest_status_report": "docs/protocol_lock/G3_FORMAL_PROTOCOL_LOCK_COMPLETION_REPORT.md",
-  "latest_attempt_receipt": "docs/protocol_lock/LOCK_RECEIPT.json"
+  "lock_receipt": "docs/protocol_lock/LOCK_RECEIPT.json",
+  "owner_amendment_decision": "docs/protocol_lock/OWNER_AMENDMENT_DECISION_G3_AM_001.md",
+  "historical_attempt_receipt": "docs/protocol_lock/history/G3_lock_attempt_1/LOCK_RECEIPT.json"
 }

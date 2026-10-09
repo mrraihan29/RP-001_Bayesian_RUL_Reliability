@@ -1,0 +1,143 @@
+{
+  "version": "RP-001-G3-v0.5-AM1",
+  "overall": "PASS_FOR_FORMAL_G3_LOCK_ONLY",
+  "locked": true,
+  "cryptographic_signature": null,
+  "identity_limit": "AI role attribution only; not a human signature or independently authenticated identity",
+  "components": [
+    {
+      "component": "MODEL_SPECIFICATION",
+      "disposition": "PASS_FOR_LOCK_CONSISTENCY",
+      "direct_verifier": "Rei / SOL lead",
+      "verified_at": "2026-10-09T02:08:59.252709+00:00",
+      "rationale": "Direct SOL review: joint Gaussian g/z/logR marginal, covariance and AR1/Woodbury source match; prior dense-oracle evidence retained.",
+      "source_hashes": {
+        "src/rp001/model.py": "52627ae6f49311c3bb837ed3685a4d93b7e9a4d059fe08d6b892c4abab60d399",
+        "src/rp001/v04_model.py": "45dc8556475d4822e7fc2f17236fb1b2c04d7dafe0d9aa0548021d9abd1fa23e"
+      },
+      "scope": "Direct SOL static specification/source/derivation verification, newly checked artifact identities and retained prior numerical evidence; no fresh scientific experiment."
+    },
+    {
+      "component": "PRIOR",
+      "disposition": "PASS_FOR_LOCK_CONSISTENCY",
+      "direct_verifier": "Rei / SOL lead",
+      "verified_at": "2026-10-09T02:08:59.252709+00:00",
+      "rationale": "anchored_v04 priors and saved fit policy match; exposed development adaptation remains disclosed.",
+      "source_hashes": {
+        "src/rp001/v04_model.py": "45dc8556475d4822e7fc2f17236fb1b2c04d7dafe0d9aa0548021d9abd1fa23e",
+        "configs/v0.4/remediation_plan.json": "0c6a7e1e924636cec6196295eac19b29a6bd7faa85e18b081549f8287ab0b99b"
+      },
+      "scope": "Direct SOL static specification/source/derivation verification, newly checked artifact identities and retained prior numerical evidence; no fresh scientific experiment."
+    },
+    {
+      "component": "POSTERIOR_PREDICTION",
+      "disposition": "PASS_FOR_LOCK_CONSISTENCY",
+      "direct_verifier": "Rei / SOL lead",
+      "verified_at": "2026-10-09T02:08:59.252709+00:00",
+      "rationale": "Separate engine sensor-only theta update and conditional Gaussian mixture agree. Three saved 4x8000 principal states/finiteness/hash verified; approved precision-helper quantiles supply stored endpoints and aligned diagnostics; legacy helper historical only.",
+      "source_hashes": {
+        "src/rp001/v04_predict.py": "412f3f59fe823ffa7f1de048c7c7b68a2777bc83a400f40b6a717db22a1604e2",
+        "src/rp001/v04_analysis.py": "2fcf53103f3e9364396a7f575f3d319fa0afba4fa34115d788d6e9326087f25e"
+      },
+      "scope": "Direct SOL static specification/source/derivation verification, newly checked artifact identities and retained prior numerical evidence; no fresh scientific experiment."
+    },
+    {
+      "component": "CQR",
+      "disposition": "PASS_FOR_LOCK_CONSISTENCY",
+      "direct_verifier": "Rei / SOL lead",
+      "verified_at": "2026-10-09T02:08:59.252709+00:00",
+      "rationale": "12 fixed candidates/ties/refit agree; ceil(26*.9)=24, q=19.987558518873357; support projection retained. No official exchangeability guarantee.",
+      "source_hashes": {
+        "src/rp001/comparators.py": "37d8e96ab23f7e3525010ed6aa412a2ff89dd622a4e3d0cceb9d215a8c4e41aa",
+        "src/rp001/metrics.py": "8eb710c14c35ab556ee52448a2a85e30203d40247f7627bdcd9df6add1a88531",
+        "results/pilot/comparator_calibration.json": "b941da7179e2698675511c2876cf8eed6cce60e142e17263c60228956a45497b"
+      },
+      "scope": "Direct SOL static specification/source/derivation verification, newly checked artifact identities and retained prior numerical evidence; no fresh scientific experiment."
+    },
+    {
+      "component": "PRIMARY_SCORE",
+      "disposition": "PASS_FOR_LOCK_CONSISTENCY",
+      "direct_verifier": "Rei / SOL lead",
+      "verified_at": "2026-10-09T02:08:59.252709+00:00",
+      "rationale": "IS90=U-L+20max(L-y,0)+20max(y-U,0); Bayesian-minus-CQR on complete uncapped finite cohort. Future contrast requires compensated aggregation.",
+      "source_hashes": {
+        "src/rp001/metrics.py": "8eb710c14c35ab556ee52448a2a85e30203d40247f7627bdcd9df6add1a88531",
+        "src/rp001/v05_score_numerics.py": "60523e545bea9ba0984dfd6f14eee0d6f76460c850da6c2fe16f57d994abcf2f"
+      },
+      "scope": "Direct SOL static specification/source/derivation verification, newly checked artifact identities and retained prior numerical evidence; no fresh scientific experiment."
+    },
+    {
+      "component": "NUMERICAL_GATES",
+      "disposition": "PASS_FOR_LOCK_CONSISTENCY",
+      "direct_verifier": "Rei / SOL lead",
+      "verified_at": "2026-10-09T02:08:59.252709+00:00",
+      "rationale": "Approved precision helper route matches source SHA396a5f55...; probability-dependent radius, 100 deterministic attempts, exact expansion/failure, xtol1e-12, rtol4eps. Existing convergence/MCSE/ESS/root residual/replication/failure policies unchanged. Future endpoint guards remain unexecuted.",
+      "source_hashes": {
+        "src/rp001/v04_precision.py": "396a5f55ca2e9c51fd21f02f50e59c57be7aedd38321a4a3123b0b955f1fde33",
+        "src/rp001/prediction.py": "f54fafe5875a8c7e009ee3c392cbf75c9e9d041646521e9a4123dd5e21b65d9b",
+        "docs/v0.5/02_proposed_locked_analysis_contract.md": "1e03e072682878fde6ced8c00ddcde44594af59e56129e65db1127a0166fa598"
+      },
+      "scope": "Direct SOL static specification/source/derivation verification, newly checked artifact identities and retained prior numerical evidence; no fresh scientific experiment."
+    },
+    {
+      "component": "SCORE_UNCERTAINTY",
+      "disposition": "PASS_FOR_LOCK_CONSISTENCY",
+      "direct_verifier": "Rei / SOL lead",
+      "verified_at": "2026-10-09T02:08:59.252709+00:00",
+      "rationale": "X=-Q*w*(F-p)/(mean(w)*f), indicator score gradients, aligned joint covariance/projection, Satterthwaite approximation, kink qualification and 19/N conditional sensitivity agree. Prior saved-draw check retained.",
+      "source_hashes": {
+        "src/rp001/v05_score_numerics.py": "60523e545bea9ba0984dfd6f14eee0d6f76460c850da6c2fe16f57d994abcf2f",
+        "docs/v0.5/03_mathematical_validity.md": "6fa6d58b29969c737f3bb9f41da33246c71443304173638ffa5ac09d1c405131"
+      },
+      "scope": "Direct SOL static specification/source/derivation verification, newly checked artifact identities and retained prior numerical evidence; no fresh scientific experiment."
+    },
+    {
+      "component": "FINITE_ESTIMAND",
+      "disposition": "PASS_FOR_LOCK_CONSISTENCY",
+      "direct_verifier": "Rei / SOL lead",
+      "verified_at": "2026-10-09T02:08:59.252709+00:00",
+      "rationale": "Exact complete stored prediction comparison only; no population inference, binary competitive decision, practical margin, superiority/equivalence/noninferiority or operational certification.",
+      "source_hashes": {
+        "docs/v0.5/02_proposed_locked_analysis_contract.md": "1e03e072682878fde6ced8c00ddcde44594af59e56129e65db1127a0166fa598"
+      },
+      "scope": "Direct SOL static specification/source/derivation verification, newly checked artifact identities and retained prior numerical evidence; no fresh scientific experiment."
+    },
+    {
+      "component": "PROTECTED_ACCESS",
+      "disposition": "PASS_FOR_LOCK_CONSISTENCY",
+      "direct_verifier": "Rei / SOL lead",
+      "verified_at": "2026-10-09T02:08:59.252709+00:00",
+      "rationale": "Formal A lock authorized and completed; B sensors, C freeze acceptance, D labels/scoring explicitly separate and false. No member read/prediction/scoring.",
+      "source_hashes": {
+        "docs/protocol_lock/OWNER_AUTHORIZATION_G3.md": "ac5a51a4ddb17048507e36cd30ae7f735e0d52180dead411dbeb918338faf132",
+        "docs/v0.5/02_proposed_locked_analysis_contract.md": "1e03e072682878fde6ced8c00ddcde44594af59e56129e65db1127a0166fa598"
+      },
+      "scope": "Direct SOL static specification/source/derivation verification, newly checked artifact identities and retained prior numerical evidence; no fresh scientific experiment."
+    }
+  ],
+  "amendment": "G3-AM-001",
+  "original_scientific_source_unchanged": true,
+  "official_test_access": false,
+  "new_scientific_runs": 0,
+  "amended_contract_sha256": "335e202170d826c80453a3c2136c999b966560303e18e6678464d50caff2c0e4",
+  "canonical_quantile_route": {
+    "module": "src/rp001/v04_precision.py",
+    "module_sha256": "396a5f55ca2e9c51fd21f02f50e59c57be7aedd38321a4a3123b0b955f1fde33",
+    "function_source_sha256": "2e8a81c4d8a667a7cf3c4d864793b1e8e9a74b3418715504d936a2e95a4e0083",
+    "public_entry_point": "rp001.v04_precision.estimate_mixture_quantile_mcse",
+    "solver_helper": "rp001.v04_precision._weighted_quantile",
+    "initial_radius": "(abs(Phi^-1(p))+12)*max(SD)+(max(mu)-min(mu))",
+    "bracket": [
+      "min(mu)-radius",
+      "max(mu)+radius"
+    ],
+    "bracket_check_attempts_max": 100,
+    "radius_update": "multiply by 2 only if not bracketed; exact loop and failure semantics in pinned source",
+    "brent_xtol": 1e-12,
+    "brent_rtol": "4*float64 epsilon",
+    "scipy_version": "1.18.1",
+    "brent_signature": "(f, a, b, args=(), xtol=2e-12, rtol=np.float64(8.881784197001252e-16), maxiter=100, full_output=False, disp=True)",
+    "root_residual_guard": 1e-10,
+    "no_root_or_prediction_computation_in_G3": true
+  }
+}

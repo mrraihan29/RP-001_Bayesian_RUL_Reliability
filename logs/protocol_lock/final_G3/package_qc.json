@@ -1,0 +1,43 @@
+{
+  "status": "PASS",
+  "scope": "Formal lock document/source/artifact/provenance and structural checks only",
+  "checked_at_utc": "2026-10-09T02:15:23.454938+00:00",
+  "protocol_status": "PROTOCOL_LOCKED",
+  "core_files_present": 10,
+  "original_baseline_entries_verified": 593,
+  "failed_attempt_sealed_files_preserved": 38,
+  "history_and_alias_copies_verified": 16,
+  "original_contract_preserved": true,
+  "approved_substitution_count": 1,
+  "exact_locked_scientific_body_verified": true,
+  "all_scientific_source_config_priors_posterior_CQR_unchanged": true,
+  "sole_config_change": "Administrative configs/protocol_lock_record.json; old bytes preserved",
+  "native_protocol_unexpected_scientific_field_changes": [],
+  "claim_and_experiment_ledgers_unchanged": true,
+  "all_artifact_map_references_hash_valid": true,
+  "direct_material_components": 9,
+  "document_links_checked": 46,
+  "native_structural_validation": {
+    "handoff": {
+      "result": "PASS",
+      "errors": []
+    },
+    "research": {
+      "status": "PROTOCOL_LOCKED",
+      "protocol_status": "PROTOCOL_LOCKED",
+      "mode": "dataset-benchmark",
+      "hard_failures": [],
+      "warnings": [],
+      "info": []
+    }
+  },
+  "new_scientific_runs": 0,
+  "protected_access": false,
+  "phase_permissions": {
+    "stage_A_formal_lock": true,
+    "stage_B_official_test_sensors": false,
+    "stage_C_prediction_freeze_acceptance": false,
+    "stage_D_official_test_labels_and_scoring": false
+  },
+  "receipt_status": "Pending payload commit; final postcommit receipt verification follows"
+}

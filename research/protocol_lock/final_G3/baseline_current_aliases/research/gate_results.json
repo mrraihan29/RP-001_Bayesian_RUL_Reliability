@@ -1,7 +1,7 @@
 {
-  "version": "RP-001-G3-v0.5-AM1",
-  "scope": "Formal G3 lock only; future evaluation remains unauthorized",
-  "recommendation": "PROTOCOL_LOCKED_AWAITING_SEPARATE_STAGE_B_AUTHORIZATION",
+  "version": "0.5",
+  "scope": "G3 formal lock verification only",
+  "recommendation": "OWNER AMENDMENT REVIEW REQUIRED",
   "gates": [
     {
       "gate": "BOUNDED_AUTHORIZATION",
@@ -95,14 +95,14 @@
     },
     {
       "gate": "OWNER_PROTOCOL_LOCK",
-      "state": "PASS",
+      "state": "FAIL",
       "owner": "Rei SOL lead / Raihan x Rei final authorization",
-      "artifact_version": "RP-001-G3-v0.5-AM1",
+      "artifact_version": "0.5",
       "evidence_ids": [
-        "G3-LOCK-VERIFY",
-        "G3-AM-DECISION"
+        "G3-AM-001",
+        "G3-VERIFY"
       ],
-      "rationale": "Human formal lock and quantile amendment approved; exact corrected specification/source consistency and integrity PASS."
+      "rationale": "Stage A authorization received; G3-AM-001 consistency mismatch prevents lock."
     },
     {
       "gate": "CONFIRMATORY_EVALUATION",
@@ -123,18 +123,7 @@
         "G3-BASELINE"
       ],
       "rationale": "593 files, 560 Git blobs, 33 local-only plus live environment match."
-    },
-    {
-      "gate": "G3_AMENDMENT_SOURCE_CONSISTENCY",
-      "state": "PASS",
-      "owner": "Rei / SOL direct verifier",
-      "artifact_version": "RP-001-G3-v0.5-AM1",
-      "evidence_ids": [
-        "G3-AM-DECISION",
-        "G3-LOCK-VERIFY"
-      ],
-      "rationale": "Only approved quantile clause substituted; original scientific source unchanged."
     }
   ],
-  "updated_at": "2026-10-09T02:08:59.252709+00:00"
+  "updated_at": "2026-10-08T17:18:03.859503+00:00"
 }

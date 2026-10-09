@@ -1,0 +1,16 @@
+{
+  "artifact_version": "0.3",
+  "status": "PROPOSED_NOT_LOCKED",
+  "owner": "Raihan × Rei",
+  "stage_a_approved": true,
+  "stage_b_approved": false,
+  "locked_at": null,
+  "proposed_protocol_sha256": "743a79476e015e4332aa6a9d2d8639dd6dbdde55dbb662c2bd1523384f163d08",
+  "proposed_split_sha256": "6d6e0f10d979d41739c6c07b6bab8f0c32d2844ebd150e82d13caa3bd29e124b",
+  "approval_source": "Owner conditional development decision in current chat; configs/development_authorization.json",
+  "test_labels_access_authorized": false,
+  "confirmatory_evaluation_authorized": false,
+  "practical_threshold_cycles": null,
+  "pilot_recommendation": "REVISE AGAIN",
+  "next": "Prospective numerical/scientific revision -> owner review -> final authorization separately"
+}

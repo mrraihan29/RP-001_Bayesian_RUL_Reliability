@@ -1,0 +1,860 @@
+{
+  "version": "RP-001-G3-v0.5-AM1",
+  "status": "FROZEN",
+  "approved_original_scientific_commit": "c583ce62eac9a6b3dcd29c1929cc07c17569beb7",
+  "approved_amendment_review_commit": "1fc660b3ce09dd2b23b6a05e0698903bf6060355",
+  "model": "Hierarchical Gaussian level/slope g, AR1 Gaussian sensor error, Gaussian log-RUL conditional response; g analytically integrated in full joint likelihood",
+  "model_source": "src/rp001/v04_model.py",
+  "latent_joint_likelihood_source": "src/rp001/model.py",
+  "prior_policy": {
+    "id": "anchored_v04",
+    "beta_mu": [
+      4.605170185988092,
+      0.0
+    ],
+    "beta_sd": [
+      0.6,
+      0.5
+    ],
+    "gamma_sd": 0.25,
+    "Gamma_sd": [
+      0.5,
+      0.35
+    ],
+    "tau_sd": 0.35,
+    "sigma_z_sd": 0.4,
+    "sigma_r_sd": 0.4,
+    "eta_rho_sd": 0.75,
+    "lkj_eta": 2,
+    "justification": "Hundreds-of-cycles RUL scale; prior latent-zero intercept median95% range31..324; PC units/slope-per30 anchored; correlation residual not inferred from raw trend. No calibration interval-score selection.",
+    "development_adaptation_after_calibration_exposure": true,
+    "broader_policy": "Multiply beta/gamma/Gamma/tau/sigma_z/sigma_r scale priors by1.5; eta_rho and LKJ correlation priors fixed."
+  },
+  "principal_prior_scale": 1.0,
+  "principal_error": "normal",
+  "rho_zero": false,
+  "principal_posteriors": [
+    {
+      "run_id": "v04_main_r1",
+      "path": "experiments/v0.4/fits/v04_main_r1.nc",
+      "sha256": "750157b158f665d2c962202813f2cfd11a0152730956743dc434b6b47db75415",
+      "bytes": 6134707,
+      "configuration": {
+        "run_id": "v04_main_r1",
+        "kind": "training",
+        "draws": 8000,
+        "seed": 41001,
+        "prior": "anchored_v04"
+      },
+      "saved_diagnostics": {
+        "rhat_max": 1.0003307698407649,
+        "bulk_ess_min": 16730.7285543013,
+        "tail_ess_min": 18257.03530656358,
+        "divergences": 0,
+        "bfmi": [
+          1.0241999293333326,
+          0.998543548088142,
+          0.9820743196466821,
+          1.0334317904288985
+        ],
+        "maxdepth_fraction": 0.0,
+        "sample_stat_keys": [
+          "depth",
+          "maxdepth_reached",
+          "step_size",
+          "transformation_update_id",
+          "step_size_bar",
+          "mean_tree_accept",
+          "mean_tree_accept_sym",
+          "n_steps",
+          "max_energy_error",
+          "tuning",
+          "index_in_trajectory",
+          "logp",
+          "energy",
+          "energy_error",
+          "fisher_distance",
+          "transformation_index",
+          "diverging",
+          "divergence_draw",
+          "divergence_message",
+          "divergence_energy_error"
+        ],
+        "acceptance": "PASS",
+        "failures": [],
+        "auxiliary_rhat_max": 1.0003100236575502,
+        "auxiliary_bulk_min": 31259.834953807513,
+        "auxiliary_tail_min": 23131.33870713885
+      },
+      "finite_saved_state_metadata": {
+        "beta": {
+          "shape": [
+            4,
+            8000,
+            2
+          ],
+          "dtype": "float64",
+          "finite": true
+        },
+        "gamma": {
+          "shape": [
+            4,
+            8000,
+            2
+          ],
+          "dtype": "float64",
+          "finite": true
+        },
+        "Gamma": {
+          "shape": [
+            4,
+            8000,
+            2,
+            2
+          ],
+          "dtype": "float64",
+          "finite": true
+        },
+        "tau": {
+          "shape": [
+            4,
+            8000,
+            2
+          ],
+          "dtype": "float64",
+          "finite": true
+        },
+        "r_g": {
+          "shape": [
+            4,
+            8000
+          ],
+          "dtype": "float64",
+          "finite": true
+        },
+        "sigma_z": {
+          "shape": [
+            4,
+            8000
+          ],
+          "dtype": "float64",
+          "finite": true
+        },
+        "sigma_r": {
+          "shape": [
+            4,
+            8000
+          ],
+          "dtype": "float64",
+          "finite": true
+        },
+        "rho": {
+          "shape": [
+            4,
+            8000
+          ],
+          "dtype": "float64",
+          "finite": true
+        },
+        "eta_rho": {
+          "shape": [
+            4,
+            8000
+          ],
+          "dtype": "float64",
+          "finite": true
+        },
+        "gcor_u": {
+          "shape": [
+            4,
+            8000
+          ],
+          "dtype": "float64",
+          "finite": true
+        }
+      },
+      "original_execution_commit": "003ab72a7867ee100554ed2f64785140107c1ac0",
+      "preprocessor_sha256": "f23b7fdd1c354d92468cdff02b056d7cda603cfc00d52d3ba24917dcd5c01b9e",
+      "preprocessor_equal_to_CQR_refit": true
+    },
+    {
+      "run_id": "v04_main_r2",
+      "path": "experiments/v0.4/fits/v04_main_r2.nc",
+      "sha256": "bce67cd39c38c54271ab59d1a9922795ff62524aac25bd09f64eed3a3f99fe3b",
+      "bytes": 6135609,
+      "configuration": {
+        "run_id": "v04_main_r2",
+        "kind": "training",
+        "draws": 8000,
+        "seed": 41002,
+        "prior": "anchored_v04"
+      },
+      "saved_diagnostics": {
+        "rhat_max": 1.0004099021355433,
+        "bulk_ess_min": 19122.52677530226,
+        "tail_ess_min": 20126.1984615859,
+        "divergences": 0,
+        "bfmi": [
+          0.9759577176444488,
+          1.00535695986205,
+          0.9862281696407275,
+          0.9936086278717844
+        ],
+        "maxdepth_fraction": 0.0,
+        "sample_stat_keys": [
+          "depth",
+          "maxdepth_reached",
+          "step_size",
+          "transformation_update_id",
+          "step_size_bar",
+          "mean_tree_accept",
+          "mean_tree_accept_sym",
+          "n_steps",
+          "max_energy_error",
+          "tuning",
+          "index_in_trajectory",
+          "logp",
+          "energy",
+          "energy_error",
+          "fisher_distance",
+          "transformation_index",
+          "diverging",
+          "divergence_draw",
+          "divergence_message",
+          "divergence_energy_error"
+        ],
+        "acceptance": "PASS",
+        "failures": [],
+        "auxiliary_rhat_max": 1.000242556817963,
+        "auxiliary_bulk_min": 35501.08993151115,
+        "auxiliary_tail_min": 23439.98273099419
+      },
+      "finite_saved_state_metadata": {
+        "beta": {
+          "shape": [
+            4,
+            8000,
+            2
+          ],
+          "dtype": "float64",
+          "finite": true
+        },
+        "gamma": {
+          "shape": [
+            4,
+            8000,
+            2
+          ],
+          "dtype": "float64",
+          "finite": true
+        },
+        "Gamma": {
+          "shape": [
+            4,
+            8000,
+            2,
+            2
+          ],
+          "dtype": "float64",
+          "finite": true
+        },
+        "tau": {
+          "shape": [
+            4,
+            8000,
+            2
+          ],
+          "dtype": "float64",
+          "finite": true
+        },
+        "r_g": {
+          "shape": [
+            4,
+            8000
+          ],
+          "dtype": "float64",
+          "finite": true
+        },
+        "sigma_z": {
+          "shape": [
+            4,
+            8000
+          ],
+          "dtype": "float64",
+          "finite": true
+        },
+        "sigma_r": {
+          "shape": [
+            4,
+            8000
+          ],
+          "dtype": "float64",
+          "finite": true
+        },
+        "rho": {
+          "shape": [
+            4,
+            8000
+          ],
+          "dtype": "float64",
+          "finite": true
+        },
+        "eta_rho": {
+          "shape": [
+            4,
+            8000
+          ],
+          "dtype": "float64",
+          "finite": true
+        },
+        "gcor_u": {
+          "shape": [
+            4,
+            8000
+          ],
+          "dtype": "float64",
+          "finite": true
+        }
+      },
+      "original_execution_commit": "003ab72a7867ee100554ed2f64785140107c1ac0",
+      "preprocessor_sha256": "f23b7fdd1c354d92468cdff02b056d7cda603cfc00d52d3ba24917dcd5c01b9e",
+      "preprocessor_equal_to_CQR_refit": true
+    },
+    {
+      "run_id": "v04_main_r3",
+      "path": "experiments/v0.4/fits/v04_main_r3.nc",
+      "sha256": "805ec463ea94b565c536fc39dcc3d95a784d9fd1527f15ab106a4b2acf23cb96",
+      "bytes": 6136478,
+      "configuration": {
+        "run_id": "v04_main_r3",
+        "kind": "training",
+        "draws": 8000,
+        "seed": 41003,
+        "prior": "anchored_v04"
+      },
+      "saved_diagnostics": {
+        "rhat_max": 1.0002483746151576,
+        "bulk_ess_min": 17093.518134673188,
+        "tail_ess_min": 19012.860652370604,
+        "divergences": 0,
+        "bfmi": [
+          1.0473957341484763,
+          1.0250826970545763,
+          1.0002465813505896,
+          1.0010420695402158
+        ],
+        "maxdepth_fraction": 0.0,
+        "sample_stat_keys": [
+          "depth",
+          "maxdepth_reached",
+          "step_size",
+          "transformation_update_id",
+          "step_size_bar",
+          "mean_tree_accept",
+          "mean_tree_accept_sym",
+          "n_steps",
+          "max_energy_error",
+          "tuning",
+          "index_in_trajectory",
+          "logp",
+          "energy",
+          "energy_error",
+          "fisher_distance",
+          "transformation_index",
+          "diverging",
+          "divergence_draw",
+          "divergence_message",
+          "divergence_energy_error"
+        ],
+        "acceptance": "PASS",
+        "failures": [],
+        "auxiliary_rhat_max": 1.0002291464062403,
+        "auxiliary_bulk_min": 34368.311486935825,
+        "auxiliary_tail_min": 23976.877415823117
+      },
+      "finite_saved_state_metadata": {
+        "beta": {
+          "shape": [
+            4,
+            8000,
+            2
+          ],
+          "dtype": "float64",
+          "finite": true
+        },
+        "gamma": {
+          "shape": [
+            4,
+            8000,
+            2
+          ],
+          "dtype": "float64",
+          "finite": true
+        },
+        "Gamma": {
+          "shape": [
+            4,
+            8000,
+            2,
+            2
+          ],
+          "dtype": "float64",
+          "finite": true
+        },
+        "tau": {
+          "shape": [
+            4,
+            8000,
+            2
+          ],
+          "dtype": "float64",
+          "finite": true
+        },
+        "r_g": {
+          "shape": [
+            4,
+            8000
+          ],
+          "dtype": "float64",
+          "finite": true
+        },
+        "sigma_z": {
+          "shape": [
+            4,
+            8000
+          ],
+          "dtype": "float64",
+          "finite": true
+        },
+        "sigma_r": {
+          "shape": [
+            4,
+            8000
+          ],
+          "dtype": "float64",
+          "finite": true
+        },
+        "rho": {
+          "shape": [
+            4,
+            8000
+          ],
+          "dtype": "float64",
+          "finite": true
+        },
+        "eta_rho": {
+          "shape": [
+            4,
+            8000
+          ],
+          "dtype": "float64",
+          "finite": true
+        },
+        "gcor_u": {
+          "shape": [
+            4,
+            8000
+          ],
+          "dtype": "float64",
+          "finite": true
+        }
+      },
+      "original_execution_commit": "6aab2089eec1f0ee0818bbb56960ce0677e767fd",
+      "preprocessor_sha256": "f23b7fdd1c354d92468cdff02b056d7cda603cfc00d52d3ba24917dcd5c01b9e",
+      "preprocessor_equal_to_CQR_refit": true
+    }
+  ],
+  "pooling": {
+    "replications": [
+      "v04_main_r1",
+      "v04_main_r2",
+      "v04_main_r3"
+    ],
+    "chains_per_replication": 4,
+    "retained_draws_per_chain": 8000,
+    "pooled_chains": 12,
+    "pooled_draws": 96000,
+    "order": "r1 chains then r2 chains then r3 chains; preserve original draw order",
+    "base_weights": "Equal training-posterior draw weights before separate sensor importance update"
+  },
+  "new_engine_prediction": {
+    "sensor_terms_source": "src/rp001/v04_predict.py",
+    "conditioning": "Each engine separately weights theta by its own sensor likelihood; no joint conditioning on other test engines",
+    "predictive_law": "Conditional Gaussian logRUL mixture under full sensor-reweighted global theta posterior",
+    "probabilities": [
+      0.05,
+      0.5,
+      0.95
+    ],
+    "authoritative_quantile_route": {
+      "module": "src/rp001/v04_precision.py",
+      "module_sha256": "396a5f55ca2e9c51fd21f02f50e59c57be7aedd38321a4a3123b0b955f1fde33",
+      "function_source_sha256": "2e8a81c4d8a667a7cf3c4d864793b1e8e9a74b3418715504d936a2e95a4e0083",
+      "public_entry_point": "rp001.v04_precision.estimate_mixture_quantile_mcse",
+      "solver_helper": "rp001.v04_precision._weighted_quantile",
+      "initial_radius": "(abs(Phi^-1(p))+12)*max(SD)+(max(mu)-min(mu))",
+      "bracket": [
+        "min(mu)-radius",
+        "max(mu)+radius"
+      ],
+      "bracket_check_attempts_max": 100,
+      "radius_update": "multiply by 2 only if not bracketed; exact loop and failure semantics in pinned source",
+      "brent_xtol": 1e-12,
+      "brent_rtol": "4*float64 epsilon",
+      "scipy_version": "1.18.1",
+      "brent_signature": "(f, a, b, args=(), xtol=2e-12, rtol=np.float64(8.881784197001252e-16), maxiter=100, full_output=False, disp=True)",
+      "root_residual_guard": 1e-10,
+      "no_root_or_prediction_computation_in_G3": true
+    },
+    "legacy_quantile_helper": "rp001.prediction.mixture_quantile retained for historical provenance only; not official primary route",
+    "short_history": "w=min(30,C), actual positions B=[1,t/30]; w=1 level only; no engine exclusion"
+  },
+  "MCMC_policy": {
+    "rhat_exclusive": 1.01,
+    "bulk_ess_min": 400,
+    "tail_ess_min": 400,
+    "divergences_max": 0,
+    "bfmi_exclusive": 0.3,
+    "depth_saturation_max": 0.01
+  },
+  "quantile_numerical_policy": {
+    "batch_sizes": [
+      250,
+      500
+    ],
+    "upper_MCSE_cycles_max": 0.5,
+    "weight_ESS_min": 1000,
+    "influence_ESS_min": 400,
+    "tail_probability": ".05/(N*3*2), N complete expected official cohort 100",
+    "root_CDF_residual_max": 1e-10,
+    "replication_comparisons": "3 pairs * N engines * 3 probabilities, z=Phi^-1(1-.05/(2*9*N)); MCSE=max of batches; zero/nonfinite denominator fails",
+    "failure": "Stop before labels; preserve every engine/failure; no draws/seeds/bracket-method modification/post-result repair"
+  },
+  "score_numerical_policy": {
+    "source": "src/rp001/v05_score_numerics.py",
+    "tail_probability": 0.025,
+    "batch_sizes": [
+      250,
+      500
+    ],
+    "upper_MCSE_cycles_max": 0.5,
+    "label_kink_flag": "Within 3 endpoint upper MCSEs at either endpoint",
+    "status_if_undefined_nonfinite_excess_upper_or_kink": "NUMERICALLY_QUALIFIED ideal-posterior score/ranking; stored complete finite score retained",
+    "no_post_label_repair": true,
+    "dependence": "Preserve shared chain/draw/engine alignment through joint covariance projection"
+  },
+  "CQR": {
+    "candidate_grid": [
+      {
+        "candidate_id": "gb-depth1-leaf5-lr0p03",
+        "family": "gradient_boosting",
+        "parameters": [
+          [
+            "max_depth",
+            1
+          ],
+          [
+            "min_samples_leaf",
+            5
+          ],
+          [
+            "learning_rate",
+            0.03
+          ],
+          [
+            "n_estimators",
+            200
+          ]
+        ]
+      },
+      {
+        "candidate_id": "gb-depth1-leaf5-lr0p1",
+        "family": "gradient_boosting",
+        "parameters": [
+          [
+            "max_depth",
+            1
+          ],
+          [
+            "min_samples_leaf",
+            5
+          ],
+          [
+            "learning_rate",
+            0.1
+          ],
+          [
+            "n_estimators",
+            200
+          ]
+        ]
+      },
+      {
+        "candidate_id": "gb-depth1-leaf10-lr0p03",
+        "family": "gradient_boosting",
+        "parameters": [
+          [
+            "max_depth",
+            1
+          ],
+          [
+            "min_samples_leaf",
+            10
+          ],
+          [
+            "learning_rate",
+            0.03
+          ],
+          [
+            "n_estimators",
+            200
+          ]
+        ]
+      },
+      {
+        "candidate_id": "gb-depth1-leaf10-lr0p1",
+        "family": "gradient_boosting",
+        "parameters": [
+          [
+            "max_depth",
+            1
+          ],
+          [
+            "min_samples_leaf",
+            10
+          ],
+          [
+            "learning_rate",
+            0.1
+          ],
+          [
+            "n_estimators",
+            200
+          ]
+        ]
+      },
+      {
+        "candidate_id": "gb-depth2-leaf5-lr0p03",
+        "family": "gradient_boosting",
+        "parameters": [
+          [
+            "max_depth",
+            2
+          ],
+          [
+            "min_samples_leaf",
+            5
+          ],
+          [
+            "learning_rate",
+            0.03
+          ],
+          [
+            "n_estimators",
+            200
+          ]
+        ]
+      },
+      {
+        "candidate_id": "gb-depth2-leaf5-lr0p1",
+        "family": "gradient_boosting",
+        "parameters": [
+          [
+            "max_depth",
+            2
+          ],
+          [
+            "min_samples_leaf",
+            5
+          ],
+          [
+            "learning_rate",
+            0.1
+          ],
+          [
+            "n_estimators",
+            200
+          ]
+        ]
+      },
+      {
+        "candidate_id": "gb-depth2-leaf10-lr0p03",
+        "family": "gradient_boosting",
+        "parameters": [
+          [
+            "max_depth",
+            2
+          ],
+          [
+            "min_samples_leaf",
+            10
+          ],
+          [
+            "learning_rate",
+            0.03
+          ],
+          [
+            "n_estimators",
+            200
+          ]
+        ]
+      },
+      {
+        "candidate_id": "gb-depth2-leaf10-lr0p1",
+        "family": "gradient_boosting",
+        "parameters": [
+          [
+            "max_depth",
+            2
+          ],
+          [
+            "min_samples_leaf",
+            10
+          ],
+          [
+            "learning_rate",
+            0.1
+          ],
+          [
+            "n_estimators",
+            200
+          ]
+        ]
+      },
+      {
+        "candidate_id": "linear-l1-alpha0p001",
+        "family": "linear",
+        "parameters": [
+          [
+            "alpha",
+            0.001
+          ]
+        ]
+      },
+      {
+        "candidate_id": "linear-l1-alpha0p01",
+        "family": "linear",
+        "parameters": [
+          [
+            "alpha",
+            0.01
+          ]
+        ]
+      },
+      {
+        "candidate_id": "linear-l1-alpha0p1",
+        "family": "linear",
+        "parameters": [
+          [
+            "alpha",
+            0.1
+          ]
+        ]
+      },
+      {
+        "candidate_id": "linear-l1-alpha1",
+        "family": "linear",
+        "parameters": [
+          [
+            "alpha",
+            1.0
+          ]
+        ]
+      }
+    ],
+    "endpoint_quantiles": [
+      0.05,
+      0.95
+    ],
+    "n_tuning_eligible": 13,
+    "tie_tolerance_cycles": 0.5,
+    "tie_order": "linear before boost; stronger linear L1; shallower boost/larger leaf/smaller rate",
+    "selected_id": "gb-depth1-leaf10-lr0p1",
+    "selected_fitted_object": {
+      "path": "results/pilot/selected_comparator.joblib",
+      "sha256": "85027f22fc1c4f4d20748412d6072ad7b23e493f0b008fffc15cb0800683458f"
+    },
+    "fitted_parameters": {
+      "lower": {
+        "loss": "quantile",
+        "alpha": 0.05,
+        "n_estimators": 200,
+        "max_depth": 1,
+        "min_samples_leaf": 10,
+        "learning_rate": 0.1,
+        "random_state": 20261008
+      },
+      "upper": {
+        "loss": "quantile",
+        "alpha": 0.95,
+        "n_estimators": 200,
+        "max_depth": 1,
+        "min_samples_leaf": 10,
+        "learning_rate": 0.1,
+        "random_state": 20261008
+      },
+      "median": {
+        "loss": "quantile",
+        "alpha": 0.5,
+        "n_estimators": 200,
+        "max_depth": 1,
+        "min_samples_leaf": 10,
+        "learning_rate": 0.1,
+        "random_state": 20261008
+      }
+    },
+    "refit_n_engines": 56,
+    "preprocessor": {
+      "path": "results/pilot/refit_preprocessor.npz",
+      "sha256": "f23b7fdd1c354d92468cdff02b056d7cda603cfc00d52d3ba24917dcd5c01b9e"
+    },
+    "calibration": {
+      "selected_cqr": "gb-depth1-leaf10-lr0p1",
+      "n_calibration": 25,
+      "rank": 24,
+      "nonshrinking_correction": 19.987558518873357,
+      "calibration_engine_ids": [
+        11,
+        16,
+        25,
+        26,
+        31,
+        33,
+        34,
+        39,
+        40,
+        41,
+        45,
+        50,
+        51,
+        55,
+        56,
+        59,
+        61,
+        62,
+        63,
+        66,
+        72,
+        75,
+        79,
+        85,
+        86
+      ]
+    },
+    "calibration_record_sha256": "b941da7179e2698675511c2876cf8eed6cce60e142e17263c60228956a45497b",
+    "nonshrinking": true,
+    "support_projection": "[max(0,rawL-q),max(0,rawU+q)] after raw endpoint ordering; median unshifted",
+    "reselection_allowed": false
+  },
+  "secondary_Bayesian_posthoc": {
+    "correction": 0.0,
+    "rank": 24,
+    "n": 25,
+    "secondary_only": true,
+    "development_calibration_exposed": true,
+    "path": "experiments/v0.4/analysis/principal_posthoc_calibration.json",
+    "sha256": "d53201062b1f36b3b6621ad1d9f58f7cc32c6d26b1d9875ad5ec387aa47329e1"
+  },
+  "high_rho_v05_role": "Diagnostic only; never a principal posterior replacement",
+  "fresh_sampling_retraining_fallback_allowed": false
+}

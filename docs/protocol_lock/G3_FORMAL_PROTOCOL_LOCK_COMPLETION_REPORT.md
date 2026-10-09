@@ -1,26 +1,28 @@
 # RP-001 | G3 FORMAL PROTOCOL LOCK COMPLETION REPORT
 
-**Lock not completed. PROTOCOL_DRAFTED. Recommendation: OWNER AMENDMENT REVIEW REQUIRED (G3-AM-001).**
+**SUCCESS: PROTOCOL_LOCKED. Version RP-001-G3-v0.5-AM1. Formal Stage A only.**
 
-Formal Stage A authorization is received. Actual baseline identities PASS. The quantile bracket/tolerance wording does not match either stored helper; G3 requires returning this inconsistency rather than silently repairing it. No new experiment or protected-data access.
+Owners Raihan x Rei approved G3 and approved G3-AM-001 after reviewing 1fc660b3ce09dd2b23b6a05e0698903bf6060355. Direct SOL final source/specification checks pass. The only scientific documentation change is the approved quantile-clause clarification. No scientific implementation, prior, posterior, CQR, estimand, guard or acceptance policy changed. No new experiment or protected evaluation occurred.
 
-| Required item | Result |
+| Required final handoff | Result |
 |---|---|
-| Lock success | No; numerical-procedure consistency FAIL. |
-| Exact locked version | None. Candidate v0.5 unchanged at c583ce62eac9a6b3dcd29c1929cc07c17569beb7; audit package G3-lock-attempt-1. |
-| Successful lock commit | None/null. LOCK_RECEIPT.json records the administrative evidence commit, not a successful lock. |
-| Contract/scientific source hashes | Full hashes in VERIFIED_BASELINE_MANIFEST.json and LOCK_VERIFICATION_REPORT.md. |
-| Input/environment/posterior fingerprints | Actual file/environment checks PASS; all principal 3 x 4 x 8000 states verified. |
-| Verification results | 593 files / 560 Git blobs / 33 local-only PASS; stored CQR/maps PASS; numerical-route consistency FAIL. |
-| Historical failures | Original high-rho FAIL, v0.3 precision FAIL, pipeline sensitivity and adverse/unavailable bootstrap retained. |
-| Authorization | A authorized but unsuccessful; B sensors, C freeze acceptance, D labels/scoring unauthorized. |
-| Execution risks | Restricted-claim limitations fully listed in verification report. |
-| First separately authorized B action | After amended successful G3: record separate permission/provenance, extract sensors only, audit complete schema/identity/overlap. |
+| Lock success / version | PROTOCOL_LOCKED / RP-001-G3-v0.5-AM1 |
+| Exact lock payload commit | Full SHA in [LOCK_RECEIPT.json](LOCK_RECEIPT.json), recorded after payload commit; the receipt's own storage commit is separate. |
+| Locked analysis contract | SHA-256 335e202170d826c80453a3c2136c999b966560303e18e6678464d50caff2c0e4 |
+| Scientific source map | SHA-256 0967e8db64935764b5c34fb35b15978739c6a2d536f6ea13bb05fd0540681d5d; all individual source hashes in frozen code manifest. |
+| Environment | f57b00a67e9d67b2920791bfddc8dc812dbdeb9306588a26557dfd6be15f826c |
+| FD001 training | 963b5e22825b34d8b21c69e1aeb4af3e647050eb672ee8834ba4b5d91d2de0f8 |
+| Split/cutoff | 6d6e0f10d979d41739c6c07b6bab8f0c32d2844ebd150e82d13caa3bd29e124b |
+| Principal posterior states | v04_main_r1/r2/r3, each4x8000, total96000; exact NC fingerprints in frozen model manifest/verification report. |
+| Verification | Baseline593 / original snapshot entries560 / local-only33 PASS; prior38 sealed evidence files PASS; amended body/route and all nine material component sign-offs PASS. |
+| Historical adverse findings | Original high-rhoFAIL/v03 precisionFAIL/pipeline sensitivity/bootstrap adverse and unavailable findings retained; failed G3 attempt byte-preserved. |
+| Permission status | A completed; B sensors, C acceptance, D labels/scoring all NOT AUTHORIZED. |
+| Execution risks | Future schema/overlap/numerical failures; unknown cutoff exchangeability; exposed calibration/prior adaptation; weak physical nuisance identification; small cohorts; unequal budgets; approximate MCSE/kinks; no whole-pipeline inference. |
+| Reproducibility/publication limits | 33 retained local-only payloads required; no one-command cross-platform clean replay certified; novelty and data-rights remain unresolved. |
+| First action under separately authorized B | Record explicit permission/source identity; extract sensor member only and audit complete expected100/schema/cycles/overlap before fixed predictions. |
 
-[Amendment request](AMENDMENT_REQUEST_G3_AM_001.md) provides a concrete minimal clarification to use the existing reviewed precision helper for stored official endpoints and aligned diagnostics. It changes no source bytes, posterior/prior, comparator, estimand, thresholds or claim boundaries. It is **not applied**.
+The [Locked Analysis Contract](LOCKED_ANALYSIS_CONTRACT.md), [Locked Research Protocol](LOCKED_RESEARCH_PROTOCOL.md), three frozen manifests, [decision record](LOCK_DECISION_RECORD.md), [claim boundaries](SCIENTIFIC_CLAIM_BOUNDARIES.md), [protected policy](PROTECTED_EVALUATION_ACCESS_POLICY.md), [verification report](LOCK_VERIFICATION_REPORT.md) and [receipt](LOCK_RECEIPT.json) form the required ten-file lock core. Amendment diff/owner decisions, component sign-offs, lineage archives and verification logs supplement it.
 
-[Verification report](LOCK_VERIFICATION_REPORT.md) · [Baseline manifest](VERIFIED_BASELINE_MANIFEST.json) · [Attempt receipt](LOCK_RECEIPT.json) · [Direct SOL review](../../logs/protocol_lock/direct_SOL_component_review.json).
+Human authority is recorded from this conversation; transcript/attachment hashes identify stored text, not an invented cryptographic signature. Observed lock time UTC 2026-10-09T02:08:59.252709+00:00; client date 2026-10-09 Asia/Jakarta.
 
-[Owner authorization](OWNER_AUTHORIZATION_G3.md) is byte-exact. Human sender Raihan is verified only from this conversation; stated Research Owners Raihan x Rei. Observed date is recorded, with no invented cryptographic signature or independent legal identity claim.
-
-**Halted at Stage A consistency gate. Owner G3-AM-001 disposition is required before resumed lock. No Stage B work begins.**
+**Stop at the next gate. This lock does not authorize official sensors/labels, scoring, sampling, model selection/fallback or scientific publication and does not establish RESEARCH_VALIDATED.**

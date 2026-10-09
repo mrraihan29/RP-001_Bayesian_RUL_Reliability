@@ -1,16 +1,29 @@
 {
-  "artifact_version": "0.3",
-  "status": "PROPOSED_NOT_LOCKED",
-  "owner": "Raihan × Rei",
-  "stage_a_approved": true,
-  "stage_b_approved": false,
-  "locked_at": null,
-  "proposed_protocol_sha256": "743a79476e015e4332aa6a9d2d8639dd6dbdde55dbb662c2bd1523384f163d08",
-  "proposed_split_sha256": "6d6e0f10d979d41739c6c07b6bab8f0c32d2844ebd150e82d13caa3bd29e124b",
-  "approval_source": "Owner conditional development decision in current chat; configs/development_authorization.json",
-  "test_labels_access_authorized": false,
+  "schema_version": "G3-1",
+  "artifact_version": "RP-001-G3-v0.5-AM1",
+  "status": "PROTOCOL_LOCKED",
+  "locked_at": "2026-10-09T02:08:59.252709+00:00",
+  "owner": "Raihan x Rei",
+  "owner_authorization": [
+    "docs/protocol_lock/OWNER_AUTHORIZATION_G3.md",
+    "docs/protocol_lock/OWNER_AMENDMENT_DECISION_G3_AM_001.md"
+  ],
+  "approved_scientific_commit": "c583ce62eac9a6b3dcd29c1929cc07c17569beb7",
+  "approved_amendment_review_commit": "1fc660b3ce09dd2b23b6a05e0698903bf6060355",
+  "locked_contract_path": "docs/protocol_lock/LOCKED_ANALYSIS_CONTRACT.md",
+  "locked_contract_sha256": "335e202170d826c80453a3c2136c999b966560303e18e6678464d50caff2c0e4",
+  "scientific_source_map_sha256": "0967e8db64935764b5c34fb35b15978739c6a2d536f6ea13bb05fd0540681d5d",
+  "environment_fingerprint": "f57b00a67e9d67b2920791bfddc8dc812dbdeb9306588a26557dfd6be15f826c",
+  "dataset_sha256": "963b5e22825b34d8b21c69e1aeb4af3e647050eb672ee8834ba4b5d91d2de0f8",
+  "split_sha256": "6d6e0f10d979d41739c6c07b6bab8f0c32d2844ebd150e82d13caa3bd29e124b",
+  "protected_evaluation_authorization": {
+    "stage_A_formal_lock": true,
+    "stage_B_official_test_sensors": false,
+    "stage_C_prediction_freeze_acceptance": false,
+    "stage_D_official_test_labels_and_scoring": false
+  },
+  "scientific_publication_authorized": false,
   "confirmatory_evaluation_authorized": false,
-  "practical_threshold_cycles": null,
-  "pilot_recommendation": "REVISE AGAIN",
-  "next": "Prospective numerical/scientific revision -> owner review -> final authorization separately"
+  "official_test_access_authorized": false,
+  "receipt": "docs/protocol_lock/LOCK_RECEIPT.json"
 }

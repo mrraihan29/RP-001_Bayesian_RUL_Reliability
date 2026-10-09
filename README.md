@@ -1,13 +1,13 @@
 # RP-001 — Bayesian RUL Reliability
 
-**G3 lock halted: G3-AM-001 pending owner disposition. PROTOCOL_DRAFTED.**
+**PROTOCOL_LOCKED — RP-001-G3-v0.5-AM1. Formal Stage A completed after approved G3-AM-001.**
 
-Read the [G3 status report](docs/protocol_lock/G3_FORMAL_PROTOCOL_LOCK_COMPLETION_REPORT.md), [minimal amendment](docs/protocol_lock/AMENDMENT_REQUEST_G3_AM_001.md), and [verification report](docs/protocol_lock/LOCK_VERIFICATION_REPORT.md). All 593 baseline files match; the prospective quantile bracket/tolerance/helper description requires clarification before consistent lock.
+Start with the [final G3 completion report](docs/protocol_lock/G3_FORMAL_PROTOCOL_LOCK_COMPLETION_REPORT.md), [locked contract](docs/protocol_lock/LOCKED_ANALYSIS_CONTRACT.md), and [lock index](docs/protocol_lock/README.md). The approved amendment corrects only the numerical quantile specification; scientific source, priors, posterior states, CQR, estimand, thresholds and failure policies are unchanged.
 
-Owner A lock authorization is received. B sensors, C freeze acceptance and D labels/scoring remain unauthorized. No new experiments, protected access, fallback, reselection or relaxed threshold.
+Primary interpretation is descriptive complete finite-FD001 benchmark comparison of stored 90% intervals. No population superiority, practical margin, formal official coverage guarantee or operational utility claim. Existing adverse development findings remain.
 
-[Approved v0.5 contract](docs/v0.5/02_proposed_locked_analysis_contract.md), [memo](docs/v0.5/01_prelock_resolution_memo.md), [evidence](docs/v0.5/README.md) and [v0.4](docs/v0.4/README.md) remain unchanged. Primary interpretation is descriptive exact finite-benchmark comparison; no population superiority or practical margin.
+Official B sensors, C prediction-freeze acceptance and D labels/scoring remain separately unauthorized. No protected access, new experiments, fitting/resampling, reselection, fallback or threshold relaxation occurred during G3.
 
-Repository PUBLIC under explicit owner visibility direction. Historical private-review captions are retained as history. Raw training/NASA archives/protected members excluded; 33 historical local-only payloads remain fingerprint-bound. Public access does not certify dataset redistribution, novelty, operational utility or complete clean replay.
+[Original v0.5](docs/v0.5/README.md), [failed G3 attempt archive](docs/protocol_lock/history/G3_lock_attempt_1/HISTORY_CONTEXT.md) and earlier evidence remain. Repository PUBLIC under explicit owner direction; raw training/NASA archives/protected members remain excluded. 33 local-only historical payloads are hash-bound. Novelty, lawful redistribution and complete clean replay remain unresolved.
 
-[Attempt receipt](docs/protocol_lock/LOCK_RECEIPT.json) · [baseline manifest](docs/protocol_lock/VERIFIED_BASELINE_MANIFEST.json) · [alias archive map](research/protocol_lock/baseline_alias_archive_map.json).
+[Final receipt](docs/protocol_lock/LOCK_RECEIPT.json) · [verification report](docs/protocol_lock/LOCK_VERIFICATION_REPORT.md) · [protected access policy](docs/protocol_lock/PROTECTED_EVALUATION_ACCESS_POLICY.md).

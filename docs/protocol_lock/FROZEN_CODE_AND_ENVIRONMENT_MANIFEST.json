@@ -1,0 +1,328 @@
+{
+  "version": "RP-001-G3-v0.5-AM1",
+  "status": "FROZEN",
+  "approved_scientific_snapshot": "c583ce62eac9a6b3dcd29c1929cc07c17569beb7",
+  "approved_amendment_review_snapshot": "1fc660b3ce09dd2b23b6a05e0698903bf6060355",
+  "scientific_sources": [
+    {
+      "path": "src/.gitkeep",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "src/rp001/__init__.py",
+      "bytes": 80,
+      "sha256": "77b845af67e6f3d0b795acb93e4e651143b49fd33c7d437c774b5704a4d384f4"
+    },
+    {
+      "path": "src/rp001/comparator_pilot.py",
+      "bytes": 7774,
+      "sha256": "ec2777d4ce2f498eac5b7a55f29ff5635364bd9aded09a1ba70ad4d1774a5b66"
+    },
+    {
+      "path": "src/rp001/comparators.py",
+      "bytes": 21358,
+      "sha256": "37d8e96ab23f7e3525010ed6aa412a2ff89dd622a4e3d0cceb9d215a8c4e41aa"
+    },
+    {
+      "path": "src/rp001/data.py",
+      "bytes": 4757,
+      "sha256": "3a0ef34d51468ad05279cbcaeb9e3ab8075134f75771c4375136f4167b512170"
+    },
+    {
+      "path": "src/rp001/development_data_audit.py",
+      "bytes": 39376,
+      "sha256": "5697fc66c254637547499f9a88e2ced5472a6de176bb4a26972975710ea16f92"
+    },
+    {
+      "path": "src/rp001/environment.py",
+      "bytes": 1831,
+      "sha256": "bf3d2e6a20f3a7673cf1499f7ea7adce3b7952eb3c5d48f2b6a44821f51ca2fd"
+    },
+    {
+      "path": "src/rp001/metrics.py",
+      "bytes": 1770,
+      "sha256": "8eb710c14c35ab556ee52448a2a85e30203d40247f7627bdcd9df6add1a88531"
+    },
+    {
+      "path": "src/rp001/model.py",
+      "bytes": 5198,
+      "sha256": "52627ae6f49311c3bb837ed3685a4d93b7e9a4d059fe08d6b892c4abab60d399"
+    },
+    {
+      "path": "src/rp001/pilot.py",
+      "bytes": 14120,
+      "sha256": "40ab3eaef48aa82f59c5234715268f2f3f37764f484ab89456baef39bcd940c1"
+    },
+    {
+      "path": "src/rp001/prediction.py",
+      "bytes": 2615,
+      "sha256": "f54fafe5875a8c7e009ee3c392cbf75c9e9d041646521e9a4123dd5e21b65d9b"
+    },
+    {
+      "path": "src/rp001/predictive_analysis.py",
+      "bytes": 7087,
+      "sha256": "a4346a6c63101d8bef4f1f8f98298002e50ea5718e3098e058498953a31366fc"
+    },
+    {
+      "path": "src/rp001/statistical_design.py",
+      "bytes": 7216,
+      "sha256": "093b66b5f2f990295a8579e23efa1ff0be4b48f1b00c7c3b3b473741d7451a9c"
+    },
+    {
+      "path": "src/rp001/v04_analysis.py",
+      "bytes": 17731,
+      "sha256": "2fcf53103f3e9364396a7f575f3d319fa0afba4fa34115d788d6e9326087f25e"
+    },
+    {
+      "path": "src/rp001/v04_common.py",
+      "bytes": 2123,
+      "sha256": "d3def7f05886eb6949a7999fd6be35022de31f7331c7f43649d80fff5e612b8a"
+    },
+    {
+      "path": "src/rp001/v04_inference.py",
+      "bytes": 25925,
+      "sha256": "dc05f013b9c9bf05463269b4bd6c6ece74505467e5a4c2125a0ed0690ded1d64"
+    },
+    {
+      "path": "src/rp001/v04_inference_run.py",
+      "bytes": 12424,
+      "sha256": "36be33a5637e9b0c0d7f0ea8164b3a7f70beb0c54a2cbb1c71ba0aa35def7af1"
+    },
+    {
+      "path": "src/rp001/v04_model.py",
+      "bytes": 2916,
+      "sha256": "45dc8556475d4822e7fc2f17236fb1b2c04d7dafe0d9aa0548021d9abd1fa23e"
+    },
+    {
+      "path": "src/rp001/v04_pipeline.py",
+      "bytes": 38233,
+      "sha256": "0b75f708359915f8a197c429a49f2e096c050a21879dbc6e703253155388e569"
+    },
+    {
+      "path": "src/rp001/v04_precision.py",
+      "bytes": 18927,
+      "sha256": "396a5f55ca2e9c51fd21f02f50e59c57be7aedd38321a4a3123b0b955f1fde33"
+    },
+    {
+      "path": "src/rp001/v04_precision_validation.py",
+      "bytes": 28147,
+      "sha256": "47c5f33e1deb98bf3872f18fbe23f669783819c6180a2fdaf3595c6a024c4a7f"
+    },
+    {
+      "path": "src/rp001/v04_predict.py",
+      "bytes": 2048,
+      "sha256": "412f3f59fe823ffa7f1de048c7c7b68a2777bc83a400f40b6a717db22a1604e2"
+    },
+    {
+      "path": "src/rp001/v04_run.py",
+      "bytes": 7868,
+      "sha256": "a8c9761fd19a3bce23ee11ed2a9772c16fc7f50ad7ea016bd672447e793cf110"
+    },
+    {
+      "path": "src/rp001/v05_highrho.py",
+      "bytes": 12949,
+      "sha256": "3ed9b1c2299d5ab3fd97c3b301c243d6a6db96943e0928ef3d417edbd2031c01"
+    },
+    {
+      "path": "src/rp001/v05_score_demo.py",
+      "bytes": 5677,
+      "sha256": "44a49c353745418f0cf588e3448daf30fc7086571577e5fb99bb5b20e4d70aaa"
+    },
+    {
+      "path": "src/rp001/v05_score_numerics.py",
+      "bytes": 26579,
+      "sha256": "60523e545bea9ba0984dfd6f14eee0d6f76460c850da6c2fe16f57d994abcf2f"
+    },
+    {
+      "path": "src/rp001_preflight.py",
+      "bytes": 5725,
+      "sha256": "950ad28ff5477ec36ecd14c43479e4fca05001a88e5e29c8b09324d0b0dd1820"
+    }
+  ],
+  "scientific_source_map_sha256": "0967e8db64935764b5c34fb35b15978739c6a2d536f6ea13bb05fd0540681d5d",
+  "source_map_encoding": "SHA256 UTF-8 sorted-key compact JSON path->SHA256",
+  "scientific_configurations": [
+    {
+      "path": "configs/.gitkeep",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "configs/development_authorization.json",
+      "sha256": "74af9088066c779972dde0d35fce416f50d80eb0d98031ff81ccd96ac062e6e2",
+      "bytes": 787
+    },
+    {
+      "path": "configs/pilot_plan_v0.3.json",
+      "sha256": "9e15f2c747e02576948ff03613454aafdf32c3fb05215aebf17bcc13066147aa",
+      "bytes": 2736
+    },
+    {
+      "path": "configs/pilot_plan_v0.3_initial.json",
+      "sha256": "02265f27dd75ad233473b0f1e1c4491a2325d7e050e625fc7a223df4dcf4f8a5",
+      "bytes": 2487
+    },
+    {
+      "path": "configs/pilot_selection_freeze.json",
+      "sha256": "3b2c599497b4aa7f4dd1ecf563329b6924f9bdeb360b19016882351c3acc4a72",
+      "bytes": 1077
+    },
+    {
+      "path": "configs/proposed_protocol_v0.2.json",
+      "sha256": "4860d88f8d902fe74f30cf587dc77099a8a4f21ac3f4c323398d8fd2e0f7bcdb",
+      "bytes": 4653
+    },
+    {
+      "path": "configs/proposed_protocol_v0.3.json",
+      "sha256": "743a79476e015e4332aa6a9d2d8639dd6dbdde55dbb662c2bd1523384f163d08",
+      "bytes": 5621
+    },
+    {
+      "path": "configs/proposed_protocol_v0.4.json",
+      "sha256": "faf988085f1b9e96b403a35c37b37dd61e333471a09393ba962622e8cbf3d1b4",
+      "bytes": 7423
+    },
+    {
+      "path": "configs/proposed_split_manifest.json",
+      "sha256": "6d6e0f10d979d41739c6c07b6bab8f0c32d2844ebd150e82d13caa3bd29e124b",
+      "bytes": 14035
+    },
+    {
+      "path": "configs/protocol_lock_record_v0.2.json",
+      "sha256": "cc20d01a85ae88ed9b9b90da051387c305225fa6a18136dc1c6b9724a93c0601",
+      "bytes": 696
+    },
+    {
+      "path": "configs/requirements-pilot.lock",
+      "sha256": "0a11fa76ae3648ebc6277850deddc8c7990eeb47eca8d3f3566119de62ddbc99",
+      "bytes": 1147
+    },
+    {
+      "path": "configs/v0.4/remediation_plan.json",
+      "sha256": "0c6a7e1e924636cec6196295eac19b29a6bd7faa85e18b081549f8287ab0b99b",
+      "bytes": 16196
+    },
+    {
+      "path": "configs/v0.5/resolution_plan.json",
+      "sha256": "6046cd808d6a4b68ed42fd7d3458f0f142273aa323f64bb077cb8c0bc7dc0745",
+      "bytes": 5780
+    }
+  ],
+  "legacy_governance_record": {
+    "original": "configs/protocol_lock_record.json",
+    "archive": "research/protocol_lock/final_G3/baseline_current_aliases/configs/protocol_lock_record.json",
+    "sha256": "468a7dfd7641b8a6a89c7adc5b45a7dbfc630d5f0971e51071724279d144e640"
+  },
+  "current_administrative_lock_record": "configs/protocol_lock_record.json; bound in final receipt, not a scientific hyperparameter input",
+  "live_environment": {
+    "python": "3.12.14",
+    "implementation": "CPython",
+    "platform": "Windows-11-10.0.26220-SP0",
+    "packages": {
+      "arro3-core": "0.9.0",
+      "arviz": "0.23.4",
+      "cachetools": "6.2.6",
+      "cloudpickle": "3.1.2",
+      "colorama": "0.4.6",
+      "cons": "0.4.7",
+      "contourpy": "1.4.0",
+      "cycler": "0.12.1",
+      "donfig": "0.8.1.post1",
+      "etuples": "0.3.10",
+      "filelock": "4.0.12",
+      "fonttools": "4.66.1",
+      "formulaic": "1.2.2",
+      "google-crc32c": "1.9.0",
+      "h5netcdf": "1.8.1",
+      "h5py": "3.16.0",
+      "iniconfig": "2.3.1",
+      "interface_meta": "2.0.1",
+      "joblib": "1.6.0",
+      "kiwisolver": "1.5.1",
+      "llvmlite": "0.47.0",
+      "logical-unification": "0.4.7",
+      "markdown-it-py": "4.2.0",
+      "matplotlib": "3.11.2",
+      "mdurl": "0.1.2",
+      "miniKanren": "1.0.5",
+      "msgspec": "0.22.0",
+      "multipledispatch": "1.0.0",
+      "narwhals": "2.26.0",
+      "numba": "0.65.1",
+      "numcodecs": "0.17.0",
+      "numpy": "2.4.6",
+      "nutpie": "0.16.11",
+      "obstore": "0.11.1",
+      "packaging": "26.3",
+      "pandas": "3.0.6",
+      "patsy": "1.0.3",
+      "pillow": "12.3.0",
+      "pip": "25.0.1",
+      "platformdirs": "4.12.4",
+      "pluggy": "1.6.0",
+      "psutil": "7.2.2",
+      "pyarrow": "25.0.1",
+      "Pygments": "2.21.0",
+      "pymc": "5.28.5",
+      "pyparsing": "3.3.3",
+      "pytensor": "2.38.3",
+      "pytest": "9.1.1",
+      "python-dateutil": "2.9.0.post0",
+      "PyYAML": "6.0.3",
+      "rich": "15.0.0",
+      "scikit-learn": "1.9.1",
+      "scipy": "1.18.1",
+      "setuptools": "84.0.0",
+      "six": "1.17.0",
+      "statsmodels": "0.15.0",
+      "threadpoolctl": "3.7.0",
+      "toolz": "1.2.0",
+      "typing_extensions": "4.16.0",
+      "tzdata": "2026.5",
+      "wrapt": "2.5.0",
+      "xarray": "2026.9.0",
+      "xarray-einstats": "0.11.0",
+      "zarr": "3.4.0"
+    },
+    "float_dtype": "float64",
+    "sampler": "nutpie NUTS",
+    "blas_threads": 1
+  },
+  "environment_fingerprint": "f57b00a67e9d67b2920791bfddc8dc812dbdeb9306588a26557dfd6be15f826c",
+  "runtime_policy_observation_limit": "float64/nutpie/one-thread labels preserve frozen policy; actual interpreter/platform/packages were freshly observed, without running a workload",
+  "dependency_lock": {
+    "path": "configs/requirements-pilot.lock",
+    "sha256": "0a11fa76ae3648ebc6277850deddc8c7990eeb47eca8d3f3566119de62ddbc99"
+  },
+  "saved_environment_record": {
+    "path": "logs/pilot_environment.json",
+    "sha256": "f0cf426d4b6f45b54f42c65155e48da7d4016ee3631aebd1cf4a6774a9b991fe"
+  },
+  "canonical_quantile_source": {
+    "module": "src/rp001/v04_precision.py",
+    "module_sha256": "396a5f55ca2e9c51fd21f02f50e59c57be7aedd38321a4a3123b0b955f1fde33",
+    "function_source_sha256": "2e8a81c4d8a667a7cf3c4d864793b1e8e9a74b3418715504d936a2e95a4e0083",
+    "public_entry_point": "rp001.v04_precision.estimate_mixture_quantile_mcse",
+    "solver_helper": "rp001.v04_precision._weighted_quantile",
+    "initial_radius": "(abs(Phi^-1(p))+12)*max(SD)+(max(mu)-min(mu))",
+    "bracket": [
+      "min(mu)-radius",
+      "max(mu)+radius"
+    ],
+    "bracket_check_attempts_max": 100,
+    "radius_update": "multiply by 2 only if not bracketed; exact loop and failure semantics in pinned source",
+    "brent_xtol": 1e-12,
+    "brent_rtol": "4*float64 epsilon",
+    "scipy_version": "1.18.1",
+    "brent_signature": "(f, a, b, args=(), xtol=2e-12, rtol=np.float64(8.881784197001252e-16), maxiter=100, full_output=False, disp=True)",
+    "root_residual_guard": 1e-10,
+    "no_root_or_prediction_computation_in_G3": true
+  },
+  "legacy_runners": "Development-only historical runners have their original calibration counts/tails and raw prediction helper; they are not official-evaluation drivers. Future separately authorized execution must explicitly pass the locked cohort-specific probabilities/tails/guards to frozen primitives.",
+  "official_evaluation_driver_readiness": "No official endpoint run or full protected execution certification; procedural implementation/ledger and integrity checks remain Stage B work after separate authorization.",
+  "complete_replay_limit": "33 local-only historical payloads required; no one-command clean or bit-identical cross-platform replay certified",
+  "Colab_used_for_G3": false,
+  "new_spending": false,
+  "G3_new_scientific_runs": 0
+}
