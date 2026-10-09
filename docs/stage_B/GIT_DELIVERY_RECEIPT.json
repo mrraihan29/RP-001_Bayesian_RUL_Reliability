@@ -1,0 +1,126 @@
+{
+  "at_utc": "2026-10-09T02:57:18.652018+00:00",
+  "status": "DELIVERED_AND_REMOTE_BYTES_VERIFIED",
+  "repository_url": "https://github.com/mrraihan29/RP-001_Bayesian_RUL_Reliability",
+  "visibility": "PUBLIC",
+  "evidence_payload_commit": "97eccae2e41c48ab63ab263931b964cb5165c181",
+  "remote_HEAD_at_check": "97eccae2e41c48ab63ab263931b964cb5165c181",
+  "public_delivery_manifest_sha256": "8c0b937f3ef6e4f0db1a1304b04e4292ef2ecc57290470ede5d4712c2f6b60d8",
+  "candidate_bundle_sha256": "96084deb61336367b48f19251f0cd529e5deb98c754eb09a05dca5f52ef4263e",
+  "remote_files_exactly_verified": [
+    {
+      "path": ".gitignore",
+      "bytes": 1993,
+      "sha256": "91ddb648180963b4fb0a3732fdbe8b2e9f02efdb44b7fa189c88dab4ec7bc737",
+      "remote_byte_match": true
+    },
+    {
+      "path": "configs/stage_B_execution_plan.json",
+      "bytes": 5135,
+      "sha256": "8fe06c550cd6d2d31fce7a0158df73423e35108fc989a05670351c62b486fb86",
+      "remote_byte_match": true
+    },
+    {
+      "path": "docs/stage_B/CANDIDATE_PACKAGE_RECEIPT.json",
+      "bytes": 3157,
+      "sha256": "a450dcc376db18942f518c4a3e4865aac2d751fe1009a5c2f8ad4aebf5735359",
+      "remote_byte_match": true
+    },
+    {
+      "path": "docs/stage_B/CURRENT_STAGE_STATUS.json",
+      "bytes": 626,
+      "sha256": "334978bbdb3c4afd11d13081255a7cac11304cb041d6d8a08b61ff34c1e5fe57",
+      "remote_byte_match": true
+    },
+    {
+      "path": "docs/stage_B/DIRECT_SOL_COMPLETION_VERIFICATION.json",
+      "bytes": 2359,
+      "sha256": "419a5e8a1aa0c28c83ce75b7800f8942e4191de58998f6fe28ee86b2f10ad3be",
+      "remote_byte_match": true
+    },
+    {
+      "path": "docs/stage_B/DIRECT_SOL_PREEXECUTION_REVIEW.json",
+      "bytes": 2477,
+      "sha256": "3e1ebdf39644236b7cde32ab3b03ccdf79899ad1a6fd3389426a793021317823",
+      "remote_byte_match": true
+    },
+    {
+      "path": "docs/stage_B/INDEPENDENT_FIT_DIAGNOSTIC_DISCLOSURE.json",
+      "bytes": 1101,
+      "sha256": "19cb8e79ad7358affd02a0c4b5413f6d699320ba7d6ac19de9f1cb28b5fe1b84",
+      "remote_byte_match": true
+    },
+    {
+      "path": "docs/stage_B/OWNER_AUTHORIZATION_STAGE_B.md",
+      "bytes": 8530,
+      "sha256": "675cff9c457723b05f66edb8dc63bdfd5e3010cc6b55e05905b33bc4fc4e5bd1",
+      "remote_byte_match": true
+    },
+    {
+      "path": "docs/stage_B/PREFLIGHT_VERIFICATION.json",
+      "bytes": 7393,
+      "sha256": "350678e01ff957007e81299b48a75d73d5e4651c96cf3962047e9c1a03ddb081",
+      "remote_byte_match": true
+    },
+    {
+      "path": "docs/stage_B/README.md",
+      "bytes": 960,
+      "sha256": "aab4a705923e5bde7cb032ff4600e8c450441153fb80b5d8778d00a3fdc5bac5",
+      "remote_byte_match": true
+    },
+    {
+      "path": "docs/stage_B/research_lead_handoff.json",
+      "bytes": 10630,
+      "sha256": "293fd19c65481a0d07740c903b64048142e396b01f14ab74356c4ff585ceb08e",
+      "remote_byte_match": true
+    },
+    {
+      "path": "docs/stage_B/STAGE_B_COMPLETION_REPORT.md",
+      "bytes": 11924,
+      "sha256": "88eaca0e05bc133d5fd57b5a69c0b37517f64eda2ae040b4d373a1ec5b381421",
+      "remote_byte_match": true
+    },
+    {
+      "path": "docs/stage_B/STAGE_B_RESULT.json",
+      "bytes": 2201,
+      "sha256": "8ed56ebd38990c626307b01e67597969dd1230a08acd8546a5e553fd2f7022b5",
+      "remote_byte_match": true
+    },
+    {
+      "path": "docs/stage_B/STRUCTURAL_VALIDATION.json",
+      "bytes": 638,
+      "sha256": "f6e6a300abd884564cd28d6b7b92e4057730daa1539ba666a037920a383ae66f",
+      "remote_byte_match": true
+    },
+    {
+      "path": "scripts/stage_B/run_stage_B.py",
+      "bytes": 31233,
+      "sha256": "147f2df503e4335b7b38abeb6bc231d3dcea622f2bc290ea6b1c633fa44d9e2b",
+      "remote_byte_match": true
+    },
+    {
+      "path": "scripts/stage_B/verify_sealed_stage_B.py",
+      "bytes": 13472,
+      "sha256": "e91a48e46633f12a4cd32e9ff862d8fdf8170d219f4c787e0f32f7226f856b13",
+      "remote_byte_match": true
+    },
+    {
+      "path": "docs/stage_B/PUBLIC_PACKAGE_QC.json",
+      "bytes": 948,
+      "sha256": "8d9fea5dd8328c33ff4a81e5aa25b8d2933f29a7f06702811d279f131390b534",
+      "remote_byte_match": true
+    },
+    {
+      "path": "docs/stage_B/PUBLIC_DELIVERY_MANIFEST.json",
+      "bytes": 3443,
+      "sha256": "8c0b937f3ef6e4f0db1a1304b04e4292ef2ecc57290470ede5d4712c2f6b60d8",
+      "remote_byte_match": true
+    }
+  ],
+  "working_tree_before_this_receipt": "CLEAN",
+  "data_payloads_uploaded": false,
+  "stage_C_accepted": false,
+  "stage_D_authorized": false,
+  "labels_accessed": false,
+  "administrative_self_reference": "This receipt is a later administrative commit. It binds the exact evidence payload commit and is excluded from that payload's file map."
+}
