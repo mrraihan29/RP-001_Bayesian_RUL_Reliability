@@ -1,0 +1,23 @@
+{
+  "record": "RP001-G7-ADMINISTRATIVE-COMPLETION-001",
+  "at_utc": "2026-10-09T10:18:39.257350+00:00",
+  "checkpoint": "CONFIDENTIAL_MANUSCRIPT_DRAFT_COMPLETE_READY_FOR_OWNER_REVIEW",
+  "baseline_commit": "4694930c9ac66246885c77da071f78fa8c8fdead",
+  "scientific_protocol": "RP-001-G3-v0.5-AM1",
+  "governance": [
+    "PROTOCOL_LOCKED",
+    "SCIENTIFIC_RESULT_ACCEPTED_RESTRICTED",
+    "LEGAL_CLEARANCE_UNRESOLVED",
+    "TRANSPARENT_NON_REPLICATION_DISCLOSURE"
+  ],
+  "protected_package_manifest_sha256": "782985234661ccfcf337830e3a0d4ac286c3ca65f15ab120bb4331ffbeb64f1c",
+  "protected_manuscript_sha256": "84057fa9cbd2fbcf87fd625fc491dc225a4e0c08828a45c5e673f66a617f3e5f",
+  "protected_owner_memo_sha256": "d0fbb7d5eba80bf251a00c9a9a76fe942e4522d2dc5e5d6c258e0d6e5f896058",
+  "owner_authorization_sha256": "07d444fab4ba754a3c52f5477955f3e87405934a81eba7130374ab59e1bec198",
+  "scientific_reexecution": false,
+  "independent_replication": false,
+  "public_scientific_release": false,
+  "submission": false,
+  "research_validation": false,
+  "next_action": "STOP; Research Owner review. Further scientific or publication work requires separately scoped authorization."
+}
