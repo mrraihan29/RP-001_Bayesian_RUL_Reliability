@@ -1,0 +1,29 @@
+{
+  "reviewer": "SOL lead, direct static mathematical/source verification",
+  "status": "PASS_FOR_STAGE_B_ORCHESTRATION",
+  "reviewed_at_utc": "2026-10-09T02:42:26.961833+00:00",
+  "driver_sha256": "147f2df503e4335b7b38abeb6bc231d3dcea622f2bc290ea6b1c633fa44d9e2b",
+  "plan_sha256": "8fe06c550cd6d2d31fce7a0158df73423e35108fc989a05670351c62b486fb86",
+  "materials": {
+    "Gaussian_conditional": "Frozen sensor_terms AR whitening and 2x2 Woodbury formula reuses v0.5 verified marginal/conditional Gaussian; a=[1,log(C/100)], B actual available positions, y=None",
+    "importance": "lz=p(z_i|theta) for exactly one unseen engine; no collective global update; equal base draws pooled with per-engine importance weights",
+    "quantile": "Canonical helper returned quantile supplies stored endpoint and MCSE/CDF diagnostics; no legacy root route",
+    "MCSE": "Pooled chain-preserving (12,8000), independent (4,8000), batch250/500, tail .05/600 fixed before input",
+    "replication": "3pairs x100 x3 =900 compatibility family, z=Phi^-1(1-.05/1800), max ordinary MCSE across batches, zero/nonfinite denominator fails",
+    "CQR": "Frozen objects/maps, rank24 q reused, raw endpoints sorted by frozen predict_endpoints, support projection frozen apply_correction, separate median unshifted",
+    "short_history": "Frozen transform_prefix and features support w1; no interpolation extrapolation; all IDs retained",
+    "overlap": "Existing population SD normalization uses all81 eligible training prefixes only,24 non-ID/cycle fields, no test normalization; all100x100 cross-dataset pairing",
+    "failure": "Exclusive-create artifacts and immediate exceptions at gate failure; complete ledger retained; no retry mode",
+    "protection": "Only authorized named zip member opened; standalone label-file audit guard; no outcome scoring/fitting calls in AST"
+  },
+  "limitations": [
+    "Static review is not proof of all execution paths",
+    "Sensor input and official numerical precision not observed before this review",
+    "Archive central-directory parsing is inherent to opening the sensor zip but no label member content is read",
+    "Local procedural custody is not independently encrypted/separate-identity/WORM protection",
+    "MCSE and replication compatibility remain approximate numerical checks, not scientific coverage or generalization guarantees"
+  ],
+  "sensor_accessed": false,
+  "label_accessed": false,
+  "extra_experiments": 0
+}
