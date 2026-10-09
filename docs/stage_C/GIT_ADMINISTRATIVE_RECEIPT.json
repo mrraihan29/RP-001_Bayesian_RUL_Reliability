@@ -1,0 +1,111 @@
+{
+  "at_utc": "2026-10-09T03:22:23.967807+00:00",
+  "status": "STAGE_C_ACCEPTED_AND_PUBLIC_CHECKPOINT_VERIFIED",
+  "repository_url": "https://github.com/mrraihan29/RP-001_Bayesian_RUL_Reliability",
+  "repository_visibility": "PUBLIC",
+  "acceptance_payload_commit": "3f582c2935fec286b5576467b3b5d367bd467c00",
+  "verification_code_commit": "48d1307473b16ba10247fd8d2d49ea712f3fc7ee",
+  "remote_HEAD_at_check": "3f582c2935fec286b5576467b3b5d367bd467c00",
+  "public_delivery_manifest_sha256": "2729107564ff30bd2854659695f55be2b1c1f17365f7b125002c4e5606c20676",
+  "Stage_C_acceptance_receipt_sha256": "62c581c2032dc025bb74597e365059a90fc7aa7eb10befc9800dd0cb1ba98c72",
+  "accepted_prediction_bundle_sha256": "96084deb61336367b48f19251f0cd529e5deb98c754eb09a05dca5f52ef4263e",
+  "remote_public_files_exactly_verified": [
+    {
+      "path": "configs/stage_C_verification_plan.json",
+      "bytes": 3105,
+      "sha256": "6ee48b1b715f522da06561fb1d925638054153f4c5164e512c9d751bbe611570",
+      "remote_byte_match": true
+    },
+    {
+      "path": "scripts/stage_C/verify_freeze.py",
+      "bytes": 19531,
+      "sha256": "2ac5c9ddca895606f440cca92f106d1981d35f0450565c0db87dcfad5ede1348",
+      "remote_byte_match": true
+    },
+    {
+      "path": "docs/stage_C/ACCEPTED_PREDICTION_IDENTITIES.json",
+      "bytes": 2781,
+      "sha256": "a9e60506945e8c3746ea41553fe7c1a502fd6c1376f46f1c1cb8223e6bbacf08",
+      "remote_byte_match": true
+    },
+    {
+      "path": "docs/stage_C/COHORT_AND_NUMERICAL_ACCEPTANCE_SUMMARY.json",
+      "bytes": 1236,
+      "sha256": "ff8a2192dbde045a8e7f643ce38dc2aff6359706f1b176b507eb318582d09aec",
+      "remote_byte_match": true
+    },
+    {
+      "path": "docs/stage_C/CURRENT_PROTECTED_PHASE_STATUS.json",
+      "bytes": 1518,
+      "sha256": "8ec7f66f6ba918026ecf27a377d51fd7f1457fd0da6f0aabb9d2ac415a1388e2",
+      "remote_byte_match": true
+    },
+    {
+      "path": "docs/stage_C/FINAL_INTEGRITY_VERIFICATION.json",
+      "bytes": 3891,
+      "sha256": "3e7ccab6ed94863a9c6c9e2980f6d0a78da26f7cab6572888c038cd7d134c0ff",
+      "remote_byte_match": true
+    },
+    {
+      "path": "docs/stage_C/FORMAL_STAGE_C_FREEZE_ACCEPTANCE_REPORT.md",
+      "bytes": 8634,
+      "sha256": "35c63a438154526c39d4a34acebed8917d5dd158bd3ccc02b280cd4fb29c4e02",
+      "remote_byte_match": true
+    },
+    {
+      "path": "docs/stage_C/OWNER_STAGE_C_DECISION.md",
+      "bytes": 5956,
+      "sha256": "6799a82744a2f35564d204ab4dd0ab307c92d30cb3be27065f2d893d1734b5d2",
+      "remote_byte_match": true
+    },
+    {
+      "path": "docs/stage_C/README.md",
+      "bytes": 802,
+      "sha256": "dd4c43d8dd7f30c8039846cb9cc580b82005d92048492b245f5d25f438942d94",
+      "remote_byte_match": true
+    },
+    {
+      "path": "docs/stage_C/research_lead_handoff.json",
+      "bytes": 11115,
+      "sha256": "49882a252d3cf67a838934a91f633275025d0a7bd06086c35c6f871401bac036",
+      "remote_byte_match": true
+    },
+    {
+      "path": "docs/stage_C/STAGE_C_ACCEPTANCE_RECEIPT.json",
+      "bytes": 2982,
+      "sha256": "62c581c2032dc025bb74597e365059a90fc7aa7eb10befc9800dd0cb1ba98c72",
+      "remote_byte_match": true
+    },
+    {
+      "path": "docs/stage_C/STAGE_C_DECISION_RECORD.md",
+      "bytes": 1798,
+      "sha256": "57b4a399b0e7f1b496e0c3dcd3d2e0e6249b0cdcbf19cc43432830118a869d30",
+      "remote_byte_match": true
+    },
+    {
+      "path": "docs/stage_C/STRUCTURAL_VALIDATION.json",
+      "bytes": 407,
+      "sha256": "81a911c07e293dff7ac1c7e0ceadd76d8bf25e9e221790c73fab56a23801f392",
+      "remote_byte_match": true
+    },
+    {
+      "path": "docs/stage_C/PUBLIC_PACKAGE_QC.json",
+      "bytes": 770,
+      "sha256": "458dad0cf3d258e219be5cc9a812c982fb82419d265cdb76c7715e0ef73ea4c2",
+      "remote_byte_match": true
+    },
+    {
+      "path": "docs/stage_C/PUBLIC_DELIVERY_MANIFEST.json",
+      "bytes": 2872,
+      "sha256": "2729107564ff30bd2854659695f55be2b1c1f17365f7b125002c4e5606c20676",
+      "remote_byte_match": true
+    }
+  ],
+  "working_tree_before_this_administrative_receipt": "CLEAN",
+  "Stage_C": "ACCEPTED",
+  "Stage_D": "NOT_AUTHORIZED",
+  "labels_accessed": false,
+  "outcome_scoring_performed": false,
+  "restricted_payloads_uploaded": false,
+  "administrative_self_reference": "This later receipt binds the exact acceptance payload commit; it is excluded from that commit's earlier file map and does not invent its own storage commit."
+}
