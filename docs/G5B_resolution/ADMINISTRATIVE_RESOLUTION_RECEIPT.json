@@ -1,0 +1,50 @@
+{
+  "record": "RP001-G5B-ADMINISTRATIVE-OWNER-RESOLUTION",
+  "recorded_at_utc": "2026-10-09T08:43:25.695380+00:00",
+  "source_git_checkpoint": "be9674990c1e982bbd7020d406ca534b2d174b94",
+  "owner_authority_sha256": "367f3a96454446db8876efa9580c2e0e5034c376900d731af9d698dc768d8740",
+  "approved_dispositions": {
+    "A1": "LEGAL_CLEARANCE_UNRESOLVED",
+    "B1": "TRANSPARENT_NON_REPLICATION_DISCLOSURE",
+    "C": "RESTRICTED_DESCRIPTIVE_AND_NUMERICAL_AUDIT_CONTRIBUTION"
+  },
+  "statuses": {
+    "protocol": "PROTOCOL_LOCKED",
+    "scientific_result": "SCIENTIFIC_RESULT_ACCEPTED_RESTRICTED",
+    "G5B_owner_decisions": "RESOLVED",
+    "rights": "LEGAL_CLEARANCE_UNRESOLVED",
+    "independent_replay": "NOT_PERFORMED",
+    "replication_disclosure": "MANDATORY",
+    "contribution_scope": "RESTRICTED_DESCRIPTIVE_AND_NUMERICAL_AUDIT",
+    "research_validation": "NOT AUTHORIZED",
+    "public_scientific_release": "NOT AUTHORIZED",
+    "manuscript_drafting_submission": "NOT AUTHORIZED",
+    "G6": "PROPOSED_NOT_AUTHORIZED"
+  },
+  "hashes": {
+    "reviewed_G5_memo": "2d497f341533d01114030deff360e5b9086db1bf0c1bd170327d09eeac9f4403",
+    "reviewed_G5_package_manifest": "a21035638985d76deb5211f1a04cd63e66405ce64c839eaabb28aefd6135f9a5",
+    "new_formal_owner_resolution": "9b4b064de9889cc27abcd949d4db1ed5e21ef66f5820c4c25594a11b0d1dc032",
+    "frozen_reporting_contract": "d6696931303595817d7b79d2d0e3f700f8529934ac853ed30c614534b5bc51d8",
+    "rights_decision_checklist": "6de6feae02af5a32d44ea6d09801573f4aa5daf69a53fd37a04ce483b5938197",
+    "nonexecutable_replay_checklist": "ee7782862edadd45cf2c31c17f195fe3e833cb928d6aa25c29db978dfa5a7cb4",
+    "proposed_G6": "199154a121998948e8a50bb3cd2bf186c36b7ea55de8b3e3d31ffd1a125b4f22",
+    "protected_completion_report": "6714b9415cd5d3dc573fb18ed53be65ecd3aeb27622fe359ae15187afef4d666",
+    "authority_evidence_integrity": "ff5c5de4de4195b83463e8d7f253b524d54ff617591749f5bfc83a66fc2c71cb",
+    "governance_verification": "9310bc6f8204f57b2f87b9022ec5ce2bd74d9688983fb5c5d8846109904e3ecf",
+    "protected_package_manifest": "71611688df41649e56d97ca4a412c4428d0859db65fb90a08db9865ed8affd27"
+  },
+  "administrative_completion": "G5-B OWNER RESOLUTIONS RECORDED",
+  "original_scientific_records_modified": false,
+  "original_G5_records_modified": false,
+  "new_scientific_execution": false,
+  "new_literature_search": false,
+  "replay_executed_or_scheduled": false,
+  "manuscript_drafted_or_submitted": false,
+  "public_scientific_result_release": false,
+  "new_LICENSE_added": false,
+  "rights_holder_outreach": false,
+  "independent_owner_identity_verified": false,
+  "owner_cryptographic_signatures": null,
+  "stop_after_handoff": true
+}
