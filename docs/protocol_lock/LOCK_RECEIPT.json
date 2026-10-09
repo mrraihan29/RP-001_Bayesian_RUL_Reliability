@@ -1,13 +1,115 @@
 {
   "version": "RP-001-G3-v0.5-AM1",
-  "status": "PENDING_POSTCOMMIT_RECEIPT",
+  "status": "FORMAL_PROTOCOL_LOCK_COMPLETED",
   "protocol_status": "PROTOCOL_LOCKED",
-  "lock_payload_commit": null,
-  "note": "Payload receipt stub only. Final receipt follows committed verified payload, preventing circular self-commit identity.",
-  "protected_evaluation_authorization": {
+  "lock_payload_commit": "fc7083d23d3cff5e4ee9a9f5d0af9036ec32e26d",
+  "lock_commit": "fc7083d23d3cff5e4ee9a9f5d0af9036ec32e26d",
+  "locked_at_utc": "2026-10-09T02:08:59.252709+00:00",
+  "receipt_created_at_utc": "2026-10-09T02:17:42.167575+00:00",
+  "client_date": "2026-10-09",
+  "client_timezone": "Asia/Jakarta",
+  "owner_original_scientific_commit": "c583ce62eac9a6b3dcd29c1929cc07c17569beb7",
+  "owner_amendment_review_commit": "1fc660b3ce09dd2b23b6a05e0698903bf6060355",
+  "owner_authorization": {
+    "source": "Human Raihan current conversation plus original G3 attachment; stated Research Owners Raihan x Rei",
+    "original_directive_path": "docs/protocol_lock/OWNER_AUTHORIZATION_G3.md",
+    "original_directive_sha256": "ac5a51a4ddb17048507e36cd30ae7f735e0d52180dead411dbeb918338faf132",
+    "amendment_decision_path": "docs/protocol_lock/OWNER_AMENDMENT_DECISION_G3_AM_001.md",
+    "amendment_decision_sha256": "e1b2ab0e21512d41b840621a05e6ef3deec19022e78ca7f4425a71a7033cd64a",
+    "identity_limit": "Conversation provenance only; transcript/attachment hashes certify stored bytes, not an independently verified identity/signature",
+    "cryptographic_signature": null
+  },
+  "amendment": {
+    "id": "G3-AM-001",
+    "approved": true,
+    "substitution_count": 1,
+    "exact_diff_sha256": "632b2b5cccfb5d830ab74ae1d1c810bc0bbd54758557cea3dab8e54c3f41fe9b",
+    "original_contract_sha256": "1e03e072682878fde6ced8c00ddcde44594af59e56129e65db1127a0166fa598",
+    "amended_source_contract_sha256": "b5d719bad3d24e531de57e7503d4eb9a697f1840bcc5f3d41692ed0c5fd98a9f",
+    "locked_contract_sha256": "335e202170d826c80453a3c2136c999b966560303e18e6678464d50caff2c0e4",
+    "locked_scientific_body_sha256": "360b3b50ad9054f22a92a549046594a32b178856617c7cad205b6e8389dcfe3c",
+    "canonical_quantile_source_sha256": "396a5f55ca2e9c51fd21f02f50e59c57be7aedd38321a4a3123b0b955f1fde33"
+  },
+  "scientific_source_map_sha256": "0967e8db64935764b5c34fb35b15978739c6a2d536f6ea13bb05fd0540681d5d",
+  "environment_fingerprint": "f57b00a67e9d67b2920791bfddc8dc812dbdeb9306588a26557dfd6be15f826c",
+  "dataset_split_plan_sha256": {
+    "data/raw/train_FD001.txt": "963b5e22825b34d8b21c69e1aeb4af3e647050eb672ee8834ba4b5d91d2de0f8",
+    "configs/proposed_split_manifest.json": "6d6e0f10d979d41739c6c07b6bab8f0c32d2844ebd150e82d13caa3bd29e124b",
+    "configs/v0.5/resolution_plan.json": "6046cd808d6a4b68ed42fd7d3458f0f142273aa323f64bb077cb8c0bc7dc0745"
+  },
+  "principal_posterior_fingerprints": [
+    {
+      "run_id": "v04_main_r1",
+      "path": "experiments/v0.4/fits/v04_main_r1.nc",
+      "sha256": "750157b158f665d2c962202813f2cfd11a0152730956743dc434b6b47db75415",
+      "bytes": 6134707
+    },
+    {
+      "run_id": "v04_main_r2",
+      "path": "experiments/v0.4/fits/v04_main_r2.nc",
+      "sha256": "bce67cd39c38c54271ab59d1a9922795ff62524aac25bd09f64eed3a3f99fe3b",
+      "bytes": 6135609
+    },
+    {
+      "run_id": "v04_main_r3",
+      "path": "experiments/v0.4/fits/v04_main_r3.nc",
+      "sha256": "805ec463ea94b565c536fc39dcc3d95a784d9fd1527f15ab106a4b2acf23cb96",
+      "bytes": 6136478
+    }
+  ],
+  "frozen_manifests": {
+    "FROZEN_MODEL_AND_CONFIGURATION_MANIFEST.json": "c8e3c469838705696c8ee2124d74e2c81223fdb2414c2fc95b7a47ec3415200f",
+    "FROZEN_CODE_AND_ENVIRONMENT_MANIFEST.json": "e9667092f3ea5b04173c0b5f7ef45d8d9b7759873a6e0b16f843a5c0d168551c",
+    "FROZEN_DATA_AND_SPLIT_MANIFEST.json": "f8a7f411b01aea09c0243a53f4432299bca111a92efbd5b4c81a2406faf99c40"
+  },
+  "payload_manifest_path": "logs/protocol_lock/final_G3/lock_payload_manifest.json",
+  "payload_manifest_sha256": "4efdc46225c12f7a897f998149b3fa77ed96f64b4f4bb832a933122572385d31",
+  "sealed_payload_files": 58,
+  "payload_file_map_sha256": "e33c045d1e68608b665a69864ea1f02e4235a0e9e002da513c9ab6ca4d80ab6b",
+  "baseline_actual_files_verified": 593,
+  "baseline_snapshot_entries": 560,
+  "historical_local_only_files": 33,
+  "failed_G3_attempt_sealed_files_preserved": 38,
+  "historical_failed_attempt_receipt": "docs/protocol_lock/history/G3_lock_attempt_1/LOCK_RECEIPT.json",
+  "direct_material_scientific_components_pass": 9,
+  "native_structural_validation": {
+    "handoff": {
+      "result": "PASS",
+      "errors": []
+    },
+    "research": {
+      "status": "PROTOCOL_LOCKED",
+      "protocol_status": "PROTOCOL_LOCKED",
+      "mode": "dataset-benchmark",
+      "hard_failures": [],
+      "warnings": [],
+      "info": []
+    }
+  },
+  "protected_phase_authorization": {
     "stage_A_formal_lock": true,
     "stage_B_official_test_sensors": false,
     "stage_C_prediction_freeze_acceptance": false,
     "stage_D_official_test_labels_and_scoring": false
-  }
+  },
+  "official_test_sensors_accessed": false,
+  "official_test_labels_accessed": false,
+  "confirmatory_scoring": false,
+  "new_scientific_experiments": 0,
+  "posterior_sampling_or_retraining": false,
+  "fallback_or_reselection": false,
+  "repository_url": "https://github.com/mrraihan29/RP-001_Bayesian_RUL_Reliability",
+  "repository_visibility": "PUBLIC",
+  "scientific_publication_authorized": false,
+  "self_reference_policy": "The lock payload commit contains the ten core files with a clearly pending receipt stub; this final receipt is a subsequent administrative commit. The receipt/manifest itself and later receipt verification are excluded from the prior file map. Final receipt binds exact committed payload without claiming its own storage commit.",
+  "outstanding_risks": [
+    "Future endpoint integrity/overlap/numerical failures and full protected-driver readiness untested",
+    "Unknown cutoff transport/exchangeability; no guaranteed official conformal coverage",
+    "Weak physical nuisance identification; exposed calibration/prior adaptation",
+    "Small calibration/tuning cohorts and unequal representation/search/compute",
+    "Approximate MCSE/kink qualification; no unconditional whole-pipeline inference",
+    "33 local-only historical payloads; incomplete clean/cross-platform replay",
+    "Novelty and lawful raw-data redistribution unresolved"
+  ],
+  "next_gate": "STOP: separately authorized Stage B required before any official test-sensor access"
 }

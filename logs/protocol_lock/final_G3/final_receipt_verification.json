@@ -1,0 +1,33 @@
+{
+  "status": "PASS",
+  "checked_at_utc": "2026-10-09T02:18:44.164583+00:00",
+  "scope": "Postcommit final receipt/ten-core/payload identity verification only; no scientific experiment/protected access",
+  "version": "RP-001-G3-v0.5-AM1",
+  "lock_commit": "fc7083d23d3cff5e4ee9a9f5d0af9036ec32e26d",
+  "protocol_status": "PROTOCOL_LOCKED",
+  "sealed_payload_files_verified": 58,
+  "core_files_verified": 10,
+  "core_sha256": {
+    "LOCKED_RESEARCH_PROTOCOL.md": "78f37893cb0d7df1214f738a7236fecd8617bd16ab664654f0b451bd6679c594",
+    "LOCKED_ANALYSIS_CONTRACT.md": "335e202170d826c80453a3c2136c999b966560303e18e6678464d50caff2c0e4",
+    "LOCK_DECISION_RECORD.md": "944be25383841860241608d55e33e7311403ce3a5bb8c8f0a0212ae7d54d4cd4",
+    "FROZEN_MODEL_AND_CONFIGURATION_MANIFEST.json": "c8e3c469838705696c8ee2124d74e2c81223fdb2414c2fc95b7a47ec3415200f",
+    "FROZEN_CODE_AND_ENVIRONMENT_MANIFEST.json": "e9667092f3ea5b04173c0b5f7ef45d8d9b7759873a6e0b16f843a5c0d168551c",
+    "FROZEN_DATA_AND_SPLIT_MANIFEST.json": "f8a7f411b01aea09c0243a53f4432299bca111a92efbd5b4c81a2406faf99c40",
+    "SCIENTIFIC_CLAIM_BOUNDARIES.md": "5e4caee6fec8663362e74d06147c757946900abc9a807583408de39da41f520a",
+    "PROTECTED_EVALUATION_ACCESS_POLICY.md": "75194576c749d1a4e4e47fcb1e644bfc87bd49c52bdd6c8dc15bb7d9b4c0aa68",
+    "LOCK_VERIFICATION_REPORT.md": "b085cf5b4ba6ee2dabf11e4abe72e310ab577bb528642f244defe6a7d919609b",
+    "LOCK_RECEIPT.json": "9803eba8f616e6fd8bd95780ba829863cd629643d7e13590d8a4f5535509bade"
+  },
+  "receipt_sha256": "9803eba8f616e6fd8bd95780ba829863cd629643d7e13590d8a4f5535509bade",
+  "receipt_credential_signature_scan": "PASS",
+  "phase_permissions": {
+    "stage_A_formal_lock": true,
+    "stage_B_official_test_sensors": false,
+    "stage_C_prediction_freeze_acceptance": false,
+    "stage_D_official_test_labels_and_scoring": false
+  },
+  "scientific_implementation_changes": 0,
+  "new_scientific_runs": 0,
+  "later_administrative_record_excluded_from_prior_payload_map": true
+}
