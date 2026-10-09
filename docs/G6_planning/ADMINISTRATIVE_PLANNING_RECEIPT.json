@@ -1,0 +1,88 @@
+{
+  "record": "RP001-G6-PUBLIC-ADMINISTRATIVE-RECEIPT",
+  "at_utc": "2026-10-09T09:35:20.175875+00:00",
+  "status": "G6_COMPLETED_OWNER_REVIEW_PENDING",
+  "baseline_commit": "a593be7d590df37a06ec6f9d484ae5aad2e6d502",
+  "protocol": "RP-001-G3-v0.5-AM1",
+  "protocol_status": "PROTOCOL_LOCKED",
+  "scientific_result_status": "SCIENTIFIC_RESULT_ACCEPTED_RESTRICTED",
+  "G5B_decisions": {
+    "A1": "LEGAL_CLEARANCE_UNRESOLVED",
+    "B1": "TRANSPARENT_NON_REPLICATION_DISCLOSURE",
+    "C": "RESTRICTED_DESCRIPTIVE_AND_NUMERICAL_AUDIT_CONTRIBUTION"
+  },
+  "six_records_one_memo": {
+    "records": 6,
+    "memos": 1
+  },
+  "protected_package_manifest_sha256": "9ed801ed2693a5530e5814d1ece4d198838316a8fc435ba3d650a8bf110a0edd",
+  "protected_artifact_fingerprints": [
+    {
+      "name": "DEPENDENCY_LICENSE_CLASSIFICATION.json",
+      "sha256": "5e00a0c33e7aef85aef215f5bef5a607b61b51f3d924c3959482a29a88772c0a"
+    },
+    {
+      "name": "DEPENDENCY_LICENSE_SOURCE_INVENTORY.json",
+      "sha256": "a2147b7dd21f6263f3bfb0f01c3f7dbd14bd9707f6255d09fd81b78148a05681"
+    },
+    {
+      "name": "FINAL_DOCUMENTARY_AND_PRESERVATION_CHECKS.json",
+      "sha256": "c684c795d5d793ed29e3fedbf484d8ad0f5a237e9eb37c73144183cd32fc916b"
+    },
+    {
+      "name": "G6_CONTRIBUTION_DEFENSIBILITY_REVIEW.md",
+      "sha256": "2c7ce9a56f94eb68c13ca5cd57a33aef5ab79f0eebb343485a0214a5f57136f7"
+    },
+    {
+      "name": "G6_OWNER_MEMO.md",
+      "sha256": "8a391a223a529c5f88a9725c4336cdf2b2a767f43863d40bfa2ab7f747a4ebd5"
+    },
+    {
+      "name": "G6_READINESS_AND_BLOCKER_MATRIX.md",
+      "sha256": "e41b0bde5188624733dac7014eeefb70973881ea629ccb5072959aa1c6e4d388"
+    },
+    {
+      "name": "G6_RELEASE_AND_RIGHTS_INVENTORY.md",
+      "sha256": "34aff0947d330c895d686287c5c954a54541c75530e9e54a60c92963c7820fbe"
+    },
+    {
+      "name": "G6_REPRODUCIBILITY_AND_ACCESS_STATEMENT.md",
+      "sha256": "eb382867fff8add400ed80a49100a6e127fc092754148bb99fc981c8512db93d"
+    },
+    {
+      "name": "G6_RESTRICTED_MANUSCRIPT_BLUEPRINT.md",
+      "sha256": "1bc85c4f99cd99222e1d3aee1fd92ef873389f074f55255be7aa1958953fd28e"
+    },
+    {
+      "name": "G6_TARGETED_RIGHTS_EVIDENCE_MATRIX.md",
+      "sha256": "3453736fe98d4901f5fd9f88303259020c581286ddad568eeed062845ef19be5"
+    },
+    {
+      "name": "OWNER_AUTHORIZATION_G6.md",
+      "sha256": "ba7b897ea8f7d908ea8fd35f4895420ce0c429ae44e5b353b0addda558832644"
+    },
+    {
+      "name": "PREFLIGHT_INTEGRITY.json",
+      "sha256": "c3562bf4a807851e92f4992d627611db52cdbb658c60eb667a4ba98792defd1a"
+    },
+    {
+      "name": "SOURCE_AND_DECISION_LEDGER.json",
+      "sha256": "e7cda30b0a29bfb04b7da631e9f5f42f1636003386ab582c5dbc615a023a965f"
+    },
+    {
+      "name": "TARGETED_DOCUMENTARY_SOURCE_LEDGER.json",
+      "sha256": "82bfaeecc7dd52516635b907bda6784ddc24baf820f312d04e406c5198ee4001"
+    }
+  ],
+  "unauthorized": [
+    "scientific execution",
+    "research validation",
+    "full manuscript drafting",
+    "independent replay",
+    "public scientific result release",
+    "submission",
+    "rights-holder outreach",
+    "automatic second pass"
+  ],
+  "confidentiality": "No protected outcome values, rights conclusions, claim mappings or readiness recommendation in this public receipt."
+}
