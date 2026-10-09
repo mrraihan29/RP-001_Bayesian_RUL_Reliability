@@ -1,0 +1,23 @@
+{
+  "at_utc": "2026-10-09T03:52:50.447765+00:00",
+  "status": "PASS",
+  "public_policy": "Administrative/code/fingerprints only; no restricted outcome payload",
+  "original_baseline_commit": "62892ff054a967daa28f5314dbd2e5981f902268",
+  "all_baseline_tracked_bytes_preserved": 678,
+  "protected_manifest_rehash_PASS": true,
+  "protected_manifest_sha256": "da8be4a452b54049d204c87f7775c53c45bd3606a147a6ef6e2bc4b425a0c7f0",
+  "protected_members_rehashed": 40,
+  "D_event_chain_PASS": true,
+  "prelabel_receipt_and_failure_seed_precede_label_access": true,
+  "accepted_B_inventory_counts": {
+    "base_payload_manifest": 3016,
+    "verification_manifest": 3,
+    "review_tables_manifest": 3
+  },
+  "accepted_C_manifest_unchanged": true,
+  "protected_payloads_git_ignored": true,
+  "public_admin_metric_marker_scan": "PASS",
+  "prelabel_sources_unchanged": true,
+  "scientific_results_publicly_released": false,
+  "raw_labels_or_predictions_staged": false
+}

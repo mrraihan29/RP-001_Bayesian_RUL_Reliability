@@ -1,0 +1,14 @@
+{
+  "at_utc": "2026-10-09T03:52:50.184838+00:00",
+  "scope": "Post-scientific-seal administrative delivery-QC timestamp formatting only",
+  "source_path": "scripts/stage_D/delivery_qc.py",
+  "failure": "TypeError: str object is not callable when generating administrative timestamp",
+  "original_sha256": "ff4da293521655833545b6430720eb0d85b57c50ef045fc3d43ce22c100e64ed",
+  "corrected_sha256": "d8f074d7759dcb6fca5f5453386251fccc432190ec6865c3118f9409d96b4862",
+  "exact_substitution": "Three occurrences at_utc=now() -> at_utc=now; timestamp variable is already a string",
+  "scientific_scoring_rerun": false,
+  "prelabel_scientific_source_changed": false,
+  "predictions_labels_metrics_thresholds_changed": false,
+  "sealed_scientific_payload_changed": false,
+  "no_material_locked_procedure_correction": true
+}

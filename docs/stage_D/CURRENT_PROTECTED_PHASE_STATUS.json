@@ -1,0 +1,11 @@
+{
+  "at_utc": "2026-10-09T03:48:53.568401+00:00",
+  "A": "PROTOCOL_LOCKED",
+  "B": "COMPLETED",
+  "C": "ACCEPTED",
+  "D": "COMPLETED_PROTECTED_OWNER_REVIEW",
+  "public_scientific_release": "NOT_AUTHORIZED",
+  "RESEARCH_VALIDATED": false,
+  "historical_status_records_unchanged": true,
+  "status_is_administrative_only": true
+}
