@@ -1,0 +1,23 @@
+{
+  "record": "RP001-STAGE-D-D001-GIT",
+  "at_utc": "2026-10-09T03:55:08.892882+00:00",
+  "administrative_status": "STAGE_D_COMPLETED_PROTECTED_OWNER_REVIEW",
+  "public_payload_commit": "4d44d0a899ed5b134bad67cb7695c259069656b2",
+  "public_payload_commit_url": "https://github.com/mrraihan29/RP-001_Bayesian_RUL_Reliability/commit/4d44d0a899ed5b134bad67cb7695c259069656b2",
+  "public_manifest_sha256": "0e3d389c948e6b70133e613dec443727f8def3f17eb871eeea6a2e0406f60c5f",
+  "public_files_byte_verified": 25,
+  "remote_main_matches_payload": true,
+  "protected_scientific_manifest_sha256": "da8be4a452b54049d204c87f7775c53c45bd3606a147a6ef6e2bc4b425a0c7f0",
+  "protected_scientific_report_sha256": "0b5fb383286454f8a5c19450fad76aafd8adda027086b21672e10315a1d6033c",
+  "prelabel_code_plan_commit": "b68fc05b375f6aaa5e58f868cb03e38b7e90fd67",
+  "execution_commit": "0073022c440a8d2e0273cd6d0567648a016b4b15",
+  "environment_fingerprint": "f57b00a67e9d67b2920791bfddc8dc812dbdeb9306588a26557dfd6be15f826c",
+  "dataset_fingerprint_sha256": "571f8faa27e81389703a4cf5f5c502461b262928f40d09630f239c94eb5eabe0",
+  "public_scientific_release_authorized": false,
+  "scientific_outcomes_uploaded": false,
+  "research_status": "PROTOCOL_LOCKED",
+  "public_repository_verification": "Exact SHA256/byte verification of all24 manifest members plus manifest; remote tree contains no protected payload",
+  "administrative_QC_correction_record": "docs/stage_D/ADMINISTRATIVE_QC_CORRECTION.json",
+  "git_receipt_policy": "Subsequent administrative commit records this payload commit; no circular self-reference",
+  "next_step": "STOP; Research Owner review of the protected local scientific package"
+}
