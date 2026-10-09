@@ -1,0 +1,32 @@
+{
+  "record": "RP001-G5-PUBLIC-REVIEW-METHOD",
+  "at_utc": "2026-10-09T07:29:04.329741+00:00",
+  "review_mode": "focused narrative prior-art and six-workstream audit",
+  "workstreams": [
+    "CLAIM_EVIDENCE_AUDIT",
+    "NOVELTY_AND_PRIOR_ART_REVIEW",
+    "REPRODUCIBILITY_READINESS_ASSESSMENT",
+    "DATA_RIGHTS_AND_PROVENANCE_REVIEW",
+    "REPORTING_COMPLETENESS_AUDIT",
+    "SCIENTIFIC_INTEGRITY_AND_MANUSCRIPT_READINESS"
+  ],
+  "pass_limit": 1,
+  "memo_limit": 1,
+  "discovery_query_cap": 12,
+  "directly_extracted_scholarly_report_cap": 20,
+  "rights_sources": "NASA original catalog/repository/policy and distribution README; no archive download",
+  "eligibility": "Primary methodological or empirical works directly addressing RUL Bayesian/uncertainty/conformal/interval evaluation or AR1 covariance; peer-reviewed prioritized, pertinent preprints labeled.",
+  "limits": "No date restriction; English accessible sources; web discovery and primary publisher/author repositories, not subscribed exhaustive databases; no systematic-completeness or absent-prior-art certification.",
+  "source_inspection": "Distinguish full text, abstract and metadata; source contents directly read, exact URLs and search records retained.",
+  "confidentiality": "No protected outcomes, labels or per-engine payload in external searches or public files.",
+  "prohibited": [
+    "scientific execution",
+    "official outcome reanalysis",
+    "changes to sealed originals",
+    "public scientific release",
+    "RESEARCH_VALIDATED",
+    "automatic second pass"
+  ],
+  "stop_after_delivery": true,
+  "confidential_workstreams": "Owner-only records retained; no public scientific findings included"
+}

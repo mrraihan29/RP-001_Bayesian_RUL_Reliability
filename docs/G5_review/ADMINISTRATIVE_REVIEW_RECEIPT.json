@@ -1,0 +1,30 @@
+{
+  "record": "RP001-G5-ADMINISTRATIVE-REVIEW-RECEIPT",
+  "at_utc": "2026-10-09T08:00:20.052072+00:00",
+  "baseline_git_commit": "eee2fc49d763b6a5b3394e3710cb512d2d58dfaf",
+  "owner_authorization_sha256": "d0d4c37f9a07d80057c0c5f2606e1ce88965ed2612a04be52b2ea674fe452892",
+  "review_passes": 1,
+  "workstream_count": 6,
+  "owner_memo_count": 1,
+  "review_package_manifest_sha256": "a21035638985d76deb5211f1a04cd63e66405ce64c839eaabb28aefd6135f9a5",
+  "protected_workstream_sha256": {
+    "CLAIM_EVIDENCE_AUDIT": "a4fde9868f29c9003fc9ec8169c77a7595931eac49f424e07dc321dc8866a38e",
+    "NOVELTY_AND_PRIOR_ART_REVIEW": "c8144b7d798ed07500c2783eaa78ac563f84d6441e7b3650de2bcec397dd324b",
+    "REPRODUCIBILITY_READINESS_ASSESSMENT": "13d68917076aae5544837af26c5b5b84b9feeaa7c9b8eb8044684fd6d2aea46e",
+    "DATA_RIGHTS_AND_PROVENANCE_REVIEW": "55dab5a65a4918e345eb6737814284c4cc6640cc677015f6002e097f41fe70c5",
+    "REPORTING_COMPLETENESS_AUDIT": "dee75e0da0a224258e57a8eb0945797a2657d8f13fe7bb91011260428c1f561e",
+    "SCIENTIFIC_INTEGRITY_AND_MANUSCRIPT_READINESS": "d5db598f3bf34dd3a47e511a18d84ec7359477bdf0f66b9771a4c0f3acab537f"
+  },
+  "protected_owner_memo_sha256": "2d497f341533d01114030deff360e5b9086db1bf0c1bd170327d09eeac9f4403",
+  "protected_source_index_sha256": "614f9158b692348536c52299da8f4ef1df160e5acc4500c36c249c30a019b74b",
+  "pre_review_integrity_sha256": "a6a9e952436d148b687078753575c0331e5f843e157eeef6fefbde77004626f4",
+  "read_only_closure_sha256": "2458e3114181b158181b1c31619702e4390109dcdf1a91899028db13edd3a50d",
+  "protocol_status": "PROTOCOL_LOCKED",
+  "scientific_designation": "SCIENTIFIC_RESULT_ACCEPTED_RESTRICTED",
+  "research_validation_authorized": false,
+  "public_scientific_release_authorized": false,
+  "scientific_execution": false,
+  "original_records_modified": false,
+  "owner_handoff_only": true,
+  "stop_after_delivery": true
+}

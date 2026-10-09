@@ -1,0 +1,260 @@
+{
+  "record": "RP001-G5-PUBLIC-SOURCE-CITATIONS",
+  "review_mode": "focused narrative, not exhaustive",
+  "citations": [
+    {
+      "id": "L01",
+      "title": "Conformal Prediction Intervals for Remaining Useful Lifetime Estimation",
+      "authors": [
+        "Alireza Javanmardi",
+        "Eyke Hüllermeier"
+      ],
+      "year": 2023,
+      "venue": "International Journal of Prognostics and Health Management 14(2)",
+      "doi": "10.36001/ijphm.2023.v14i2.3417",
+      "url": "https://papers.phmsociety.org/index.php/ijphm/article/view/3417",
+      "fulltext": "https://papers.phmsociety.org/index.php/ijphm/article/download/3417/2077",
+      "related_version": "arXiv:2212.14612v1 (2022); one study, not a second replication",
+      "inspection": "Direct publisher full-text sections 3-4 and metadata",
+      "accessed_utc": "2026-10-09T08:00:20.052072+00:00",
+      "publication_status_check": "Inspected available publisher/arXiv/Crossref record fields; no correction/retraction notice encountered. Registry-complete status clearance not established."
+    },
+    {
+      "id": "L02",
+      "title": "Conformalized Quantile Regression",
+      "authors": [
+        "Yaniv Romano",
+        "Evan Patterson",
+        "Emmanuel J. Candès"
+      ],
+      "year": 2019,
+      "venue": "Advances in Neural Information Processing Systems 32",
+      "doi": null,
+      "url": "https://papers.neurips.cc/paper_files/paper/2019/hash/5103c3584b063c431bd1268e9b5e76fb-Abstract.html",
+      "fulltext": "https://papers.neurips.cc/paper_files/paper/2019/file/5103c3584b063c431bd1268e9b5e76fb-Paper.pdf",
+      "inspection": "Direct proceedings full text, algorithm/theorem and regression experiments",
+      "accessed_utc": "2026-10-09T08:00:20.052072+00:00",
+      "publication_status_check": "Inspected available publisher/arXiv/Crossref record fields; no correction/retraction notice encountered. Registry-complete status clearance not established."
+    },
+    {
+      "id": "L03",
+      "title": "Bayesian neural networks for uncertainty quantification in remaining useful life prediction of systems with sensor monitoring",
+      "authors": [
+        "Sunday Ochella",
+        "Fateme Dinmohammadi",
+        "Mahmood Shafiee"
+      ],
+      "year": 2024,
+      "venue": "Advances in Mechanical Engineering 16(7)",
+      "doi": "10.1177/16878132241239802",
+      "url": "https://journals.sagepub.com/doi/full/10.1177/16878132241239802",
+      "inspection": "Direct publisher full-text case-study/method sections and Crossref metadata",
+      "accessed_utc": "2026-10-09T08:00:20.052072+00:00",
+      "publication_status_check": "Inspected available publisher/arXiv/Crossref record fields; no correction/retraction notice encountered. Registry-complete status clearance not established."
+    },
+    {
+      "id": "L04",
+      "title": "A benchmark on uncertainty quantification for deep learning prognostics",
+      "authors": [
+        "Luis Basora",
+        "Arthur Viens",
+        "Manuel Arias Chao",
+        "Xavier Olive"
+      ],
+      "year": 2025,
+      "venue": "Reliability Engineering & System Safety 253, 110513",
+      "doi": "10.1016/j.ress.2024.110513",
+      "url": "https://doi.org/10.1016/j.ress.2024.110513",
+      "fulltext": "https://arxiv.org/pdf/2302.04730",
+      "related_version": "arXiv:2302.04730 (initial 2023); publisher metadata verified, version-of-record full text unavailable in this interface",
+      "inspection": "Direct author preprint full-text methods/metrics and Crossref version-of-record metadata",
+      "accessed_utc": "2026-10-09T08:00:20.052072+00:00",
+      "publication_status_check": "Inspected available publisher/arXiv/Crossref record fields; no correction/retraction notice encountered. Registry-complete status clearance not established."
+    },
+    {
+      "id": "L05",
+      "title": "A Hierarchical Bayesian Framework for Model-based Prognostics",
+      "authors": [
+        "Xinyu Jia",
+        "Iason Papaioannou",
+        "Daniel Straub"
+      ],
+      "year": 2026,
+      "venue": "arXiv preprint 2601.15942v1; peer-reviewed status not verified",
+      "doi": "10.48550/arXiv.2601.15942",
+      "url": "https://arxiv.org/abs/2601.15942",
+      "fulltext": "https://arxiv.org/pdf/2601.15942",
+      "inspection": "Direct preprint framework and crack-growth/battery sections",
+      "accessed_utc": "2026-10-09T08:00:20.052072+00:00",
+      "publication_status_check": "Inspected available publisher/arXiv/Crossref record fields; no correction/retraction notice encountered. Registry-complete status clearance not established."
+    },
+    {
+      "id": "L06",
+      "title": "Degradation modeling applied to residual lifetime prediction using functional data analysis",
+      "authors": [
+        "Rensheng R. Zhou",
+        "Nicoleta Serban",
+        "Nagi Gebraeel"
+      ],
+      "year": 2011,
+      "venue": "The Annals of Applied Statistics 5(2B)",
+      "doi": "10.1214/10-AOAS448",
+      "url": "https://doi.org/10.1214/10-AOAS448",
+      "fulltext": "https://arxiv.org/abs/1107.5712",
+      "inspection": "Direct author full-text model/update/residual-life sections; Crossref metadata",
+      "accessed_utc": "2026-10-09T08:00:20.052072+00:00",
+      "publication_status_check": "Inspected available publisher/arXiv/Crossref record fields; no correction/retraction notice encountered. Registry-complete status clearance not established."
+    },
+    {
+      "id": "L07",
+      "title": "Residual-life distributions from component degradation signals: A Bayesian approach",
+      "authors": [
+        "Nagi Z. Gebraeel",
+        "Mark A. Lawley",
+        "Rong Li",
+        "Jennifer K. Ryan"
+      ],
+      "year": 2005,
+      "venue": "IIE Transactions 37(6), 543-557",
+      "doi": "10.1080/07408170590929018",
+      "url": "https://doi.org/10.1080/07408170590929018",
+      "inspection": "Crossref identity and author institutional publication list; primary full text inaccessible",
+      "accessed_utc": "2026-10-09T08:00:20.052072+00:00",
+      "publication_status_check": "Inspected available publisher/arXiv/Crossref record fields; no correction/retraction notice encountered. Registry-complete status clearance not established."
+    },
+    {
+      "id": "L08",
+      "title": "Bayesian approach in the predictive maintenance policy",
+      "authors": [
+        "Giuseppe Curcurù",
+        "Marco Cocconcelli",
+        "Riccardo Rubini",
+        "Giacomo Maria Galante"
+      ],
+      "year": 2017,
+      "venue": "Surveillance 9 conference-hosted paper (2017 conference context); formal peer-review status not independently verified",
+      "doi": null,
+      "url": "https://surveillance9.sciencesconf.org/data/150035.pdf",
+      "inspection": "Direct conference-hosted PDF sections 2-3 and appendix",
+      "accessed_utc": "2026-10-09T08:00:20.052072+00:00",
+      "publication_status_check": "Inspected available publisher/arXiv/Crossref record fields; no correction/retraction notice encountered. Registry-complete status clearance not established."
+    },
+    {
+      "id": "L09",
+      "title": "Strictly Proper Scoring Rules, Prediction, and Estimation",
+      "authors": [
+        "Tilmann Gneiting",
+        "Adrian E. Raftery"
+      ],
+      "year": 2007,
+      "venue": "Journal of the American Statistical Association 102(477), 359-378",
+      "doi": "10.1198/016214506000001437",
+      "url": "https://doi.org/10.1198/016214506000001437",
+      "fulltext": "https://sites.stat.washington.edu/people/raftery/Research/PDF/Gneiting2007jasa.pdf",
+      "inspection": "Direct author-hosted published PDF, section 6.3 equation 43; Crossref metadata",
+      "accessed_utc": "2026-10-09T08:00:20.052072+00:00",
+      "publication_status_check": "Inspected available publisher/arXiv/Crossref record fields; no correction/retraction notice encountered. Registry-complete status clearance not established."
+    },
+    {
+      "id": "L10",
+      "title": "Probabilistic forecasts, calibration and sharpness",
+      "authors": [
+        "Tilmann Gneiting",
+        "Fadoua Balabdaoui",
+        "Adrian E. Raftery"
+      ],
+      "year": 2007,
+      "venue": "Journal of the Royal Statistical Society: Series B 69(2), 243-268",
+      "doi": "10.1111/j.1467-9868.2007.00587.x",
+      "url": "https://doi.org/10.1111/j.1467-9868.2007.00587.x",
+      "fulltext": "https://sites.stat.washington.edu/people/raftery/Research/PDF/Gneiting2007jrssb.pdf",
+      "inspection": "Direct author-hosted full-text calibration definitions/diagnostics and Crossref metadata",
+      "accessed_utc": "2026-10-09T08:00:20.052072+00:00",
+      "publication_status_check": "Inspected available publisher/arXiv/Crossref record fields; no correction/retraction notice encountered. Registry-complete status clearance not established."
+    },
+    {
+      "id": "L11",
+      "title": "Damage propagation modeling for aircraft engine run-to-failure simulation",
+      "authors": [
+        "Abhinav Saxena",
+        "Kai Goebel",
+        "Don Simon",
+        "Neil Eklund"
+      ],
+      "year": 2008,
+      "venue": "2008 International Conference on Prognostics and Health Management, 1-9",
+      "doi": "10.1109/PHM.2008.4711414",
+      "url": "https://doi.org/10.1109/PHM.2008.4711414",
+      "inspection": "Crossref conference identity and original dataset README reference; related NTRS report separately recorded as L15",
+      "accessed_utc": "2026-10-09T08:00:20.052072+00:00",
+      "publication_status_check": "Inspected available publisher/arXiv/Crossref record fields; no correction/retraction notice encountered. Registry-complete status clearance not established."
+    },
+    {
+      "id": "L12",
+      "title": "A Bayesian deep learning framework for interval estimation of remaining useful life in complex systems by incorporating general degradation characteristics",
+      "authors": [
+        "Minhee Kim",
+        "Kaibo Liu"
+      ],
+      "year": 2021,
+      "venue": "IISE Transactions 53(3), 326-340 (online 2020)",
+      "doi": "10.1080/24725854.2020.1766729",
+      "url": "https://doi.org/10.1080/24725854.2020.1766729",
+      "inspection": "Direct Crossref identity; publisher content access failed",
+      "accessed_utc": "2026-10-09T08:00:20.052072+00:00",
+      "publication_status_check": "Inspected available publisher/arXiv/Crossref record fields; no correction/retraction notice encountered. Registry-complete status clearance not established."
+    },
+    {
+      "id": "L13",
+      "title": "A novel uncertainty-aware framework for remaining useful life prediction integrating uncertainty quantification and calibration",
+      "authors": [
+        "Weijun Xu",
+        "Shuang Gao",
+        "Zongyao Wang",
+        "Enrico Zio"
+      ],
+      "year": 2026,
+      "venue": "Reliability Engineering & System Safety 275, 112763 (Crossref issue November 2026; metadata created April 2026)",
+      "doi": "10.1016/j.ress.2026.112763",
+      "url": "https://doi.org/10.1016/j.ress.2026.112763",
+      "inspection": "Direct Crossref identity; publisher/API primary content inaccessible",
+      "accessed_utc": "2026-10-09T08:00:20.052072+00:00",
+      "publication_status_check": "Inspected available publisher/arXiv/Crossref record fields; no correction/retraction notice encountered. Registry-complete status clearance not established."
+    },
+    {
+      "id": "L14",
+      "title": "Batch means and spectral variance estimators in Markov chain Monte Carlo",
+      "authors": [
+        "James M. Flegal",
+        "Galin L. Jones"
+      ],
+      "year": 2010,
+      "venue": "The Annals of Statistics 38(2), 1034-1070",
+      "doi": "10.1214/09-AOS735",
+      "url": "https://doi.org/10.1214/09-AOS735",
+      "fulltext": "https://arxiv.org/pdf/0811.1729",
+      "inspection": "Direct author reprint arXiv v5, introduction/assumptions; journal reference in source",
+      "accessed_utc": "2026-10-09T08:00:20.052072+00:00",
+      "publication_status_check": "Inspected available publisher/arXiv/Crossref record fields; no correction/retraction notice encountered. Registry-complete status clearance not established."
+    },
+    {
+      "id": "L15",
+      "title": "Damage Propagation Modeling for Aircraft Engine Prognostics",
+      "authors": [
+        "Abhinav Saxena",
+        "Kai Goebel",
+        "Don Simon",
+        "Neil Eklund"
+      ],
+      "year": 2008,
+      "venue": "NASA NTRS 20090029214, ARC-E-DAA-TN-154; PHM conference report",
+      "doi": null,
+      "url": "https://ntrs.nasa.gov/citations/20090029214",
+      "fulltext": "https://ntrs.nasa.gov/api/citations/20090029214/downloads/20090029214.pdf?attachment=true",
+      "inspection": "Direct NTRS catalog and PDF generation/competition context",
+      "accessed_utc": "2026-10-09T08:00:20.052072+00:00",
+      "publication_status_check": "Inspected available publisher/arXiv/Crossref record fields; no correction/retraction notice encountered. Registry-complete status clearance not established."
+    }
+  ],
+  "protected_outcomes_included": false
+}
