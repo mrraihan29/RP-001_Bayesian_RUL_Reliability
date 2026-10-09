@@ -1,0 +1,54 @@
+{
+  "record": "RP001-STAGE-C-C001",
+  "status": "STAGE_C_ACCEPTED",
+  "accepted_at_utc": "2026-10-09T03:18:18.894705+00:00",
+  "owner_authority": {
+    "path": "docs/stage_C/OWNER_STAGE_C_DECISION.md",
+    "sha256": "6799a82744a2f35564d204ab4dd0ab307c92d30cb3be27065f2d893d1734b5d2",
+    "provenance": "Byte-exact attachment supplied by human Raihan in this conversation; stated Research Owners Raihan x Rei",
+    "original_attachment": "C:/Users/Raihan/.codex/attachments/757948b3-9c45-40ff-b883-3fa4f2393cc9/Pasted text.txt",
+    "identity_limit": "Conversation/attachment provenance only; no independent legal identity verification",
+    "cryptographic_signature": null
+  },
+  "owner_condition": "All final existing-artifact byte-integrity verification checks PASS",
+  "integrity_summary": "docs/stage_C/FINAL_INTEGRITY_VERIFICATION.json",
+  "integrity_summary_sha256": "3e7ccab6ed94863a9c6c9e2980f6d0a78da26f7cab6572888c038cd7d134c0ff",
+  "accepted_identity_record": "docs/stage_C/ACCEPTED_PREDICTION_IDENTITIES.json",
+  "accepted_identity_record_sha256": "a9e60506945e8c3746ea41553fe7c1a502fd6c1376f46f1c1cb8223e6bbacf08",
+  "accepted_bundle_sha256": "96084deb61336367b48f19251f0cd529e5deb98c754eb09a05dca5f52ef4263e",
+  "accepted_manifest_sha256": {
+    "base_payload_manifest": "09ae59cb40c33af4170ae8b041550a9d1f8e49042b1ef8065e764c45e55fb7a1",
+    "verification_manifest": "6090ea4a08eaffb758b48042c8629c42e18cc82e5729d94b08e8eb96a15116df",
+    "review_tables_manifest": "2911bf37b68668584e1bf71564003ad5820a2073c32263cf048be456fd6404b3"
+  },
+  "prediction_table_hashes": [
+    {
+      "name": "Bayesian_predictions.csv",
+      "rows": 100,
+      "sha256": "3f2016c38dfa25268d40cb8522bbebba3b507a26db88eda18ecc335a4de3a9b5",
+      "exact_saved_float64_match": true
+    },
+    {
+      "name": "CQR_predictions.csv",
+      "rows": 100,
+      "sha256": "6dc96a60c40ee1a7a36c89b76cd9003395bd1f02783b239dbfdc93d994496593",
+      "exact_saved_float64_match": true
+    },
+    {
+      "name": "engine_ledger.csv",
+      "rows": 100,
+      "sha256": "5bec5804a31788995754e66114ffeeee35424815ebfcd813925b555585f47129",
+      "exact_saved_ledger_match": true
+    }
+  ],
+  "Stage_C_verification_manifest_sha256": "072f7937ab0ca845cad3804352aac3afb791db4f46a36a5516995b30ef11a5cd",
+  "verification_code_commit": "48d1307473b16ba10247fd8d2d49ea712f3fc7ee",
+  "verification_code_sha256": "2ac5c9ddca895606f440cca92f106d1981d35f0450565c0db87dcfad5ede1348",
+  "scientific_lock_commit": "fc7083d23d3cff5e4ee9a9f5d0af9036ec32e26d",
+  "Stage_B_artifacts_preserved": true,
+  "labels_accessed": false,
+  "outcome_scoring_performed": false,
+  "Stage_D_authorized": false,
+  "claim_boundary": "Formal integrity/numerical readiness acceptance only, no research accuracy or superiority result",
+  "git_checkpoint_policy": "Acceptance payload is committed after this receipt is created; a subsequent GIT_ADMINISTRATIVE_RECEIPT.json records the exact payload commit without circular self-reference"
+}

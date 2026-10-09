@@ -1,0 +1,18 @@
+{
+  "status": "PASS",
+  "at_utc": "2026-10-09T03:20:44.916711+00:00",
+  "source": "Direct checks after formal acceptance packaging",
+  "Stage_B_public_artifacts_byte_preserved": 18,
+  "G3_sealed_files_preserved": 58,
+  "protected_Stage_C_verification_manifest_sha256": "072f7937ab0ca845cad3804352aac3afb791db4f46a36a5516995b30ef11a5cd",
+  "restricted_payload_paths_git_ignored": [
+    ".protected/stage_B/B001_review_tables/Bayesian_predictions.csv",
+    ".protected/stage_C/C001/INTEGRITY_DETAILS.json",
+    "data/raw/test_FD001.txt"
+  ],
+  "public_files_common_secret_pattern_scan": 13,
+  "secret_findings": [],
+  "relative_links_valid": 17,
+  "limits": "Bounded common-pattern scan only; no universal secret or OS forensic guarantee",
+  "Stage_D_authorized": false
+}

@@ -1,0 +1,86 @@
+{
+  "status": "STAGE_C_ACCEPTED",
+  "verified_at_utc": "2026-10-09T03:15:14.626234+00:00",
+  "protocol_version": "RP-001-G3-v0.5-AM1",
+  "campaign": "B001",
+  "Stage_C_record": "C001",
+  "verification_code_commit": "48d1307473b16ba10247fd8d2d49ea712f3fc7ee",
+  "verification_code_sha256": "2ac5c9ddca895606f440cca92f106d1981d35f0450565c0db87dcfad5ede1348",
+  "owner_directive_sha256": "6799a82744a2f35564d204ab4dd0ab307c92d30cb3be27065f2d893d1734b5d2",
+  "candidate_bundle_sha256": "96084deb61336367b48f19251f0cd529e5deb98c754eb09a05dca5f52ef4263e",
+  "manifest_sha256": {
+    "base_payload_manifest": "09ae59cb40c33af4170ae8b041550a9d1f8e49042b1ef8065e764c45e55fb7a1",
+    "verification_manifest": "6090ea4a08eaffb758b48042c8629c42e18cc82e5729d94b08e8eb96a15116df",
+    "review_tables_manifest": "2911bf37b68668584e1bf71564003ad5820a2073c32263cf048be456fd6404b3"
+  },
+  "base_payload_files_rehashed": 3016,
+  "verification_manifest_members_rehashed": 3,
+  "review_tables_rehashed": 3,
+  "G3_sealed_files_unchanged": 58,
+  "Stage_B_public_files_preserved": 18,
+  "scientific_source_map_sha256": "0967e8db64935764b5c34fb35b15978739c6a2d536f6ea13bb05fd0540681d5d",
+  "environment_fingerprint": "f57b00a67e9d67b2920791bfddc8dc812dbdeb9306588a26557dfd6be15f826c",
+  "posterior_identities": [
+    {
+      "run_id": "v04_main_r1",
+      "path": "experiments/v0.4/fits/v04_main_r1.nc",
+      "sha256": "750157b158f665d2c962202813f2cfd11a0152730956743dc434b6b47db75415"
+    },
+    {
+      "run_id": "v04_main_r2",
+      "path": "experiments/v0.4/fits/v04_main_r2.nc",
+      "sha256": "bce67cd39c38c54271ab59d1a9922795ff62524aac25bd09f64eed3a3f99fe3b"
+    },
+    {
+      "run_id": "v04_main_r3",
+      "path": "experiments/v0.4/fits/v04_main_r3.nc",
+      "sha256": "805ec463ea94b565c536fc39dcc3d95a784d9fd1527f15ab106a4b2acf23cb96"
+    }
+  ],
+  "calibration_sha256": "b941da7179e2698675511c2876cf8eed6cce60e142e17263c60228956a45497b",
+  "CQR_object_sha256": "85027f22fc1c4f4d20748412d6072ad7b23e493f0b008fffc15cb0800683458f",
+  "preprocessor_sha256": "f23b7fdd1c354d92468cdff02b056d7cda603cfc00d52d3ba24917dcd5c01b9e",
+  "prediction_tables": [
+    {
+      "name": "Bayesian_predictions.csv",
+      "rows": 100,
+      "sha256": "3f2016c38dfa25268d40cb8522bbebba3b507a26db88eda18ecc335a4de3a9b5",
+      "exact_saved_float64_match": true
+    },
+    {
+      "name": "CQR_predictions.csv",
+      "rows": 100,
+      "sha256": "6dc96a60c40ee1a7a36c89b76cd9003395bd1f02783b239dbfdc93d994496593",
+      "exact_saved_float64_match": true
+    },
+    {
+      "name": "engine_ledger.csv",
+      "rows": 100,
+      "sha256": "5bec5804a31788995754e66114ffeeee35424815ebfcd813925b555585f47129",
+      "exact_saved_ledger_match": true
+    }
+  ],
+  "all_100_engine_ledger_rows_verified": true,
+  "prediction_values_unchanged": true,
+  "pooled_quantiles_PASS": 300,
+  "compatibility_comparisons_PASS": 900,
+  "pooled_upper_MCSE_max": 0.3976892271390135,
+  "mandatory_failure_count": 0,
+  "individual_fit_batch_exceedances": 13,
+  "individual_fit_affected_quantiles": 7,
+  "failure_ledger_unchanged_and_empty": true,
+  "B_journal_events_verified": 507,
+  "label_boundary": "Intact pre-label sealing, prior access records, absent extracted label file, unchanged sealed metadata; procedural evidence only",
+  "official_labels_opened_this_verification": false,
+  "outcome_scoring_performed": false,
+  "new_predictions": 0,
+  "new_roots": 0,
+  "posterior_draws": 0,
+  "fitting_or_recalibration": false,
+  "stage_D_authorized": false,
+  "scientific_result_validated": false,
+  "wall_seconds": 14.687999999994645,
+  "protected_details_sha256": "cb06656e3ead82dd10249d144474399a9960db939a94000f01ebb5d977d81c6e",
+  "Stage_C_verification_manifest_sha256": "072f7937ab0ca845cad3804352aac3afb791db4f46a36a5516995b30ef11a5cd",
+  "Stage_C_verification_manifest_path": ".protected/stage_C/C001/STAGE_C_VERIFICATION_MANIFEST.json"
+}

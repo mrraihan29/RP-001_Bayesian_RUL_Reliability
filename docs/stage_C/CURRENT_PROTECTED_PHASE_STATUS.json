@@ -1,0 +1,30 @@
+{
+  "at_utc": "2026-10-09T03:18:18.894705+00:00",
+  "protocol_status": "PROTOCOL_LOCKED",
+  "protocol_version": "RP-001-G3-v0.5-AM1",
+  "Stage_A": "PROTOCOL_LOCKED",
+  "Stage_B": "COMPLETED",
+  "Stage_C": "ACCEPTED",
+  "Stage_D": "NOT_AUTHORIZED",
+  "formal_decision": "STAGE_C_ACCEPTED",
+  "authority": {
+    "path": "docs/stage_C/OWNER_STAGE_C_DECISION.md",
+    "sha256": "6799a82744a2f35564d204ab4dd0ab307c92d30cb3be27065f2d893d1734b5d2",
+    "provenance": "Byte-exact attachment supplied by human Raihan in this conversation; stated Research Owners Raihan x Rei",
+    "original_attachment": "C:/Users/Raihan/.codex/attachments/757948b3-9c45-40ff-b883-3fa4f2393cc9/Pasted text.txt",
+    "identity_limit": "Conversation/attachment provenance only; no independent legal identity verification",
+    "cryptographic_signature": null
+  },
+  "accepted_bundle_sha256": "96084deb61336367b48f19251f0cd529e5deb98c754eb09a05dca5f52ef4263e",
+  "phase_permissions": {
+    "stage_A_formal_lock": true,
+    "stage_B_completed_historical_authority": true,
+    "stage_C_prediction_freeze_acceptance": true,
+    "stage_D_official_labels_and_scoring": false
+  },
+  "official_labels_accessed": false,
+  "outcome_scoring_performed": false,
+  "research_validated": false,
+  "current_record_rule": "This new dated Stage C record supersedes prior phase-status records for current permission only; G3 and Stage B history are byte-preserved",
+  "next_action": "STOP; Research Owners must separately authorize Stage D before labels/scoring"
+}
