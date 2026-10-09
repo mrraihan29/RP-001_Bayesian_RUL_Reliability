@@ -1,0 +1,43 @@
+{
+  "status": "PASS",
+  "reviewer": "SOL direct mathematical verifier",
+  "at_utc": "2026-10-09T02:48:05.939475+00:00",
+  "scope": "Independent arithmetic reconstruction from sealed conditional terms and saved roots; no new roots, draws, predictions, labels or scoring",
+  "protected_manifest_sha256": "09ae59cb40c33af4170ae8b041550a9d1f8e49042b1ef8065e764c45e55fb7a1",
+  "payload_files_verified": 3016,
+  "G3_sealed_files_unchanged": 58,
+  "journal_events_verified": 507,
+  "engine_ledger_rows": 100,
+  "all_quantiles_directly_verified": 1200,
+  "pooled_official_quantiles": 300,
+  "independent_fit_quantiles": 900,
+  "replication_comparisons": 900,
+  "two_batch_reconstructions": 2400,
+  "MCMC": "Locked diagnostics identity/finite states/divergences/depth verified in preflight; no resampling",
+  "upper_MCSE_max_cycles": 0.39768922713901383,
+  "upper_MCSE_max_location": {
+    "engine": 85,
+    "p": 0.95,
+    "batch": 500
+  },
+  "minimum_weight_ESS": 7919.651799381529,
+  "minimum_influence_ESS": 56496.701031406905,
+  "max_CDF_residual_abs": 2.603472992745992e-13,
+  "replication_max_standardized_difference": 3.2823214938661684,
+  "replication_z": 4.030934372846465,
+  "precision_tail": 8.333333333333334e-05,
+  "arithmetic_match_tolerance": "rtol1e-12/atol1e-14 only for agreement of independent calculations; official acceptance thresholds unchanged",
+  "failure_count": 0,
+  "labels_accessed": false,
+  "scoring": false,
+  "new_sampling": false,
+  "scientific_claim": "Numerical/custody acceptance only; no empirical predictive-performance conclusion",
+  "wall_seconds": 12.421999999991385,
+  "procedural_disclosures": [
+    "Failure persistence was prospectively specified in committed driver; terminal failure_ledger.json materialized only at sealing; hash-chained registry began before sensors",
+    "All100 training trajectories were cross-paired; normalization used existing81 eligible training-prefix population",
+    "Headerless sensor column order is bound to official source archive and declared schema; sensor physical units not independently verified",
+    "Local byte hashes and exclusive-create discipline do not establish WORM custody, independent identity authentication, encrypted isolation or clean-machine reproducibility"
+  ],
+  "verification_manifest_sha256": "6090ea4a08eaffb758b48042c8629c42e18cc82e5729d94b08e8eb96a15116df"
+}

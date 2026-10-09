@@ -1,0 +1,25 @@
+{
+  "at_utc": "2026-10-09T02:53:59.084861+00:00",
+  "scope": "Individual-fit numerical sensitivity; production gate is preapproved pooled predictor",
+  "individual_quantiles": 900,
+  "individual_batch_records": 1800,
+  "batches_above_half_cycle": 13,
+  "distinct_individual_quantiles_above_half_cycle": 7,
+  "max_upper_MCSE_record": {
+    "engine": 85,
+    "p": 0.95,
+    "fit": "v04_main_r1",
+    "batch": 500,
+    "MCSE": 0.56935357058274,
+    "upper": 0.86495108727387,
+    "influence_ESS": 22122.44783280823
+  },
+  "individual_weight_ESS_min": 2424.2261436198523,
+  "individual_influence_ESS_min": 14899.244991945117,
+  "locked_contract": "docs/protocol_lock/LOCKED_ANALYSIS_CONTRACT.md",
+  "source": "src/rp001/v04_analysis.py",
+  "source_sha256": "2fcf53103f3e9364396a7f575f3d319fa0afba4fa34115d788d6e9326087f25e",
+  "acceptance_scope": "Existing passes expression gates all pooled rs gate_pass and all independent compatible comparisons, not all rep_results gate_pass. Future contract changes require owner review.",
+  "repair_attempted": false,
+  "pooling_selected_after_test_access": false
+}

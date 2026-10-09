@@ -1,0 +1,13 @@
+{
+  "protocol_status": "PROTOCOL_LOCKED",
+  "stage_B": "COMPLETED_CANDIDATE_READY",
+  "stage_C": "AWAITING_SEPARATE_OWNER_ACCEPTANCE",
+  "stage_D": "NOT_AUTHORIZED",
+  "stage_B_permission_source": "docs/stage_B/OWNER_AUTHORIZATION_STAGE_B.md",
+  "G3_policy_time_context": "Locked documents record their historical no-B/C/D authority at lock time; this new Stage B directive authorizes B only and does not edit historical lock",
+  "labels_accessed": false,
+  "scoring": false,
+  "research_validated": false,
+  "at_utc": "2026-10-09T02:53:59.084861+00:00",
+  "candidate_receipt": "docs/stage_B/CANDIDATE_PACKAGE_RECEIPT.json"
+}

@@ -1,0 +1,19 @@
+{
+  "status": "PASS",
+  "at_utc": "2026-10-09T02:55:33.590929+00:00",
+  "protected_manifests_and_all_members_verified": true,
+  "raw_sensor_and_prediction_paths_git_ignored": [
+    "data/raw/test_FD001.txt",
+    ".protected/stage_B/B001/PAYLOAD_MANIFEST.json",
+    ".protected/stage_B/B001_review_tables/Bayesian_predictions.csv"
+  ],
+  "scientific_sources_and_configs_unchanged": true,
+  "G3_58_sealed_files_unchanged": true,
+  "all_relative_doc_links_valid": 12,
+  "public_files_bounded_secret_scan": 16,
+  "findings": [],
+  "limit": "Bounded common-pattern scan, no universal secret detector; restricted payload contents were not staged",
+  "labels_unextracted": true,
+  "labels_not_read": "Named sensor-member access recorded; no scoring/fitting/label read path in the executed driver; procedural claim, no independent OS-level audit",
+  "protected_candidate_bundle_sha256": "96084deb61336367b48f19251f0cd529e5deb98c754eb09a05dca5f52ef4263e"
+}
