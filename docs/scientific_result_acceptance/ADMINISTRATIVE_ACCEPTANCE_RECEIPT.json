@@ -1,0 +1,18 @@
+{
+  "scientific_result_decision_state": "SCIENTIFIC_RESULT_ACCEPTED_RESTRICTED",
+  "protocol_status": "PROTOCOL_LOCKED",
+  "research_validation_state": "NOT_AUTHORIZED",
+  "public_scientific_result_release_state": "NOT_AUTHORIZED",
+  "new_scientific_experiments_state": "NOT_AUTHORIZED",
+  "next_review_gate_state": "PROPOSED_ONLY_NOT_INITIATED",
+  "owner_decision_sha256": "b5b02850ead9556d7f2c16d51033f259b84bc1eaaf571f8288fcff2e0f982380",
+  "protected_integrity_receipt_sha256": "760b4792abeb5315aaec667323e621fc4e0989fbcbe12ae521552025f0ccf411",
+  "protected_acceptance_record_sha256": "b12b31299bd2838edd59502e352b3b4477adb8bef4db93ef116341c6e350664f",
+  "protected_acceptance_report_sha256": "2f63be53a5ad9b3f13ede9c44676e71ae8f5d44c0f6e8dfe24ec462576c42659",
+  "protected_claims_freeze_sha256": "88852de62a42ba73a9301acfec4a78a89e450f3c71b2c79a0a162f7c1bf92596",
+  "protected_acceptance_payload_manifest_sha256": "5a05250d6e7a8fbbf331245c244fd06695dfde68d792349013fdd1babd8b1a63",
+  "original_Stage_D_manifest_sha256": "da8be4a452b54049d204c87f7775c53c45bd3606a147a6ef6e2bc4b425a0c7f0",
+  "original_Stage_D_report_sha256": "0b5fb383286454f8a5c19450fad76aafd8adda027086b21672e10315a1d6033c",
+  "accepted_prediction_bundle_sha256": "96084deb61336367b48f19251f0cd529e5deb98c754eb09a05dca5f52ef4263e",
+  "original_protocol_receipt_sha256": "9803eba8f616e6fd8bd95780ba829863cd629643d7e13590d8a4f5535509bade"
+}
